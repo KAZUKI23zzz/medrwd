@@ -1,0 +1,18 @@
+[
+  {
+    "company": "JMDC",
+    "description": "JMDC Claims Databaseを用いた論文一覧",
+    "url": "https://www.phm-jmdc.com/publications",
+    "pdf_url": "https://phm.jmdc.co.jp/en/assets/pdf/JMDC_publication_list.pdf"
+  },
+  {
+    "company": "MDV（メディカル・データ・ビジョン）",
+    "description": "MDVデータベースを用いた研究業績一覧",
+    "url": "https://en.mdv.co.jp/ebm/publication/"
+  },
+  {
+    "company": "リアルワールドデータ株式会社",
+    "description": "EMRデータベースを用いた論文一覧",
+    "url": "https://rwdata.co.jp/news/category/%e8%ab%96%e6%96%87/"
+  }
+]

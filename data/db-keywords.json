@@ -1,0 +1,105 @@
+{
+  "databases": [
+    {
+      "id": "ndb",
+      "patterns": ["\\bNDB\\b", "National Database of Health Insurance", "ナショナルデータベース", "national claims database.*Japan"],
+      "display": "NDB"
+    },
+    {
+      "id": "ndb_open",
+      "patterns": ["NDB\\s*[Oo]pen\\s*[Dd]ata", "NDBオープンデータ"],
+      "display": "NDBオープンデータ"
+    },
+    {
+      "id": "dpc",
+      "patterns": ["\\bDPC\\b(?!\\s*[Cc]ode)", "Diagnosis Procedure Combination", "DPC database", "DPC調査", "DPC data"],
+      "display": "DPC"
+    },
+    {
+      "id": "jader",
+      "patterns": ["\\bJADER\\b", "Japanese Adverse Drug Event Report"],
+      "display": "JADER"
+    },
+    {
+      "id": "midnet",
+      "patterns": ["MID-NET", "Medical Information Database Network"],
+      "display": "MID-NET"
+    },
+    {
+      "id": "jmdc",
+      "patterns": ["\\bJMDC\\b", "Japan Medical Data Center"],
+      "display": "JMDC"
+    },
+    {
+      "id": "mdv",
+      "patterns": ["\\bMDV\\b", "Medical Data Vision"],
+      "display": "MDV"
+    },
+    {
+      "id": "rwdco",
+      "patterns": ["Real World Data Co", "リアルワールドデータ株式会社", "RWD Co\\."],
+      "display": "RWD社"
+    },
+    {
+      "id": "cancer_registry",
+      "patterns": ["全国がん登録", "[Nn]ational [Cc]ancer [Rr]egistry.*Japan", "Japan Cancer Registry"],
+      "display": "がん登録"
+    },
+    {
+      "id": "kaigo_db",
+      "patterns": ["介護DB", "介護レセプト", "[Ll]ong.term care.*database.*Japan", "介護データベース"],
+      "display": "介護DB"
+    },
+    {
+      "id": "kdb",
+      "patterns": ["\\bKDB\\b", "国保データベース"],
+      "display": "KDB"
+    },
+    {
+      "id": "ssmix",
+      "patterns": ["SS-MIX", "SS-MIX2"],
+      "display": "SS-MIX2"
+    }
+  ],
+  "additional_sources": [
+    {
+      "patterns": ["人口動態調査", "[Vv]ital [Ss]tatistics.*Japan", "Vital Statistics of Japan"],
+      "display": "人口動態調査"
+    },
+    {
+      "patterns": ["患者調査", "[Pp]atient [Ss]urvey.*Japan"],
+      "display": "患者調査"
+    },
+    {
+      "patterns": ["医療施設調査", "[Ss]urvey of [Mm]edical [Ii]nstitutions", "hospital statistics"],
+      "display": "医療施設調査"
+    },
+    {
+      "patterns": ["国民生活基礎調査", "Comprehensive Survey of Living Conditions"],
+      "display": "国民生活基礎調査"
+    },
+    {
+      "patterns": ["社会医療診療行為別調査", "Survey of Medical Care Activities"],
+      "display": "社会医療診療行為別調査"
+    },
+    {
+      "patterns": ["国民健康・栄養調査", "National Health and Nutrition Survey"],
+      "display": "国民健康・栄養調査"
+    }
+  ],
+  "study_designs": [
+    { "patterns": ["cohort study", "cohort analysis", "コホート研究"], "display": "コホート研究" },
+    { "patterns": ["case.?control", "症例対照"], "display": "症例対照研究" },
+    { "patterns": ["cross.?sectional", "横断研究", "横断的"], "display": "横断研究" },
+    { "patterns": ["ecological study", "ecological analysis", "地域相関"], "display": "地域相関研究" },
+    { "patterns": ["self.?controlled case series", "\\bSCCS\\b", "自己対照"], "display": "自己対照研究(SCCS)" },
+    { "patterns": ["target trial emulation", "標的試験"], "display": "標的試験エミュレーション" },
+    { "patterns": ["descriptive study", "descriptive analysis", "記述研究"], "display": "記述研究" },
+    { "patterns": ["drug utilization", "薬剤使用研究"], "display": "薬剤使用研究" },
+    { "patterns": ["retrospective", "後ろ向き"], "display": "後ろ向き研究" },
+    { "patterns": ["prospective(?! cohort)", "前向き"], "display": "前向き研究" },
+    { "patterns": ["interrupted time series", "分割時系列"], "display": "分割時系列分析" },
+    { "patterns": ["propensity score", "傾向スコア"], "display": "傾向スコア分析" },
+    { "patterns": ["disproportionality analysis", "シグナル検出"], "display": "シグナル検出" }
+  ]
+}
