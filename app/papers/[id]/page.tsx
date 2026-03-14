@@ -12,9 +12,10 @@ export function generateStaticParams() {
   return papers.map((p) => ({ id: p.id }));
 }
 
-export function generateMetadata({ params }: { params: { id: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
   const papers = getPapers();
-  const paper = papers.find((p) => p.id === params.id);
+  const paper = papers.find((p) => p.id === id);
   if (!paper) return { title: "Not Found" };
   return {
     title: `${paper.title.slice(0, 60)}... - 医療RWD研究カタログ`,
@@ -22,14 +23,15 @@ export function generateMetadata({ params }: { params: { id: string } }) {
   };
 }
 
-export default function PaperDetailPage({
+export default async function PaperDetailPage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
+  const { id } = await params;
   const papers = getPapers();
   const databases = getDatabases();
-  const paper = papers.find((p) => p.id === params.id);
+  const paper = papers.find((p) => p.id === id);
 
   if (!paper) {
     notFound();

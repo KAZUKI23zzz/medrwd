@@ -11,9 +11,10 @@ export function generateStaticParams() {
   return databases.map((db) => ({ slug: db.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   const databases = getDatabases();
-  const db = databases.find((d) => d.slug === params.slug);
+  const db = databases.find((d) => d.slug === slug);
   if (!db) return { title: "Not Found" };
   return {
     title: `${db.name} - 医療RWD研究カタログ`,
@@ -21,14 +22,15 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   };
 }
 
-export default function DatabaseDetailPage({
+export default async function DatabaseDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
+  const { slug } = await params;
   const databases = getDatabases();
   const papers = getPapers();
-  const db = databases.find((d) => d.slug === params.slug);
+  const db = databases.find((d) => d.slug === slug);
 
   if (!db) {
     notFound();
