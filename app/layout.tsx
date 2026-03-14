@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MedRWD Japan - 日本の医療RWD研究アプローチカタログ",
+  title: "医療RWD研究カタログ - 日本の医療リアルワールドデータ研究検索",
   description:
     "日本の医療リアルワールドデータ（RWD）を使った研究を「どのDBで・どんな手法で・何を調べたか」で検索できるカタログサイト",
 };
@@ -41,7 +41,7 @@ export default function RootLayout({
         <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
           <div className="relative mx-auto flex h-14 max-w-7xl items-center px-4">
             <Link href="/" className="mr-8 text-lg font-bold">
-              MedRWD Japan
+              医療RWD研究カタログ
             </Link>
             <nav className="hidden gap-1 md:flex">
               {navItems.map((item) => (
@@ -60,7 +60,7 @@ export default function RootLayout({
         <main className="mx-auto max-w-7xl px-4 py-6">{children}</main>
         <footer className="border-t py-6 text-center text-sm text-muted-foreground">
           <div className="mx-auto max-w-7xl px-4">
-            MedRWD Japan - 日本の医療リアルワールドデータ研究カタログ
+            医療RWD研究カタログ - 日本の医療リアルワールドデータ研究検索
           </div>
         </footer>
       </body>

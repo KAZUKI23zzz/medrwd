@@ -17,7 +17,7 @@ export function generateMetadata({ params }: { params: { id: string } }) {
   const paper = papers.find((p) => p.id === params.id);
   if (!paper) return { title: "Not Found" };
   return {
-    title: `${paper.title.slice(0, 60)}... - MedRWD Japan`,
+    title: `${paper.title.slice(0, 60)}... - 医療RWD研究カタログ`,
     description: paper.abstract.slice(0, 160),
   };
 }
@@ -72,7 +72,9 @@ export default function PaperDetailPage({
               <QuartileBadge quartile={paper.sjr_quartile} />
             )}
             {paper.impact_factor && (
-              <Badge variant="secondary">IF: {paper.impact_factor}</Badge>
+              <Badge variant="secondary" title="OpenAlex 2yr Mean Citedness">
+                CI: {paper.impact_factor}
+              </Badge>
             )}
             <span className="text-sm text-muted-foreground">{paper.year}</span>
           </div>

@@ -3,7 +3,6 @@ import type { NewsItem as NewsItemType } from "@/types/news";
 
 const sourceColors: Record<string, string> = {
   PMDA: "bg-purple-100 text-purple-800 border-purple-200",
-  MHLW: "bg-teal-100 text-teal-800 border-teal-200",
   medRxiv: "bg-amber-100 text-amber-800 border-amber-200",
 };
 

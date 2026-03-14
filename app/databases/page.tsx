@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 
 export const metadata = {
-  title: "データベース一覧 - MedRWD Japan",
+  title: "データベース一覧 - 医療RWD研究カタログ",
   description: "日本の医療RWDデータベースを公的・商業別に一覧。特徴や向いている研究を比較",
 };
 

@@ -2,21 +2,21 @@ import { getNews } from "@/lib/data-loader";
 import { NewsItemCard } from "@/components/news/NewsItem";
 
 export const metadata = {
-  title: "ニュース - MedRWD Japan",
-  description: "厚労省・PMDA・medRxivの最新情報をRSSでキュレーション",
+  title: "ニュース - 医療RWD研究カタログ",
+  description: "PMDA・medRxivの最新情報をRSSでキュレーション",
 };
 
 export default function NewsPage() {
   const news = getNews();
 
-  const sources = ["すべて", "PMDA", "MHLW", "medRxiv"] as const;
+  const sources = ["すべて", "PMDA", "medRxiv"] as const;
 
   return (
     <div className="space-y-6">
       <div>
         <h1 className="text-2xl font-bold">ニュース</h1>
         <p className="mt-1 text-muted-foreground">
-          厚生労働省・PMDA・medRxiv の最新情報をRSSでキュレーション
+          PMDA・medRxiv の最新RWD関連情報をRSSでキュレーション
         </p>
       </div>
 

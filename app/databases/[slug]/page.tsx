@@ -16,7 +16,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   const db = databases.find((d) => d.slug === params.slug);
   if (!db) return { title: "Not Found" };
   return {
-    title: `${db.name} - MedRWD Japan`,
+    title: `${db.name} - 医療RWD研究カタログ`,
     description: `${db.name}の特徴・アクセス方法と、このDBを使った研究一覧`,
   };
 }

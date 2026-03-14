@@ -18,8 +18,8 @@ export function PaperCard({ paper }: { paper: Paper }) {
             <QuartileBadge quartile={paper.sjr_quartile} />
           )}
           {paper.impact_factor && (
-            <Badge variant="secondary" className="text-xs">
-              IF: {paper.impact_factor}
+            <Badge variant="secondary" className="text-xs" title="OpenAlex 2yr Mean Citedness">
+              CI: {paper.impact_factor}
             </Badge>
           )}
           <span className="text-xs text-muted-foreground">{paper.year}</span>

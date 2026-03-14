@@ -49,7 +49,7 @@ export default function Home() {
     <div className="space-y-8">
       {/* Hero */}
       <div className="space-y-2">
-        <h1 className="text-3xl font-bold">MedRWD Japan</h1>
+        <h1 className="text-3xl font-bold">医療RWD研究カタログ</h1>
         <p className="text-lg text-muted-foreground">
           日本の医療リアルワールドデータを使った研究を
           <br />

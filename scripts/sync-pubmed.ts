@@ -195,7 +195,7 @@ async function getJournalMetrics(issn: string): Promise<{ impact_factor: number 
   if (journalIFCache.has(issn)) return journalIFCache.get(issn)!;
 
   try {
-    const url = `https://api.openalex.org/sources?filter=issn:${issn}&mailto=medrwd@example.com`;
+    const url = `https://api.openalex.org/sources?filter=issn:${issn}&mailto=rwd-catalog@example.com`;
     const data = (await fetchJSON(url)) as {
       results: {
         summary_stats?: { "2yr_mean_citedness"?: number };

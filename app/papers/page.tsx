@@ -2,7 +2,7 @@ import { getPapers } from "@/lib/data-loader";
 import { PaperFilters } from "@/components/papers/PaperFilters";
 
 export const metadata = {
-  title: "研究カタログ - MedRWD Japan",
+  title: "研究カタログ - 医療RWD研究カタログ",
   description:
     "日本の医療RWDを使った研究を「どのDBで・どんな手法で・何を調べたか」で検索",
 };

@@ -10,7 +10,7 @@ import * as path from "path";
 
 interface NewsItem {
   id: string;
-  source: "PMDA" | "MHLW" | "medRxiv";
+  source: "PMDA" | "medRxiv";
   title: string;
   url: string;
   published_at: string;
@@ -27,11 +27,8 @@ const RSS_FEEDS: {
     url: "https://www.pmda.go.jp/rss_001.xml",
     idPrefix: "pmda",
   },
-  {
-    source: "MHLW",
-    url: "https://www.mhlw.go.jp/stf/news.rdf",
-    idPrefix: "mhlw",
-  },
+  // MHLW RSS は利用規約で再配布が明示的に禁止されているため除外
+  // https://www.mhlw.go.jp/rss/index.html
   {
     source: "medRxiv",
     url: "https://connect.medrxiv.org/medrxiv_xml.php?subject=Health+Policy",
@@ -108,7 +105,7 @@ async function fetchRSS(
   try {
     const res = await fetch(feedUrl, {
       headers: {
-        "User-Agent": "MedRWD-Japan-Bot/1.0 (RSS Reader)",
+        "User-Agent": "RWD-Research-Catalog-Bot/1.0 (RSS Reader)",
       },
     });
     if (!res.ok) {
