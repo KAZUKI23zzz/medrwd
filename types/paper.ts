@@ -16,6 +16,7 @@ export interface Paper {
   mesh_terms: string[];
   impact_factor: number | null;
   sjr_quartile: string | null;
+  research_categories: string[];
   auto_detected: boolean;
   collected_at: string;
 }

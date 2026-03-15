@@ -32,6 +32,7 @@ interface Paper {
   mesh_terms: string[];
   impact_factor: number | null;
   sjr_quartile: string | null;
+  research_categories: string[];
   auto_detected: boolean;
   collected_at: string;
 }
@@ -45,6 +46,7 @@ interface KeywordEntry {
 interface KeywordsData {
   databases: (KeywordEntry & { id: string })[];
   additional_sources: KeywordEntry[];
+  research_categories: KeywordEntry[];
   study_designs: KeywordEntry[];
 }
 
@@ -59,6 +61,15 @@ function matchPatterns(text: string, entries: KeywordEntry[]): string[] {
     }
   }
   return matches;
+}
+
+function countPatternMatches(text: string, patterns: string[]): number {
+  let count = 0;
+  for (const pattern of patterns) {
+    const matches = text.match(new RegExp(pattern, "gi"));
+    if (matches) count += matches.length;
+  }
+  return count;
 }
 
 // --- PubMed API ---
@@ -106,7 +117,7 @@ function extractAllTags(xml: string, tag: string): string[] {
   return results;
 }
 
-function parseArticleXML(articleXml: string): Omit<Paper, "impact_factor" | "sjr_quartile" | "databases_used" | "additional_data_sources" | "study_design" | "auto_detected" | "collected_at"> | null {
+function parseArticleXML(articleXml: string): Omit<Paper, "impact_factor" | "sjr_quartile" | "databases_used" | "additional_data_sources" | "study_design" | "research_categories" | "auto_detected" | "collected_at"> | null {
   const pmid = extractTag(articleXml, "PMID");
   if (!pmid) return null;
 
@@ -263,22 +274,27 @@ async function main() {
   for (const article of articles) {
     if (!article) continue;
 
-    // Detect databases and study design
+    // Detect databases, study design, and research categories
+    const detectText = `${article.title} ${article.abstract} ${article.mesh_terms.join(" ")}`;
     const detection = {
-      databases_used: matchPatterns(
-        `${article.title} ${article.abstract}`,
-        keywords.databases
-      ),
-      additional_data_sources: matchPatterns(
-        `${article.title} ${article.abstract}`,
-        keywords.additional_sources
-      ),
-      study_design:
-        matchPatterns(
-          `${article.title} ${article.abstract}`,
-          keywords.study_designs
-        )[0] || "その他",
+      databases_used: matchPatterns(detectText, keywords.databases),
+      additional_data_sources: matchPatterns(detectText, keywords.additional_sources),
+      study_design: matchPatterns(detectText, keywords.study_designs)[0] || "その他",
     };
+
+    // Research categories: score each category, take top 2
+    const categoryScores: { display: string; score: number }[] = [];
+    for (const cat of keywords.research_categories) {
+      const score = countPatternMatches(detectText, cat.patterns);
+      if (score > 0) {
+        categoryScores.push({ display: cat.display, score });
+      }
+    }
+    categoryScores.sort((a, b) => b.score - a.score);
+    const research_categories =
+      categoryScores.length > 0
+        ? categoryScores.slice(0, 2).map((c) => c.display)
+        : ["その他"];
 
     // Get journal metrics from OpenAlex
     let metrics = { impact_factor: null as number | null, sjr_quartile: null as string | null };
@@ -291,6 +307,7 @@ async function main() {
       databases_used: detection.databases_used,
       additional_data_sources: detection.additional_data_sources,
       study_design: detection.study_design,
+      research_categories,
       impact_factor: metrics.impact_factor,
       sjr_quartile: metrics.sjr_quartile,
       auto_detected: true,

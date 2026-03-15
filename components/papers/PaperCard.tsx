@@ -71,6 +71,19 @@ export function PaperCard({ paper }: { paper: Paper }) {
               {paper.study_design}
             </Badge>
           </div>
+
+          {(paper.research_categories ?? []).length > 0 && paper.research_categories[0] !== "その他" && (
+            <div className="flex flex-wrap items-center gap-1.5">
+              <span className="text-xs font-medium text-muted-foreground">
+                カテゴリ:
+              </span>
+              {paper.research_categories.map((cat) => (
+                <Badge key={cat} variant="outline" className="text-xs">
+                  {cat}
+                </Badge>
+              ))}
+            </div>
+          )}
         </div>
 
         <div className="flex gap-3 pt-1 text-xs">

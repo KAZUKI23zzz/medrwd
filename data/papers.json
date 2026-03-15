@@ -22,7 +22,10 @@
     "impact_factor": 1.94,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T17:42:19.893Z"
+    "collected_at": "2026-03-13T17:42:19.893Z",
+    "research_categories": [
+      "その他"
+    ]
   },
   {
     "id": "pmid-41808957",
@@ -53,7 +56,10 @@
     "impact_factor": 1.06,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:41.379Z"
+    "collected_at": "2026-03-13T09:46:41.379Z",
+    "research_categories": [
+      "安全性・副作用"
+    ]
   },
   {
     "id": "pmid-41806409",
@@ -82,7 +88,10 @@
     "impact_factor": 0.9,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:42.332Z"
+    "collected_at": "2026-03-13T09:46:42.332Z",
+    "research_categories": [
+      "安全性・副作用"
+    ]
   },
   {
     "id": "pmid-41804312",
@@ -115,7 +124,10 @@
     "impact_factor": 0.63,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:42.760Z"
+    "collected_at": "2026-03-13T09:46:42.760Z",
+    "research_categories": [
+      "医療資源利用・経済評価"
+    ]
   },
   {
     "id": "pmid-41667730",
@@ -146,7 +158,11 @@
     "impact_factor": 2.18,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:55.051Z"
+    "collected_at": "2026-03-13T09:46:55.051Z",
+    "research_categories": [
+      "安全性・副作用",
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41799859",
@@ -174,7 +190,10 @@
     "impact_factor": 0.8,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:43.750Z"
+    "collected_at": "2026-03-13T09:46:43.750Z",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41795143",
@@ -203,7 +222,10 @@
     "impact_factor": 1.53,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:44.667Z"
+    "collected_at": "2026-03-13T09:46:44.667Z",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41503746",
@@ -256,7 +278,11 @@
     "impact_factor": 1.16,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:04.360Z"
+    "collected_at": "2026-03-13T09:47:04.360Z",
+    "research_categories": [
+      "医療資源利用・経済評価",
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41772923",
@@ -300,7 +326,11 @@
     "impact_factor": 1.54,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:46.224Z"
+    "collected_at": "2026-03-13T09:46:46.224Z",
+    "research_categories": [
+      "安全性・副作用",
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41525008",
@@ -349,7 +379,10 @@
     "impact_factor": 1.92,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:02.822Z"
+    "collected_at": "2026-03-13T09:47:02.822Z",
+    "research_categories": [
+      "その他"
+    ]
   },
   {
     "id": "pmid-41467753",
@@ -398,7 +431,10 @@
     "impact_factor": 1.32,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:05.730Z"
+    "collected_at": "2026-03-13T09:47:05.730Z",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41775464",
@@ -441,7 +477,11 @@
     "impact_factor": 2.23,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:45.802Z"
+    "collected_at": "2026-03-13T09:46:45.802Z",
+    "research_categories": [
+      "医療の質・アクセスの格差",
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41770274",
@@ -487,7 +527,10 @@
     "impact_factor": 3.43,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:46.644Z"
+    "collected_at": "2026-03-13T09:46:46.644Z",
+    "research_categories": [
+      "治療効果・有効性"
+    ]
   },
   {
     "id": "pmid-41514020",
@@ -522,7 +565,11 @@
     "impact_factor": 3.08,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:03.498Z"
+    "collected_at": "2026-03-13T09:47:03.498Z",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "医療の質・アクセスの格差"
+    ]
   },
   {
     "id": "pmid-41483151",
@@ -572,7 +619,11 @@
     "impact_factor": 4.59,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:05.327Z"
+    "collected_at": "2026-03-13T09:47:05.327Z",
+    "research_categories": [
+      "治療効果・有効性",
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41455853",
@@ -617,7 +668,10 @@
     "impact_factor": 1.46,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:06.613Z"
+    "collected_at": "2026-03-13T09:47:06.613Z",
+    "research_categories": [
+      "安全性・副作用"
+    ]
   },
   {
     "id": "pmid-41782070",
@@ -655,7 +709,11 @@
     "impact_factor": 4.64,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:45.097Z"
+    "collected_at": "2026-03-13T09:46:45.097Z",
+    "research_categories": [
+      "医療資源利用・経済評価",
+      "医療の質・アクセスの格差"
+    ]
   },
   {
     "id": "pmid-41781319",
@@ -684,7 +742,11 @@
     "impact_factor": 0.82,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:45.371Z"
+    "collected_at": "2026-03-13T09:46:45.371Z",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療資源利用・経済評価"
+    ]
   },
   {
     "id": "pmid-41769311",
@@ -711,7 +773,10 @@
     "impact_factor": 2.12,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:47.080Z"
+    "collected_at": "2026-03-13T09:46:47.080Z",
+    "research_categories": [
+      "医療資源利用・経済評価"
+    ]
   },
   {
     "id": "pmid-41767683",
@@ -737,7 +802,11 @@
     "impact_factor": 1.33,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:47.496Z"
+    "collected_at": "2026-03-13T09:46:47.496Z",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療資源利用・経済評価"
+    ]
   },
   {
     "id": "pmid-41758370",
@@ -763,7 +832,11 @@
     "impact_factor": 1.8,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:48.212Z"
+    "collected_at": "2026-03-13T09:46:48.212Z",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41764518",
@@ -792,7 +865,10 @@
     "impact_factor": 3.86,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:47.909Z"
+    "collected_at": "2026-03-13T09:46:47.909Z",
+    "research_categories": [
+      "その他"
+    ]
   },
   {
     "id": "pmid-41746490",
@@ -823,7 +899,11 @@
     "impact_factor": 1.92,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:48.638Z"
+    "collected_at": "2026-03-13T09:46:48.638Z",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "医療の質・アクセスの格差"
+    ]
   },
   {
     "id": "pmid-41744940",
@@ -850,7 +930,10 @@
     "impact_factor": 2.57,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:48.912Z"
+    "collected_at": "2026-03-13T09:46:48.912Z",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41743371",
@@ -878,7 +961,11 @@
     "impact_factor": 1.77,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:49.318Z"
+    "collected_at": "2026-03-13T09:46:49.318Z",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41742064",
@@ -905,7 +992,10 @@
     "impact_factor": 2.17,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:49.599Z"
+    "collected_at": "2026-03-13T09:46:49.599Z",
+    "research_categories": [
+      "その他"
+    ]
   },
   {
     "id": "pmid-41733770",
@@ -952,7 +1042,11 @@
     "impact_factor": 1.62,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:49.850Z"
+    "collected_at": "2026-03-13T09:46:49.850Z",
+    "research_categories": [
+      "患者報告アウトカム・QOL",
+      "医療の質・アクセスの格差"
+    ]
   },
   {
     "id": "pmid-41733781",
@@ -981,7 +1075,10 @@
     "impact_factor": 1.92,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:49.850Z"
+    "collected_at": "2026-03-13T09:46:49.850Z",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41729853",
@@ -1029,7 +1126,10 @@
     "impact_factor": 2.34,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:50.285Z"
+    "collected_at": "2026-03-13T09:46:50.285Z",
+    "research_categories": [
+      "安全性・副作用"
+    ]
   },
   {
     "id": "pmid-41726798",
@@ -1060,7 +1160,11 @@
     "impact_factor": 1.07,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:50.543Z"
+    "collected_at": "2026-03-13T09:46:50.543Z",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41673761",
@@ -1086,7 +1190,11 @@
     "impact_factor": 1.19,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:54.628Z"
+    "collected_at": "2026-03-13T09:46:54.628Z",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "安全性・副作用"
+    ]
   },
   {
     "id": "pmid-41604800",
@@ -1132,7 +1240,10 @@
     "impact_factor": 1.29,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:58.616Z"
+    "collected_at": "2026-03-13T09:46:58.616Z",
+    "research_categories": [
+      "医療資源利用・経済評価"
+    ]
   },
   {
     "id": "pmid-41718841",
@@ -1170,7 +1281,10 @@
     "impact_factor": 2.25,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:50.795Z"
+    "collected_at": "2026-03-13T09:46:50.795Z",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41711382",
@@ -1220,7 +1334,10 @@
     "impact_factor": 2,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:51.215Z"
+    "collected_at": "2026-03-13T09:46:51.215Z",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41710906",
@@ -1253,7 +1370,10 @@
     "impact_factor": 1.82,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:51.639Z"
+    "collected_at": "2026-03-13T09:46:51.639Z",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41697647",
@@ -1284,7 +1404,11 @@
     "impact_factor": 1.79,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:52.088Z"
+    "collected_at": "2026-03-13T09:46:52.088Z",
+    "research_categories": [
+      "医療資源利用・経済評価",
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41691455",
@@ -1317,7 +1441,10 @@
     "impact_factor": 3.53,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:52.521Z"
+    "collected_at": "2026-03-13T09:46:52.521Z",
+    "research_categories": [
+      "安全性・副作用"
+    ]
   },
   {
     "id": "pmid-41518630",
@@ -1342,7 +1469,10 @@
     "impact_factor": 1.68,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:03.247Z"
+    "collected_at": "2026-03-13T09:47:03.247Z",
+    "research_categories": [
+      "治療効果・有効性"
+    ]
   },
   {
     "id": "pmid-41684267",
@@ -1371,7 +1501,10 @@
     "impact_factor": 1.99,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:52.796Z"
+    "collected_at": "2026-03-13T09:46:52.796Z",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41679958",
@@ -1405,7 +1538,11 @@
     "impact_factor": 3.21,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:53.236Z"
+    "collected_at": "2026-03-13T09:46:53.236Z",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41677837",
@@ -1436,7 +1573,10 @@
     "impact_factor": 2.31,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:53.694Z"
+    "collected_at": "2026-03-13T09:46:53.694Z",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41676807",
@@ -1465,7 +1605,10 @@
     "impact_factor": 0.95,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:53.946Z"
+    "collected_at": "2026-03-13T09:46:53.946Z",
+    "research_categories": [
+      "その他"
+    ]
   },
   {
     "id": "pmid-41675090",
@@ -1497,7 +1640,11 @@
     "impact_factor": 2.44,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:54.206Z"
+    "collected_at": "2026-03-13T09:46:54.206Z",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41571973",
@@ -1535,7 +1682,10 @@
     "impact_factor": 4.68,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:00.039Z"
+    "collected_at": "2026-03-13T09:47:00.039Z",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41673342",
@@ -1562,7 +1712,10 @@
     "impact_factor": 2.25,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:54.628Z"
+    "collected_at": "2026-03-13T09:46:54.628Z",
+    "research_categories": [
+      "その他"
+    ]
   },
   {
     "id": "pmid-41669520",
@@ -1597,7 +1750,10 @@
     "impact_factor": 1.06,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:54.628Z"
+    "collected_at": "2026-03-13T09:46:54.628Z",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41545851",
@@ -1649,7 +1805,10 @@
     "impact_factor": 5.9,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:02.240Z"
+    "collected_at": "2026-03-13T09:47:02.240Z",
+    "research_categories": [
+      "その他"
+    ]
   },
   {
     "id": "pmid-41660534",
@@ -1679,7 +1838,11 @@
     "impact_factor": 0.81,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:55.330Z"
+    "collected_at": "2026-03-13T09:46:55.330Z",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "医療の質・アクセスの格差"
+    ]
   },
   {
     "id": "pmid-41656008",
@@ -1723,7 +1886,10 @@
     "impact_factor": 1.5,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:55.757Z"
+    "collected_at": "2026-03-13T09:46:55.757Z",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41649665",
@@ -1749,7 +1915,10 @@
     "impact_factor": 2.25,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:55.757Z"
+    "collected_at": "2026-03-13T09:46:55.757Z",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41647981",
@@ -1787,7 +1956,11 @@
     "impact_factor": 0.92,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:56.024Z"
+    "collected_at": "2026-03-13T09:46:56.024Z",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41501660",
@@ -1824,7 +1997,11 @@
     "impact_factor": 2.46,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:04.796Z"
+    "collected_at": "2026-03-13T09:47:04.796Z",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41435883",
@@ -1867,7 +2044,10 @@
     "impact_factor": 1.5,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:08.168Z"
+    "collected_at": "2026-03-13T09:47:08.168Z",
+    "research_categories": [
+      "その他"
+    ]
   },
   {
     "id": "pmid-41632985",
@@ -1900,7 +2080,10 @@
     "impact_factor": 1.37,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:56.437Z"
+    "collected_at": "2026-03-13T09:46:56.437Z",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41484710",
@@ -1950,7 +2133,10 @@
     "impact_factor": 2.28,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:05.059Z"
+    "collected_at": "2026-03-13T09:47:05.059Z",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41621909",
@@ -2000,7 +2186,10 @@
     "impact_factor": 1.13,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:56.886Z"
+    "collected_at": "2026-03-13T09:46:56.886Z",
+    "research_categories": [
+      "その他"
+    ]
   },
   {
     "id": "pmid-41617550",
@@ -2031,7 +2220,10 @@
     "impact_factor": 1,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:57.174Z"
+    "collected_at": "2026-03-13T09:46:57.174Z",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41613142",
@@ -2079,7 +2271,10 @@
     "impact_factor": 4.29,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:57.443Z"
+    "collected_at": "2026-03-13T09:46:57.443Z",
+    "research_categories": [
+      "安全性・副作用"
+    ]
   },
   {
     "id": "pmid-41612821",
@@ -2121,7 +2316,10 @@
     "impact_factor": 1.5,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:57.444Z"
+    "collected_at": "2026-03-13T09:46:57.444Z",
+    "research_categories": [
+      "患者報告アウトカム・QOL"
+    ]
   },
   {
     "id": "pmid-41612793",
@@ -2166,7 +2364,11 @@
     "impact_factor": 1.5,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:57.444Z"
+    "collected_at": "2026-03-13T09:46:57.444Z",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41612577",
@@ -2195,7 +2397,10 @@
     "impact_factor": 1.73,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:57.892Z"
+    "collected_at": "2026-03-13T09:46:57.892Z",
+    "research_categories": [
+      "その他"
+    ]
   },
   {
     "id": "pmid-41386147",
@@ -2244,7 +2449,11 @@
     "impact_factor": 1.44,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:12.251Z"
+    "collected_at": "2026-03-13T09:47:12.251Z",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41605661",
@@ -2272,7 +2481,10 @@
     "impact_factor": 2.84,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:58.168Z"
+    "collected_at": "2026-03-13T09:46:58.168Z",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41588829",
@@ -2305,7 +2517,11 @@
     "impact_factor": 1.53,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:58.616Z"
+    "collected_at": "2026-03-13T09:46:58.616Z",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41553001",
@@ -2356,7 +2572,11 @@
     "impact_factor": 1.5,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:01.354Z"
+    "collected_at": "2026-03-13T09:47:01.354Z",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "安全性・副作用"
+    ]
   },
   {
     "id": "pmid-41581914",
@@ -2386,7 +2606,10 @@
     "impact_factor": 1.65,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:58.897Z"
+    "collected_at": "2026-03-13T09:46:58.897Z",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41581913",
@@ -2420,7 +2643,10 @@
     "impact_factor": 1.65,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:58.897Z"
+    "collected_at": "2026-03-13T09:46:58.897Z",
+    "research_categories": [
+      "その他"
+    ]
   },
   {
     "id": "pmid-41577518",
@@ -2446,7 +2672,10 @@
     "impact_factor": 0.82,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:58.897Z"
+    "collected_at": "2026-03-13T09:46:58.897Z",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41577349",
@@ -2495,7 +2724,10 @@
     "impact_factor": 1.82,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:59.353Z"
+    "collected_at": "2026-03-13T09:46:59.353Z",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41572048",
@@ -2523,7 +2755,10 @@
     "impact_factor": 1.51,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:46:59.778Z"
+    "collected_at": "2026-03-13T09:46:59.778Z",
+    "research_categories": [
+      "その他"
+    ]
   },
   {
     "id": "pmid-41571947",
@@ -2561,7 +2796,10 @@
     "impact_factor": 1.92,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:00.039Z"
+    "collected_at": "2026-03-13T09:47:00.039Z",
+    "research_categories": [
+      "その他"
+    ]
   },
   {
     "id": "pmid-41571422",
@@ -2605,7 +2843,11 @@
     "impact_factor": 1.82,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:00.039Z"
+    "collected_at": "2026-03-13T09:47:00.039Z",
+    "research_categories": [
+      "治療効果・有効性",
+      "安全性・副作用"
+    ]
   },
   {
     "id": "pmid-41566655",
@@ -2645,7 +2887,10 @@
     "impact_factor": 0.41,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:00.488Z"
+    "collected_at": "2026-03-13T09:47:00.488Z",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41552376",
@@ -2672,7 +2917,10 @@
     "impact_factor": 2.22,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:01.808Z"
+    "collected_at": "2026-03-13T09:47:01.808Z",
+    "research_categories": [
+      "安全性・副作用"
+    ]
   },
   {
     "id": "pmid-41533061",
@@ -2713,7 +2961,10 @@
     "impact_factor": 3.71,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:02.558Z"
+    "collected_at": "2026-03-13T09:47:02.558Z",
+    "research_categories": [
+      "その他"
+    ]
   },
   {
     "id": "pmid-41525028",
@@ -2742,7 +2993,11 @@
     "impact_factor": 1.98,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:02.822Z"
+    "collected_at": "2026-03-13T09:47:02.822Z",
+    "research_categories": [
+      "安全性・副作用",
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41523939",
@@ -2782,7 +3037,10 @@
     "impact_factor": 1.06,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:02.822Z"
+    "collected_at": "2026-03-13T09:47:02.822Z",
+    "research_categories": [
+      "その他"
+    ]
   },
   {
     "id": "pmid-41523935",
@@ -2816,7 +3074,10 @@
     "impact_factor": 1.06,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:02.822Z"
+    "collected_at": "2026-03-13T09:47:02.822Z",
+    "research_categories": [
+      "その他"
+    ]
   },
   {
     "id": "pmid-41418527",
@@ -2864,7 +3125,11 @@
     "impact_factor": 0.65,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:09.451Z"
+    "collected_at": "2026-03-13T09:47:09.451Z",
+    "research_categories": [
+      "安全性・副作用",
+      "医療資源利用・経済評価"
+    ]
   },
   {
     "id": "pmid-41512642",
@@ -2901,7 +3166,10 @@
     "impact_factor": 1.73,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:03.938Z"
+    "collected_at": "2026-03-13T09:47:03.938Z",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41391865",
@@ -2941,7 +3209,11 @@
     "impact_factor": 1.46,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:11.373Z"
+    "collected_at": "2026-03-13T09:47:11.373Z",
+    "research_categories": [
+      "患者報告アウトカム・QOL",
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41466150",
@@ -2969,7 +3241,11 @@
     "impact_factor": 1.2,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:06.155Z"
+    "collected_at": "2026-03-13T09:47:06.155Z",
+    "research_categories": [
+      "医療資源利用・経済評価",
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41430744",
@@ -2995,7 +3271,11 @@
     "impact_factor": 1.19,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:08.169Z"
+    "collected_at": "2026-03-13T09:47:08.169Z",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療資源利用・経済評価"
+    ]
   },
   {
     "id": "pmid-41460860",
@@ -3040,7 +3320,10 @@
     "impact_factor": 2.34,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:06.156Z"
+    "collected_at": "2026-03-13T09:47:06.156Z",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41451998",
@@ -3081,7 +3364,10 @@
     "impact_factor": 1.77,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:07.059Z"
+    "collected_at": "2026-03-13T09:47:07.059Z",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41449745",
@@ -3133,7 +3419,10 @@
     "impact_factor": 1.54,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:07.059Z"
+    "collected_at": "2026-03-13T09:47:07.059Z",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41449680",
@@ -3180,7 +3469,11 @@
     "impact_factor": 2.03,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:07.491Z"
+    "collected_at": "2026-03-13T09:47:07.491Z",
+    "research_categories": [
+      "安全性・副作用",
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41445784",
@@ -3206,7 +3499,10 @@
     "impact_factor": 1.9,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:07.916Z"
+    "collected_at": "2026-03-13T09:47:07.916Z",
+    "research_categories": [
+      "その他"
+    ]
   },
   {
     "id": "pmid-41430635",
@@ -3234,7 +3530,11 @@
     "impact_factor": 1.19,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:08.169Z"
+    "collected_at": "2026-03-13T09:47:08.169Z",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ]
   },
   {
     "id": "pmid-41427071",
@@ -3264,7 +3564,11 @@
     "impact_factor": 3.12,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:08.564Z"
+    "collected_at": "2026-03-13T09:47:08.564Z",
+    "research_categories": [
+      "医療資源利用・経済評価",
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41423228",
@@ -3296,7 +3600,10 @@
     "impact_factor": 1.65,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:08.564Z"
+    "collected_at": "2026-03-13T09:47:08.564Z",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41420164",
@@ -3342,7 +3649,11 @@
     "impact_factor": 3.27,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:09.021Z"
+    "collected_at": "2026-03-13T09:47:09.021Z",
+    "research_categories": [
+      "安全性・副作用",
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41417146",
@@ -3388,7 +3699,10 @@
     "impact_factor": 2.02,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:09.705Z"
+    "collected_at": "2026-03-13T09:47:09.705Z",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41414809",
@@ -3435,7 +3749,10 @@
     "impact_factor": 0.95,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:10.131Z"
+    "collected_at": "2026-03-13T09:47:10.131Z",
+    "research_categories": [
+      "治療効果・有効性"
+    ]
   },
   {
     "id": "pmid-41390111",
@@ -3470,7 +3787,11 @@
     "impact_factor": 1.68,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:11.824Z"
+    "collected_at": "2026-03-13T09:47:11.824Z",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41409951",
@@ -3496,7 +3817,10 @@
     "impact_factor": 0.91,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:10.549Z"
+    "collected_at": "2026-03-13T09:47:10.549Z",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ]
   },
   {
     "id": "pmid-41407642",
@@ -3531,7 +3855,10 @@
     "impact_factor": 1.14,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:10.973Z"
+    "collected_at": "2026-03-13T09:47:10.973Z",
+    "research_categories": [
+      "治療効果・有効性"
+    ]
   },
   {
     "id": "pmid-41400755",
@@ -3572,7 +3899,11 @@
     "impact_factor": 2.02,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:10.973Z"
+    "collected_at": "2026-03-13T09:47:10.973Z",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41393657",
@@ -3600,7 +3931,11 @@
     "impact_factor": 0.91,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:10.974Z"
+    "collected_at": "2026-03-13T09:47:10.974Z",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ]
   },
   {
     "id": "pmid-41377623",
@@ -3633,7 +3968,10 @@
     "impact_factor": 1.06,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:12.252Z"
+    "collected_at": "2026-03-13T09:47:12.252Z",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ]
   },
   {
     "id": "pmid-41377175",
@@ -3662,6 +4000,10 @@
     "impact_factor": null,
     "sjr_quartile": null,
     "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:12.491Z"
+    "collected_at": "2026-03-13T09:47:12.491Z",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "医療資源利用・経済評価"
+    ]
   }
 ]

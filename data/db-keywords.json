@@ -87,6 +87,107 @@
       "display": "国民健康・栄養調査"
     }
   ],
+  "research_categories": [
+    {
+      "patterns": [
+        "treatment pattern", "prescri(ption|bing) pattern", "treatment sequence",
+        "treatment line", "first.line", "second.line", "third.line",
+        "drug utilization", "medication use", "medication utilization",
+        "treatment duration", "treatment switch", "treatment persistence",
+        "treatment adherence", "treatment discontinu", "treatment initiation",
+        "prescribing practice", "prescribing trend", "real.world treatment",
+        "治療パターン", "処方パターン", "治療ライン", "薬剤使用",
+        "treatment regimen", "therapeutic choice", "line of therapy",
+        "(drug|biologic|medication) persistence",
+        "trend.*(surgery|surgical|procedure|prescription)",
+        "pattern.*(surgery|surgical|procedure)"
+      ],
+      "display": "治療実態・処方パターン"
+    },
+    {
+      "patterns": [
+        "comparative effectiveness", "treatment effectiveness",
+        "clinical effectiveness", "treatment outcome", "clinical outcome",
+        "treatment effect", "therapeutic effect", "treatment efficacy",
+        "real.world effectiveness", "real.world efficacy",
+        "comparative study", "head.to.head",
+        "target trial emulation", "emulated trial",
+        "有効性", "治療効果", "治療成績", "比較有効性"
+      ],
+      "display": "治療効果・有効性"
+    },
+    {
+      "patterns": [
+        "adverse (event|effect|reaction|outcome)", "adverse drug",
+        "safety profile", "safety outcome", "safety assessment",
+        "drug.induced", "drug safety",
+        "pharmacovigilance", "post.marketing surveillance",
+        "signal detection", "disproportionality",
+        "side effect", "toxicity", "hepatotoxicity", "nephrotoxicity", "cardiotoxicity",
+        "\\bJADER\\b",
+        "(injury|malignancy|cancer|bleeding|fracture|infection) risk",
+        "副作用", "有害事象", "安全性", "薬物性"
+      ],
+      "display": "安全性・副作用"
+    },
+    {
+      "patterns": [
+        "prevalence.*(study|survey|estimate|trend|rate)",
+        "incidence.*(study|rate|trend|estimate)",
+        "epidemiology of", "epidemiological (study|survey|investigation)",
+        "disease burden", "burden of (disease|illness)",
+        "natural history", "disease progression", "disease course",
+        "morbidity rate", "comorbidity pattern",
+        "risk factor.*(for|associated|predict)",
+        "prognostic factor",
+        "diagnostic pattern", "frequency.*(surgery|disease|procedure)",
+        "有病率", "罹患率", "疫学(調査|研究|的)", "疾病負荷", "自然歴"
+      ],
+      "display": "疾病負荷・自然歴"
+    },
+    {
+      "patterns": [
+        "healthcare resource", "health.?care resource", "resource utilization",
+        "resource use", "\\bHCRU\\b",
+        "cost.effectiveness", "cost.utility", "cost.benefit", "cost analysis",
+        "economic (evaluation|analysis|burden|impact)",
+        "medical (cost|expenditure|expense)", "healthcare cost",
+        "hospitalization rate", "hospital admission", "readmission",
+        "length of stay", "\\bLOS\\b",
+        "\\bICER\\b", "health economic",
+        "biosimilar", "cost saving", "reimbursement", "financial.*(incentive|burden|impact)",
+        "医療費", "医療資源", "入院日数", "費用対効果", "経済評価", "医療経済"
+      ],
+      "display": "医療資源利用・経済評価"
+    },
+    {
+      "patterns": [
+        "quality of care", "quality indicator", "quality measure",
+        "guideline (adherence|compliance|concordance)",
+        "health disparity", "health disparities", "health inequalit",
+        "health equity", "healthcare access", "access to (care|health|treatment)",
+        "regional (variation|difference|disparity)",
+        "geographic (variation|difference|disparity)",
+        "socioeconomic", "income.related", "insurance (type|status|coverage)",
+        "urban.rural", "underserved",
+        "医療の質", "地域格差", "地域差", "健康格差", "医療アクセス"
+      ],
+      "display": "医療の質・アクセスの格差"
+    },
+    {
+      "patterns": [
+        "patient.reported outcome", "patient reported outcome", "\\bPRO\\b(?!tein|cess|gram|tect|vid|duct|ject|pens|port|fil|stat|gress|mis|b)",
+        "quality of life", "\\bQOL\\b", "\\bHRQOL\\b", "health.related quality",
+        "patient experience", "patient satisfaction", "patient preference",
+        "patient journey", "patient perspective",
+        "\\bEQ.5D\\b", "\\bSF.36\\b", "\\bSF.12\\b",
+        "\\bFACT\\b", "\\bEORTC\\b",
+        "pain score", "symptom burden", "functional status",
+        "生活の質", "患者報告", "患者体験"
+      ],
+      "display": "患者報告アウトカム・QOL"
+    }
+  ],
   "study_designs": [
     {
       "patterns": [

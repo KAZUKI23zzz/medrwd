@@ -164,6 +164,19 @@ export default async function PaperDetailPage({
                 </Badge>
               </div>
 
+              <div>
+                <p className="text-sm font-medium text-muted-foreground">
+                  研究カテゴリ
+                </p>
+                <div className="mt-1 flex flex-wrap gap-1.5">
+                  {(paper.research_categories ?? []).map((cat) => (
+                    <Badge key={cat} variant="outline">
+                      {cat}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+
               {paper.mesh_terms.length > 0 && (
                 <div>
                   <p className="text-sm font-medium text-muted-foreground">

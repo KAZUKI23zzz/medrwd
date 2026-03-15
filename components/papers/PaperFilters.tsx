@@ -17,6 +17,9 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
   const [selectedDesigns, setSelectedDesigns] = useState<Set<string>>(
     new Set()
   );
+  const [selectedCategories, setSelectedCategories] = useState<Set<string>>(
+    new Set()
+  );
   const [yearRange, setYearRange] = useState<[number, number]>([2000, 2030]);
 
   // Extract unique filter values
@@ -36,6 +39,16 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
       designs.set(p.study_design, (designs.get(p.study_design) || 0) + 1);
     }
     return [...designs.entries()].sort((a, b) => b[1] - a[1]);
+  }, [papers]);
+
+  const allCategories = useMemo(() => {
+    const cats = new Map<string, number>();
+    for (const p of papers) {
+      for (const cat of p.research_categories ?? []) {
+        cats.set(cat, (cats.get(cat) || 0) + 1);
+      }
+    }
+    return [...cats.entries()].sort((a, b) => b[1] - a[1]);
   }, [papers]);
 
   const years = useMemo(() => {
@@ -67,7 +80,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
       if (search) {
         const q = search.toLowerCase();
         const haystack =
-          `${p.title} ${p.abstract} ${p.authors.join(" ")} ${p.journal} ${p.databases_used.join(" ")} ${p.study_design}`.toLowerCase();
+          `${p.title} ${p.abstract} ${p.authors.join(" ")} ${p.journal} ${p.databases_used.join(" ")} ${p.study_design} ${(p.research_categories ?? []).join(" ")}`.toLowerCase();
         if (!haystack.includes(q)) return false;
       }
 
@@ -82,12 +95,18 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
           return false;
       }
 
+      // Category filter
+      if (selectedCategories.size > 0) {
+        if (!(p.research_categories ?? []).some((cat) => selectedCategories.has(cat)))
+          return false;
+      }
+
       // Year filter
       if (p.year < yearRange[0] || p.year > yearRange[1]) return false;
 
       return true;
     });
-  }, [papers, search, selectedDbs, selectedDesigns, yearRange]);
+  }, [papers, search, selectedDbs, selectedDesigns, selectedCategories, yearRange]);
 
   return (
     <div className="flex flex-col gap-6 lg:flex-row">
@@ -137,6 +156,25 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
         </div>
 
         <div>
+          <h3 className="mb-2 text-sm font-semibold">研究カテゴリ</h3>
+          <div className="space-y-1.5">
+            {allCategories.map(([cat, count]) => (
+              <label
+                key={cat}
+                className="flex cursor-pointer items-center gap-2"
+              >
+                <Checkbox
+                  checked={selectedCategories.has(cat)}
+                  onCheckedChange={() => toggleSet(setSelectedCategories, cat)}
+                />
+                <span className="text-sm">{cat}</span>
+                <span className="text-xs text-muted-foreground">({count})</span>
+              </label>
+            ))}
+          </div>
+        </div>
+
+        <div>
           <h3 className="mb-2 text-sm font-semibold">出版年</h3>
           <div className="flex items-center gap-2">
             <Input
@@ -163,11 +201,12 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
           </div>
         </div>
 
-        {(selectedDbs.size > 0 || selectedDesigns.size > 0 || search) && (
+        {(selectedDbs.size > 0 || selectedDesigns.size > 0 || selectedCategories.size > 0 || search) && (
           <button
             onClick={() => {
               setSelectedDbs(new Set());
               setSelectedDesigns(new Set());
+              setSelectedCategories(new Set());
               setSearch("");
               setYearRange([years.min, years.max]);
             }}
@@ -204,6 +243,16 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
                 onClick={() => toggleSet(setSelectedDesigns, d)}
               >
                 {d} x
+              </Badge>
+            ))}
+            {[...selectedCategories].map((cat) => (
+              <Badge
+                key={cat}
+                variant="outline"
+                className="cursor-pointer text-xs"
+                onClick={() => toggleSet(setSelectedCategories, cat)}
+              >
+                {cat} x
               </Badge>
             ))}
           </div>
