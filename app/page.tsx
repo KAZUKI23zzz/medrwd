@@ -31,12 +31,10 @@ export default function Home() {
   // Study design counts
   const designCounts = new Map<string, number>();
   for (const p of papers) {
-    if (p.study_design) {
-      designCounts.set(
-        p.study_design,
-        (designCounts.get(p.study_design) || 0) + 1
-      );
-    }
+    designCounts.set(
+      p.study_design,
+      (designCounts.get(p.study_design) || 0) + 1
+    );
   }
   const sortedDesignCounts = [...designCounts.entries()].sort(
     (a, b) => b[1] - a[1]

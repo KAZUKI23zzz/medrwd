@@ -63,16 +63,14 @@ export function PaperCard({ paper }: { paper: Paper }) {
             </div>
           )}
 
-          {paper.study_design && (
-            <div className="flex items-center gap-1.5">
-              <span className="text-xs font-medium text-muted-foreground">
-                デザイン:
-              </span>
-              <Badge variant="secondary" className="text-xs">
-                {paper.study_design}
-              </Badge>
-            </div>
-          )}
+          <div className="flex items-center gap-1.5">
+            <span className="text-xs font-medium text-muted-foreground">
+              デザイン:
+            </span>
+            <Badge variant="secondary" className="text-xs">
+              {paper.study_design}
+            </Badge>
+          </div>
         </div>
 
         <div className="flex gap-3 pt-1 text-xs">

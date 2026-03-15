@@ -3,7 +3,7 @@ import keywordsData from "@/data/db-keywords.json";
 interface DetectionResult {
   databases_used: string[];
   additional_data_sources: string[];
-  study_design: string | null;
+  study_design: string;
 }
 
 function matchPatterns(
@@ -35,7 +35,7 @@ export function detectFromText(
   );
 
   const designs = matchPatterns(text, keywordsData.study_designs);
-  const study_design = designs.length > 0 ? designs[0] : null;
+  const study_design = designs.length > 0 ? designs[0] : "その他";
 
   return { databases_used, additional_data_sources, study_design };
 }

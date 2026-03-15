@@ -155,16 +155,14 @@ export default async function PaperDetailPage({
                 </div>
               )}
 
-              {paper.study_design && (
-                <div>
-                  <p className="text-sm font-medium text-muted-foreground">
-                    研究デザイン
-                  </p>
-                  <Badge variant="secondary" className="mt-1">
-                    {paper.study_design}
-                  </Badge>
-                </div>
-              )}
+              <div>
+                <p className="text-sm font-medium text-muted-foreground">
+                  研究デザイン
+                </p>
+                <Badge variant="secondary" className="mt-1">
+                  {paper.study_design}
+                </Badge>
+              </div>
 
               {paper.mesh_terms.length > 0 && (
                 <div>
@@ -213,11 +211,9 @@ export default async function PaperDetailPage({
                       {db}
                     </Badge>
                   ))}
-                  {r.study_design && (
-                    <Badge variant="secondary" className="text-xs">
-                      {r.study_design}
-                    </Badge>
-                  )}
+                  <Badge variant="secondary" className="text-xs">
+                    {r.study_design}
+                  </Badge>
                 </div>
               </Link>
             ))}

@@ -33,9 +33,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
   const allDesigns = useMemo(() => {
     const designs = new Map<string, number>();
     for (const p of papers) {
-      if (p.study_design) {
-        designs.set(p.study_design, (designs.get(p.study_design) || 0) + 1);
-      }
+      designs.set(p.study_design, (designs.get(p.study_design) || 0) + 1);
     }
     return [...designs.entries()].sort((a, b) => b[1] - a[1]);
   }, [papers]);
@@ -69,7 +67,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
       if (search) {
         const q = search.toLowerCase();
         const haystack =
-          `${p.title} ${p.abstract} ${p.authors.join(" ")} ${p.journal} ${p.databases_used.join(" ")} ${p.study_design || ""}`.toLowerCase();
+          `${p.title} ${p.abstract} ${p.authors.join(" ")} ${p.journal} ${p.databases_used.join(" ")} ${p.study_design}`.toLowerCase();
         if (!haystack.includes(q)) return false;
       }
 
@@ -80,7 +78,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
 
       // Design filter
       if (selectedDesigns.size > 0) {
-        if (!p.study_design || !selectedDesigns.has(p.study_design))
+        if (!selectedDesigns.has(p.study_design))
           return false;
       }
 

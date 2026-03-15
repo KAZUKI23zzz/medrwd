@@ -88,18 +88,36 @@
     }
   ],
   "study_designs": [
-    { "patterns": ["cohort study", "cohort analysis", "コホート研究"], "display": "コホート研究" },
-    { "patterns": ["case.?control", "症例対照"], "display": "症例対照研究" },
-    { "patterns": ["cross.?sectional", "横断研究", "横断的"], "display": "横断研究" },
-    { "patterns": ["ecological study", "ecological analysis", "地域相関"], "display": "地域相関研究" },
-    { "patterns": ["self.?controlled case series", "\\bSCCS\\b", "自己対照"], "display": "自己対照研究(SCCS)" },
-    { "patterns": ["target trial emulation", "標的試験"], "display": "標的試験エミュレーション" },
-    { "patterns": ["descriptive study", "descriptive analysis", "記述研究"], "display": "記述研究" },
-    { "patterns": ["drug utilization", "薬剤使用研究"], "display": "薬剤使用研究" },
-    { "patterns": ["retrospective", "後ろ向き"], "display": "後ろ向き研究" },
-    { "patterns": ["prospective(?! cohort)", "前向き"], "display": "前向き研究" },
-    { "patterns": ["interrupted time series", "分割時系列"], "display": "分割時系列分析" },
-    { "patterns": ["propensity score", "傾向スコア"], "display": "傾向スコア分析" },
-    { "patterns": ["disproportionality analysis", "シグナル検出"], "display": "シグナル検出" }
+    {
+      "patterns": [
+        "case.?control", "症例対照",
+        "self.?controlled case series", "\\bSCCS\\b", "自己対照",
+        "nested case.?control"
+      ],
+      "display": "症例対照研究"
+    },
+    {
+      "patterns": [
+        "cross.?sectional", "横断研究", "横断的", "横断調査",
+        "descriptive study", "descriptive analysis", "記述研究", "記述的研究",
+        "ecological study", "ecological analysis", "地域相関",
+        "survey study", "questionnaire survey", "アンケート調査",
+        "prevalence study", "prevalence survey", "有病率"
+      ],
+      "display": "横断的研究"
+    },
+    {
+      "patterns": [
+        "cohort study", "cohort analysis", "コホート研究", "\\bcohort\\b",
+        "retrospective", "後ろ向き", "後方視的",
+        "prospective", "前向き",
+        "longitudinal study", "longitudinal analysis", "縦断",
+        "target trial emulation", "標的試験",
+        "interrupted time series", "分割時系列",
+        "drug utilization", "薬剤使用",
+        "propensity score", "傾向スコア"
+      ],
+      "display": "後方視的コホート研究"
+    }
   ]
 }
