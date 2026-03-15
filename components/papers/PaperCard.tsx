@@ -31,6 +31,11 @@ export function PaperCard({ paper }: { paper: Paper }) {
         >
           {paper.title}
         </Link>
+        {paper.title_ja && (
+          <p className="text-[13px] text-muted-foreground leading-snug">
+            {paper.title_ja}
+          </p>
+        )}
 
         <p className="text-sm text-muted-foreground">
           {authorDisplay} - {paper.journal}

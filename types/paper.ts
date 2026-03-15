@@ -3,7 +3,9 @@ export interface Paper {
   pubmed_id: string;
   doi: string | null;
   title: string;
+  title_ja?: string;
   abstract: string;
+  abstract_ja?: string;
   authors: string[];
   journal: string;
   journal_issn: string | null;
