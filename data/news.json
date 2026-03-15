@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "id": "pmda-1exzwjk",
+    "source": "PMDA",
+    "title": "[安全]医薬品・医療機器等安全性情報 No.427（厚生労働省発行）を掲載しました",
+    "url": "https://www.pmda.go.jp/safety/info-services/drugs/calling-attention/safety-info/0165.html",
+    "published_at": "2026-03-10T03:00:00.000Z",
+    "collected_at": "2026-03-15T08:57:28.164Z"
+  },
+  {
+    "id": "pmda-5na8md",
+    "source": "PMDA",
+    "title": "[審査][イベント]PMDAシンポジウム「リアルワールドデータを活用した医療機器開発」の開催について（参加登録開始）",
+    "url": "https://www.pmda.go.jp/review-services/symposia/0199.html",
+    "published_at": "2026-03-06T03:00:00.000Z",
+    "collected_at": "2026-03-15T08:57:28.164Z"
+  },
+  {
+    "id": "pmda-p1tczb",
+    "source": "PMDA",
+    "title": "[審査]医薬品安全性相談（ICH S1B（R1）ガイドラインに係る相談）の月初受付日（2026年5月まで）・資料搬入日（2026年9月実施分まで）を掲載しました",
+    "url": "https://www.pmda.go.jp/review-services/f2f-pre/consultations/0117.html",
+    "published_at": "2026-03-03T03:00:00.000Z",
+    "collected_at": "2026-03-15T08:57:28.164Z"
+  },
+  {
+    "id": "pmda-1rfr1s3",
+    "source": "PMDA",
+    "title": "[審査]医薬品疫学調査相談の月初受付日（2026年5月まで）・資料搬入日（2026年9月実施分まで）を掲載しました",
+    "url": "https://www.pmda.go.jp/review-services/f2f-pre/consultations/0076.html",
+    "published_at": "2026-03-03T03:00:00.000Z",
+    "collected_at": "2026-03-15T08:57:28.164Z"
+  },
+  {
+    "id": "pmda-1i236r8",
+    "source": "PMDA",
+    "title": "[安全]「重篤副作用疾患別対応マニュアル（患者・一般の方向け）」を更新しました",
+    "url": "https://www.pmda.go.jp/safety/info-services/drugs/adr-info/manuals-for-public/0001.html",
+    "published_at": "2026-02-26T03:00:00.000Z",
+    "collected_at": "2026-03-15T08:57:28.164Z"
+  },
+  {
+    "id": "pmda-doodck",
+    "source": "PMDA",
+    "title": "[安全]「重篤副作用疾患別対応マニュアル（医療関係者向け）」を更新しました",
+    "url": "https://www.pmda.go.jp/safety/info-services/drugs/adr-info/manuals-for-hc-pro/0001.html",
+    "published_at": "2026-02-26T03:00:00.000Z",
+    "collected_at": "2026-03-15T08:57:28.164Z"
+  }
+]

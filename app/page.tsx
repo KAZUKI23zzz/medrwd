@@ -243,17 +243,52 @@ export default function Home() {
                 すべて見る →
               </Link>
             </div>
-            {recentNews.length > 0 ? (
-              <div className="space-y-2">
-                {recentNews.map((item) => (
-                  <NewsItemCard key={item.id} item={item} />
-                ))}
+            <div className="space-y-4">
+              {/* PMDA */}
+              <div>
+                <h3 className="mb-2 text-sm font-medium text-muted-foreground">
+                  PMDA（医薬品医療機器総合機構）
+                </h3>
+                {recentNews.length > 0 ? (
+                  <div className="space-y-2">
+                    {recentNews.map((item) => (
+                      <NewsItemCard key={item.id} item={item} />
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-sm text-muted-foreground">
+                    ニュースは近日追加予定です
+                  </p>
+                )}
               </div>
-            ) : (
-              <p className="text-sm text-muted-foreground">
-                ニュースは近日追加予定です
-              </p>
-            )}
+
+              {/* External links */}
+              <div>
+                <h3 className="mb-2 text-sm font-medium text-muted-foreground">
+                  商業DB各社のお知らせ
+                </h3>
+                <div className="space-y-2">
+                  <a
+                    href="https://www.jmdc.co.jp/news/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between rounded-md border p-2 text-sm transition-colors hover:bg-muted/50"
+                  >
+                    <span className="font-medium">JMDC お知らせ</span>
+                    <span className="text-blue-600">→</span>
+                  </a>
+                  <a
+                    href="https://www.mdv.co.jp/news/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between rounded-md border p-2 text-sm transition-colors hover:bg-muted/50"
+                  >
+                    <span className="font-medium">MDV 新着情報</span>
+                    <span className="text-blue-600">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
