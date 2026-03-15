@@ -40,6 +40,17 @@ export default function Home() {
     (a, b) => b[1] - a[1]
   );
 
+  // Research category counts
+  const categoryCounts = new Map<string, number>();
+  for (const p of papers) {
+    for (const cat of p.research_categories ?? []) {
+      categoryCounts.set(cat, (categoryCounts.get(cat) || 0) + 1);
+    }
+  }
+  const sortedCategoryCounts = [...categoryCounts.entries()].sort(
+    (a, b) => b[1] - a[1]
+  );
+
   // Recent news (top 5)
   const recentNews = news.slice(0, 5);
 
@@ -176,6 +187,23 @@ export default function Home() {
                 {sortedDesignCounts.map(([design, count]) => (
                   <Badge key={design} variant="secondary" className="text-sm">
                     {design}
+                    <span className="ml-1 text-muted-foreground">({count})</span>
+                  </Badge>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Research categories */}
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base">研究カテゴリ別</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-wrap gap-2">
+                {sortedCategoryCounts.map(([cat, count]) => (
+                  <Badge key={cat} variant="outline" className="text-sm">
+                    {cat}
                     <span className="ml-1 text-muted-foreground">({count})</span>
                   </Badge>
                 ))}
