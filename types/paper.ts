@@ -21,4 +21,6 @@ export interface Paper {
   research_categories: string[];
   auto_detected: boolean;
   collected_at: string;
+  medline_status?: string;
+  last_updated?: string;
 }
