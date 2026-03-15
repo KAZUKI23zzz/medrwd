@@ -10,7 +10,7 @@ import * as path from "path";
 
 interface NewsItem {
   id: string;
-  source: "PMDA" | "medRxiv";
+  source: "PMDA";
   title: string;
   url: string;
   published_at: string;
@@ -24,16 +24,12 @@ const RSS_FEEDS: {
 }[] = [
   {
     source: "PMDA",
-    url: "https://www.pmda.go.jp/rss_001.xml",
+    url: "https://www.pmda.go.jp/rss_015.xml",
     idPrefix: "pmda",
   },
   // MHLW RSS は利用規約で再配布が明示的に禁止されているため除外
-  // https://www.mhlw.go.jp/rss/index.html
-  {
-    source: "medRxiv",
-    url: "https://connect.medrxiv.org/medrxiv_xml.php?subject=Health+Policy",
-    idPrefix: "medrxiv",
-  },
+  // medRxiv は論文プレプリントでありニュースとしては不適切なため除外
+  // JMDC / MDV は利用規約上スクレイピング・RSS再配布のリスクがあるためリンクのみ掲載
 ];
 
 // Simple XML tag extraction (no external deps)
@@ -257,9 +253,8 @@ async function main() {
   for (const feed of RSS_FEEDS) {
     const items = await fetchRSS(feed.url, feed.source, feed.idPrefix);
 
-    // PMDA is always RWD-relevant; MHLW and medRxiv need keyword filtering
-    const filtered =
-      feed.source === "PMDA" ? items : filterByRWDRelevance(items);
+    // PMDA rss_015.xml は全カテゴリ統合フィードのためRWDキーワードフィルタを適用
+    const filtered = filterByRWDRelevance(items);
 
     // Only add new items
     const fresh = filtered.filter((item) => !existingIds.has(item.id));

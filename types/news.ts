@@ -1,6 +1,6 @@
 export interface NewsItem {
   id: string;
-  source: "PMDA" | "medRxiv";
+  source: "PMDA";
   title: string;
   url: string;
   published_at: string;

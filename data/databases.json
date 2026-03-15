@@ -91,7 +91,7 @@
     "coverage": "約5,000万人（急性期病院約480施設）",
     "data_start": 2008,
     "access": "有償契約（共同研究・データ提供）",
-    "publications_url": "https://en.mdv.co.jp/ebm/publication/",
+    "publications_url": "https://www.mdv.co.jp/ebm/case/",
     "strengths": ["大規模な急性期病院データ", "DPCの詳細情報が含まれる", "500以上の論文実績"],
     "limitations": ["急性期病院中心（クリニック・慢性期は少ない）", "外来データは限定的", "健診データなし"],
     "linkable_with": [],
