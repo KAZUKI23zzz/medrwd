@@ -75,7 +75,7 @@
     "coverage": "約2,000万人（組合健保加入者＋被扶養者）",
     "data_start": 2005,
     "access": "有償契約（共同研究・データ提供）",
-    "publications_url": "https://www.phm-jmdc.com/publications",
+    "publications_url": "https://www.phm-jmdc.com/",
     "strengths": ["家族紐づけ（被扶養者）が可能", "健診データ（健康診断結果）が充実", "長期追跡が可能（ID連結）", "出生から追跡可能な子のデータ"],
     "limitations": ["就労世代中心（65歳以上は少ない）", "組合健保のみ（国保・後期高齢者は含まない）", "入院の詳細情報は限定的"],
     "linkable_with": [],
@@ -91,26 +91,10 @@
     "coverage": "約5,000万人（急性期病院約480施設）",
     "data_start": 2008,
     "access": "有償契約（共同研究・データ提供）",
-    "publications_url": "https://www.mdv.co.jp/ebm/case/",
+    "publications_url": "https://www.mdv.co.jp/ebm/",
     "strengths": ["大規模な急性期病院データ", "DPCの詳細情報が含まれる", "500以上の論文実績"],
     "limitations": ["急性期病院中心（クリニック・慢性期は少ない）", "外来データは限定的", "健診データなし"],
     "linkable_with": [],
     "best_for": ["入院医療の分析", "手術・処置の評価", "急性期疾患の疫学研究"]
-  },
-  {
-    "slug": "rwdco",
-    "name": "RWD社 EMRデータベース",
-    "name_en": "Real World Data Co. EMR Database",
-    "type": "commercial",
-    "administrator": "リアルワールドデータ株式会社",
-    "data_types": ["電子カルテ（EMR）", "DPCデータ"],
-    "coverage": "100以上の医療機関のEMRデータ",
-    "data_start": 2010,
-    "access": "有償契約",
-    "publications_url": "https://rwdata.co.jp/news/category/%e8%ab%96%e6%96%87/",
-    "strengths": ["電子カルテベースで臨床詳細が豊富", "検査値・バイタルサインが含まれる", "カスタムアウトカム収集（HYBPMS）が可能"],
-    "limitations": ["参加医療機関に依存", "全国代表性に限界"],
-    "linkable_with": [],
-    "best_for": ["臨床アウトカム研究", "検査値ベースの研究", "特定疾患のレジストリ的研究"]
   }
 ]
