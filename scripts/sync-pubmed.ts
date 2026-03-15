@@ -101,10 +101,22 @@ async function searchPubMed(
   return data.esearchresult.idlist;
 }
 
+// Decode HTML/XML numeric character references (&#x2009; → thin space, &#169; → ©, etc.)
+function decodeHtmlEntities(text: string): string {
+  return text
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, hex) => String.fromCodePoint(parseInt(hex, 16)))
+    .replace(/&#(\d+);/g, (_, dec) => String.fromCodePoint(parseInt(dec, 10)))
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'");
+}
+
 // Simple XML parser for PubMed efetch results
 function extractTag(xml: string, tag: string): string {
   const match = xml.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`));
-  return match ? match[1].replace(/<[^>]+>/g, "").trim() : "";
+  return match ? decodeHtmlEntities(match[1].replace(/<[^>]+>/g, "").trim()) : "";
 }
 
 function extractAllTags(xml: string, tag: string): string[] {
@@ -112,7 +124,7 @@ function extractAllTags(xml: string, tag: string): string[] {
   const re = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)</${tag}>`, "g");
   let match;
   while ((match = re.exec(xml)) !== null) {
-    results.push(match[1].replace(/<[^>]+>/g, "").trim());
+    results.push(decodeHtmlEntities(match[1].replace(/<[^>]+>/g, "").trim()));
   }
   return results;
 }
