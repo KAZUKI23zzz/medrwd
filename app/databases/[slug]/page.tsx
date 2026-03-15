@@ -113,7 +113,7 @@ export default async function DatabaseDetailPage({
                 rel="noopener noreferrer"
                 className="ml-3 text-sm text-blue-600 hover:underline"
               >
-                公式論文一覧 →
+                データベース事業 →
               </a>
             )}
           </div>

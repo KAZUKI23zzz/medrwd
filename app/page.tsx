@@ -214,7 +214,7 @@ export default function Home() {
           {/* Commercial DB links */}
           <Card>
             <CardHeader>
-              <CardTitle className="text-base">商業DB各社の論文一覧</CardTitle>
+              <CardTitle className="text-base">商業DB各社のデータベース事業</CardTitle>
             </CardHeader>
             <CardContent className="space-y-2">
               {commercialLinks.map((link) => (
