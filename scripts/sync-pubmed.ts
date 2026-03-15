@@ -19,7 +19,9 @@ interface Paper {
   pubmed_id: string;
   doi: string | null;
   title: string;
+  title_ja?: string;
   abstract: string;
+  abstract_ja?: string;
   authors: string[];
   journal: string;
   journal_issn: string | null;
@@ -240,6 +242,43 @@ async function getJournalMetrics(issn: string): Promise<{ impact_factor: number 
   }
 }
 
+// --- Translation (Google Translate free endpoint) ---
+async function translateText(text: string): Promise<string> {
+  if (!text || text.trim().length === 0) return "";
+
+  const MAX_CHARS = 4500;
+  if (text.length > MAX_CHARS) {
+    const chunks: string[] = [];
+    let remaining = text;
+    while (remaining.length > 0) {
+      if (remaining.length <= MAX_CHARS) {
+        chunks.push(remaining);
+        break;
+      }
+      let idx = remaining.lastIndexOf(". ", MAX_CHARS);
+      if (idx === -1 || idx < MAX_CHARS * 0.5) idx = remaining.lastIndexOf(" ", MAX_CHARS);
+      if (idx === -1) idx = MAX_CHARS;
+      chunks.push(remaining.slice(0, idx + 1));
+      remaining = remaining.slice(idx + 1);
+    }
+    const translated: string[] = [];
+    for (const chunk of chunks) {
+      translated.push(await translateChunk(chunk));
+      await new Promise((r) => setTimeout(r, 500));
+    }
+    return translated.join("");
+  }
+  return translateChunk(text);
+}
+
+async function translateChunk(text: string): Promise<string> {
+  const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ja&dt=t&q=${encodeURIComponent(text)}`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Translation API error: ${res.status}`);
+  const data = (await res.json()) as [Array<[string, string]>];
+  return data[0].map((seg) => seg[0]).join("");
+}
+
 // --- Main ---
 async function main() {
   const dataDir = path.join(process.cwd(), "data");
@@ -314,8 +353,24 @@ async function main() {
       metrics = await getJournalMetrics(article.journal_issn);
     }
 
+    // Translate title and abstract to Japanese
+    let title_ja: string | undefined;
+    let abstract_ja: string | undefined;
+    try {
+      title_ja = await translateText(article.title);
+      await new Promise((r) => setTimeout(r, 300));
+      if (article.abstract) {
+        abstract_ja = await translateText(article.abstract);
+        await new Promise((r) => setTimeout(r, 300));
+      }
+    } catch (e) {
+      console.warn(`Translation failed for ${article.id}:`, e);
+    }
+
     const paper: Paper = {
       ...article,
+      title_ja,
+      abstract_ja,
       databases_used: detection.databases_used,
       additional_data_sources: detection.additional_data_sources,
       study_design: detection.study_design,

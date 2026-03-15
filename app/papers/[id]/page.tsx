@@ -81,6 +81,11 @@ export default async function PaperDetailPage({
             <span className="text-sm text-muted-foreground">{paper.year}</span>
           </div>
           <CardTitle className="text-xl leading-snug">{paper.title}</CardTitle>
+          {paper.title_ja && (
+            <p className="text-[15px] text-muted-foreground leading-snug">
+              {paper.title_ja}
+            </p>
+          )}
           <p className="text-sm text-muted-foreground">
             {paper.authors.join(", ")}
           </p>
@@ -201,6 +206,16 @@ export default async function PaperDetailPage({
             <p className="whitespace-pre-wrap text-sm leading-relaxed">
               {paper.abstract}
             </p>
+            {paper.abstract_ja && (
+              <>
+                <h3 className="mb-2 mt-4 font-semibold text-muted-foreground">
+                  日本語訳
+                </h3>
+                <p className="whitespace-pre-wrap text-[13px] leading-relaxed text-muted-foreground">
+                  {paper.abstract_ja}
+                </p>
+              </>
+            )}
           </div>
         </CardContent>
       </Card>

@@ -80,7 +80,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
       if (search) {
         const q = search.toLowerCase();
         const haystack =
-          `${p.title} ${p.abstract} ${p.authors.join(" ")} ${p.journal} ${p.databases_used.join(" ")} ${p.study_design} ${(p.research_categories ?? []).join(" ")}`.toLowerCase();
+          `${p.title} ${p.title_ja ?? ""} ${p.abstract} ${p.abstract_ja ?? ""} ${p.authors.join(" ")} ${p.journal} ${p.databases_used.join(" ")} ${p.study_design} ${(p.research_categories ?? []).join(" ")}`.toLowerCase();
         if (!haystack.includes(q)) return false;
       }
 
