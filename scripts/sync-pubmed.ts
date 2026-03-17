@@ -82,15 +82,28 @@ const SEARCH_QUERIES = [
   '(NDB OR "National Database" OR DPC OR JADER OR MID-NET OR JMDC OR MDV OR "Medical Data Vision" OR "Japan Medical Data Center") AND Japan AND (claims OR "real world" OR pharmacoepidemiology OR "database study" OR retrospective OR nationwide)',
 ];
 
+async function fetchWithRetry(url: string, maxRetries = 3): Promise<Response> {
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    const res = await fetch(url);
+    if (res.status === 429 && attempt < maxRetries) {
+      const wait = Math.pow(2, attempt + 1) * 1000; // 2s, 4s, 8s
+      console.log(`  Rate limited (429), retrying in ${wait / 1000}s... (attempt ${attempt + 1}/${maxRetries})`);
+      await new Promise((r) => setTimeout(r, wait));
+      continue;
+    }
+    if (!res.ok) throw new Error(`HTTP ${res.status}: ${url}`);
+    return res;
+  }
+  throw new Error(`Max retries exceeded: ${url}`);
+}
+
 async function fetchJSON(url: string): Promise<unknown> {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`HTTP ${res.status}: ${url}`);
+  const res = await fetchWithRetry(url);
   return res.json();
 }
 
 async function fetchText(url: string): Promise<string> {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`HTTP ${res.status}: ${url}`);
+  const res = await fetchWithRetry(url);
   return res.text();
 }
 
@@ -212,9 +225,9 @@ async function fetchPubMedArticles(pmids: string[]): Promise<ReturnType<typeof p
       results.push(parseArticleXML(articleXml));
     }
 
-    // Rate limiting: 3 req/s without API key
+    // Rate limiting: ~1 req/s without API key (conservative to avoid 429)
     if (i + 50 < pmids.length) {
-      await new Promise((r) => setTimeout(r, 400));
+      await new Promise((r) => setTimeout(r, 1000));
     }
   }
   return results;
@@ -395,6 +408,11 @@ async function main() {
     }
   }
   // --- End re-fetch ---
+
+  // Wait before next PubMed API calls to avoid rate limiting
+  if (incompletePapers.length > 0) {
+    await new Promise((r) => setTimeout(r, 2000));
+  }
 
   // Search PubMed for new papers
   const allPmids = new Set<string>();
