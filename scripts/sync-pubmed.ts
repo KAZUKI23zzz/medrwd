@@ -82,15 +82,39 @@ const SEARCH_QUERIES = [
   '(NDB OR "National Database" OR DPC OR JADER OR MID-NET OR JMDC OR MDV OR "Medical Data Vision" OR "Japan Medical Data Center") AND Japan AND (claims OR "real world" OR pharmacoepidemiology OR "database study" OR retrospective OR nationwide)',
 ];
 
-async function fetchJSON(url: string): Promise<unknown> {
+// Centralized rate limiter for PubMed E-utilities (3 req/s without API key)
+let lastPubMedRequestTime = 0;
+const PUBMED_MIN_INTERVAL_MS = 350;
+
+async function pubmedFetch(url: string): Promise<Response> {
+  // Enforce minimum interval between all PubMed requests
+  const elapsed = Date.now() - lastPubMedRequestTime;
+  if (elapsed < PUBMED_MIN_INTERVAL_MS) {
+    await new Promise((r) => setTimeout(r, PUBMED_MIN_INTERVAL_MS - elapsed));
+  }
+  lastPubMedRequestTime = Date.now();
+
   const res = await fetch(url);
+  if (res.status === 429) {
+    // Safety net: wait and retry once if rate-limited despite throttling
+    console.log("  Rate limited (429), waiting 3s before retry...");
+    await new Promise((r) => setTimeout(r, 3000));
+    lastPubMedRequestTime = Date.now();
+    const retry = await fetch(url);
+    if (!retry.ok) throw new Error(`HTTP ${retry.status}: ${url}`);
+    return retry;
+  }
   if (!res.ok) throw new Error(`HTTP ${res.status}: ${url}`);
+  return res;
+}
+
+async function pubmedFetchJSON(url: string): Promise<unknown> {
+  const res = await pubmedFetch(url);
   return res.json();
 }
 
-async function fetchText(url: string): Promise<string> {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`HTTP ${res.status}: ${url}`);
+async function pubmedFetchText(url: string): Promise<string> {
+  const res = await pubmedFetch(url);
   return res.text();
 }
 
@@ -99,7 +123,7 @@ async function searchPubMed(
   days: number = 30
 ): Promise<string[]> {
   const url = `${PUBMED_BASE}/esearch.fcgi?db=pubmed&term=${encodeURIComponent(query)}&reldate=${days}&retmax=100&retmode=json`;
-  const data = (await fetchJSON(url)) as {
+  const data = (await pubmedFetchJSON(url)) as {
     esearchresult: { idlist: string[] };
   };
   return data.esearchresult.idlist;
@@ -204,17 +228,12 @@ async function fetchPubMedArticles(pmids: string[]): Promise<ReturnType<typeof p
   for (let i = 0; i < pmids.length; i += 50) {
     const batch = pmids.slice(i, i + 50);
     const url = `${PUBMED_BASE}/efetch.fcgi?db=pubmed&id=${batch.join(",")}&retmode=xml`;
-    const xml = await fetchText(url);
+    const xml = await pubmedFetchText(url);
 
     // Split into individual articles
     const articles = xml.match(/<PubmedArticle>[\s\S]*?<\/PubmedArticle>/g) || [];
     for (const articleXml of articles) {
       results.push(parseArticleXML(articleXml));
-    }
-
-    // Rate limiting: 3 req/s without API key
-    if (i + 50 < pmids.length) {
-      await new Promise((r) => setTimeout(r, 400));
     }
   }
   return results;
@@ -228,7 +247,9 @@ async function getJournalMetrics(issn: string): Promise<{ impact_factor: number 
 
   try {
     const url = `https://api.openalex.org/sources?filter=issn:${issn}&mailto=rwd-catalog@example.com`;
-    const data = (await fetchJSON(url)) as {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`OpenAlex HTTP ${res.status}`);
+    const data = (await res.json()) as {
       results: {
         summary_stats?: { "2yr_mean_citedness"?: number };
       }[];
