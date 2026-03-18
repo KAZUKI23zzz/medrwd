@@ -44,17 +44,35 @@ npx tsx scripts/translate-papers.ts      # 日本語訳一括付与
 3. **PMDA RSS取得**: rss_015.xml（全カテゴリ統合）→ RWDキーワードフィルタ。
 4. data/に変更があれば git commit & push → Vercel自動リビルド。
 
-## 現在の状態（2026-03-15）
+## 現在の状態（2026-03-18）
 
-**完了済み**: MVP全ページ / 研究カテゴリ分類(7カテゴリ) / 日本語訳併記 / 不完全論文自動更新(MedlineCitation Status活用) / ニュースフィード(PMDA RSS + JMDC・MDV外部リンク) / RWD社削除(JMDC事業譲渡済み)
+**完了済み**: MVP全ページ / 研究カテゴリ分類(7カテゴリ) / 日本語訳併記 / 不完全論文自動更新(MedlineCitation Status活用) / ニュースフィード(PMDA RSS + JMDC・MDV外部リンク) / RWD社削除(JMDC事業譲渡済み) / PubMed APIレート制御修正(PR#8)
 
-**未実装（Phase 2）**: Pagefind全文検索 / SJR CSV取込(正確なQ1-Q4判定) / DB詳細ページ充実 / カテゴリ検出率向上(現在83%)
+**次のマイルストーン（Phase 2: Gemini導入）**:
+- **Gemini 2.0 Flash（無料枠）** を導入し、現在の正規表現+Google Translateを置き換え
+- 1リクエストで **RWD判定・DB検出・研究デザイン・カテゴリ分類・日本語訳** を統合
+- PubMed検索式を広めに変更（現行式A → 式L相当）し、Geminiで精密フィルタリング
+- これにより DB検出率72%・カテゴリ検出率83% の両方を大幅改善見込み
+
+**未実装（Phase 3）**: Pagefind全文検索 / SJR CSV取込(正確なQ1-Q4判定) / DB詳細ページ充実
+
+## 検索式の比較調査（2026-03-18実施）
+
+直近1年の論文で検索式を比較（詳細: `data/query-comparison.xlsx`）：
+
+| 式 | 説明 | ヒット | DB検出率 |
+|----|------|--------|---------|
+| A: 現行 | DB名6種 + Japan + 研究用語 | 373 | 79.1% |
+| J: 改良 | A + Japan[tiab]厳密化 + NOT RCT | 362 | 82.9% |
+| L: 広め | DB名 + RWD用語 + Japan厳密 + NOT RCT | 846 | 35.2% |
+
+**結論**: 検索式だけでは「網羅性 vs 精度」のジレンマを解消できない。広め検索(式L) + AI精密判定 の2段階方式を採用予定。
 
 ## 既知の課題
 
-1. **DB検出率 72%**: `db-keywords.json`のパターン追加で改善可
-2. **カテゴリ検出率 83%**: abstract無し3件は分類不可。残り14件はパターン追加で改善可
-3. **Google Translate無料EP**: レート制限あり(300ms遅延挿入)。将来利用不可の可能性
+1. **DB検出率 72%**: 正規表現の限界。Gemini導入で解消予定
+2. **カテゴリ検出率 83%**: 同上。Gemini導入で解消予定
+3. **Google Translate無料EP**: 非公式EPのため将来停止リスクあり。Gemini翻訳で置換予定
 4. **sync-pubmed.tsの関数重複**: `matchPatterns`等が`db-detector.ts`と重複（`@/`パスエイリアスがスクリプトで使えないため意図的）
 5. **Node.js**: ローカル v25.8.1 / GitHub Actions v22
 
