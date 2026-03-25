@@ -79,7 +79,7 @@ function countPatternMatches(text: string, patterns: string[]): number {
 // --- PubMed API ---
 const PUBMED_BASE = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils";
 const SEARCH_QUERIES = [
-  '(NDB OR "National Database" OR DPC OR JADER OR MID-NET OR JMDC OR MDV OR "Medical Data Vision" OR "Japan Medical Data Center") AND Japan AND (claims OR "real world" OR pharmacoepidemiology OR "database study" OR retrospective OR nationwide)',
+  '((Japan[MeSH] OR Japan[TIAB] OR Japanese[TIAB]) AND ("claims-based"[TIAB] OR "claims based"[TIAB] OR "claims database"[TIAB] OR "claims databases"[TIAB] OR "administrative database"[TIAB] OR "administrative databases"[TIAB] OR "healthcare database"[TIAB] OR "healthcare databases"[TIAB] OR "insurance database"[TIAB] OR "insurance databases"[TIAB] OR "electronic medical record database"[TIAB] OR "electronic medical record databases"[TIAB] OR "electronic health record database"[TIAB] OR "electronic health record databases"[TIAB] OR "routinely collected health data"[MeSH] OR "target trial emulation"[TIAB] OR "JMDC"[TIAB] OR "Japan Medical Data Center"[TIAB] OR "DPC"[TIAB] OR "Diagnosis Procedure Combination"[TIAB] OR "NDB"[TIAB] OR "National Database of Health Insurance Claims"[TIAB] OR "MDV"[TIAB] OR "Medical Data Vision"[TIAB] OR "NCD"[TIAB] OR "National Clinical Database"[TIAB] OR "MID-NET"[TIAB] OR "JADER"[TIAB] OR "Japanese Adverse Drug Event Report database"[TIAB])) NOT ("Clinical Trial"[PT] OR "review"[PT] OR "Meta-Analysis"[PT] OR "randomized controlled trial"[PT])',
 ];
 
 // Centralized rate limiter for PubMed E-utilities (3 req/s without API key)
