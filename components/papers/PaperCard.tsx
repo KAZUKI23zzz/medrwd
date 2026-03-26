@@ -89,6 +89,19 @@ export function PaperCard({ paper }: { paper: Paper }) {
               ))}
             </div>
           )}
+
+          {(paper.analysis_methods ?? []).length > 0 && (
+            <div className="flex flex-wrap items-center gap-1.5">
+              <span className="text-xs font-medium text-muted-foreground">
+                解析手法:
+              </span>
+              {paper.analysis_methods.map((method) => (
+                <Badge key={method} variant="secondary" className="text-xs border-blue-200 bg-blue-50 text-blue-700">
+                  {method}
+                </Badge>
+              ))}
+            </div>
+          )}
         </div>
 
         <div className="flex gap-3 pt-1 text-xs">
