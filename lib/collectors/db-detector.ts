@@ -4,6 +4,7 @@ interface DetectionResult {
   databases_used: string[];
   additional_data_sources: string[];
   study_design: string;
+  analysis_methods: string[];
   research_categories: string[];
 }
 
@@ -24,6 +25,7 @@ function compileEntries(
 
 const compiledDatabases = compileEntries(keywordsData.databases);
 const compiledAdditionalSources = compileEntries(keywordsData.additional_sources);
+const compiledAnalysisMethods = compileEntries(keywordsData.analysis_methods);
 const compiledStudyDesigns = compileEntries(keywordsData.study_designs);
 const compiledCategories = compileEntries(keywordsData.research_categories);
 
@@ -61,6 +63,8 @@ export function detectFromText(
   const databases_used = matchCompiled(text, compiledDatabases);
   const additional_data_sources = matchCompiled(text, compiledAdditionalSources);
 
+  const analysis_methods = matchCompiled(text, compiledAnalysisMethods);
+
   const designs = matchCompiled(text, compiledStudyDesigns);
   const study_design = designs.length > 0 ? designs[0] : "その他";
 
@@ -78,5 +82,5 @@ export function detectFromText(
       ? categoryScores.slice(0, 2).map((c) => c.display)
       : ["その他"];
 
-  return { databases_used, additional_data_sources, study_design, research_categories };
+  return { databases_used, additional_data_sources, study_design, analysis_methods, research_categories };
 }

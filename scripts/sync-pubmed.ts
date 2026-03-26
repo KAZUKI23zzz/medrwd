@@ -30,7 +30,7 @@ interface Paper {
   databases_used: string[];
   additional_data_sources: string[];
   study_design: string;
-  disease_area: string[];
+  analysis_methods: string[];
   mesh_terms: string[];
   impact_factor: number | null;
   sjr_quartile: string | null;
@@ -50,6 +50,7 @@ interface KeywordEntry {
 interface KeywordsData {
   databases: (KeywordEntry & { id: string })[];
   additional_sources: KeywordEntry[];
+  analysis_methods: KeywordEntry[];
   research_categories: KeywordEntry[];
   study_designs: KeywordEntry[];
 }
@@ -214,7 +215,7 @@ function parseArticleXML(articleXml: string): Omit<Paper, "impact_factor" | "sjr
     journal_issn,
     year,
     publication_date,
-    disease_area: [],
+    analysis_methods: [],
     mesh_terms,
     medline_status,
   };
@@ -394,6 +395,7 @@ async function main() {
         existing.databases_used = matchPatterns(detectText, keywords.databases);
         existing.additional_data_sources = matchPatterns(detectText, keywords.additional_sources);
         existing.study_design = matchPatterns(detectText, keywords.study_designs)[0] || "その他";
+        existing.analysis_methods = matchPatterns(detectText, keywords.analysis_methods);
 
         // Re-score categories
         const categoryScores: { display: string; score: number }[] = [];
@@ -446,6 +448,7 @@ async function main() {
         databases_used: [] as string[],
         additional_data_sources: [] as string[],
         study_design: "その他",
+        analysis_methods: [] as string[],
       };
       let research_categories = ["その他"];
 
@@ -455,6 +458,7 @@ async function main() {
           databases_used: matchPatterns(detectText, keywords.databases),
           additional_data_sources: matchPatterns(detectText, keywords.additional_sources),
           study_design: matchPatterns(detectText, keywords.study_designs)[0] || "その他",
+          analysis_methods: matchPatterns(detectText, keywords.analysis_methods),
         };
 
         const categoryScores: { display: string; score: number }[] = [];
@@ -483,12 +487,16 @@ async function main() {
       try {
         title_ja = await translateText(article.title);
         await new Promise((r) => setTimeout(r, 300));
-        if (hasAbstract) {
+      } catch (e) {
+        console.warn(`Title translation failed for ${article.id}:`, e);
+      }
+      if (hasAbstract) {
+        try {
           abstract_ja = await translateText(article.abstract);
           await new Promise((r) => setTimeout(r, 300));
+        } catch (e) {
+          console.warn(`Abstract translation failed for ${article.id}:`, e);
         }
-      } catch (e) {
-        console.warn(`Translation failed for ${article.id}:`, e);
       }
 
       const paper: Paper = {
@@ -498,6 +506,7 @@ async function main() {
         databases_used: detection.databases_used,
         additional_data_sources: detection.additional_data_sources,
         study_design: detection.study_design,
+        analysis_methods: detection.analysis_methods,
         research_categories,
         impact_factor: metrics.impact_factor,
         sjr_quartile: metrics.sjr_quartile,
