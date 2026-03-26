@@ -14,10 +14,27 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://medrwd-f553wm4wi-kazuki23zzzs-projects.vercel.app";
+
 export const metadata: Metadata = {
   title: "医療RWD研究カタログ - 日本の医療リアルワールドデータ研究検索",
   description:
     "日本の医療リアルワールドデータ（RWD）を使った研究を「どのDBで・どんな手法で・何を調べたか」で検索できるカタログサイト",
+  openGraph: {
+    title: "医療RWD研究カタログ",
+    description:
+      "日本の医療RWD研究を「どのDBで・どんな手法で・何を調べたか」で検索できるカタログサイト",
+    url: siteUrl,
+    siteName: "医療RWD研究カタログ",
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "医療RWD研究カタログ",
+    description:
+      "日本の医療RWD研究を「どのDBで・どんな手法で・何を調べたか」で検索できるカタログサイト",
+  },
 };
 
 const navItems = [
