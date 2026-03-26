@@ -14,7 +14,7 @@ export interface Paper {
   databases_used: string[];
   additional_data_sources: string[];
   study_design: string;
-  disease_area: string[];
+  analysis_methods: string[];
   mesh_terms: string[];
   impact_factor: number | null;
   sjr_quartile: string | null;

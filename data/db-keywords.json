@@ -188,6 +188,64 @@
       "display": "患者報告アウトカム・QOL"
     }
   ],
+  "analysis_methods": [
+    {
+      "patterns": ["propensity score", "傾向スコア", "\\bPSM\\b", "PS matching", "PS.adjusted", "propensity.matched", "IPTW", "inverse probability.*(treatment|weighting)"],
+      "display": "傾向スコア (PSM/IPTW)"
+    },
+    {
+      "patterns": ["instrumental variable", "操作変数", "\\bIV\\b.*(analysis|approach|method|estimation)", "Mendelian randomization"],
+      "display": "操作変数法"
+    },
+    {
+      "patterns": ["difference.in.difference", "differences?.in.differences?", "差分の差分"],
+      "display": "差分の差分法 (DID)"
+    },
+    {
+      "patterns": ["regression discontinuity", "回帰不連続", "\\bRDD?\\b.*(design|analysis)"],
+      "display": "回帰不連続デザイン"
+    },
+    {
+      "patterns": ["interrupted time series", "分割時系列", "中断時系列", "segmented regression"],
+      "display": "中断時系列分析 (ITS)"
+    },
+    {
+      "patterns": ["self.controlled case series", "\\bSCCS\\b", "自己対照ケースシリーズ", "self.controlled risk interval"],
+      "display": "自己対照ケースシリーズ (SCCS)"
+    },
+    {
+      "patterns": ["target trial emulation", "emulated trial", "標的試験", "ターゲットトライアル"],
+      "display": "ターゲットトライアルエミュレーション"
+    },
+    {
+      "patterns": ["competing risk", "競合リスク", "Fine.Gray", "subdistribution hazard", "cause.specific hazard"],
+      "display": "競合リスク分析"
+    },
+    {
+      "patterns": ["Cox proportional", "Cox regression", "Cox model", "Cox比例", "proportional hazard"],
+      "display": "Cox比例ハザードモデル"
+    },
+    {
+      "patterns": ["logistic regression", "ロジスティック回帰", "multivariable logistic", "multivariate logistic", "conditional logistic"],
+      "display": "ロジスティック回帰"
+    },
+    {
+      "patterns": ["Kaplan.Meier", "survival analysis", "生存時間分析", "time.to.event", "log.rank test", "survival curve"],
+      "display": "生存時間分析"
+    },
+    {
+      "patterns": ["network meta.analysis", "ネットワークメタ", "indirect comparison", "mixed treatment comparison"],
+      "display": "ネットワークメタアナリシス"
+    },
+    {
+      "patterns": ["machine learning", "deep learning", "random forest", "gradient boosting", "neural network", "\\bXGBoost\\b", "\\bLASSO\\b", "機械学習", "深層学習", "natural language processing", "\\bNLP\\b.*(?:model|method|approach)"],
+      "display": "機械学習・AI"
+    },
+    {
+      "patterns": ["新規使用者?デザイン", "new.user design", "active.comparator.*(design|new.user)", "incident.user", "initiator.*(cohort|design)"],
+      "display": "新規使用者デザイン"
+    }
+  ],
   "study_designs": [
     {
       "patterns": [

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://medrwd-f553wm4wi-kazuki23zzzs-projects.vercel.app/sitemap.xml

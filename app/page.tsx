@@ -51,6 +51,17 @@ export default function Home() {
     (a, b) => b[1] - a[1]
   );
 
+  // Analysis method counts
+  const methodCounts = new Map<string, number>();
+  for (const p of papers) {
+    for (const method of p.analysis_methods ?? []) {
+      methodCounts.set(method, (methodCounts.get(method) || 0) + 1);
+    }
+  }
+  const sortedMethodCounts = [...methodCounts.entries()].sort(
+    (a, b) => b[1] - a[1]
+  );
+
   // Recent news (top 5)
   const recentNews = news.slice(0, 5);
 
@@ -205,6 +216,23 @@ export default function Home() {
                   <Badge key={cat} variant="outline" className="text-sm">
                     {cat}
                     <span className="ml-1 text-muted-foreground">({count})</span>
+                  </Badge>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Analysis methods */}
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base">解析手法別</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-wrap gap-2">
+                {sortedMethodCounts.map(([method, count]) => (
+                  <Badge key={method} variant="secondary" className="text-sm border-blue-200 bg-blue-50 text-blue-700">
+                    {method}
+                    <span className="ml-1 text-blue-400">({count})</span>
                   </Badge>
                 ))}
               </div>

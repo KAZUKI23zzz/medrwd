@@ -100,34 +100,49 @@ async function main() {
 
   let translated = 0;
   let errors = 0;
+  let consecutiveErrors = 0;
+  const SAVE_INTERVAL = 50;
 
   for (const paper of needsTranslation) {
     try {
       // タイトル翻訳
       if (!paper.title_ja && paper.title) {
         paper.title_ja = await translateText(paper.title);
-        await sleep(300);
+        await sleep(500);
       }
 
       // アブストラクト翻訳
       if (!paper.abstract_ja && paper.abstract) {
         paper.abstract_ja = await translateText(paper.abstract);
-        await sleep(300);
+        await sleep(500);
       }
 
       translated++;
+      consecutiveErrors = 0;
       console.log(
         `[${translated}/${needsTranslation.length}] ${paper.id}: ${paper.title_ja?.slice(0, 50)}...`
       );
+
+      // 中間保存（50件ごと）
+      if (translated % SAVE_INTERVAL === 0) {
+        fs.writeFileSync(papersPath, JSON.stringify(papers, null, 2), "utf-8");
+        console.log(`  → Saved progress (${translated} translated so far)`);
+      }
     } catch (e) {
       errors++;
+      consecutiveErrors++;
       console.error(`Error translating ${paper.id}:`, e);
-      // エラーが連続する場合は長めに待つ
-      await sleep(2000);
+
+      if (consecutiveErrors >= 3) {
+        console.error(`\n3 consecutive errors. Saving progress and stopping.`);
+        break;
+      }
+      // エラー後は長めに待つ
+      await sleep(5000);
     }
   }
 
-  // 保存
+  // 最終保存
   fs.writeFileSync(papersPath, JSON.stringify(papers, null, 2), "utf-8");
   console.log(
     `\nDone! Translated: ${translated}, Errors: ${errors}, Total: ${papers.length}`

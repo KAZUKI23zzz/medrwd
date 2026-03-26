@@ -182,6 +182,21 @@ export default async function PaperDetailPage({
                 </div>
               </div>
 
+              {(paper.analysis_methods ?? []).length > 0 && (
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">
+                    解析手法
+                  </p>
+                  <div className="mt-1 flex flex-wrap gap-1.5">
+                    {paper.analysis_methods.map((method) => (
+                      <Badge key={method} variant="secondary" className="border-blue-200 bg-blue-50 text-blue-700">
+                        {method}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {paper.mesh_terms.length > 0 && (
                 <div>
                   <p className="text-sm font-medium text-muted-foreground">
