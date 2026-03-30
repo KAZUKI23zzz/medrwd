@@ -1,5 +1,29 @@
 [
   {
+    "id": "pmda-1pzod04",
+    "source": "PMDA",
+    "title": "[安全]MID-NET（医療情報データベース）を更新しました",
+    "url": "https://www.pmda.go.jp/safety/mid-net/0019.html",
+    "published_at": "2026-03-30T03:00:00.000Z",
+    "collected_at": "2026-03-30T17:44:30.762Z"
+  },
+  {
+    "id": "pmda-1nvo4bq",
+    "source": "PMDA",
+    "title": "[PMDA]医薬品安全性情報の入手・伝達・活用状況等に関する調査結果と望まれる方向の公表について（ニュースリリース）[2.05MB]",
+    "url": "https://www.pmda.go.jp/about-pmda/news-release/0090.pdf",
+    "published_at": "2026-03-25T03:00:00.000Z",
+    "collected_at": "2026-03-30T17:44:30.762Z"
+  },
+  {
+    "id": "pmda-8judkn",
+    "source": "PMDA",
+    "title": "[安全]令和7年度「医療機関等における医薬品安全性情報の入手・伝達・活用状況等に関する調査」の調査結果を掲載しました",
+    "url": "https://www.pmda.go.jp/safety/surveillance-analysis/0010.html",
+    "published_at": "2026-03-25T03:00:00.000Z",
+    "collected_at": "2026-03-30T17:44:30.762Z"
+  },
+  {
     "id": "pmda-1tx9k97",
     "source": "PMDA",
     "title": "[審査]「治験副作用・不具合等報告、治験定期報告に関するFAQ」を更新しました",
