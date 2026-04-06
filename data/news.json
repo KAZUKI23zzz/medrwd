@@ -1,5 +1,29 @@
 [
   {
+    "id": "pmda-1jhkgfl",
+    "source": "PMDA",
+    "title": "[審査][イベント]PMDAシンポジウム「リアルワールドデータを活用した医療機器開発」の開催について（資料掲載）",
+    "url": "https://www.pmda.go.jp/review-services/symposia/0199.html",
+    "published_at": "2026-04-03T03:00:00.000Z",
+    "collected_at": "2026-04-06T17:37:52.594Z"
+  },
+  {
+    "id": "pmda-1i36n8o",
+    "source": "PMDA",
+    "title": "[調達]一般競争入札公告（政府調達）（匿名医療保険等関連情報データベース薬剤疫学解析運用支援（2026年度（令和8年度））",
+    "url": "https://www.pmda.go.jp/procurements/public-bidding/general-competition-government/0228.html",
+    "published_at": "2026-04-01T03:00:00.000Z",
+    "collected_at": "2026-04-06T17:37:52.594Z"
+  },
+  {
+    "id": "pmda-m07tr2",
+    "source": "PMDA",
+    "title": "[健康]医薬品副作用被害救済制度に関する給付額の改定のお知らせ",
+    "url": "https://www.pmda.go.jp/relief-services/adr-sufferers/0007.html",
+    "published_at": "2026-04-01T03:00:00.000Z",
+    "collected_at": "2026-04-06T17:37:52.594Z"
+  },
+  {
     "id": "pmda-1pzod04",
     "source": "PMDA",
     "title": "[安全]MID-NET（医療情報データベース）を更新しました",
