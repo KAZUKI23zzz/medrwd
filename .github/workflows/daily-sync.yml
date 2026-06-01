@@ -1,9 +1,10 @@
 name: Weekly Data Sync
 
 on:
-  schedule:
-    # Run weekly on Monday at 17:00 UTC (02:00 JST)
-    - cron: "0 17 * * 1"
+  # schedule:
+  #   # Run weekly on Monday at 17:00 UTC (02:00 JST)
+  #   - cron: "0 17 * * 1"
+  #   # ↑ 再分類完了まで一時停止中（2026-06-01）。Track 1完了後にコメント解除すること。
   workflow_dispatch: # Allow manual trigger
 
 permissions:
