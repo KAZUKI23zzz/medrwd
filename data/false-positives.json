@@ -1,0 +1,16 @@
+[
+  { "pubmed_id": "42036132", "reason": "マウス研究" },
+  { "pubmed_id": "41780342", "reason": "ウズベキスタンの研究" },
+  { "pubmed_id": "41777420", "reason": "計量書誌学" },
+  { "pubmed_id": "41728845", "reason": "韓国の研究" },
+  { "pubmed_id": "41712447", "reason": "鶏マレック病ウイルス" },
+  { "pubmed_id": "41486034", "reason": "正誤表（原著なし）" },
+  { "pubmed_id": "41622379", "reason": "レター（原著なし）" },
+  { "pubmed_id": "41056024", "reason": "コメンタリー（原著なし）" },
+  { "pubmed_id": "41533061", "reason": "mIBG画像診断研究（NDB = normal database、国保DBではない）" },
+  { "pubmed_id": "41698730", "reason": "住民前向きコホート（LIFE Study）" },
+  { "pubmed_id": "41626537", "reason": "住民前向きコホート（食事調査）" },
+  { "pubmed_id": "41450895", "reason": "6カ国横断研究" },
+  { "pubmed_id": "41431491", "reason": "屋内測位システム研究" },
+  { "pubmed_id": "41414809", "reason": "米国FRIENDレジストリ参照" }
+]

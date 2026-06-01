@@ -31,6 +31,25 @@ cat data/papers.json | python3 -c "import json,sys; d=json.load(sys.stdin); prin
 - 対象: `medline_status` が `Publisher`/`In-Process`/undefined、収集から180日以内、`last_updated`から30日以上経過
 - `MEDLINE` → 完了、`PubMed-not-MEDLINE` → 停止
 
+## 検索式の比較調査（2026-03-18実施）
+
+直近1年の論文で検索式を比較（詳細: `data/query-comparison.xlsx`）：
+
+| 式 | 説明 | ヒット | DB検出率 |
+|----|------|--------|---------|
+| A: 現行 | DB名6種 + Japan + 研究用語 | 373 | 79.1% |
+| J: 改良 | A + Japan[tiab]厳密化 + NOT RCT | 362 | 82.9% |
+| L: 広め | DB名 + RWD用語 + Japan厳密 + NOT RCT | 846 | 35.2% |
+
+**結論**: 検索式だけでは「網羅性 vs 精度」のジレンマを解消できない。広め検索(式L) + AI精密判定 の2段階方式を採用予定。
+
+## 法的リスク評価
+
+| ソース | 方式 | リスク | 根拠 |
+|--------|------|--------|------|
+| PMDA | RSS | 非常に低い | PDL 1.0。出典明記で利用可 |
+| JMDC/MDV | 外部リンクのみ | なし | 利用規約で転載・スクレイピング禁止のため |
+
 ## アーキテクチャ上の設計判断
 
 | 判断 | 理由 |
