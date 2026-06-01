@@ -12,5 +12,8 @@
   { "pubmed_id": "41626537", "reason": "住民前向きコホート（食事調査）" },
   { "pubmed_id": "41450895", "reason": "6カ国横断研究" },
   { "pubmed_id": "41431491", "reason": "屋内測位システム研究" },
-  { "pubmed_id": "41414809", "reason": "米国FRIENDレジストリ参照" }
+  { "pubmed_id": "41414809", "reason": "米国FRIENDレジストリ参照" },
+  { "pubmed_id": "42153175", "reason": "正誤表（Erratum）" },
+  { "pubmed_id": "42178277", "reason": "動物実験（鶏アテローム性動脈硬化症）" },
+  { "pubmed_id": "40366369", "reason": "米国退役軍人省（VA）の研究（日本の研究ではない）" }
 ]
