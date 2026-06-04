@@ -3,7 +3,7 @@
 ## 概要
 
 `data/papers.json` の各論文を、Claude Codeのサブエージェント方式で再分類する。
-分類済みの論文には `haiku_classified: true` フラグが付く（※フラグ名は歴史的経緯。全件完了後に `classified` にリネーム予定）。
+分類済みの論文には `classified: true` フラグが付く。
 
 ## 分類スキーマ（確定版 2026-06-01）
 
@@ -80,7 +80,7 @@
 ```bash
 node -e "
 const papers = require('./data/papers.json');
-const unclassified = papers.filter(p => !p.haiku_classified);
+const unclassified = papers.filter(p => !p.classified);
 const batch = unclassified.slice(0, 20);
 for (const p of batch) {
   console.log(JSON.stringify({
@@ -104,11 +104,11 @@ let merged = 0;
 for (const cls of batch) {
   const paper = papers.find(p => p.pubmed_id === cls.pubmed_id);
   if (!paper) { console.warn('Not found:', cls.pubmed_id); continue; }
-  Object.assign(paper, cls, { haiku_classified: true });
+  Object.assign(paper, cls, { classified: true });
   merged++;
 }
 fs.writeFileSync('data/papers.json', JSON.stringify(papers, null, 2) + '\n');
-const total = papers.filter(p => p.haiku_classified).length;
+const total = papers.filter(p => p.classified).length;
 console.log('Batch merged: ' + merged + '/' + batch.length);
 console.log('Total classified: ' + total + '/' + papers.length + ' | Remaining: ' + (papers.length - total));
 "
@@ -118,5 +118,5 @@ console.log('Total classified: ' + total + '/' + papers.length + ' | Remaining: 
 
 ### 4. 全件完了後
 - `data/false-positives.json` の論文を `data/papers.json` から一括削除
-- `haiku_classified` を `classified` にリネーム
+- `classified` を `classified` にリネーム
 - PRでmainにマージ

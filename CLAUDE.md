@@ -50,6 +50,5 @@ npx tsx scripts/fetch-rss.ts             # RSS取得（手動）
 
 ## 既知の課題
 
-1. **フラグ名リネーム**: `haiku_classified` → `classified`（歴史的経緯による命名）
-2. **Google Translate無料EP**: 非公式のため将来停止リスクあり
-3. **sync-pubmed.tsの関数重複**: `db-detector.ts`と重複（`@/`パスエイリアスがスクリプトで使えないため意図的）
+1. **Google Translate無料EP**: 非公式のため将来停止リスクあり
+2. **sync-pubmed.tsの関数重複**: `db-detector.ts`と重複（`@/`パスエイリアスがスクリプトで使えないため意図的）
