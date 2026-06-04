@@ -38,40 +38,6 @@
     "haiku_classified": true
   },
   {
-    "id": "pmid-42153175",
-    "pubmed_id": "42153175",
-    "doi": "10.37737/ace.24009E",
-    "title": "Erratum to: A new electronic medical record database linked to claims data and discharge abstract data (the RWD database) in Japan: Study design and profile.",
-    "abstract": "[This corrects the article DOI: 10.37737/ace.24009.].",
-    "authors": [
-      "Okumura Y",
-      "Fujiwara T",
-      "Tokumasu H",
-      "Kimura T",
-      "Hinotsu S"
-    ],
-    "journal": "Annals of clinical epidemiology",
-    "journal_issn": "2434-4338",
-    "year": 2026,
-    "publication_date": "2026-05-19",
-    "analysis_methods": [],
-    "mesh_terms": [],
-    "medline_status": "PubMed-not-MEDLINE",
-    "title_ja": "正誤表：日本におけるレセプトデータと退院時要約データに連携した新しい電子カルテデータベース（RWDデータベース）の研究デザインとプロファイル",
-    "abstract_ja": "",
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "その他"
-    ],
-    "impact_factor": 4.14,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-05-25T18:22:08.133Z",
-    "haiku_classified": true
-  },
-  {
     "id": "pmid-42161019",
     "pubmed_id": "42161019",
     "doi": "10.1016/j.resinv.2026.101448",
@@ -494,42 +460,6 @@
     "sjr_quartile": null,
     "auto_detected": true,
     "collected_at": "2026-05-25T18:21:47.641Z",
-    "haiku_classified": true
-  },
-  {
-    "id": "pmid-42178277",
-    "pubmed_id": "42178277",
-    "doi": "10.1292/jvms.25-0596",
-    "title": "Comparative pathological analysis of systemic atherosclerosis in two cases of Japanese bantams infected with Marek's disease virus.",
-    "abstract": "Infection with Marek's disease virus (MDV) primarily causes neurological disorders and lymphomas; however, vascular syndrome rarely occurs. We herein report two cases of Japanese bantams submitted for a pathological examination, with multiple atherosclerotic lesions observed in the muscular arteries throughout the body. In the first case, diffuse proliferative lesions of neoplastic lymphocytes were formed in the spleen and liver and were considered Marek's disease (MD) with vascular syndrome. In contrast, in the second case, no obvious diffuse proliferative lesions of neoplastic lymphocytes were observed. Viral proteins expressed upon MDV infection, such as MDV-EcoRI-Q (Meq) and phosphoprotein 38 (pp38), were detected by immunohistochemical staining, confirming that vascular syndrome can occur with MDV infection, regardless of the presence of diffuse proliferation of neoplastic lymphocytes characteristic of MD. In addition, it was confirmed that MDV-infected lymphocytes infiltrated the arterial lesions, and viral proteins were observed in the smooth muscle cells of the arterial lesions, suggesting that the infected lymphocytes may be transporting MDV to the arterial lesion sites.",
-    "authors": [
-      "Okano M",
-      "Kurokawa A",
-      "Tsutsumi H",
-      "Harada T",
-      "Kishimoto T",
-      "Daigaku M",
-      "Nibe K"
-    ],
-    "journal": "The Journal of veterinary medical science",
-    "journal_issn": "1347-7439",
-    "year": 2026,
-    "publication_date": "2026-05-24",
-    "analysis_methods": [],
-    "mesh_terms": [],
-    "medline_status": "Publisher",
-    "title_ja": "マレック病ウイルスに感染した矮鶏2症例における全身性動脈硬化の比較病理学的分析",
-    "abstract_ja": "",
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "その他"
-    ],
-    "impact_factor": 0.75,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-05-25T18:21:44.783Z",
     "haiku_classified": true
   },
   {
@@ -2625,38 +2555,6 @@
     "sjr_quartile": null,
     "auto_detected": true,
     "collected_at": "2026-04-27T18:00:41.422Z",
-    "last_updated": "2026-05-11T18:50:56.857Z",
-    "haiku_classified": true
-  },
-  {
-    "id": "pmid-42036132",
-    "pubmed_id": "42036132",
-    "doi": "10.30802/AALAS-JAALAS-25-131",
-    "title": "Preparation of Pseudopregnant Recipient Females Using Female Mice (Mus musculus) Showing Nonestrous Signs: Investigation of a Unique Approach Based on the Whitten Effect.",
-    "abstract": "Availability of pseudopregnant recipient females is an essential component of embryo transfer in mice. However, conventional methods for sorting females based on estrous signs (proestrus or estrus) require maintaining a large stock of mice, thereby presenting challenges for animal welfare. Furthermore, these large numbers of female mice are often maintained in group housing due to space constraints; and this can induce the Lee-Boot effect, leading to decreased preparation efficiency. Therefore, this study examined a method for preparing pseudopregnant recipient females using mice showing nonestrous signs through a unique approach based on the Whitten effect. Female ICR mice exhibiting metestrus or diestrus characteristics were deliberately sorted and housed with vasectomized males for 3 consecutive days. The Lee-Boot effect was induced through group housing to increase the proportion of females showing nonestrous signs, followed by Whitten effect induction aimed at achieving successful copulation on day 3. Results demonstrated copulation success rates of 74.4% (CLEA Japan, n = 500) and 77.0% (Japan SLC, n = 200) on day 3, significantly higher than random mating controls during the same period (53.5%, Japan SLC, n = 101; December to May). Subsequent embryo transfers achieved high pregnancy rates of 93.1% and 89.6%, respectively. This approach demonstrated the feasibility of using mice showing nonestrous signs, previously overlooked in conventional methods, for preparing pseudopregnant recipient females. When combined with conventional methods, this approach expands the range of mice available for mating and potentially enables more efficient production of pseudopregnant recipient females while minimizing the total number of female mice required. This advancement aligns with the Replacement, Reduction, and Refinement (3Rs) principles of animal experimentation, particularly the reduction principle, and provides a practical strategy for laboratories seeking to perform embryo transfer procedures with smaller mouse numbers.",
-    "authors": [
-      "Noguchi Y",
-      "Watanabe E"
-    ],
-    "journal": "Journal of the American Association for Laboratory Animal Science : JAALAS",
-    "journal_issn": "2769-6677",
-    "year": 2026,
-    "publication_date": "2026-04-26",
-    "analysis_methods": [],
-    "mesh_terms": [],
-    "medline_status": "Publisher",
-    "title_ja": "非発情徴候を示すマウスを用いた偽妊娠受容雌の作製：ホイッテン効果に基づくユニークなアプローチの検討",
-    "abstract_ja": "本研究は、マウス胚移植に必要な偽妊娠受容雌の作製において、非発情期のマウスをホイッテン効果を利用して活用する方法を検討した。交尾成功率は74-77%と対照群より有意に高く、胚移植後の妊娠率も90-93%と良好であった。3Rsの原則に適合する効率的手法が示された。",
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "その他"
-    ],
-    "impact_factor": 0.56,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-04-27T18:00:44.290Z",
     "last_updated": "2026-05-11T18:50:56.857Z",
     "haiku_classified": true
   },
@@ -9352,60 +9250,6 @@
     "haiku_classified": true
   },
   {
-    "id": "pmid-41780342",
-    "pubmed_id": "41780342",
-    "doi": "10.1016/j.puhe.2026.106217",
-    "title": "Analysis of adult non-communicable disease (NCD) screening data in Uzbekistan using the UZ-SPEED NCD tool.",
-    "abstract": "To assess cardiovascular disease (CVD) risk among adults in Uzbekistan using the UZ-SPEED non-communicable disease (NCD) screening tool and to examine its associations with modifiable risk factors. Pilot study. This study was conducted from June to July 2024 and examined a convenience sample of 1735 adults aged 40 to 74 years in four diverse regions of Uzbekistan. Demographic, behavioral, and clinical data were collected by using an adapted version of the Japanese Surveillance in Post-Extreme Emergencies and Disasters (J-SPEED) - UZ-SPEED NCD tool. CVD risk was assessed using non-laboratory-based and laboratory-based WHO risk charts. Logistic regression analysis with correction for confounding was used to identify factors associated with a high risk of CVD (≥10%). Overall, 19.6% of participants had a high risk of CVD based on non-laboratory variables, and 16.8% had a high risk based on laboratory variables. Alcohol use was strongly associated with the risk of CVD. Unexpectedly, frequent consumption of sugary foods showed inverse associations with CVD risk, likely due to self-reporting bias or the unclearness of the questions. Consumption of fatty foods and obesity was associated with increased risk of CVD. We also identified geographical disparities; participants from Namangan region had a greater risk of CVD. These findings highlight the need for more precise measurement of dietary habits, particularly the consumption of sugary foods, when screening for CVD. The UZ-SPEED NCD tool facilitated the timely collection and analysis of standardized data in a setting with limited resources.",
-    "authors": [
-      "Odilov K",
-      "Chimed-Ochir O",
-      "Yumiya Y",
-      "Murayama H",
-      "Fukunaga A",
-      "Yoshida T",
-      "Nazirkulov O",
-      "Mirzaev U",
-      "Odilova B",
-      "Kubo T"
-    ],
-    "journal": "Public health",
-    "journal_issn": "1476-5616",
-    "year": 2026,
-    "publication_date": "2026-03-04",
-    "mesh_terms": [
-      "Humans",
-      "Middle Aged",
-      "Male",
-      "Female",
-      "Adult",
-      "Aged",
-      "Uzbekistan",
-      "Noncommunicable Diseases",
-      "Mass Screening",
-      "Pilot Projects",
-      "Cardiovascular Diseases",
-      "Risk Factors",
-      "Risk Assessment"
-    ],
-    "medline_status": "MEDLINE",
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "その他"
-    ],
-    "impact_factor": 2.51,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:00:23.520Z",
-    "analysis_methods": [],
-    "title_ja": "UZ-SPEED NCDツールを用いたウズベキスタンの成人NCD検診データ分析",
-    "abstract_ja": "ウズベキスタンの4地域で40-74歳1,735人にJ-SPEEDから適応したUZ-SPEED NCDツールを用いてCVDリスクを評価したパイロット研究。非検査ベースで19.6%、検査ベースで16.8%がCVD高リスクであった。日本のRWD研究ではなく、ツール適用研究である。",
-    "last_updated": "2026-05-11T18:50:56.857Z",
-    "haiku_classified": true
-  },
-  {
     "id": "pmid-41779321",
     "pubmed_id": "41779321",
     "doi": "10.1007/s10198-026-01912-9",
@@ -9440,40 +9284,6 @@
     "title_ja": "日本におけるPD-L1高発現進行NSCLCの1次治療としての免疫チェックポイント阻害薬と白金製剤化学療法の費用対効果分析",
     "abstract_ja": "DPCデータベースの費用データと臨床試験データを用いてMarkovモデルで3種ICI（ペムブロリズマブ、アテゾリズマブ、ニボルマブ+イピリムマブ）の費用対効果を比較した。ペムブロリズマブのICER 13,423 USD/QALYが最も有利で、ニボルマブ+イピリムマブ31,150 USD/QALY、アテゾリズマブ44,281 USD/QALYであった。",
     "last_updated": "2026-05-11T18:50:56.857Z",
-    "haiku_classified": true
-  },
-  {
-    "id": "pmid-41777420",
-    "pubmed_id": "41777420",
-    "doi": "10.1002/fsn3.71539",
-    "title": "Global Research Trends in Dietary Polyphenols for Preventing Non-Communicable Chronic Diseases: A Bibliometric Study.",
-    "abstract": "Dietary polyphenols, a diverse group of plant-derived bioactives, are widely investigated for their potential to prevent non-communicable chronic diseases (NCDs), but the structure and evolution of this research field remain unclear. This bibliometric study analyzed 3280 publications on dietary polyphenols and NCDs retrieved from Web of Science Core Collection, PubMed/MEDLINE, and DOAJ (1998-2024) to characterize temporal growth, global contributions, thematic hotspots, and the underlying journal knowledge base. Annual output rose from 13 papers in 1998 to more than 160 per year since 2016, indicating a transition from early expansion to a mature yet active stage. Research is led by teams in the United States, China, Japan, and Western Europe, with increasing participation from Brazil, India, Iran, and other emerging economies, but limited representation from sub-Saharan Africa. Network and keyword analyses show that the literature is dominated by mechanistic in vitro and animal studies on oxidative stress, inflammation, and signaling pathways, alongside disease-focused themes in cancer and cardiometabolic prevention. Recent hotspots include metabolic syndrome, obesity, high-fat diet models, gut microbiota, and polyphenol-rich dietary patterns, whereas large, long-term human intervention trials remain relatively scarce. This study underscores the need for integrative, human-focused, and globally inclusive research programs that test realistic polyphenol-rich diets on clinically relevant NCD outcomes, and provides a quantitative map to guide priority-setting for future nutrition and chronic disease research.",
-    "authors": [
-      "Huang X",
-      "Kang P",
-      "Chen H",
-      "Li J",
-      "Liu J"
-    ],
-    "journal": "Food science & nutrition",
-    "journal_issn": "2048-7177",
-    "year": 2026,
-    "publication_date": "2026-03-04",
-    "mesh_terms": [],
-    "medline_status": "PubMed-not-MEDLINE",
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "その他"
-    ],
-    "impact_factor": 3.12,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:00:24.827Z",
-    "analysis_methods": [],
-    "title_ja": "非感染性慢性疾患予防のための食事性ポリフェノールに関する世界的研究動向：ビブリオメトリクス研究",
-    "abstract_ja": "Web of Science等から1998-2024年の食事性ポリフェノールとNCD研究3,280件をビブリオメトリクス分析した。年間産出量は1998年13件から2016年以降160件超に増加。米国・中国・日本が主導。酸化ストレス・炎症の機序研究が中心で、大規模ヒト介入試験は不足している。日本のRWD研究ではない。",
     "haiku_classified": true
   },
   {
@@ -10599,46 +10409,6 @@
     "haiku_classified": true
   },
   {
-    "id": "pmid-41728845",
-    "pubmed_id": "41728845",
-    "doi": "10.1097/XCS.0000000000001867",
-    "title": "Nationwide 30-Day Surgical Outcomes in Korea: An Interim Analysis of the Korean Quality Improvement Platform in Surgery.",
-    "abstract": "National surgical registries such as the American College of Surgeons National Surgical Quality Improvement Program and Japan's National Clinical Database have shown that structured, risk-adjusted outcome monitoring improves surgical quality. However, no comparable nationwide registry has been reported in Korea. This interim analysis of the Korean Quality Improvement Platform in Surgery (K-QIPS) included 42,943 cases from 45 hospitals (2013-2023) covering gastric, colorectal, hepatic, pancreatic surgery, and kidney transplantation. Outcomes were 30-day complications, major complications (Clavien-Dindo ≥ III), and mortality. Hierarchical generalized linear mixed models generated risk-adjusted estimates, accounting for patient- and procedure-level factors and stabilizing results for low-volume centers. The 30-day complication, major complication, and mortality rates were 38.7%, 12.7%, and 0.59%, respectively. Mortality was highest after pancreatic surgery (1.17%) and lowest after gastric surgery (0.16%). Pneumonia occurred in 1.74% of cases and surgical site infection (SSI) in 4.0%. Risk-adjusted benchmarking of a representative institution (H037) classified pneumonia (adjusted odds ratio [OR], 0.67) as \"as expected,\" whereas SSI (adjusted OR, 0.15) and mortality (adjusted OR, 0.55) were classified as \"exemplary.\" Multivariable analyses confirmed established risk factors: colorectal surgery and higher wound class predicted SSI, chronic pulmonary disease and emergency surgery predicted pneumonia, and higher American Society of Anesthesiologists class and age predicted mortality. K-QIPS demonstrates the feasibility of a nationwide, risk-adjusted surgical registry in Korea and establishes a benchmark for institutional feedback. As data collection nears completion (target: 219,200 cases), future efforts will focus on subspecialty-specific models, patient-level risk calculators, and integration with AI-driven clinical decision support systems.",
-    "authors": [
-      "Kim HS",
-      "Eom BW",
-      "Kwon OC",
-      "Seo HR",
-      "Song JH",
-      "Lee J",
-      "Lee IS",
-      "Park JW",
-      "Han IW",
-      "Lee WY"
-    ],
-    "journal": "Journal of the American College of Surgeons",
-    "journal_issn": "1879-1190",
-    "year": 2026,
-    "publication_date": "2026-02-23",
-    "mesh_terms": [],
-    "medline_status": "Publisher",
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "その他"
-    ],
-    "impact_factor": 1.33,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:00:28.710Z",
-    "analysis_methods": [],
-    "title_ja": "韓国における全国30日手術成績：K-QIPSの中間分析",
-    "abstract_ja": "韓国の手術品質改善プラットフォーム（K-QIPS）の45病院42,943例（2013-2023年）の中間分析。30日合併症率38.7%、重篤合併症率12.7%、死亡率0.59%であった。日本のNCD等と比較されているが本論文は韓国のレジストリ研究であり、日本のRWD研究ではない。",
-    "last_updated": "2026-05-11T18:50:56.857Z",
-    "haiku_classified": true
-  },
-  {
     "id": "pmid-41728593",
     "pubmed_id": "41728593",
     "doi": "10.3389/fmed.2026.1731378",
@@ -11287,60 +11057,6 @@
     "haiku_classified": true
   },
   {
-    "id": "pmid-41712447",
-    "pubmed_id": "41712447",
-    "doi": "10.1099/jgv.0.002232",
-    "title": "Virulence of Marek's disease virus in Japan is linked to polymorphisms in the meq oncogene.",
-    "abstract": "Marek's disease virus (MDV) causes lymphomas and neurological disorders in chickens. Although vaccination largely controls outbreaks, highly virulent strains continue to emerge. The major MDV-encoded oncoprotein is Meq, functions as a transcription factor. Amino acid polymorphisms in Meq have been reported to influence virulence. Despite routine vaccination, MD still occurs sporadically in Japan. Japanese isolates harbour characteristic Meq polymorphisms, but their impact on MDV virulence remains unclear. We investigated the transcriptional regulation by Meq from Japanese isolates and evaluated the pathogenicity of recombinant MDV (rMDV) encoding Meq from the Japanese isolate Nr-c1. Nr-c1-Meq exhibited reduced transrepression and transactivation on viral gene promoters. An rMDV encoding Nr-c1-Meq (vNr-c1-Meq) induced lower mortality and tumourigenicity than an rMDV encoding Meq from the parental very virulent RB-1B strain (vRB-1B). vNr-c1-Meq did not cause visceral tumours or neurological disorders but resulted in distinct clinical signs, including open-mouth breathing. In lymphoid tissues from vNr-c1-Meq-infected chickens, a lower proportion of CD4+ T cells, the targets of MDV transformation, and lower viral loads were observed than those in vRB-1B-infected chickens. Histopathological examination revealed increased lymphocyte infiltration in bronchus-associated lymphoid tissues (BALT) in the vNr-c1-Meq group. Additionally, flow cytometric analysis showed elevated γδ T-cell proportions, which positively correlated with IFN-γ expression in vNr-c1-Meq-infected chickens and were linked to BALT hyperplasia. In comparison to the vRB-1B, vNr-c1-Meq infection resulted in attenuated disease progression and altered clinical signs. These findings suggest that Meq polymorphisms not only influence MD virulence but also clinical presentation.",
-    "authors": [
-      "Motai Y",
-      "Kurokawa A",
-      "Sato J",
-      "Yamagami S",
-      "Yee Win S",
-      "Horio F",
-      "Saeki H",
-      "Maekawa N",
-      "Okagawa T",
-      "Kaufer BB",
-      "Osterrieder N",
-      "Parcells MS",
-      "Konnai S",
-      "Ohashi K",
-      "Murata S"
-    ],
-    "journal": "The Journal of general virology",
-    "journal_issn": "1465-2099",
-    "year": 2026,
-    "publication_date": "2026-02-19",
-    "mesh_terms": [
-      "Animals",
-      "Chickens",
-      "Marek Disease",
-      "Japan",
-      "Virulence",
-      "Herpesvirus 2, Gallid",
-      "Polymorphism, Genetic",
-      "Oncogene Proteins, Viral",
-      "Poultry Diseases"
-    ],
-    "medline_status": "MEDLINE",
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "その他"
-    ],
-    "impact_factor": 2.8,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:00:31.641Z",
-    "analysis_methods": [],
-    "title_ja": "日本におけるマレック病ウイルスの病原性はmeq癌遺伝子の多型と関連する",
-    "abstract_ja": "マレック病ウイルス（MDV）のMeq癌蛋白質の多型が病原性に与える影響を検討した鶏の実験研究。日本分離株Nr-c1由来Meqを持つ組換えMDVは低い致死率・腫瘍原性を示したが、開口呼吸などの特異的臨床徴候を呈した。γδT細胞の増加とBALT過形成が観察された。ヒト医療RWD研究ではない。",
-    "haiku_classified": true
-  },
-  {
     "id": "pmid-41593741",
     "pubmed_id": "41593741",
     "doi": "10.1186/s40560-026-00855-w",
@@ -11648,60 +11364,6 @@
     "haiku_classified": true
   },
   {
-    "id": "pmid-41698730",
-    "pubmed_id": "41698730",
-    "doi": "10.1136/bmjopen-2025-104102",
-    "title": "Long-term habitual physical activity and risk of mortality and long-term care insurance certification in cancer survivors: a prospective cohort study in the LIFE study, Japan.",
-    "abstract": "This study aimed to investigate the effects of long-term and habitual physical activity on mortality and long-term care insurance (LTCI) certification among cancer survivors using a population database. 5-year retrospective study. 13 Japanese municipalities participated in the Longevity Improvement & Fair Evidence study. Among 471 511 participants who underwent health check-ups, 39 435 met the following eligible criteria: documented in the cancer claims database without a suspected diagnosis and participated in a health check-up at least once in a 12-month period, had no missing exercise data and had already been certified for LTCI. Outcomes were new LTCI certification and all-cause mortality. LTCI certification was assigned by a trained local government official through a systematic process (involving various items-physical function, daily activity function, cognitive function, behavioural disorders, adjustment to social life and daily use of medical services-as well as overall consideration of computer-based and specialist team assessments), and the LTCI severity level correlates with the Barthel index. LTCI certification reflects some impairment in activities of daily living. All-cause mortality was defined based on claims data. Three physical activity categories, 'exercise and walking', 'exercise or walking' and 'no physical activity', were used. Among survivors aged 65-74 years, the 'no physical activity' group had a higher risk of mortality and LTCI certification than the 'exercise and walking' group (adjusted model HR: 1.72, 95% CI 1.52 to 1.94). Among survivors aged ≥75 years, the low physical activity groups had a higher risk of mortality and LTCI certification than the 'exercise and walking' group (adjusted model: 'exercise or walking', HR: 1.51, 95% CI 1.29 to 1.85; 'no physical activity', HR: 1.66, 95% CI 1.43 to 1.92). The effects of physical activity differed according to cancer type. Habitual physical activity had positive effects on cancer survivors. These effects differed according to age and cancer type.",
-    "authors": [
-      "Nakatsuka K",
-      "Ono R",
-      "Maeda M",
-      "Murata F",
-      "Nishimura K",
-      "Fukuda H"
-    ],
-    "journal": "BMJ open",
-    "journal_issn": "2044-6055",
-    "year": 2026,
-    "publication_date": "2026-02-16",
-    "mesh_terms": [
-      "Humans",
-      "Japan",
-      "Male",
-      "Female",
-      "Cancer Survivors",
-      "Exercise",
-      "Aged",
-      "Insurance, Long-Term Care",
-      "Middle Aged",
-      "Retrospective Studies",
-      "Prospective Studies",
-      "Certification",
-      "Activities of Daily Living",
-      "Neoplasms"
-    ],
-    "medline_status": "MEDLINE",
-    "databases_used": [],
-    "additional_data_sources": [
-      "LIFE Study（Longevity Improvement & Fair Evidence）"
-    ],
-    "study_design": "前向きコホート研究",
-    "research_categories": [
-      "治療効果・有効性"
-    ],
-    "impact_factor": 1.88,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:00:32.509Z",
-    "analysis_methods": [
-      "生存時間分析"
-    ],
-    "title_ja": "がんサバイバーにおける長期習慣的身体活動と死亡・介護保険認定リスク：LIFE研究の前向きコホート研究",
-    "abstract_ja": "13自治体参加のLIFE研究で健診受診者471,511人中がんサバイバー39,435人を分析した。65-74歳では「運動なし」群の死亡・介護認定リスクが「運動+歩行」群より高く（HR: 1.72）、75歳以上でも同様の傾向を示した（運動なし: HR 1.66）。身体活動の効果はがん種により異なった。",
-    "haiku_classified": true
-  },
-  {
     "id": "pmid-41694180",
     "pubmed_id": "41694180",
     "doi": "10.3400/avd.oa.25-00109",
@@ -11780,43 +11442,6 @@
       "傾向スコア (PSM/IPTW)",
       "生存時間分析"
     ],
-    "haiku_classified": true
-  },
-  {
-    "id": "pmid-41486034",
-    "pubmed_id": "41486034",
-    "doi": "10.1016/j.ijantimicag.2025.107694",
-    "title": "Corrigendum to \"Impact of antimicrobial resistance measures and the emergence of COVID-19 on antimicrobial use throughout the Japanese population: A retrospective cohort study using a national claims database\" [International Journal of Antimicrobial Agents Volume 67(2026)107667].",
-    "abstract": "",
-    "authors": [
-      "Koizumi R",
-      "Tsuzuki S",
-      "Asai Y",
-      "Aoyagi K",
-      "Ohmagari N"
-    ],
-    "journal": "International journal of antimicrobial agents",
-    "journal_issn": "1872-7913",
-    "year": 2026,
-    "publication_date": "2026-02-15",
-    "mesh_terms": [],
-    "medline_status": "In-Process",
-    "databases_used": [
-      "NDB"
-    ],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "その他"
-    ],
-    "impact_factor": 3.35,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:00:53.085Z",
-    "analysis_methods": [],
-    "title_ja": "「抗微生物薬適正使用対策とCOVID-19の出現が日本の抗菌薬使用に及ぼした影響」への正誤表",
-    "last_updated": "2026-05-11T18:50:56.857Z",
-    "abstract_ja": "全国レセプトデータベースを用いた抗菌薬使用動向研究の正誤表。本文なし。",
     "haiku_classified": true
   },
   {
@@ -14151,68 +13776,6 @@
     "haiku_classified": true
   },
   {
-    "id": "pmid-41626537",
-    "pubmed_id": "41626537",
-    "doi": "10.1017/jns.2025.10075",
-    "title": "Dietary magnesium intake and dementia risk in community-dwelling people aged 40-74 years: an 8-year cohort study.",
-    "abstract": "Dietary magnesium (Mg) is a potentially modifiable factor in preventing dementia, but current evidence supporting this remains insufficient and inconclusive. This study aimed to determine whether dietary Mg is associated with the risk of dementia among middle-aged and older people. Participants of this 8-year cohort study were 13,032 community-dwelling individuals aged 40-74 years. Dietary data were collected using a validated food frequency questionnaire in 2011-2013. Mg intake was adjusted for energy intake using the residual method. The outcome was newly diagnosed dementia determined using Japan's long-term care insurance database. Covariates included demographic characteristics, body size, lifestyles, and disease histories. Cox proportional hazard models were used to determine adjusted hazard ratios (HRs). The mean age of participants was 59.0 years. Dementia occurred in 148 males and 138 females. Lower quartiles of energy-adjusted Mg intake were associated with a higher risk of dementia (P for trend = 0.0410) in males, with the lowest quartile (Q1) having an elevated risk of dementia (HR = 1.73, 95% CI:1.07-2.83) compared to the highest quartile (Q4, reference); however, this association was not found in females. In a subgroup analysis by disease history in males, the HR of Q1 was attenuated in both subgroups; HR was 1.52 (95% CI:0.74-3.11) in those with a disease history and 1.40 (95% CI:0.73-2.69) in those without. In conclusion, low dietary Mg intake is associated with increased dementia risk in middle-aged and older Japanese males. However, this association may be partly attributable to underlying disease history.",
-    "authors": [
-      "Bulycheva I",
-      "Watanabe Y",
-      "Kitamura K",
-      "Kabasawa K",
-      "Saito T",
-      "Takahashi A",
-      "Kobayashi R",
-      "Oshiki R",
-      "Takachi R",
-      "Tsugane S",
-      "Yamazaki O",
-      "Watanabe K",
-      "Nakamura K"
-    ],
-    "journal": "Journal of nutritional science",
-    "journal_issn": "2048-6790",
-    "year": 2026,
-    "publication_date": "2026-02-02",
-    "mesh_terms": [
-      "Humans",
-      "Male",
-      "Female",
-      "Middle Aged",
-      "Magnesium",
-      "Aged",
-      "Dementia",
-      "Adult",
-      "Independent Living",
-      "Japan",
-      "Diet",
-      "Risk Factors",
-      "Cohort Studies",
-      "Proportional Hazards Models",
-      "Energy Intake"
-    ],
-    "medline_status": "MEDLINE",
-    "databases_used": [],
-    "additional_data_sources": [
-      "介護保険データベース"
-    ],
-    "study_design": "前向きコホート研究",
-    "research_categories": [
-      "疾病負荷・自然歴"
-    ],
-    "impact_factor": 1.59,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:00:40.003Z",
-    "analysis_methods": [
-      "生存時間分析"
-    ],
-    "title_ja": "食事性マグネシウム摂取量と地域在住40-74歳の認知症リスク：8年コホート研究",
-    "abstract_ja": "地域在住40-74歳13,032人を食物摂取頻度調査票で評価し介護保険データベースで8年追跡した。男性で低Mg摂取群は認知症リスクが有意に高く（Q1対Q4: HR 1.73）、傾向性も有意であった（P=0.041）。女性では有意な関連なし。男性の関連は基礎疾患歴で一部説明される可能性がある。",
-    "haiku_classified": true
-  },
-  {
     "id": "pmid-41623543",
     "pubmed_id": "41623543",
     "doi": "10.1155/jobe/7923338",
@@ -14317,44 +13880,6 @@
     "medline_status": "MEDLINE",
     "last_updated": "2026-03-23T17:43:49.253Z",
     "analysis_methods": [],
-    "haiku_classified": true
-  },
-  {
-    "id": "pmid-41622379",
-    "pubmed_id": "41622379",
-    "doi": "10.1007/s00774-026-01693-4",
-    "title": "Response to the letter regarding \"Low BMI and postoperative outcomes in elderly hip fracture patients: a Japanese nationwide database study\".",
-    "abstract": "",
-    "authors": [
-      "Mori Y",
-      "Tarasawa K",
-      "Tanaka H",
-      "Kanabuchi R",
-      "Mori N",
-      "Fushimi K",
-      "Aizawa T",
-      "Fujimori K"
-    ],
-    "journal": "Journal of bone and mineral metabolism",
-    "journal_issn": "1435-5604",
-    "year": 2026,
-    "publication_date": "2026-02-01",
-    "mesh_terms": [],
-    "medline_status": "Publisher",
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "その他"
-    ],
-    "impact_factor": 2.32,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:00:40.857Z",
-    "analysis_methods": [],
-    "title_ja": "「高齢大腿骨近位部骨折患者における低BMIと術後転帰」へのレター",
-    "last_updated": "2026-05-11T18:50:56.857Z",
-    "abstract_ja": "PMID 41291336（DPCデータベースを用いた低BMIと大腿骨骨折研究）に対するレター（通信）。本文なし。",
     "haiku_classified": true
   },
   {
@@ -15965,39 +15490,6 @@
     "haiku_classified": true
   },
   {
-    "id": "pmid-41056024",
-    "pubmed_id": "41056024",
-    "doi": "10.1097/JS9.0000000000003572",
-    "title": "Commentary on \"Impact of Child-Pugh score on surgical outcomes after distal gastrectomy and right hemicolectomy: a retrospective study from the Japanese National Clinical Database\".",
-    "abstract": "",
-    "authors": [
-      "Tian D",
-      "Lu X",
-      "Tian H"
-    ],
-    "journal": "International journal of surgery (London, England)",
-    "journal_issn": "1743-9159",
-    "year": 2026,
-    "publication_date": "2026-01-24",
-    "mesh_terms": [],
-    "medline_status": "In-Process",
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "その他"
-    ],
-    "impact_factor": 2.6,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:01:35.736Z",
-    "analysis_methods": [],
-    "title_ja": "「Child-Pughスコアが遠位胃切除・右半結腸切除の手術成績に及ぼす影響：NCD後方視的研究」へのコメンタリー",
-    "last_updated": "2026-05-11T18:50:56.857Z",
-    "abstract_ja": "PMID 40928372（NCDを用いたChild-Pughスコアと消化器がん手術成績の研究）に対するコメンタリー。本文なし。",
-    "haiku_classified": true
-  },
-  {
     "id": "pmid-41577518",
     "pubmed_id": "41577518",
     "doi": "10.1016/j.jos.2025.12.015",
@@ -17004,64 +16496,6 @@
     ],
     "title_ja": "小腸閉塞に対する手術遅延の安全性：全国リアルワールドデータ分析",
     "abstract_ja": "DPCデータベース（2016-2020年）の小腸閉塞手術11,034例を入院-手術間日数で4群に分類した。再手術率・院内死亡率に有意差なし。ただし入院4日以降の手術は腸切除率が有意に高く（OR 1.53-2.19）、14日以降は誤嚥性肺炎リスクも上昇（OR 1.74）。3日以内の早期手術検討が支持される。",
-    "haiku_classified": true
-  },
-  {
-    "id": "pmid-41533061",
-    "pubmed_id": "41533061",
-    "doi": "10.1007/s00259-025-07706-0",
-    "title": "Multicenter development and validation of a probability-based model to diagnose Lewy body disease using ¹²³I-meta-iodobenzylguanidine.",
-    "abstract": "We previously proposed that a probability-based sympathetic 123I-meta-iodobenzylguanidine (mIBG) index (SMILe) could distinguish the presence or absence of Lewy body disease (LBD) based on findings at a single center. However, whether the model would be useful in the real world remained uncertain. Therefore, we updated and evaluated its performance at five Japanese and three European institutions. We compared data from 967 patients with suspected LBD with 62 controls from a normal database (NDB). Of 815 patients with guideline-based diagnoses, 483 had LBD (Parkinson disease [PD] or dementia with Lewy bodies [DLB]) and 332 did not have LBD. Heart-to-mediastinum (H/M) ratios were standardized using a phantom-based method. Logistic regression models included early and late H/M ratios, age, sex, and comorbidities. We assessed diagnostic performance using ROC analysis and cross-validation. The updated model discriminated LBD from other diseases (AUC for early and late H/M, 0.880 0.899, respectively). Age correction of H/M ratios based on the NDB did not improve accuracy. Median early H/M ratios [SMILe probability] were 3.09 [12.8%] for NDB, 2.57 [37.5%] for Alzheimer disease, 1.76 [84.7%] for PD, and 1.62 [89.0%] for DLB, with significantly lower H/M ratios and higher probabilities in PD and DLB compared with controls (p < 0.0001). Late-phase imaging added value mainly in intermediate borderline (30%-70%) situations. Coronary artery disease attenuated the diagnostic performance of SMILe. The probability-based 123I-mIBG model reliably differentiated LBD from other diseases. Standardization among sites supports global applicability and reflects real-world clinical practice.",
-    "authors": [
-      "Nakajima K",
-      "Komatsu J",
-      "Matsumura T",
-      "Orimo S",
-      "Yoshita M",
-      "Frantellizzi V",
-      "De Feo MS",
-      "Greenfinch G",
-      "Thomas A",
-      "Assante R",
-      "Acampa W",
-      "Shirasaki N",
-      "Yokoyama K",
-      "Wakabayashi H",
-      "Noguchi-Shinohara M",
-      "Ono K",
-      "Kinuya S"
-    ],
-    "journal": "European journal of nuclear medicine and molecular imaging",
-    "journal_issn": "1619-7089",
-    "year": 2026,
-    "publication_date": "2026-01-14",
-    "mesh_terms": [
-      "Humans",
-      "Lewy Body Disease",
-      "3-Iodobenzylguanidine",
-      "Male",
-      "Female",
-      "Aged",
-      "Probability",
-      "Aged, 80 and over",
-      "Middle Aged",
-      "Radiopharmaceuticals"
-    ],
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "impact_factor": 3.71,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:02.558Z",
-    "research_categories": [
-      "その他"
-    ],
-    "title_ja": "¹²³I-mIBGを用いたレビー小体病診断のための確率ベースモデルの多施設開発と検証",
-    "abstract_ja": "日本5施設・欧州3施設でmIBG心臓交感神経シンチグラフィによるレビー小体病確率診断モデル（SMILe）を更新・検証した。更新モデルのAUCは0.880-0.899。RWDレセプト研究ではない（「NDB」は正常データベース=対照群であり、国保レセプトDBではない）。",
-    "medline_status": "MEDLINE",
-    "last_updated": "2026-04-27T18:00:16.410Z",
-    "analysis_methods": [],
     "haiku_classified": true
   },
   {
@@ -19187,56 +18621,6 @@
     "haiku_classified": true
   },
   {
-    "id": "pmid-41450895",
-    "pubmed_id": "41450895",
-    "doi": "10.2147/CLEP.S546282",
-    "title": "A Multi-Country Study of the Clinical Course of Extensive-Stage Small Cell Lung Cancer: A Six-Study Analysis of Real-World Treatment Patterns and Outcomes.",
-    "abstract": "Small cell lung cancer (SCLC) is a highly aggressive malignancy with poor prognosis. Studies capturing the impact of recently approved immunotherapies are limited, highlighting a knowledge gap regarding their real-world use and effectiveness.  . We examined data from 29949 patients with extensive-stage (ES)-SCLC across observational studies from the United States, United Kingdom, Spain, Taiwan, South Korea, and Japan to describe the clinical course of ES-SCLC. Data sources included electronic health record databases, registries, and claims data over time periods ranging between 2013 and 2023. Patient characteristics, recent treatment patterns, and real-world overall survival (rwOS) were assessed in each country. The most common first-line (1L) treatment was platinum plus etoposide without anti-PD-L1 agents (59-89%), followed by platinum plus etoposide with anti-PD-L1 agents (9-38%). Second-line (2L) and third-line (3L) treatments varied widely across countries. Median rwOS ranged from 8.1-11.3 months following 1L initiation, 4.8-6.9 months following 2L, and 4.1-5.5 months following 3L. Patients receiving compared to those not receiving 1L anti-PD-L1 therapy showed numerically higher median rwOS following 1L initiation, with no meaningful difference in rwOS following 2L or 3L therapy. In our evaluation of real-world treatment patterns and outcomes among patients with ES-SCLC from six countries, we found that rwOS in 1L, 2L and 3L was consistently poor across countries, despite differences in patient characteristics and treatment patterns. These findings may support the generalizability of clinical evidence across geographies and highlight the need for further research to optimize treatment strategies to improve patient outcomes globally.",
-    "authors": [
-      "Pundole X",
-      "Younan D",
-      "Critchlow CW",
-      "Puntis SR",
-      "Soohoo M",
-      "Anderson ES",
-      "Najdi R",
-      "Horinouchi H",
-      "Calvo V",
-      "Cobo M",
-      "Lopez-Castro R",
-      "Bernabe R",
-      "Cho J",
-      "Desai PA",
-      "Ahn MJ",
-      "Provencio M"
-    ],
-    "journal": "Clinical epidemiology",
-    "journal_issn": "1179-1349",
-    "year": 2025,
-    "publication_date": "2025-12-26",
-    "mesh_terms": [],
-    "medline_status": "PubMed-not-MEDLINE",
-    "databases_used": [],
-    "additional_data_sources": [
-      "多国データ（米国・英国・スペイン・台湾・韓国・日本の電子カルテ、レジストリ、レセプトデータ）"
-    ],
-    "study_design": "その他",
-    "research_categories": [
-      "治療実態・処方パターン",
-      "治療効果・有効性"
-    ],
-    "impact_factor": 3.2,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:00:55.766Z",
-    "analysis_methods": [
-      "生存時間分析"
-    ],
-    "title_ja": "進展型小細胞肺癌の臨床経過に関する多国間研究：リアルワールドの治療パターンとアウトカムの6研究解析",
-    "abstract_ja": "米国・英国・スペイン・台湾・韓国・日本の6カ国29,949例の進展型小細胞肺癌（ES-SCLC）患者のリアルワールドデータを解析した多国間観察研究。一次治療の中心はプラチナ＋エトポシド（59〜89%）で、抗PD-L1併用群では全生存期間が数値的に長かったが、二次・三次治療後の差は明確でなかった。各国間で治療パターンは異なるものの、予後は一貫して不良であった。",
-    "haiku_classified": true
-  },
-  {
     "id": "pmid-41445784",
     "pubmed_id": "41445784",
     "doi": "10.1177/25424823251410102",
@@ -19346,44 +18730,6 @@
     "analysis_methods": [],
     "title_ja": "妊婦に対する漢方薬処方の経時的傾向：日本のDPCデータベースを用いた分析",
     "abstract_ja": "日本のDPC病院の行政データを用いて、2014年から2023年における妊婦への漢方薬処方の経時的傾向を分析した研究。全体の漢方処方割合は12.0%から13.6%へ有意に増加した。2023年時点で当帰芍薬散（2.9%）が最も多く処方され、葛根湯（2.4%）、大建中湯（2.0%）が続いた。大建中湯の処方割合は0.8%から2.0%へ有意に増加した。主に処方されている漢方薬は妊婦への安全性エビデンスが確立されたものであった。",
-    "haiku_classified": true
-  },
-  {
-    "id": "pmid-41431491",
-    "pubmed_id": "41431491",
-    "doi": "10.7759/cureus.97195",
-    "title": "Tracking Day Shift Nurses' Work Patterns Using an Indoor Positioning System in an Internal Medicine Ward at a Japanese University Hospital.",
-    "abstract": "The increasing complexity of medical care and the shortened hospital stays mandated by Japan's Diagnosis Procedure Combination/Per-Diem Payment System (DPC/PDPS) necessitate the objective and efficient analysis of nursing workload. Given that traditional time-motion studies are resource-intensive, the use of an Indoor Positioning System (IPS) offers an unobtrusive and scalable solution for the continuous quantification of nurse activities. This study aims to quantify day-shift nurses' location-based time-use using an IPS and to evaluate how staffing levels and weekday/weekend status relate to concentrated bedside care and total room presence in a DPC/PDPS ward. A prospective time-motion study was conducted in a 51-bed internal medicine ward at a Japanese university hospital for 14 consecutive days between January and February 2025. A total of 153 day shift records were analyzed. Location and duration of stay were measured using smartphones and Bluetooth Low Energy (BLE) beacons. Data were analyzed using Mann-Whitney U tests and Spearman's ρ. Nurses spent the largest proportions of time at the nurses' station (36%) and in patient rooms (30%). The median total patient-room time per nurse was 160.8 minutes (interquartile range (IQR): 111.1-197.2) on weekdays versus 214.5 minutes (147.0-236.2) on weekends (Mann-Whitney U, p = 0.0015). Break-room time was 14.3 minutes (8.3-20.3) on weekdays and 21.8 minutes (12.8-32.0) on weekends (p = 0.0034). At the day level, the number of nurses on duty correlated negatively with the median per-nurse room time (Spearman's ρ = -0.94, p = 7.2 × 10⁻⁷). Per-patient, bedside time (ward-level) was longer on weekdays than weekends (43.16 minutes (41.33-44.95) vs 28.14 minutes (27.08-28.98); Mann-Whitney U, p = 0.0020). The IPS effectively quantified nurse location and workload patterns. The finding that total room presence was shorter while bedside time per patient was longer suggests that higher weekday staffing enables more focused and efficient task allocation. IPS technology demonstrates strong practical utility as a scalable, data-driven tool for objectively evaluating nursing efficiency and guiding staffing policy decisions under Japan's DPC/PDPS system.",
-    "authors": [
-      "Otaki C",
-      "Izumi S",
-      "Fujimoto K",
-      "Inoue K",
-      "Nishikawa M",
-      "Teraoka A",
-      "Saito I"
-    ],
-    "journal": "Cureus",
-    "journal_issn": "2168-8184",
-    "year": 2025,
-    "publication_date": "2025-12-23",
-    "mesh_terms": [],
-    "medline_status": "PubMed-not-MEDLINE",
-    "databases_used": [],
-    "additional_data_sources": [
-      "大学病院内部の屋内測位システム（IPS）データ"
-    ],
-    "study_design": "横断的研究",
-    "research_categories": [
-      "医療資源利用・経済評価"
-    ],
-    "impact_factor": 0.92,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:00:55.769Z",
-    "analysis_methods": [],
-    "title_ja": "日本の大学病院内科病棟における屋内測位システムを用いた日勤看護師の業務パターンの追跡",
-    "abstract_ja": "日本の大学病院内科病棟（51床）において、屋内測位システム（IPS）を用いて日勤看護師の位置ベースの時間利用を定量化した前向き時間動作研究。14日間連続で153件の日勤記録を分析し、看護師はナースステーション（36%）と病室（30%）で最も多くの時間を費やしていた。平日と週末で病室滞在時間に差があり、勤務看護師数と一人当たりの病室滞在時間に負の相関が認められた。IPSは看護業務効率の客観的評価ツールとして有用性を示した。",
     "haiku_classified": true
   },
   {
@@ -20047,65 +19393,6 @@
     "medline_status": "MEDLINE",
     "last_updated": "2026-03-23T17:43:49.253Z",
     "analysis_methods": [],
-    "haiku_classified": true
-  },
-  {
-    "id": "pmid-41414809",
-    "pubmed_id": "41414809",
-    "doi": "10.1111/cpf.70040",
-    "title": "Comparative analyses of predictive equations for peak oxygen uptake in Japanese cardiac rehabilitation patients.",
-    "abstract": "A nonexercise prediction equation for cardiovascular disease (CVD) patients was developed using the Fitness Registry and the Importance of Exercise National Database (FRIEND), which reported improved accuracy in predicting peak oxygen uptake (VO2) in CVD patients. However, racial/ethnic differences have been observed in the predicted peak VO2. The purpose of this study was to evaluate the usefulness of the FRIEND CVD cohort equation in predicting peak VO2 in Japanese cardiac rehabilitation patients. We retrospectively enroled 362 Japanese cardiac rehabilitation patients (phase II-III) who underwent cardiopulmonary exercise testing. We compared the measured peak VO2 with the predicted peak VO2 calculated from three prediction equations: the FRIEND CVD cohort equation, the FRIEND healthy cohort equation, and the Japanese healthy population equation. The measured peak VO2 was 20.9 ± 5.2 mL/kg/min. Bland-Altman analysis revealed that the FRIEND CVD cohort equation had the lowest bias (-2.32 mL/kg/min), while the FRIEND healthy cohort (11.11 mL/kg/min) and the Japanese healthy population equations (3.14 mL/kg/min) showed higher biases. The FRIEND CVD cohort equation had the highest correlation coefficient (r = 0.61), coefficient of determination (R2 = 0.34), and intraclass correlation coefficient (ICC = 0.47) with measured peak VO2 compared to other equations. In Japanese cardiac rehabilitation patients, the FRIEND CVD cohort equation provided more accurate predictions of peak VO2 compared to the equation developed for the Japanese healthy population. However, prediction accuracy remained moderate or lower, indicating limitations for clinical use and the need for CVD-specific equations across different racial and ethnic groups.",
-    "authors": [
-      "Ogura A",
-      "Izawa KP",
-      "Tawa H",
-      "Wada M",
-      "Kanai M",
-      "Kubo I",
-      "Yoshikawa R"
-    ],
-    "journal": "Clinical physiology and functional imaging",
-    "journal_issn": "1475-097X",
-    "year": 2025,
-    "publication_date": "2025-12-19",
-    "mesh_terms": [
-      "Humans",
-      "Male",
-      "Cardiac Rehabilitation",
-      "Female",
-      "Oxygen Consumption",
-      "Retrospective Studies",
-      "Middle Aged",
-      "Japan",
-      "Aged",
-      "Predictive Value of Tests",
-      "Exercise Test",
-      "Reproducibility of Results",
-      "Exercise Tolerance",
-      "Cardiovascular Diseases",
-      "Cardiorespiratory Fitness",
-      "Treatment Outcome",
-      "East Asian People"
-    ],
-    "databases_used": [],
-    "additional_data_sources": [
-      "FRIEND（Fitness Registry and the Importance of Exercise National Database）レジストリ"
-    ],
-    "study_design": "後方視的コホート研究",
-    "impact_factor": 0.95,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-13T09:47:10.131Z",
-    "research_categories": [
-      "方法論・バリデーション"
-    ],
-    "title_ja": "日本の心臓リハビリテーション患者における最大酸素摂取量予測式の比較分析",
-    "abstract_ja": "日本の心臓リハビリテーション患者362例を対象に、心肺運動負荷試験で測定した最大酸素摂取量（VO2）と3つの予測式（FRIEND CVDコホート式、FRIEND健常者式、日本人健常者式）の予測値を比較した後方視的研究。FRIEND CVDコホート式が最もバイアスが小さく（-2.32 mL/kg/min）、相関も最も高かった（r=0.61）が、予測精度は中等度以下であり、異なる人種・民族グループに対するCVD特異的な予測式の必要性が示された。",
-    "medline_status": "MEDLINE",
-    "last_updated": "2026-03-23T17:43:49.253Z",
-    "analysis_methods": [
-      "回帰分析"
-    ],
     "haiku_classified": true
   },
   {
@@ -24866,65 +24153,6 @@
     "haiku_classified": true
   },
   {
-    "id": "pmid-41239501",
-    "pubmed_id": "41239501",
-    "doi": "10.1186/s40779-025-00670-8",
-    "title": "Diverging global incidence trends of early-onset cancers: comparisons with incidence trends of later-onset cancers and mortality trends of early-onset cancers.",
-    "abstract": "The global increase in the incidence of early-onset cancers (defined as cancers diagnosed at 20-49 years old) is a serious public health problem. We investigated 1) whether the incidence trend of early-onset cancers differs from that of later-onset cancers and 2) whether both the incidence and mortality of early-onset cancers have increased concurrently. We utilized age-standardized incidence and mortality rates for early-onset and later-onset cancers diagnosed between 2000 and 2017 from the Cancer Incidence in Five Continents and World Health Organization (WHO) mortality databases. The national obesity prevalence among adults aged 20-49 years was obtained from the National Clinical Database. Using joinpoint regression models, we calculated average annual percentage changes (AAPCs) for cancer incidence and mortality by cancer types and countries. We additionally conducted human development index (HDI)-stratified analyses and assessed the correlation between the obesity prevalence in younger populations and early-onset cancer incidence by country. To investigate the more recent trend of early-onset cancer mortality, we extended our mortality analysis after 2017 for cancer types and countries with statistically significant positive AAPCs in both incidence and mortality of early-onset cancers between 2000 and 2017. Our analysis showed that 10 early-onset cancer types (thyroid cancer, breast cancer, melanoma, uterine cancer, colorectal cancer, kidney cancer, cervical cancer, pancreatic cancer, multiple myeloma, Hodgkin lymphoma) in females and 7 early-onset cancer types (thyroid cancer, kidney cancer, testis cancer, prostate cancer, colorectal cancer, melanoma, leukemia) in males had statistically significant positive AAPCs in at least 10 countries. Among these, the following early-onset cancer types had significantly higher AAPCs than later-onset cancer types in females: colorectal cancer (6 countries; AAPC range: 1.8-3.8%), cervical cancer (6 countries; AAPC range: 1.2-3.3%), pancreatic cancer (5 countries; AAPC range: 2.3-13.0%), and multiple myeloma (5 countries; AAPC range: 3.1-9.8%); in males: prostate cancer (12 countries; AAPC range: 3.9-18.4%), colorectal cancer (8 countries; AAPC range: 1.8-3.2%), and kidney cancer (6 countries; AAPC range: 2.0-6.0%). We observed statistically significant positive AAPCs in both the incidence and mortality of the following early-onset cancer types: uterine cancer (5 countries) and colorectal cancer (3 countries in females and 5 countries in males). The steeper increases in early-onset cancers compared with later-onset cancers were mainly observed in the very high-HDI country group, including early-onset colorectal cancer (AAPC = 2.4%, 95% CI 2.1-2.6 in females; AAPC = 2.0%, 95% CI 1.7-2.4 in males) to later-onset colorectal cancer (AAPC = -0.1%, 95% CI -0.2 to 0 in females; AAPC = -0.2%, 95% CI -0.3 to 0 in males). We observed strong positive correlations between the increasing obesity prevalence and the rising incidence of early-onset obesity-related cancers in several countries, including Australia (7 cancer types), United Kingdom (7 cancer types), Canada (7 cancer types), Republic of Korea (7 cancer types), and USA (6 cancer types) in females and United Kingdom (7 cancer types), Canada (6 cancer types), Australia (5 cancer types), Sweden (5 cancer types), and Republic of Korea (4 cancer types) in males. Although we did not observe an apparent spike after 2017 in many countries, we observed continued increases in the mortality of certain cancer types, such as uterine cancer (Japan, Republic of Korea, United Kingdom, USA, and Ecuador) in females and colorectal cancer (Argentina, Canada, United Kingdom, and USA) in males. The increase in many early-onset cancer types was significantly higher than that of later-onset cancers, and the incidence and mortality of certain early-onset cancer types (such as colorectal cancer) increased simultaneously. Our study highlights global differences in cancer incidence and mortality trends of early-onset and later-onset cancers.",
-    "authors": [
-      "Terashima M",
-      "Nakayama K",
-      "Shirai S",
-      "Ugai S",
-      "Lee HY",
-      "Matsui H",
-      "Mizuno H",
-      "Tanaka S",
-      "Song M",
-      "Sasamoto N",
-      "Kawachi I",
-      "Giovannucci EL",
-      "Ugai T"
-    ],
-    "journal": "Military Medical Research",
-    "journal_issn": "2054-9369",
-    "year": 2025,
-    "publication_date": "2025-11-15",
-    "mesh_terms": [
-      "Humans",
-      "Incidence",
-      "Female",
-      "Neoplasms",
-      "Male",
-      "Adult",
-      "Middle Aged",
-      "Age of Onset",
-      "Global Health",
-      "Mortality"
-    ],
-    "medline_status": "MEDLINE",
-    "databases_used": [],
-    "additional_data_sources": [
-      "Cancer Incidence in Five Continents",
-      "WHO死亡データベース",
-      "NCD（肥満有病率のみ）"
-    ],
-    "study_design": "その他",
-    "research_categories": [
-      "疾病負荷・自然歴"
-    ],
-    "impact_factor": 10.09,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:01:13.820Z",
-    "analysis_methods": [
-      "回帰分析"
-    ],
-    "title_ja": "若年発症がんの世界的発生率の乖離する動向：晩期発症がんの発生率動向および若年発症がんの死亡率動向との比較",
-    "abstract_ja": "2000-2017年のCancer Incidence in Five ContinentsとWHO死亡データベースを用いて、若年発症がん（20-49歳）と晩期発症がんの発生率・死亡率の動向を国際比較した。女性では大腸癌・子宮頸癌・膵臓癌・多発性骨髄腫、男性では前立腺癌・大腸癌・腎臓癌で若年発症が晩期発症より有意に急増していた。肥満有病率との正の相関も認められ、若年発症がんの増加は超高HDI国群で顕著であった。",
-    "haiku_classified": true
-  },
-  {
     "id": "pmid-41235410",
     "pubmed_id": "41235410",
     "doi": "10.1192/bjo.2025.10903",
@@ -26046,60 +25274,6 @@
     ],
     "title_ja": "GLIM基準による栄養不良と急性期病院における短期死亡率：全国規模のレセプトベース過去コホート研究",
     "abstract_ja": "JMDCが提供するDPCデータベースを用い、2024年6-8月に入院した成人174,439人を対象にGLIM基準による栄養評価と死亡率の関連を検討した。栄養不良と判定された患者は30日死亡率（HR=1.46）および60日死亡率（HR=1.46）が有意に高かった。GLIM評価が未実施・不完全な患者も死亡リスクが高く、GLIM基準が日常診療でのリスク層別化に有用であることが示された。",
-    "haiku_classified": true
-  },
-  {
-    "id": "pmid-40366369",
-    "pubmed_id": "40366369",
-    "doi": "10.1093/milmed/usaf192",
-    "title": "Beyond Aggregated Race and Ethnicity Codes: An Examination of Additional Methods to Identify Asian American and Native Hawaiian and Other Pacific Islander Veteran Subgroups in Administrative Databases.",
-    "abstract": "Veterans who identify either as Asian American or as Native Hawaiian and Other Pacific Islander (NHPI) are growing (in percentage points) more rapidly than veterans of other racial groups. Substantial variation in COVID-19 death rates among Americans of Asian and NHPI ethnic origins underscored within-Asian and-NHPI health disparities-disparities that healthcare systems need to identify and measure. Yet healthcare utilization data within the U.S. Department of Veterans Affairs (VA) aggregates Asian American and NHPI groups, making it challenging to distinguish VA patients by subgroup membership and hampering efforts to identify subgroup variations. We piloted the combined use of 2 administrative data sources-the VA Corporate Data Warehouse (CDW) and DaVINCI, derived from the U.S. DoD Military Health System-to identify Asian American and NHPI VA-enrolled veterans. Our sample consisted of individuals within CDW whose fiscal year (FY) 2022 records included a veteran flag and non-missing values for race and ethnicity. We examined all variables related to race and ethnicity; however, we primarily used CDW's race variable, which categorized individuals as Asian, NHPI, White, Black, and/or American Indian/Alaska Native. We used DaVINCI's ethnicity variable in FY2022 records to identify individuals belonging to Asian subgroups (i.e., Chinese, Filipino, Japanese, Korean, Indian, Vietnamese, and Other Asian) or NHPI subgroups (i.e., Guamanian, Melanesian, Micronesian, Pacific Islander NEC, and Polynesian). We created 4 groups of VA-enrolled veterans by race: (1) Asian, (2) NHPI, (3) both Asian and NHPI, and (4) neither Asian nor NHPI. Within each group, we then calculated counts and proportion of individuals by Asian or NHPI ethnic subgroup. The merging of CDW and DaVINCI provided information on 1,300,499 unique veterans. In group (1) (Asian race; n = 38,384), nearly half reported at least one Asian ethnicity. In group (2) (NHPI race; n = 20,282), 15% reported at least one NHPI ethnicity and 16% reported Asian ethnicity. In group (3) (both Asian and NHPI; n = 1,468), 34.3% reported Asian ethnicity and 10% reported NHPI ethnicity. In group (4) (neither Asian nor NHPI; n = 1,240,365), 0.4% reported at least one Asian or NHPI ethnicity. Among VA-enrolled veterans with reported Asian or NHPI race in CDW, 26,166 had additional information from DaVINCI about Asian or NHPI subgroup membership. Our study is the first, to the best of our knowledge, to merge administrative datasets to characterize VA-enrolled veterans of Asian or NHPI race with a corresponding Asian or NHPI ethnicity. Despite incomplete ethnicity data, the merging of CDW race and DaVINCI ethnicity variables (over the use of one or the other) may inform research and quality improvement studies, e.g., by enabling recruitment of vulnerable veterans from diverse ethnic backgrounds. This effort to disaggregate data is key to expanding our knowledge of heterogeneity in the health of veterans in Asian and NHPI communities.",
-    "authors": [
-      "Quach ED",
-      "Ni P",
-      "Zhao S",
-      "Ngo V",
-      "Shimada SL",
-      "Am L",
-      "Chang DJ",
-      "Pimentel CB"
-    ],
-    "journal": "Military medicine",
-    "journal_issn": "1930-613X",
-    "year": 2025,
-    "publication_date": "2025-11-05",
-    "mesh_terms": [
-      "Humans",
-      "Veterans",
-      "United States",
-      "Male",
-      "Female",
-      "Middle Aged",
-      "United States Department of Veterans Affairs",
-      "Databases, Factual",
-      "Native Hawaiian or Pacific Islander",
-      "Aged",
-      "Adult",
-      "Asian American Native Hawaiian and Pacific Islander",
-      "Asian"
-    ],
-    "medline_status": "MEDLINE",
-    "databases_used": [],
-    "additional_data_sources": [
-      "VA Corporate Data Warehouse (CDW)",
-      "DaVINCI (U.S. DoD Military Health System)"
-    ],
-    "study_design": "横断的研究",
-    "research_categories": [
-      "方法論・バリデーション"
-    ],
-    "impact_factor": 0.89,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:02:28.228Z",
-    "analysis_methods": [],
-    "title_ja": "集約された人種・民族コードを超えて：行政データベースにおけるアジア系アメリカ人およびハワイ先住民・太平洋諸島民退役軍人サブグループの追加的同定方法の検討",
-    "abstract_ja": "米国退役軍人省（VA）のCDWとDaVINCI データを統合し、アジア系およびハワイ先住民・太平洋諸島民の退役軍人サブグループを同定する方法を検討した。CDWの人種変数とDaVINCIの民族変数を組み合わせることで、26,166人の追加的なサブグループ情報が得られた。行政データの統合が多様な民族背景を持つ退役軍人の研究に有用であることが示された。",
     "haiku_classified": true
   },
   {
@@ -29881,40 +29055,6 @@
     "haiku_classified": true
   },
   {
-    "id": "pmid-41035360",
-    "pubmed_id": "41035360",
-    "doi": "10.1002/pds.70228",
-    "title": "Comment on \"Association of Quinolone Exposure in the First Trimester of Pregnancy and the Risk of Major Congenital Malformations: A Health Administrative Database Study in Japan\" by Morishita K. Et Al.",
-    "abstract": "",
-    "authors": [
-      "Gungor M",
-      "Kuragi CC",
-      "Karagulle DC",
-      "Kaplan YC"
-    ],
-    "journal": "Pharmacoepidemiology and drug safety",
-    "journal_issn": "1099-1557",
-    "year": 2025,
-    "publication_date": "2025-10-02",
-    "mesh_terms": [],
-    "medline_status": "In-Process",
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "その他（薬剤に限定しない）"
-    ],
-    "impact_factor": 1.56,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:01:37.560Z",
-    "analysis_methods": [],
-    "title_ja": "Morishita Kらの「日本の医療管理データベースを用いた妊娠第1三半期のキノロン曝露と主要先天奇形リスクの関連」へのコメント",
-    "last_updated": "2026-05-11T18:50:56.857Z",
-    "abstract_ja": "",
-    "haiku_classified": true
-  },
-  {
     "id": "pmid-40721169",
     "pubmed_id": "40721169",
     "doi": "10.1016/j.ijid.2025.107997",
@@ -30068,35 +29208,6 @@
     ],
     "title_ja": "SARS-CoV-2の家庭内伝播に対する抗ウイルス治療の比較有効性：行政データを用いた後方視的コホート研究",
     "abstract_ja": "SARS-CoV-2抗ウイルス薬の家庭内二次感染予防効果を検討した後方視的コホート研究。JMDC行政レセプトデータベースを用い、2023年4-8月の夫婦世帯を対象とした。326,827世帯から5,398世帯が選択され、7日以内の二次感染率は21.2%であった。外来抗ウイルス薬3群（モルヌピラビル、エンシトレルビル、ニルマトレルビル/リトナビル）間で伝播率に有意差はなかった。入院患者では伝播率が低い傾向が認められた。",
-    "haiku_classified": true
-  },
-  {
-    "id": "pmid-41017727",
-    "pubmed_id": "41017727",
-    "doi": "10.1002/jmv.70622",
-    "title": "Erratum to \"Effectiveness of Metformin in Preventing Herpes Zoster Among Japanese Patients With Type 2 Diabetes: A Target Trial Emulation\".",
-    "abstract": "",
-    "authors": [],
-    "journal": "Journal of medical virology",
-    "journal_issn": "1096-9071",
-    "year": 2025,
-    "publication_date": "2025-09-30",
-    "mesh_terms": [],
-    "medline_status": "In-Process",
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "その他"
-    ],
-    "impact_factor": 2.85,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:01:38.172Z",
-    "analysis_methods": [],
-    "title_ja": "「日本の2型糖尿病患者における帯状疱疹予防に対するメトホルミンの有効性：ターゲットトライアルエミュレーション」の正誤表",
-    "last_updated": "2026-05-11T18:50:56.857Z",
-    "abstract_ja": "正誤表のため抄録なし。",
     "haiku_classified": true
   },
   {
@@ -35069,43 +34180,6 @@
     "haiku_classified": true
   },
   {
-    "id": "pmid-40776375",
-    "pubmed_id": "40776375",
-    "doi": "10.3233/SHTI251358",
-    "title": "Developing Data Analysis Skills for Local Medical Administration Personnel Using the National Database and Business Intelligence System (Tableau).",
-    "abstract": "Approximately 90% of all medical procedures are covered by medical insurance in Japan. These detailed medical procedures data are recorded in the NDB (National Database of Health Insurance Claims and Specific Health Checkups of Japan) from 2014. In order to develop human resources capable of analyzing data on regional medical issues, Okayama Prefecture received funding from the Ministry of Health, Labor and Welfare (MHLW) and conducted an online training course on the use of NDB and Business Intelligence System (BI) for public health center and prefectural employees. The course was successful, with 20 and 10 online training sessions held in 2023 and 2024, respectively. All teaching materials and training videos are available on the website.",
-    "authors": [
-      "Miyahara T"
-    ],
-    "journal": "Studies in health technology and informatics",
-    "journal_issn": "1879-8365",
-    "year": 2025,
-    "publication_date": "2025-08-08",
-    "mesh_terms": [
-      "Japan",
-      "Databases, Factual",
-      "Humans",
-      "Data Analysis"
-    ],
-    "medline_status": "MEDLINE",
-    "databases_used": [
-      "NDB"
-    ],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "その他（薬剤に限定しない）"
-    ],
-    "impact_factor": 0.68,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:01:55.639Z",
-    "analysis_methods": [],
-    "title_ja": "NDBおよびBIシステム（Tableau）を用いた地域医療行政担当者のデータ分析スキル開発",
-    "abstract_ja": "本報告は、岡山県が厚生労働省の助成を受けて実施した、保健所および県職員向けのNDB・BIシステム活用オンライン研修について述べたものである。2023年に20回、2024年に10回のオンライン研修が実施され、すべての教材・研修動画がウェブサイトで公開されている。地域の医療課題に関するデータ分析が可能な人材育成を目的としたものである。",
-    "haiku_classified": true
-  },
-  {
     "id": "pmid-40776316",
     "pubmed_id": "40776316",
     "doi": "10.3233/SHTI251299",
@@ -39462,42 +38536,6 @@
     "haiku_classified": true
   },
   {
-    "id": "pmid-40531909",
-    "pubmed_id": "40531909",
-    "doi": "10.1371/journal.pgph.0004764",
-    "title": "Effects of Ramadan on clinical visits at a primary health center in a Rohingya refugee camp in Bangladesh.",
-    "abstract": "In 2017, hundreds of thousands of Rohingya fled Myanmar to refugee camps in Cox's Bazar in southeastern Bangladesh. Peace Winds Japan and Dhaka Community Hospital Trust have jointly operated a primary health center (PHC) at Camp 14 in this region since 2018. Our objective was to determine the effect of Ramadan on clinical visits at this PHC during 2020. We conducted a retrospective analysis of patient data, including diagnoses and use of medications, by review of medical records from January to December 2020. We compared the percentage of visits for five health events (acute respiratory infection [ARI], non-communicable disease [NCD], gastritis, female related issues, and injury) for three consecutive 31-day periods: before Ramadan period (BR-period), Ramadan period, and after Ramadan period (AR-period). There were 11,286 PHC visits during 2020. The rate of new patient visits was significantly lower during Ramadan than during the BR-period (aOR: 0.447; 95%CI: 0.356, 0.561; P < 0.001). The three periods had no significant differences in mean patient age, patient sex, or surgical procedures. The most noteworthy differences were fewer visits for NCD during Ramadan than during the BR-period (OR: 0.461; 95%CI: 0.307, 0.693; P < 0.0004); more visits for gastritis during Ramadan than during the BR-period (OR: 1.246; 95%CI: 1.106,1.404; P = 0.0019); and more visits for ARI during Ramadan than during the AR-period (aOR: 1.842; 95%CI: 1.567, 2.164, P < 0.0001). The overall decrease in PHC visits during Ramadan relative to the BR-period may be because these refugees devoted more time to prayer and associated religious practices during Ramadan, and therefore had less time available for visiting the PHC. The sharp decline in PHC visits for NCD and several other health events during Ramadan relative to the BR-period highlights the need to provide improved care for refugees during this period.",
-    "authors": [
-      "Sakata T",
-      "Chimed-Ochir O",
-      "Ibne Hasan MOS",
-      "Inaba M",
-      "Kamiya Y",
-      "Yumiya Y",
-      "Kubo T"
-    ],
-    "journal": "PLOS global public health",
-    "journal_issn": "2767-3375",
-    "year": 2025,
-    "publication_date": "2025-06-20",
-    "mesh_terms": [],
-    "medline_status": "PubMed-not-MEDLINE",
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "",
-    "research_categories": [],
-    "impact_factor": 2.41,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:02:18.452Z",
-    "analysis_methods": [],
-    "title_ja": "",
-    "abstract_ja": "",
-    "false_positive": true,
-    "false_positive_reason": "バングラデシュのロヒンギャ難民キャンプにおける診療所データの分析であり、日本のRWDデータベース研究ではない",
-    "haiku_classified": true
-  },
-  {
     "id": "pmid-40533183",
     "pubmed_id": "40533183",
     "doi": "10.1136/tc-2025-059331",
@@ -42067,54 +41105,6 @@
     "analysis_methods": [],
     "title_ja": "調剤レセプトデータベースを用いたDPP-4阻害薬関連消化器症状の評価",
     "abstract_ja": "国内チェーン薬局の調剤レセプトデータベース（2018-2022年）を用いて、処方順序対称分析（PSSA）によりDPP-4阻害薬と消化器系副作用の関連を評価した。調整順序比の結果、DPP-4阻害薬は消化管運動促進薬および緩下剤と有意な関連を示したが、胃酸分泌抑制薬とは関連が認められなかった。DPP-4阻害薬は胃酸分泌の亢進ではなく機能障害による悪心・便秘と関連することが示唆され、処方カスケードの予防が重要であることが示された。",
-    "haiku_classified": true
-  },
-  {
-    "id": "pmid-40175154",
-    "pubmed_id": "40175154",
-    "doi": "10.1292/jvms.25-0011",
-    "title": "Genomic characteristics and distinctive genetic polymorphisms of Marek's disease virus strains circulating in Japan.",
-    "abstract": "Marek's disease virus (MDV) is an oncogenic herpesvirus that causes malignant lymphomas in chickens (Marek's disease, MD). Although MD is currently well controlled by vaccination, field strains of MDV tend to increase in virulence, and sporadic outbreaks have been reported worldwide, including in Japan. Previously, we determined the whole-genome sequence of a Japanese MDV strain, Kgs-c1, isolated in 2014, and analyzed its genetic characteristics. However, to date, Kgs-c1 is the only MDV strain that has been subjected to whole-genome sequencing, leaving the possibility that the key genetic features of the Japanese strains remain undiscovered. Therefore, we conducted whole-genome sequencing of two MDV strains, Kgs-c2 and Sg-c1, isolated in 2016 and 2019, respectively, and analyzed their genetic characteristics. Consistent with our previous findings, the genomic sequences of the Japanese strains were classified into the Eurasian cluster, suggesting that the Japanese strains are genetically closer to the European and Chinese strains than they are to the US strains. In contrast, the Japanese strains exhibited genetic features different from those of pathogenic European and Chinese strains. Furthermore, polymorphisms in the meq and infected cell protein 4 (ICP4) genes, which are candidates involved in the enhanced virulence of MDV, were observed among the newly isolated strains and Kgs-c1. Thus, three MDV strains isolated in Japan had different genetic features from those in other countries. These findings emphasize the necessity of periodic monitoring of MDV field strains in order to determine shifts in their characteristics and effectively control MD.",
-    "authors": [
-      "Yamagami S",
-      "Sato J",
-      "Motai Y",
-      "Maekawa N",
-      "Okagawa T",
-      "Konnai S",
-      "Ohashi K",
-      "Murata S"
-    ],
-    "journal": "The Journal of veterinary medical science",
-    "journal_issn": "1347-7439",
-    "year": 2025,
-    "publication_date": "2025-05-15",
-    "mesh_terms": [
-      "Animals",
-      "Japan",
-      "Marek Disease",
-      "Chickens",
-      "Herpesvirus 2, Gallid",
-      "Polymorphism, Genetic",
-      "Genome, Viral",
-      "Poultry Diseases",
-      "Whole Genome Sequencing",
-      "Phylogeny"
-    ],
-    "medline_status": "MEDLINE",
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "その他"
-    ],
-    "impact_factor": 0.68,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:02:38.542Z",
-    "analysis_methods": [],
-    "title_ja": "日本で流行するマレック病ウイルス株のゲノム特性と特徴的な遺伝的多型",
-    "abstract_ja": "",
     "haiku_classified": true
   },
   {
