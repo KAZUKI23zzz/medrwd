@@ -18,5 +18,6 @@
   { "pubmed_id": "40366369", "reason": "米国退役軍人省（VA）の研究（日本の研究ではない）" },
   { "pubmed_id": "41239501", "reason": "国際多国間がん疫学研究（日本単独ではない）" },
   { "pubmed_id": "41035360", "reason": "レター/コメント（原著なし）" },
-  { "pubmed_id": "41017727", "reason": "正誤表（Erratum）" }
+  { "pubmed_id": "41017727", "reason": "正誤表（Erratum）" },
+  { "pubmed_id": "40776375", "reason": "NDB/Tableau研修の教育報告（RWD研究ではない）" }
 ]
