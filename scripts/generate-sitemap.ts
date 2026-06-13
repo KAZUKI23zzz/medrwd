@@ -1,6 +1,6 @@
 /**
  * 静的エクスポート用のsitemap.xmlを生成するスクリプト
- * ビルド後に out/ ディレクトリに出力する
+ * public/sitemap.xml に出力する（静的エクスポートでそのまま配信される）。
  *
  * 使用方法: npx tsx scripts/generate-sitemap.ts
  */
@@ -32,8 +32,8 @@ function main() {
     { path: "", priority: "1.0", changefreq: "weekly" },
     { path: "/papers", priority: "0.9", changefreq: "weekly" },
     { path: "/databases", priority: "0.8", changefreq: "monthly" },
-    { path: "/news", priority: "0.6", changefreq: "weekly" },
     { path: "/about", priority: "0.5", changefreq: "monthly" },
+    { path: "/status", priority: "0.3", changefreq: "weekly" },
   ];
 
   for (const page of staticPages) {

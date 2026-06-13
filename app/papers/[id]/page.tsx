@@ -5,7 +5,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { QuartileBadge } from "@/components/papers/QuartileBadge";
 import { getPapers, getDatabases } from "@/lib/data-loader";
-import type { Paper } from "@/types/paper";
 
 export function generateStaticParams() {
   const papers = getPapers();
@@ -224,7 +223,7 @@ export default async function PaperDetailPage({
             {paper.abstract_ja && (
               <>
                 <h3 className="mb-2 mt-4 font-semibold text-muted-foreground">
-                  日本語訳
+                  AI要約
                 </h3>
                 <p className="whitespace-pre-wrap text-[13px] leading-relaxed text-muted-foreground">
                   {paper.abstract_ja}

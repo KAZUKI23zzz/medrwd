@@ -2,18 +2,15 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PaperCard } from "@/components/papers/PaperCard";
-import { NewsItemCard } from "@/components/news/NewsItem";
 import {
   getPapers,
   getDatabases,
-  getNews,
   getCommercialLinks,
 } from "@/lib/data-loader";
 
 export default function Home() {
   const papers = getPapers();
   const databases = getDatabases();
-  const news = getNews();
   const commercialLinks = getCommercialLinks();
 
   // Recent papers (top 5)
@@ -61,9 +58,6 @@ export default function Home() {
   const sortedMethodCounts = [...methodCounts.entries()].sort(
     (a, b) => b[1] - a[1]
   );
-
-  // Recent news (top 5)
-  const recentNews = news.slice(0, 5);
 
   return (
     <div className="space-y-8">
@@ -186,7 +180,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Sidebar: designs + news + commercial links */}
+        {/* Sidebar: designs + commercial links */}
         <div className="space-y-6">
           {/* Study designs */}
           <Card>
@@ -260,64 +254,32 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          {/* Recent news */}
-          <div>
-            <div className="mb-3 flex items-center justify-between">
-              <h2 className="text-base font-semibold">最新ニュース</h2>
-              <Link
-                href="/news"
-                className="text-sm text-blue-600 hover:underline"
+          {/* 各社のお知らせ */}
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-base">各社のお知らせ</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-2">
+              <a
+                href="https://www.jmdc.co.jp/news/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between rounded-md border p-2 text-sm transition-colors hover:bg-muted/50"
               >
-                すべて見る →
-              </Link>
-            </div>
-            <div className="space-y-4">
-              {/* PMDA */}
-              <div>
-                <h3 className="mb-2 text-sm font-medium text-muted-foreground">
-                  PMDA（医薬品医療機器総合機構）
-                </h3>
-                {recentNews.length > 0 ? (
-                  <div className="space-y-2">
-                    {recentNews.map((item) => (
-                      <NewsItemCard key={item.id} item={item} />
-                    ))}
-                  </div>
-                ) : (
-                  <p className="text-sm text-muted-foreground">
-                    ニュースは近日追加予定です
-                  </p>
-                )}
-              </div>
-
-              {/* External links */}
-              <div>
-                <h3 className="mb-2 text-sm font-medium text-muted-foreground">
-                  商業DB各社のお知らせ
-                </h3>
-                <div className="space-y-2">
-                  <a
-                    href="https://www.jmdc.co.jp/news/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between rounded-md border p-2 text-sm transition-colors hover:bg-muted/50"
-                  >
-                    <span className="font-medium">JMDC お知らせ</span>
-                    <span className="text-blue-600">→</span>
-                  </a>
-                  <a
-                    href="https://www.mdv.co.jp/news/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between rounded-md border p-2 text-sm transition-colors hover:bg-muted/50"
-                  >
-                    <span className="font-medium">MDV 新着情報</span>
-                    <span className="text-blue-600">→</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+                <span className="font-medium">JMDC お知らせ</span>
+                <span className="text-blue-600">→</span>
+              </a>
+              <a
+                href="https://www.mdv.co.jp/news/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between rounded-md border p-2 text-sm transition-colors hover:bg-muted/50"
+              >
+                <span className="font-medium">MDV 新着情報</span>
+                <span className="text-blue-600">→</span>
+              </a>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>

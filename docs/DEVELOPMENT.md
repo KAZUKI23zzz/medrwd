@@ -13,27 +13,15 @@ npx tsx scripts/sync-pubmed.ts
 cat data/papers.json | python3 -c "import json,sys; d=json.load(sys.stdin); print(f'Total: {len(d)} papers')"
 ```
 
-### DB検出辞書・研究カテゴリ辞書の編集
-`data/db-keywords.json` を編集 → `sync-pubmed.ts` 再実行で既存論文には反映されない。
-既存論文のカテゴリを再分類するには `npx tsx scripts/reclassify-categories.ts`（`research_categories` のみ更新）。
-
-### 研究カテゴリの分類ロジック
-- `db-keywords.json` の `research_categories` に7カテゴリの正規表現パターンを定義
-- タイトル＋アブストラクト＋MeSHタームに対してパターンマッチ → スコア順で上位2カテゴリ付与
-- マッチなし → 「その他」
-- `db-detector.ts` ではモジュールロード時に正規表現をプリコンパイル
-
-### RSSフィルタの調整
-`scripts/fetch-rss.ts` 内の `RWD_KEYWORDS` 配列を編集。PMDA rss_015.xml（全カテゴリ統合フィード）に適用。
-
-### 不完全論文の再取得ロジック
-- `sync-pubmed.ts` の `main()` 冒頭で検出・再取得
-- 対象: `medline_status` が `Publisher`/`In-Process`/undefined、収集から180日以内、`last_updated`から30日以上経過
-- `MEDLINE` → 完了、`PubMed-not-MEDLINE` → 停止
+### 分類・要約ロジック（2026-06 刷新）
+- 分類・日本語要約・偽陽性除外は **週次のClaude Routine** が担当（[`routine-classify.md`](./routine-classify.md)）。
+- 分類スキーマ・偽陽性基準は [`classification.md`](./classification.md) が正。変更はそこを編集すればRoutineの判断に反映される。
+- `sync-pubmed.ts` は収集専任（`hasabstract` 付き収集＋OpenAlex IF → `classified:false` で追記）。キーワード正規表現分類・Google翻訳・不完全論文の再取得ロジックは廃止済み。
+- 旧: `db-keywords.json` 辞書 + `db-detector.ts` プリコンパイル + `reclassify-categories.ts` / `detect-analysis-methods.ts` / `translate-papers.ts`、PMDAニュース（`fetch-rss.ts`）はいずれも削除済み。
 
 ## 検索式の比較調査（2026-03-18実施）
 
-直近1年の論文で検索式を比較（詳細: `data/query-comparison.xlsx`）：
+直近1年の論文で検索式を比較（当時の詳細Excel `data/query-comparison.xlsx` は整理時に削除済み）：
 
 | 式 | 説明 | ヒット | DB検出率 |
 |----|------|--------|---------|

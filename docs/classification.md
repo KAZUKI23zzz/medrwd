@@ -2,8 +2,11 @@
 
 ## 概要
 
-`data/papers.json` の各論文を、Claude Codeのサブエージェント方式で再分類する。
-分類済みの論文には `classified: true` フラグが付く。
+`data/papers.json` の各論文を、本ドキュメントのスキーマに従って分類・日本語要約する。
+分類は週次の **Claude Routine**（[`docs/routine-classify.md`](./routine-classify.md)）が自動で行い、処理済みの論文には `classified: true` フラグが付く。
+本ドキュメントは分類スキーマと偽陽性基準の唯一の正であり、Routineはこれを参照する。
+
+なお `abstract_ja` は**アブストの全文訳ではなく2〜3文の日本語AI要約**（研究カタログとして要約の方が有用なため）。WEB上は「AI要約」として表示する。
 
 ## 分類スキーマ（確定版 2026-06-01）
 
@@ -68,55 +71,10 @@
 
 ---
 
-## 再開手順
+## Routine運用フロー
 
-### 1. featureブランチを作成（mainから）
+全903件の手動再分類（旧サブエージェント方式）は完了済み。以降の新着分類は **週次のClaude Routine** が自動で行う。
 
-### 2. サブエージェント（Agent tool）を起動
-
-以下の抽出スクリプトで未分類20件を取得し、上記スキーマに従って分類、`/tmp/medrwd-batch.json` に書き出し後マージ。
-
-**抽出スクリプト:**
-```bash
-node -e "
-const papers = require('./data/papers.json');
-const unclassified = papers.filter(p => !p.classified);
-const batch = unclassified.slice(0, 20);
-for (const p of batch) {
-  console.log(JSON.stringify({
-    pubmed_id: p.pubmed_id, title: p.title,
-    abstract: p.abstract || '', keywords: p.keywords || [],
-    mesh_terms: p.mesh_terms || []
-  }));
-  console.log('---SEP---');
-}
-console.error('Remaining after this batch: ' + (unclassified.length - 20));
-"
-```
-
-**マージスクリプト:**
-```bash
-node -e "
-const fs = require('fs');
-const papers = JSON.parse(fs.readFileSync('data/papers.json', 'utf-8'));
-const batch = JSON.parse(fs.readFileSync('/tmp/medrwd-batch.json', 'utf-8'));
-let merged = 0;
-for (const cls of batch) {
-  const paper = papers.find(p => p.pubmed_id === cls.pubmed_id);
-  if (!paper) { console.warn('Not found:', cls.pubmed_id); continue; }
-  Object.assign(paper, cls, { classified: true });
-  merged++;
-}
-fs.writeFileSync('data/papers.json', JSON.stringify(papers, null, 2) + '\n');
-const total = papers.filter(p => p.classified).length;
-console.log('Batch merged: ' + merged + '/' + batch.length);
-console.log('Total classified: ' + total + '/' + papers.length + ' | Remaining: ' + (papers.length - total));
-"
-```
-
-### 3. 繰り返し（トークン分散のため間隔を空ける）
-
-### 4. 全件完了後
-- `data/false-positives.json` の論文を `data/papers.json` から一括削除
-- `classified` を `classified` にリネーム
-- PRでmainにマージ
+- 収集（`scripts/sync-pubmed.ts`）が新着を `classified:false` で追記 → Routineが本ドキュメントのスキーマで分類・`title_ja`/`abstract_ja`(=AI要約) 生成・偽陽性除外・`classified:true` 付与 → セーフマージで main へ反映。
+- セットアップ・プロンプト・失敗時の確認手順は [`docs/routine-classify.md`](./routine-classify.md) を参照。
+- スキーマ（study_design / research_categories / analysis_methods / databases_used）と偽陽性基準を変更したら、本ドキュメントを更新すればRoutineの判断に反映される（プロンプトの複製は不要）。
