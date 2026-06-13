@@ -41,7 +41,6 @@ const navItems = [
   { href: "/", label: "ダッシュボード" },
   { href: "/papers", label: "研究カタログ" },
   { href: "/databases", label: "DB一覧" },
-  { href: "/news", label: "ニュース" },
   { href: "/about", label: "About" },
 ];
 
@@ -76,8 +75,11 @@ export default function RootLayout({
         </header>
         <main className="mx-auto max-w-7xl px-4 py-6">{children}</main>
         <footer className="border-t py-6 text-center text-sm text-muted-foreground">
-          <div className="mx-auto max-w-7xl px-4">
-            医療RWD研究カタログ - 日本の医療リアルワールドデータ研究検索
+          <div className="mx-auto flex max-w-7xl flex-col items-center gap-1 px-4">
+            <span>医療RWD研究カタログ - 日本の医療リアルワールドデータ研究検索</span>
+            <Link href="/status" className="hover:text-foreground hover:underline">
+              同期ステータス
+            </Link>
           </div>
         </footer>
       </body>

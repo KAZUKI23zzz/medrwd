@@ -7,7 +7,6 @@ const navItems = [
   { href: "/", label: "ダッシュボード" },
   { href: "/papers", label: "研究カタログ" },
   { href: "/databases", label: "DB一覧" },
-  { href: "/news", label: "ニュース" },
   { href: "/about", label: "About" },
 ];
 

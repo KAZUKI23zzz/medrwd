@@ -40,7 +40,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# analysis (one-off scripts & outputs)
-scripts/compare-queries.ts
-data/query-comparison.xlsx
+# Excel temp lock files
 data/~$*
