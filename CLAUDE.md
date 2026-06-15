@@ -37,7 +37,7 @@ npx tsx scripts/sync-pubmed.ts           # 論文収集（手動。通常はRout
 - 自動化は週次の **Claude Routine 1つ**（収集→分類→日本語要約→偽陽性除外→main自動マージ）。GitHub Actions・Google翻訳・PMDAニュースは廃止。
 - `abstract_ja` は全文訳ではなく**2〜3文の日本語AI要約**（WEB上は「AI要約」表示）。
 - 失敗の可視化は `/status` ページ（`data/sync-status.json`）＋セーフマージ・ガード。
-- Routineのセットアップ/運用は `docs/routine-classify.md` 参照。ユーザー側の唯一の設定: クラウド環境のネットワーク許可に `eutils.ncbi.nlm.nih.gov`・`api.openalex.org` を追加。
+- Routineのセットアップ/運用は `docs/routine-classify.md` 参照。要設定2点: ①クラウド環境のネットワーク許可に `eutils.ncbi.nlm.nih.gov`・`api.openalex.org` ②Claude GitHub Appをwrite権限で導入。
 
 **未実装（Phase 3）**: Pagefind全文検索 / SJR CSV取込 / DB詳細ページ充実
 
