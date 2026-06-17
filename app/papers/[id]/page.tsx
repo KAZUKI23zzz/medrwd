@@ -216,6 +216,18 @@ export default async function PaperDetailPage({
             </div>
           </div>
 
+          {paper.abstract_ja && (
+            <>
+              <Separator />
+              <div>
+                <h3 className="mb-2 font-semibold">AI要約</h3>
+                <p className="whitespace-pre-wrap text-sm leading-relaxed">
+                  {paper.abstract_ja}
+                </p>
+              </div>
+            </>
+          )}
+
           <Separator />
 
           <div>
@@ -223,16 +235,6 @@ export default async function PaperDetailPage({
             <p className="whitespace-pre-wrap text-sm leading-relaxed">
               {paper.abstract}
             </p>
-            {paper.abstract_ja && (
-              <>
-                <h3 className="mb-2 mt-4 font-semibold text-muted-foreground">
-                  AI要約
-                </h3>
-                <p className="whitespace-pre-wrap text-[13px] leading-relaxed text-muted-foreground">
-                  {paper.abstract_ja}
-                </p>
-              </>
-            )}
           </div>
         </CardContent>
       </Card>
