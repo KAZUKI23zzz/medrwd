@@ -55,6 +55,21 @@ cat data/papers.json | python3 -c "import json,sys; d=json.load(sys.stdin); prin
 
 ## 変更履歴
 
+### Track 2: 収集・分類フローをRoutine一本化（PR #16, #17 / 2026-06）
+**やったこと（引き継ぎ用サマリ）**
+- 自動化を**週次のClaude Routine 1つ**に集約。GitHub Actions（`daily-sync.yml`）・Google翻訳・PMDAニュース（`fetch-rss.ts`/`news.json`/`/news`）を廃止。
+- `sync-pubmed.ts` を**収集専任**に簡素化: 検索式に `AND hasabstract` 追加、キーワード正規表現分類・翻訳・不完全論文再取得を削除、新着は `classified:false` で追記。
+- 分類・日本語**AI要約**（`abstract_ja`=全文訳でなく2〜3文要約）・偽陽性除外・mainマージは Routine(LLM) が担当（プロンプトは `routine-classify.md`、スキーマは `classification.md`）。
+- 状態フラグは `classified`（旧 `haiku_classified` をリネーム）。フロントは未参照だが Routine の冪等処理の基準。
+- 同期の可視化: `data/sync-status.json` ＋ `/status` ページ。失敗時はセーフマージ・ガードで `papers.json` を出さず status だけ反映。
+- 削除した不要物: `db-detector.ts`/`db-keywords.json`/一回限り移行スクリプト/`query-comparison.xlsx`/`false-positives.json`。
+
+**運用のハマりどころ（次回セットアップ時の必須2点 → `routine-classify.md` §2）**
+1. クラウド環境の**ネットワーク許可**に `eutils.ncbi.nlm.nih.gov`・`api.openalex.org`（無いと収集が403）。
+2. **Claude GitHub App を write 権限**でリポジトリに導入（無いと push/PR/マージが403。クローンだけなら read で動く）。
+- クラウドセッションに `gh` CLI は無い → PR作成・マージは組み込みGitHubツールで行う。
+- repo設定「Automatically delete head branches」を ON（マージ後の `claude/data-sync-*` を自動削除）。
+
 ### Phase 1.8: ニュースフィード修正（PR #6, #7）
 - PMDA RSS: rss_001.xml(英語版/空) → rss_015.xml(日本語版/50件) + RWDキーワードフィルタ
 - medRxiv削除、JMDC/MDV外部リンク追加
