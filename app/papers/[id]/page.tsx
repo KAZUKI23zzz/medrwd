@@ -149,11 +149,14 @@ export default async function PaperDetailPage({
                   <p className="text-sm font-medium text-muted-foreground">
                     追加データソース
                   </p>
-                  <div className="mt-1 flex flex-wrap gap-1.5">
+                  <div className="mt-1 flex flex-col gap-1">
                     {paper.additional_data_sources.map((src) => (
-                      <Badge key={src} variant="outline">
+                      <span
+                        key={src}
+                        className="rounded-md border px-2 py-1 text-sm leading-snug text-foreground"
+                      >
                         {src}
-                      </Badge>
+                      </span>
                     ))}
                   </div>
                 </div>

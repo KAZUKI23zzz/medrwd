@@ -56,14 +56,17 @@ export function PaperCard({ paper }: { paper: Paper }) {
           )}
 
           {paper.additional_data_sources.length > 0 && (
-            <div className="flex flex-wrap items-center gap-1.5">
+            <div className="flex flex-col gap-1">
               <span className="text-xs font-medium text-muted-foreground">
                 追加データ:
               </span>
               {paper.additional_data_sources.map((src) => (
-                <Badge key={src} variant="outline" className="text-xs">
+                <span
+                  key={src}
+                  className="rounded-md border px-2 py-0.5 text-xs leading-snug text-foreground"
+                >
                   {src}
-                </Badge>
+                </span>
               ))}
             </div>
           )}
