@@ -1,5 +1,810 @@
 [
   {
+    "id": "pmid-42321926",
+    "pubmed_id": "42321926",
+    "doi": "10.1186/s40780-026-00595-x",
+    "title": "Exploring staffing and hospital factors associated with WardPharm-1 filing in Japan: a nationwide observational study.",
+    "abstract": "The healthcare system of Japan faces mounting challenges, including population aging, medical complexity, and workforce shortages. Hospital pharmacists are expected to ensure the safe and effective use of medicines and contribute to multidisciplinary care; however, their availability and functions remain uneven. The \"Ward Pharmaceutical Care Fee I\" (WardPharm-1) serves as an indicator of the implementation of advanced ward-based pharmaceutical care. This study investigated the national trends and associated factors of WardPharm-1 filing, focusing on pharmacist-to-bed ratios and hospital characteristics, to explore factors that may enable high-quality pharmacist services. We examined national open datasets from the Ministry of Health, Labor, and Welfare for fiscal years 2021-2023, linking the \"List of Registered Medical Care Providers (Medical)\" and the \"Hospital Bed Function Report.\" Hospitals eligible for WardPharm-1 filing were identified, excluding psychiatric facilities and those not fulfilling minimum staffing standards. Per-100-bed staffing for eight healthcare professions and hospital bed counts were determined. Logistic regression and receiver operating characteristic (ROC) curve analyses determine the association between pharmacist staffing (Ph/100 beds) and WardPharm-1 filing, stratified by hospital type, Diagnosis Procedure Combination (DPC) group, and regional population density. Among approximately 5,800 eligible hospitals annually, 31%-34% filed WardPharm-1. Pharmacists per 100 beds (Ph/100 beds) showed the strongest association with filing (odds ratio ≈ 1.2 yearly). Median Ph/100 beds were about 5.2 in filing hospitals and 2.6 in non-filers, with ROC cutoffs of 3.7-4.0 (AUC 0.83-0.84). Filing was most frequent in general hospitals (~ 50%) and DPC university or specified hospitals (~ 90%) and least frequent in long-term care hospitals (~ 3%) and depopulated regions (< 25%). Adjusted analyses confirmed that Ph/100 beds remained significantly associated with filing, though effect sizes were modest. Higher pharmacist-to-bed ratios were associated with higher WardPharm-1 filing rates. Filing was more common in larger and higher-function hospitals and less frequent in smaller or lower-density settings, patterns consistent with uneven workforce distribution. Although causality cannot be inferred, pharmacist staffing levels may serve as a practical indicator related to WardPharm-1 implementation.",
+    "authors": [
+      "Kaneda M",
+      "Taguchi M",
+      "Yamada H",
+      "Koide A"
+    ],
+    "journal": "Journal of pharmaceutical health care and sciences",
+    "journal_issn": "2055-0294",
+    "year": 2026,
+    "publication_date": "2026-06-19",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "厚労省オープンデータ（医療機関届出リスト・病床機能報告 FY2021-2023）"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "医療の質・アクセスの格差",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 1.4,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-22T00:04:36.035Z",
+    "classified": true,
+    "title_ja": "日本の病棟薬剤業務実施加算1の届出に関わる人員配置・病院要因の探索：全国観察研究",
+    "abstract_ja": "厚労省オープンデータ（医療機関届出・病床機能報告 FY2021-2023）を連結し、病棟薬剤業務実施加算1（WardPharm-1）の届出に関連する病院要因をロジスティック回帰とROC解析で検討。年間約5,800病院のうち31-34%が届出し、100床あたり薬剤師数が届出と最も強く関連（AUC 0.83-0.84、カットオフ3.7-4.0）。届出病院の薬剤師数中央値は5.2と非届出の2.6を上回った。"
+  },
+  {
+    "id": "pmid-42321751",
+    "pubmed_id": "42321751",
+    "doi": "10.1186/s12903-026-08914-2",
+    "title": "Prefecture-level factors associated with home-visit dental care utilization in Japan: focus on dentist workforce characteristics.",
+    "abstract": "Population aging has increased demand for home-visit dental care in Japan, yet regional disparities persist, as in other aging societies. This study aimed to identify factors associated with regional variation in the utilization of home-visit dental care. As part of an exploratory approach, we also examined home-visit medical care data to consider possible contrasts with dental service provision. This ecological cross-sectional study followed the STROBE guidelines and used prefecture-level aggregated data. We calculated the standardized claim ratio (SCR) for home-visit dental services using the 9th edition of the National Database of Health Insurance Claims and Specific Health Checkups of Japan (NDB) Open Data (April 2022 to March 2023). Spearman's correlation coefficient was computed to examine associations between SCR and relevant variables, including average age of dentists, number of dental clinics, and number of dentists in medical facilities. Then, multiple regression analyses were conducted using the SCR of the home-visit dental services, adjusting for the average age of dentists, the number of dental clinics, and the regional aging rate. Prefectural SCRs for home-visit dental services varied widely (range 24.68-168.79, median 70.52). SCR was negatively correlated with the average age of dentists (R = - 0.65, p < 0.001). In addition, it was positively correlated with the number of dentists working in medical facilities per 100,000 population (R = 0.60, p < 0.001) and number of dental clinics per 100,000 population (R = 0.71, p < 0.001). Multiple regression analysis showed that the average age of dentists had a negative relationship with SCR; the standardized regression coefficient (β) was - 0.30 (p = 0.017), whereas the number of dental clinics had a positive relationship (β = 0.47, p < 0.001). Regional variation in home-visit dental care utilization was associated with structural characteristics of the dental workforce. However, these findings should be interpreted as ecological associations influenced by both supply- and demand-side factors, rather than as indicators of individual provider behavior or capacity. The results suggest that workforce structure, including age composition and service infrastructure, may be related to regional disparities in home-visit dental care. Further studies incorporating individual-level and socioeconomic data are needed to clarify underlying mechanisms.",
+    "authors": [
+      "Masuda E",
+      "Fujita K",
+      "Sekoguchi A",
+      "Nomura K",
+      "Yamamoto H",
+      "Takahashi H"
+    ],
+    "journal": "BMC oral health",
+    "journal_issn": "1472-6831",
+    "year": 2026,
+    "publication_date": "2026-06-19",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "医療の質・アクセスの格差",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 3.44,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-22T00:04:36.142Z",
+    "classified": true,
+    "title_ja": "日本における訪問歯科診療の利用に関連する都道府県レベル要因：歯科医師の人員特性に着目して",
+    "abstract_ja": "NDBオープンデータ（第9版）の都道府県別標準化レセプト出現比（SCR）を用い、訪問歯科診療の地域差に関連する要因をSpearman相関と重回帰で生態学的に解析。訪問歯科のSCRは24.68-168.79と大きく変動し、歯科医師の平均年齢と負の相関（β=-0.30）、歯科診療所数と正の相関を示した。歯科医師の高齢化と診療所密度が地域格差に関与すると示唆された。"
+  },
+  {
+    "id": "pmid-42321691",
+    "pubmed_id": "42321691",
+    "doi": "10.1186/s12885-026-16381-9",
+    "title": "Prognostic outcomes of adjuvant chemotherapy in postoperative patients with cancer undergoing hemodialysis versus non-hemodialysis patients: a retrospective nationwide cohort study.",
+    "abstract": "Survival outcomes for patients with cancer undergoing hemodialysis (HD) are poorer than those for patients not undergoing HD, possibly owing to altered chemotherapy protocols or undertreatment to address renal impairment and drug toxicity concerns. Adjuvant chemotherapy should be administered appropriately with evidence-based drug selection. However, in patients undergoing HD, the administration of adjuvant chemotherapy and its association with prognosis remain unclear. We evaluated the association between adjuvant chemotherapy and survival outcomes in patients undergoing HD compared with those not undergoing HD in Japan. A nationwide dataset combining Hospital-Based Cancer Registry and Diagnosis Procedure Combination survey data was utilized. The study included adult patients newly diagnosed with colorectal, gastric, breast, or non-small cell lung cancer between January 2013 and December 2015. The primary survival analysis used a 90-day landmark approach: patients who were alive at postoperative day 90 and had survival follow-up information available thereafter were included, adjuvant chemotherapy was defined as treatment initiated within 90 days after surgery, and overall survival was measured from postoperative day 90 to death or last confirmed survival. Multivariable Cox regression models included hemodialysis status, adjuvant chemotherapy, their interaction term, age, sex, cancer type, Barthel Index, comorbidities, and hospital type. In the final cohort, 44,281 patients met the eligibility criteria. Among 43,984 patients included in the primary 90-day landmark analysis, 451 were undergoing HD. Patients undergoing HD were less likely to initiate adjuvant chemotherapy within 90 days after surgery than those not undergoing HD (30.4% vs. 68.0%, P < 0.001). In the multivariable Cox model with an interaction term, HD was associated with worse overall survival among patients who did not initiate adjuvant chemotherapy within 90 days after surgery (adjusted hazard ratio [aHR], 1.91; 95% confidence interval [CI], 1.67-2.18; P < 0.001), and the HD × adjuvant chemotherapy interaction was statistically significant (P = 0.002). The association between adjuvant chemotherapy and overall survival was evident among patients not undergoing HD but was not statistically significant among patients undergoing HD. In an exploratory analysis restricted to patients undergoing HD who initiated adjuvant chemotherapy, use of a standard regimen was associated with better survival than use of a non-standard regimen. Patients undergoing HD were less likely to receive adjuvant chemotherapy and had worse overall survival. The association between adjuvant chemotherapy and survival appeared attenuated among patients undergoing HD. Further prospective studies are needed to define optimal postoperative chemotherapy strategies for this population.",
+    "authors": [
+      "Ishii T",
+      "Watanabe T",
+      "Ichinose Y",
+      "Mano H",
+      "Higashi T"
+    ],
+    "journal": "BMC cancer",
+    "journal_issn": "1471-2407",
+    "year": 2026,
+    "publication_date": "2026-06-19",
+    "analysis_methods": [
+      "生存時間分析",
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [
+      "院内がん登録"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 3.55,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-22T00:04:36.248Z",
+    "classified": true,
+    "title_ja": "血液透析患者と非透析患者における術後がんの補助化学療法の予後：全国後ろ向きコホート研究",
+    "abstract_ja": "院内がん登録とDPCを連結し、2013-2015年に大腸・胃・乳・非小細胞肺がんと新規診断された44,281例を対象に、補助化学療法と生存の関連を90日ランドマーク法とCox回帰で透析の有無別に解析。透析患者は90日以内の補助化学療法開始が30.4%と非透析の68.0%より低く、過少治療の可能性が示された。透析下での適切な補助化学療法のエビデンスが乏しい点を浮き彫りにした。"
+  },
+  {
+    "id": "pmid-42314499",
+    "pubmed_id": "42314499",
+    "doi": "10.1016/j.cllc.2026.05.010",
+    "title": "Durvalumab After Chemoradiotherapy for Locally Advanced NSCLC: A Real-World Analysis Using a Nationwide Claims Database in Japan.",
+    "abstract": "Durvalumab consolidation therapy after chemoradiotherapy (CRT) for locally advanced non-small cell lung cancer (NSCLC) is an established standard of care. However, real-world data from claims databases, which capture a broad clinical landscape, are lacking in Asia. This study aimed to characterize real-world treatment patterns and clinical outcomes using a nationwide claims database in Japan. Patients who received durvalumab after definitive CRT for NSCLC between 2018 and 2024 were identified from the DeSC database. Overall survival (OS) was estimated using the Kaplan-Meier method. Radiation pneumonitis requiring steroid treatment was estimated using the cumulative incidence function with death as a competing risk. A total of 1439 patients were identified, and the median age was 73.6 years. The median durvalumab treatment duration was 5.3 months, and treatment completion rates (≥ 10 and ≥ 11 months) were 32.2% and 26.3%, respectively. The median OS was 48.4 months (95% CI, 42.1-57.4 months). The 12-month cumulative incidence of pneumonitis requiring steroid treatment was 19.4% (95% CI, 17.3-21.6%). In multivariable analysis, increasing age, shorter CRT-to-durvalumab interval, pre-existing pneumonitis diagnosis, and respiratory motion management fee were associated with increased pneumonitis risk, whereas the use of intensity-modulated radiotherapy was associated with reduced risk. Among 280 patients who developed pneumonitis, durvalumab rechallenge was administered in 37.5%. In this nationwide claims database study, we characterized the clinical practice of CRT with durvalumab treatment and the clinical outcomes in Japan. These real-world findings from Asia complement existing evidence and may inform treatment optimization for durvalumab after CRT.",
+    "authors": [
+      "Takeda K",
+      "Yamamoto T",
+      "Umezawa R",
+      "Takahashi N",
+      "Okuda S",
+      "Jingu K"
+    ],
+    "journal": "Clinical lung cancer",
+    "journal_issn": "1938-0690",
+    "year": 2026,
+    "publication_date": "2026-06-18",
+    "analysis_methods": [
+      "生存時間分析",
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DeSC Healthcare"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "安全性・副作用",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.13,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-22T00:04:36.356Z",
+    "classified": true,
+    "title_ja": "局所進行NSCLCに対する化学放射線療法後のデュルバルマブ：日本の全国レセプトDBを用いたリアルワールド解析",
+    "abstract_ja": "DeSCの全国レセプトDBを用い、2018-2024年に局所進行NSCLCへの根治的化学放射線療法後にデュルバルマブを受けた1,439例の治療パターンと転帰をKaplan-Meier法と競合リスク解析で評価。全生存期間中央値は48.4か月、ステロイド治療を要する肺臓炎の12か月累積発生率は19.4%だった。高齢・短いCRT-投与間隔・既存肺臓炎が肺臓炎リスク増加と、IMRTがリスク低下と関連した。"
+  },
+  {
+    "id": "pmid-42314108",
+    "pubmed_id": "42314108",
+    "doi": "10.1212/WNL.0000000000218198",
+    "title": "Long-Term Outcomes After Ischemic Stroke Across Atrial Fibrillation Phenotypes Defined by Detection Timing and Prior Anticoagulation Status.",
+    "abstract": "Atrial fibrillation (AF)-associated ischemic stroke is often managed as a single clinical entity; however, prognosis may vary depending on whether AF was detected after the stroke or whether the stroke occurred despite prior oral anticoagulant (OAC) use. We aimed to describe long-term outcomes after ischemic stroke across 3 distinct AF phenotypes: AF complicated by ischemic stroke despite prior anticoagulation (AFIDA), AF complicated by ischemic stroke without prior anticoagulation (OAC-naive AF), and AF detected after stroke (AFDAS). This nationwide cohort study used the DeSC-IQVIA database, an administrative claims database covering approximately 16 million individuals in Japan. Adult stroke survivors with AF discharged with OAC prescriptions between April 2014 and January 2025 were included. Three mutually exclusive AF phenotypes defined by AF detection timing and prior anticoagulation status: AFIDA, OAC-naive AF, and AFDAS (diagnosed during the index hospitalization). The primary outcomes were hospitalization for recurrent ischemic stroke or systemic embolism (SE). The secondary outcomes included major bleeding, heart failure (HF) hospitalization, and all-cause mortality. Cumulative incidence was estimated using the Aalen-Johansen method, accounting for the competing risk of death. Adjusted subdistribution hazard ratios (aSHRs) were estimated using Fine-Gray models. Among 21,586 patients (median age, 83 years [interquartile range (IQR), 78-88 years]; 10,604 [49.1%] female), 6,604 (30.6%) were classified as having AFIDA, 11,875 (55.0%) as having OAC-naive AF, and 3,107 (14.4%) as having AFDAS. During the 38,593 person-years of follow-up, 2,028 patients experienced stroke/SE. The 5-year cumulative incidence of stroke/SE was highest in AFIDA (18.6% [95% CI 17.0%-20.2%]), followed by OAC-naive AF (13.0% [95% CI 12.0%-13.9%]) and AFDAS (10.5% [95% CI 9.0%-12.1%]). Compared with OAC-naive AF, AFIDA was associated with a higher risk of recurrent stroke/SE (aSHR, 1.38; 95% CI 1.25-1.52), whereas AFDAS was associated with a lower risk (aSHR, 0.87; 95% CI 0.75-1.00). Among secondary outcomes, AFIDA showed an increased risk of HF hospitalization (aSHR, 1.15; 95% CI 1.02-1.31). Long-term prognosis after AF-associated stroke is heterogeneous across AF phenotypes, with AFIDA representing a high-risk group and AFDAS representing a low-risk group. These findings highlight the need to treat these clinically identifiable phenotypes as distinct target populations for secondary prevention strategies and future clinical trials.",
+    "authors": [
+      "Egashira S",
+      "Inoue K",
+      "Koga M",
+      "Toda T",
+      "Imanaka Y"
+    ],
+    "journal": "Neurology",
+    "journal_issn": "1526-632X",
+    "year": 2026,
+    "publication_date": "2026-06-18",
+    "analysis_methods": [
+      "生存時間分析",
+      "回帰分析"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Atrial Fibrillation",
+      "Female",
+      "Male",
+      "Ischemic Stroke",
+      "Anticoagulants",
+      "Aged",
+      "Aged, 80 and over",
+      "Phenotype",
+      "Japan",
+      "Cohort Studies",
+      "Time Factors",
+      "Hospitalization",
+      "Brain Ischemia"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "DeSC Healthcare"
+    ],
+    "additional_data_sources": [
+      "DeSC-IQVIA"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 1.02,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-22T00:04:36.517Z",
+    "classified": true,
+    "title_ja": "心房細動フェノタイプ（検出時期・抗凝固療法歴別）でみた虚血性脳卒中後の長期転帰",
+    "abstract_ja": "DeSC-IQVIA（約1,600万人）の全国レセプトDBで、抗凝固薬処方で退院した心房細動合併虚血性脳卒中21,586例を、AF検出時期と抗凝固療法歴で3フェノタイプに分類しFine-Gray法で長期転帰を比較。抗凝固下で発症したAFIDA群が脳卒中/全身性塞栓症の5年累積発生率が18.6%と最も高かった。AFのフェノタイプにより再発リスクが異なることを示した。"
+  },
+  {
+    "id": "pmid-42309679",
+    "pubmed_id": "42309679",
+    "doi": "10.2169/internalmedicine.7096-26",
+    "title": "Treatment and burden of patients with chronic myeloid leukemia in Japan: A retrospective claims database analysis.",
+    "abstract": "Objectives To describe the tyrosine kinase inhibitor (TKI) treatment patterns in patients with BCR::ABL-positive chronic myeloid leukemia (CML) in Japan. The secondary objective was to describe healthcare resource utilization and any adverse events of interest. Methods This retrospective observational study was conducted using the Medical Data Vision insurance claims database in Japan. All patients in the database who received at least one prescription of any TKI for the treatment of CML between 2011 and 2019 were included. Patients were followed up for at least 12 months (or until death or loss from the database). All healthcare resource consumption during the follow-up period was recorded. Treatment persistence with TKIs was determined using the Kaplan-Meier survival analysis. Adverse events of interest that occurred during treatment were documented. Results Overall, the most frequently used TKI was dasatinib (411 patients, 54.5%). The median duration of persistence on first-line TKI was 30.6 months; 174 (23.1%) patients moved to a second-line treatment, 46 (6.1%) to a third-line treatment, and 14 (0.2%) to a fourth-line treatment. The most common adverse events were vascular diseases (≥64% of patients, depending on the TKI). The median annual per capita cost of CML management was ¥2,105,000, with the acquisition of TKIs being the main cost driver (median: ¥2,026,000 per patient annually). Overall, treatment persistence with TKIs, especially in the later treatment lines, remains relatively short, and patients still experience adverse events during treatment. Conclusion Our results suggest that there is still room for improvement in CML treatment, particularly with regard to new, effective drugs that are better tolerated.",
+    "authors": [
+      "Matsuki E",
+      "Leboucher C",
+      "Touzenil S",
+      "Quélen C",
+      "Chung J"
+    ],
+    "journal": "Internal medicine (Tokyo, Japan)",
+    "journal_issn": "1349-7235",
+    "year": 2026,
+    "publication_date": "2026-06-17",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療資源利用・経済評価",
+      "安全性・副作用"
+    ],
+    "impact_factor": 0.78,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-22T00:04:36.615Z",
+    "classified": true,
+    "title_ja": "日本の慢性骨髄性白血病患者の治療と疾病負荷：後ろ向きレセプトDB解析",
+    "abstract_ja": "MDVレセプトDBを用い、2011-2019年にTKI処方を受けた慢性骨髄性白血病患者の治療パターン・医療資源利用・有害事象を後ろ向きに解析。最多使用はダサチニブ（54.5%）で、1次TKI継続期間中央値は30.6か月、最頻有害事象は血管疾患だった。年間管理費用中央値は約210万円でTKI取得費が主因であり、忍容性の高い新規薬剤の必要性が示された。"
+  },
+  {
+    "id": "pmid-42305076",
+    "pubmed_id": "42305076",
+    "doi": "10.1080/14796694.2026.2690161",
+    "title": "Safety evaluation of epidermal growth factor receptor tyrosine kinase inhibitors in patients with interstitial pneumonia: a study using a Japanese nationwide database.",
+    "abstract": "Epidermal growth factor receptor (EGFR) tyrosine kinase inhibitors (TKIs) are standard first-line therapies for EGFR mutation-positive non-small cell lung cancer (NSCLC) but can cause rare, potentially fatal drug-induced interstitial lung disease (ILD). Patients with preexisting interstitial pneumonia (IP) are considered at increased risk; however, most prior studies excluded these patients, limiting real-world comparative evidence. We identified patients with NSCLC who initiated first-line EGFR-TKI therapy between August 2018 and December 2024, using a nationwide Japanese claims database. Preexisting IP was defined using diagnosis codes combined with chest computed tomography records. Severe drug-induced ILD was defined as initiation of high-dose intravenous steroid pulse therapy. Cumulative incidence was estimated, and differences according to IP status were assessed using Fine-Gray models. Among 13,092 eligible patients, 481 (3.7%) had preexisting IP. The 2-year cumulative incidence of severe drug-induced ILD was 3.2% in patients with IP and 1.7% in those without IP. Preexisting IP was associated with a higher risk of severe drug-induced ILD (subdistribution hazard ratio, 1.85; 95% confidence interval, 1.06-3.24). Preexisting IP was associated with an approximately twofold higher risk of severe drug-induced ILD during first-line EGFR-TKI therapy, supporting careful risk assessment and monitoring. Epidermal growth factor receptor tyrosine kinase inhibitors, also called EGFR-TKIs, are medicines used to treat some patients with non–small cell lung cancer. These medicines are mainly used when the cancer has a change in a gene called EGFR. This change can help cancer cells grow, and EGFR-TKIs work by blocking this signal. One rare but serious side effect of EGFR-TKIs is lung inflammation caused by the medicine. This condition can make breathing difficult and may require cancer treatment to be stopped, delayed, or changed. Some patients already have lung inflammation before starting cancer treatment. Many previous studies did not include these patients, so it was unclear how often serious lung problems occur in them after EGFR-TKI treatment. We studied 13,092 patients with non–small cell lung cancer using a large Japanese hospital database. Among them, 481 already had lung inflammation before starting EGFR-TKI treatment. During 2years of follow-up, serious lung problems caused by treatment were more common in patients who already had lung inflammation. They were also more common in older patients and in patients with a history of smoking. These findings suggest that doctors should carefully check patients’ lungs before starting EGFR-TKIs and closely monitor them during treatment, especially those who already have lung inflammation.",
+    "authors": [
+      "Ihara Y",
+      "Nakamura Y",
+      "Shimomura Y",
+      "Yamamoto S"
+    ],
+    "journal": "Future oncology (London, England)",
+    "journal_issn": "1744-8301",
+    "year": 2026,
+    "publication_date": "2026-06-17",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の全国規模の医療レセプトデータベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.42,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-22T00:04:36.713Z",
+    "classified": true,
+    "title_ja": "間質性肺炎を有する患者におけるEGFRチロシンキナーゼ阻害薬の安全性評価：日本の全国DBを用いた研究",
+    "abstract_ja": "日本の全国レセプトDBで、2018-2024年に1次治療としてEGFR-TKIを開始したNSCLC患者13,092例を対象に、既存間質性肺炎(IP)の有無別の重症薬剤性間質性肺疾患(ILD)リスクをFine-Gray法で解析。既存IP群の重症ILD 2年累積発生率は3.2%、非IP群は1.7%で、既存IPは約2倍のリスク（SHR 1.85）と関連した。EGFR-TKI開始時の慎重なリスク評価とモニタリングの重要性を支持する。"
+  },
+  {
+    "id": "pmid-42302073",
+    "pubmed_id": "42302073",
+    "doi": "10.1371/journal.pone.0351855",
+    "title": "Association between menstrual-related disorders and sexually transmitted infections: A nationwide cross-sectional study in Japan.",
+    "abstract": "To investigate the association between menstrual-related disorders and sexually transmitted infections (STI) among young women in Japan, and to examine differences according to disorder type and hormonal therapy use. This cross-sectional study used the Japan Medical Data Center Claims Database and included women younger than 40 years who had at least one healthcare visit in 2023. Menstrual-related disorders were defined as endometriosis or dysmenorrhea based on ICD-10 codes. The prevalence of five STIs-gonorrhea, genital chlamydia infection, trichomoniasis, genital herpes, and other sexually transmitted conditions-was compared between women with and without menstrual-related disorders. Subgroup analyses were conducted for endometriosis, dysmenorrhea, and hormonal therapy (low-dose estrogen-progestin combinations or dienogest). Prevalence ratios (PR) and prevalence differences (PD) with 95% confidence intervals (CI) were estimated. Among 3,440,929 women, 257,897 (7.5%) had menstrual-related disorders. All STI were substantially more prevalent in this group than in women without menstrual-related disorders, with PRs ranging from 4.31 to 5.29. Endometriosis showed the highest prevalence, particularly for genital chlamydia infection (4.98%; PR 7.44). Dysmenorrhea was also associated with consistently elevated STI prevalence. Among women with menstrual-related disorders, STI prevalence differed only slightly according to hormonal therapy use, with differences generally within one percentage point. Menstrual-related disorders were strongly associated with increased diagnosis of STI in Japanese young women. These findings highlight the importance of integrating STI screening and reproductive health education into routine gynecologic care for women with endometriosis or dysmenorrhea. The influence of healthcare-seeking behavior and diagnostic patterns should be considered when interpreting claims-based STI data.",
+    "authors": [
+      "Yoshihara T",
+      "Owada S",
+      "Arita H",
+      "Nakagomi A",
+      "Tanaka K",
+      "Ono Y",
+      "Yoshino O"
+    ],
+    "journal": "PloS one",
+    "journal_issn": "1932-6203",
+    "year": 2026,
+    "publication_date": "2026-06-16",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Female",
+      "Cross-Sectional Studies",
+      "Japan",
+      "Adult",
+      "Sexually Transmitted Diseases",
+      "Prevalence",
+      "Young Adult",
+      "Menstruation Disturbances",
+      "Endometriosis"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.8,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-22T00:04:36.821Z",
+    "classified": true,
+    "title_ja": "月経関連疾患と性感染症の関連：日本における全国横断研究",
+    "abstract_ja": "JMDCレセプトDBで、2023年に受診した40歳未満女性340万人超を対象に、月経関連疾患（子宮内膜症・月経困難症）と5種の性感染症(STI)の関連を横断的に解析。月経関連疾患群はSTI有病率が4.31-5.29倍高く、特に子宮内膜症でクラミジア感染が顕著（PR 7.44）だった。婦人科診療へのSTIスクリーニングと性教育の統合の重要性を示した。"
+  },
+  {
+    "id": "pmid-42299572",
+    "pubmed_id": "42299572",
+    "doi": "10.1097/MD.0000000000049232",
+    "title": "Comprehensive analysis of cefuroxime-associated adverse events: Insights from JADER database (2004-2024) and comparison with FAERS database.",
+    "abstract": "Cefuroxime, as a second-generation cephalosporin, is widely used in clinical practice. In recent years, research using the Food and Drug Administration Adverse Event Reporting System (FAERS) database has led to new discoveries about the adverse event profile of cefuroxime. However, there is currently a lack of systematic research on the safety of cefuroxime based on the Japan Adverse Drug Event Report (JADER) database. This study analyzed the clinical characteristics and adverse event signals associated with cefuroxime using the JADER database and further compared the findings with those from the FAERS database. A descriptive analysis was conducted on the clinical characteristics of adverse event reports associated with cefuroxime, including report year, report season, onset time, reporter type, sex, age, weight, dose, frequency, and indication. Four disproportionality algorithms were employed to identify adverse event signals. Subsequently, the clinical characteristics and disproportionality signals of cefuroxime in the JADER database were contrasted with those in the FAERS database. A total of 60 adverse event reports and 132 adverse events related to cefuroxime were identified from the JADER database. \"Oculomucocutaneous syndrome\" emerged as a newly identified disproportionality signal in the JADER database, which was neither reported in the FAERS database nor previously documented in cefuroxime's labeling. \"Anaphylactic shock,\" \"drug-induced liver injury,\" \"jaundice,\" and \"Stevens-Johnson syndrome\" were identified as disproportionality signals in both the JADER and FAERS databases. \"Anaphylactic shock\" had a stronger signal in the FAERS database, and \"drug-induced liver injury\" and \"jaundice\" exhibited stronger signals in the JADER database. This study provides a descriptive analysis and signal detection using the JADER database, contributing to previous research based solely on the FAERS database and offering an additional perspective on the clinical safety profile of cefuroxime. This finding suggests a potential need for enhanced monitoring for \"skin and subcutaneous tissue disorders,\" \"immune system disorders,\" and \"hepatobiliary disorders.\" It should be noted that the results from the JADER and FAERS databases may be influenced by reporting biases. Therefore, further studies are warranted to corroborate the findings.",
+    "authors": [
+      "Li F",
+      "Luo J",
+      "Zhang X",
+      "Jiang C",
+      "Xia G"
+    ],
+    "journal": "Medicine",
+    "journal_issn": "1536-5964",
+    "year": 2026,
+    "publication_date": "2026-06-16",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "mesh_terms": [
+      "Cefuroxime",
+      "Humans",
+      "Adverse Drug Reaction Reporting Systems",
+      "Databases, Factual",
+      "Second Generation Cephalosporins",
+      "Anti-Bacterial Agents",
+      "Japan",
+      "Female",
+      "Male",
+      "Adult",
+      "Aged"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.76,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-22T00:04:36.934Z",
+    "classified": true,
+    "title_ja": "セフロキシム関連有害事象の包括的解析：JADER（2004-2024）の知見とFAERSとの比較",
+    "abstract_ja": "JADER（2004-2024）を用い、セフロキシム関連有害事象の臨床特性を記述し、4つの不均衡分析でシグナルを検出してFAERSと比較。報告60件・有害事象132件から、添付文書未記載の「眼粘膜皮膚症候群」がJADER特有の新規シグナルとして検出された。アナフィラキシーショックや薬剤性肝障害等もシグナルとして同定され、両DB間で強度に差がみられた。"
+  },
+  {
+    "id": "pmid-42297912",
+    "pubmed_id": "42297912",
+    "doi": "10.1038/s41598-026-55013-x",
+    "title": "A nationwide survey of medical resource usage for cancer treatment using Japanese health claims data from 2011 to 2022.",
+    "abstract": "Multidisciplinary cancer treatments have advanced significantly, especially with molecular targeted therapies improving prognosis. Although these are expensive, their cost impact remains unverified. This study aimed to investigate the overall utilization of healthcare resources and identify the cost drivers of cancer treatment in Japan. In this retrospective cohort study, patients diagnosed with malignancies between April 2011 and March 2022 were classified by cancer type, and monthly insurance claims and applicable medications were analyzed. Breast cancer was the most common, followed by stomach and colon cancers. Cost analysis by cancer type revealed that lung cancer was the most expensive overall, whereas multiple myeloma was the most expensive per person-month. When antineoplastic drug costs were aggregated by mechanism, a rapid increase was observed in the immune checkpoint inhibitor category. Since the advent of immune checkpoint inhibitors, the number of insurance claims for antineoplastic drugs in Japan has increased. Japan's public healthcare system has seen an increase in the cost of cancer treatment at a rate exceeding national economic growth. These findings highlight the need for policies that address the cost-effectiveness and sustainability of cancer care to ensure continued access to high-quality treatment within publicly funded systems in Japan and globally.",
+    "authors": [
+      "Fukuyama K",
+      "Mori Y",
+      "Ueshima H",
+      "Matsumoto S",
+      "Muto M",
+      "Kuroda T"
+    ],
+    "journal": "Scientific reports",
+    "journal_issn": "2045-2322",
+    "year": 2026,
+    "publication_date": "2026-06-15",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の健康保険レセプトデータベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "医療資源利用・経済評価",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 4.47,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-22T00:04:37.037Z",
+    "classified": true,
+    "title_ja": "日本の健康保険レセプトデータ（2011-2022）を用いたがん治療の医療資源利用に関する全国調査",
+    "abstract_ja": "日本の健康保険レセプトデータを用い、2011-2022年に悪性腫瘍と診断された患者のがん治療の医療資源利用とコスト要因を後ろ向きに解析。乳がんが最多で、肺がんが総額で最も高額、多発性骨髄腫が1人あたり月額で最高だった。免疫チェックポイント阻害薬を機転とする抗腫瘍薬費が急増しており、がん医療費の持続可能性に向けた政策の必要性を示した。"
+  },
+  {
+    "id": "pmid-42297700",
+    "pubmed_id": "42297700",
+    "doi": "10.1016/j.jos.2026.06.004",
+    "title": "Age- and modality-specific trends in bone mineral density testing among women in Japan.",
+    "abstract": "Osteoporosis affects an estimated 15.9 million people in Japan. Because diagnosis is based on bone mineral density (BMD), access to BMD testing is essential for fragility-fracture prevention; however, nationwide trends by modality and age have been unclear. We examined trends in BMD testing among women using the National Database of Health Insurance Claims and Specific Health Checkups of Japan (NDB). Public NDB Open Data (fiscal years 2014-2022) were used to obtain annual counts of BMD examinations by age group and modality: dual-energy X-ray absorptiometry (DXA), microdensitometry/single-energy X-ray absorptiometry (MD/SXA), and quantitative ultrasound (QUS). Age-stratified population-adjusted rates were calculated using census data. Trends were assessed with Poisson regression with log(population) offsets and year-by-age interaction terms. Total examinations increased from 5.46 million (2014) to 7.14 million (2022). Women aged 60-69, 70-79, and 80-89 years accounted for >85% of tests. Population-adjusted rates increased across all age groups, with the largest annual increases in women aged 40-49 years and ≥90 years (∼4.4%/year). DXA increased from 1.67 to 4.03 million, whereas MD/SXA decreased from 3.18 to 2.67 million. QUS decreased overall (608,118 to 434,984) but increased in women aged ≤39 and 40-49 years. BMD testing among women in Japan expanded and shifted toward DXA, with declining MD/SXA and selective growth of QUS in younger women, supporting the need for age- and context-appropriate diagnostic strategies.",
+    "authors": [
+      "Fujimaki H",
+      "Uchida K",
+      "Miyagi M",
+      "Mamorita N",
+      "Inoue G",
+      "Takaso M"
+    ],
+    "journal": "Journal of orthopaedic science : official journal of the Japanese Orthopaedic Association",
+    "journal_issn": "1436-2023",
+    "year": 2026,
+    "publication_date": "2026-06-15",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 0.95,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-22T00:04:37.141Z",
+    "classified": true,
+    "title_ja": "日本の女性における骨密度検査の年齢別・モダリティ別の動向",
+    "abstract_ja": "NDBオープンデータ（FY2014-2022）を用い、女性の骨密度(BMD)検査の年齢別・モダリティ別の動向をPoisson回帰で解析。総検査数は546万件から714万件に増加し、60-89歳が85%超を占めた。人口調整後の検査率は全年齢層で増加し、DXAが大幅に増えMD/SXAは減少、QUSは若年層で増加するなど、加齢・状況に応じた診断戦略の必要性が示された。"
+  },
+  {
+    "id": "pmid-42295652",
+    "pubmed_id": "42295652",
+    "doi": "10.1007/s10388-026-01228-w",
+    "title": "Simulation study on the regionalization of esophagectomy using data from 27,476 patients in Japan.",
+    "abstract": "Although a strong volume-outcome association for esophagectomy has been reported in Japan, no national policy for regionalization currently exists. This study simulated the impact of regionalization on operative mortality, patient travel distance, and geographic disparities using a nationwide clinical database. Patients who underwent esophagectomy with reconstruction for malignant tumors were identified from the Japanese National Clinical Database. Four simulation scenarios were established by setting minimum volume standards (MVSs) at 2, 5, 10, and 15 cases annually. Operative mortality in each simulation scenario was estimated using a model that incorporated both the post-regionalization hospital case volume and the characteristics of reassigned patients. Changes in travel distance were also evaluated across the metropolitan, provincial, and rural regions. Among 27,476 patients treated across 1,041 hospitals, 76% of hospitals performed < 5 cases annually. The operative mortality decreased with increasing hospital volume (< 2 cases/year: 4.8%, ≥ 15 cases/year: 1.6%). Based on the simulations, applying MVSs of 2, 5, 10, and 15 reduced the mortality rates to 2.7%, 2.1%, 1.8%, and 1.7%, respectively-corresponding to 8-29 fewer deaths annually. However, 7%-38% of patients would need to travel to the nearest eligible hospital. In metropolitan areas, an MVS of 15 would increase the median travel distance by 2.6 km only. In rural areas, the distance would increase by 24 km at an MVS of 2 and by 43 km at an MVS of 15. Regionalization of esophagectomy in Japan could significantly reduce operative mortality. However, it would increase travel burdens among patients in rural areas. Therefore, balancing outcome improvement and accessibility will be essential for policy implementation.",
+    "authors": [
+      "Nishigori T",
+      "Takahashi A",
+      "Ichihara N",
+      "Tsunoda S",
+      "Toh Y",
+      "Watanabe M",
+      "Kimura Y",
+      "Matsubara H",
+      "Takeuchi H",
+      "Kakeji Y",
+      "Ueno H",
+      "Seto Y",
+      "Shirabe K",
+      "Miyata H",
+      "Sakai Y",
+      "Obama K"
+    ],
+    "journal": "Esophagus : official journal of the Japan Esophageal Society",
+    "journal_issn": "1612-9067",
+    "year": 2026,
+    "publication_date": "2026-06-15",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "医療の質・アクセスの格差",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 3.01,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-22T00:04:37.233Z",
+    "classified": true,
+    "title_ja": "日本の27,476例のデータを用いた食道切除術の集約化に関するシミュレーション研究",
+    "abstract_ja": "NCD（National Clinical Database）の食道切除27,476例（1,041施設）を用い、症例数下限基準による集約化が術死亡・移動距離・地域格差に与える影響をシミュレーション。施設症例数増で術死亡が低下（<2例/年4.8%→≥15例/年1.6%）し、年間2-15例の基準導入で死亡率は2.7-1.7%に低下する一方、地方では移動距離が最大43km増えると推定された。転帰改善とアクセスの両立が課題と示した。"
+  },
+  {
+    "id": "pmid-42295178",
+    "pubmed_id": "42295178",
+    "doi": "10.1213/ANE.0000000000008161",
+    "title": "Major Adverse Cardiovascular Events After Hip Fracture Surgery with Remimazolam or Propofol Total Intravenous Anesthesia: A Retrospective Cohort Study Emulating a Target Trial.",
+    "abstract": "Remimazolam, a novel short-acting benzodiazepine, is associated with more stable intraoperative hemodynamics than propofol. Older adults undergoing hip fracture surgery represent a vulnerable population at elevated risk for perioperative cardiovascular complications. However, whether remimazolam's hemodynamic advantages translate into reduced major adverse cardiovascular events (MACE) in this population remains uncertain, particularly given recent randomized trials questioning the relationship between intraoperative blood pressure management and postoperative outcomes. We aimed to compare 30-day in-hospital MACE and all-cause in-hospital mortality after general anesthesia with remimazolam versus propofol. We conducted a retrospective cohort study using a target trial emulation framework with data from a multicenter Japanese hospital administrative database (September 1, 2020, to September 30, 2024). Eligible participants were adults aged 65 to 99 years undergoing hip fracture surgery who received total intravenous anesthesia with remimazolam or propofol on the day of surgery. The primary outcome was 30-day in-hospital MACE, and the secondary outcome was 30-day all-cause in-hospital mortality. We estimated the average treatment effect among patients who received remimazolam compared with propofol using propensity score weighting. Risks and 95% confidence intervals (CIs) were obtained from weighted cumulative incidence functions with bootstrap resampling. Of 132,422 patients identified, 14,027 were included in the analysis. The primary outcome occurred in 2.86% of the remimazolam group and 2.74% of the propofol group, with no meaningful difference between groups (risk ratio, 1.04 [95% CI, 0.80-1.38]; P = 0.76; risk difference, 0.12% [95% CI, -0.64% to 0.90%]). Thirty-day all-cause in-hospital mortality also did not differ materially between groups (risk ratio, 1.03 [95% CI, 0.61-1.80]; P = 0.91). These findings remained consistent across sensitivity analyses and in subgroup analyses stratified by baseline cardiovascular risk. Among older adults undergoing hip fracture surgery, 30-day in-hospital MACE and mortality did not differ substantially between remimazolam and propofol, suggesting that anesthetic selection between these agents may not substantially affect short-term cardiovascular outcomes in this high-risk population.",
+    "authors": [
+      "Okazawa Y",
+      "Fukasawa T",
+      "Yoshiyama T",
+      "Anno T",
+      "Kawakami K"
+    ],
+    "journal": "Anesthesia and analgesia",
+    "journal_issn": "1526-7598",
+    "year": 2026,
+    "publication_date": "2026-06-15",
+    "analysis_methods": [
+      "ターゲットトライアルエミュレーション",
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の多施設病院管理レセプトデータベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 2.67,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-22T00:04:37.330Z",
+    "classified": true,
+    "title_ja": "レミマゾラムまたはプロポフォール全静脈麻酔下の股関節骨折術後の主要心血管イベント：ターゲットトライアルエミュレーションによる後ろ向きコホート研究",
+    "abstract_ja": "日本の多施設病院管理レセプトDB（2020-2024）で股関節骨折手術を受けた65-99歳14,027例を対象に、レミマゾラムとプロポフォールによる全静脈麻酔後30日院内MACEをターゲットトライアルエミュレーションと傾向スコア重み付けで比較。MACE発生はレミマゾラム2.86%・プロポフォール2.74%で有意差はなかった（RR 1.04）。血行動態の安定が心血管転帰改善には必ずしも直結しないことを示唆した。"
+  },
+  {
+    "id": "pmid-42294491",
+    "pubmed_id": "42294491",
+    "doi": "10.36469/001c.161191",
+    "title": "Peripheral T-cell Lymphoma in Japan: Real-World Patient Characteristics, Treatment Patterns, Healthcare Resource Utilization, and Costs.",
+    "abstract": "Peripheral T-cell lymphomas (PTCLs) are a rare and heterogeneous group of non-Hodgkin lymphomas associated with aggressive clinical course and suboptimal outcomes. PTCL accounts for a higher proportion of non-Hodgkin lymphoma cases in Japan compared with Western countries; however, real-world evidence on treatment patterns, healthcare resource utilization (HRU), and costs in Japan is limited. To describe real-world patient characteristics, treatment patterns, HRU, and costs among patients with PTCL in Japan. This retrospective observational study used administrative claims data from the Medical Data Vision database in Japan. Adult patients diagnosed with PTCL between September 2012 and August 2022 were identified. Patients were categorized as receiving nonsystemic therapy or systemic therapy and stratified by lines of therapy. Patient demographics, comorbidities, treatment regimens, time on treatment, HRU, and healthcare costs, measured per patient per month, were analyzed descriptively. Among 910 patients identified, 71.3% received systemic treatment and 28.7% received nonsystemic therapy, most receiving corticosteroids only. Mean age at diagnosis was 69.8 years; 70% of patients were at least 65 years old. Key comorbidities included peptic ulcer disease, congestive heart failure, and diabetes. PTCL-not otherwise specified and angioimmunoblastic T-cell lymphoma accounted for over 75% of subtypes. First-line therapy was mainly cyclophosphamide, doxorubicin, vincristine, and prednisone (CHOP) or CHOP-like regimens; later lines were more heterogeneous and of shorter duration. Mogamulizumab and brentuximab vedotin were used in 4.16% and 10.48% of patients, respectively. Stem cell transplantation was infrequent (6.3%). Median per patient per month PTCL-related total healthcare cost was 9712 ; m e d i a n d r u g ( 7056.9) and hospitalization costs ($5177.7) were the main contributors. These findings demonstrate substantial clinical and economic burden among PTCL patients in Japan. Treatment heterogeneity and short duration in later lines of therapy highlight ongoing therapeutic challenges. High economic burden of PTCL treatment underscores the need for more effective, tolerable, and less costly therapeutic strategies for treating PTCL patients in Japan.",
+    "authors": [
+      "Dharmani C",
+      "Fofah O",
+      "Qu P",
+      "Jiang Z",
+      "Wang J",
+      "Li L",
+      "Tao Y",
+      "Song L"
+    ],
+    "journal": "Journal of health economics and outcomes research",
+    "journal_issn": "2327-2236",
+    "year": 2026,
+    "publication_date": "2026-06-15",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療資源利用・経済評価",
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 0.86,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-22T00:04:37.432Z",
+    "classified": true,
+    "title_ja": "日本の末梢性T細胞リンパ腫：リアルワールドの患者特性・治療パターン・医療資源利用・費用",
+    "abstract_ja": "MDVレセプトDBを用い、2012-2022年に末梢性T細胞リンパ腫(PTCL)と診断された910例の患者特性・治療パターン・医療資源利用・費用を記述的に解析。71.3%が全身療法を受け、1次治療は主にCHOP系、診断時平均年齢は69.8歳だった。モガムリズマブ・ブレンツキシマブの使用や移植は限定的で、リアルワールドでの治療実態とコスト負担を明らかにした。"
+  },
+  {
+    "id": "pmid-42291961",
+    "pubmed_id": "42291961",
+    "doi": "10.7759/cureus.108794",
+    "title": "Diagnostic Accuracy of International Classification of Diseases, Tenth Revision (ICD-10) Codes for Vertebral Artery Dissection and Its Complications in Japan: A Single-Center Validation Study.",
+    "abstract": "Vertebral artery dissection (VAD) is a leading cause of cerebrovascular disease in young and middle-aged adults. Although medical claims databases facilitate large-scale observational studies, validated case-identification algorithms for unruptured VAD and its complications remain limited. We evaluated the diagnostic accuracy of International Classification of Diseases, Tenth Revision (ICD-10) codes for identifying unruptured VAD and its complications in Japanese medical claims data. We conducted a single-center cross-sectional validation study using electronic medical records from April 2018 to December 2025. Three ICD-10-based case definitions were evaluated: I72.6 for unruptured VAD, I60.5 for VAD-related subarachnoid hemorrhage (SAH), and the combination of I72.6 with I63.0-I63.9 for unruptured VAD with cerebral infarction. Two independent clinicians determined reference standards based on imaging findings and documented clinical diagnoses. The primary outcome was a positive predictive value (PPV), with 95% confidence intervals (CI) calculated using the Wilson method. A total of 104 patients met the ICD-10-based case definitions (64 with I72.6, 12 with I60.5, and 28 with combined I72.6 and I63.0-I63.9). The PPV was 0.81 (95% CI, 0.70-0.89) for I72.6 alone, 0.82 (95% CI, 0.55-0.95) for I60.5, and 1.00 (95% CI, 0.88-1.00) for the combined I72.6 and I63.0-I63.9. When I72.6 was restricted to codes assigned on the hospital admission date, the PPV increased to 0.93 (95% CI, 0.81-0.98). The combination of ICD-10 codes for unruptured VAD and cerebral infarction yielded a high PPV and may be suitable as a pragmatic initial case identification algorithm for pharmacoepidemiologic studies using Japanese medical claims databases.",
+    "authors": [
+      "Okazaki Y",
+      "Kataoka Y",
+      "Ichiba T"
+    ],
+    "journal": "Cureus",
+    "journal_issn": "2168-8184",
+    "year": 2026,
+    "publication_date": "2026-06-15",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": [
+      "単施設の電子カルテ（ICD-10コードのバリデーション）"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "方法論・バリデーション"
+    ],
+    "impact_factor": 1.02,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-22T00:04:37.550Z",
+    "classified": true,
+    "title_ja": "椎骨動脈解離とその合併症に対するICD-10コードの診断精度：日本の単施設バリデーション研究",
+    "abstract_ja": "単施設の電子カルテ（2018-2025年）を用い、椎骨動脈解離(VAD)とその合併症を同定するICD-10コードの陽性的中率(PPV)を検証。I72.6単独のPPVは0.81、入院日付与に限定すると0.93に上昇し、I72.6と脳梗塞コード(I63)の組合せは1.00だった。VADと脳梗塞のコード組合せが、日本のレセプトDB薬剤疫学研究の実用的な症例同定アルゴリズムになり得ると示した。"
+  },
+  {
+    "id": "pmid-42289329",
+    "pubmed_id": "42289329",
+    "doi": "10.1253/circj.CJ-26-0075",
+    "title": "Trends and In-Hospital Outcomes of Conventional Transvenous Pacemaker vs. Leadless Pacemaker　- Nationwide Matched Control Study Using the JROAD-DPC Database.",
+    "abstract": "Nationwide data on in-hospital deaths and complications between leadless pacemakers (LPMs) and transvenous pacemakers (TVPMs) in Japan remain limited. Using a nationwide database, we identified adults who underwent TVPM or LPM implantation between 2017 and 2023. LPM implantation increased from 0.5% to 25% (P for trend <0.001). LPMs were selected more often as patient age increased and those undergoing dialysis or with dementia and atrial fibrillation (P<0.001). After propensity score matching (12,599 per group), composite outcomes (in-hospital deaths and all complications) were comparable between the LPM and TVPM groups (5.41% vs. 5.59%, respectively; P=0.44; odds ratio [OR] 0.95; 95% confidence interval [CI] 0.84-1.07). All-cause in-hospital death did not differ between groups (LPM, 1.09%; TVPM, 1.05%; P=0.55; OR 1.07; 95% CI 0.83-1.38), whereas all-cause death within 7 days after implantation was higher in the LPM group (0.58% vs. 0.33%; P=0.003; OR 1.80; 95% CI 1.21-2.67). All complications was comparable between the LPM and TVPM groups (LPM, 4.78%; TVPM, 4.82%; P=0.59; OR 0.96; 95% CI 0.85-1.09), but cardiac tamponade was more frequent in the LPM group (0.29% vs. 0.06%; P<0.001; OR 5.42; 95% CI 2.38-12.32). Composite outcomes were comparable between the LPM and TVPM groups, but the rates of cardiac tamponade and all-cause death within 7 days after implantation were higher in the LPM group.",
+    "authors": [
+      "Nishimura T",
+      "Kanaoka K",
+      "Sumita Y",
+      "Matsuura H",
+      "Chishaki-Kawabata S",
+      "Shako D",
+      "Ikee T",
+      "Oka S",
+      "Wakamiya A",
+      "Ueda N",
+      "Nakajima K",
+      "Nakasuka K",
+      "Kamakura T",
+      "Wada M",
+      "Ishibashi K",
+      "Inoue Y",
+      "Miyamoto K",
+      "Aiba T",
+      "Miyamoto Y",
+      "Kusano K"
+    ],
+    "journal": "Circulation journal : official journal of the Japanese Circulation Society",
+    "journal_issn": "1347-4820",
+    "year": 2026,
+    "publication_date": "2026-06-14",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [
+      "JROAD (Japanese Registry of All Cardiac and Vascular Diseases)"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "安全性・副作用",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 3.05,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-22T00:04:37.655Z",
+    "classified": true,
+    "title_ja": "経静脈ペースメーカーとリードレスペースメーカーの動向と院内転帰：JROAD-DPCを用いた全国マッチド対照研究",
+    "abstract_ja": "JROAD-DPCを用い、2017-2023年にペースメーカー植込みを受けた成人を対象に、リードレス(LPM)と経静脈(TVPM)の動向と院内転帰を傾向スコアマッチングで比較。LPM選択は0.5%から25%に増加し、複合転帰（院内死亡・全合併症）は両群同等（5.41% vs 5.59%）だった。一方、植込後7日以内死亡と心タンポナーデ（OR 5.42）はLPM群で高頻度だった。"
+  },
+  {
+    "id": "pmid-42289311",
+    "pubmed_id": "42289311",
+    "doi": "10.1002/npr2.70142",
+    "title": "Clopidogrel, an ADP-P2Y12 Receptor Antagonist, Is Associated With Lower Opioid Consumption and a Reduced Incidence of Delirium in Cancer Patients Receiving Chemotherapy: A Nationwide Retrospective Cohort Study in Japan.",
+    "abstract": "P2Y12 receptor activation stimulates spinal microglia and exacerbates pain. However, whether clopidogrel, a P2Y12 receptor antagonist, has analgesic properties remains unclear. This study aimed to evaluate the association between clopidogrel use and opioid consumption in cancer patients receiving chemotherapy. We identified cancer patients receiving inpatient chemotherapy between January 2019 and December 2020 using the Diagnosis Procedure Combination database, a Japanese national inpatient database. Propensity score matching was conducted between clopidogrel and aspirin users. The primary outcome was opioid consumption during hospitalization. The secondary outcomes included analgesic use (opioids, acetaminophen, nonsteroidal anti-inflammatory drugs, and gabapentinoids) and hyperactive delirium. Among 71 554 eligible patients (male, 73%; mean age, 73.7 years), 25.3% were administered clopidogrel and 74.7% were administered aspirin. Propensity score matching included 18 135 and 36 270 patients in the clopidogrel and aspirin groups, respectively. The median daily opioid consumption in morphine milligram equivalent was significantly lower in the clopidogrel group than in the aspirin group (16.4 mg/day vs. 21.4 mg/day; p < 0.001). The analgesic use was significantly lower in the clopidogrel group for opioids (odds ratio [OR], 0.83; 95% confidence interval [CI], 0.78-0.88; p < 0.001), acetaminophen (OR, 0.91; 95% CI, 0.88-0.95; p < 0.001), and nonsteroidal anti-inflammatory drugs (OR, 0.83; 95% CI, 0.80-0.87; p < 0.001). Moreover, the occurrence of hyperactive delirium was significantly lower in the clopidogrel group (OR, 0.80; 95% CI, 0.69-0.92; p = 0.002). Clopidogrel may have an analgesic effect in cancer patients receiving chemotherapy.",
+    "authors": [
+      "Abe H",
+      "Inoue R",
+      "Kogure T",
+      "Tsuchida R",
+      "Owada H",
+      "Sudo Y",
+      "Yokoshima Y",
+      "Matsui H",
+      "Yasunaga H",
+      "Sumitani M"
+    ],
+    "journal": "Neuropsychopharmacology reports",
+    "journal_issn": "2574-173X",
+    "year": 2026,
+    "publication_date": "2026-06-14",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "回帰分析"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Male",
+      "Clopidogrel",
+      "Aged",
+      "Japan",
+      "Female",
+      "Retrospective Studies",
+      "Delirium",
+      "Neoplasms",
+      "Analgesics, Opioid",
+      "Purinergic P2Y Receptor Antagonists",
+      "Aged, 80 and over",
+      "Incidence",
+      "Middle Aged",
+      "Aspirin"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.25,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-22T00:04:37.760Z",
+    "classified": true,
+    "title_ja": "クロピドグレル（ADP-P2Y12受容体拮抗薬）は化学療法を受けるがん患者のオピオイド使用量低下とせん妄減少に関連：日本の全国後ろ向きコホート研究",
+    "abstract_ja": "DPC（全国入院DB）で、2019-2020年に入院化学療法を受けたがん患者をクロピドグレルとアスピリン使用で傾向スコアマッチングし、オピオイド使用量を比較。クロピドグレル群はオピオイド使用量中央値が有意に低く（16.4 vs 21.4 mg/日）、鎮痛薬使用や過活動型せん妄(OR 0.80)も少なかった。クロピドグレルがP2Y12拮抗を介し鎮痛作用を持つ可能性を示唆した。"
+  },
+  {
+    "id": "pmid-42289018",
+    "pubmed_id": "42289018",
+    "doi": "10.1007/s40520-026-03434-z",
+    "title": "Trajectory of frailty among the older people in a community setting: A cohort study from the Shizuoka Kokuho Database.",
+    "abstract": "Long-term population-level evidence on frailty trajectories, particularly among the oldest-old, remains limited. To evaluate 6-year frailty trajectories in community-dwelling adults aged ≥ 50 years. We conducted a cohort study using a regional Japanese administrative claims database from 2012 to 2020. Frailty was measured using the electronic Frailty Index. Inverse probability of censoring weighting accounted for insurance-plan disenrollment, and weighted multinomial logistic regression estimated adjusted 6-year transition probabilities. The cohort included 1,040,663 adults aged ≥ 50 years (mean age, 73.2 years; 58.6% women). Six-year final status worsened with baseline frailty severity: death increased from 12.7% among fit individuals to 23.8%, 34.7%, and 49.1% among those with mild, moderate, and severe frailty. Among those with severe frailty, recovery to fit status occurred in 2.6%, and recovery to fit or mild frailty in 9.0%; 91.0% died or were in moderate-to-severe frailty. Age- and sex-specific patterns differed. Among fit adults aged 65-74 years, women had lower mortality than men (4.3% vs. 8.7%) and higher probabilities of being alive with mild or moderate frailty (26.6% vs. 21.8%; 6.1% vs. 4.9%). Among fit adults aged ≥ 85 years, death was the dominant final state, although women had lower mortality (53.9% vs. 59.0%) and higher fit status (21.7% vs. 18.8%). Severe frailty was rarely followed by recovery to fit or mild status. Sex differences in frailty trajectories varied across age groups. These findings highlight severe frailty as a late high-risk state and may inform age- and sex-specific frailty risk stratification and care planning.",
+    "authors": [
+      "Nishimura S",
+      "Morohoshi K",
+      "Nakamaru R",
+      "Tachimori H",
+      "Yamamoto H",
+      "Nakatani E",
+      "Takeuchi M",
+      "Miyachi Y",
+      "Kohsaka S",
+      "Miyata H",
+      "Kumamaru H"
+    ],
+    "journal": "Aging clinical and experimental research",
+    "journal_issn": "1720-8319",
+    "year": 2026,
+    "publication_date": "2026-06-14",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "静岡国保データベース（Shizuoka Kokuho Database）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 5.06,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-22T00:04:37.841Z",
+    "classified": true,
+    "title_ja": "地域在住高齢者におけるフレイルの軌跡：静岡国保データベースを用いたコホート研究",
+    "abstract_ja": "静岡国保データベース（2012-2020年）を用い、50歳以上の地域在住者1,040,663人の6年間のフレイル軌跡を電子フレイル指数と重み付き多項ロジスティック回帰で解析。6年後の死亡は健常者12.7%から重度フレイル49.1%へと重症度とともに上昇し、重度フレイルからの回復は稀だった。性・年齢で軌跡が異なり、重度フレイルが後期の高リスク状態であることを示した。"
+  },
+  {
     "id": "pmid-42286607",
     "pubmed_id": "42286607",
     "doi": "10.1186/s12905-026-04588-8",
