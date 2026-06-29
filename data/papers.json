@@ -1,5 +1,524 @@
 [
   {
+    "id": "pmid-42351284",
+    "pubmed_id": "42351284",
+    "doi": "10.1186/s13030-026-00363-1",
+    "title": "Clinical characteristics and healthcare utilization of orthostatic dysregulation in Japan: a nationwide descriptive study.",
+    "abstract": "Orthostatic dysregulation (OD) is a physical disorder characterized by circulatory disturbances due to autonomic nervous system imbalance that predominantly affects children. In Japan, OD is common and closely associated with school non-attendance, and its clinical management has developed from a psychosomatic perspective. However, large-scale data on real-world clinical practices are lacking. This study uses nationwide data to describe the comorbidities, prescribed medications, and medical practices for OD. This descriptive study utilized the Medical Information Analysis databank, a nationwide administrative database operated by the National Hospital Organization in Japan. We identified 7,213 patients aged 6 to 18 years who were first diagnosed with OD between 2016 and 2023. Descriptive statistics were used to analyze patient demographics, comorbidities, prescribed medications, and medical practices. Subgroup analyses stratified by prescription patterns were conducted. The median age at diagnosis was 13 years, and 55.6% of the patients were female. The most common comorbidity category was mental health/behavioral disorders (23.6%). The most prevalent specific conditions were sleep disorders (10.2%), school non-attendance (9.3%), and autism spectrum disorder/attention-deficit hyperactivity (7.1%). Pharmacotherapy was provided to 44.0% of the patients, with a mean of 1.3 medications per patient. Midodrine was the most prescribed medication (78.3%), followed by amezinium metilsulfate (6.7%), and propranolol (2.8%). Sleep medications were prescribed to 9.4% of treated patients. The most frequent medical practices were blood tests (48.6%), diagnostic imaging (35.9%), and electrocardiograms (24.2%). The subgroup prescribed sleep medications had a higher prevalence of neurodevelopmental disorders, school non-attendance, and depression. This first nationwide descriptive study of OD in Japan provides real-world evidence on clinical characteristics and healthcare utilization. Heterogeneous comorbidity profiles and prescription patterns reveal the clinical diversity of the patient population. Our findings highlight the need for tailored therapeutic strategies to support more effective care.",
+    "authors": [
+      "Shinno K",
+      "Iijima H",
+      "Ishitsuka K",
+      "Inoue N",
+      "Hashimoto Y",
+      "Nagai A",
+      "Kamimaki I",
+      "Nagamitsu S"
+    ],
+    "journal": "BioPsychoSocial medicine",
+    "journal_issn": "1751-0759",
+    "year": 2026,
+    "publication_date": "2026-06-26",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "国立病院機構 医療情報分析データバンク（MIA、全国規模の行政データベース）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 1.86,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-29T00:05:10.737Z",
+    "classified": true,
+    "title_ja": "日本における起立性調節障害の臨床的特徴と医療利用：全国記述的研究",
+    "abstract_ja": "国立病院機構の全国規模行政データベース（MIA）を用い、2016〜2023年に起立性調節障害と初診断された6〜18歳7,213名の後方視的記述研究。併存疾患・処方薬・診療行為を記述統計で分析した。最多併存はメンタルヘルス／行動障害（23.6%）で、薬物療法は44.0%に実施されミドドリン（78.3%）が最多であった。多様な併存・処方パターンが患者集団の臨床的多様性を示すとした。"
+  },
+  {
+    "id": "pmid-42348995",
+    "pubmed_id": "42348995",
+    "doi": "10.1016/j.resmer.2026.101293",
+    "title": "Should nintedanib be continued after acute exacerbation of idiopathic pulmonary fibrosis? A retrospective observational study using a nationwide database in Japan.",
+    "abstract": "Acute exacerbation of idiopathic pulmonary fibrosis (AE-IPF) carries a high risk of short-term mortality, and optimal management strategies remain unclear. Although recent studies have suggested that antifibrotic therapy improves outcomes following acute exacerbation, whether antifibrotic therapy continuation confers prognostic benefit in patients already receiving treatment at the time of AE remains unclear. In real-world practice, continuation during the acute phase is usually difficult due to adverse events and impaired oral intake. This retrospective observational cohort study used the Japanese nationwide Diagnosis Procedure Combination database. It included patients hospitalized for AE-IPF between April 2018 and March 2023 and receiving nintedanib before admission. Patients who received nintedanib within 3 days of admission and continued treatment until day 7 were classified as the nintedanib-continued group and the remaining patients as the nintedanib-discontinued group. Propensity score matching was employed for baseline difference adjustment. The primary outcome was in-hospital mortality, whereas the secondary outcomes included survival time from admission to death or discharge and adverse events during hospitalization. Of the 572 eligible patients, 181 continued and 391 discontinued nintedanib during hospitalization. After propensity score matching, 146 matched pairs were analyzed. In-hospital mortality did not significantly differ between the continued and discontinued groups. The median in-hospital survival time was identical in both groups (76 days). Adverse events were uncommon and did not significantly differ between the groups. In this nationwide cohort of patients hospitalized for AE-IPF, nintedanib continuation during the acute phase did not result in improved short-term outcomes compared with discontinuation.",
+    "authors": [
+      "Shuto H",
+      "Hagiwara A",
+      "Kudoh R",
+      "Matsumoto H",
+      "Omori S",
+      "Fushimi K",
+      "Komiya K"
+    ],
+    "journal": "Respiratory medicine and research",
+    "journal_issn": "2590-0412",
+    "year": 2026,
+    "publication_date": "2026-06-25",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 0.77,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-29T00:05:13.551Z",
+    "classified": true,
+    "title_ja": "特発性肺線維症の急性増悪後にニンテダニブを継続すべきか：日本の全国データベースを用いた後方視的観察研究",
+    "abstract_ja": "DPCデータベースを用い、2018〜2023年に特発性肺線維症の急性増悪で入院し入院前からニンテダニブ投与中であった患者を対象に、急性期の継続群と中止群を傾向スコアマッチングで比較した後方視的コホート研究。146組のマッチングペアで院内死亡率・生存期間・有害事象を評価した結果、継続による短期予後の改善は認められなかった。"
+  },
+  {
+    "id": "pmid-42348544",
+    "pubmed_id": "42348544",
+    "doi": "10.1097/MPA.0000000000002694",
+    "title": "Clinical Statistics and Outcomes of Pancreatic Neoplasms in Japan: A Retrospective Cohort Study using the Japan Pancreatic Cancer Registry.",
+    "abstract": "The Japan Pancreatic Cancer Registry (JPCR), managed by the Japan Pancreas Society, has adopted the National Clinical Database (NCD) platform for data registration. This study aimed to describe the nationwide annual trends and clinical outcomes of pancreatic neoplasms using this NCD-based registry (NCD-JPCR) for the first time. We analyzed data from the NCD-JPCR for pancreatic neoplasms registered between 2012 and 2018. The annual epidemiological trends and survival outcomes were evaluated for major pancreatic neoplasms, including invasive ductal carcinoma (IDC). In total, 47,005 patients were registered from 1,062 departments, with approximately 600 departments contributing annually. IDC was the most common diagnosis (n=36,204; 77.0%), followed by intraductal (n=4,498; 9.6%), cystic (n=2,687; 5.7%), and pancreatic neuroendocrine neoplasms (n=2,494; 5.3%). In the survival analysis of IDC, patients who underwent resection showed a significantly longer median overall survival (mOS) in 2015-2018 than in 2012-2014 (34.5 months [n=17,328] vs. 29.7 months [n=9,623]; P<0.0001). Similarly, mOS for patients who did not undergo resection significantly improved in 2015-2018 compared with 2012-2014 (10.2 months [n=5,733] vs. 9.0 months [n=3,326]; P<0.0001). Treatment outcomes for IDC showed significant improvements from the early to the late 2010s for both patients who did and did not undergo resection. These findings may reflect nationwide progress in the multidisciplinary management of pancreatic cancer in Japan.",
+    "authors": [
+      "Mizuma M",
+      "Hirakawa S",
+      "Tachimori H",
+      "Kumamaru H",
+      "Itoi T",
+      "Egawa S",
+      "Kawai M",
+      "Kodama Y",
+      "Satoi S",
+      "Nakata K",
+      "Hamada S",
+      "Yasuda I",
+      "Kakeji Y",
+      "Shirabe K",
+      "Unno M",
+      "Shimosegawa T",
+      "Okazaki K",
+      "Takeyama Y",
+      "Masamune A"
+    ],
+    "journal": "Pancreas",
+    "journal_issn": "1536-4828",
+    "year": 2026,
+    "publication_date": "2026-06-25",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 1.36,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-29T00:05:20.470Z",
+    "classified": true,
+    "title_ja": "日本における膵腫瘍の臨床統計と転帰：日本膵臓癌登録（NCD基盤）を用いた後方視的コホート研究",
+    "abstract_ja": "NCDを基盤とする日本膵臓癌登録（NCD-JPCR）を用い、2012〜2018年に登録された膵腫瘍47,005例の全国動向と転帰を解析した後方視的コホート研究。浸潤性膵管癌が77.0%を占め、切除例・非切除例ともに2015〜2018年の生存期間中央値が2012〜2014年より有意に延長した。膵癌の集学的治療の全国的進展を反映する可能性を示した。"
+  },
+  {
+    "id": "pmid-42336478",
+    "pubmed_id": "42336478",
+    "doi": "10.1136/fmch-2025-003809",
+    "title": "Determinants of polydoctoring among patients with multimorbidity: a Nationwide Longitudinal Fixed-Effects Study in Japan.",
+    "abstract": "To identify which chronic conditions and patient characteristics contribute to increases in the number of regularly visited facilities (RVF), a measure of polydoctoring, among adults with multimorbidity in Japan. Retrospective cohort study using individual fixed-effects Poisson regression models to estimate within-person associations between the onset of each chronic condition and changes in RVF. This approach controlled for all time-invariant personal characteristics. Effect modification by age, geographic region and baseline multimorbidity was also assessed. A nationwide health claims database covering multiple insurance systems in Japan, including municipal National Health Insurance, Employees' Health Insurance and the Long-Life Medical Care System. 4 696 790 adults with two or more chronic conditions and two or more consecutive years of follow-up. The onset of examined chronic conditions was associated with changes in RVF, with substantial variation in effect size across conditions. The strongest association was observed for malignancy (RR=1.102; 95% CI 1.101 to 1.103), followed by osteoporosis (RR=1.065; 95% CI 1.064 to 1.065), arthritis (RR=1.061; 95% CI 1.060 to 1.061), obesity (RR=1.049; 95% CI 1.044 to 1.055), stroke (RR=1.044; 95% CI 1.041 to 1.048) and cardiovascular disease (RR=1.043; 95% CI 1.042 to 1.044). Associations between disease onset and RVF were consistently attenuated among individuals aged ≥75 years and those with higher baseline multimorbidity while differences between urban and rural residents were minimal. Substantial heterogeneity was observed in the magnitude of RVF increases across chronic conditions, with particularly strong associations for malignancy, osteoporosis and arthritis. Attenuated effects among older adults and individuals with higher multimorbidity suggest that patient capacity and treatment burden may influence patterns of healthcare utilisation. These findings underscore condition-specific drivers of care fragmentation and may inform more tailored care-coordination strategies for people living with multimorbidity.",
+    "authors": [
+      "Ando T",
+      "Jani BD",
+      "Haruta J",
+      "Goto R"
+    ],
+    "journal": "Family medicine and community health",
+    "journal_issn": "2009-8774",
+    "year": 2026,
+    "publication_date": "2026-06-24",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Japan",
+      "Female",
+      "Male",
+      "Multimorbidity",
+      "Retrospective Studies",
+      "Chronic Disease",
+      "Aged",
+      "Middle Aged",
+      "Longitudinal Studies",
+      "Adult",
+      "Aged, 80 and over"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": [
+      "全国規模の健康保険レセプトDB（国民健康保険・被用者保険・後期高齢者医療制度を含む）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 3.63,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-29T00:05:30.784Z",
+    "classified": true,
+    "title_ja": "多疾患併存患者における複数医療機関受診（ポリドクタリング）の決定要因：日本の全国縦断的固定効果研究",
+    "abstract_ja": "複数保険制度を横断する全国規模のレセプトDBを用い、2疾患以上を有する成人約470万人を対象に、各慢性疾患の発症と定期受診施設数（ポリドクタリングの指標）の個人内変化を固定効果ポアソン回帰で分析した後方視的コホート研究。悪性腫瘍（RR=1.102）が最も強く関連し、骨粗鬆症・関節炎が続いた。75歳以上や併存度の高い層では関連が減弱し、疾患別のケア調整戦略の必要性を示した。"
+  },
+  {
+    "id": "pmid-42336624",
+    "pubmed_id": "42336624",
+    "doi": "10.1136/heartjnl-2026-328193",
+    "title": "Heart failure and renal outcomes with angiotensin receptor blockers compared with calcium channel blockers in patients with chronic kidney disease: a target trial emulation.",
+    "abstract": "Hypertension is highly prevalent among patients with chronic kidney disease (CKD) and contributes substantially to cardiovascular complications and progression of kidney disease. Although angiotensin receptor blockers (ARBs) and calcium channel blockers (CCBs) are widely used antihypertensive agents in CKD, comparative evidence regarding their long-term effects on clinically important cardiorenal outcomes remains limited. We conducted a target trial emulation using nationwide-scale healthcare claims and health check-up data in Japan between April 2014 and September 2024. We emulated sequentially nested new-user trials and used a 1-month induction-period approach to compare ARB-based versus CCB-based antihypertensive treatment strategies. Intention-to-treat effects were estimated using discrete-time proportional hazards models with inverse probability of treatment and censoring weighting, accounting for competing risks. Among 12 978 patients with CKD (4524 initiating ARB-based therapy and 8454 initiating CCB-based therapy), ARB-based strategies were associated with a directionally lower but not statistically significant risk of heart failure hospitalisation (HR 0.871, 95% CI 0.751 to 1.011). ARB-based therapy was also associated with lower risks of progression to end-stage renal disease (HR 0.533, 95% CI 0.317 to 0.898) and all-cause mortality (HR 0.825, 95% CI 0.706 to 0.963). No consistent differences were observed for myocardial infarction or stroke. In this nationwide target trial emulation, ARB-based antihypertensive strategies were associated with lower risks of kidney failure and all-cause mortality, with a directionally lower but statistically uncertain risk of heart failure hospitalisation. These findings suggest that ARB-based antihypertensive strategies may confer clinically relevant cardiorenal benefits compared with CCB-based strategies in patients with CKD, although causal interpretation remains limited by the observational design.",
+    "authors": [
+      "Noma H",
+      "Kurita N",
+      "Fukuma S",
+      "Fujisawa T",
+      "Oda F",
+      "Maeda M",
+      "Fukuda H"
+    ],
+    "journal": "Heart (British Cardiac Society)",
+    "journal_issn": "1468-201X",
+    "year": 2026,
+    "publication_date": "2026-06-23",
+    "analysis_methods": [
+      "ターゲットトライアルエミュレーション",
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "全国規模のレセプト・健診データ（2014〜2024年）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 2.53,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-29T00:05:22.841Z",
+    "classified": true,
+    "title_ja": "慢性腎臓病患者におけるARBとカルシウム拮抗薬の心不全・腎アウトカム比較：ターゲットトライアルエミュレーション",
+    "abstract_ja": "全国規模のレセプト・健診データ（2014〜2024年）を用い、CKD患者12,978名を対象にARB基盤治療とCa拮抗薬基盤治療をターゲットトライアルエミュレーションで比較。IPTWと競合リスクを考慮した離散時間比例ハザードモデルを用いた。ARB群は末期腎不全（HR 0.533）と全死亡（HR 0.825）のリスクが有意に低く、心不全入院は有意差なく低い傾向であった。"
+  },
+  {
+    "id": "pmid-42329841",
+    "pubmed_id": "42329841",
+    "doi": "10.1371/journal.pone.0351293",
+    "title": "Trends and determinants of acute tocolysis implementation in Japan, 2012-2023: An 11-year nationwide retrospective cohort study.",
+    "abstract": "International guidelines, such as those from the WHO, recommend limiting the duration of tocolysis to up to 48 hours in order to provide a window for antenatal corticosteroid administration and maternal transfer. However, reports from multiple countries indicate that tocolysis is being performed for 48 hours or longer in actual clinical settings. This study used nationwide data in Japan over an 11-year period to investigate changes in tocolytic protocol and identify factors associated with tocolysis within 48 hours. Using the Diagnosis Procedure Combination database, we analyzed data from 156,356 pregnant women who received ritodrine infusion for preterm labor between April 2012 and March 2023. To accommodate day-based administrative data, we defined acute tocolysis (AT) as ≤2 and maintenance tocolysis (MT) as ≥4 days of treatment. Annual trends in AT utilization rates were examined, and logistic regression analysis was performed to identify factors associated with AT, including institutional characteristics, regional differences, and obstetric complications. The rate of AT utilization increased from 15.73% to 23.74% over the study period, as did variation among hospitals. University hospitals (adjusted odds ratio [aOR] = 1.16), perinatal centers (aOR = 1.12), preterm premature rupture of membranes (aOR = 3.18), and pregnancy-induced hypertension (aOR = 1.52) were associated with AT, while concomitant use of magnesium sulfate hydrate (aOR = 0.91), multiple fetuses (aOR = 0.64), and placenta previa (aOR = 0.67) were negatively associated with AT utilization. While AT utilization has increased over time, significant disparities between facilities remain. These findings suggest that the choice of tocolytic protocol is not determined by evidence alone, but is complexly influenced by institutional roles, regional healthcare systems, and specific maternal complications. This study highlights the importance of understanding these multifaceted factors to optimize treatment strategies that balance international standards with the practicalities of individualized patient care.",
+    "authors": [
+      "Toba M",
+      "Oi R",
+      "Moriwaki M",
+      "Kakehashi M",
+      "Fudono A",
+      "Fushimi K",
+      "Miyasaka N"
+    ],
+    "journal": "PloS one",
+    "journal_issn": "1932-6203",
+    "year": 2026,
+    "publication_date": "2026-06-22",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Japan",
+      "Tocolysis",
+      "Female",
+      "Pregnancy",
+      "Retrospective Studies",
+      "Tocolytic Agents",
+      "Obstetric Labor, Premature",
+      "Adult",
+      "Ritodrine"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": null,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-29T00:05:39.885Z",
+    "classified": true,
+    "title_ja": "日本における急性期子宮収縮抑制の実施動向と決定要因（2012-2023）：11年間の全国後方視的コホート研究",
+    "abstract_ja": "DPCデータベースを用い、2012〜2023年に切迫早産でリトドリン点滴を受けた妊婦156,356名を対象に、子宮収縮抑制（2日以内＝急性期 vs 4日以上＝維持）の動向と関連因子をロジスティック回帰で解析した後方視的コホート研究。急性期実施率は15.73%から23.74%へ増加し、大学病院・周産期センター・前期破水・妊娠高血圧が急性期実施と関連した。施設間格差が依然大きいことを示した。"
+  },
+  {
+    "id": "pmid-42329555",
+    "pubmed_id": "42329555",
+    "doi": "10.1007/s10388-026-01223-1",
+    "title": "Development and validation of a novel perioperative risk model for anastomotic leakage after esophagectomy using a nationwide web-based database.",
+    "abstract": "Risk assessment is essential for planning esophagectomy in patients with esophageal or gastro-esophageal junction (GEJ) cancers. However, previous reports using only preoperative variables (preoperative risk models) have poorly predicted postoperative anastomotic leakage. This study aimed to develop a novel risk model for anastomotic leakage using a combination of preoperative, intraoperative, and postoperative variables (perioperative risk model). Clinical data of 20,113 patients with esophageal or GEJ cancer who underwent esophagectomy followed by reconstruction between 2016 and 2019 were retrieved from the National Clinical Database (NCD), a Japanese web-based nationwide registry. Preoperative and perioperative risk models for anastomotic leakage were developed using only preoperative variable and a combination of preoperative, intraoperative, and postoperative variables within 72 h, respectively. The performance of the perioperative risk model was validated using NCD data of 5,147 esophagectomies registered in 2020. In the overall population, 11,360 (45.0%) patients were aged ≥ 75 years, and 81.3% were male. Preoperative variables were comparable between the development and external validation cohorts. Anastomotic leakage was observed in 13.7% and 14.4% of the development and validation cohorts, respectively, and in 13.9% of all patients. The optimism-corrected C-statistics was higher in the perioperative risk model (0.610; 95% CI, 0.599-0.621) than in the preoperative risk model (0.565; 95% CI, 0.554-0.577). In the validation analysis, the C-statistics was 0.602 (95% CI, 0.580-0.623) for predicting anastomotic leakage. Postoperative risk assessment using perioperative variables, including operative factors and early postoperative events, may help surgeons predict anastomotic leakage and improve patient management after esophagectomy.",
+    "authors": [
+      "Kikuchi H",
+      "Endo H",
+      "Kumamaru H",
+      "Kajiwara Y",
+      "Kanaji S",
+      "Kono K",
+      "Matsubara H",
+      "Doki Y",
+      "Shirabe K",
+      "Kakeji Y",
+      "Kitagawa Y",
+      "Takeuchi H"
+    ],
+    "journal": "Esophagus : official journal of the Japan Esophageal Society",
+    "journal_issn": "1612-9067",
+    "year": 2026,
+    "publication_date": "2026-06-22",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "方法論・バリデーション",
+      "安全性・副作用"
+    ],
+    "impact_factor": null,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-29T00:05:49.345Z",
+    "classified": true,
+    "title_ja": "全国web基盤データベースを用いた食道切除術後縫合不全の新規周術期リスクモデルの開発と検証",
+    "abstract_ja": "全国web登録であるNCDを用い、2016〜2019年に食道・食道胃接合部癌で食道切除・再建を受けた20,113例から、術前・術中・術後変数を組み合わせた周術期リスクモデルを開発し、2020年の5,147例で外部検証した。縫合不全は全体で13.9%に発生し、周術期モデルのC統計量（0.610）は術前のみモデル（0.565）を上回り、術後の縫合不全予測に有用である可能性を示した。"
+  },
+  {
+    "id": "pmid-42328639",
+    "pubmed_id": "42328639",
+    "doi": "10.3389/fphar.2026.1833433",
+    "title": "Post-marketing safety evaluation of mirogabalin using the JADER database.",
+    "abstract": "Mirogabalin, a novel third-generation α2-δ calcium channel ligand, is approved for diabetic peripheral neuropathic pain (DPNP). However, its post-marketing safety profile remains insufficiently characterized, particularly regarding novel signals and comparative safety profiles with established therapies. This study aimed to identify and characterize adverse event (AE) signals associated with mirogabalin, evaluate demographic differences, and compare signal strength with pregabalin and gabapentin. We conducted a pharmacovigilance analysis using the Japanese Adverse Drug Event Report (JADER) database (January 2019-June 2025). Disproportionality analysis was performed using the Reporting Odds Ratio (ROR) and Information Component (IC) methods. Subgroup analyses by sex and age, sensitivity analyses restricted to monotherapy reports, and time-to-onset (TTO) analysis using Weibull modeling were conducted. Among 463 healthcare professional-reported AE reports, 33 positive signals were identified. Beyond known AEs (e.g., dizziness, somnolence), six novel potential signals were detected: pleural effusion (n = 6), contusion (n = 4), toxic encephalopathy (n = 4), Cardiac failure congestive (n = 4), deafness (n = 3), and angioedema (n = 3). Head-to-head comparisons revealed that mirogabalin exhibited significantly higher reporting odds ratios (RORs) than pregabalin for pleural effusion (ROR = 2.39, 95%CI: 1.01-5.65), toxic encephalopathy (ROR = 6.37, 95%CI: 1.99-20.36), contusion (ROR = 3.35, 95%CI: 1.14-9.87), and deafness (ROR = 3.67, 95%CI: 1.04-12.91), and significantly higher RORs than gabapentin for cardiac failure congestive (ROR = 6.05, 95%CI: 1.78-20.54). Subgroup analysis revealed sex- and age-related differences: male patients showed higher reporting proportions of muscle weakness, myoclonus, erythema multiforme, urinary retention, and elevated liver enzymes, whereas females exhibited higher proportions of renal impairment and falls; elderly patients (≥65 years) showed higher reporting frequencies of dizziness and rhabdomyolysis, whereas the 18-65 age group showed higher proportions of hepatic and cardiovascular events. Sensitivity analysis partially supported the stability of some signals, with rhabdomyolysis identified exclusively in monotherapy reports. The median TTO was 6 days (IQR: 2-42), indicating an early-clustering pattern (β = 0.55, 95% CI: 0.50-0.60). Sensitivity analysis after excluding outliers yielded a median TTO of 5 days (IQR: 2-28) with β = 0.72 (95% CI: 0.65-0.80). This study extends the understanding of mirogabalin's post-marketing safety profile by identifying six novel signals and revealing distinct safety signal profiles compared with established α2-δ ligands. Demographic-stratified monitoring strategies are warranted to optimize patient safety.",
+    "authors": [
+      "Sun X",
+      "Li L",
+      "Li G",
+      "Wang L",
+      "Zhang H",
+      "Lu C",
+      "Zhao Y",
+      "Chen J",
+      "Wang A"
+    ],
+    "journal": "Frontiers in pharmacology",
+    "journal_issn": "1663-9812",
+    "year": 2026,
+    "publication_date": "2026-06-22",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": null,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-29T00:05:58.458Z",
+    "classified": true,
+    "title_ja": "JADERデータベースを用いたミロガバリンの市販後安全性評価",
+    "abstract_ja": "JADER（2019年1月〜2025年6月）を用い、ミロガバリンの有害事象シグナルをROR・ICによる不均衡分析で評価した薬剤疫学研究。医療者報告463件から33の陽性シグナルを検出し、胸水・中毒性脳症など6つの新規シグナルを同定した。プレガバリン・ガバペンチンとの直接比較やTTO解析も行い、α2-δリガンド間で異なる安全性プロファイルを示した。"
+  },
+  {
+    "id": "pmid-42324850",
+    "pubmed_id": "42324850",
+    "doi": "10.1111/jog.70378",
+    "title": "Maternal Complications and Facility-Level Differences in the Management of Placental Abruption in Japan: A Retrospective Analysis Using a Multicenter DPC Database.",
+    "abstract": "To evaluate maternal characteristics, management practices, and outcomes of placental abruption according to facility type in Japan, and to assess the effectiveness of the country's centralized perinatal care system. This retrospective observational study used the Diagnosis Procedure Combination database from acute-care hospitals between May 2014 and April 2024. Cases coded with ICD-10 O45.0 or O45.9 were included, excluding those with multiple gestations or placenta previa. Patients were categorized into Comprehensive Perinatal Medical Centers (CPMCs) and Regional Perinatal Medical Centers/General Hospitals (non-CPMCs). The primary outcomes were severe and serious maternal complications as defined by Ananth et al. Secondary outcomes included mode of delivery, hysterectomy, transfusion use and volume, maternal and fetal mortality, intensive care unit admission, estimated blood loss at delivery, and length of hospital stay. Among 771 eligible cases, 257 (33.3%) were admitted to CPMCs and 514 (66.7%) to non-CPMCs. Referrals (78.2% vs. 68.5%) and ambulance transports (63.0% vs. 37.5%) were significantly more frequent in CPMCs. Severe maternal complications were more common in CPMCs (30.0% vs. 18.3%), particularly coagulopathy and hypovolemic shock, many of which were present at admission. Despite higher baseline severity, rates of serious maternal complications and maternal mortality did not differ. The mean length of hospital stay was shorter in CPMCs (6.0 vs. 6.7 days). Severe placental abruption cases appear to be effectively centralized within this multicenter cohort. The advanced maternal emergency capacity of CPMCs may mitigate morbidity despite higher baseline severity, supporting the functional role of perinatal regionalization within this network.",
+    "authors": [
+      "Hirano S",
+      "Kanda M",
+      "Nii M",
+      "Kondo E",
+      "Ikeda T",
+      "Inoue T"
+    ],
+    "journal": "The journal of obstetrics and gynaecology research",
+    "journal_issn": "1447-0756",
+    "year": 2026,
+    "publication_date": "2026-06-22",
+    "analysis_methods": [],
+    "mesh_terms": [
+      "Female",
+      "Humans",
+      "Abruptio Placentae",
+      "Pregnancy",
+      "Japan",
+      "Retrospective Studies",
+      "Adult",
+      "Pregnancy Complications",
+      "Perinatal Care",
+      "Databases, Factual"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": null,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-29T00:06:07.584Z",
+    "classified": true,
+    "title_ja": "日本における常位胎盤早期剥離の管理：多施設DPCデータベースを用いた母体合併症と施設間差の解析",
+    "abstract_ja": "DPCデータベース（2014〜2024年）を用い、常位胎盤早期剥離771例を総合周産期母子医療センター（CPMC）と地域周産期センター/一般病院に分け、母体特性・管理・転帰を比較した後方視的観察研究。CPMCは紹介・救急搬送が多く重症合併症の頻度も高かったが、重篤合併症・母体死亡に差はなく在院日数は短かった。重症例の集約化が機能していることを示した。"
+  },
+  {
+    "id": "pmid-42324743",
+    "pubmed_id": "42324743",
+    "doi": "10.1111/cts.70650",
+    "title": "Benzbromarone as a Novel Candidate for Preventing Alzheimer's Disease: Evidence From Real-World Data Screening and in Vitro Validation.",
+    "abstract": "Drug development for Alzheimer's disease (AD) remains challenging, with only a 0.4% success rate from Phase I trials to regulatory approval. Drug repositioning leverages existing approved drugs to identify promising drug alternatives, particularly when combined with real-world data (RWD) and target trial emulation. In this study, we comprehensively screened 1,241 approved drugs using a large-scale Japanese claims database (n = 2,090,465; 2005-2023). We identified patients newly prescribed a study drug and applied an active-comparator, new-user design. We used propensity score-based inverse probability of treatment weighting (IPTW) to balance the covariates. The primary outcome was incident AD, defined using ICD-10 codes (F00 and G30). We estimated cumulative incidence using IPTW-adjusted Kaplan-Meier analysis and Cox proportional hazards models and conducted sensitivity analyses using Fine-Gray competing risk models, empirical calibration with negative control outcomes, and E-value estimation. We performed in vitro validation using Aβ-Tet-ON SH-SY5Y cells and quantified Aβ expression using western blotting. Benzbromarone, a uricosuric agent, was associated with a decreased risk of AD onset (adjusted HR: 0.54, 95% CI: 0.41-0.71, p < 0.05 post-FDR correction); this association remained robust across sensitivity analyses. In vitro, benzbromarone reduced Aβ protein expression in SH-SY5Y cells in a dose-dependent manner, even following transcriptional blockade, suggesting a posttranscriptional regulatory mechanism. In conclusion, using a combined approach of RWD-based pharmacoepidemiology and in vitro validation, we identified benzbromarone as a novel candidate potentially associated with reduced AD risk. Our findings highlight the potential of drug repositioning strategies to accelerate AD drug discovery, promoting further mechanistic and clinical investigations.",
+    "authors": [
+      "Sakagami S",
+      "Yoshida Y",
+      "Uemura S",
+      "Kumamoto T",
+      "Tsukamoto R",
+      "Nishi T",
+      "Kawano S",
+      "Fukuoka K",
+      "Ino H",
+      "Hamamura K",
+      "Ohdo S",
+      "Matsunaga N"
+    ],
+    "journal": "Clinical and translational science",
+    "journal_issn": "1752-8062",
+    "year": 2026,
+    "publication_date": "2026-06-22",
+    "analysis_methods": [
+      "ターゲットトライアルエミュレーション",
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Benzbromarone",
+      "Alzheimer Disease",
+      "Drug Repositioning",
+      "Female",
+      "Male",
+      "Japan",
+      "Uricosuric Agents",
+      "Aged",
+      "Amyloid beta-Peptides",
+      "Aged, 80 and over",
+      "Incidence",
+      "Cell Line, Tumor"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": [
+      "大規模日本のレセプトデータベース（2005〜2023年、約209万人）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 4.21,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-29T00:06:11.084Z",
+    "classified": true,
+    "title_ja": "ベンズブロマロンはアルツハイマー病予防の新規候補：リアルワールドデータスクリーニングとin vitro検証",
+    "abstract_ja": "大規模日本のレセプトDB（約209万人、2005〜2023年）を用い、承認薬1,241剤をactive-comparator新規使用者デザインとIPTWでスクリーニングし、ターゲットトライアルエミュレーションでアルツハイマー病（AD）発症リスクを評価した。尿酸排泄薬ベンズブロマロンがAD発症低下と関連し（HR 0.54）、in vitroでもAβ発現を用量依存的に低減した。薬剤リポジショニングの可能性を示した。"
+  },
+  {
+    "id": "pmid-42323780",
+    "pubmed_id": "42323780",
+    "doi": "10.1007/s12282-026-01882-z",
+    "title": "Prognostic impact of progesterone receptor status in patients with breast cancer and isolated locoregional recurrence.",
+    "abstract": "The impact of progesterone receptor (PR) status on the prognosis of breast cancer after isolated locoregional recurrence (ILRR) remains unclear. This study assessed the prognostic impact of the PR status of ILRR tumors in patients with estrogen receptor-positive (ER+)/human epidermal growth factor receptor 2-negative (HER2-) breast cancer. The study utilized data from the Japanese National Clinical Database (2004-2015), including 1,625 patients with ER+/HER2- ILRR. All participants were patients aged between 20 and 75 years at diagnosis who underwent curative surgery for ER+/HER2- primary breast cancer. Patients were classified into three groups based on the PR status of primary (p) and recurrent (r) tumors. We compared the overall survival (OS) and breast cancer-specific survival (BCSS) among the three groups using the Kaplan-Meier method with the log-rank test. ER and PR were considered positive if immunohistochemistry staining was positive in > 1% of tumor cells. For the ER expression levels in ILRR tumors, 1-10% were considered as ER-low positive. Patients with PR- ILRR (pPR-/rPR- and pPR+/rPR-) had significantly worse OS and BCSS than those with PR+ ILRR (pPR+/rPR+). Factors associated with worse outcomes included lymph node metastasis, a shorter disease-free interval, ER-low positivity, and no surgery for ILRR tumor. This study highlights PR-negativity in ER+/HER2- ILRR tumors as a poor prognostic factor after ILRR, independent of the PR status of the primary breast cancer, emphasizing the need for tailored treatment strategies.",
+    "authors": [
+      "Murata T",
+      "Kumamaru H",
+      "Yoshida M",
+      "Kinukawa N",
+      "Takayama S",
+      "Suto A",
+      "Jinno H",
+      "Ishida T",
+      "Niikura N",
+      "Saji S"
+    ],
+    "journal": "Breast cancer (Tokyo, Japan)",
+    "journal_issn": "1880-4233",
+    "year": 2026,
+    "publication_date": "2026-06-21",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": null,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-06-29T00:06:20.186Z",
+    "classified": true,
+    "title_ja": "孤立性局所領域再発を有する乳癌患者におけるプロゲステロン受容体（PR）状態の予後への影響",
+    "abstract_ja": "NCD（2004〜2015年）を用い、ER+/HER2-の孤立性局所領域再発（ILRR）を有する乳癌1,625例を対象に、再発腫瘍のPR状態が予後に与える影響をKaplan-Meier法・log-rank検定で評価した後方視的コホート研究。PR陰性ILRR例はPR陽性例より全生存・乳癌特異的生存が有意に不良であり、原発巣のPR状態とは独立した予後不良因子であることを示した。"
+  },
+  {
     "id": "pmid-42321926",
     "pubmed_id": "42321926",
     "doi": "10.1186/s40780-026-00595-x",
