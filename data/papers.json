@@ -1,5 +1,1180 @@
 [
   {
+    "id": "pmid-42390075",
+    "pubmed_id": "42390075",
+    "doi": "10.5414/CP205023",
+    "title": "Methotrexate and folic acid supplementation in rheumatoid arthritis: A Japanese claims database and 538,985 patients from April 2015 to November 2020.",
+    "abstract": "To assess the use of laboratory monitoring, folic acid supplementation, and folinate calcium therapy in patients with rheumatoid arthritis (RA) receiving first-line methotrexate (MTX) according to the 2019 Japan College of Rheumatology safety updates and using a large Japanese claims database (DeSC). Patient data for the period 2015 - 2020 were retrieved from the database, and patients were identified who had presented with active disease. The number of patients commencing with MTX treatment and receiving concomitant disease-modifying antirheumatic drug and folic acid supplementation were determined together with information on recommended laboratory testing (blood tests, serum creatinine, chest radiography, and KL-6) in the year prior to MTX initiation. The impact of the 2019 Japan College of Rheumatology guidelines was assessed by comparing the extent of folic acid supplementation before and after publication of the guidelines. Of the 1,574 patients identified with active RA, 919 (58.4%) started MTX. Folic acid was co-administered in 85.1% of MTX users, with no significant change in supplementation rates before and after the introduction of the 2019 guidelines (81.8 vs. 82.2%, p = 0.56), indicating that these safety protocols were already well-established. Baseline blood tests were carried out in 99.8% and chest radiography in 69.2% of patients. After commencing MTX treatment, the monitoring of serum creatinine (87.2 vs. 93.7%, p < 0.05) and KL-6 (15.2 vs. 28.4%, p < 0.05) increased significantly. The frequency of chest radiography decreased to 56.0% (p < 0.05), reflecting a shift toward more sensitive diagnostic tools in clinical practice. No patients required folinate calcium rescue therapy. MTX prescribing and monitoring in RA is generally carried out in accordance with clinical guidelines. Although folic acid supplementation is recommended and widely implemented, ~ 20% of patients do not receive it. Monitoring is generally carried out rigorously, but safety data indicate that these measures should receive more attention in high-risk elderly populations who were probably under-represented in this study.",
+    "authors": [
+      "Takabatake K",
+      "Takeda M",
+      "Nakamura M",
+      "Kawabe K",
+      "Hanaoka S",
+      "Hayashi H",
+      "Sahashi Y",
+      "Ooba N"
+    ],
+    "journal": "International journal of clinical pharmacology and therapeutics",
+    "journal_issn": "0946-1965",
+    "year": 2026,
+    "publication_date": "2026-07-05",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DeSC Healthcare"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "安全性・副作用"
+    ],
+    "impact_factor": 0.77,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:56.327Z",
+    "classified": true,
+    "title_ja": "関節リウマチにおけるメトトレキサートと葉酸補充：日本のレセプトDBを用いた53万人超の解析",
+    "abstract_ja": "日本のレセプトDB「DeSC」を用い、関節リウマチ患者のメトトレキサート(MTX)開始時のモニタリングと葉酸補充の実態を後方視的に調べた研究。MTX使用者の85.1%に葉酸が併用され、2019年ガイドライン前後で補充率に有意差はなく安全対策は既に定着していた。一方でクレアチニンやKL-6のモニタリングは開始後に有意に増加した。"
+  },
+  {
+    "id": "pmid-42400936",
+    "pubmed_id": "42400936",
+    "doi": "10.1080/25785826.2026.2693410",
+    "title": "Risk factors for adverse events or use of high-potency corticosteroids in non-infectious uveitis: a Japan claims database study (J-CAT2).",
+    "abstract": "The J-CAT2 study (#jRCT1030240195) aimed to evaluate treatment and patient factors associated with risk of complications/adverse events (AEs) or high corticosteroid exposure in patients with non-infectious uveitis (NIU) using advanced quantitative and visual analytical approaches. The study included data from a nationwide insurance claims database in Japan. Patients with NIU treatment-related claims (2016-2023) were included (n = 98,842). A nested case-control design was used to evaluate patient factors associated with complications/AEs or high corticosteroid exposure. Multivariable logistic regression and decision-tree analyses were performed. Sub-Tenon's corticosteroid injections were associated with dose-dependent increased odds of glaucoma treatment and cataract surgery (OR [95% CI]: 1 sub-Tenon's injection, 3.27 [2.60-4.11] and 3.19 [2.39-4.27], respectively; ≥2 sub-Tenon's injections, 5.54 [4.03-7.60] and 4.86 [3.44-6.85], respectively). Macular edema was the most likely factor associated with ≥2 sub-Tenon injections. Vogt-Koyanagi-Harada disease and sarcoidosis were the most likely factors associated with medium-to-high-dose corticosteroids and long-term oral corticosteroids. The J-CAT2 study used a novel, quantitative and visual framework to understand associations between dose, frequency, and duration of corticosteroid treatment and complications/AE risk in NIU. These findings suggest that optimization of corticosteroid administration protocols and exploration of alternative therapeutic strategies/targeted treatment approaches are necessary to mitigate complication risks.",
+    "authors": [
+      "Kusuhara S",
+      "Sonoda KH",
+      "Kaburaki T",
+      "Fujita T",
+      "Katayama S",
+      "Makishima M",
+      "Nakamura T",
+      "Nio M",
+      "Omoto T",
+      "Matsuo-Tezuka Y",
+      "Yoshizaki T",
+      "Kitamura M",
+      "Sasaki K",
+      "Ri K",
+      "Sato K",
+      "Goto H"
+    ],
+    "journal": "Immunological medicine",
+    "journal_issn": "2578-5826",
+    "year": 2026,
+    "publication_date": "2026-07-04",
+    "analysis_methods": [
+      "回帰分析",
+      "機械学習・AI"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の全国規模の医療保険レセプトDB（名称非記載）"
+    ],
+    "study_design": "症例対照研究",
+    "research_categories": [
+      "安全性・副作用",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.92,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:53.778Z",
+    "classified": true,
+    "title_ja": "非感染性ぶどう膜炎における合併症・有害事象および高力価ステロイド使用の危険因子：日本のレセプトDB研究（J-CAT2）",
+    "abstract_ja": "日本の全国レセプトDBを用い、非感染性ぶどう膜炎患者9.8万人を対象に合併症・有害事象や高用量ステロイド曝露の関連因子をネステッドケースコントロールで解析した研究。多変量ロジスティック回帰と決定木分析により、テノン嚢下ステロイド注射が用量依存的に緑内障治療・白内障手術のオッズ上昇と関連することを示した。"
+  },
+  {
+    "id": "pmid-42399674",
+    "pubmed_id": "42399674",
+    "doi": "10.1038/s41598-026-61094-5",
+    "title": "Nationwide trends in outpatient rates for ophthalmic surgeries in Japan before and after the COVID-19 pandemic: an analysis of the NDB open data.",
+    "abstract": "This study investigated nationwide changes in outpatient rates for major ophthalmic surgeries in Japan before and after the COVID-19 pandemic and regional disparities in these changes using the National Database of Health Insurance Claims and Specific Health Checkups (NDB) Open Data. Five surgery groups were analysed: eyelid, strabismus, glaucoma, vitreoretinal, and cataract surgery. Monthly nationwide data from April 2019 to March 2023 were used to calculate outpatient surgery rates and to compare a pre-COVID period (April 2019-March 2020) with a post-COVID period (June 2020-March 2023). Prefecture-level changes were evaluated using the 5th and 9th NDB Open Data releases, and 29 individual procedures were examined. Across the five surgery groups, outpatient rates increased from 0.41 ± 0.20 to 0.47 ± 0.21 (p = 0.005). Outpatient rates rose significantly for all surgery groups, with the largest increases for glaucoma (0.300 to 0.370) and cataract surgery (0.579 to 0.641). Prefecture-level outpatient rates increased particularly for glaucoma and cataract surgery, and vitreoretinal surgery showed a larger increase in metropolitan than in non-metropolitan prefectures. Procedure-level analysis revealed marked outpatient shifts for several glaucoma, eyelid, and complex vitreoretinal procedures, indicating a nationwide shift toward outpatient ophthalmic surgery with regional and procedure-specific variation.",
+    "authors": [
+      "Kabata Y",
+      "Hayashi I",
+      "Terauchi R",
+      "Nakano T"
+    ],
+    "journal": "Scientific reports",
+    "journal_issn": "2045-2322",
+    "year": 2026,
+    "publication_date": "2026-07-03",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 4.55,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:53.890Z",
+    "classified": true,
+    "title_ja": "COVID-19前後の日本における眼科手術の外来化率の全国動向：NDBオープンデータの解析",
+    "abstract_ja": "NDBオープンデータを用い、眼瞼・斜視・緑内障・硝子体・白内障の5手術群について外来手術率のCOVID-19前後の変化と地域差を分析した横断研究。全体で外来率は0.41から0.47へ有意に上昇し、緑内障と白内障で増加が大きく、外来化への全国的なシフトと地域・術式ごとの差が確認された。"
+  },
+  {
+    "id": "pmid-42399205",
+    "pubmed_id": "42399205",
+    "doi": "10.1002/pds.70429",
+    "title": "Effectiveness of Metformin in Preventing Colorectal Cancer Among Japanese Patients With Type 2 Diabetes: A Target Trial Emulation.",
+    "abstract": "Observational studies have repeatedly reported lower cancer incidence among metformin users than nonusers, but findings are inconsistent and often affected by issues such as immortal time, unclear comparators, and use of total cancer as a composite outcome, which precludes adequate adjustment for site-specific confounding. These limitations can be mitigated by explicitly emulating a target trial with a suitable active comparator. We emulated a target trial using a Japanese claims database (April 2014-March 2024) to assess whether metformin reduces colorectal cancer (CRC) risk compared with dipeptidyl peptidase-4 inhibitors (DPP-4is) in patients with type 2 diabetes. DPP-4is served as an active comparator because they are widely used as first-line alternatives in Japan and have no clear evidence of affecting CRC risk. We estimated the observational analogue of the per-protocol effect using pooled logistic regression with inverse probability weighting to adjust for baseline and time-varying confounders. Among 26 273 metformin users and 108 299 DPP-4i users, the 5-year risk of CRC was 1.55% (95% confidence interval, 1.16 to 2.04) versus 1.26% (1.13 to 1.41), yielding a risk difference of 0.29% (-0.12 to 0.79) and a risk ratio of 1.23 (0.91 to 1.66). Metformin use did not reduce the 5-year risk of CRC compared with DPP-4is. This finding is consistent with meta-analyses of randomized trials and contrasts with earlier observational reports of substantial benefit, which were likely inflated by methodological flaws. Explicitly emulating a target trial minimized design-related biases and provided estimates that support causal interpretation. Earlier observational studies often suggested that metformin might protect against cancer, but these findings were inconsistent and frequently affected by methodological issues, including misaligned start of follow‐up, unclear comparators, and use of “total cancer” as a composite outcome. Because different cancers have different causes, combining them can obscure important differences and limit accurate adjustment. To examine this issue more reliably, we used colorectal cancer (CRC) as a case study and applied a target trial emulation approach in patients with type 2 diabetes. This approach allowed us to compare sustained metformin use with sustained use of an appropriate alternative diabetes treatment, dipeptidyl peptidase‐4 inhibitors (DPP‐4is), which show no clear evidence of influencing CRC risk. We analyzed Japanese claims data from nearly 140 000 patients and followed each person for up to 5 years. The estimated 5‐year risk of CRC was 1.55% with metformin and 1.26% with DPP‐4is, corresponding to a risk difference of 0.29% and risk ratio of 1.23. In simple terms, our study did not find clear evidence that metformin reduces CRC risk over 5 years compared with DPP‐4is.",
+    "authors": [
+      "Hiroki S",
+      "Fukasawa T",
+      "Honda M",
+      "Kawakami K"
+    ],
+    "journal": "Pharmacoepidemiology and drug safety",
+    "journal_issn": "1099-1557",
+    "year": 2026,
+    "publication_date": "2026-07-03",
+    "analysis_methods": [
+      "ターゲットトライアルエミュレーション",
+      "傾向スコア (PSM/IPTW)",
+      "回帰分析"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Metformin",
+      "Diabetes Mellitus, Type 2",
+      "Colorectal Neoplasms",
+      "Japan",
+      "Hypoglycemic Agents",
+      "Dipeptidyl-Peptidase IV Inhibitors",
+      "Female",
+      "Male",
+      "Aged",
+      "Middle Aged",
+      "Databases, Factual",
+      "Incidence",
+      "East Asian People"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本のレセプトDB（名称非記載）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 1.9,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:54.009Z",
+    "classified": true,
+    "title_ja": "日本の2型糖尿病患者におけるメトホルミンの大腸がん予防効果：ターゲットトライアルエミュレーション",
+    "abstract_ja": "日本のレセプトDBを用い、2型糖尿病患者でメトホルミンがDPP-4阻害薬と比べ大腸がんリスクを下げるかをターゲットトライアルエミュレーションで検証した研究。IPTW付きプールドロジスティック回帰による5年リスクはメトホルミン1.55%対DPP-4i 1.26%で有意差なく、従来の観察研究が示した予防効果は方法論的バイアスによる可能性を示した。"
+  },
+  {
+    "id": "pmid-42398064",
+    "pubmed_id": "42398064",
+    "doi": "10.1093/jjco/hyag105",
+    "title": "Real-world trends in anti-androgen prescribing and associated costs for prostate cancer in Japan: a nationwide analysis.",
+    "abstract": "Anti-androgen therapy is central to prostate cancer management, but nationwide real-world trends in prescribing and costs remain insufficiently characterized in aging societies. We evaluated temporal trends in anti-androgen prescriptions and associated medical costs for prostate cancer in Japan using the National Database (NDB) Open Data. This retrospective study analysed outpatient prescription data from the NDB Open Data from 2016 to 2023. Prescription trends were assessed for bicalutamide (BIC), estramustine phosphate (EMP), flutamide (FLU), enzalutamide (ENZ), abiraterone, apalutamide, and darolutamide. Costs were estimated using an exchange rate of 150 JPY per USD. Trends were further stratified by age group and region. Among 653.42 billion oral doses recorded during the study period, dose-adjusted prescriptions included 374.6 million for BIC, 25.2 million for EMP/FLU, and 57.6 million for androgen receptor signaling inhibitors (ARSIs). The share of ARSI prescriptions increased from 6.1% in 2016 to 19.4% in 2023, with ENZ being the most prescribed ARSI (9.5%). Although overall anti-androgen use increased among men aged ≥80 years, ARSI use in this group remained relatively stable at 12%-18%. Total anti-androgen-related medical costs increased 2.12-fold, and ARSIs accounted for 94.5% of these costs in 2023. Limitations include the lack of clinical details and the inability to distinguish disease states. In Japan, ARSI use and related expenditures increased substantially between 2016 and 2023. Despite modest prescription volumes, ARSIs accounted for most anti-androgen-related costs.",
+    "authors": [
+      "Omizo S",
+      "Narita T",
+      "Hamaya T",
+      "Togashi K",
+      "Ogawa I",
+      "Tazawa S",
+      "Ishimoto K",
+      "Sakao M",
+      "Mikami J",
+      "Fujita N",
+      "Okamoto T",
+      "Imai A",
+      "Yamamoto H",
+      "Ohyama C",
+      "Hatakeyama S"
+    ],
+    "journal": "Japanese journal of clinical oncology",
+    "journal_issn": "1465-3621",
+    "year": 2026,
+    "publication_date": "2026-07-03",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 2,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:55.543Z",
+    "classified": true,
+    "title_ja": "日本の前立腺がんに対する抗アンドロゲン薬処方と関連コストの実世界動向：全国解析",
+    "abstract_ja": "NDBオープンデータ(2016-2023)を用い、前立腺がんに対する抗アンドロゲン薬の処方動向と医療費を分析した横断研究。ARSI(アンドロゲン受容体シグナル阻害薬)の処方割合は6.1%から19.4%へ増加し、抗アンドロゲン薬関連の医療費は2.12倍に増え、2023年にはARSIが費用の94.5%を占めた。"
+  },
+  {
+    "id": "pmid-42397666",
+    "pubmed_id": "42397666",
+    "doi": "10.1007/s10384-026-01375-8",
+    "title": "Prevalence and clinical characteristics of Terson syndrome among survivors of aneurysmal subarachnoid hemorrhage: a nationwide study in Japan.",
+    "abstract": "To investigate the characteristics of Terson syndrome (TS) among survivors of aneurysmal subarachnoid hemorrhage (aSAH). Retrospective study METHODS: Using the Japanese Diagnosis Procedure Combination database, we identified patients diagnosed with aSAH at admission between July 1, 2010 and March 31, 2023 in Japan. The prevalence of TS in aSAH survivors was examined, along with comparisons of patient backgrounds between survivors with TS and those without TS. We compared the characteristics and outcomes in patients with TS who underwent vitrectomy with those in patients who did not, and analyzed the laterality of the surgery. Among 143,058 patients with aSAH, 104,576 (73.1%) survived. TS was diagnosed in 860 (0.8%) survivors. The patients with TS were younger (mean [standard deviation, SD] age: 53.3 [11.4] vs 64.0 [14.6] years) than those without TS. Among the patients with TS, 243 (28.3%) patients underwent vitrectomy during hospitalization, with a median interval of 38 days from admission to surgery. Of the patients with TS who underwent vitrectomy, 160 (66.4%) and 81 (33.6%) patients underwent unilateral and bilateral vitrectomy, respectively. In this retrospective study, the prevalence of TS among aSAH survivors was less than 1%. Vitrectomy was performed in approximately one-third of the patients with TS, with one-third of these patients undergoing bilateral surgery during hospitalization.",
+    "authors": [
+      "Tanaka T",
+      "Miyamoto Y",
+      "Aso S",
+      "Matsuo Y",
+      "Fushimi K",
+      "Yasunaga H"
+    ],
+    "journal": "Japanese journal of ophthalmology",
+    "journal_issn": "1613-2246",
+    "year": 2026,
+    "publication_date": "2026-07-03",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.01,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:55.659Z",
+    "classified": true,
+    "title_ja": "脳動脈瘤破裂によるくも膜下出血生存者におけるTerson症候群の有病率と臨床像：日本の全国研究",
+    "abstract_ja": "DPCデータベースを用い、動脈瘤性くも膜下出血の生存者におけるTerson症候群(TS)の有病率と特徴を後方視的に調べた研究。生存者10.5万人中TSは0.8%で、TS患者は若年で、そのうち28.3%が入院中に硝子体手術を受け、うち約3分の1が両眼手術であった。"
+  },
+  {
+    "id": "pmid-42396868",
+    "pubmed_id": "42396868",
+    "doi": "10.1177/10556656261465177",
+    "title": "Life-Course Patterns of Medical and Dental Care in Patients with Cleft Lip and/or Palate: A Nationwide Claims-Based Study.",
+    "abstract": "ObjectiveTo characterize diagnosis-specific structures and temporal trajectories of medical and dental healthcare utilization for cleft-related conditions using a nationwide claims database in Japan.DesignNationwide retrospective cross-sectional observational study.SettingAnalysis of Japan's National Database of Health Insurance Claims and Specific Health Checkups for 2019.Patients, ParticipantsWe analyzed 52,326 patients with cleft palate (CP), cleft lip and palate (CLAP), cleft lip and alveolus (CLA), and cleft lip (CL) who generated insurance claims during the study period.InterventionsNone.Main Outcome Measure(s)We compared distributions of medical and dental visits by diagnosis and calculated diagnosis-specific dental-to-medical visit ratios. Differences were assessed using chi-square tests with effect size estimated by Cramér's V. Temporal differences in utilization were evaluated by calculating weighted mean age based on age group-specific visits for medical and dental care.ResultsA significant association was observed between diagnosis and type of care (chi-square test, P < 0.001; effect size by Cramér's V). Dental visits predominated among patients with CLAP and CLA, whereas medical visits were relatively more frequent among those with CP and CL. The dental-to-medical visit ratio exceeded 1.0 in CLAP and CLA but remained below 1.0 in CP and CL. Across all diagnoses, weighted mean age for dental visits was higher than that for medical visits, indicating a shift from early medical care to sustained dental care; this shift was most pronounced in CLAP.ConclusionsDiagnosis-specific differences exist in the structure and temporal dynamics of medical and dental care among patients with cleft-related conditions.",
+    "authors": [
+      "Kuwajima Y",
+      "Ueda A",
+      "Tanaka H",
+      "Honda T",
+      "Ishikawa-Nagai S",
+      "Satoh K"
+    ],
+    "journal": "The Cleft palate-craniofacial journal : official publication of the American Cleft Palate-Craniofacial Association",
+    "journal_issn": "1545-1569",
+    "year": 2026,
+    "publication_date": "2026-07-03",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 1.17,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:55.771Z",
+    "classified": true,
+    "title_ja": "口唇口蓋裂患者における医科・歯科医療の生涯にわたる利用パターン：全国レセプトベース研究",
+    "abstract_ja": "NDB(2019年)を用い、口唇口蓋裂関連疾患の患者5.2万人の医科・歯科医療利用を診断別に分析した横断研究。口唇口蓋裂・口唇顎裂では歯科受診が優位で歯科/医科受診比が1.0を超え、いずれの診断でも歯科受診の加重平均年齢が高く、早期の医科ケアから持続的な歯科ケアへの移行が示された。"
+  },
+  {
+    "id": "pmid-42395140",
+    "pubmed_id": "42395140",
+    "doi": "10.1002/ags3.70172",
+    "title": "Annual Report of the 2022 National Clinical Database: Decade-Long Trends and Current Status of Gastroenterological Surgery in Japan.",
+    "abstract": "The National Clinical Database (NCD) of Japan is the largest nationwide registry, covering over 95% of surgeries in the country. This 2022 annual report summarizes the short-term outcomes of gastroenterological surgeries and discusses trends and insights over the past decade. We analyzed the NCD data for gastroenterological surgeries performed between 2013 and 2022. The number of surgeries, patient demographics, surgical approaches, postoperative outcomes, and the involvement of board-certified surgeons and anesthesiologists were examined. A total of 591 221 surgeries were recorded in 2022. Compared to 2021, the overall surgical volume remained stable, with a continued increase in minimally invasive procedures. Patient aging continued across all organ categories, with a rise in the proportion of patients aged ≥ 80 years. Board-certified surgeon participation remained high in complex procedures, while emergency surgeries were associated with higher morbidity and mortality. Operative mortality continued to decrease, particularly in pancreatic and hepatic surgeries. The 2022 NCD data provide a comprehensive overview of the current status and evolving trends in gastroenterological surgery in Japan. Continued efforts toward data-driven quality improvement and surgical education remain essential.",
+    "authors": [
+      "Kumagai K",
+      "Takahashi A",
+      "Ueno H",
+      "Hiki N",
+      "Kajiwara Y",
+      "Ebata T",
+      "Otsuka T",
+      "Oshikiri T",
+      "Kakeji Y",
+      "Goi T",
+      "Saiura A",
+      "Saeki H",
+      "Tanaka C",
+      "Tokunaga M",
+      "Fujii T",
+      "Matsuda S",
+      "Mizushima T",
+      "Yamamoto H",
+      "Kitagawa Y",
+      "Shirabe K"
+    ],
+    "journal": "Annals of gastroenterological surgery",
+    "journal_issn": "2475-0328",
+    "year": 2026,
+    "publication_date": "2026-07-03",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 1.77,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:55.897Z",
+    "classified": true,
+    "title_ja": "2022年National Clinical Database年次報告：日本の消化器外科の10年間の動向と現況",
+    "abstract_ja": "国内手術の95%超を網羅するNCDを用い、2013-2022年の消化器外科手術の短期成績と動向をまとめた年次報告(横断的解析)。2022年は59万件が登録され、低侵襲手術の増加と患者の高齢化が続き、手術死亡率、特に膵・肝手術で低下が続いた。"
+  },
+  {
+    "id": "pmid-42395133",
+    "pubmed_id": "42395133",
+    "doi": "10.1002/ags3.70204",
+    "title": "Real-World Data of Retroperitoneal Tumor Surgeries Performed by Gastroenterological Surgeons in Japan: Analysis Based on the National Clinical Database.",
+    "abstract": "Retroperitoneal tumors (RPTs) are rare and anatomically complex neoplasms, for which surgery remains the mainstay of treatment. However, real-world data on their surgical management in Japan have been limited. To describe the clinical characteristics and short-term outcomes of patients undergoing resection for RPTs in Japan, based on data from gastroenterological surgical practice. This study analyzed data from the Japanese National Clinical Database (NCD) for gastroenterological surgery. A total of 4948 patients with RPT who underwent surgery between 2019 and 2021 were included. There were 2360 men (47.7%) and 2588 women (52.3%), with a median age of 66 years. RPTs were histologically classified as malignant in 75.3% and benign in 24.7% of cases. The median operative time was 205 min, and the median blood loss was 150 mL. Postoperative complications occurred in 23.9% of patients, with 7.5% experiencing severe complications (Clavien-Dindo grade III or higher). The 30 day postoperative mortality rate was 0.5%, and the perioperative mortality rate was 1.0%. This analysis demonstrates that a substantial number (approximately 1650 per year) of RPTs surgeries are performed annually by gastrointestinal surgeons in Japan, and that the short-term surgical outcomes are acceptable. These data provide an important reference to exhibit the current surgical practice in Japan and to develop future strategies for RPTs.",
+    "authors": [
+      "Kurimoto K",
+      "Yamamoto H",
+      "Sunagawa M",
+      "Kajiwara Y",
+      "Hasegawa H",
+      "Ueno H",
+      "Shirabe K",
+      "Kanda M",
+      "Ebata T",
+      "Yokoyama Y"
+    ],
+    "journal": "Annals of gastroenterological surgery",
+    "journal_issn": "2475-0328",
+    "year": 2026,
+    "publication_date": "2026-07-03",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 1.77,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:55.897Z",
+    "classified": true,
+    "title_ja": "日本の消化器外科医が行う後腹膜腫瘍手術の実世界データ：NCDに基づく解析",
+    "abstract_ja": "NCDを用い、2019-2021年に消化器外科で後腹膜腫瘍手術を受けた4948例の臨床像と短期成績を記述した後方視的研究。悪性が75.3%を占め、術後合併症は23.9%、30日死亡率0.5%で、年間約1650件が行われ短期成績は許容範囲であることを示した。"
+  },
+  {
+    "id": "pmid-42395125",
+    "pubmed_id": "42395125",
+    "doi": "10.1002/ags3.70217",
+    "title": "Age and Regional Trends in Groin Hernia Surgery in Japan: An Analysis of Laparoscopic Repair, Outpatient Surgery, and Manual Reduction Using National Database Open Data.",
+    "abstract": "Groin hernia repair is one of the most common surgical procedures worldwide. In Japan, nationwide studies have described overall surgical volumes and procedural characteristics; however, comprehensive analyses focusing on age- and sex-specific patterns across multiple aspects of groin hernia management remain limited. We analyzed publicly available open data from the National Database of Health Insurance Claims and Specific Health Checkups of Japan (NDB) for fiscal years 2014-2023. Age- and sex-specific surgery rates and lifetime surgical burden were estimated using population-based rates. Trends in laparoscopic and outpatient surgery were examined by age and sex. Manual reduction was evaluated using population-based rates per 100 000 population and a relative indicator in relation to surgical volume. Total groin hernia surgery volumes declined during the COVID-19 pandemic and recovered thereafter. Age-specific surgery rates showed characteristic patterns, including a bimodal distribution for inguinal hernia and a progressive age-related increase for femoral hernia. Lifetime surgical burden in males was estimated at approximately 21 per 100 individuals, substantially higher than in females. Laparoscopic and outpatient surgery demonstrated distinct age- and sex-specific patterns. Population-based manual reduction rates were highest in early childhood, were minimal from adolescence through mid-adulthood, and increased again in advanced age. Nationwide claims-based data reveal pronounced age- and sex-specific patterns in groin hernia management in Japan. These findings highlight substantial demographic differences in surgical burden, procedural selection, and manual reduction activity, underscoring the value of population-based data for understanding contemporary groin hernia care in an aging society.",
+    "authors": [
+      "Sato M",
+      "Miyazaki K",
+      "Tazaki T",
+      "Nagae I",
+      "Matsubara T",
+      "Poudel S",
+      "Takagi T",
+      "Wada H"
+    ],
+    "journal": "Annals of gastroenterological surgery",
+    "journal_issn": "2475-0328",
+    "year": 2026,
+    "publication_date": "2026-07-03",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 1.77,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:55.897Z",
+    "classified": true,
+    "title_ja": "日本の鼠径ヘルニア手術の年齢・地域動向：NDBオープンデータによる腹腔鏡・外来手術・徒手整復の解析",
+    "abstract_ja": "NDBオープンデータ(2014-2023年度)を用い、鼠径ヘルニア手術の年齢・性別・地域別パターンを分析した横断研究。総手術量はCOVID-19で減少後に回復し、男性の生涯手術負担は約21/100人と女性より高く、腹腔鏡・外来手術や徒手整復の年齢・性別特有のパターンが示された。"
+  },
+  {
+    "id": "pmid-42395118",
+    "pubmed_id": "42395118",
+    "doi": "10.1002/ags3.70216",
+    "title": "Risks and Benefits of Feeding Enterostomy Creation During Minimally Invasive Esophagectomy: A Propensity-Weighted Analysis Using the Japanese National Clinical Database.",
+    "abstract": "Feeding enterostomy is commonly created during minimally invasive esophagectomy (MIE); however, its short-term impact remains unclear. We analyzed 19 054 patients who underwent MIE for esophageal or esophagogastric junction cancer during 2019-2022. Inverse probability of treatment weighting was applied to balance baseline characteristics, and G-computation was used to estimate adjusted risks and means and their differences. A secondary analysis was performed to compare gastrostomy and jejunostomy in retrosternal cases. Of 19 054 patients, 4599 (24.1%) received a feeding enterostomy. After adjustment, the primary outcome, postoperative bowel obstruction, did not differ significantly between enterostomy group and no-enterostomy group (+0.2%, p = 0.132). The enterostomy group demonstrated higher rates of reoperation (+2.5%, p < 0.001) and respiratory complications, including pneumonia (+2.5%, p < 0.001) and prolonged ventilation (+0.9%, p = 0.012), than the no-enterostomy group. Conversely, delayed gastric emptying (-0.9%, p < 0.001) and deep vein thrombosis (-0.4%, p = 0.028) occurred less frequently. Among 2723 patients who underwent retrosternal reconstruction with feeding enterostomy, jejunostomy was associated with a shorter operative time (-11.2 min, p = 0.025), whereas gastrostomy was associated with a 2.3-day shorter hospital stay than jejunostomy (p = 0.022). Bowel-related events were rare, and adjusted comparisons for these outcomes were not performed. Feeding enterostomy during MIE may confer benefits (e.g., reduced delayed gastric emptying and deep vein thrombosis) but is also associated with increased postoperative complications. Routine or uniform placement of a feeding enterostomy should be avoided, and gastrostomy may be preferable in retrosternal reconstruction.",
+    "authors": [
+      "Booka E",
+      "Hirakawa S",
+      "Tachimori H",
+      "Tanaka K",
+      "Ueno H",
+      "Kimura Y",
+      "Shirabe K",
+      "Takeuchi H"
+    ],
+    "journal": "Annals of gastroenterological surgery",
+    "journal_issn": "2475-0328",
+    "year": 2026,
+    "publication_date": "2026-07-03",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.77,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:55.897Z",
+    "classified": true,
+    "title_ja": "低侵襲食道切除術における栄養瘻造設のリスクとベネフィット：NCDを用いた傾向スコア重み付け解析",
+    "abstract_ja": "NCDを用い、低侵襲食道切除術(MIE)を受けた1.9万例で栄養瘻造設の短期的影響をIPTWとG-computationで評価した後方視的研究。栄養瘻群は術後腸閉塞に有意差はないが再手術や肺炎など呼吸器合併症が多い一方、胃排出遅延や深部静脈血栓は少なく、一律の栄養瘻造設は避けるべきと結論した。"
+  },
+  {
+    "id": "pmid-42395112",
+    "pubmed_id": "42395112",
+    "doi": "10.1002/ags3.70178",
+    "title": "Rising Pancreatic Cancer Incidence in Young Japanese Women and Increasing Distal Pancreatectomy in Older Adults: A Nationwide Claims-Based Analysis From 2016 to 2023.",
+    "abstract": "This nationwide observational study investigated recent trends in pancreatic cancer (PC) incidence and surgical management in Japan. Annual data on PC incidence (2016-2021) and surgical procedures (2016-2023) were obtained from the Cancer Information Database and the National Database of Health Insurance Claims and Specific Health Checkups (NDB), respectively. Surgical procedures were categorized by type (distal pancreatectomy (DP, 2016-2023)/pancreatoduodenectomy (PD, 2020-2023)) and approach (open/laparoscopic). Crude and age-adjusted rates per 100 000 person-years were calculated. Temporal trends were evaluated using linear and Poisson regression to estimate annual risk ratios (RRs). Over the study period, the annual average PC incidence was 43 015, and the average number of PC surgery was 13 899. Age-adjusted PC incidence rates rose significantly among males, females, and both sexes (RR = 1.007, 1.016 and 1.011, respectively; p < 0.0001). A particularly notable rise was observed among females aged 10-29 years (RR range: 1.347-1.449; all p < 0.0009). DP rates increased significantly among males, females, and both sexes (RR = 1.033, 1.032, and 1.033, respectively; p < 0.0001), with marked increases among individuals aged 65-89 years for both sexes (RR range: 1.018-1.114; all p < 0.0012). PD volumes also rose during 2020-2023, although the limited analytic window precluded formal rate-based trend evaluation. In 2023, PD comprised 65.6% of PC surgeries (9444/14397), while DP comprised 34.4% (4953/14397). These nationwide findings highlight age- and sex-specific signals-notably an apparent rise among young women and increased DP use among older adults-that warrant further validation.",
+    "authors": [
+      "Kido M",
+      "Morimura R",
+      "Yamamoto Y",
+      "Arita T",
+      "Nakashima S",
+      "Shoda K",
+      "Imamura T",
+      "Kubo H",
+      "Yoshii K",
+      "Onishi I",
+      "Shiozaki A"
+    ],
+    "journal": "Annals of gastroenterological surgery",
+    "journal_issn": "2475-0328",
+    "year": 2026,
+    "publication_date": "2026-07-03",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [
+      "がん統計（Cancer Information Database）"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.77,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:55.897Z",
+    "classified": true,
+    "title_ja": "日本の若年女性における膵がん罹患の上昇と高齢者での膵体尾部切除の増加：2016-2023年の全国レセプトベース解析",
+    "abstract_ja": "がん統計DBとNDBを用い、日本の膵がん罹患と手術動向を分析した研究。年齢調整罹患率は全体で有意に上昇し、特に10-29歳女性で顕著な増加がみられた。線形・Poisson回帰で膵体尾部切除(DP)率も上昇し、65-89歳で増加が目立ち、2023年は膵頭十二指腸切除が65.6%を占めた。"
+  },
+  {
+    "id": "pmid-42393613",
+    "pubmed_id": "42393613",
+    "doi": "10.1186/s12891-026-10160-0",
+    "title": "Risk factors and early onset predictors of contralateral hip fractures following initial treatment of the other hip fracture.",
+    "abstract": "This study aims to investigate the risk factors and onset timing of second contralateral hip fractures (SHFx) following initial femoral fractures, with a particular focus on early events occurring within one year. This retrospective study utilized a nationwide hospital claims database (Medical Data Vision, MDV) covering over 30% of all Diagnosis Procedure Combination (DPC) hospitals in Japan. MDV data combining patients who had visited a healthcare facility for osteoporosis with fractures (International Classification of Diseases, 10th Revision [ICD-10] code M80) or femoral fractures (ICD-10 code S72) were used. Patients aged 40 years and older who underwent bipolar hip arthroplasty or open reduction and internal fixation between April 2008 and September 2024 were included (n = 370,227). Clinical and demographic data were collected, including comorbidities and medications related to QFracture, FRAX, and fall risk. The incidence of early second contralateral hip fractures (eSHFx) was 2.7% (n = 10,136). Multivariate logistic regression identified female, age (70-79, 80-89, ≥ 90 years), Bone Mass Index (BMI) < 18.5 kg/m2, Charlson Comorbidity Index (CCI) = 1 point, dementia, delirium, fracture history, steroid use, and sleeping pill use as significant risk factors for eSHFx. Among patients who developed SHFx, male, age ≥ 90 years, BMI < 18.5 kg/m2, CCI (1, ≥ 3 points), dementia, delirium, steroid use, and sleeping pill use were significantly associated with early rather than late onset. Fall-related factors were risk factors for eSHFx and factors that predisposed to eSHFx. Female was a risk factor for eSHFx, but the timing of SHFx was late. This study identified risk factors for eSHFx and factors influencing their timing. It is crucial to determine the optimal timing and method of intervention for each patient to select the most appropriate therapy.",
+    "authors": [
+      "Ukon Y",
+      "Mae H",
+      "Inoue A",
+      "Kanie Y",
+      "Tani T",
+      "Takashima K",
+      "Furuya M",
+      "Uemura K",
+      "Hamada H",
+      "Fujimori T",
+      "Hsu YI",
+      "Watari A",
+      "Okada K",
+      "Myoui A",
+      "Okada S"
+    ],
+    "journal": "BMC musculoskeletal disorders",
+    "journal_issn": "1471-2474",
+    "year": 2026,
+    "publication_date": "2026-07-03",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.76,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:56.023Z",
+    "classified": true,
+    "title_ja": "初回大腿骨骨折治療後の対側股関節骨折の危険因子と早期発症予測因子",
+    "abstract_ja": "MDVの全国入院レセプトDBを用い、40歳以上37万例で初回大腿骨骨折後の対側股関節骨折(SHFx)、特に1年以内の早期発症の危険因子を後方視的に解析した研究。早期SHFxは2.7%で、多変量ロジスティック回帰により女性・高齢・低BMI・認知症・せん妄・骨折歴・ステロイドや睡眠薬使用が有意な危険因子と特定された。"
+  },
+  {
+    "id": "pmid-42392020",
+    "pubmed_id": "42392020",
+    "doi": "10.1016/j.sleep.2026.109108",
+    "title": "Ten-year trends in pediatric hypnotic prescribing before and during the COVID-19 pandemic in Japan.",
+    "abstract": "Sleep problems, particularly insomnia, are common among children and adolescents, and may have been exacerbated during the COVID-19 pandemic. However, long-term trends in pediatric hypnotic prescribing and changes associated with the pandemic remain poorly characterized. Using the JMDC Claims Database, we conducted an observational study of children and adolescents aged 2-18 years in Japan between January 2014 and December 2023 to examine hypnotic prescribing by age, sex, and pharmacological class and changes following the April 2020 COVID-19-related state of emergency. The proportion of children and adolescents prescribed hypnotics increased from 0.4% (2800 of 673,141) in 2014 to 1.0% (23,977 of 2,401,028) in 2023, with larger increases among adolescents and females. Prescribing of benzodiazepines and benzodiazepine receptor agonists decreased, whereas prescribing of melatonin receptor agonists and orexin receptor antagonists increased. Interrupted time-series analysis showed a significant increase in the slope after April 2020, whereas the immediate level change was not statistically significant. The post-state-of-emergency slope change was 3.64 (95% CI, 2.69 to 4.58; P < 0.001) prescriptions per 100,000 population per month. In sensitivity analyses excluding melatonin, post-state-of-emergency increases were attenuated overall and persisted mainly among adolescents. Pediatric hypnotic prescribing in Japan increased over the past decade, with distinct age-, sex-, and pharmacological class-specific patterns. Although prescription rates accelerated after April 2020, increases were already evident before the COVID-19 pandemic. Continued increases suggest that pre-existing trends and newly available pharmacological options, in addition to pandemic-related changes, may have contributed to the upward trend, particularly among adolescents and females.",
+    "authors": [
+      "Matsuyama N",
+      "Iwamoto K",
+      "Miyata S",
+      "Imai T",
+      "Ikeda M"
+    ],
+    "journal": "Sleep medicine",
+    "journal_issn": "1878-5506",
+    "year": 2026,
+    "publication_date": "2026-07-02",
+    "analysis_methods": [
+      "中断時系列分析 (ITS)"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.13,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:56.106Z",
+    "classified": true,
+    "title_ja": "COVID-19流行前後の日本における小児睡眠薬処方の10年間の動向",
+    "abstract_ja": "JMDCクレームDBを用い、2014-2023年の2-18歳の睡眠薬処方動向とCOVID-19緊急事態宣言後の変化を分析した研究。処方割合は0.4%から1.0%へ増加し、ベンゾジアゼピン系が減少しメラトニン・オレキシン系が増加、中断時系列分析で2020年4月以降に処方傾きの有意な上昇がみられた。"
+  },
+  {
+    "id": "pmid-42391200",
+    "pubmed_id": "42391200",
+    "doi": "10.1371/journal.pone.0352874",
+    "title": "Association between laryngoplasty and pneumonia incidence in patients with unilateral vocal fold paralysis: A Japanese insurance claims database study.",
+    "abstract": "Unilateral vocal fold paralysis (UVFP) can lead to both voice impairment and dysphagia. Previous studies have suggested that surgeries aimed at improving voice function in patients with UVFP may also incidentally enhance swallowing. However, the preventive effect of such surgeries on pneumonia remains unclear. We evaluated the impact of laryngoplasty on the incidence of pneumonia in Japan using a large employment insurance claims database of corporate employees under 75 years of age and their family members. The study cohort consisted of patients diagnosed with UVFP between January 2013 and December 2022, identified from an insurance claims database. A propensity score-matched cohort was created using a 1:3 matching ratio between the treatment and non-treatment groups. Follow-up began at the index date, defined as the initial diagnosis of UVFP, and continued until the end of the study period. The primary analysis compared the cumulative incidence of pneumonia between treatment and non-treatment groups. The secondary analysis employed a self-controlled design to compare pneumonia incidence before and after laryngoplasty within treated patients. The full cohort included 7,641 patients with UVFP, of whom 914 comprised the matched cohort (treatment group, n = 230; non-treatment group, n = 684). The cumulative incidence of pneumonia tended to be higher in the treatment group than in the non-treatment group (hazard ratio, 1.39; 95% CI, 0.93-2.08; p = 0.098). In contrast, the self-controlled analysis demonstrated a lower pneumonia incidence after laryngoplasty compared with the pre-treatment period (incidence rate ratio, 0.36; 95% CI, 0.27-0.52; p < 0.001). Given the discordant findings across analytical approaches, no definitive conclusion regarding a preventive effect can be drawn from the present study. Further studies are needed to evaluate long-term outcomes and to clarify causal relationships.",
+    "authors": [
+      "Hemmi M",
+      "Sano D",
+      "Tanoshima R",
+      "Oridate N"
+    ],
+    "journal": "PloS one",
+    "journal_issn": "1932-6203",
+    "year": 2026,
+    "publication_date": "2026-07-02",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析",
+      "自己対照ケースシリーズ (SCCS)"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Vocal Cord Paralysis",
+      "Japan",
+      "Middle Aged",
+      "Female",
+      "Incidence",
+      "Male",
+      "Laryngoplasty",
+      "Pneumonia",
+      "Databases, Factual",
+      "Adult",
+      "Aged",
+      "East Asian People"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の被用者保険（企業健保）レセプトDB（名称非記載）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 2.87,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:56.214Z",
+    "classified": true,
+    "title_ja": "一側声帯麻痺患者における喉頭形成術と肺炎発症の関連：日本のレセプトDB研究",
+    "abstract_ja": "日本の被用者保険レセプトDBを用い、一側声帯麻痺患者における喉頭形成術の肺炎予防効果を評価した研究。傾向スコアマッチングでは治療群でむしろ肺炎が高い傾向(HR1.39)だったが、自己対照解析では術後に肺炎が有意に減少(IRR0.36)し、解析手法間で結果が食い違い明確な結論は得られなかった。"
+  },
+  {
+    "id": "pmid-42388438",
+    "pubmed_id": "42388438",
+    "doi": "10.1002/lio2.70489",
+    "title": "Age-Dependent Decline in Tonsillectomy and Adenoidectomy During the COVID-19 Pandemic in Japan: A Nationwide Longitudinal Analysis of NDB Open Data.",
+    "abstract": "To evaluate whether the decline in tonsillectomy and adenoidectomy during the COVID-19 pandemic in Japan was age-dependent and to examine trends in postoperative hemostasis activity using nationwide claims data. We conducted a nationwide longitudinal descriptive study using National Database Open Data from fiscal years (FY) 2015-2023. Annual procedure counts were extracted for tonsillectomy (K377-1), adenoidectomy (K370), and postoperative hemostasis after tonsil surgery (K367-a). Pandemic phases were defined as pre-COVID (FY2015-FY2019), COVID onset (FY2020), COVID ongoing (FY2021-FY2022), and recovery (FY2023). Age-stratified analyses were performed for tonsillectomy. The postoperative hemostasis rate was calculated per 1000 tonsillectomies. Tonsillectomy and adenoidectomy volumes increased through FY2019, reaching 73,577 and 14,910 cases, respectively, before declining sharply in FY2020 to 47,097 and 7018. The reduction in tonsillectomy was strongly age-dependent and greatest among children aged 0-14 years, with a 48.9% decrease from FY2019 to FY2020 (29,340-14,992), whereas the decline among adults aged ≥ 60 years was smaller at 12.5% (5433-4752). Surgical volumes remained suppressed during FY2021-FY2022 and partially recovered in FY2023 but did not return to prepandemic peak levels. The absolute number of postoperative hemostasis procedures remained relatively stable over time; however, the hemostasis rate increased during the pandemic period because tonsillectomy volume declined. The pandemic-associated reduction in tonsillectomy and adenoidectomy in Japan was disproportionately concentrated in pediatric patients. Despite reduced surgical volume, the absolute postoperative hemostasis activity was relatively preserved. These findings provide nationwide evidence of age-dependent disruption in elective otolaryngologic procedures during the COVID-19 pandemic. 4.",
+    "authors": [
+      "Yokoyama N",
+      "Noda M",
+      "Kono M",
+      "Hamamoto M",
+      "Shimada M",
+      "Hara H",
+      "Ito M",
+      "Komori M"
+    ],
+    "journal": "Laryngoscope investigative otolaryngology",
+    "journal_issn": "2378-8038",
+    "year": 2026,
+    "publication_date": "2026-07-02",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.2,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:56.424Z",
+    "classified": true,
+    "title_ja": "COVID-19流行期の日本における扁桃摘出術・アデノイド切除術の年齢依存的減少：NDBオープンデータの全国縦断解析",
+    "abstract_ja": "NDBオープンデータ(2015-2023年度)を用い、COVID-19流行期の扁桃摘出術・アデノイド切除術の推移を分析した横断研究。手術量はFY2020に急減し、特に0-14歳の小児で48.9%減と年齢依存的だった。手術量減少により術後止血処置の実数は保たれた一方、扁桃摘出あたりの止血率は上昇した。"
+  },
+  {
+    "id": "pmid-42385424",
+    "pubmed_id": "42385424",
+    "doi": "10.1016/j.pediatrneurol.2026.06.003",
+    "title": "Impact of Postpandemic Pediatric Infection Rebound on Febrile Seizures: A Nationwide Cohort Study, 2013-2023.",
+    "abstract": "Febrile seizures (FSs) affect younger children and typically accompany common infectious diseases. The COVID-19 pandemic disrupted pediatric infectious disease patterns, yet how these changes have influenced incidence rates of FS and associated health care resource use after the pandemic remains unknown. We conducted a cohort study using a nationwide administrative claims database among children from fiscal year 2013-2023, totaling 5.5 million person-years. We estimated incidence rates of FS, with relevant hospitalization risks, health care costs, and health care resource utilizations using multivariable generalized linear models with direct standardization. Geospatial microsimulation models were used to estimate the national burden of FS over the period. The incidence rate of FS among children aged 6 months to <5 years was stable at 58.6-69.2 cases per 1000 person-years during 2013-2018, fell by 59.9% in 2020, and rose to 71.7 per 1000 person-years in 2023, surpassing prepandemic levels. The incidence rates of FS changed in direct proportion to the community pediatric infectious disease rates, and the seizure-per-infection risks were identical in 2023 to those observed before the COVID-19 pandemic. Microsimulation models estimated 260,000-340,000 FS episodes, 13,000-16,000 hospitalizations, and 10-12 billion Japanese yen in annual costs before the COVID-19 pandemic, halving in 2020 and recovering to 270,000 episodes, 13,000 admissions, and 10.5 billion Japanese yen by 2023. The postpandemic surge in FS reflects restored infection pressure, not heightened host susceptibility. Responsive pediatric care could be guided by real-time infection surveillance to align clinical capacity and resources with shifting community infection burden.",
+    "authors": [
+      "Okubo Y",
+      "Hayakawa I",
+      "Sugitate R",
+      "Nariai H"
+    ],
+    "journal": "Pediatric neurology",
+    "journal_issn": "1873-5150",
+    "year": 2026,
+    "publication_date": "2026-07-01",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の全国規模の管理レセプトDB（名称非記載）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 1.51,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:56.526Z",
+    "classified": true,
+    "title_ja": "パンデミック後の小児感染症リバウンドが熱性けいれんに与える影響：2013-2023年の全国コホート研究",
+    "abstract_ja": "日本の全国レセプトDB(のべ550万人年)を用い、2013-2023年の小児熱性けいれん(FS)の罹患率と医療資源利用を分析したコホート研究。FS罹患率は2020年に59.9%減後、2023年には流行前を上回る71.7/1000人年に回復。一般化線形モデルで感染症流行率と比例して変動し、感受性上昇でなく感染圧の回復が主因と示した。"
+  },
+  {
+    "id": "pmid-42381934",
+    "pubmed_id": "42381934",
+    "doi": "10.1016/j.xjon.2026.101733",
+    "title": "Nationwide trends in outcomes and resource utilization in surgically treated acute type A aortic dissection with coronary malperfusion.",
+    "abstract": "Coronary malperfusion (CM) is a life-threatening complication of acute type A aortic dissection (ATAAD) that has been associated with poor outcomes. Although overall surgical outcomes for ATAAD have improved over time, contemporary nationwide trends in mortality and the associated use of intensive care unit (ICU)-level resources among patients with CM remain incompletely characterized. We conducted a retrospective cohort study using the Japanese Diagnosis Procedure Combination database from July 2010 to March 2022. Patients who underwent emergency surgery for ATAAD on the day of admission were included. CM was defined by a diagnosis of acute myocardial infarction and/or receipt of coronary angiography and/or percutaneous coronary intervention on the day of admission. Temporal trends in in-hospital mortality were examined, and healthcare resource utilization was compared according to the presence or absence of CM. Among 31,522 patients with surgically treated ATAAD, 1167 (3.7%) were classified as having CM. In-hospital mortality was substantially higher in patients with CM than in those without CM (34.3% vs 9.6%). After multivariable adjustment, CM was associated with increased in-hospital mortality after multivariable adjustment (adjusted hazard ratio, 1.80; 95% confidence interval, 1.58-2.06). Over the study period, in-hospital mortality declined significantly in patients without CM, whereas no temporal improvement was observed in those with CM. Patients with CM required substantially greater ICU-level resources, including prolonged mechanical ventilation and higher hospitalization costs. In this nationwide cohort of patients with surgically treated ATAAD, CM was associated with persistently poor short-term outcomes and greater ICU resource utilization, without clear improvement over time.",
+    "authors": [
+      "Fukano K",
+      "Sasabuchi Y",
+      "Matsui H",
+      "Iizuka Y",
+      "Yamaguchi A",
+      "Sanui M",
+      "Yasunaga H"
+    ],
+    "journal": "JTCVS open",
+    "journal_issn": "2666-2736",
+    "year": 2026,
+    "publication_date": "2026-07-01",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 1.07,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:56.630Z",
+    "classified": true,
+    "title_ja": "冠動脈灌流障害を伴う急性A型大動脈解離の外科治療における転帰と資源利用の全国動向",
+    "abstract_ja": "DPCデータベース(2010-2022年)を用い、外科治療された急性A型大動脈解離の冠動脈灌流障害(CM)の予後と資源利用を分析した後方視的研究。CM合併3.7%で院内死亡は34.3%対9.6%と高く、多変量調整後も死亡と関連(HR1.80)。CM群は死亡率の経時的改善がみられず、ICU資源利用も大きかった。"
+  },
+  {
+    "id": "pmid-42381293",
+    "pubmed_id": "42381293",
+    "doi": "10.1002/pds.70428",
+    "title": "Association Between EGFR-TKI-Associated Skin Rash and Recorded Mortality in Non-Small Cell Lung Cancer: A Real-World Analysis Accounting for Immortal Time Bias.",
+    "abstract": "Skin rash during epidermal growth factor receptor tyrosine kinase inhibitor (EGFR-TKI) therapy has been associated with better outcomes in non-small cell lung cancer (NSCLC), but previous studies may have overestimated this association because of immortal time bias. We evaluated the association between EGFR-TKI-associated skin rash and mortality while accounting for rash timing. We identified patients with NSCLC who initiated first-line EGFR-TKIs between August 2018 and December 2024 using a Japanese claims database. EGFR-TKI-associated skin rash was defined using a qualifying diagnosis and rash-related treatment recorded in the same calendar month. We performed time-dependent propensity score sequential matching: each patient who newly developed skin rash was matched on the rash-onset day to patients still at risk who had not yet developed skin rash; follow-up started on the matched day. For comparison, we also performed an analysis that did not account for immortal time bias and landmark analyses. Among 11 830 eligible patients, 560 developed incident skin rash. In the time-dependent propensity score sequential matching analysis, 560 patients with skin rash were matched to 5600 patients without skin rash, and skin rash was associated with lower recorded mortality (HR, 0.621; 95% CI, 0.404-0.953). The estimate was stronger in the analysis not accounting for immortal time bias (HR, 0.410), whereas the association was attenuated in landmark analyses. EGFR-TKI-associated skin rash was associated with lower recorded mortality, but the association was weaker after accounting for immortal time bias. Prior studies may have overestimated this association. Skin rash is a common side effect of EGFR tyrosine kinase inhibitors used to treat non‐small cell lung cancer. Earlier studies suggested that patients who develop skin rash may live longer. However, many previous studies may have overestimated this association. Patients can only be classified as having skin rash if they survive long enough after starting treatment for the rash to appear. If this period is not handled correctly, the skin rash group may look as if they have better survival simply because patients in that group had to survive long enough to develop the rash. We used Japanese real‐world clinical data to account for when skin rash occurred after treatment started. After accounting for this timing, EGFR‐TKI–associated skin rash was still associated with fewer recorded deaths, but the association was weaker than in analyses that did not account for rash timing. These findings suggest that skin rash may remain a clinically useful marker, but its association with mortality should be interpreted cautiously. The findings also show that events occurring after treatment starts need to be handled carefully in observational studies.",
+    "authors": [
+      "Ihara Y",
+      "Nakamura Y",
+      "Yamamoto S"
+    ],
+    "journal": "Pharmacoepidemiology and drug safety",
+    "journal_issn": "1099-1557",
+    "year": 2026,
+    "publication_date": "2026-07-01",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Carcinoma, Non-Small-Cell Lung",
+      "ErbB Receptors",
+      "Lung Neoplasms",
+      "Female",
+      "Male",
+      "Exanthema",
+      "Protein Kinase Inhibitors",
+      "Japan",
+      "Aged",
+      "Middle Aged",
+      "Propensity Score",
+      "Time Factors",
+      "Aged, 80 and over",
+      "Bias",
+      "Databases, Factual",
+      "Retrospective Studies"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本のレセプトDB（名称非記載）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.9,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:56.630Z",
+    "classified": true,
+    "title_ja": "非小細胞肺がんにおけるEGFR-TKI関連皮疹と記録された死亡の関連：不死時間バイアスを考慮した実世界解析",
+    "abstract_ja": "日本のレセプトDBを用い、非小細胞肺がんのEGFR-TKI治療における皮疹と死亡の関連を不死時間バイアスを考慮して評価した後方視的研究。時間依存性傾向スコア逐次マッチングで皮疹は死亡低下と関連(HR0.62)したが、バイアス未調整の解析(HR0.41)より弱く、従来研究が関連を過大評価していた可能性を示した。"
+  },
+  {
+    "id": "pmid-42379788",
+    "pubmed_id": "42379788",
+    "doi": "10.21873/invivo.14391",
+    "title": "Data Mining of the Japanese Adverse Drug Event Report Database and Animal Experiments for Assessment of Risks Associated With Pemafibrate.",
+    "abstract": "Pemafibrate is a novel and selective peroxisome proliferator-activated receptor α modulator that has demonstrated favorable efficacy and safety in phase II or III trails. Compared to fenofibrate, a conventional fibrate, pemafibrate exerts a triglyceride-lowering effect at 1/500 of the dose, and the incidence rate of adverse drug reactions is one-ninth at these doses. The aim of this study was to obtain additional information on the safety of pemafibrate. The Japanese Adverse Drug Event Report (JADER) database was analyzed, and the associations of three fibrates and six statins with rhabdomyolysis and acute renal failure were evaluated using reporting odds ratios and information components. Additionally, preclinical experiments were conducted in rats. Creatine phosphokinase (CK) levels were measured after a single administration of fibrates. The CK levels were also assessed when pemafibrate was co-administered with statins. Data mining of the JADER database suggested associations between all fibrates and statins and rhabdomyolysis; however, no signal for acute renal failure was detected for pemafibrate. Signals for rhabdomyolysis were observed for some fibrates when combined with statins, whereas no signal was detected for pemafibrate. In rats, outlier CK levels were not observed after pemafibrate administration, and no significant increase was observed. CK levels were significantly increased by pravastatin treatment. The JADER analysis suggests that pemafibrate may be a safer alternative to conventional fibrates, with a potentially lower association with rhabdomyolysis and acute renal failure, even when co-administered with statins. Preclinical animal experiments support the results of the JADER analysis. However, large-scale prospective studies are needed to clarify the risks of pemafibrate.",
+    "authors": [
+      "Kobuchi S",
+      "Nishida M",
+      "Hayakawa M",
+      "Maekawa Y",
+      "Ohata A",
+      "Chikami S",
+      "Ipponmatsu A",
+      "Ito H",
+      "Moriwaki A",
+      "Inose R",
+      "Muraki Y",
+      "Sakaeda T"
+    ],
+    "journal": "In vivo (Athens, Greece)",
+    "journal_issn": "1791-7549",
+    "year": 2026,
+    "publication_date": "2026-07-01",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "mesh_terms": [
+      "Animals",
+      "Data Mining",
+      "Butyrates",
+      "Benzoxazoles",
+      "Rats",
+      "Japan",
+      "Humans",
+      "Rhabdomyolysis",
+      "Adverse Drug Reaction Reporting Systems",
+      "Databases, Factual",
+      "Drug-Related Side Effects and Adverse Reactions",
+      "Hydroxymethylglutaryl-CoA Reductase Inhibitors",
+      "Creatine Kinase",
+      "Male",
+      "East Asian People"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "その他",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.56,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:56.837Z",
+    "classified": true,
+    "title_ja": "JADERデータマイニングと動物実験によるペマフィブラートのリスク評価",
+    "abstract_ja": "JADERの不均衡分析(ROR/IC)とラット実験を組み合わせ、ペマフィブラートの横紋筋融解症・急性腎障害リスクを評価した研究。全フィブラート・スタチンで横紋筋融解症のシグナルがみられたが、ペマフィブラートは急性腎障害のシグナルがなく、スタチン併用時も横紋筋融解症のシグナルが検出されず、従来フィブラートより安全な可能性を示した。"
+  },
+  {
+    "id": "pmid-42379756",
+    "pubmed_id": "42379756",
+    "doi": "10.21873/invivo.14378",
+    "title": "Temporal Trends in Antineoplastic Agent-associated Interstitial Lung Disease Involving Immune Checkpoint Inhibitors in the JADER Database.",
+    "abstract": "Cancer pharmacotherapy has advanced substantially with the introduction of novel agents such as immune checkpoint inhibitors (ICIs). However, managing drug-induced interstitial lung disease (DIILD) associated with these agents remains a major clinical challenge in maintaining treatment. Detailed investigations into recent changes in DIILD reporting and specific drug categories contributing to these changes remain limited. Therefore, we aimed to identify factors contributing to recent changes in DIILD reports by analyzing temporal trends in antineoplastic agent-associated DIILD using the Japanese Adverse Drug Event Report database. We analyzed the database reports from 2004 to 2024. The reporting odds ratio (ROR) and Weibull model were used to evaluate safety signals and the time to onset of ICI-associated DIILD, respectively. The mean rate of antineoplastic agent-associated DIILD among total adverse event reports was significantly higher in the most recent period (2016-2024) than in the earlier period (2004-2015) (25.9% vs. 15.3%, p<0.05). An analysis by drug category suggested that an increase in ICI-associated reports from 2016 onward largely contributed to this upward trend. Significant signals were detected for ICI-associated DIILD (ROR for total reports: 4.13; ROR for reports with fatal outcomes: 2.73). Furthermore, there has been a shift towards combination therapy with ICIs and cytotoxic chemotherapy, accounting for the largest proportion of reports with fatal outcomes of ICI-associated DIILD in 2024. The Weibull analysis indicated an early failure pattern for ICI-associated DIILD. The recent increase in antineoplastic agent-associated DIILD may primarily be driven by the expanding use of ICIs, particularly ICI in combination with chemotherapy. Because DIILD tends to occur in the early phase of treatment, strict monitoring is warranted during the initial therapy period.",
+    "authors": [
+      "Ibayashi Y",
+      "Watanabe H",
+      "Shimura Y",
+      "Nishiyama Y",
+      "Sai Y",
+      "Suga Y"
+    ],
+    "journal": "In vivo (Athens, Greece)",
+    "journal_issn": "1791-7549",
+    "year": 2026,
+    "publication_date": "2026-07-01",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）",
+      "生存時間分析"
+    ],
+    "mesh_terms": [
+      "Lung Diseases, Interstitial",
+      "Humans",
+      "Immune Checkpoint Inhibitors",
+      "Databases, Factual",
+      "Antineoplastic Agents",
+      "Adverse Drug Reaction Reporting Systems",
+      "Japan",
+      "Drug-Related Side Effects and Adverse Reactions"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "その他",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.56,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:56.837Z",
+    "classified": true,
+    "title_ja": "JADERにおける免疫チェックポイント阻害薬を含む抗腫瘍薬関連間質性肺疾患の経時的動向",
+    "abstract_ja": "JADER(2004-2024年)を用い、抗腫瘍薬関連の薬剤性間質性肺疾患(DIILD)の経時的動向をRORとWeibullモデルで解析した研究。DIILD報告割合は2016-2024年で25.9%と過去より上昇し、免疫チェックポイント阻害薬(ICI)関連の増加が主因で、ICI関連DIILDに有意なシグナルがみられ、治療初期の発症が多いことが示された。"
+  },
+  {
+    "id": "pmid-42379740",
+    "pubmed_id": "42379740",
+    "doi": "10.21873/invivo.14362",
+    "title": "Adverse Event Profiling and Comparative Analysis of HER2-targeting Antibody-drug Conjugates Using Pharmacovigilance Databases.",
+    "abstract": "Anti-human epidermal growth factor receptor 2 (HER2) antibody-drug conjugates have incompletely characterized safety profiles. Therefore, we compared the adverse events for trastuzumab emtansine (T-DM1) and trastuzumab deruxtecan (T-DXd) using the Japanese Adverse Drug Event Report (JADER) database and U.S. Food and Drug Administration Adverse Event Reporting System (FAERS). We analyzed the JADER (April 2004-April 2025) and FAERS (Q1 1997-Q1 2025) databases for the target drugs T-DM1 and T-DXd, with trastuzumab and pertuzumab as comparators. All reported cases were included regardless of severity grade. Hepatobiliary disorder signals were detected for T-DM1, whereas hematotoxicity- and infection-related signals were prominent for T-DXd, including sepsis and Pneumocystis jirovecii pneumonia (PJP). Interstitial lung disease was observed for both agents. Signals for cardiac disorders were detected for trastuzumab, pertuzumab and T-DM1, but not for T-DXd. T-DXd-associated nausea and myelosuppression were frequently reported within 40 days of treatment initiation, whereas PJP was reported later, with a median time to onset of 90 days. Analyses using JADER and FAERS revealed the adverse event profiles of HER2 antibody-drug conjugates. Hepatobiliary disorders were characteristic of T-DM1, whereas hematotoxicity and infection-related events were characteristic of T-DXd. Interstitial lung disease was detected for both agents. These findings were consistent with those of clinical trials. Infection-related events associated with T-DXd were identified as potential signals, highlighting the clinical relevance of PJP, with a median time to onset of approximately 90 days.",
+    "authors": [
+      "Hosonaka K",
+      "Yamaoka K",
+      "Uchida M",
+      "Uesawa Y",
+      "Takahashi K",
+      "Shimizu T"
+    ],
+    "journal": "In vivo (Athens, Greece)",
+    "journal_issn": "1791-7549",
+    "year": 2026,
+    "publication_date": "2026-07-01",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Erb-b2 Receptor Tyrosine Kinases",
+      "Immunoconjugates",
+      "Female",
+      "Pharmacovigilance",
+      "Antibodies, Monoclonal, Humanized",
+      "Ado-Trastuzumab Emtansine",
+      "Adverse Drug Reaction Reporting Systems",
+      "Trastuzumab",
+      "Drug-Related Side Effects and Adverse Reactions",
+      "Databases, Factual",
+      "Middle Aged",
+      "Male",
+      "Aged",
+      "Antineoplastic Agents, Immunological",
+      "Adult",
+      "Camptothecin"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS（米国FDA有害事象報告システム）"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.56,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:56.837Z",
+    "classified": true,
+    "title_ja": "HER2標的抗体薬物複合体の有害事象プロファイリングと比較解析：ファーマコビジランスDBを用いた検討",
+    "abstract_ja": "JADERとFAERSを用い、HER2標的抗体薬物複合体T-DM1とT-DXdの有害事象を比較した不均衡分析。T-DM1では肝胆道系障害、T-DXdでは血液毒性や感染(敗血症・ニューモシスチス肺炎)のシグナルが目立ち、間質性肺疾患は両薬でみられた。T-DXdの感染関連事象、特にPJPが潜在的シグナルとして示された。"
+  },
+  {
+    "id": "pmid-42379941",
+    "pubmed_id": "42379941",
+    "doi": "10.1016/j.clinthera.2026.06.008",
+    "title": "Evaluating Stevens-Johnson Syndrome/Toxic Epidermal Necrolysis Associated With Newer Antiseizure Medications Using FAERS and JADER Combined With Bioinformatics Exploration.",
+    "abstract": "Stevens-Johnson syndrome/toxic epidermal necrolysis (SJS/TEN) are rare but life-threatening cutaneous adverse reactions associated with certain antiseizure medications (ASMs). While risks for first- and second-generation ASMs are well-established, the safety profile of third-generation ASMs across different populations remains unclear. This study aimed to systematically evaluate SJS/TEN signals associated with four third-generation ASMs (lacosamide, clobazam, perampanel, and rufinamide) using the Food and Drug Administration Adverse Event Reporting System (FAERS) and Japanese Adverse Drug Event Report (JADER) databases, and to explore potential mechanisms through bioinformatics analysis. Disproportionality analysis using reporting odds ratio (ROR) and proportional reporting ratio (PRR) was performed on FAERS and JADER. For mechanistic exploration, differentially expressed genes were identified from Gene Expression Omnibus (GEO) datasets, and core targets were obtained by intersecting drug targets with SJS/TEN disease-related genes. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analyses were conducted, followed by molecular docking to assess drug-target interactions. FAERS analysis revealed positive signals for all 4 ASMs: clobazam (ROR = 4.12, 95% CI, 3.38-5.10), lacosamide (ROR = 2.30, 95% CI, 1.84-2.88), perampanel (ROR = 2.71, 95% CI, 1.53-4.77), and rufinamide (ROR = 2.57, 95% CI, 1.15-5.73). In JADER, clobazam (ROR = 1.95, 95% CI, 1.05-3.65) and lacosamide (ROR = 2.15, 95% CI, 1.19-3.89) showed consistent positive signals, while perampanel and rufinamide had no significant signals. Network pharmacology identified 6 core targets (ACE, ALB, CASP3, MAPK1, PPARG, and SYK) intersecting with SJS/TEN pathogenesis. Functional enrichment revealed significant involvement of T-cell receptor signaling, inflammatory response, and apoptosis pathways. Molecular docking confirmed strong binding affinities between all 4 ASMs and these core targets. Clobazam and lacosamide showed consistent SJS/TEN signals in both FAERS and JADER, while perampanel and rufinamide showed signals only in FAERS. The limited case numbers in JADER preclude definitive conclusions about population differences; larger Asian cohort studies are needed to clarify these observations. Mechanistic insights implicate immune dysregulation through T-cell-mediated and apoptotic pathways. These findings highlight the importance of population-specific pharmacovigilance and provide a foundation for future research into predictive biomarkers and preventive strategies.",
+    "authors": [
+      "Chen H",
+      "Xu L",
+      "Wang Y",
+      "Zhuo H",
+      "Zhou H",
+      "Chen X",
+      "Fang C"
+    ],
+    "journal": "Clinical therapeutics",
+    "journal_issn": "1879-114X",
+    "year": 2026,
+    "publication_date": "2026-06-30",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS（米国FDA有害事象報告システム）",
+      "GEO遺伝子発現データ"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.17,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:56.720Z",
+    "classified": true,
+    "title_ja": "FAERSとJADERおよびバイオインフォマティクスによる新世代抗てんかん薬関連のスティーブンス・ジョンソン症候群/中毒性表皮壊死症の評価",
+    "abstract_ja": "FAERSとJADERを用い、第3世代抗てんかん薬4剤のSJS/TENシグナルをROR/PRRで評価し、GEOデータでの機序探索を組み合わせた研究。FAERSでは4剤全てで陽性シグナルがみられ、JADERではクロバザムとラコサミドで一貫した陽性シグナルを認めた。ネットワーク薬理学で6つのコア標的が同定された。"
+  },
+  {
+    "id": "pmid-42378847",
+    "pubmed_id": "42378847",
+    "doi": "10.1016/j.jns.2026.126074",
+    "title": "Increasing incidence of varicella-zoster virus meningitis in Japan, 2011-2022.",
+    "abstract": "The epidemiology of varicella-zoster virus (VZV) meningitis, including its optimal management, in Asia remains unclear. This study aimed to clarify the incidence, treatment patterns, and outcomes of VZV meningitis in Japan. We identified 1680 patients with VZV meningitis between April 2011 and March 2023 using the Diagnosis Procedure Combination (DPC), a national inpatient database in Japan. The annual incidence of VZV meningitis was calculated as the number of patients with VZV meningitis divided by the annual population, and adjusted for the proportion of acute-care hospitals covered by the DPC. We described the eligible patients' treatment regimens (including antiviral agents) and clinical outcomes (in-hospital mortality and Barthel Index at discharge). The average annual incidence was 0.25 per 100,000 person-years, increasing from 0.13 in 2011 to 0.46 in 2022. Overall, 96.4% of patients initially received high-dose intravenous acyclovir therapy with a median duration of 11 days. Of the patients treated with intravenous acyclovir, 89.3% received long-course treatment (≥7 days). The in-hospital mortality was 0.8%, and the Barthel Index at discharge was ≥90 in 87.4% of patients. The incidence of VZV meningitis has more than tripled in Japan in the last 12 years. Most patients were treated with long-course intravenous acyclovir and had favorable outcomes at discharge.",
+    "authors": [
+      "Yamagata N",
+      "Kimura Y",
+      "Matsui H",
+      "Fushimi K",
+      "Yasunaga H"
+    ],
+    "journal": "Journal of the neurological sciences",
+    "journal_issn": "1878-5883",
+    "year": 2026,
+    "publication_date": "2026-06-30",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 0.85,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:56.956Z",
+    "classified": true,
+    "title_ja": "日本における水痘・帯状疱疹ウイルス髄膜炎の罹患増加、2011-2022年",
+    "abstract_ja": "DPC(全国入院DB)を用い、2011-2023年の水痘・帯状疱疹ウイルス(VZV)髄膜炎1680例の罹患率・治療・転帰を記述した後方視的研究。年間罹患率は0.13から0.46/10万人年へと12年で3倍以上に増加した。96.4%が高用量静注アシクロビルで治療され、院内死亡0.8%と転帰は良好であった。"
+  },
+  {
+    "id": "pmid-42377802",
+    "pubmed_id": "42377802",
+    "doi": "10.1007/s12928-026-01315-w",
+    "title": "Differential impact of institutional procedural volume on outcomes of transcatheter and surgical strategies for concomitant aortic stenosis and coronary artery disease: a nationwide registry study.",
+    "abstract": "Aortic stenosis (AS) and coronary artery disease (CAD) frequently coexist in elderly patients. Surgical aortic valve replacement (SAVR) with coronary artery bypass grafting (CABG) has been the standard treatment. However, transcatheter aortic valve replacement (TAVR) combined with percutaneous coronary intervention (PCI) currently offers a less invasive alternative. This study describes in-hospital and functional outcomes in elderly patients with AS and CAD undergoing TAVR + PCI or SAVR + CABG, and evaluates procedural volume influence. This retrospective cohort study analyzed 12,393 patients from the Japanese Registry of All Cardiac and Vascular Diseases-Diagnosis Procedure Combination database (2012-2022) who underwent TAVR + PCI (n = 1,487) or SAVR + CABG (n = 10,906) during hospitalization for AS. The primary endpoint was in-hospital mortality rate. Secondary outcomes included functional recovery, assessed using the Barthel Index (BI). Multivariate logistic regression models were adjusted for demographics, comorbidities, and procedural volume. Patients in the TAVR + PCI group were older (85.1 vs. 75.5 years) and had higher frailty. However, in-hospital mortality was lower in TAVR + PCI (3.3% vs. 5.1%, p = 0.002), with greater improvements in BI scores at discharge (+ 5.9 vs. - 1.9, p < 0.001). SAVR + CABG outcomes improved significantly at high-volume Centers (adjusted OR for mortality in the lowest vs. highest quartile: 2.067, p < 0.001). In contrast, TAVR outcomes were consistent regardless of institutional procedural volume. TAVR + PCI was associated with favorable short-term outcomes and functional recovery in elderly AS patients with CAD, despite older age and greater frailty. Institutional experience strongly influences SAVR outcomes, but appears less critical in TAVR, suggesting that TAVR can be safely performed at more hospitals.",
+    "authors": [
+      "Takagi K",
+      "Mitsui K",
+      "Sumita Y",
+      "Kanaoka K",
+      "Miyamoto Y",
+      "Fukushima S",
+      "Yamamoto K",
+      "Noguchi T"
+    ],
+    "journal": "Cardiovascular intervention and therapeutics",
+    "journal_issn": "1868-4297",
+    "year": 2026,
+    "publication_date": "2026-06-30",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [
+      "JROAD-DPC（循環器疾患診療実態調査×DPC）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 2.42,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:57.078Z",
+    "classified": true,
+    "title_ja": "大動脈弁狭窄と冠動脈疾患合併に対する経カテーテル治療と外科治療の転帰に及ぼす施設症例数の差異的影響：全国レジストリ研究",
+    "abstract_ja": "JROAD-DPCデータベース(2012-2022年)を用い、大動脈弁狭窄と冠動脈疾患を合併した高齢者へのTAVR+PCIとSAVR+CABGの転帰を分析した後方視的研究。TAVR+PCI群は高齢・高フレイルだが院内死亡は低く(3.3%対5.1%)機能回復も良好。SAVR成績は施設症例数に強く依存する一方TAVRは施設症例数に依らず一定だった。"
+  },
+  {
+    "id": "pmid-42377434",
+    "pubmed_id": "42377434",
+    "doi": "10.1007/s00595-026-03386-x",
+    "title": "Status of groin hernia repair in Japan: analysis of the 2024 annual report from the National Clinical Database.",
+    "abstract": "To analyze the data on groin hernia repair practice in Japan in 2024 and present the recent changes in open repair technique selection. We performed a retrospective descriptive analysis of groin hernia repairs registered in the National Clinical Database (NCD) of Japan in 2024, using nationwide data and a Japanese Hernia Society-registered subset with detailed procedure variables for 2021-2024. In the nationwide dataset, inguinal laparo-endoscopic and open repairs accounted for 58.2% and 38.2% of all groin hernia repairs, respectively. Among open repairs in the Japanese Hernia Society-registered dataset, underlay mesh repair was the most common subtype of primary repair until 2023, but decreased over time. The proportion of anterior onlay mesh repairs increased from 21.8% in 2021 to 32.0% in 2024, while the proportion of plug-and-patch repairs remained stable at approximately 24%. For recurrent open repairs, plug-and-patch repair remained the most common subtype, accounting for approximately 37%-39%, whereas underlay mesh repair decreased from 28.4% in 2021 to 21.0% in 2024, and anterior onlay mesh repair increased from 17.7% in 2021 to 26.0% in 2024. Open groin hernia repair remains common in Japan, and its composition is shifting toward the use of anterior onlay mesh repair, although plug-and-patch and underlay mesh repairs are still performed widely.",
+    "authors": [
+      "Tazaki T",
+      "Yamamoto H",
+      "Sato M",
+      "Poudel S",
+      "Matsubara T",
+      "Nagae I",
+      "Takagi T",
+      "Shirabe K",
+      "Ueno H",
+      "Hachisuka T",
+      "Miyazaki K"
+    ],
+    "journal": "Surgery today",
+    "journal_issn": "1436-2813",
+    "year": 2026,
+    "publication_date": "2026-06-30",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.96,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-06T00:03:57.185Z",
+    "classified": true,
+    "title_ja": "日本の鼠径ヘルニア修復術の現況：National Clinical Database 2024年年次報告の解析",
+    "abstract_ja": "NCDの2024年データと日本ヘルニア学会登録サブセットを用い、鼠径ヘルニア修復術の実態と開放修復術式の変化を記述した横断的解析。腹腔鏡下修復が58.2%、開放修復が38.2%を占め、開放修復では前面オンレイメッシュ法が21.8%から32.0%へ増加し、アンダーレイメッシュ法は減少した。"
+  },
+  {
     "id": "pmid-42351284",
     "pubmed_id": "42351284",
     "doi": "10.1186/s13030-026-00363-1",
