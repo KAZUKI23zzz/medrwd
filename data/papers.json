@@ -1,5 +1,464 @@
 [
   {
+    "id": "pmid-42437110",
+    "pubmed_id": "42437110",
+    "doi": "10.1016/j.xops.2026.101262",
+    "title": "Early Prediction of Diabetic Macular Edema via Machine Learning Survival Analysis on Checkup Data.",
+    "abstract": "To predict the risk of diabetic macular edema (DME) onset and to identify features of the risk subgroups. Population-based observational study with a case-control design. Health checkup and diagnosis data from the JMDC claims database (January 2005-July 2020), one of the largest Japanese epidemiological databases, were used. From 272 337 individuals diagnosed with type 2 diabetes (International Classification of Diseases, 10th Revision E11), we analyzed 2368 pairs of DME and non-DME individuals, which matched 1:1 by the balancing score calculated from regression analysis of DME with sex, age, months of observation, number of checkups, duration of diabetes, and months until the first checkup. We employed a multivariate Cox proportional hazards model, regularized Cox models, and a random survival forest (RSF). These models were trained via ID-level bootstrap resampling using 43 health checkup variables (missing ratio <50%) and 404 high-incidence diseases within 6 months, along with age, sex, and duration of diabetes mellitus, to assess DME risk. Temporal changes in RSF-predicted risk scores were analyzed using nonlinear modeling techniques. Concordance index (C-index), integrated Brier score (IBS), and cumulative/dynamic mean area under the receiver operating characteristic curve (AUC). Thirteen checkup items and 44 disease history variables were significantly associated with the onset of DME. The RSF identified 43.8% of DME cases >5 years prior to onset, with a specificity of 85.5%. The RSF achieved median C-index, IBS, and mean AUC values of 0.694 (95% confidence interval, 0.688-0.697), 0.181 (0.179-0.184), and 0.750 (0.739-0.756), respectively, outperforming both multivariate and univariate Cox models. Three distinct DME risk subgroups were suggested by temporal changes in the RSF-predicted risk score. Predictors of DME onset varied markedly among these subgroups. In the explicit high-risk subgroup, urinary protein and urinary sugar were highly important, and liver function-related blood tests, such as alanine transaminase and γ-gultamyltransferase, were also ranked high in variable importance metrics. Anemia-related laboratory tests were associated with DME development only in this subgroup. Random survival forest demonstrated superior performance in relative risk prediction of DME using health checkup data. External validation remains an essential prerequisite before any clinical application. Proprietary or commercial disclosure may be found in the Footnotes and Disclosures at the end of this article.",
+    "authors": [
+      "Kashiwagi Y",
+      "Chida K",
+      "Hananoe A",
+      "Ishibashi R",
+      "Koshizaka M",
+      "Maezawa Y",
+      "Inaba Y",
+      "Takatsuna Y",
+      "Tatsumi T",
+      "Inoue H",
+      "Wakabayashi H",
+      "Ishikawa T",
+      "Hanai A",
+      "Yokote K",
+      "Asanuma K",
+      "Kawakami E"
+    ],
+    "journal": "Ophthalmology science",
+    "journal_issn": "2666-9145",
+    "year": 2026,
+    "publication_date": "2026-07-12",
+    "analysis_methods": [
+      "生存時間分析",
+      "機械学習・AI",
+      "回帰分析",
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": "",
+    "study_design": "症例対照研究",
+    "research_categories": [
+      "方法論・バリデーション",
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.85,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-13T02:03:24.295Z",
+    "classified": true,
+    "title_ja": "健診データを用いた機械学習生存解析による糖尿病黄斑浮腫の早期予測",
+    "abstract_ja": "JMDCの健診・診断データ（2型糖尿病27万人）を用い、糖尿病黄斑浮腫（DME）発症をランダム生存フォレスト等で予測した症例対照研究。C-index 0.694・AUC 0.750とCoxモデルを上回り、DME症例の43.8%を発症5年以上前に特異度85.5%で検出した。尿蛋白・尿糖や肝機能検査が高リスク群の重要因子として同定された。"
+  },
+  {
+    "id": "pmid-42436241",
+    "pubmed_id": "42436241",
+    "doi": "10.1038/s41598-026-60673-w",
+    "title": "Scalable risk stratification of undiagnosed heart failure using routine health data and its association with imaging phenotypes and outcomes.",
+    "abstract": "Late diagnosis of Heart failure (HF) is associated with worse outcomes. We aimed to develop a scalable tool to identify those at high risk of undiagnosed HF using routine electronic health records (EHR). We developed and internally validated a logistic regression (FIND-HF) model for incident HF diagnosis within one year in United Kingdom primary care EHRs (CPRD-Aurum, n=3 520 186), with good prediction performance (area under the receiver operating characteristic curve (AUC) 0.79), equal to more complex modelling techniques. We externally validated FIND-HF in United Kingdom (CPRD-GOLD, n=570 850, AUC 0.72), Japan (JMDC, n=6 820 694, AUC 0.73), United States of America (Epic Cosmos, n=7 710 398, AUC 0.78), and Taiwan (NTUH, n=170 518, AUC 0.85). In a cohort who had undergone HF diagnostics an optimised FIND-HF threshold had a positive predictive value of 21.4% and a negative predictive value of 96.9%. Amongst patients with HF who had undergone cardiac magnetic resonance imaging, high FIND-HF risk compared with low FIND-HF risk as reference, was associated with increased risk of a primary composite outcome of heart failure hospitalisation or cardiovascular death and more advanced adverse remodelling including lower left ventricular ejection fraction. FIND-HF is a scalable EHR-based model which has the potential to help rule out undiagnosed HF in low risk cases, whilst high risk cases are associated with more advanced cardiac dysfunction and worse prognosis.",
+    "authors": [
+      "Nakao YM",
+      "Nadarajah R",
+      "Shuweihdi F",
+      "Hayward CJ",
+      "Goto M",
+      "Hsu JC",
+      "Haris M",
+      "Hurdus B",
+      "Tariq O",
+      "Habtezghi T",
+      "Helbitz A",
+      "Wahab A",
+      "Mu L",
+      "Nakao K",
+      "Swoboda P",
+      "Banerjee A",
+      "Petrie MC",
+      "Taylor CJ",
+      "Kawakami K",
+      "Wu J",
+      "Gale CP"
+    ],
+    "journal": "Scientific reports",
+    "journal_issn": "2045-2322",
+    "year": 2026,
+    "publication_date": "2026-07-11",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": "英CPRD-Aurum/CPRD-GOLD、米Epic Cosmos、台湾NTUHでも外部検証（本カタログ該当は日本のJMDC）",
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "方法論・バリデーション",
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 4.6,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-13T02:03:24.416Z",
+    "classified": true,
+    "title_ja": "日常診療データを用いた未診断心不全のスケーラブルなリスク層別化",
+    "abstract_ja": "英国プライマリケアEHR（CPRD-Aurum、352万人）でロジスティック回帰モデルFIND-HFを開発し、日本のJMDC（682万人、AUC 0.73）を含む複数国で外部検証した研究。1年以内の心不全発症をAUC 0.72-0.85で予測し、低リスク例の除外に有用と示された。高リスク例は心臓MRIでより進行した心機能低下・不良予後と関連した。"
+  },
+  {
+    "id": "pmid-42423783",
+    "pubmed_id": "42423783",
+    "doi": "10.1007/s00595-026-03400-2",
+    "title": "Incidence and outcomes of pulmonary artery injury during anatomical lung resection for lung cancer: a nationwide database study in Japan.",
+    "abstract": "To evaluate the incidence, characteristics, and perioperative outcomes of pulmonary artery (PA) injury during lung cancer surgery using data from the Japanese National Clinical Database (NCD). We analyzed patients who underwent lobectomy or segmentectomy for clinical stage I-III primary lung cancer registered in the NCD between 2018 and 2021. The clinicopathological features and perioperative outcomes were compared between patients with and without PA injury. Subgroup analyses were performed according to blood loss categories and the causes of mortality. PA injury occurred in 1,325 of 142,343 patients (0.9%). It was more frequent in older patients, those with a higher BMI, advanced-stage disease, and left upper lobe resections. PA injury was associated with longer operative duration, greater blood loss, and higher transfusion rates. Postoperative complications were more frequent in the PA injury group. Thirty-day mortality (1.2% vs. 0.4%) and operative mortality (1.5% vs. 0.6%) rates were higher. Mortality was notably higher when intraoperative blood loss exceeded 2000 mL, regardless of PA injury. A female sex, obesity, and cN0 status were more common among patients with PA injury-related mortality. Intraoperative PA injury occurred in nearly 1% of resections and it was associated with poor outcomes. A hemorrhage exceeding 2000 mL may therefore be a critical mortality marker.",
+    "authors": [
+      "Ichimura H",
+      "Yamamoto H",
+      "Sato Y",
+      "Chida M",
+      "Yoshino I",
+      "Okada Y",
+      "Inoue M",
+      "Hoshikawa Y",
+      "Ito H",
+      "Uramoto H",
+      "Shintani Y",
+      "Sato T",
+      "Chen-Yoshikawa TF",
+      "Asakura K",
+      "Fukui M",
+      "Kawamura M",
+      "Sakao Y",
+      "Toyooka S"
+    ],
+    "journal": "Surgery today",
+    "journal_issn": "1436-2813",
+    "year": 2026,
+    "publication_date": "2026-07-09",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": "",
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 1.95,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-13T02:03:24.526Z",
+    "classified": true,
+    "title_ja": "肺癌に対する解剖学的肺切除術中の肺動脈損傷の発生率と転帰：日本の全国データベース研究",
+    "abstract_ja": "NCD（National Clinical Database、2018-2021年）を用い、肺癌手術（葉切除・区域切除）14万人での術中肺動脈損傷の発生率と周術期転帰を評価した後方視的研究。損傷は0.9%に発生し、高齢・高BMI・進行例・左上葉切除で多く、30日死亡率（1.2%対0.4%）が高かった。出血量2000mL超が重要な死亡マーカーと示唆された。"
+  },
+  {
+    "id": "pmid-42423749",
+    "pubmed_id": "42423749",
+    "doi": "10.1007/s00223-026-01572-0",
+    "title": "Cardiovascular Safety of Romosozumab Versus Other Anti-Osteoporosis Medications in Patients with Osteoporosis: A Nationwide Health Insurance Claims Database Study in Japan.",
+    "abstract": "Romosozumab (Rmab) is a potent anti-osteoporosis agent with dual effects on bone resorption and formation. Although superior to alendronate in fracture reduction, cardiovascular safety concerns have been raised. This study compared cardiovascular disease (CVD) incidence between Rmab and other anti-osteoporosis medications (AOMs) using Japan's National Database of Health Insurance Claims. Patients aged  ≥ 50 years initiating Rmab, parathyroid hormone analogues (PTH), denosumab (Dmab), or bisphosphonates (BP) between March 2019 and March 2023 were identified. Outcomes were acute myocardial infarction, ischemic heart disease, and cerebrovascular disease occurring within 570 days of initiation or within 180 days after discontinuation. Patients with prior myocardial infarction or cerebrovascular disease were excluded. Hazard ratios (HRs) were derived from Cox regression with inverse probability weighting using propensity scores. The study included 25,584 men and 236,467 women receiving Rmab; 50,688 and 289,132 on PTH; 50,319 and 460,182 on Dmab; and 232,484 and 1,144,757 on BP. Cumulative incidence of outcomes was highest with PTH, followed by Dmab, BP, and lowest with Rmab. Compared with PTH, adjusted HRs for Rmab in men were 0.49 for acute myocardial infarction, 0.59 for ischemic heart disease, and 0.70 for cerebrovascular disease. Compared with Dmab, HRs were 0.62, 0.62, and 0.59, respectively. Versus BP, HRs were 0.68, 0.74, and 0.72. All HRs were similarly below 1.0 in women. After adjustment for baseline characteristics, no excess incidence of cardiovascular events was observed among patients receiving Rmab compared with those receiving other AOMs.",
+    "authors": [
+      "Fujita Y",
+      "Kouda K",
+      "Fujimori K",
+      "Okimoto N",
+      "Nakatoh S",
+      "Tamaki J",
+      "Ishii S",
+      "Ogawa S",
+      "Iki M"
+    ],
+    "journal": "Calcified tissue international",
+    "journal_issn": "1432-0827",
+    "year": 2026,
+    "publication_date": "2026-07-09",
+    "analysis_methods": [
+      "生存時間分析",
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Female",
+      "Japan",
+      "Osteoporosis",
+      "Male",
+      "Aged",
+      "Cardiovascular Diseases",
+      "Bone Density Conservation Agents",
+      "Middle Aged",
+      "Databases, Factual",
+      "Aged, 80 and over",
+      "Incidence"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": "",
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.79,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-13T02:03:24.631Z",
+    "classified": true,
+    "title_ja": "骨粗鬆症患者におけるロモソズマブと他剤の心血管安全性：日本の全国レセプトDB研究",
+    "abstract_ja": "NDB（全国レセプトDB）を用い、ロモソズマブ開始例と他の骨粗鬆症治療薬（PTH・デノスマブ・ビスホスホネート）の心血管イベント発生をIPTW傾向スコア＋Cox回帰で比較した後方視的コホート研究。ロモソズマブの心筋梗塞・虚血性心疾患・脳血管疾患のハザード比はいずれも1.0未満で、他剤と比べ心血管イベントの過剰は認めなかった。"
+  },
+  {
+    "id": "pmid-42415471",
+    "pubmed_id": "42415471",
+    "doi": "10.1080/21645515.2026.2688606",
+    "title": "Safety monitoring of bivalent, quadrivalent, and 9-valent human papillomavirus vaccination in Japan: The vaccine effectiveness, networking, and universal safety (VENUS) study.",
+    "abstract": "Safety data on human papillomavirus (HPV) vaccination in the Japanese population remain limited owing to the lack of healthcare databases available for vaccine safety assessment. In this study, we assessed the risk of adverse events of special interest (AESIs) following HPV vaccination among females aged 12-26 y using medical claims data linked to routine or catch-up vaccination records provided by municipalities. We conducted a population-based cohort study and self-controlled case series (SCCS) from April 2015 to March 2023 for bivalent/quadrivalent vaccines and from April 2023 to March 2024 for the 9-valent vaccine. All females eligible for the vaccination program were included in the cohort study, whereas only those who experienced AESIs were included in the SCCS. The observation period was classified according to vaccination status as unvaccinated and post-vaccination risk periods following the first, second, and third doses. Adjusted rate ratios with 95% confidence intervals were estimated for the cohort and SCCS. In the bivalent/quadrivalent vaccines analysis cohort (25131 females), 1763, 1492, and 975 received the first, second, and third doses, respectively. In the 9-valent vaccine analysis cohort (38970 females), 3931, 2389, and 934 received the first, second, and third doses, respectively. Rates of 54 AESIs were calculated during unvaccinated periods. AESIs with feasible quantitative analyses for either the bivalent/quadrivalent or 9-valent vaccines included migraine, hypotension, asthma, polycystic ovary syndrome, postural orthostatic tachycardia syndrome, hypothyroidism, hyperthyroidism, and epilepsy. No statistically significant increased risk following HPV vaccination was observed for these AESIs. Larger datasets are needed to assess rarer AESIs.",
+    "authors": [
+      "Ishiguro C",
+      "Morita H",
+      "Mimura W",
+      "Tsuzuki S",
+      "Hirashima-Terada J",
+      "Takeuchi Y",
+      "Oda F",
+      "Maeda M",
+      "Fukuda H"
+    ],
+    "journal": "Human vaccines & immunotherapeutics",
+    "journal_issn": "2164-554X",
+    "year": 2026,
+    "publication_date": "2026-07-08",
+    "analysis_methods": [
+      "自己対照ケースシリーズ (SCCS)"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Female",
+      "Adolescent",
+      "Japan",
+      "Young Adult",
+      "Child",
+      "Adult",
+      "Papillomavirus Infections",
+      "Papillomavirus Vaccines",
+      "Vaccine Efficacy",
+      "Cohort Studies",
+      "Vaccination",
+      "Human Papillomavirus Viruses",
+      "Human Papillomavirus Recombinant Vaccine Quadrivalent, Types 6, 11, 16, 18",
+      "Drug-Related Side Effects and Adverse Reactions"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": "自治体の定期・キャッチアップ接種記録と連結した医療レセプトデータ（VENUS研究）",
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.94,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-13T02:03:24.720Z",
+    "classified": true,
+    "title_ja": "日本におけるHPVワクチン（2価・4価・9価）の安全性監視：VENUS研究",
+    "abstract_ja": "自治体の接種記録と連結した医療レセプトデータを用い、12-26歳女性のHPVワクチン接種後の特別関心有害事象（AESI）をコホート研究と自己対照ケースシリーズ（SCCS）で評価した。片頭痛・喘息・甲状腺機能異常など解析可能な54のAESIについて、接種後のリスク上昇は統計学的に有意でなかった。稀なAESI評価にはより大規模データが必要とされた。"
+  },
+  {
+    "id": "pmid-42413308",
+    "pubmed_id": "42413308",
+    "doi": "10.1016/j.schres.2026.07.004",
+    "title": "Initiation patterns of long-acting injectable antipsychotics in a claims-based proxy cohort approximating first-episode schizophrenia: A longitudinal descriptive study using a Japanese claims database.",
+    "abstract": "Long-acting injectable antipsychotics (LAIs) may support treatment continuity in schizophrenia, yet real-world initiation patterns during the first-episode schizophrenia (FES) phase remain poorly characterized in Japan. Using the JMDC Claims Database (January 1, 2005-March 31, 2024), we conducted a longitudinal descriptive epidemiologic study of a claims-based proxy cohort approximating FES, defined by an operational diagnosis algorithm, temporal proximity between diagnosis and antipsychotic treatment initiation, and continuous enrollment with a pre-index lookback period. Suspected schizophrenia diagnoses were excluded. Primary descriptive measures were LAI initiation (≥1 LAI dispensing) during follow-up, time from schizophrenia diagnosis to first LAI dispensing, and annual antipsychotic dispensing trends. In an exploratory descriptive analysis restricted to patients switching from oral antipsychotics (OAP) to LAIs with 1-year observability before and after LAI initiation, we described treatment continuity (weekly proportion of days covered [PDC]) and psychiatric hospitalization. Among 24,226 patients, the median follow-up duration was 30 months (IQR, 13-58), and 437 (1.8%) had ≥1 LAI dispensing. The median time from diagnosis to first LAI dispensing was 12 months (IQR, 2-31), and the annual proportion with any LAI dispensing remained consistently <2% across the study period. Among OAP-to-LAI switchers, median PDC in the year before LAI initiation was 0.82 (IQR, 0.50-0.96), and 26.9% had hospitalization for medical care and protection during that period. In a Japanese insured claims population, LAI initiation was infrequent and typically occurred after OAP initiation. These findings describe LAI initiation patterns in newly observed and newly treated schizophrenia within an insured claims population.",
+    "authors": [
+      "Miyagawa R",
+      "Takayama A",
+      "Ogawa Y",
+      "Kawakami K"
+    ],
+    "journal": "Schizophrenia research",
+    "journal_issn": "1573-2509",
+    "year": 2026,
+    "publication_date": "2026-07-07",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": "",
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.85,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-13T02:03:24.820Z",
+    "classified": true,
+    "title_ja": "初発統合失調症に近似するレセプトコホートにおける持続性注射剤抗精神病薬の導入パターン",
+    "abstract_ja": "JMDCレセプトDB（2005-2024年）を用い、初発統合失調症に近似する操作的定義コホート2.4万人で持続性注射剤抗精神病薬（LAI）の導入実態を記述した縦断研究。LAI導入は1.8%と稀で、診断からLAI初回投与までの中央値は12カ月、年間LAI使用割合は一貫して2%未満だった。経口薬からの切替例では導入前の服薬継続が不十分な傾向が示された。"
+  },
+  {
+    "id": "pmid-42412757",
+    "pubmed_id": "42412757",
+    "doi": "10.1080/15569527.2026.2697217",
+    "title": "Drug-induced paronychia: a disproportionality and time-to-onset pharmacovigilance study using FAERS and JADER.",
+    "abstract": "Paronychia is a painful periungual inflammation that can significantly impair quality of life and even necessitate modifications to cancer treatment. With the expanding use of epidermal growth factor receptor (EGFR) inhibitors and other targeted therapies, the reporting frequency of drug-induced paronychia in pharmacovigilance databases has increased. However, comprehensive assessment of the relative reporting patterns and temporal characteristics of drug-induced paronychia remains limited. We performed a disproportionality analysis of adverse event reports retrieved from the US FDA Adverse Event Reporting System (FAERS) and the Japanese Adverse Drug Event Report database (JADER). After case-level deduplication, paronychia was identified using MedDRA preferred term. Four signal detection algorithms were employed (Reporting Odds Ratio, Proportional Reporting Ratio, Bayesian Confidence Propagation Neural Network, and Multi-item Gamma Poisson Shrinker). A drug-paronychia pair was classified as a positive signal only when all four algorithms simultaneously satisfied thresholds (ROR lower 95% CI > 1; PRR ≥ 2 with χ2 ≥ 4; BCPNN IC025 > 0; MGPS EBGM05 > 2; each requiring N ≥ 3). Time-to-onset characteristics were analyzed using Weibull distribution parameters to distinguish early failure from random failure patterns. A total of 3,693 paronychia reports in FAERS and 338 in JADER were analyzed. In FAERS, females comprised 53.1% of reports; patients aged 18-64 years represented 36.6%. The ten drugs with the strongest disproportionality signals (ranked by ROR) were Dacomitinib [ROR 374.77; 95% CI 276.31-508.31], Selumetinib [304.66; 228.55-406.10], Afatinib [296.98; 264.27-333.74], Panitumumab [204.37; 183.10-228.11], Amivantamab [167.61; 124.71-225.26], Necitumumab [151.38; 67.14-341.35], Mobocertinib [117.03; 71.21-192.34], Erdafitinib [59.36; 33.57-104.99], Lapatinib [48.09; 39.71-58.24], and Gefitinib [47.28; 37.09-60.27]. Thirty-two drugs exhibited statistically significant associations with paronychia that were not listed in their FDA-approved labeling, highlighting a critical safety gap. Time-to-onset analysis of 30 drugs with valid TTO data revealed that median onset times ranged from 4 days (Necitumumab) to 575.5 days (Alendronate), with several of the most frequently reported EGFR and MEK inhibitors exhibiting an early-failure pattern (Weibull β < 1), supporting concentrated monitoring during the first weeks of therapy. This pharmacovigilance assessment identified drugs with notable disproportionality signals for drug-induced paronychia, underscoring the utility of real-world data for early detection of safety signals. The identification of unlabeled paronychia risks in 32 medications highlights critical gaps in current safety information. These findings, derived from spontaneous reporting data, indicate associations rather than causal risk and require further clinical and epidemiologic evaluation. The signals identified may help prioritize pharmacovigilance monitoring and future validation studies.",
+    "authors": [
+      "Xia J",
+      "Lu Y"
+    ],
+    "journal": "Cutaneous and ocular toxicology",
+    "journal_issn": "1556-9535",
+    "year": 2026,
+    "publication_date": "2026-07-07",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": "米FDA FAERSも併用（日本側はJADER）",
+    "study_design": "その他",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.34,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-13T02:03:24.917Z",
+    "classified": true,
+    "title_ja": "薬剤性爪囲炎：FAERSとJADERを用いた不均衡分析および発現時間の薬剤疫学研究",
+    "abstract_ja": "米FAERSと日本のJADERの自発報告を用い、薬剤性爪囲炎のシグナルを4つの不均衡分析アルゴリズムで検出した薬剤疫学研究。ダコミチニブ等のEGFR/MEK阻害薬で強いシグナルを認め、32剤は添付文書未記載だった。発現時間解析では多くのEGFR阻害薬が投与初期に集中する早期故障型を示した。"
+  },
+  {
+    "id": "pmid-42410517",
+    "pubmed_id": "42410517",
+    "doi": "10.1186/s12873-026-01667-9",
+    "title": "Altered mental status in cancer-related emergency hospitalizations: prevalence and recorded reasons for admission.",
+    "abstract": "Altered mental status is a critical clinical presentation in emergency departments, yet its frequency in cancer-related emergency hospitalizations and the clinical conditions recorded at presentation have not been well characterized. We conducted a retrospective multicenter cohort study using data from the Cancer Registry-based Study on Cancer Care in Osaka (CanReCO), which links hospital-based cancer registry data with Diagnosis Procedure Combination (DPC) administrative data. The cohort included patients diagnosed between January 2019 and December 2022, and linked DPC hospitalization records available through June 2023 were used to identify first emergency hospitalizations after cancer diagnosis. We extracted cases presenting with altered mental status, defined as a Japan Coma Scale score ≥ 1. Recorded reasons for admission were described overall and according to cancer stage and cancer type. Of 55,949 cancer-related emergency hospitalizations across 68 participating hospitals, 5,881 (10.5%) involved altered mental status. The most frequent reasons for admission among patients with altered mental status were index cancer (32.3%), stroke (8.6%), and pneumonia (6.9%). When analyzed by cancer stage at diagnosis, index cancer, CNS metastasis, and sepsis were more frequently recorded in later stages. When analyzed by cancer type, certain reasons were more frequent in specific malignancies, including CNS metastasis in lung and breast cancers; pneumonia in lung cancer; sepsis in hematologic, pancreatic, and biliary cancers; and hyperglycemia or diabetes mellitus in pancreatic cancer, among others. Altered mental status was commonly recorded among cancer patients requiring emergency hospitalization. The reasons for admission varied by cancer stage and cancer type, with neurological and infectious diagnoses frequently observed. These findings provide descriptive information that may help clinicians consider cancer-specific patterns when evaluating cancer patients presenting with altered mental status in emergency settings.",
+    "authors": [
+      "Ge L",
+      "Gon Y",
+      "Kimura Y",
+      "Morishima T",
+      "Okuno T",
+      "Mochizuki H",
+      "Miyashiro I"
+    ],
+    "journal": "BMC emergency medicine",
+    "journal_issn": "1471-227X",
+    "year": 2026,
+    "publication_date": "2026-07-07",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": "大阪府のがん登録とDPCを連結したCanReCO",
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.87,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-13T02:03:25.025Z",
+    "classified": true,
+    "title_ja": "がん関連救急入院における意識障害：有病割合と記録された入院理由",
+    "abstract_ja": "大阪府のがん登録とDPCを連結したCanReCO（2019-2022年）を用い、がん患者の救急入院における意識障害（JCS≥1）の頻度と入院理由を記述した後方視的多施設コホート研究。救急入院5.6万件中10.5%に意識障害を認め、入院理由は原疾患のがん（32.3%）、脳卒中、肺炎が多く、がんの病期・がん種で理由が異なった。"
+  },
+  {
+    "id": "pmid-42410470",
+    "pubmed_id": "42410470",
+    "doi": "10.1186/s43019-026-00329-1",
+    "title": "Cerebrovascular disease and postoperative cognitive-related complications after knee arthroplasty: evidence from a nationwide cohort.",
+    "abstract": "Patients with a history of cerebrovascular disease may be at an increased risk for postoperative complications following knee arthroplasty; however, previous studies have been limited by small sample sizes and insufficient adjustment for confounding variables. This study aimed to evaluate whether cerebrovascular disease is associated with postoperative complications using a nationwide Japanese database. A retrospective cohort study was conducted using Japan's Diagnosis Procedure Combination database from April 2016 to March 2023. Patients who underwent total knee arthroplasty (TKA) or unicompartmental knee arthroplasty (UKA) were identified, and postoperative complications-including deep vein thrombosis, pulmonary embolism, cerebrovascular events, surgical site infection, cognitive-related complications, and periprosthetic fractures-were evaluated. Cerebrovascular disease was defined using ICD-10 codes I60-I69. Propensity score matching (1:1) was performed using demographics, comorbidities, anesthesia type, and surgical procedure. Multivariate logistic regression was conducted to account for residual confounding. Among 259,319 eligible patients, 8298 had cerebrovascular disease. After matching, 8269 pairs were analyzed. Before matching, patients with cerebrovascular disease showed higher rates of thromboembolic and infectious complications, longer hospital stays, and greater transfusion volume. After matching, only cognitive-related complications remained significantly more frequent in the cerebrovascular disease group. Cerebrovascular disease was associated with postoperative cognitive-related complications (odds ratio (OR) 1.70; 95% confidence interval (CI) 1.28-2.26; p = 0.0003), with a risk difference of 0.62% (95% CI 0.28-0.95). Sensitivity analyses excluding patients with preoperative dementia or cognitive impairment and analyses limited to TKA cases demonstrated directionally consistent findings, although these associations did not reach the prespecified stringent significance threshold. Cerebrovascular disease does not increase the risk of recurrent cerebrovascular events after knee arthroplasty; however, it elevates the risk of postoperative cognitive-related complications, despite a low absolute incidence. Although the overall incidence was low, this finding may have implications for postoperative recovery and functional outcomes. III (retrospective cohort study).",
+    "authors": [
+      "Mori Y",
+      "Tarasawa K",
+      "Tanaka H",
+      "Mori N",
+      "Fushimi K",
+      "Aizawa T",
+      "Fujimori K"
+    ],
+    "journal": "Knee surgery & related research",
+    "journal_issn": "2234-0726",
+    "year": 2026,
+    "publication_date": "2026-07-07",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": "",
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 5.77,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-13T02:03:25.140Z",
+    "classified": true,
+    "title_ja": "脳血管疾患と膝関節置換術後の認知関連合併症：全国コホートからのエビデンス",
+    "abstract_ja": "DPC（2016-2023年）を用い、膝関節置換術（TKA/UKA）を受けた25.9万人で脳血管疾患の既往と術後合併症の関連を1:1傾向スコアマッチング＋ロジスティック回帰で評価した後方視的コホート研究。マッチング後、脳血管疾患群では認知関連合併症のみが有意に多く（OR 1.70）、術後脳血管イベントの再発リスク増加は認めなかった。"
+  },
+  {
+    "id": "pmid-42409964",
+    "pubmed_id": "42409964",
+    "doi": "10.1038/s41598-026-60922-y",
+    "title": "Factors associated with non-steroidal anti-inflammatory drug continuation at discharge in patients with heart failure.",
+    "abstract": "Non-steroidal anti-inflammatory drugs (NSAIDs) are potentially inappropriate medications for patients with heart failure (HF) and may cause adverse events through the \"triple-whammy\" mechanism. We examined the factors associated with the continuation of NSAIDs prescriptions at hospital discharge among patients with HF. Using data from the Japanese Registry of All Cardiac and Vascular Disease and Diagnosis Procedure Combination from April 2020 to March 2023, we analyzed 36,085 patients with HF who received NSAIDs during hospitalization. Patients were categorized as continuing or discontinuing NSAIDs at discharge. Multivariate logistic regression was performed to identify factors associated with continued NSAIDs use, including age, sex, comorbidities, and number of hospital beds. Among patients with HF who were prescribed NSAIDs, 53.4% were concomitantly prescribed a renin angiotensin agent and a diuretic. Rheumatic disease (OR: 3.47; 95% CI 3.16-3.82) showed the strongest association with continued NSAIDs use, while chronic kidney disease (OR: 0.90; 95% CI 0.84-0.96) was negatively associated. Smaller hospital size (< 450 beds) was positively (OR: 1.16; 95% CI 1.10-1.22) correlated with continued NSAIDs prescriptions. A substantial proportion of patients with HF are exposed to triple-whammy drug combinations. These findings can help optimize drug therapy in patients with HF who continue NSAIDs prescriptions.",
+    "authors": [
+      "Sunaga T",
+      "Ishii S",
+      "Nagao M",
+      "Nakamura S",
+      "Iso Y",
+      "Ebato M"
+    ],
+    "journal": "Scientific reports",
+    "journal_issn": "2045-2322",
+    "year": 2026,
+    "publication_date": "2026-07-06",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": "JROAD（日本循環器学会診療実態調査）とDPCの連結データ",
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "安全性・副作用"
+    ],
+    "impact_factor": 4.6,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-13T02:03:25.140Z",
+    "classified": true,
+    "title_ja": "心不全患者における退院時のNSAIDs継続に関連する因子",
+    "abstract_ja": "JROAD-DPC（2020-2023年）を用い、入院中にNSAIDsを処方された心不全患者3.6万人で退院時のNSAIDs継続関連因子を多変量ロジスティック回帰で解析した研究。リウマチ性疾患が最も強く継続と関連し（OR 3.47）、慢性腎臓病は負の関連、小規模病院で継続が多かった。患者の53.4%がトリプルワーミー（RA系薬＋利尿薬＋NSAIDs）に曝露していた。"
+  },
+  {
     "id": "pmid-42390075",
     "pubmed_id": "42390075",
     "doi": "10.5414/CP205023",
@@ -38,6 +497,55 @@
     "classified": true,
     "title_ja": "関節リウマチにおけるメトトレキサートと葉酸補充：日本のレセプトDBを用いた53万人超の解析",
     "abstract_ja": "日本のレセプトDB「DeSC」を用い、関節リウマチ患者のメトトレキサート(MTX)開始時のモニタリングと葉酸補充の実態を後方視的に調べた研究。MTX使用者の85.1%に葉酸が併用され、2019年ガイドライン前後で補充率に有意差はなく安全対策は既に定着していた。一方でクレアチニンやKL-6のモニタリングは開始後に有意に増加した。"
+  },
+  {
+    "id": "pmid-42402330",
+    "pubmed_id": "42402330",
+    "doi": "10.1111/ggi.70638",
+    "title": "Regional Variation in Home Oxygen Therapy Use in Japan: An Age-Standardized Ecological Analysis Using the NDB Open Data.",
+    "abstract": "To evaluate regional variation in home oxygen therapy (HOT) use in Japan and to examine its association with regional healthcare resources. This ecological cross-sectional study analyzed aggregated data from the National Database Open Data for Fiscal Year 2023. Patients receiving HOT were identified using reimbursement codes. Age-standardized claim ratios (SCRs) were calculated for all 47 prefectures by performing indirect standardization based on 5-year age groups. Multivariable linear regression assessed associations between HOT use and prefecture-level characteristics reflecting regional contextual factors, including the density of home-care support clinics, respiratory specialist density, population aging, and respiratory disease-related mortality. A total of 324 998 patients had HOT-related claims nationwide in Fiscal Year 2023. SCRs ranged from 54.4 to 140.4, indicating marked regional variation. A higher density of home-care support clinics was independently associated with higher SCRs in both the primary model and the model additionally adjusted for population aging and regional disease burden. Population aging was inversely associated with SCRs, indicating lower age-standardized HOT use in more aged prefectures. Respiratory disease-related mortality was positively associated with SCRs, whereas no significant association was observed between respiratory specialist density and SCRs. Regional variation in HOT use was associated with the availability of home medical care services, after accounting for regional contextual factors. Lower age-standardized use in highly aged prefectures may reflect regional characteristics related to HOT provision. These findings suggest an association between regional variation in HOT use and differences in home-care infrastructure.",
+    "authors": [
+      "Akaba T",
+      "Shiota Y",
+      "Kubo M",
+      "Tagaya E"
+    ],
+    "journal": "Geriatrics & gerontology international",
+    "journal_issn": "1447-0594",
+    "year": 2026,
+    "publication_date": "2026-07-05",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [
+      "Japan",
+      "Humans",
+      "Home Care Services",
+      "Cross-Sectional Studies",
+      "Oxygen Inhalation Therapy",
+      "Female",
+      "Aged",
+      "Male",
+      "Aged, 80 and over",
+      "Middle Aged"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": "",
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 1.65,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-13T02:03:25.254Z",
+    "classified": true,
+    "title_ja": "日本における在宅酸素療法利用の地域差：NDBオープンデータを用いた年齢調整生態学的分析",
+    "abstract_ja": "2023年度のNDBオープンデータを用い、在宅酸素療法（HOT）利用の47都道府県間の地域差を年齢調整レセプト比（SCR）で評価した生態学的横断研究。SCRは54.4-140.4と大きな地域差を示し、在宅療養支援診療所の密度が高いほどHOT利用が多く、高齢化が進む県ほど年齢調整利用は低かった。在宅医療資源の整備状況が地域差と関連すると示された。"
   },
   {
     "id": "pmid-42400936",
