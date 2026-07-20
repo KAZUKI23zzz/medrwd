@@ -1,5 +1,739 @@
 [
   {
+    "id": "pmid-42470211",
+    "pubmed_id": "42470211",
+    "doi": "10.1002/oby.70264",
+    "title": "Trends in Diagnosing Obesity: The CALOR Study.",
+    "abstract": "This study aimed to describe characteristics of people with elevated BMI by presence versus absence of obesity diagnosis and trends over time. Data from adults with recorded BMI ≥ 30 kg/m2 (United States [US]; Optum's deidentified Clinformatics Data Mart database) or ≥ 25 kg/m2 (Japan; Medical Data Vision) between 2016 and 2024 were included. Characteristics were described at index (most recent BMI or obesity diagnosis), stratified by presence versus absence of prior recorded obesity diagnosis. In the United States (N = 3,584,120; 70.1% with obesity diagnosis), prevalence of interrelated diseases was high overall and higher in those with versus without obesity diagnosis, e.g., type 2 diabetes (49.3% vs. 29.9%), chronic kidney disease (32.9% vs. 18.8%), and heart failure (23.3% vs. 9.8%). In Japan (N = 3,140,900; 2.3% with obesity diagnosis), interrelated disease burden was also higher in those with versus without obesity diagnosis, e.g., type 2 diabetes (42.2% vs. 25.9%) and chronic kidney disease (14.3% vs. 8.6%). In the United States, interrelated disease burden was generally higher for those first diagnosed in 2024 versus those diagnosed in 2016-2020. In people with elevated BMI in the United States and Japan, there was underdiagnosis of obesity and a high prevalence of interrelated diseases.",
+    "authors": [
+      "Horn DB",
+      "Lesén E",
+      "Gray CM",
+      "Bjursell M",
+      "Waki H"
+    ],
+    "journal": "Obesity (Silver Spring, Md.)",
+    "journal_issn": "1930-739X",
+    "year": 2026,
+    "publication_date": "2026-07-18",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [
+      "米国Optum Clinformatics Data Mart（海外の管理医療レセプトDB。日本部分はMDVを使用）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 3.58,
+    "sjr_quartile": null,
+    "auto_detected": false,
+    "collected_at": "2026-07-20T00:06:05.734Z",
+    "classified": true,
+    "title_ja": "肥満診断の動向：CALOR研究",
+    "abstract_ja": "米国Optumと日本のMedical Data Vision（MDV）を用い、2016〜2024年にBMI高値の成人の肥満診断の有無と関連疾患を記述した多国間研究。日本ではBMI≥25の対象のうち肥満診断があったのは2.3%と極めて低く、診断あり群で2型糖尿病やCKDなど関連疾患の有病率が高かった。両国で肥満の過少診断と関連疾患の高い併存が示された。"
+  },
+  {
+    "id": "pmid-42470012",
+    "pubmed_id": "42470012",
+    "doi": "10.1097/MD.0000000000049803",
+    "title": "Post-marketing safety analysis of nafamostat: A retrospective pharmacovigilance study using the Japanese Adverse Drug Event Report (JADER) database.",
+    "abstract": "Nafamostat is a broad-spectrum serine protease inhibitor approved for pancreatitis, disseminated intravascular coagulation, and extracorporeal circulation anticoagulation. It also showed potential anti-SARS-CoV-2 activity during the COVID-19 pandemic, leading to expanded clinical use. This study aimed to explore post-marketing adverse event (AE) signals of nafamostat based on the Japanese Adverse Drug Event Report database so as to provide evidence for clinical safety management. Retrospective analysis was performed on AE reports retrieved from the Japanese Adverse Drug Event Report database between Q1 2004 and Q3 2024. Four disproportionality analysis algorithms, including reporting odds ratio, proportional reporting ratio, Bayesian confidence propagation neural network, and multi-item gamma Poisson shrinker, were adopted to detect AE signals. The distribution of AEs across system organ classes and preferred terms was summarized, and the time to onset was analyzed using the Weibull shape parameter test. A total of 2051 valid AE reports with nafamostat as the primary suspected drug were included, covering 20 system organ classes. The most prominent signals were observed in immune system disorders (n = 997) and vascular disorders (n = 370). Twenty-four preferred terms met the screening criteria of all 4 algorithms, among which anaphylactic shock (n = 746), shock (n = 341), and hyperkalemia (n = 200) were the most frequently reported. Six potential novel signals not recorded in the drug label were identified, namely acquired factor V deficiency, increased viral load, burning sensation, retroperitoneal hemorrhage, abdominal wall hematoma, and device-related thrombosis. Further bias analysis confirmed that 3 signals were false-positive results caused by confounding by indication or protopathic bias, while burning sensation had clear biological plausibility. The median time to onset was 1 day (interquartile range: 1-9 days); 58.55% of AEs occurred on the 1st day of administration, and 82.63% developed within 30 days. The Weibull test indicated that the AE risk peaked at the initial medication stage and gradually decreased over time. This real-world study clarified the safety profile of nafamostat, identifying severe allergic reactions and hyperkalemia as the main AEs. Of 6 initially detected unlabeled signals, 3 were confirmed as false-positive due to confounding bias, while the remaining 3 (bleeding complications and abnormal burning sensation) warrant clinical monitoring. Close monitoring within 24 hours after administration is highly recommended to reduce drug-related risks.",
+    "authors": [
+      "Yin Y",
+      "Zhang G"
+    ],
+    "journal": "Medicine",
+    "journal_issn": "1536-5964",
+    "year": 2026,
+    "publication_date": "2026-07-18",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "mesh_terms": [
+      "Guanidines",
+      "Humans",
+      "Retrospective Studies",
+      "Product Surveillance, Postmarketing",
+      "Japan",
+      "Benzamidines",
+      "Adverse Drug Reaction Reporting Systems",
+      "Pharmacovigilance",
+      "Databases, Factual",
+      "COVID-19 Drug Treatment",
+      "SARS-CoV-2",
+      "East Asian People"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "その他",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.82,
+    "sjr_quartile": null,
+    "auto_detected": false,
+    "collected_at": "2026-07-20T00:06:05.851Z",
+    "classified": true,
+    "title_ja": "ナファモスタットの市販後安全性解析：JADERを用いた後ろ向きファーマコビジランス研究",
+    "abstract_ja": "JADER（2004年Q1〜2024年Q3）を用い、ROR・PRR・BCPNN・MGPSの4手法でナファモスタットの有害事象シグナルを検出した不均衡分析。2051件の報告から免疫系・血管障害が突出し、アナフィラキシーショックや高カリウム血症が高頻度に報告された。添付文書未記載の新規シグナル6件も検出したが、うち3件は適応交絡による偽陽性と判断された。"
+  },
+  {
+    "id": "pmid-42469101",
+    "pubmed_id": "42469101",
+    "doi": "10.1016/j.bja.2026.06.008",
+    "title": "Functional impairment in patients undergoing major orthopaedic surgery under general anaesthesia with or without regional anaesthesia: a target trial emulation using a national hospital claims database.",
+    "abstract": "We evaluated whether combined general and regional anaesthesia (GA+RA) was associated with improvements in activities of daily living compared with GA alone in adult patients having major orthopaedic surgery. This target trial emulation used data from the Japanese Diagnosis Procedure Combination system (April 1, 2016-December 31, 2023) for patients undergoing major orthopaedic surgery. The primary outcome was discharge-anchored functional change, defined as the difference in the Barthel Index scores between admission and discharge, among admissions with observed and comparable discharge Barthel Index scores. We conducted stabilised inverse probability of treatment weighting using preoperative covariates, and weighted linear regression models were fitted. Secondary outcomes included in-hospital mortality and postoperative length of stay. Missing data were handled using multiple imputations, and sensitivity analyses (inverse probability of censoring weighting, subgroup analyses, and complete case analysis) were performed. A total of 244 212 patients received GA+RA (peripheral nerve block: 183 564; epidural anaesthesia: 60 648) and 435 462 patients received GA alone. After propensity score weighting, GA+RA yielded a higher change in Barthel Index scores (mean difference 0.73, 95% confidence interval [CI] 0.57-0.88, P<0.001), shorter postoperative length of stay (-1.40 days, 95% CI -1.45 to -1.35, P<0.001) and lower in-hospital mortality (hazard ratio 0.85, 95% CI 0.76-0.96, P=0.006). Sensitivity analyses yielded directionally consistent findings. Combined general and regional anaesthesia was associated clinically with modest improvements in discharge-anchored functional change, postoperative stay and in-hospital mortality. Residual confounding and heterogeneity of regional anaesthesia techniques warrant cautious interpretation and prospective confirmation.",
+    "authors": [
+      "Yoshimura M",
+      "Koga M",
+      "Morimoto Y",
+      "Matsusaki T"
+    ],
+    "journal": "British journal of anaesthesia",
+    "journal_issn": "1471-6771",
+    "year": 2026,
+    "publication_date": "2026-07-17",
+    "analysis_methods": [
+      "ターゲットトライアルエミュレーション",
+      "傾向スコア (PSM/IPTW)",
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 4,
+    "sjr_quartile": null,
+    "auto_detected": false,
+    "collected_at": "2026-07-20T00:06:05.960Z",
+    "classified": true,
+    "title_ja": "全身麻酔単独 vs 区域麻酔併用による大整形外科手術後の機能障害：全国入院DBを用いたターゲットトライアルエミュレーション",
+    "abstract_ja": "DPC（2016〜2023年）を用い、大整形外科手術で全身麻酔単独と区域麻酔併用を安定化IPTWで比較したターゲットトライアルエミュレーション。約68万例の解析で、区域麻酔併用群は退院時Barthel Indexの改善（平均差0.73）、術後在院日数の短縮、院内死亡の低下と関連した。感度分析でも一貫した結果が得られた。"
+  },
+  {
+    "id": "pmid-42467212",
+    "pubmed_id": "42467212",
+    "doi": "10.1007/s00595-026-03420-y",
+    "title": "Increased performance of thoracoscopic, mediastinoscopic, and robotic esophageal cancer surgeries in Japan: a decade-long nationwide claims-based analysis (2014-2023).",
+    "abstract": "This nationwide observational study investigated the recent trends and demographic patterns of esophageal cancer incidence and surgery in Japan. The annual incidence data (2016-2021) and surgical procedure counts (2014-2023) were extracted from the Cancer Information Database and National Database of Health Insurance Claims and Specific Health Checkups. Surgeries were categorized by anatomical extent and surgical approach (open/thoracoscopic/mediastinoscopic), with minimally invasive procedures further categorized by robotic assistance. The crude and age-adjusted rates per 100,000 person-years were calculated. The temporal trends were evaluated using linear and Poisson regression models. The average annual incidence of esophageal cancer was 25,711 cases, and 5,896 surgeries were performed. While the cancer incidence remained stable, the surgical approaches have transformed significantly. A sharp decline was observed in traditional open surgeries (P < 0.0001), while the number of minimally invasive surgeries increased substantially. This included significant growth in thoracoscopic (P < 0.0001), mediastinoscopy (P = 0.0085), and robotic-assisted procedures (P = 0.0006), with annual risk ratios of 1.088, 1.185, and 1.440, respectively (all P < 0.0001). This transition toward minimally invasive techniques was the most pronounced among older adults. Esophageal cancer surgery in Japan is undergoing a major shift toward minimally invasive approaches, particularly in older patients.",
+    "authors": [
+      "Kido M",
+      "Shoda K",
+      "Yoshii K",
+      "Inoue K",
+      "Tsujikawa T",
+      "Ichikawa D"
+    ],
+    "journal": "Surgery today",
+    "journal_issn": "1436-2813",
+    "year": 2026,
+    "publication_date": "2026-07-17",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [
+      "がん情報データベース（Cancer Information Database）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 1.94,
+    "sjr_quartile": null,
+    "auto_detected": false,
+    "collected_at": "2026-07-20T00:06:06.082Z",
+    "classified": true,
+    "title_ja": "日本における胸腔鏡・縦隔鏡・ロボット食道がん手術の増加：全国レセプトに基づく10年間の解析（2014-2023）",
+    "abstract_ja": "がん情報データベースとNDB（レセプト）を用い、2014〜2023年の日本の食道がん手術の術式動向をPoisson・線形回帰で解析。がん罹患は横ばいだが、開胸手術が有意に減少し、胸腔鏡・縦隔鏡・ロボット支援手術が大幅に増加した（年間リスク比1.09〜1.44）。低侵襲化は特に高齢者で顕著だった。"
+  },
+  {
+    "id": "pmid-42466819",
+    "pubmed_id": "42466819",
+    "doi": "10.1111/iju.70567",
+    "title": "A Nationwide Descriptive Analysis of Real-World Outcomes After Radical Prostatectomy in Japan Using the National Clinical Database.",
+    "abstract": "To evaluate real-world biochemical recurrence-free survival (BCRFS) after radical prostatectomy (RP) for prostate cancer in Japan using nationwide data from the National Clinical Database (NCD). This study included patients who underwent RP between April and December 2018 and were registered in the NCD from 647 participating institutions. BCRFS was estimated using the Kaplan-Meier method. Outcomes were evaluated according to surgical approach and clinicopathological factors without adjustment for baseline characteristics. A total of 14 992 patients with available 5-year postoperative follow-up data were included in the analysis. Robot-assisted RP accounted for the majority of procedures (73.2%), followed by open RP (16.0%) and laparoscopic RP (10.8%). The overall 5-year BCRFS rate was 81%. BCRFS was comparable across age groups and surgical approaches. In contrast, pathological factors strongly influenced prognosis. Five-year BCRFS decreased with increasing pathological stage (pT2, 86%; pT3, 65%; pT4, 41%) and was lower in patients with nodal metastasis (pN0, 81%; pN1, 59%). The International Society of Urological Pathology (ISUP) Grade Group demonstrated a stepwise association with prognosis, with 5-year BCRFS declining from 92% in grade group 1 to 60% in grade group 5. Five-year BCRFS was lowest in the extended lymph node dissection group (73%), followed by the obturator lymph node dissection group (80%) and the no-dissection group (87%). Current nationwide data delineate the real-world oncological outcomes following RP in Japan. Pathological tumor characteristics-rather than patient age or surgical approach-were the predominant determinants of postoperative prognosis. These findings may provide essential benchmarks to guide clinical decision-making.",
+    "authors": [
+      "Sakamoto S",
+      "Yamamoto K",
+      "Yamamoto H",
+      "Hatakeyama S",
+      "Mizuno R",
+      "Yasui T",
+      "Kamoto T",
+      "Kikuchi E",
+      "Ito A",
+      "Kume H"
+    ],
+    "journal": "International journal of urology : official journal of the Japanese Urological Association",
+    "journal_issn": "1442-2042",
+    "year": 2026,
+    "publication_date": "2026-07-17",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Prostatectomy",
+      "Japan",
+      "Male",
+      "Prostatic Neoplasms",
+      "Databases, Factual",
+      "Aged",
+      "Middle Aged",
+      "Neoplasm Staging",
+      "Disease-Free Survival",
+      "Robotic Surgical Procedures",
+      "Neoplasm Recurrence, Local",
+      "Prognosis",
+      "Treatment Outcome",
+      "Laparoscopy",
+      "Prostate",
+      "Kaplan-Meier Estimate",
+      "Follow-Up Studies"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 1.71,
+    "sjr_quartile": null,
+    "auto_detected": false,
+    "collected_at": "2026-07-20T00:06:06.337Z",
+    "classified": true,
+    "title_ja": "日本のNational Clinical Databaseを用いた根治的前立腺全摘後の実臨床アウトカムの全国記述解析",
+    "abstract_ja": "NCD（647施設）に登録された2018年の根治的前立腺全摘14,992例を対象に、5年生化学的再発なし生存（BCRFS）をKaplan-Meier法で評価した記述研究。全体の5年BCRFSは81%で、年齢や術式では差がなく、病理学的病期・リンパ節転移・ISUPグレードが予後を強く規定した。実臨床のベンチマークを提供する。"
+  },
+  {
+    "id": "pmid-42461501",
+    "pubmed_id": "42461501",
+    "doi": "10.1186/s43044-026-00766-z",
+    "title": "Association of winter exposure with ischemic stroke risk in nonvalvular atrial fibrillation within a CHADS₂-based risk framework: a nationwide Japanese administrative claims database study.",
+    "abstract": "Ischemic stroke, including transient ischemic attack, exhibits seasonal variation, and the association between winter exposure and ischemic stroke risk in patients with nonvalvular atrial fibrillation (NVAF) has not been fully characterized at the population level. We investigated the association of winter exposure with ischemic stroke risk in Japanese patients with NVAF within a CHADS₂-based risk framework. We analyzed nationwide Japanese insurance claims data (2014-2022) to identify patients ≥ 60 years with newly diagnosed NVAF and subsequently conducted Poisson regression analyses. The outcome was hospitalization for ischemic stroke. Among 389,314 patients (median age 80 years), 24,576 (6.3%) had ischemic stroke. The incidence rate peaked in winter (December-February), reaching 35.0 per 1,000 person-years, the highest among all seasons. In a Poisson regression model adjusted for CHADS₂ components, with winter treated as a binary exposure, winter remained independently associated with ischemic stroke risk (adjusted incidence rate ratio 1.06, 95% CI 1.03-1.09). Adding winter exposure to the CHADS₂ framework improved model fit but resulted in only negligible improvement in discrimination (AUC 0.690 vs. 0.691). In interaction analyses with CHADS₂ components, the association between winter exposure and ischemic stroke risk was stronger in patients without prior ischemic stroke than in those with prior ischemic stroke (p = 0.033). In patients with NVAF, winter exposure was associated with a modest increase in ischemic stroke risk at the population level. The stronger association observed among patients without prior ischemic stroke may support seasonal risk awareness and population-level risk communication in the primary prevention setting.",
+    "authors": [
+      "Sakuma R",
+      "Nojiri S",
+      "Uematsu T",
+      "Nagao M",
+      "Ishijima M",
+      "Nishizaki Y"
+    ],
+    "journal": "The Egyptian heart journal : (EHJ) : official bulletin of the Egyptian Society of Cardiology",
+    "journal_issn": "2090-911X",
+    "year": 2026,
+    "publication_date": "2026-07-16",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": [
+      "全国健康保険レセプトデータベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2,
+    "sjr_quartile": null,
+    "auto_detected": false,
+    "collected_at": "2026-07-20T00:06:06.448Z",
+    "classified": true,
+    "title_ja": "非弁膜症性心房細動における冬季曝露と虚血性脳卒中リスクの関連（CHADS₂枠組み）：全国レセプトDB研究",
+    "abstract_ja": "全国健康保険レセプト（2014〜2022年）で60歳以上の新規非弁膜症性心房細動患者を対象に、冬季曝露と虚血性脳卒中の関連をPoisson回帰で解析。38.9万人中6.3%が脳卒中を発症し、冬季の発生率が最も高く、CHADS₂調整後も冬季は独立に関連した（調整発生率比1.06）。脳卒中既往のない患者でより強い関連がみられた。"
+  },
+  {
+    "id": "pmid-42461468",
+    "pubmed_id": "42461468",
+    "doi": "10.1007/s40520-026-03460-x",
+    "title": "Machine learning-based prediction of hospital-associated complications after tibial fracture surgery in older patients: a nationwide Japanese database study.",
+    "abstract": "Older adults requiring emergency surgery for acute tibial fractures are vulnerable to hospital-associated complications (HACs), but admission-time risk stratification tools are lacking. We aimed to characterize HACs and develop both an ensemble prediction model and a simplified bedside risk score. This retrospective cohort study used the Japanese Diagnosis Procedure Combination database provided by JMDC Inc. Patients aged ≥ 65 years emergently admitted for tibial fracture (ICD-10: S82, 2014-2025) who underwent surgery within 5 days, with stay > 5 days, were included. The primary outcome was composite HACs during index hospitalization. Missing data were handled with multiple imputation. A Super Learner ensemble was developed and evaluated on held-out test data, and a simplified scorecard was derived using analysis of variance (ANOVA)-based feature selection and Weight-of-Evidence transformation. Among 53,186 admissions, 5,193 met eligibility criteria. HACs occurred in 851 patients (16.4%), most commonly delirium (7.5%) and falls/trauma (5.7%). The Super Learner achieved a test-set area under the receiver operating characteristic curve (AUC) of 0.740 (95% CI 0.707-0.772), higher than conventional linear logistic regression (0.724). The most influential predictors were Hospital Frailty Risk Score, dementia, Barthel Index, comorbidity burden, and days to surgery. The simplified 7-variable scorecard achieved a test-set AUC of 0.736 (95% CI 0.703-0.769), stratifying patients into five risk groups (HAC rate: 3.45%-38.64%). HAC risk after emergency tibial fracture surgery in older adults was driven primarily by geriatric vulnerability rather than fracture-specific factors. A simplified admission-time score may support targeted prevention, pending external validation.",
+    "authors": [
+      "Shimizu A",
+      "Sakamoto R",
+      "Nagayama H",
+      "Momosaki R"
+    ],
+    "journal": "Aging clinical and experimental research",
+    "journal_issn": "1720-8319",
+    "year": 2026,
+    "publication_date": "2026-07-16",
+    "analysis_methods": [
+      "機械学習・AI",
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DPC",
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 5.29,
+    "sjr_quartile": null,
+    "auto_detected": false,
+    "collected_at": "2026-07-20T00:06:06.554Z",
+    "classified": true,
+    "title_ja": "高齢者の脛骨骨折手術後の入院関連合併症の機械学習予測：全国DB研究",
+    "abstract_ja": "JMDCが提供するDPCデータ（2014〜2025年）を用い、65歳以上の脛骨骨折緊急手術例の入院関連合併症をSuper Learnerアンサンブルで予測。5,193例中16.4%に合併症（せん妄・転倒等）が発生し、AUCは0.740とロジスティック回帰を上回った。フレイルや認知症など老年医学的脆弱性が最も強い予測因子で、簡易7項目スコアも開発した。"
+  },
+  {
+    "id": "pmid-42459184",
+    "pubmed_id": "42459184",
+    "doi": "10.3389/fcvm.2026.1852892",
+    "title": "Age- and sex-based risk stratification in takotsubo syndrome: a Japanese nationwide registry study.",
+    "abstract": "Despite sex-related differences in the clinical presentation and outcomes of takotsubo syndrome (TTS), the prognostic significance of age remains debated, and evidence on male patients is limited. This study elucidated age- and sex-specific differences in clinical characteristics and outcomes of patients with TTS using a large nationwide Japanese registry. We conducted a retrospective cohort study using the nationwide Japanese Registry of All Cardiac and Vascular Diseases-Diagnosis Procedure Combination database (2012-2022). Patients with the first TTS episode, identified by the International Classification of Diseases, 10th Revision codes, who underwent coronary angiography and met the Mayo Clinic diagnostic criteria were included. Clinical characteristics, in-hospital management, and outcomes were compared across age groups (≤50, 51-74, ≥75 years) and sex. Independent in-hospital mortality predictors were assessed using multivariable logistic regression. Among 13,585 patients, 2,558 (18.8%) were men, and 523 (3.8%), 5,354 (39.4%), and 7,708 (56.7%) were aged ≤50, 51-74, and ≥75 years, respectively. Men more frequently had comorbidities (chronic kidney disease, chronic obstructive pulmonary disease, malignancies) and required intensive care, including catecholamine administration, mechanical circulatory support, and ventilatory assistance, compared with women. Adverse events increased with age in both sexes. Across age groups, in-hospital mortality was higher in men (≤50 years: 3.0%; 51-74 years: 4.3%; ≥75 years: 8.2%) than in women (≤50 years: 1.5%; 51-74 years: 1.5%; ≥75 years: 4.6%). Multivariable analysis identified older age [odds ratio (OR) 1.32 per 5 years; 95% confidence interval (CI) 1.26-1.39; P < 0.001] and male sex (OR 1.59; 95% CI 1.30-1.95; P < 0.001) as independent in-hospital mortality predictors. Older age and male sex were independent predictors of in-hospital mortality in patients with TTS. These findings may help guide risk assessment and clinical monitoring in TTS according to age and sex, although further prospective validation is warranted.",
+    "authors": [
+      "Hayashi T",
+      "Negishi K",
+      "Kobayashi T",
+      "Kanaoka K",
+      "Akita H",
+      "Shinkura Y",
+      "Nishio R",
+      "Matsumoto K",
+      "Hoshijima M",
+      "Kawasaki S",
+      "Nishisaki H",
+      "Okayama M",
+      "Kenzaka T"
+    ],
+    "journal": "Frontiers in cardiovascular medicine",
+    "journal_issn": "2297-055X",
+    "year": 2026,
+    "publication_date": "2026-07-16",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [
+      "JROAD（日本循環器学会 循環器疾患診療実態調査）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 2.25,
+    "sjr_quartile": null,
+    "auto_detected": false,
+    "collected_at": "2026-07-20T00:06:06.678Z",
+    "classified": true,
+    "title_ja": "たこつぼ症候群における年齢・性別によるリスク層別化：日本全国レジストリ研究",
+    "abstract_ja": "JROAD-DPC（2012〜2022年）を用い、初発たこつぼ症候群13,585例の年齢・性別による臨床像と転帰を後方視的に解析。男性は併存症が多く集中治療を要することが多く、院内死亡は各年齢層で男性が女性より高かった。多変量ロジスティック回帰で高齢と男性が独立した院内死亡予測因子であった。"
+  },
+  {
+    "id": "pmid-42458782",
+    "pubmed_id": "42458782",
+    "doi": "10.1111/1346-8138.70404",
+    "title": "Oral Tetracycline Use in Children and Adolescents in Japan: Trends, Indications, and Treatment Patterns.",
+    "abstract": "Antimicrobial use among children in Japan has declined substantially; however, tetracycline use has increased among adolescents, particularly after 2017 and during the COVID-19 period, and the underlying clinical indications remain unclear. We aimed to characterize long-term trends in oral tetracycline use, changes in clinical indications, and treatment patterns among individuals aged < 20 years in Japan. We conducted a time-series analysis using a nationwide administrative claims database of Japan Health Insurance Association from 2015 to 2023, including 24 million individuals aged < 20 years. Oral tetracycline use was measured as days of therapy (DOTs) per 1000 inhabitants per day, and clinical indications were identified using ICD-10 codes. We assessed trends in tetracycline use and indications over time and described treatment patterns, including concomitant therapies, among patients with acne vulgaris. Oral tetracycline use increased from 0.95 to 1.76 DOTs per 1000 inhabitants per day between 2015 and 2023, primarily driven by doxycycline, with a marked rise after 2020 and highest use among adolescents. The clinical indications shifted substantially, with the proportion of acne vulgaris increasing from 34.1% to 73.6% while respiratory infections decreased, and the mean treatment duration for acne was 37.9 days. Among patients with acne, concomitant use of adapalene- and benzoyl peroxide-based therapies was limited, whereas topical antibiotics were commonly used. Oral tetracycline use among individuals aged < 20 years in Japan increased substantially, with a marked shift in clinical indications toward acne vulgaris. These findings provide a basis for further evaluation of acne treatment patterns, including the use of oral tetracyclines and non-antibiotic topical therapies, in Japan.",
+    "authors": [
+      "Okubo Y",
+      "Uda K",
+      "Iwamoto N",
+      "Miyairi I"
+    ],
+    "journal": "The Journal of dermatology",
+    "journal_issn": "1346-8138",
+    "year": 2026,
+    "publication_date": "2026-07-16",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "全国健康保険協会（協会けんぽ）レセプトデータベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.34,
+    "sjr_quartile": null,
+    "auto_detected": false,
+    "collected_at": "2026-07-20T00:06:06.781Z",
+    "classified": true,
+    "title_ja": "日本の小児・思春期における経口テトラサイクリン使用：動向・適応・治療パターン",
+    "abstract_ja": "協会けんぽの全国レセプト（2015〜2023年、20歳未満2400万人）を用いた時系列解析。経口テトラサイクリン使用はドキシサイクリン主導で1000人当たり0.95→1.76 DOTsへ増加し、適応はにきび（34.1%→73.6%）へ大きくシフトした。にきび治療ではアダパレンや過酸化ベンゾイルの併用は限定的で、外用抗菌薬が多用されていた。"
+  },
+  {
+    "id": "pmid-42456043",
+    "pubmed_id": "42456043",
+    "doi": "10.1111/hepr.70242",
+    "title": "Avacopan-Associated Hepatobiliary Adverse Events and Vanishing Bile Duct Syndrome: A PMDA/JADER and FAERS Reporting-Profile Comparison.",
+    "abstract": "Avacopan is an oral C5a receptor antagonist approved for anti-neutrophil cytoplasmic antibody-associated vasculitis. Recent post-marketing safety information has raised concern regarding serious hepatobiliary injury, including vanishing bile duct syndrome (VBDS). We compared Japanese and FAERS post-marketing reporting profiles for avacopan-associated adverse events. FAERS public dashboard data and PMDA CSV data downloaded in May 2026 were searched using Japanese and English avacopan/Tavneos terms and analyzed at the case report and adverse-event/preferred-term row levels. FAERS Public Dashboard aggregate data were searched using the avacopan generic-name listing as the primary definition and the Tavneos product-name listing as a sensitivity definition. PMDA/JADER contained 397 avacopan-related reports and 744 adverse-event/preferred-term rows. FAERS contained 5770 reports in the avacopan generic-name listing and 5216 reports in the Tavneos product-name listing. Hepatobiliary preferred terms were prominent in PMDA/JADER, including hepatic function abnormal (n = 86), liver disorder (n = 44), drug-induced liver injury (n = 40), and VBDS (n = 29). Among PMDA/JADER VBDS reports with available dates, the median time to onset was 44.0 days (interquartile range, 39.5-52.0). Post-marketing reports of avacopan-associated hepatobiliary injury, including VBDS, warrant clinical attention, particularly during the early treatment period. PMDA/JADER and FAERS findings should be interpreted as differences in reporting profiles rather than direct comparisons of incidence or risk.",
+    "authors": [
+      "Kamimura H",
+      "Miyazawa M",
+      "Kaneko S",
+      "Uesawa Y",
+      "Kobayashi D",
+      "Yamamoto S",
+      "Terai S"
+    ],
+    "journal": "Hepatology research : the official journal of the Japan Society of Hepatology",
+    "journal_issn": "1386-6346",
+    "year": 2026,
+    "publication_date": "2026-07-15",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.97,
+    "sjr_quartile": null,
+    "auto_detected": false,
+    "collected_at": "2026-07-20T00:06:06.895Z",
+    "classified": true,
+    "title_ja": "アバコパン関連の肝胆道系有害事象と胆管消失症候群：PMDA/JADERとFAERSの報告プロファイル比較",
+    "abstract_ja": "2026年5月取得のPMDA/JADERとFAERSデータを用い、ANCA関連血管炎治療薬アバコパンの肝胆道系有害事象の報告プロファイルを比較。PMDA/JADERの397報告で肝機能異常・肝障害・薬剤性肝障害・胆管消失症候群（VBDS、29件）が目立ち、VBDSの発症までの中央値は44日だった。早期治療期の肝胆道系障害に注意を要する。"
+  },
+  {
+    "id": "pmid-42454182",
+    "pubmed_id": "42454182",
+    "doi": "10.2147/DHPS.S615764",
+    "title": "Seasonal Variation in Reporting of Venous Thromboembolism in a Spontaneous Adverse Event Reporting System: Analysis of the Japanese Adverse Drug Event Report Database.",
+    "abstract": "Venous thromboembolism (VTE) is a major cardiovascular disorder associated with high morbidity and mortality. Several epidemiological studies have reported seasonal variations in VTE, with higher rates during winter. However, it remains unclear whether reports of VTE adverse events in spontaneous reporting systems exhibit similar seasonal patterns. A retrospective pharmacovigilance study was conducted using data from the Japanese Adverse Drug Event Report (JADER) database. Reports of VTE, including deep vein thrombosis and pulmonary embolism, were identified from the adverse event records of the JADER database. Monthly reporting rates were calculated by dividing the number of VTE reports by the total number of adverse event reports. Seasonal variations were evaluated using negative binomial regression models with monthly indicator variables and harmonic seasonal terms. The association between monthly VTE reporting rates and the mean monthly temperature in Tokyo was assessed using Pearson's correlation analysis. VTE adverse event reports showed a clear seasonal pattern. In the harmonic seasonal model, the estimated peak occurred in December and the nadir in July, with a peak-to-nadir rate ratio of 1.29. The harmonic seasonal model showed a better fit than the monthly indicator model (Akaike information criterion: 1696.8 vs 1712.6). Monthly VTE reporting rates were inversely correlated with mean monthly temperature in Tokyo (Pearson's r = -0.769, p = 0.003). VTE adverse event reports in the JADER database showed a clear seasonal pattern, with higher and lower reporting rates in winter and summer, respectively. Seasonal and environmental factors may be associated with seasonal variation in VTE reporting. It should be noted, however, that spontaneous reporting data cannot be used to estimate the absolute incidence of VTE or to establish causal relationships between drugs and adverse events. Further studies using complementary data sources are required to confirm these findings.",
+    "authors": [
+      "Tanaka H",
+      "Ishii T"
+    ],
+    "journal": "Drug, healthcare and patient safety",
+    "journal_issn": "1179-1365",
+    "year": 2026,
+    "publication_date": "2026-07-15",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "その他",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.96,
+    "sjr_quartile": null,
+    "auto_detected": false,
+    "collected_at": "2026-07-20T00:06:06.995Z",
+    "classified": true,
+    "title_ja": "自発報告システムにおける静脈血栓塞栓症報告の季節変動：JADERの解析",
+    "abstract_ja": "JADERを用い、静脈血栓塞栓症（VTE）の有害事象報告の季節変動を負の二項回帰で解析。VTE報告は12月にピーク、7月に谷を示し、ピーク／谷比は1.29だった。月別VTE報告率は東京の平均気温と負の相関（r=−0.769）を示し、季節・環境要因との関連が示唆された。"
+  },
+  {
+    "id": "pmid-42450968",
+    "pubmed_id": "42450968",
+    "doi": "10.3390/healthcare14131959",
+    "title": "Association Between HDL Cholesterol Changes and Cardiovascular Event Risk: A Nationwide Health Screening Cohort in Japan.",
+    "abstract": "Background: Low high-density lipoprotein cholesterol (HDL-C) is an established marker of cardiovascular risk. However, HDL-C levels may change over time in relation to metabolic status, lifestyle factors, and medication use, and the cardiovascular implications of longitudinal HDL-C changes remain incompletely understood. Methods: We conducted a retrospective cohort study using the JMDC Claims Database, including 3,387,924 adults who underwent at least two health checkups between 2005 and 2021. Participants were categorized into four groups based on HDL-C changes between two time points: persistently low, low to normal, normal to low, and persistently normal. The primary outcome was incident composite cardiovascular disease (CVD), including myocardial infarction, angina pectoris, stroke, heart failure, and atrial fibrillation. Cox proportional hazards models were used to estimate hazard ratios (HRs) with adjustment for demographic and clinical covariates. Results: During a mean follow-up of 4.3 years, persistently low HDL-C was associated with the highest risk of composite CVD compared with persistently normal HDL-C (HR 1.15, 95% CI 1.12-1.19). Both Low-to-Normal and Normal-to-Low groups also showed elevated risks (HR 1.10, 95% CI 1.06-1.14; HR 1.14, 95% CI 1.10-1.19, respectively). The strongest association was observed for myocardial infarction, whereas the association with stroke was modest and less consistent after full adjustment. Conclusions: Longitudinal changes in HDL-C were associated with cardiovascular risk after adjustment for cardiometabolic factors and medication use. Persistently low HDL-C conferred the greatest risk, and serial HDL-C patterns may provide additional information for cardiovascular risk assessment beyond a single baseline measurement.",
+    "authors": [
+      "Kim S",
+      "Kim S",
+      "Lee NK",
+      "Lee SW"
+    ],
+    "journal": "Healthcare (Basel, Switzerland)",
+    "journal_issn": "2227-9032",
+    "year": 2026,
+    "publication_date": "2026-07-15",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 3.2,
+    "sjr_quartile": null,
+    "auto_detected": false,
+    "collected_at": "2026-07-20T00:06:07.106Z",
+    "classified": true,
+    "title_ja": "HDLコレステロール変化と心血管イベントリスクの関連：日本の全国健診コホート",
+    "abstract_ja": "JMDC Claims Database（2005〜2021年、340万人）を用い、2回以上の健診でのHDL-C変化と複合心血管疾患リスクをCox比例ハザードで解析。平均4.3年の追跡で、持続的低HDL-C群が最も高いリスク（HR1.15）を示し、低→正常・正常→低の群でもリスク上昇がみられた。特に心筋梗塞との関連が強かった。"
+  },
+  {
+    "id": "pmid-42447521",
+    "pubmed_id": "42447521",
+    "doi": "10.1016/j.canep.2026.103167",
+    "title": "Association between cesarean delivery and pediatric leukemia: A case-control study using a Japanese administrative claims database.",
+    "abstract": "The etiology of pediatric leukemia remains incompletely understood. The delayed infection hypothesis suggests that reduced microbial exposure in early infancy may contribute to leukemia development through dysregulated immune responses. Because cesarean delivery may alter early-life microbial colonization and immune development, several studies have examined its association with pediatric leukemia, but findings remain inconsistent, particularly in Asian populations. We conducted a case-control study using a large Japanese administrative claims database (2008-2024). Children with Down syndrome were excluded from the primary analysis given its strong, well-established association with leukemia. Cases were matched 1:4 with controls by age, sex, birth year, and observation period using risk-set sampling. Multivariable conditional logistic regression was used to evaluate the association between cesarean delivery and pediatric leukemia, adjusting for maternal and perinatal factors. A sensitivity analysis including children with Down syndrome was also performed. In the primary analysis, 197 cases were matched with 778 controls. Cesarean delivery was recorded in 10 cases (5.1%) and 48 controls (6.2%; p = 0.56). In multivariable analysis, cesarean delivery was not significantly associated with pediatric leukemia (OR, 0.7; 95% CI, 0.3-1.4; p = 0.32). Pediatric complex chronic conditions were associated with leukemia risk (OR, 3.9; 95% CI, 2.6-6.0; p < 0.001), although this finding should be interpreted with caution given the heterogeneous nature of this construct. In the sensitivity analysis, 226 cases were matched with 894 controls. The association between cesarean delivery and leukemia remained non-significant, whereas Down syndrome was strongly associated with leukemia (OR, 30.3; 95% CI, 4.3-216; p = 0.001). In this Japanese case-control study, cesarean delivery was not significantly associated with pediatric leukemia after excluding children with Down syndrome and adjusting for maternal and perinatal factors. Further studies with detailed information on planned versus emergency cesarean delivery, genetic predisposition, and clinical factors are warranted.",
+    "authors": [
+      "Nakamura Y",
+      "Terada Y",
+      "Kaneko N",
+      "Hippo Y",
+      "Michihata N"
+    ],
+    "journal": "Cancer epidemiology",
+    "journal_issn": "1877-783X",
+    "year": 2026,
+    "publication_date": "2026-07-14",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の大規模管理医療レセプトデータベース"
+    ],
+    "study_design": "症例対照研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.76,
+    "sjr_quartile": null,
+    "auto_detected": false,
+    "collected_at": "2026-07-20T00:06:07.213Z",
+    "classified": true,
+    "title_ja": "帝王切開と小児白血病の関連：日本の管理医療レセプトDBを用いた症例対照研究",
+    "abstract_ja": "日本の大規模レセプトDB（2008〜2024年）を用い、帝王切開と小児白血病の関連を条件付きロジスティック回帰で評価した症例対照研究（症例197、対照778）。帝王切開は白血病と有意な関連を示さなかった（OR0.7）。小児複合慢性疾患やダウン症候群は白血病と強く関連した。"
+  },
+  {
+    "id": "pmid-42446767",
+    "pubmed_id": "42446767",
+    "doi": "10.1186/s13561-026-00818-9",
+    "title": "Nonlinear modeling of health checkup factors and future claims-based healthcare costs in Japan: a retrospective cohort study.",
+    "abstract": "Population health checkups support disease prevention and health management. Clarifying how routinely collected checkup factors relate to subsequent healthcare costs may inform population-level risk assessment and preventive planning. We aimed to characterize nonlinear and sex-specific associations between routine checkup factors and near-term claims-based healthcare costs in Japan and to explore whether composite metabolic indices provide additional information beyond routine measures. We linked Japan's Specific Health Checkups (FY2012-FY2022) to subsequent administrative insurance claims in Hakui City and analyzed adults aged 60-74 years. The outcome was annual claims-based healthcare costs in the third and fourth fiscal years after baseline, expressed as fee schedule points. We fitted generalized additive models with a Gamma distribution and log link in the overall sample and separately for men and women. Predictors included routine checkup measures (including glycated hemoglobin [HbA1c]) and lipid- and adiposity-related indices (atherogenic index of plasma, arteriosclerosis index, non-high-density lipoprotein cholesterol, fatty liver index, and visceral adiposity index). Model fit and the stability of the observed association patterns were assessed using 50 repeated 80/20 individual-level split validations. The dataset comprised 11,148 person-years from 6,757 residents. The models showed limited explanatory performance (mean R2=0.06), indicating that routine health checkup variables alone explained only a small proportion of variation in subsequent claims-based healthcare costs. Age and HbA1c showed consistent associations across groups. HbA1c showed a J-shaped association with costs, with a steeper increase above approximately 6.0%. Body mass index, waist circumference, and fatty liver index showed moderate association patterns, whereas the atherogenic index of plasma, arteriosclerosis index, and visceral adiposity index provided limited additional information beyond routine measures; the fatty liver index showed a notable association pattern in men. Routine health checkup factors exhibited nonlinear, sex-specific associations with near-term claims-based healthcare costs in a Japanese community. These findings may inform population-level hypothesis generation and future indicator selection. However, routine checkup variables alone appear insufficient for precise individual-level prediction. External validation and integration of additional information on comorbidities, medications, healthcare utilization, and socioeconomic factors are warranted.",
+    "authors": [
+      "Nakamura H",
+      "Harada K",
+      "Hirako K",
+      "Sawamura T",
+      "Imamura K",
+      "Sagae M",
+      "Nambo H",
+      "Karashima S"
+    ],
+    "journal": "Health economics review",
+    "journal_issn": "2191-1991",
+    "year": 2026,
+    "publication_date": "2026-07-14",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "羽咋市の特定健診データと国保レセプトの連結データ"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 2.76,
+    "sjr_quartile": null,
+    "auto_detected": false,
+    "collected_at": "2026-07-20T00:06:07.300Z",
+    "classified": true,
+    "title_ja": "健診項目と将来のレセプト医療費の非線形モデリング：日本の後方視的コホート研究",
+    "abstract_ja": "羽咋市の特定健診（2012〜2022年度）と国保レセプトを連結し、60〜74歳の健診項目と数年後の医療費の非線形・性差を一般化加法モデルで解析。健診変数のみでは医療費の説明力は低く（平均R²=0.06）、HbA1cは約6.0%超で急増するJ字型の関連を示した。年齢とHbA1cが一貫した関連因子だった。"
+  },
+  {
+    "id": "pmid-42443054",
+    "pubmed_id": "42443054",
+    "doi": "10.1080/14767058.2026.2701547",
+    "title": "Trends in ritodrine prescriptions among pregnant women in Japan: a nationwide descriptive analysis of an administrative hospital database from 2015 to 2024.",
+    "abstract": "Ritodrine hydrochloride has been widely used in Japan to treat threatened preterm labor, often beyond the internationally recommended short-term duration. Accumulating evidence has demonstrated limited benefits and raised safety concerns regarding prolonged ritodrine administration, and a declining trend in its use has been documented through 2021. However, prescribing trends following the March 2021 revision of the ritodrine package insert remain unclear. Here, we investigated recent nationwide trends in ritodrine prescriptions among pregnant women in Japan from 2015 to 2024, with particular focus on trends after 2021, and examined differences according to route of administration and healthcare setting. Administrative data on pregnant Japanese women who visited acute-care Diagnosis Procedure Combination (DPC) hospitals between January 1, 2015, and December 31, 2024, were used in this study. The analysis focused on ritodrine products marketed in Japan. The prevalence of ritodrine prescriptions was analyzed, and temporal trends were assessed using the Cochran-Armitage trend test. Stratified analyses were performed according to age group, hospital bed capacity, and hospital type. Among hospitalized pregnant women, the prevalence of oral ritodrine prescriptions decreased from 22.0% to 17.2% (absolute decrease of 4.8 percentage points, p < 0.001) during the study period (2015-2024), whereas that of injectable ritodrine prescriptions decreased from 37.6% to 25.0% (absolute decrease of 12.6 percentage points, p < 0.001). Among pregnant outpatients, the prevalence of oral ritodrine prescriptions decreased from 58.5% to 34.5% (absolute decrease of 24.0 percentage points, p < 0.001), whereas that of injectable ritodrine prescriptions increased slightly from 0.42% to 0.46% (absolute increase of 0.04 percentage points, p = 0.01), although outpatient injectable ritodrine prescribing remained below 1% throughout the study period. The decline was more pronounced for oral ritodrine prescriptions than for injectable ritodrine prescriptions. Ritodrine prescriptions among pregnant women in Japan decreased between 2015 and 2024 for both oral and injectable formulations in hospitalized settings and for oral formulations in outpatient settings. The decline continued after the 2021 package insert revision, suggesting ongoing changes in prescribing practices related to prolonged ritodrine use.",
+    "authors": [
+      "Kikuchi D",
+      "Obara T",
+      "Noda A",
+      "Sakai T",
+      "Ogura C",
+      "Minato K",
+      "Murata A",
+      "Matsuda N",
+      "Okada K",
+      "Tominaga A",
+      "Murai Y"
+    ],
+    "journal": "The journal of maternal-fetal & neonatal medicine : the official journal of the European Association of Perinatal Medicine, the Federation of Asia and Oceania Perinatal Societies, the International Society of Perinatal Obstetricians",
+    "journal_issn": "1476-4954",
+    "year": 2026,
+    "publication_date": "2026-07-14",
+    "analysis_methods": [],
+    "mesh_terms": [
+      "Humans",
+      "Female",
+      "Ritodrine",
+      "Pregnancy",
+      "Japan",
+      "Adult",
+      "Tocolytic Agents",
+      "Obstetric Labor, Premature",
+      "Databases, Factual",
+      "Drug Prescriptions",
+      "Practice Patterns, Physicians'",
+      "Young Adult"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.64,
+    "sjr_quartile": null,
+    "auto_detected": false,
+    "collected_at": "2026-07-20T00:06:07.410Z",
+    "classified": true,
+    "title_ja": "日本の妊婦におけるリトドリン処方の動向：全国レセプトDBを用いた記述解析（2015-2024）",
+    "abstract_ja": "急性期DPC病院のレセプト（2015〜2024年）を用い、妊婦へのリトドリン処方動向をCochran-Armitage検定で解析。入院妊婦では経口（22.0→17.2%）・注射（37.6→25.0%）ともに減少し、外来では経口が大幅に減少（58.5→34.5%）した。2021年の添付文書改訂後も減少傾向が続いていた。"
+  },
+  {
+    "id": "pmid-42439942",
+    "pubmed_id": "42439942",
+    "doi": "10.1007/s00383-026-06538-9",
+    "title": "Long-term medical support after definitive surgery for esophageal atresia: analysis using a national inpatient database in Japan.",
+    "abstract": "Long-term medical needs after definitive surgery for esophageal atresia (EA) are incompletely understood. The real-world patterns of home medical care and medication use after hospital discharge remain underexplored. Using the Japanese national inpatient Diagnosis Procedure Combination database, we identified infants who underwent definitive surgery for EA between July 2010 and March 2023. We described patients' background characteristics, perioperative information, long-term home medical care (home tracheostomy care, home mechanical ventilation, home oxygen therapy, and home enteral nutrition), and medication use (antacids, prokinetic agents, and anti-asthmatics) at 1, 3, 5, and 7 years post-definitive surgery. Subgroup analysis based on congenital heart disease (CHD) was conducted. Overall, 806 patients met the eligibility criteria. Home enteral nutrition was the most frequently performed home medical care (22.0% of patients at 1 year post-surgery), whose proportion decreased gradually over time. Antacid and prokinetic agent use also declined over time. Subgroup analysis revealed that patients with CHD required home oxygen therapy and home enteral nutrition more frequently than those without CHD. A substantial proportion of patients required home longitudinal nutritional and respiratory support post-definitive surgery for EA. Our findings provide important information for long-term healthcare needs of patients receiving definitive surgery for EA. III (retrospective comparative study).",
+    "authors": [
+      "Yanagida Y",
+      "Aso S",
+      "Fujiogi M",
+      "Kirino K",
+      "Ishimaru T",
+      "Santo K",
+      "Uehara S",
+      "Taguchi T",
+      "Yoshimura K",
+      "Yasunaga H",
+      "Fujishiro J"
+    ],
+    "journal": "Pediatric surgery international",
+    "journal_issn": "1437-9813",
+    "year": 2026,
+    "publication_date": "2026-07-13",
+    "analysis_methods": [],
+    "mesh_terms": [
+      "Humans",
+      "Esophageal Atresia",
+      "Japan",
+      "Female",
+      "Databases, Factual",
+      "Home Care Services",
+      "Male",
+      "Infant, Newborn",
+      "Infant",
+      "Postoperative Care",
+      "Retrospective Studies",
+      "Long-Term Care",
+      "Enteral Nutrition",
+      "Respiration, Artificial"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 1.66,
+    "sjr_quartile": null,
+    "auto_detected": false,
+    "collected_at": "2026-07-20T00:06:07.513Z",
+    "classified": true,
+    "title_ja": "食道閉鎖症の根治術後の長期医療支援：日本の全国入院DBを用いた解析",
+    "abstract_ja": "DPC（2010〜2023年）を用い、食道閉鎖症の根治術を受けた乳児806例の術後長期の在宅医療・薬剤使用を記述。在宅経腸栄養が最も多く（術後1年で22.0%）、経時的に減少した。先天性心疾患を有する例では在宅酸素療法や在宅経腸栄養の頻度が高かった。"
+  },
+  {
+    "id": "pmid-42439225",
+    "pubmed_id": "42439225",
+    "doi": "10.1111/jebm.70164",
+    "title": "Discontinuation of Glucagon-Like Peptide-1 Receptor Agonists After Bowel Obstruction or Ileus: A Nationwide, Real-World, Database Study.",
+    "abstract": "Although concerns have been raised that glucagon-like peptide-1 receptor agonists (GLP-1RAs) may increase the risk of bowel obstruction or ileus, evidence remains inconclusive. In this context of uncertainty, we examined the frequency and determinants of GLP-1RA discontinuation after hospitalization for bowel obstruction/ileus. We conducted a retrospective cohort study using a nationwide Japanese health insurance claims database (DeSC). We identified individuals aged ≥18 years with type 2 diabetes who were hospitalized for bowel obstruction/ileus between 2016 and 2023 while receiving GLP-1RA therapy. The primary outcome was GLP-1RA discontinuation, defined as no prescription at discharge or within 6 months of discharge. Factors potentially associated with discontinuation were grouped into (1) general factors, (2) severity of bowel obstruction/ileus, and (3) potential therapeutic benefit of GLP-1RA therapy. Risk differences (RDs) for discontinuation were estimated using multivariable linear regression with robust standard errors. GLP-1RAs were discontinued in 86 (43.9%) of the 196 patients analyzed. Multivariable analysis revealed that surgery for bowel obstruction during hospitalization (RD = 32.1%; 95% confidence interval [CI] 11.2% to 53.0%, p = 0.003), longer length of stay (≥15 days vs. ≤7 days; RD = 32.4%; 95% CI 11.2% to 53.5%, p = 0.003), and heart failure (RD = 17.6%; 95% CI 2.1% to 33.2%, p = 0.027) were associated with GLP-1RA discontinuation. Nearly half of the patients discontinued GLP-1RAs after a bowel obstruction/ileus event. While GLP-1RAs were more likely to be discontinued after severe events, their potential therapeutic benefits appeared less frequently considered in continuation decisions.",
+    "authors": [
+      "Matsuo Y",
+      "Okada A",
+      "Sakamoto T",
+      "Yasunaga H"
+    ],
+    "journal": "Journal of evidence-based medicine",
+    "journal_issn": "1756-5391",
+    "year": 2026,
+    "publication_date": "2026-07-13",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DeSC Healthcare"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.87,
+    "sjr_quartile": null,
+    "auto_detected": false,
+    "collected_at": "2026-07-20T00:06:07.595Z",
+    "classified": true,
+    "title_ja": "腸閉塞・イレウス後のGLP-1受容体作動薬の中止：全国実臨床DB研究",
+    "abstract_ja": "全国レセプトDB（DeSC、2016〜2023年）を用い、GLP-1受容体作動薬使用中に腸閉塞・イレウスで入院した2型糖尿病患者196例の中止状況を解析。43.9%が中止し、腸閉塞手術・在院日数15日以上・心不全が中止と関連した。重症例で中止されやすい一方、治療上の有益性は継続判断で十分考慮されていなかった。"
+  },
+  {
     "id": "pmid-42437110",
     "pubmed_id": "42437110",
     "doi": "10.1016/j.xops.2026.101262",
@@ -51,6 +785,56 @@
     "classified": true,
     "title_ja": "健診データを用いた機械学習生存解析による糖尿病黄斑浮腫の早期予測",
     "abstract_ja": "JMDCの健診・診断データ（2型糖尿病27万人）を用い、糖尿病黄斑浮腫（DME）発症をランダム生存フォレスト等で予測した症例対照研究。C-index 0.694・AUC 0.750とCoxモデルを上回り、DME症例の43.8%を発症5年以上前に特異度85.5%で検出した。尿蛋白・尿糖や肝機能検査が高リスク群の重要因子として同定された。"
+  },
+  {
+    "id": "pmid-42437686",
+    "pubmed_id": "42437686",
+    "doi": "10.1111/jog.70402",
+    "title": "Predictors of Hypertensive Disorders of Pregnancy in Japan: A Population-Based Retrospective Cohort Study Using the Shizuoka Kokuho Database.",
+    "abstract": "To identify the predictors of the onset of hypertensive disorders of pregnancy (HDP) in pregnant women in Japan. This population-based, retrospective cohort study was conducted in Shizuoka Prefecture, Japan, using data from the Shizuoka Kokuho Database from 2012 to 2020. A 1-year baseline period and a 280-day follow-up period were defined for each participant. The outcome was the occurrence of HDP, identified using the International Classification of Diseases, 10th Revision codes. Candidate predictors included maternal age, residential area, and baseline comorbidities. Associations were assessed using multivariable logistic regression and conditional inference tree analysis. A total of 6362 pregnant women were included. Among them, 222 (3.5%) were diagnosed with HDP. Multivariable logistic regression identified advanced maternal age (odds ratio [OR] 1.05, 95% confidence interval [CI] 1.02-1.07), diabetes mellitus (OR 3.21, 95% CI 1.22-8.47), preexisting hypertension (OR 2.38, 95% CI 1.04-5.46), and systemic lupus erythematosus (OR 5.90, 95% CI 1.41-24.65) as predictors of HDP onset. In sensitivity analyses excluding women with preexisting hypertension, maternal age, diabetes mellitus, systemic lupus erythematosus, and obesity remained associated with HDP onset. Conditional inference tree analysis identified maternal age > 34 years as the primary splitting variable, followed by hyperlipidemia, hypertension, and liver disease. Among women aged > 34 years without hyperlipidemia or hypertension, polycystic ovary syndrome was associated with increased risk of HDP. We delineated a multifactorial risk profile for HDP. These findings indicate that routinely collected claims data may facilitate earlier risk stratification and support more individualized prenatal care.",
+    "authors": [
+      "Takehara K",
+      "Kawamura T",
+      "Tabara Y",
+      "Sato Y"
+    ],
+    "journal": "The journal of obstetrics and gynaecology research",
+    "journal_issn": "1447-0756",
+    "year": 2026,
+    "publication_date": "2026-07-12",
+    "analysis_methods": [
+      "回帰分析",
+      "機械学習・AI"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Female",
+      "Japan",
+      "Pregnancy",
+      "Retrospective Studies",
+      "Hypertension, Pregnancy-Induced",
+      "Adult",
+      "Databases, Factual",
+      "Risk Factors",
+      "Advanced Maternal Age",
+      "Maternal Age"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": [
+      "静岡国保データベース（Shizuoka Kokuho Database）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 1.3,
+    "sjr_quartile": null,
+    "auto_detected": false,
+    "collected_at": "2026-07-20T00:06:07.680Z",
+    "classified": true,
+    "title_ja": "日本の妊娠高血圧症候群の予測因子：静岡国保データベースを用いた住民ベース後方視的コホート研究",
+    "abstract_ja": "静岡国保データベース（2012〜2020年）を用い、妊婦6,362例の妊娠高血圧症候群（HDP）の予測因子を多変量ロジスティック回帰と条件付き推論木で解析。HDPは3.5%に発生し、高齢妊娠・糖尿病・既存高血圧・全身性エリテマトーデスが予測因子だった。34歳超が主要な分岐変数で、レセプトデータによる早期リスク層別化の可能性を示した。"
   },
   {
     "id": "pmid-42436241",
