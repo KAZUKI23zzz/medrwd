@@ -1,5 +1,857 @@
 [
   {
+    "id": "pmid-42498922",
+    "pubmed_id": "42498922",
+    "doi": "10.1007/s43390-026-01515-7",
+    "title": "Association between adolescent idiopathic scoliosis and mental health concerns: a retrospective cohort study using a Japanese health insurance claims database.",
+    "abstract": "To investigate the association between adolescent idiopathic scoliosis (AIS) diagnosis and the subsequent incidence of mental health concerns. This retrospective cohort study used a Japanese health insurance claims database from 2013 to 2024. We identified patients aged 10-18 years newly diagnosed with AIS. Each patient was matched with up to 10 controls by birth year and sex. The primary outcome was a composite of schizophrenia, anxiety, mood, and eating disorders. Hazard ratios (HRs) were estimated using Cox proportional hazards models adjusted for age, sex, fiscal year, comorbidities, and parental mental health concerns. Subgroup analyses were performed according to age and spinal orthosis use. We identified 9251 patients with AIS and 67,104 matched controls. AIS was associated with an increased risk of the composite outcome (HR 1.23; 95% CI 1.13-1.35). AIS was associated with increased risks of anxiety (HR 1.23; 95% CI 1.10-1.38), mood (HR 1.16; 95% CI 1.03-1.29), and eating disorders (HR 1.52; 95% CI 1.10-2.11). Age-stratified analyses showed that AIS was associated with increased risks of anxiety and mood disorders in adolescents aged 13-18 years; the incidence of eating disorders was highest in the 10-12-year group (HR 1.77; 95% CI 1.05-2.97). Patients with AIS treated with spinal orthosis exhibited a higher incidence of eating disorders than those without orthosis treatment (1.2% vs. 0.4%, p < 0.01). AIS diagnosis was associated with a higher incidence of subsequent mental health concerns, with the patterns of association varying by age and disorder type.",
+    "authors": [
+      "Tanabe Y",
+      "Aso S",
+      "Matsui H",
+      "Yasunaga H"
+    ],
+    "journal": "Spine deformity",
+    "journal_issn": "2212-1358",
+    "year": 2026,
+    "publication_date": "2026-07-24",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の健康保険レセプトデータベース（2013-2024年、DB名非公開）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 1.63,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:45.055Z",
+    "classified": true,
+    "title_ja": "思春期特発性側弯症と精神的健康問題の関連：日本の健康保険レセプトデータベースを用いた後方視的コホート研究",
+    "abstract_ja": "日本の健康保険レセプトDB（2013-2024年）を用い、10-18歳で新規に思春期特発性側弯症（AIS）と診断された9,251例と対照67,104例を追跡した後方視的コホート研究。Cox比例ハザードモデルで解析した結果、AIS群では複合精神疾患リスクが上昇し（HR 1.23）、特に不安・気分障害・摂食障害の増加を認めた。年齢や装具使用により関連パターンが異なった。"
+  },
+  {
+    "id": "pmid-42496703",
+    "pubmed_id": "42496703",
+    "doi": "10.1007/s00210-026-05751-6",
+    "title": "Drug-specific timing and fatality patterns of EGFR-TKI-associated interstitial lung disease in NSCLC-related JADER reports.",
+    "abstract": "Interstitial lung disease (ILD) is a toxicity of epidermal growth factor receptor tyrosine kinase inhibitors (EGFR-TKIs). We characterized agent-specific fatality and timing patterns in the Japanese Adverse Drug Event Report database (JADER). We analyzed March 2026 JADER reports accepted from 2004 Q4 through 2025 Q2. Eligible reports involved single-agent osimertinib, gefitinib, erlotinib, or afatinib as the suspected drug for non-small cell lung cancer-related indications and were coded with the core ILD term. Fatal outcome, time to onset (TTO), and operationally defined pre-existing lung disease were evaluated. Logistic regression adjusted for agent, pre-existing lung disease, sex, age group, and report year. Among 3206 reports, fatal outcomes were reported in 10.8% of osimertinib, 33.1% of gefitinib, 32.2% of erlotinib, and 21.0% of afatinib cases. Among 2534 reports with evaluable TTO, median TTO were 55, 28, 22, and 35.5 days, respectively. Compared with osimertinib, adjusted odds of fatal outcome were higher for gefitinib (odds ratio (OR) 2.64, 95% confidence interval (CI) 1.80-3.86), erlotinib (OR 2.66, 95% CI 1.88-3.76), and afatinib (OR 1.87, 95% CI 1.22-2.88). Pre-existing lung disease showed an imprecise association (OR 1.30, 95% CI 1.00-1.70). ILD reports showed apparent agent-specific differences in timing and fatality. Osimertinib showed a later, less fatal pattern; gefitinib and erlotinib earlier, more fatal patterns; and afatinib an intermediate profile. These findings describe pharmacovigilance reporting patterns, not incidence, causal comparative safety, or treatment-selection guidance.",
+    "authors": [
+      "Pacaci B",
+      "Kostek O"
+    ],
+    "journal": "Naunyn-Schmiedeberg's archives of pharmacology",
+    "journal_issn": "1432-1912",
+    "year": 2026,
+    "publication_date": "2026-07-24",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.19,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:45.172Z",
+    "classified": true,
+    "title_ja": "NSCLC関連JADER報告におけるEGFR-TKI関連間質性肺疾患の薬剤別発現時期と致死性パターン",
+    "abstract_ja": "JADER（2004Q4-2025Q2）を用い、NSCLCでEGFR-TKI（オシメルチニブ等4剤）単剤使用時の間質性肺疾患（ILD）報告3,206件を解析。ロジスティック回帰の結果、オシメルチニブは発現が遅く致死率が低い一方、ゲフィチニブ・エルロチニブは早期で致死率が高かった。これは報告パターンであり発生率や因果を示すものではない。"
+  },
+  {
+    "id": "pmid-42495686",
+    "pubmed_id": "42495686",
+    "doi": "10.1002/ags3.70242",
+    "title": "Trends, Demographic Characteristics and Seasonal Patterns of Rectal Prolapse Surgery in Japan: A Nationwide Claims-Based Analysis From 2014 to 2023.",
+    "abstract": "This study investigated nationwide trends, demographic characteristics, and seasonal patterns of rectal prolapse surgery in Japan, using healthcare claims databases. Surgical data were extracted from the National Database of Health Insurance Claims (NDB) from 2014 to 2023. Procedures were classified by surgical approach as conventional or laparoscopic. Crude and age-adjusted rates per 100 000 person-years were calculated. Temporal trends were assessed using linear and Poisson regression. Seasonal variations (April 2019-March 2024) were evaluated using one-way analysis of variance with post hoc comparisons, and correlations with meteorological variables were examined using Pearson's correlation coefficients. Over the decade, a total of 62 407 overall surgeries were performed, with an average annual rate of 4.7 per 100 000 person-years and an overall female-to-male ratio of 6.9:1. Overall surgery rates peaked at ages 85-89 in males (5.5 per 100 000 person-years) and females (59.1). While age-adjusted overall and conventional surgeries declined significantly, laparoscopic surgeries significantly increased (all p < 0.01). Age-adjusted overall surgery rates declined significantly in both sexes (RR = 0.960 for males, 0.983 for females, and 0.979 overall; each p < 0.0001), particularly among younger women aged 30-39 years (p < 0.0024). The mean seasonal overall surgeries exhibited distinct seasonal variation: 578.0 (SD 99.2) in spring, 440.0 (SD 85.9) in summer, 432.4 (SD 50.8) in autumn, and 544.4 (SD 71.8) in winter, and showed moderate negative correlations with temperature. This study provides contemporary epidemiological insights into surgical management of rectal prolapse in Japan.",
+    "authors": [
+      "Kido M",
+      "Arita T",
+      "Shimizu H",
+      "Kiuchi J",
+      "Nanishi K",
+      "Shoda K",
+      "Okimura H",
+      "Fujihara A",
+      "Yoshii K",
+      "Shiozaki A"
+    ],
+    "journal": "Annals of gastroenterological surgery",
+    "journal_issn": "2475-0328",
+    "year": 2026,
+    "publication_date": "2026-07-24",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 1.86,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:45.294Z",
+    "classified": true,
+    "title_ja": "日本における直腸脱手術の動向・患者背景・季節性：2014-2023年の全国レセプトデータ分析",
+    "abstract_ja": "NDB（2014-2023年）を用い、日本の直腸脱手術62,407件の動向・患者背景・季節性を解析した後方視的研究。Poisson回帰で腹腔鏡手術が有意に増加する一方、年齢調整手術率は男女とも減少した。手術件数は春・冬に多く、気温と負の相関を示した。女性が男性の約6.9倍だった。"
+  },
+  {
+    "id": "pmid-42495685",
+    "pubmed_id": "42495685",
+    "doi": "10.1002/ags3.70220",
+    "title": "Contemporary Regional Disparities in Robotic-Assisted Rectal Resection in Japan: A Nationwide Population-Based Study Using the National Database Open Data.",
+    "abstract": "Robotic-assisted rectal resection has expanded in Japan since national health insurance reimbursement began in 2018; however, its population-level regional distribution remains unclear. We evaluated temporal trends and contemporary regional disparities using the National Database (NDB) Open Data. We analyzed NDB Open Data for fiscal years 2014-2023. All patients undergoing rectal resection, irrespective of disease etiology, were included. Procedures were classified as open, laparoscopic, or robotic-assisted. We assessed temporal trends and age- and sex-stratified surgical volumes. For 2023, prefecture-level surgical rates per 100 000 population and robotic proportions were calculated. Standardized claim ratios (SCRs) were computed to adjust for age and sex. Population density was used as a proxy for urbanization. Prefectures were categorized into urban and rural groups using the highest and lowest population-density quartiles (middle two quartiles excluded), and robotic proportions were compared using the Mann-Whitney U test as an exploratory analysis. Robotic-assisted rectal resections increased markedly after 2018, whereas open surgery declined. Substantial inter-prefectural variation was observed in surgical volume and robotic utilization, and heterogeneity persisted after age- and sex-standardization using SCRs. Urban prefectures exhibited a higher median robotic proportion than rural prefectures (29.3% vs. 19.0%), although this difference did not reach statistical significance (p = 0.09). Treating population density as a continuous measure, robotic proportion was positively associated with population density (Spearman ρ = 0.338, p = 0.020). Robotic-assisted rectal resection expanded in Japan after reimbursement, yet marked inter-prefectural heterogeneity remained, underscoring the need for continued nationwide monitoring of geographic variation in adoption.",
+    "authors": [
+      "Ohta R",
+      "Yamada T",
+      "Uehara K",
+      "Sonoda H",
+      "Matsuda A",
+      "Shinji S",
+      "Yokoyama Y",
+      "Takahashi G",
+      "Taniai N",
+      "Yoshida H"
+    ],
+    "journal": "Annals of gastroenterological surgery",
+    "journal_issn": "2475-0328",
+    "year": 2026,
+    "publication_date": "2026-07-24",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 1.86,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:45.294Z",
+    "classified": true,
+    "title_ja": "日本におけるロボット支援直腸切除術の地域格差：NDBオープンデータを用いた全国population-based研究",
+    "abstract_ja": "NDBオープンデータ（2014-2023年度）を用い、日本のロボット支援直腸切除術の動向と都道府県間格差を分析した研究。2018年の保険償還後にロボット手術が急増し開腹手術は減少したが、手術量・ロボット比率に大きな地域差が残存した。都市部は地方よりロボット比率が高い傾向（29.3%対19.0%）を認めた。"
+  },
+  {
+    "id": "pmid-42495684",
+    "pubmed_id": "42495684",
+    "doi": "10.1002/ags3.70229",
+    "title": "Relationship Between Hospital Volume and Outcomes of Minimally Invasive Esophagectomy for Esophageal Cancer: Analysis of the National Clinical Database in Japan.",
+    "abstract": "While esophagectomy is a high-difficulty procedure, minimally invasive esophagectomy (MIE) requires even more advanced surgical skills, necessitating analysis of factors affecting surgical outcomes. This study examined the relationship between the postoperative mortality and complication rates of MIE and the annual hospital volume of esophagectomy to identify a threshold volume serving as a safety benchmark. We analyzed data from 22 712 patients registered in the National Clinical Database who underwent esophagectomy (MIE or open esophagectomy [OE]) at 1 037 hospitals in Japan between January 1, 2012, and December 31, 2015. Hospitals were stratified into five categories according to average annual volume of esophagectomies (MIE and OE). The primary outcome was operative mortality, and the secondary outcome was the incidence of postoperative complications. The 22 712 cases consisted of 9 739 cases (42.9%) of MIE and 12 973 cases (57.1%) of OE. Regarding MIE outcomes, the overall crude perioperative mortality and perioperative complication rates were 2.1% and 40.9%, respectively. Multivariable analysis performed using very-high-volume hospitals as reference revealed an odds ratio for mortality in very-low-volume hospitals of 2.70 (p < 0.0001). The postoperative mortality rate in patients undergoing MIE was relatively low in hospitals with a higher annual average volume of esophagectomy cases. Mortality was significantly higher in hospitals performing five or fewer esophagectomies annually. However, residual confounding due to differences in baseline patient characteristics cannot be excluded, although key clinical factors were adjusted for. Therefore, careful attention must be paid to the surgical and perioperative management techniques when performing MIE, particularly in very-low-volume hospitals.",
+    "authors": [
+      "Ozawa S",
+      "Kumamaru H",
+      "Kitagawa Y",
+      "Koyanagi K",
+      "Oguma J",
+      "Udagawa H",
+      "Miyata H",
+      "Toh Y",
+      "Matsubara H"
+    ],
+    "journal": "Annals of gastroenterological surgery",
+    "journal_issn": "2475-0328",
+    "year": 2026,
+    "publication_date": "2026-07-24",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "安全性・副作用",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 1.86,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:45.294Z",
+    "classified": true,
+    "title_ja": "食道癌に対する低侵襲食道切除術における病院手術量と転帰の関係：日本のNCD解析",
+    "abstract_ja": "NCD（2012-2015年、1,037施設・22,712例）を用い、低侵襲食道切除術（MIE）の術後死亡・合併症と施設手術量の関係を検討した後方視的コホート研究。多変量解析で超低施設量病院は超高施設量病院に比べ死亡オッズ比2.70と有意に高く、年間5件以下の施設で死亡率が高かった。"
+  },
+  {
+    "id": "pmid-42495665",
+    "pubmed_id": "42495665",
+    "doi": "10.1002/ags3.70239",
+    "title": "Regional Disparities in Case Volumes and Surgeon Distribution in Gastroenterological Surgery.",
+    "abstract": "Regional disparities in surgical resources may influence the delivery and sustainability of gastroenterological surgery, particularly in countries experiencing rapid population aging and depopulation. This nationwide cross-sectional study used data from the Japanese National Clinical Database to examine temporal trends (2013-2023) in surgical volume, surgeon supply, and annual operative volume per surgeon for colectomy, gastrectomy, and pancreaticoduodenectomy. Analyses were conducted at the prefectural level and stratified by population density and surgeon experience. A total of 955 168 colectomies, 514 155 gastrectomies, and 126 008 pancreaticoduodenectomies were analyzed. Colectomy volume increased despite declining surgeon numbers in medium- and high-density areas, resulting in increased operative volume per surgeon. Gastrectomy volume decreased nationwide, whereas pancreaticoduodenectomy volume increased across all regions, accompanied by a reduction in surgeon supply and a rise in procedures per surgeon. By 2023, operative volume per surgeon was largely comparable across population density categories. Notably, surgeons with ≥ 20 years of experience were disproportionately represented in low-density areas. Although regional differences in population density persist, surgeon workload for major gastroenterological procedures has converged across regions in recent years. However, surgical care in low-density areas depends heavily on senior surgeons, raising concerns regarding generational transition and long-term sustainability of gastroenterological surgical services in Japan.",
+    "authors": [
+      "Hasegawa H",
+      "Kumamaru H",
+      "Ara M",
+      "Kakeji Y",
+      "Yamauchi H",
+      "Inomata M",
+      "Akashi-Tanaka S",
+      "Ito K",
+      "Itoh S",
+      "Eguchi H",
+      "Kawase K",
+      "Kinoshita Y",
+      "Kiyozumi Y",
+      "Kobayashi S",
+      "Shibasaki I",
+      "Shirota C",
+      "Suzuki H",
+      "Takasu C",
+      "Fujikawa A",
+      "Bessho S",
+      "Horiuchi K",
+      "Maemura K",
+      "Maruo A",
+      "Miura T",
+      "Miyamoto Y",
+      "Yajima T",
+      "Yasuda A",
+      "Yamaguchi T",
+      "Iwanaka T",
+      "Baba H",
+      "Taketomi A"
+    ],
+    "journal": "Annals of gastroenterological surgery",
+    "journal_issn": "2475-0328",
+    "year": 2026,
+    "publication_date": "2026-07-24",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 1.86,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:45.294Z",
+    "classified": true,
+    "title_ja": "消化器外科における症例数と外科医分布の地域格差",
+    "abstract_ja": "日本のNCDを用い、2013-2023年の結腸切除・胃切除・膵頭十二指腸切除の手術量・外科医数・外科医1人あたり手術量の推移と地域格差を検討した全国横断研究。外科医1人あたり手術量は地域間で概ね収束したが、低人口密度地域は経験20年以上のベテラン外科医に依存しており、世代交代と持続可能性への懸念が示された。"
+  },
+  {
+    "id": "pmid-42492347",
+    "pubmed_id": "42492347",
+    "doi": "10.1016/j.aucc.2026.101648",
+    "title": "Prescription patterns of sleep medications for critically ill patients: A nationwide retrospective observational cohort study in Japan.",
+    "abstract": "Sleep disturbance is associated with adverse outcomes, yet evidence guiding its prevention and the real-world use of emerging hypnotics remains limited, underscoring the need to clarify contemporary prescribing patterns in the intensive care unit (ICU) and at discharge. This study investigated real-world usage patterns of sleep medications during ICU stay and their prescribing activity at hospital discharge in Japan. This retrospective cohort study analysed data from the Japanese Diagnosis Procedure Combination inpatient database (April 2012-March 2021). Adult patients who stayed in the ICU for more than 1 day were included. Sleep medications were categorised as benzodiazepines (BZDs), nonbenzodiazepine hypnotics (Z-drugs), orexin receptor antagonists (OXs), and melatonin receptor agonists (MLTs). Annual prescription trends, patient characteristics, and factors associated with sleep medication use during ICU stay and at discharge were analysed. Among 1,595,351 ICU patients, 30.8% received sleep medications during their ICU stay. From 2012 to 2020, BZD use declined from 22.1% to 11.1%, whereas OX and MLT use increased markedly from 0% to 18.0% and from 1.3% to 10.7%, respectively. Patients receiving sleep medications underwent invasive treatments more frequently and had higher prescribing rates at discharge than nonusers (47.0% vs. 11.3%, respectively; standardised mean difference: 85.5%). Sleep medication use during ICU stay was strongly associated with sleep medication prescription at hospital discharge (odds ratio: 6.90; 95% confidence interval: 6.59-7.23). Use of sleep medications, particularly OX and MLT, has increased substantially among ICU patients in Japan, and their strong correlation with sleep medication prescription at hospital discharge highlights the need for careful medication review and deprescribing to prevent unnecessary continuation after ICU care.",
+    "authors": [
+      "Iwasaki Y",
+      "Ohbe H",
+      "Kaiho Y",
+      "Ikumi S",
+      "Yabuki S",
+      "Wagatsuma Y",
+      "Yamauchi M",
+      "Fushimi K",
+      "Yasunaga H"
+    ],
+    "journal": "Australian critical care : official journal of the Confederation of Australian Critical Care Nurses",
+    "journal_issn": "1036-7314",
+    "year": 2026,
+    "publication_date": "2026-07-23",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.77,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:45.397Z",
+    "classified": true,
+    "title_ja": "重症患者に対する睡眠薬の処方パターン：日本における全国後方視的観察コホート研究",
+    "abstract_ja": "DPCデータベース（2012-2021年）を用い、ICUに1日以上滞在した成人1,595,351例における睡眠薬の使用実態を検討した後方視的コホート研究。ICU滞在中30.8%が睡眠薬を使用し、ベンゾジアゼピンが減少（22.1%→11.1%）する一方、オレキシン受容体拮抗薬・メラトニン受容体作動薬が大きく増加した。睡眠薬使用者は退院時処方率も高かった。"
+  },
+  {
+    "id": "pmid-42489684",
+    "pubmed_id": "42489684",
+    "doi": "10.1007/s00535-026-02482-6",
+    "title": "Association of early crystalloid type with mortality and costs in acute pancreatitis: a nationwide cohort study.",
+    "abstract": "Early intravenous crystalloid resuscitation is central to acute pancreatitis (AP) management; however, whether normal saline (NS) or balanced Ringer's solutions (RS) are superior for reducing mortality remains unsettled. Using the Japanese Diagnosis Procedure Combination database (July 2010-March 2022), we identified adults admitted to general medical wards with AP who had a hospital stay longer than 3 days and received sufficient fluid resuscitation within three days of admission. Patients were classified by predominant crystalloid exposure during the first three days (NS vs. RS). Propensity score matching was used to balance measured confounders and compare in-hospital mortality and total hospitalization costs between the two groups. Among 43,247 eligible patients, 1,652 (4.0%) predominantly received NS and 41,595 (96.0%) predominantly received RS. Propensity score matching yielded 1,650 well-balanced pairs. In-hospital mortality was higher with NS than with RS (2.9% vs 1.8%; risk difference, 1.2%; 95% CI, 0.12% to 2.2%). NS was also associated with higher total hospitalization costs (difference, 1,344 USD; 95% CI, 725 to 1,963). In this nationwide cohort of adults with AP admitted to general medical wards, predominant early use of NS was associated with higher in-hospital mortality and higher hospitalization costs compared with RS.",
+    "authors": [
+      "Okada H",
+      "Horibe M",
+      "Sasabuchi Y",
+      "Bazerbachi F",
+      "Sato T",
+      "Matsuo Y",
+      "Matsui H",
+      "Fushimi K",
+      "Yasunaga H",
+      "Kanai T"
+    ],
+    "journal": "Journal of gastroenterology",
+    "journal_issn": "1435-5922",
+    "year": 2026,
+    "publication_date": "2026-07-23",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 3.69,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:45.504Z",
+    "classified": true,
+    "title_ja": "急性膵炎における早期晶質液の種類と死亡・費用の関連：全国コホート研究",
+    "abstract_ja": "DPCデータベース（2010-2022年）を用い、急性膵炎で入院した成人43,247例を対象に、早期輸液の種類（生理食塩水vsリンゲル液）と院内死亡・費用の関連を傾向スコアマッチングで検討した後方視的コホート研究。マッチング後、生理食塩水群はリンゲル液群に比べ院内死亡率（2.9%対1.8%）と総入院費用が有意に高かった。"
+  },
+  {
+    "id": "pmid-42488653",
+    "pubmed_id": "42488653",
+    "doi": "10.3389/fimmu.2026.1866830",
+    "title": "Heterogeneity of immune checkpoint inhibitor-related inflammatory central nervous system adverse event reporting signals in primary and metastatic brain tumors: a pharmacovigilance study with single-cell and spatial transcriptomic contextualization.",
+    "abstract": "Immune checkpoint inhibitors (ICIs) can induce immune-related adverse events (irAEs) across multiple organ systems. Although inflammatory central nervous system irAEs (CNS inflammatory irAEs) are uncommon, they are often severe. Primary CNS tumors and brain metastases have distinct immune microenvironments, yet the heterogeneity of ICI-related inflammatory CNS irAE reporting signals across tumor phenotypes remains poorly understood. We used pharmacovigilance signal discovery, external corroboration, and transcriptomic contextualization of pre-existing brain tumor immune landscapes. We constructed an ICI-exposed cohort from the FDA Adverse Event Reporting System (FAERS) and compared inflammatory CNS irAE disproportionality signals across primary CNS tumors, brain metastases, and non-CNS solid tumors. External comparison used the Japanese Adverse Drug Event Report database (JADER). Public single-cell RNA sequencing datasets were analyzed to characterize baseline strict inflammatory and broad stress-related modules across cellular compartments, with spatial transcriptomics used as secondary descriptive visualization in brain metastasis tissue. In FAERS, inflammatory CNS irAE reporting signals suggested tumor phenotype-associated heterogeneity, with adjusted odds ratios of 1.65 (95% CI, 1.02-2.65) for primary CNS tumors and 3.12 (95% CI, 2.45-3.98) for brain metastases versus non-CNS solid tumors. Signals were stronger under a strict noninfectious phenotype and attenuated under a broad neuroinflammatory phenotype. Thyroid comparator analyses showed no comparable enrichment, whereas the myocarditis-related comparator was too sparse in the brain metastasis subgroup for meaningful inference. JADER showed a broadly similar pattern, although primary CNS tumor estimates were sparse and exploratory. Baseline single-cell analyses localized strict inflammatory module activity mainly to myeloid and T/NK compartments, while spatial maps served only as secondary descriptive visualization. ICI-related inflammatory CNS irAE reporting signals suggested tumor phenotype-associated differences, most prominently in brain metastases. Stricter phenotype definitions appeared more specific than broader neuroinflammatory definitions. Public single-cell datasets characterized pre-existing immune-rich myeloid/T-NK compartments, while spatial maps provided only secondary descriptive tissue-level visualization and did not demonstrate irAE-onset tissue states. These pharmacovigilance findings should be interpreted as hypothesis-generating reporting associations, not evidence of incidence, absolute risk, or causality.",
+    "authors": [
+      "Song J",
+      "He Z",
+      "Han C",
+      "Hou X"
+    ],
+    "journal": "Frontiers in immunology",
+    "journal_issn": "1664-3224",
+    "year": 2026,
+    "publication_date": "2026-07-23",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Brain Neoplasms",
+      "Immune Checkpoint Inhibitors",
+      "Pharmacovigilance",
+      "Adverse Drug Reaction Reporting Systems",
+      "Spatial Transcriptomics",
+      "Single-Cell Analysis",
+      "Female",
+      "Male",
+      "Transcriptome",
+      "Tumor Microenvironment"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS（米国FDA有害事象報告システム）",
+      "公開single-cell RNA-seq・空間トランスクリプトームデータ"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 5.11,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:45.583Z",
+    "classified": true,
+    "title_ja": "原発性・転移性脳腫瘍における免疫チェックポイント阻害薬関連中枢神経系炎症性有害事象の報告シグナルの異質性：単一細胞・空間トランスクリプトーム解析による文脈化を伴う薬剤疫学研究",
+    "abstract_ja": "FAERSを主データ、JADERを外部検証に用い、免疫チェックポイント阻害薬による中枢神経系炎症性有害事象（irAE）の報告シグナルを腫瘍種別に比較した薬剤疫学研究。脳転移で原発性脳腫瘍より高い不均衡シグナル（調整OR 3.12対1.65）を認めた。公開single-cell/空間トランスクリプトームで免疫微小環境の違いを文脈化した。"
+  },
+  {
+    "id": "pmid-42487680",
+    "pubmed_id": "42487680",
+    "doi": "10.1177/20420986261462669",
+    "title": "Sex-specific risk factors for genital infections associated with SGLT2 inhibitors in type 2 diabetes: a retrospective cohort study and disproportionality analysis using JADER.",
+    "abstract": "Genital infections are notable adverse events that may lead to nonadherence to or discontinuation of sodium-glucose cotransporter 2 (SGLT2) inhibitors, essential agents in the management of type 2 diabetes (T2D). Although sex differences in incidence rates have been reported, the risk factors for each sex remain poorly understood. To identify sex-specific risk factors for genital infections associated with SGLT2 inhibitors, with the aim of optimising prevention and intervention strategies. (i) Retrospective cohort study based on real-world clinical data and (ii) disproportionality analysis using the Japanese Adverse Drug Event Report database. (i) We investigated sex-specific risk factors for genital infections attributable to SGLT2 inhibitors using logistic regression, and further evaluated the discriminatory ability of sex-risk-factor combinations using a Cox proportional hazards model. (ii) As a supplementary analysis, a disproportionality analysis using reporting odds ratios (RORs) was performed for genital infection associated with SGLT2 inhibitors, stratified by the risk factors identified in (i). (i) Among 2202 patients with T2D, 36 (1.6%) individuals developed genital infections after initiation of SGLT2 inhibitors (median 596.5 days). Females had a higher incidence than males (3.6% vs 0.8%, p < 0.001). In females, the combination of older age (⩾65 years) and three or more concomitant antidiabetic medications was identified as a significant contributor to infection risk, whereas elevated body mass index (BMI) was implicated in males. The Cox model demonstrated excellent discrimination (concordance index, 0.83; p < 0.001). (ii) A total of 228,261 cases submitted by diabetes patients were examined. The RORs were higher in older individuals and in those taking a greater number of diabetic medications, only in females. The effects of the combination of these factors and BMI could not be evaluated. Older age and polypharmacy of antidiabetic agents in females were identified as risk factors for SGLT2 inhibitor-associated genital infections. Sex differences in risk factors for genital infections linked to SGLT2 inhibitors in patients with diabetes Why was the study done? Genital infections are significant side effects that can cause people to skip doses or stop taking SGLT2 inhibitors, which are key drugs for treating diabetes. Although men and women have different rates of these infections, we still do not fully understand the specific risk factors for each sex. We considered that identifying these sex-specific risk factors would help improve prevention and treatment strategies. What did the researchers do? We first investigated risk factors for genital infections caused by SGLT2 inhibitors in men and women separately, using data from 2,202 patients with diabetes who were newly prescribed an SGLT2 inhibitor at a diabetes care centre. Then, we checked whether the same patterns appeared in other populations by analysing 228,261 cases extracted from a nationwide adverse event reporting system (JADER database). What did the researchers find? Our study found that women are more likely than men to develop genital infections when using SGLT2 inhibitors. In women, the combination of older age and polypharmacy of antidiabetic drugs appeared to play an essential role in increasing this risk, while elevated BMI was linked to the risk in men. When we used sex and these sex-specific factors to predict who might develop an infection, the accuracy was high. In addition, results from JADER database supported our findings: women had a higher risk, and older age and polypharmacy of antidiabetic drugs may be risk factors that are specific to women. What do the findings mean? Women had a higher risk of developing genital infections during SGLT2 inhibitor use, and the risk factors differed markedly between the sexes. Recognizing these differences is essential for effective risk stratification. Furthermore, preventive strategies and interventions that take sex differences into account may help reduce unintended discontinuation of SGLT2 inhibitors due to genital infections.",
+    "authors": [
+      "Kajiwara-Morita A",
+      "Kugimoto S",
+      "Oniki K",
+      "Yoshida A",
+      "Kurinami N",
+      "Suzuki T",
+      "Miyamoto F",
+      "Hieshima K",
+      "Sugiyama S",
+      "Kajiwara K",
+      "Jinnouchi K",
+      "Jinnouchi H",
+      "Saruwatari J"
+    ],
+    "journal": "Therapeutic advances in drug safety",
+    "journal_issn": "2042-0986",
+    "year": 2026,
+    "publication_date": "2026-07-23",
+    "analysis_methods": [
+      "回帰分析",
+      "生存時間分析",
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "実臨床データ（2型糖尿病患者2,202例のコホート）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.39,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:45.689Z",
+    "classified": true,
+    "title_ja": "2型糖尿病におけるSGLT2阻害薬関連性器感染症の性別リスク因子：JADERを用いた後方視的コホート研究と不均衡分析",
+    "abstract_ja": "実臨床データ（2型糖尿病患者2,202例）とJADERを用い、SGLT2阻害薬による性器感染症の性別リスク因子を検討した研究。ロジスティック回帰とCox解析の結果、女性の発症率が男性より高く（3.6%対0.8%）、女性では高齢（65歳以上）と複数因子の組み合わせがリスクと関連した。JADERの不均衡分析（ROR）で補完した。"
+  },
+  {
+    "id": "pmid-42486303",
+    "pubmed_id": "42486303",
+    "doi": "10.1016/j.cmi.2026.07.025",
+    "title": "Assessment of Timing for Influenza Vaccination among Older Adults in Japan: The VENUS Study.",
+    "abstract": "In Japan, seasonal influenza vaccination is recommended for older adults between October and mid-December; however, the optimal vaccination timing remains unclear owing to waning immunity and variable epidemic patterns. In this study, we aimed to assess the effectiveness of different vaccination strategies in reducing influenza-related outcomes in older adults. Using data from the VENUS Study, we conducted a target trial emulation including adults aged ≥65 years across four influenza seasons (2016/2017, 2017/2018, 2018/2019, and 2019/2020). We applied a cloning, censoring, and weighting approach. Each individual was cloned and assigned to one of seven vaccination strategies at the start of October: no vaccination, vaccination during October, October-November, October-December, November, November-December, or December. Outcomes included influenza, influenza-related hospitalization, and all-cause mortality. Risk ratios (RRs) and risk differences (RDs), relative to no vaccination, were estimated at the end of March for each season based on standardized cumulative incidence. Annual cohorts included 131,178-138,438 individuals (median age: 76-78 years; male sex: 40.1-41.0%). The influenza incidences and RRs varied by season. Delayed vaccination was associated with the lowest influenza incidence in 2017/2018 and 2018/2019, but not in the other seasons. Influenza-related hospitalizations showed seasonal trends similar to those of influenza. In contrast, early vaccination strategies generally led to reduced all-cause mortality across all seasons. The RRs were 0.80-0.93, 0.80-0.95, 0.82-1.00, and 0.81-0.96 in the 2016/2017, 2017/2018, 2018/2019, and 2019/2020 seasons, respectively. The RDs were larger for mortality than for the influenza-related outcomes. The effectiveness of each timing strategy varied depending on the outcome and season. Although delayed vaccination was associated with a lower influenza incidence in some seasons, early vaccination generally reduced all-cause mortality.",
+    "authors": [
+      "Mimura W",
+      "Ishiguro C",
+      "Shimizu Y",
+      "Terada-Hirashima J",
+      "Maeda M",
+      "Oda F",
+      "Fukuda H"
+    ],
+    "journal": "Clinical microbiology and infection : the official publication of the European Society of Clinical Microbiology and Infectious Diseases",
+    "journal_issn": "1469-0691",
+    "year": 2026,
+    "publication_date": "2026-07-22",
+    "analysis_methods": [
+      "ターゲットトライアルエミュレーション"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "VENUS Study（日本の高齢者を対象としたワクチンデータベース）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 4.32,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:45.783Z",
+    "classified": true,
+    "title_ja": "日本の高齢者におけるインフルエンザワクチン接種時期の評価：VENUS研究",
+    "abstract_ja": "VENUS研究のデータ（2016-2020年の4シーズン、65歳以上）を用い、インフルエンザワクチン接種時期別の有効性をターゲットトライアルエミュレーション（クローニング・打ち切り・重み付け法）で評価した。各シーズン13万人規模を解析し、接種時期を遅らせる戦略が一部シーズンで最も低い罹患率と関連するなど、効果はシーズンにより異なった。"
+  },
+  {
+    "id": "pmid-42485457",
+    "pubmed_id": "42485457",
+    "doi": "10.1093/jbmr/zjag113",
+    "title": "Osteoarthritis risk associated with denosumab in adults with osteoporosis: A target trial emulation.",
+    "abstract": "Denosumab, a well-established osteoporosis treatment, has demonstrated potential bone- and cartilage-protective effects in preclinical and early trials. However, it remains unclear whether these promising findings extend to osteoarthritis prevention in weight-bearing joints and broader real-world osteoporotic populations. We compared osteoarthritis incidence between denosumab and oral bisphosphonates in adults aged 50 years or older with osteoporosis using a sequential nested target trial emulation with propensity score matching based on longitudinal health insurance claims data from Japan collected between 2015 and 2024. Two target comparisons were conducted: one compared new users of denosumab with new users of oral bisphosphonates, and the other compared patients who switched from oral bisphosphonates to denosumab with those who continued oral bisphosphonates. The primary outcome was osteoarthritis incidence. Secondary outcomes included joint-specific osteoarthritis (knee, hip, and hand) over 3 years. The absolute risk reduction (ARR) and relative risk (RR) at 3 years were estimated using a Kaplan-Meier estimator in both the per-protocol and intention-to-treat analyses. In the per-protocol analyses, the ARR for incident osteoarthritis was 2.0% (95% confidence interval [CI], 1.1%-3.2%) in the new-user comparison, with an RR of 0.83 (95% CI, 0.73-0.91), and 0.9% (95% CI, -0.2% to 2.8%) in the switch-continue comparison, with an RR of 0.92 (95% CI, 0.76-1.02). In the intention-to-treat analyses, the corresponding ARR was 1.9% (95% CI, 1.3%-3.3%) in the new-user comparison, with an RR of 0.84 (95% CI, 0.73-0.89), and 1.2% (95% CI, -0.2% to 2.7%) in the switch-continue comparison, with an RR of 0.89 (95% CI, 0.77-1.02). Denosumab initiation was associated with a modestly lower risk of incident osteoarthritis than oral bisphosphonate initiation, although the association was weaker in the switch-continue comparison. Denosumab, a well-established treatment for osteoporosis, has demonstrated potential bone- and cartilage-protective effects in the joints in preclinical and early clinical trials. However, it remains unclear whether these promising findings extend to osteoarthritis prevention in weight-bearing joints and broader real-world osteoporotic populations. In this study, starting denosumab was linked to a lower risk of developing osteoarthritis than starting an oral bisphosphonate; however, this link was weaker among people who switched from oral bisphosphonates to denosumab. Because this was an observational study of real-world treatment patterns, these findings should be interpreted with caution and confirmed in future research.",
+    "authors": [
+      "Hatano M",
+      "Kimura Y",
+      "Okada A",
+      "Ishikura H",
+      "Tanaka T",
+      "Saito T",
+      "Tanaka S",
+      "Yasunaga H"
+    ],
+    "journal": "Journal of bone and mineral research : the official journal of the American Society for Bone and Mineral Research",
+    "journal_issn": "1523-4681",
+    "year": 2026,
+    "publication_date": "2026-07-22",
+    "analysis_methods": [
+      "ターゲットトライアルエミュレーション",
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の縦断的健康保険レセプトデータ（2015-2024年、DB名非公開）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 5.07,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:45.874Z",
+    "classified": true,
+    "title_ja": "骨粗鬆症患者におけるデノスマブと変形性関節症リスク：ターゲットトライアルエミュレーション",
+    "abstract_ja": "日本の縦断的健康保険レセプトデータ（2015-2024年）を用い、50歳以上の骨粗鬆症患者でデノスマブと経口ビスホスホネートの変形性関節症（OA）発症を比較したターゲットトライアルエミュレーション（傾向スコアマッチング）。新規使用者比較でデノスマブはOA発症の絶対リスクを2.0%低下（RR 0.83）させ、OA予防効果の可能性が示された。"
+  },
+  {
+    "id": "pmid-42484742",
+    "pubmed_id": "42484742",
+    "doi": "10.1007/s10147-026-03146-4",
+    "title": "Financial and documentation-related workload impact of ERAS implementation in major head and neck surgery with free flap reconstruction under the Japanese DPC system.",
+    "abstract": "Enhanced recovery after surgery (ERAS) improves postoperative recovery in head and neck oncologic surgery. However, its institutional impact under the Japanese Diagnosis Procedure Combination (DPC) system, particularly regarding hospital revenue and frontline workload, remains unclear. This retrospective cohort study included patients who underwent major resection of malignant head and neck tumors with free tissue transfer reconstruction at the National Cancer Center Hospital between April 2018 and March 2022. Patients were classified into pre-ERAS and post-ERAS groups according to implementation of the PreSte ERAS protocol in May 2020. Financial outcomes included DPC revenue, fee-for-service revenue, total hospital revenue, and revenue efficiency defined as revenue per hospital day. Frontline workload was assessed using the total number of characters documented in electronic medical records by non-physician healthcare professionals. A total of 310 patients were analyzed (155 per group). Median length of stay decreased after ERAS implementation (25 vs. 23 days; p = 0.002). Total revenue showed a non-significant decreasing trend after ERAS implementation (109,360 vs. 98,626 points; p = 0.104). Revenue efficiency increased after ERAS implementation (3627 vs. 3984 points per hospital day; p < 0.001). Documentation volume tended to increase but did not differ significantly overall. Sensitivity analysis excluding free fibula flap reconstruction showed consistent results. ERAS implementation was associated with shorter hospitalization and improved revenue efficiency under the Japanese DPC-based system. Although total revenue did not increase, and an increased multidisciplinary workload cannot be excluded, these findings support the potential institutional feasibility of ERAS.",
+    "authors": [
+      "Eguchi K",
+      "Omura G",
+      "Sakai A",
+      "Sakai T",
+      "Fushimi C",
+      "Imai T",
+      "Shinozaki T",
+      "Mukai M",
+      "Matsuura K",
+      "Yoshimoto S"
+    ],
+    "journal": "International journal of clinical oncology",
+    "journal_issn": "1437-7772",
+    "year": 2026,
+    "publication_date": "2026-07-22",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "単施設（国立がん研究センター中央病院）のDPC・電子カルテデータ"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "医療資源利用・経済評価",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.64,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:45.981Z",
+    "classified": true,
+    "title_ja": "日本のDPC制度下における頭頸部遊離皮弁再建手術でのERAS導入の経済的・記録業務負担への影響",
+    "abstract_ja": "単施設（国立がん研究センター中央病院、2018-2022年）の310例を対象に、頭頸部悪性腫瘍の遊離皮弁再建手術におけるERAS導入前後の病院収益と記録業務負担を比較した後方視的コホート研究。ERAS導入後に在院日数が短縮（25→23日）し、1入院日あたりの収益効率が向上した。総収益は減少傾向だが有意差はなかった。"
+  },
+  {
+    "id": "pmid-42483186",
+    "pubmed_id": "42483186",
+    "doi": "10.3389/fimmu.2026.1873829",
+    "title": "Drug-associated inflammatory bowel disease: a real-world pharmacovigilance study using the FAERS and JADER databases.",
+    "abstract": "Although several medications have been linked to inflammatory bowel disease (IBD), the association between most drugs and IBD remains unclear. This study aimed to identify medications most frequently reported in connection with IBD by analyzing large-scale data from the U.S. Food and Drug Administration Adverse Event Reporting System (FAERS) and the Japan Adverse Drug Event Report (JADER) database. We extracted reports of drug-associated IBD adverse events from FAERS and performed external validation using JADER. Disproportionality analyses of suspected drugs were conducted using four methods: Reporting Odds Ratio (ROR), Proportional Reporting Ratio (PRR), Bayesian Confidence Propagation Neural Network (BCPNN), and Multi-Item Gamma Poisson Shrinker (MGPS). Additional analyses included time-to-onset (TTO) assessment, Weibull distribution modeling, and subgroup analyses by age, sex, and IBD subtype to evaluate signal stability and clinical characteristics. The FAERS database yielded 52,395 reports of drug-associated IBD, corresponding to 50,426 patients.Females accounted for a higher proportion of reports than males, with the majority of cases occurring in individuals aged 18-64 years. The annual number of reports showed an overall upward trend. Among drugs reported at least 50 times, 17 met all four algorithmic threshold criteria and were classified as positive signals. Anti-tumor necrosis factor-alpha (anti-TNF-α) inhibitors ranked highest by reporting frequency, whereas isotretinoin demonstrated the strongest signal intensity. External validation using JADER confirmed consistent signals for certain anti-TNF-α inhibitors, anti-interleukin biologic agents, conventional immunosuppressants, and antibiotics. Time-to-onset analysis revealed that the median onset of IBD occurred within one year for most drug-associated cases. The Weibull model indicated an \"early failure-type\" onset pattern for the majority of positive signals. From a pharmacovigilance perspective, this study provides a comprehensive overview of medications associated with IBD, offering clinically relevant insights. Our findings deliver real-world evidence to support the identification and monitoring of drug-associated IBD; however, confirmation in large prospective cohort studies remains necessary.",
+    "authors": [
+      "Ying Y",
+      "Shen M",
+      "Chen J",
+      "Feng T",
+      "Li Z",
+      "Ying Z",
+      "Yang D",
+      "Ju R",
+      "Wu J"
+    ],
+    "journal": "Frontiers in immunology",
+    "journal_issn": "1664-3224",
+    "year": 2026,
+    "publication_date": "2026-07-22",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "mesh_terms": [
+      "Pharmacovigilance",
+      "Humans",
+      "Inflammatory Bowel Diseases",
+      "Adverse Drug Reaction Reporting Systems",
+      "Databases, Factual",
+      "Female",
+      "Male",
+      "Adult",
+      "Japan",
+      "United States",
+      "Middle Aged",
+      "Adolescent",
+      "Young Adult",
+      "Drug-Related Side Effects and Adverse Reactions",
+      "Aged",
+      "Bayes Theorem",
+      "Child",
+      "United States Food and Drug Administration"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS（米国FDA有害事象報告システム）"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 5.11,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:45.981Z",
+    "classified": true,
+    "title_ja": "薬剤関連炎症性腸疾患：FAERSおよびJADERを用いた実臨床薬剤疫学研究",
+    "abstract_ja": "FAERSを主データ、JADERを外部検証に用い、炎症性腸疾患（IBD）と関連する薬剤を不均衡分析（ROR/PRR/BCPNN/MGPS）で同定した薬剤疫学研究。FAERSで52,395件のIBD報告を解析し、50回以上報告された薬剤のうち17剤が全4基準を満たす陽性シグナルと判定された。発現時期解析やサブグループ解析も実施した。"
+  },
+  {
+    "id": "pmid-42480776",
+    "pubmed_id": "42480776",
+    "doi": "10.1016/j.jpainsymman.2026.07.015",
+    "title": "Small-Count Suppression Substantially Distorts Estimates of Pediatric Opioid Utilization in Japan.",
+    "abstract": "Effective pain management is essential for pediatric care. However, nationwide trends in pediatric opioid prescribing in Japan remain unclear because publicly available databases suppress small prescription quantities. To evaluate how small-count suppression influences the interpretation of pediatric opioid utilization estimates based on the National Database of Health Insurance Claims and Specific Health Checkups of Japan (NDB Open Data), with the secondary objective of describing nationwide prescribing trends. The NDB Open Data from fiscal years (FY) 2018-2023 were analyzed for children aged 0-14 years. Oral, transdermal, and suppository formulations of morphine, oxycodone, fentanyl, and tramadol were included; injectable formulations were excluded. Opioid utilization was converted to morphine milligram equivalents (MME) per 100,000 population. Prescription quantities below 1,000 units were coded as nondisclosure (ND) and treated as zero in the primary analysis. Sensitivity analyses imputed ND values using the estimated mean MME per reported unit. The suppression rate was defined as the proportion of strong opioid formulation categories with suppressed values. The suppression rate for the strong opioid formulation categories progressively increased and reached 100% in FY2023, indicating a substantial loss of observable prescription data. Sensitivity analyses demonstrated a 4.9-fold difference between the observed and imputed estimates in FY2022. In the primary analysis, estimated pediatric opioid utilization appeared to decrease from 1,826 to 346 mg MME/100,000 population between FY2018 and FY2023. Small-count suppression materially distorted estimates of pediatric opioid utilization derived from the NDB Open Data and may complicate the interpretation of prescribing trends in rare pediatric populations.",
+    "authors": [
+      "Abe K",
+      "Sugiyama M",
+      "Miyazaki K",
+      "Sako A",
+      "Igarashi T",
+      "Nakanishi M",
+      "Oda A",
+      "Hattori Y",
+      "Miura T",
+      "Akagi T",
+      "Ishiki H",
+      "Kondo N"
+    ],
+    "journal": "Journal of pain and symptom management",
+    "journal_issn": "1873-6513",
+    "year": 2026,
+    "publication_date": "2026-07-21",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "方法論・バリデーション",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 0.9,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:46.100Z",
+    "classified": true,
+    "title_ja": "小数抑制が日本の小児オピオイド使用量推計を大きく歪める",
+    "abstract_ja": "NDBオープンデータ（2018-2023年度、0-14歳）を用い、公開データの小数抑制（少量処方の非開示）が小児オピオイド使用量推計に与える影響を検討した研究。強オピオイド製剤の抑制率は2023年度に100%へ上昇し、観測可能な処方データが大幅に失われた。感度分析で抑制値を補完すると推計が大きく変動し、公開データ利用時の注意が必要と示された。"
+  },
+  {
+    "id": "pmid-42479872",
+    "pubmed_id": "42479872",
+    "doi": "10.2196/94073",
+    "title": "Cardiac Resynchronization Therapy With Defibrillator Using the JROAD-DPC Database: Cost-Effectiveness Analysis.",
+    "abstract": "Cardiac resynchronization therapy with defibrillator (CRT-D) improves survival, reduces hospitalization, and enhances quality of life in patients with heart failure and reduced ejection fraction (HFrEF). As heart failure prevalence increases in aging societies such as Japan, the associated clinical and economic burden continues to rise. Previous cost-effectiveness analyses conducted in multiple countries indicate that CRT-D may be cost-effective in selected patients with HFrEF. However, its cost-effectiveness within the Japanese health care system remains uncertain. This study aimed to evaluate the cost-effectiveness of CRT-D in patients with HFrEF within the Japanese health care setting. A partitioned survival model was developed with 3 health states: after treatment (follow-up), hospitalization, and death. Survival for CRT-D was estimated by reconstructing individual patient-level data from the Kaplan-Meier curve of the RAFT (Resynchronization-Defibrillation for Ambulatory Heart Failure Trial) study using the method proposed by Guyot et al followed by fitting multiple parametric models; the gamma distribution was selected for the base case analysis. Survival for optimal medical therapy (OMT), the comparator, was estimated by applying a hazard ratio from a published meta-analysis. Hospitalization rates and device longevity were derived from prior studies. Cost estimates were obtained from the JROAD-DPC (Japanese Registry Of All cardiac and vascular Disease-Diagnostic Procedure Combination) database and the Japanese medical fee schedule. Utility values were assigned according to New York Heart Association class assuming treatment-specific distributions. The analysis was conducted from the public health care payer perspective using a monthly cycle over a 20-year time horizon. Deterministic and probabilistic sensitivity analyses were performed. Additionally, scenario analyses were conducted by varying the duration of treatment effect. In the base case analysis, per capita costs were ¥12,258,410 (¥1=US $0.006 as of July 7, 2026) for CRT-D and ¥640,056.90 for OMT, resulting in an incremental cost of ¥11,618,353. CRT-D generated 7.07 quality-adjusted life years (QALYs) compared with 4.75 QALYs for OMT, yielding an incremental gain of 2.32 QALYs. The incremental cost-effectiveness ratio (ICER) was ¥5,009,880 per QALY. Scenario analyses showed that, when treatment effect waned after 7.5 years, the ICER increased to ¥5,423,235 per QALY. When the time horizon was shortened to 10 years or extended to 30 years, the ICERs were ¥8,523,072 and ¥4,386,803 per QALY, respectively. Deterministic sensitivity analysis identified CRT-D efficacy (hazard ratio), discount rate, and initial treatment cost as primary ICER drivers. Probabilistic sensitivity analysis produced a median ICER of ¥5,022,618 (IQR ¥4,448,306-¥5,760,425) per QALY, with a 95% credible interval of ¥3,804,418 to ¥7,178,795. At a willingness-to-pay value of ¥5,000,000 per QALY, CRT-D had a 49.2% probability of being cost-effective. CRT-D demonstrated acceptable cost-effectiveness in patients with HFrEF in Japan. Treatment efficacy and initial cost were the primary determinants of economic value, emphasizing the importance of appropriate patient selection and strategies to reduce device costs.",
+    "authors": [
+      "Ohashi K",
+      "Watanabe M",
+      "Morii Y",
+      "Yokoshiki H",
+      "Kusano K",
+      "Imai K",
+      "Takagi M",
+      "Yamane T",
+      "Tada H",
+      "Ogasawara K"
+    ],
+    "journal": "Interactive journal of medical research",
+    "journal_issn": "1929-073X",
+    "year": 2026,
+    "publication_date": "2026-07-21",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [
+      "JROAD-DPCデータベース（日本循環器学会 循環器疾患診療実態調査×DPC）",
+      "RAFT試験のKaplan-Meier曲線から再構築した個票データ"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 5.27,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:46.199Z",
+    "classified": true,
+    "title_ja": "JROAD-DPCデータベースを用いた両室ペーシング機能付き植込み型除細動器（CRT-D）の費用対効果分析",
+    "abstract_ja": "日本の医療制度下でHFrEF（左室駆出率低下心不全）患者に対するCRT-Dの費用対効果を区分生存モデルで評価した研究。生存はRAFT試験のKaplan-Meier曲線から個票を再構築して推定し、入院率・費用はJROAD-DPCデータベース等から導出した。ガンマ分布を基本ケースとして、日本におけるCRT-Dの費用対効果を検討した。"
+  },
+  {
+    "id": "pmid-42475980",
+    "pubmed_id": "42475980",
+    "doi": "10.1016/j.ejca.2026.116932",
+    "title": "Efficacy of adjuvant chemotherapy for triple-negative early breast cancer with tumor size ≤ 1 cm and node-negative from the National Clinical Database-Breast Cancer Registry in Japan.",
+    "abstract": "The benefit of adjuvant chemotherapy for pT1N0 triple-negative breast cancer (TNBC) remains controversial, especially for tumors ≤ 1 cm. This study evaluated contemporary chemotherapy efficacy across tumor size subcategories using large-scale real-world data. We analyzed patients with pT1 N0 TNBC registered in the National Clinical Database-Breast Cancer Registry (NCD-BCR) of the Japanese Breast Cancer Society between 2004 and 2017. The primary endpoint was disease-free survival (DFS), and secondary endpoints included overall survival (OS) and breast cancer-specific survival (BCSS). Hazard ratios (HRs) were calculated using multivariate Cox proportional hazard models. A total of 7362 patients were included (chemotherapy group: 3883; no-chemotherapy group: 3479). In the multivariate analysis, chemotherapy showed no significant survival benefit for the pT1a subgroup across any endpoints (DFS, BCSS, or OS). For the pT1b subgroup, chemotherapy provided no significant benefit for DFS (HR 0.88; 95% CI: 0.60-1.29) or BCSS (HR 0.75; 95% CI: 0.30-1.88); however, the observed improvement in OS (HR 0.53; 95% CI: 0.29-0.96) might reflect factors other than breast cancer-specific mortality. In contrast, for the pT1c subgroup, chemotherapy significantly improved DFS (HR 0.61; 95% CI: 0.51-0.73) and OS (HR 0.57; 95% CI: 0.45-0.72), whereas no significant benefit was observed for BCSS (HR 0.77; 95% CI: 0.56-1.06). While contemporary adjuvant chemotherapy significantly improves outcomes in pT1c N0 TNBC, no clear benefit for DFS or BCSS was demonstrated for patients with tumors ≤ 1 cm (T1a and T1b). Given the potential for treatment-related toxicity, the omission of chemotherapy should be considered a reasonable option for patients with TNBC ≤ 1 cm.",
+    "authors": [
+      "Koike Y",
+      "Kumamaru H",
+      "Iwamoto T",
+      "Kinukawa N",
+      "Ishida T",
+      "Saji S",
+      "Taira N"
+    ],
+    "journal": "European journal of cancer (Oxford, England : 1990)",
+    "journal_issn": "1879-0852",
+    "year": 2026,
+    "publication_date": "2026-07-20",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [
+      "NCD乳癌登録（NCD-BCR）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 2.6,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:46.302Z",
+    "classified": true,
+    "title_ja": "腫瘍径1cm以下・リンパ節転移陰性のトリプルネガティブ早期乳癌に対する術後補助化学療法の有効性：日本のNCD乳癌登録",
+    "abstract_ja": "NCD乳癌登録（NCD-BCR、2004-2017年、7,362例）を用い、pT1N0トリプルネガティブ乳癌における術後補助化学療法の有効性を腫瘍径別に検討した後方視的研究。多変量Cox解析でpT1a・pT1bでは有意な生存改善を認めなかったが、pT1cでは無病生存（HR 0.61）・全生存を有意に改善した。"
+  },
+  {
+    "id": "pmid-42475524",
+    "pubmed_id": "42475524",
+    "doi": "10.1021/acs.jcim.6c01464",
+    "title": "Chemical Information Modeling for Component-Level Review Prioritization of Adverse-Reaction Signals in Multi-Component Medicines.",
+    "abstract": "Postmarketing safety signals for multicomponent medicines are usually assigned to a whole product, leaving unresolved which component chemistry should be reviewed first. We formulate this problem as chemical information modeling over a heterogeneous safety graph connecting Kampo formulas, crude-drug components, ingredients, protein targets, protein-protein interactions, and adverse-reaction terms. HerbPairIAM represents components, unordered component pairs, and adverse reactions as fixed target-centered graph profiles, then learns adverse-reaction-conditioned attention to score formula-reaction candidates and rank component-level review priorities. High-confidence formula-adverse reaction signals were curated from JADER and FAERS using a four-estimator disproportionality vote rule requiring at least three positive estimators and at least three coreports. In a leakage-controlled tested-universe benchmark containing 704 positives among 3965 candidate pairs, HerbPairIAM achieved an AUROC of 0.823 and an AUPRC of 0.517 across 30 matched folds, outperforming seven tabular and graph-based baselines. Ablations showed that the unordered pair branch and fixed graph-derived profiles drove the performance gain, and formula-held-out evaluation retained transfer to unseen formula compositions. Generalization was substantially weaker in the ADR-held-out setting, localizing the main transfer boundary to sparse adverse-reaction target annotation; the model is therefore more reliable for prioritizing within a represented adverse-reaction space than for cold-start adverse-reaction phenotypes. Calibration, review-threshold analysis, leave-one-component perturbation, and package-insert auditing linked high-scoring candidates to compound, target, and documentary evidence, with 192 of the top 500 tested nonsignal candidates supported by Japanese package inserts, an enrichment that attenuates after adverse-reaction-family matching and is best read as family level concentration of review candidates rather than within-family discrimination. Two compound-target structural follow-ups provided illustrative plausibility checks for selected compound-target axes rather than mechanistic or clinical-toxicity validation. The resulting scores are intended for safety-review triage and mechanism-focused follow-up, not for direct causal attribution of toxicity.",
+    "authors": [
+      "Shi B",
+      "Zhang S",
+      "Wu J",
+      "Fang J",
+      "Chen J",
+      "Yang J"
+    ],
+    "journal": "Journal of chemical information and modeling",
+    "journal_issn": "1549-960X",
+    "year": 2026,
+    "publication_date": "2026-07-20",
+    "analysis_methods": [
+      "機械学習・AI",
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS（米国FDA有害事象報告システム）",
+      "漢方処方・生薬-成分-標的タンパク質等のグラフデータ"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "安全性・副作用",
+      "方法論・バリデーション"
+    ],
+    "impact_factor": 4.84,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:46.397Z",
+    "classified": true,
+    "title_ja": "多成分医薬品の有害反応シグナルの成分レベルレビュー優先順位付けのための化学情報モデリング",
+    "abstract_ja": "漢方処方・生薬成分・標的タンパク質・有害反応をつなぐ異種グラフ上で、成分レベルの安全性レビュー優先順位を学習する化学情報モデル（HerbPairIAM）を提案した方法論研究。高信頼の処方-有害反応シグナルはJADERとFAERSから4指標の不均衡分析投票で抽出した。ベンチマークでAUROC 0.823を達成し、既存手法を上回った。"
+  },
+  {
+    "id": "pmid-42474775",
+    "pubmed_id": "42474775",
+    "doi": "10.1007/s00595-026-03429-3",
+    "title": "Secondary breast surgery after initial partial mastectomy for breast cancer in Japan.",
+    "abstract": "Partial mastectomy for breast cancer may be followed by unplanned secondary surgery due to adverse outcomes, such as the detection of positive margins or cancer recurrence, thus adding burden to patients, providers, and payers. We analyzed the prevalence of this outcome and its economic impact in Japan. We utilized the Medical Data Vision (MDV) Research Database to identify a cohort of women in Japan who underwent an index partial mastectomy between 2008 and 2023, following their healthcare encounters up to 5 years postoperatively, including any secondary partial or total mastectomies. Overall, 49,659 patients with breast cancer underwent primary partial mastectomy, and 2,203 (4.4%) underwent a second surgery. Among these secondary procedures, approximately two-thirds were total mastectomies. The median five-year postoperative healthcare expenditure among patients with one primary partial mastectomy was ¥1.8 million, and ¥2.5 million among patients requiring more than one procedure. Secondary procedures were more common among younger patients, those with larger tumors, and those who did not receive neoadjuvant therapy. Partial mastectomy is an essential surgical treatment for early stage breast cancer in Japan. While secondary surgery rates are low compared with other countries, these procedures still have negative financial consequences and extend patients' journeys to remission.",
+    "authors": [
+      "Hirata M",
+      "Kijima Y",
+      "Wing SE",
+      "Lin PL",
+      "Zaha H"
+    ],
+    "journal": "Surgery today",
+    "journal_issn": "1436-2813",
+    "year": 2026,
+    "publication_date": "2026-07-20",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 1.93,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:46.490Z",
+    "classified": true,
+    "title_ja": "日本における乳房部分切除後の二次乳房手術",
+    "abstract_ja": "MDV研究データベースを用い、2008-2023年に乳房部分切除を受けた女性49,659例を最大5年追跡した後方視的コホート研究。4.4%（2,203例）が二次手術を受け、その約2/3が乳房全切除であった。二次手術は若年・大きな腫瘍・術前療法未施行の患者で多く、5年医療費も高額だった。"
+  },
+  {
     "id": "pmid-42470211",
     "pubmed_id": "42470211",
     "doi": "10.1002/oby.70264",
@@ -228,6 +1080,43 @@
     "classified": true,
     "title_ja": "日本のNational Clinical Databaseを用いた根治的前立腺全摘後の実臨床アウトカムの全国記述解析",
     "abstract_ja": "NCD（647施設）に登録された2018年の根治的前立腺全摘14,992例を対象に、5年生化学的再発なし生存（BCRFS）をKaplan-Meier法で評価した記述研究。全体の5年BCRFSは81%で、年齢や術式では差がなく、病理学的病期・リンパ節転移・ISUPグレードが予後を強く規定した。実臨床のベンチマークを提供する。"
+  },
+  {
+    "id": "pmid-42467046",
+    "pubmed_id": "42467046",
+    "doi": "10.1016/j.vhri.2026.101675",
+    "title": "Hospital Budget Impact and Provider-Side Economic Evaluation of Lecanemab and Donanemab Under Japan's National Fee Schedule: A Head-to-Head Linear Model.",
+    "abstract": "The study aimed to assess the provider-side financial viability of antiamyloid disease-modifying therapies for early Alzheimer's disease in Japan, we developed a linear hospital-provider model that separates a short inpatient diagnostic phase from an outpatient infusion phase. Using public National Health Insurance tariffs, official 2025 drug prices, and workflow-based labor costing with time-driven activity-based costing, we estimated per-case outpatient margins and program-level break-even case volumes. Scenarios examined fee-for-service versus diagnosis procedure combination/per-diem payment system hospitals, magnetic resonance imaging surveillance intensity, purchase discounts, wage growth, routine-workflow staff time, and the scheduled 15% lecanemab price reduction effective November 1, 2025. At 1.5 T with no assumed wage growth, donanemab yielded positive outpatient margins from + 37,670JPY at no purchase discount to + ¥110 777 at a 2.6% discount. Lecanemab at 50 kg yielded -¥9048 at no discount and broke even at a discount of 0.304% before the scheduled price reduction and 0.358% after it. At 55 to 60 kg, the equal-discount threshold at which lecanemab overtook donanemab shifted from about 6.2% before the price reduction to 20.9% after it. Sensitivity analyses showed purchase discounts were the dominant driver, whereas labor and workflow inputs affected lecanemab more because it requires more infusions per year. Under Japan's fee schedule, both therapies were financially viable across typical purchase-discount ranges in scenario analyses, but findings should be interpreted as provider-margin estimates rather than comparative clinical judgments.",
+    "authors": [
+      "Makita K",
+      "Nishihara T",
+      "Arakaki Y",
+      "Ohida T",
+      "Goto K",
+      "Kutsuna N"
+    ],
+    "journal": "Value in health regional issues",
+    "journal_issn": "2212-1102",
+    "year": 2026,
+    "publication_date": "2026-07-17",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "公的医療保険点数表・2025年薬価等の公開データ（時間駆動型活動基準原価計算モデル）"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 0.63,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-07-27T00:06:46.582Z",
+    "classified": true,
+    "title_ja": "日本の診療報酬制度下におけるレカネマブとドナネマブの病院予算影響・提供者側経済評価：ヘッドツーヘッド線形モデル",
+    "abstract_ja": "日本の公的医療保険点数・薬価を用い、早期アルツハイマー病に対する抗アミロイド抗体薬（レカネマブ・ドナネマブ）の病院提供者側の採算性を線形モデルと時間駆動型活動基準原価計算で評価した研究。外来1症例あたり利益と損益分岐症例数を推計した結果、ドナネマブは概ね黒字、レカネマブは購入割引率が採算を左右する主要因であった。"
   },
   {
     "id": "pmid-42461501",
