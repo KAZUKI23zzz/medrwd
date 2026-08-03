@@ -1,5 +1,731 @@
 [
   {
+    "id": "pmid-42539946",
+    "pubmed_id": "42539946",
+    "doi": "10.23922/jarc.2026-014",
+    "title": "Effectiveness of Blood Perfusion Assessment by Indocyanine Green Fluorescence Angiography in the Prevention of Anastomotic Leakage after Rectal Cancer Surgery in Japan: A Retrospective Study Using the Diagnosis Procedure Combination Database.",
+    "abstract": "Several studies have reported the potential effectiveness of indocyanine green fluorescence angiography (ICG-FA) for preventing anastomotic leakage (AL) in rectal cancer surgery; however, its clinical benefit remains uncertain. The purpose of this study was to investigate the effectiveness of ICG-FA in rectal cancer surgery in Japan using real-world data. We retrieved data from the Diagnosis Procedure Combination database in Japan for rectal cancer surgeries between April 2018 and March 2022. A total of 68,022 cases were registered, and 55,299 eligible patients were analyzed. Using a two-level structure of nested individuals from 1,057 hospitals, we applied multilevel logistic regression. A total of 40,013 laparoscopic (72.4%), 7,464 robotic (13.5%), and 7,822 open (14.1%) operations were performed. The rate of AL was 4.3% in the ICG-FA group and 5.1% in the non-ICG-FA group. After adjustment for patient- and hospital-level factors, ICG-FA was associated with a lower risk of AL (OR 0.87, 95% CI 0.76-1.00, p = 0.043); however, after additional adjustment for fiscal year, the association was no longer statistically significant (OR 0.91, 95% CI 0.79-1.04, p = 0.167). ICG-FA may be associated with a lower risk of AL after rectal cancer surgery in real-world settings, although the benefit was not statistically significant after additional adjustment for fiscal year.",
+    "authors": [
+      "Amaike T",
+      "Okawara M",
+      "Akiyama Y",
+      "Nagata J",
+      "Nitta K",
+      "Yamauchi M",
+      "Fujino Y",
+      "Shibao K",
+      "Fushimi K",
+      "Matsuda S",
+      "Hirata K"
+    ],
+    "journal": "Journal of the anus, rectum and colon",
+    "journal_issn": "2432-3853",
+    "year": 2026,
+    "publication_date": "2026-08-01",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 1.27,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-03T00:09:28.269Z",
+    "classified": true,
+    "title_ja": "直腸癌手術後の縫合不全予防におけるICG蛍光血流評価の有効性：日本のDPCデータベースを用いた後方視的研究",
+    "abstract_ja": "DPCデータベース（2018-2022年）を用い、直腸癌手術55,299例でインドシアニングリーン蛍光血管造影（ICG-FA）による縫合不全予防効果を検討した後方視的研究。マルチレベルロジスティック回帰で解析した結果、ICG-FA群の縫合不全率は4.3%と非施行群5.1%より低かったが（OR 0.87）、年度で追加調整すると有意差は消失した（OR 0.91）。"
+  },
+  {
+    "id": "pmid-42539654",
+    "pubmed_id": "42539654",
+    "doi": "10.3389/fcvm.2026.1738988",
+    "title": "Prescription patterns of sacubitril/valsartan among patients with hypertension in Japan.",
+    "abstract": "Sacubitril/valsartan (S/V) is an established therapy for heart failure that has been recently approved for hypertension in Japan. However, evidence regarding its use in combination with other antihypertensive agents in real-world practice is limited. To describe real-world prescribing patterns of S/V among patients with hypertension in Japan. A retrospective cohort study using a nationwide Japanese electronic health record database (August 2020 to October 2023) identified adults with hypertension (ICD-10: I10-I15) who were newly prescribed S/V. Patients with heart failure were excluded. Concomitant antihypertensive medications, S/V dosing, and discontinuation patterns were assessed over 90 days following initiation. Of the 9,486 patients (median age 79 years; 50.6% men), 63.6% received S/V with a calcium channel blocker (CCB), 22.5% as monotherapy, and 11.8% as triple therapy with CCB and thiazide. At day 90, 55.5% of patients received S/V plus a CCB, and 26.0% were on S/V monotherapy. The S/V discontinuation rate reached 11.8% by day 90. Approximately half of those on triple therapy discontinued the thiazide diuretic within 30 days. In Japanese patients with hypertension, S/V is most commonly used in combination with a CCB, although a notable proportion receive it as monotherapy. These findings highlight the need for further studies to evaluate the safety, efficacy, and cost-effectiveness of S/V-based combination regimens.",
+    "authors": [
+      "Ozaki AF",
+      "Nomura H",
+      "Terada T",
+      "Kato ET",
+      "Naqvi AA",
+      "Nguyen JT",
+      "Kunitsu Y"
+    ],
+    "journal": "Frontiers in cardiovascular medicine",
+    "journal_issn": "2297-055X",
+    "year": 2026,
+    "publication_date": "2026-08-01",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の全国電子カルテ（EHR）データベース（2020-2023年、DB名非公開）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.28,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-03T00:09:28.424Z",
+    "classified": true,
+    "title_ja": "日本の高血圧患者におけるサクビトリル/バルサルタンの処方パターン",
+    "abstract_ja": "日本の全国電子カルテDB（2020-2023年）を用い、高血圧で新規にサクビトリル/バルサルタン（S/V）を処方された9,486例の実臨床処方パターンを記述した後方視的コホート研究。63.6%がカルシウム拮抗薬（CCB）併用、22.5%が単剤で、90日時点でのS/V中止率は11.8%だった。日本ではS/VはCCB併用が最多だが、一定割合が単剤使用であることが示された。"
+  },
+  {
+    "id": "pmid-42538552",
+    "pubmed_id": "42538552",
+    "doi": "10.1186/s43019-026-00330-8",
+    "title": "Age-stratified risk of major systemic complications following unicompartmental versus total knee arthroplasty: a nationwide cohort study.",
+    "abstract": "The optimal surgical approach for knee arthroplasty remains under debate regarding reducing systemic complications. Although unicompartmental knee arthroplasty (UKA) is generally considered less invasive than total knee arthroplasty (TKA), it remains unclear whether this advantage persists across age groups. This study aimed to compare the risk of major systemic complications between UKA and TKA across age categories using a large-scale nationwide database. Patients who underwent UKA or TKA between July 2010 and March 2022 were identified from the Diagnosis Procedure Combination database in Japan. The primary outcome was a composite of postoperative in-hospital death and major systemic complications requiring additional interventions. Rates of postoperative red blood cell (RBC) transfusion were also evaluated as a secondary outcome. Stabilized inverse probability of treatment weighting (IPTW) using propensity scores was applied to compare outcomes between the groups. The cohort included 36,235 UKA and 322,424 TKA cases. After stabilized IPTW adjustment, the composite outcome occurred less frequently after UKA than after TKA (risk ratio [RR] 0.65; 95% confidence interval [CI] 0.50-0.85; p = 0.001). The RBC transfusion rate was also reduced in the UKA group (RR, 0.09; 95% CI 0.08-0.11; p < 0.001). In subgroup analyses stratified by age (≤ 79 and ≥ 80 years), UKA was associated with a lower incidence of the composite outcome compared with TKA in patients aged ≤ 79 years (RR 0.48; 95% CI 0.34-0.68; p < 0.001), whereas no significant difference between UKA and TKA was observed among patients aged ≥ 80 years (RR 0.92; 95% CI 0.62-1.35; p = 0.670). The rate of RBC transfusion was lower in the UKA group across age groups (for ≤ 79 years, RR 0.07; 95% CI 0.05-0.09; p < 0.001; for ≥ 80 years, RR 0.12; 95% CI 0.10-0.14; p < 0.001). RBC transfusion rates were consistently lower following UKA across age groups. While UKA was associated with fewer major systemic complications than TKA in patients aged ≤ 79 years, no such difference was observed in patients aged ≥ 80 years. In very elderly patients, careful perioperative risk assessment remains essential when considering UKA, similar to that for TKA.",
+    "authors": [
+      "Kawata M",
+      "Aso S",
+      "Kawaguchi K",
+      "Yamagami R",
+      "Kono K",
+      "Taketomi S",
+      "Matsui H",
+      "Fushimi K",
+      "Yasunaga H",
+      "Tanaka S"
+    ],
+    "journal": "Knee surgery & related research",
+    "journal_issn": "2234-0726",
+    "year": 2026,
+    "publication_date": "2026-07-31",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 5.86,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-03T00:09:28.523Z",
+    "classified": true,
+    "title_ja": "単顆置換術と全置換術後の重大な全身合併症リスクの年齢層別比較：全国コホート研究",
+    "abstract_ja": "DPCデータベース（2010-2022年）を用い、単顆人工膝関節置換術（UKA）36,235例と全置換術（TKA）322,424例の重大な全身合併症リスクを安定化IPTWで比較した全国コホート研究。UKAは複合アウトカム（院内死亡・重大合併症）と輸血率が全体で低かったが、80歳以上では複合アウトカムに有意差を認めなかった。"
+  },
+  {
+    "id": "pmid-42538191",
+    "pubmed_id": "42538191",
+    "doi": "10.1016/j.alit.2026.06.004",
+    "title": "Real-world clinical practice and economic burden of seasonal allergic rhinitis in Japan: A nationwide claims database study.",
+    "abstract": "Allergic rhinitis (AR) prevalence is increasing worldwide. However, while information on the economic burden of AR remains limited globally, nationwide data for Japan are similarly scarce. Therefore, we investigated healthcare utilization and prescription drug costs for seasonal AR using a nationwide claims database, primarily focusing on spring AR. This observational study used the National Database of Health Insurance Claims (2018-2019). Patients with spring AR were defined as those with an AR-related diagnosis and prescriptions covering ≥14 days in each of the two spring pollen seasons (January-April) in 2018 and 2019 (pre-COVID-19 years with heavy pollen dispersal). Patients with summer (May-August) and autumn (September-December) AR were similarly identified, whereas patients with perennial-only AR were excluded. We calculated the number of patients, healthcare visits, drug costs, and the correlation between the number of spring AR patients and pollen counts. Spring AR involved 12.9 million patients (female-to-male ratio, 1.36), with annual prescription drug costs of 101.8 billion yen (7874 yen per patient), a mean of 3.05 visits per season, and 83% of patients visiting outpatient clinics without beds. Regional patient numbers were correlated with pollen counts (Spearman's r = 0.61). Summer and autumn AR involved 5.7 million and 6.1 million patients, with costs of 38.7 and 42.4 billion yen, respectively. Patients with seasonal AR identified using strict criteria totaled 24.7 million annually, with drug costs totaling 182.9 billion yen. These figures represent a conservative estimate of the minimum medical expenditure for seasonal AR in Japan.",
+    "authors": [
+      "Koriyama M",
+      "Okamoto Y",
+      "Kurokawa T",
+      "Noda T",
+      "Okumura Y",
+      "Sakurai D",
+      "Okano M",
+      "Suwazono Y",
+      "Iinuma T",
+      "Hanazawa T",
+      "Nishioka Y",
+      "Myojin T",
+      "Imamura T",
+      "Yonekura S"
+    ],
+    "journal": "Allergology international : official journal of the Japanese Society of Allergology",
+    "journal_issn": "1440-1592",
+    "year": 2026,
+    "publication_date": "2026-07-31",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "医療資源利用・経済評価",
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 4.36,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-03T00:09:28.669Z",
+    "classified": true,
+    "title_ja": "日本における季節性アレルギー性鼻炎の実臨床と経済的負担：全国レセプトデータベース研究",
+    "abstract_ja": "全国レセプトデータベース（NDB、2018-2019年）を用い、季節性アレルギー性鼻炎（AR）の医療資源利用と薬剤費を推計した観察研究。春季ARは1,290万人、年間薬剤費1,018億円（1人あたり7,874円）で、患者数は花粉飛散量と相関した（r=0.61）。季節性AR全体では年間2,470万人・薬剤費1,829億円と、日本での医療費負担の大きさが示された。"
+  },
+  {
+    "id": "pmid-42535974",
+    "pubmed_id": "42535974",
+    "doi": "10.1111/1759-7714.70367",
+    "title": "Advanced Thymoma and Advanced Thymic Carcinoma Treatment Practices in 2018-2022: A Nationwide Analysis in Japan.",
+    "abstract": "Thymomas and thymic carcinomas are rare diseases with limited clinical evidence. This study aimed to investigate the clinical characteristics of and treatment practices for Stages III and IV thymoma or thymic carcinoma in Japan. We analyzed cases of Stage III and IV thymoma and thymic carcinoma diagnosed between 2018 and 2022 and recorded in a nationwide dataset linking the Hospital-based Cancer Registry and the Diagnosis Procedure Combination survey. Treatment practices, including the use of perioperative chemotherapy, radiotherapy, and newer systemic therapies as well as the chemotherapy regimens, were evaluated. Overall, 556 stage III thymoma, 312 stage III thymic carcinoma, 431 stage IV thymoma, and 976 stage IV thymic carcinoma patients were identified. Postoperative radiotherapy after complete resection was more common for stage III thymic carcinoma than for thymoma (34.1% vs. 10.7%), while perioperative chemotherapy was used more frequently for stage IV thymoma than for thymic carcinoma (preoperative: 15.5% vs. 3.7%; postoperative: 8.4% vs. 4.4%). For stage IV thymoma, adriamycin-cisplatin-vincristine-cyclophosphamide was the most common regimen (41.8%), whereas carboplatin-paclitaxel was predominantly used for stage IV thymic carcinoma (99.5%). The proportion of anthracycline-based therapy for stage IV thymoma increased from 50.0% to 77.8%, while that of postoperative radiotherapy for stage III thymoma decreased from 11.1% to 4.1%. Evidence-based treatment approaches for thymoma and thymic carcinoma have been widely adopted in Japan.",
+    "authors": [
+      "Ishigaki J",
+      "Rikitake R",
+      "Kage H",
+      "Higashi T"
+    ],
+    "journal": "Thoracic cancer",
+    "journal_issn": "1759-7714",
+    "year": 2026,
+    "publication_date": "2026-07-31",
+    "analysis_methods": [],
+    "mesh_terms": [
+      "Humans",
+      "Thymoma",
+      "Japan",
+      "Thymus Neoplasms",
+      "Female",
+      "Male",
+      "Middle Aged",
+      "Aged",
+      "Neoplasm Staging",
+      "Adult"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [
+      "院内がん登録（Hospital-based Cancer Registry）とDPC調査のリンケージデータ"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.17,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-03T00:09:28.816Z",
+    "classified": true,
+    "title_ja": "進行胸腺腫・進行胸腺癌の治療実態（2018-2022年）：日本の全国分析",
+    "abstract_ja": "院内がん登録とDPC調査を連結した全国データを用い、2018-2022年に診断されたStage III/IVの胸腺腫・胸腺癌2,275例の治療実態を解析した後方視的研究。完全切除後の術後放射線療法は胸腺癌で多く（34.1% vs 10.7%）、周術期化学療法はStage IV胸腺腫で多かった。Stage IV胸腺癌ではカルボプラチン+パクリタキセルが99.5%を占めた。"
+  },
+  {
+    "id": "pmid-42535545",
+    "pubmed_id": "42535545",
+    "doi": "10.1161/JAHA.125.047993",
+    "title": "Left Ventricular Unloading With Impella Versus Intra-Aortic Balloon Pump in Cardiogenic Shock Requiring Venoarterial Extracorporeal Membrane Oxygenation.",
+    "abstract": "Optimal unloading strategies for patients with cardiogenic shock requiring venoarterial extracorporeal membrane oxygenation remain uncertain, particularly when comparing Impella and intra-aortic balloon pump (IABP). We aimed to compare outcomes of patients receiving Impella or IABP during venoarterial extracorporeal membrane oxygenation and evaluate cause-specific differences. In this retrospective cohort study using the nationwide JROAD-DPC (Japanese Registry of All Cardiac and Vascular Diseases-Diagnosis Procedure Combination) database from 2012 to 2023, patients with cardiogenic shock treated with venoarterial extracorporeal membrane oxygenation and either Impella or IABP were analyzed. Propensity score-based inverse probability of treatment weighting was applied to adjust baseline differences. Among 18 906 patients (Impella, n=1688; IABP, n=17 218), overall in-hospital mortality was 57.3% with Impella and 67.2% with IABP. Impella use was associated with lower in-hospital mortality compared with IABP (odds ratio [OR], 0.86 [95% CI, 0.75-0.99]). Cause-specific analyses showed significantly lower mortality with Impella in heart failure (OR, 0.66 [95% CI, 0.47-0.91]) and arrhythmia (OR, 0.62 [95% CI, 0.42-0.91]). Impella use was also associated with longer hospital stay (median, 22 versus 12 days), longer support duration (7 versus 4 days), and higher total costs (56.1 versus 27.3 thousand USD). In this nationwide cohort, Impella unloading during venoarterial extracorporeal membrane oxygenation was associated with lower in-hospital mortality than IABP in the overall cohort, particularly in selected causes, at the expense of prolonged hospitalization and higher costs. Further studies are needed to define optimal cause-specific unloading strategies in cardiogenic shock.",
+    "authors": [
+      "Ito R",
+      "Kondo T",
+      "Kazama S",
+      "Araki T",
+      "Imaizumi T",
+      "Nabeta T",
+      "Ikeda Y",
+      "Matsuzoe H",
+      "Matsumura K",
+      "Kanaoka K",
+      "Nagai T",
+      "Fujino T",
+      "Morimoto R",
+      "Murohara T"
+    ],
+    "journal": "Journal of the American Heart Association",
+    "journal_issn": "2047-9980",
+    "year": 2026,
+    "publication_date": "2026-07-31",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [
+      "JROAD-DPC（全国循環器疾患診療実態調査-DPCデータベース、2012-2023年）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 5.26,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-03T00:09:28.939Z",
+    "classified": true,
+    "title_ja": "静脈動脈体外式膜型人工肺を要する心原性ショックにおけるImpellaと大動脈内バルーンパンピングによる左室アンローディングの比較",
+    "abstract_ja": "全国のJROAD-DPCデータベース（2012-2023年）を用い、VA-ECMOを要する心原性ショックでImpella（1,688例）とIABP（17,218例）の転帰をIPTWで比較した後方視的コホート研究。Impella群は院内死亡率が低かったが（57.3% vs 67.2%、OR 0.86）、在院日数・支持期間・総費用は高かった。"
+  },
+  {
+    "id": "pmid-42535213",
+    "pubmed_id": "42535213",
+    "doi": "10.7759/cureus.113681",
+    "title": "Outpatient Dispensing Patterns and Changes in Tirzepatide Strength Mix in Japan: A Study Using the National Open Claims Data.",
+    "abstract": "Tirzepatide is a once-weekly injectable dual agonist of the glucose-dependent insulinotropic polypeptide (GIP) and glucagon-like peptide-1 (GLP-1) receptors; in Japan, it is approved for the treatment of type 2 diabetes and marketed under the brand name Mounjaro, which is available in six strengths. Japanese studies of tirzepatide have primarily evaluated efficacy, real-world effectiveness, safety, persistence, and patient-level maintenance doses. National patterns in dispensing settings and longitudinal changes in the product-strength mix have not been described. We examined whether increases in claim-recorded quantities were accompanied by structural changes in outpatient dispensing and strength mix. We analyzed injectable-drug quantity tables for the fiscal year 2024 from the 11th National Database of Health Insurance Claims and Specific Health Checkups of Japan Open Data. Full National Health Insurance drug codes were used to identify all six Mounjaro strengths. The primary tables excluded public-expense claims, and public-expense-inclusive tables were used in a sensitivity analysis. Monthly analyses required numeric values for every strength in both the within-institution and outside-institution outpatient prescription worksheets. Outcomes included annual quantities by dispensing category and strength, monthly total quantity, the share dispensed outside medical institutions, strength-mix indicators, and each strength's contribution to the increase from June 2024 to March 2025. The primary outpatient total was 7,829,974.7 kit units. Of this total, 6,748,743.5 kit units (86.2%) were recorded as outpatient prescriptions dispensed outside medical institutions. Complete monthly data were available from June 2024 through March 2025. During this interval, monthly quantity increased from 392,354 to 1,027,955 kit units; outside-institution quantity increased from 329,431 kit units (84.0%) to 899,994 kit units (87.6%); and the quantity represented by strengths of 7.5 mg or higher increased from 50,902 kit units (13.0%) to 246,316 kit units (24.0%). The quantity of the 2.5-mg product increased from 159,318 kit units (40.6%) to 278,540 kit units (27.1%), while its share decreased. The 5-mg product accounted for 320,965 kit units (50.5%) of the absolute increase, whereas strengths of 7.5 mg or higher collectively accounted for 195,414 kit units (30.7%). The public-expense-inclusive sensitivity analysis preserved the ranking of strengths and the predominance of outside-institution dispensing. Tirzepatide dispensing in Japan was concentrated in the outside-institution outpatient category, and the share in this category increased over the fully observable period. Growth was also accompanied by a measurable shift in the product-strength mix. This study provides an auditable national description of dispensing-setting and product-mix dynamics rather than an analysis of patient uptake, adherence, clinical outcomes, or individual titration.",
+    "authors": [
+      "Omura T",
+      "Kamihara T"
+    ],
+    "journal": "Cureus",
+    "journal_issn": "2168-8184",
+    "year": 2026,
+    "publication_date": "2026-07-31",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.07,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-03T00:09:29.038Z",
+    "classified": true,
+    "title_ja": "日本におけるチルゼパチドの外来調剤パターンと製剤規格構成の変化：NDBオープンデータを用いた研究",
+    "abstract_ja": "第11回NDBオープンデータ（2024年度）を用い、チルゼパチド（マンジャロ）の外来調剤パターンと規格構成の推移を記述した研究。外来調剤の86.2%が院外処方で、月間数量は2024年6月から2025年3月にかけて約2.6倍に増加。高用量（7.5mg以上）の割合が13.0%から24.0%へ上昇し、規格構成のシフトが認められた。"
+  },
+  {
+    "id": "pmid-42524749",
+    "pubmed_id": "42524749",
+    "doi": "10.1002/epi4.70313",
+    "title": "Cumulative electroconvulsive therapy sessions and focal epilepsy: A nationwide cohort study in Japan.",
+    "abstract": "Electroconvulsive therapy (ECT) is widely used for severe psychiatric disorders, yet concerns remain regarding possible epileptogenic effects associated with prolonged or repeated exposure. We examined the association between cumulative ECT sessions and focal epilepsy in a nationwide Japanese cohort. We conducted a retrospective cohort study using a nationwide claims database including 3733 patients who received ECT between 2008 and 2025. For analyses of incident focal epilepsy, patients with a prior diagnosis of epilepsy before the first ECT session were excluded from the at-risk population. New-onset focal epilepsy was defined as a G40.2 diagnosis recorded after ECT initiation. Person-time accrued from the first ECT session to epilepsy diagnosis or last follow-up. Multivariable logistic regression assessed the association between cumulative ECT sessions and focal epilepsy, adjusting for age, sex, and psychiatric diagnoses. An exploratory time-varying Cox model evaluated cumulative exposure as a time-dependent variable. Among 3733 patients (mean age 56.9 years; 66.4% female), 96 (2.6%) developed focal epilepsy, corresponding to an incidence of 3748 per 100 000 person-years. A cumulative exposure pattern was observed, with diagnosis rates exceeding 5% among patients receiving ≥ 50 sessions and peaking at 9.1% in the 80-89 session group. Each additional ECT session was associated with higher odds of focal epilepsy (β = 0.0099, p = 0.004). Age, sex, and psychiatric diagnoses were not significant predictors. In exploratory time-varying analysis, reaching ≥ 50 sessions was associated with increased hazard, although event numbers were limited. Latency to diagnosis ranged from weeks to over 4000 days. Following epilepsy diagnosis, 70.8% discontinued ECT and 98.0% received antiseizure medication. In this nationwide cohort, greater cumulative ECT exposure was associated with focal epilepsy diagnosis. While causality cannot be established, these findings support consideration of careful neurological monitoring during prolonged ECT courses. Electroconvulsive therapy (ECT) is an effective treatment for severe mental illnesses. However, its long-term neurological effects are not fully understood. We analyzed nationwide data from 3733 patients in Japan who received ECT and examined whether repeated treatments were associated with new diagnoses of focal epilepsy. Ninety-six patients (2.6%) were diagnosed with focal epilepsy after starting ECT. The likelihood of diagnosis was higher among patients who received more ECT sessions, particularly those undergoing prolonged courses. Although this study cannot determine whether ECT directly causes epilepsy, our findings suggest that careful neurological monitoring may be considered during extended treatment.",
+    "authors": [
+      "Hata M",
+      "Miyazaki Y",
+      "Omori H",
+      "Takahashi S",
+      "Ikeda M"
+    ],
+    "journal": "Epilepsia open",
+    "journal_issn": "2470-9239",
+    "year": 2026,
+    "publication_date": "2026-07-31",
+    "analysis_methods": [
+      "回帰分析",
+      "生存時間分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の全国レセプトデータベース（2008-2025年、DB名非公開）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.39,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-03T00:09:29.271Z",
+    "classified": true,
+    "title_ja": "累積電気けいれん療法（ECT）施行回数と焦点てんかん：日本の全国コホート研究",
+    "abstract_ja": "全国レセプトDB（2008-2025年）を用い、ECTを受けた3,733例で累積施行回数と新規焦点てんかん発症の関連を検討した後方視的コホート研究。96例（2.6%）が焦点てんかんを発症し、ロジスティック回帰で施行回数1回増加ごとにオッズが上昇した。50回以上で発症率5%超と、累積曝露との関連が示された。"
+  },
+  {
+    "id": "pmid-42525694",
+    "pubmed_id": "42525694",
+    "doi": "10.1371/journal.pone.0354959",
+    "title": "Real‑world analysis of Macular Oedema associated with Paclitaxel Formulations using the Japanese Adverse Drug Event Report database.",
+    "abstract": "This study explored the potential association between paclitaxel (PTX) and macular oedema (ME), a rare adverse event, through pharmacovigilance analysis using a large-scale spontaneous reporting database. Disproportionality analysis of ME associated with PTX formulations, including nanoparticle albumin-bound PTX (nab‑PTX) was conducted using the Japanese Adverse Drug Event Report database on data collected during April 2004-June 2025. Multivariable logistic regression analysis was used to estimate adjusted reporting odds ratios (RORs) for ME. A positive signal was defined as a lower 95% confidence interval (CI) for the ROR exceeding 1.0 with at least three ME cases. Among 585,738 reports, 123 involved ME. A significant signal was observed for overall PTX (adjusted ROR: 19.5; 95% CI: 13.5-28.3). By formulation, significant signals were identified for conventional PTX (adjusted ROR: 9.4; 95% CI: 5.5-16.1) and nab‑PTX (adjusted ROR: 47.0; 95% CI: 30.4-72.8). Multivariable logistic regression indicated significant signals for diabetes mellitus (adjusted ROR: 1.8; 95% CI: 1.2-2.9) and co-administration of prostaglandin analogue eye drops (adjusted ROR: 19.9; 95% CI: 8.6-45.7). PTX formulations were associated with an increased reporting signal of ME. Notably, patients with diabetes mellitus and those using prostaglandin analogue eye drops may require closer ophthalmologic monitoring during PTX therapy.",
+    "authors": [
+      "Takeda K",
+      "Hirai T",
+      "Sugioka A",
+      "Okamura R",
+      "Nishimura A",
+      "Shibata N"
+    ],
+    "journal": "PloS one",
+    "journal_issn": "1932-6203",
+    "year": 2026,
+    "publication_date": "2026-07-29",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）",
+      "回帰分析"
+    ],
+    "mesh_terms": [
+      "Female",
+      "Humans",
+      "Male",
+      "Middle Aged",
+      "Adverse Drug Reaction Reporting Systems",
+      "Antineoplastic Agents, Phytogenic",
+      "Databases, Factual",
+      "Japan",
+      "Macular Edema",
+      "Paclitaxel",
+      "Pharmacovigilance"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 3,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-03T00:09:29.139Z",
+    "classified": true,
+    "title_ja": "パクリタキセル製剤に関連する黄斑浮腫の実世界解析：日本の有害事象報告データベース（JADER）を用いて",
+    "abstract_ja": "JADER（2004-2025年、585,738報告）を用い、パクリタキセル（PTX）製剤と黄斑浮腫（ME）の関連を不均衡分析で検討したファーマコビジランス研究。PTX全体で有意なシグナル（調整ROR 19.5）が検出され、特にnab-PTXで強かった（ROR 47.0）。糖尿病やプロスタグランジン点眼併用がリスク因子として示された。"
+  },
+  {
+    "id": "pmid-42519783",
+    "pubmed_id": "42519783",
+    "doi": "10.3389/fmed.2026.1823079",
+    "title": "Assessing the risk of adverse drug events from combining aromatase inhibitors with CDK4/6 inhibitors using the FAERS and JADER databases.",
+    "abstract": "Reports of adverse drug events (ADEs) involving aromatase inhibitors (AIs) and cyclin-dependent kinase 4/6 (CDK4/6) inhibitors exist, but a comprehensive assessment of their combined safety in real-world practice has not been conducted. The U.S. Food and Drug Administration Adverse Event Reporting System (FAERS) and the Japanese Adverse Drug Event Report (JADER) database were used to collect data from the first quarter of 2015 to the third quarter of 2025. Disproportionality analysis was performed to identify ADEs associated with combination therapy. Multivariate logistic regression was used to explore factors associated with designated serious outcomes. A total of 28,495 reports related to combination therapy were included in FAERS. Disproportionality analysis identified 150 ADEs. The three most frequently reported ADEs were fatigue, neutropenia, and white blood cell count decreased. Signals not mentioned in drug labels were found, like skin hypopigmentation, vertigo positional, and plicated tongue. Combination therapy showed stronger reporting signals for some ADEs, including neutropenia, anaemia, and leukopenia. Among 1,186 reports in the JADER database, we identified 25 positive signals, including neutropenia, alanine aminotransferase increased, and aspartate aminotransferase increased. Multivariate logistic regression showed that body weight was associated with the occurrence of serious outcomes and hematological toxicity. This study not only identified key signals that align with earlier clinical trials but also detected several ADEs not listed in drug labeling. Concurrently, combination therapy was associated with stronger disproportionality signals for certain specific ADEs compared with monotherapy. The findings provided clinicians crucial insights and emphasized the importance of additional research centered on causality to verify the outcomes observed.",
+    "authors": [
+      "Fan Z",
+      "Sun P",
+      "Li L"
+    ],
+    "journal": "Frontiers in medicine",
+    "journal_issn": "2296-858X",
+    "year": 2026,
+    "publication_date": "2026-07-29",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）",
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS（米国FDA有害事象報告システム、2015-2025年）を併用"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.4,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-03T00:09:29.385Z",
+    "classified": true,
+    "title_ja": "アロマターゼ阻害薬とCDK4/6阻害薬併用による有害事象リスクの評価：FAERSとJADERを用いて",
+    "abstract_ja": "FAERSとJADER（2015-2025年）を用い、アロマターゼ阻害薬とCDK4/6阻害薬併用療法の有害事象を不均衡分析で評価した研究。FAERSで150、JADERで25の陽性シグナルを検出し、好中球減少・貧血・白血球減少などが併用でより強いシグナルを示した。添付文書に未記載の事象も検出された。"
+  },
+  {
+    "id": "pmid-42518715",
+    "pubmed_id": "42518715",
+    "doi": "10.1016/j.esmorw.2026.100729",
+    "title": "Real-world diagnostic pathways and treatment patterns for suspected lung cancer in Japan: a nationwide claims database analysis.",
+    "abstract": "Lung cancer (LC) poses significant diagnostic and therapeutic challenges, particularly regarding accurate and timely diagnosis. This study aimed to assess real-world diagnostic pathways and treatment patterns for suspected LC in Japan, identifying potential inefficiencies and areas for improvement. A nationwide retrospective analysis was conducted using claims data from ∼28% of Diagnosis Procedure Combination hospitals in Japan, encompassing patients with suspected LC between 2008 and 2023. Diagnostic methods, biopsy utilization, treatment modalities, and intervals from suspicion to diagnosis and treatment initiation were analyzed. Of the 757 397 patients studied (mean age 66.7 years; 56.0% male), 23.0% (n = 174 006) were confirmed to have LC. Diagnostic processes primarily relied on imaging, with biopsies carried out in only 21.2% of cases. Notably, 118 463 patients received LC diagnoses based solely on imaging findings without pathological confirmation, raising concerns about diagnostic accuracy. Surgical biopsies carried out before LC confirmation showed that 24% of benign conditions were identified. Bronchoscopy was frequently used, with increasing trends observed for advanced techniques like navigational bronchoscopy and cryobiopsy. Treatment initiation was relatively rapid, occurring a median of 14 days after suspicion and 9 days after confirmation. The primary treatments were surgery (35.4%), palliative care (28.1%), radiotherapy (19.6%), and drug therapy (16.8%). Significant gaps were identified in LC diagnosis in Japan, including overreliance on imaging without sufficient biopsy validation and unnecessary invasive procedures. Improving biopsy utilization and adopting advanced bronchoscopic methods, alongside reconsidering current screening practices, could enhance diagnostic accuracy, patient outcomes, and resource efficiency.",
+    "authors": [
+      "Matsumoto Y",
+      "Hong YE",
+      "Shim H",
+      "Shin M",
+      "Furuse H",
+      "Tsuchida T"
+    ],
+    "journal": "ESMO real world data and digital oncology",
+    "journal_issn": "2949-8201",
+    "year": 2026,
+    "publication_date": "2026-07-29",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 0.7,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-03T00:09:29.491Z",
+    "classified": true,
+    "title_ja": "日本における疑い肺癌の実世界診断経路と治療パターン：全国レセプトデータベース分析",
+    "abstract_ja": "全国のDPC病院約28%のレセプトデータ（2008-2023年）を用い、肺癌疑い757,397例の診断経路と治療パターンを解析した後方視的研究。23.0%が肺癌と確定したが生検施行は21.2%にとどまり、118,463例が画像所見のみで診断されていた。治療は手術35.4%、緩和ケア28.1%で、生検活用不足など診断上の課題が示された。"
+  },
+  {
+    "id": "pmid-42510455",
+    "pubmed_id": "42510455",
+    "doi": "10.3390/bioengineering13070789",
+    "title": "Post-Marketing Safety Profile of Mirikizumab: A Multi-Database Pharmacovigilance Study Using FAERS and JADER with IL-23 Inhibitor Class Comparison.",
+    "abstract": "Mirikizumab, a first-in-class interleukin-23p19 antagonist, was approved for ulcerative colitis (2023) and Crohn's disease (2025). The US Food and Drug Administration (FDA) identified a hepatotoxicity signal during pre-approval review, mandating post-marketing surveillance. No independent pharmacovigilance analysis has been published. To characterise the post-marketing safety profile of mirikizumab using multi-database pharmacovigilance, with a focus on hepatotoxicity and IL-23 inhibitor class comparison. Disproportionality analysis of the FDA Adverse Event Reporting System (FAERS; Q4 2023-Q4 2025) and Japanese Adverse Drug Event Report database (JADER) was performed using four algorithms (reporting odds ratio, proportional reporting ratio, Bayesian confidence propagation neural network, empirical Bayesian geometric mean). Signals of disproportionate reporting were defined by concordance of all four methods. Active comparator analysis against risankizumab, guselkumab and ustekinumab, Weibull time-to-onset modelling and hepatotoxicity case characterisation were conducted. Reporting followed READUS-PV guidelines. We identified 564 mirikizumab reports in FAERS and 123 in JADER. Nine signals met all four criteria in FAERS, including spontaneous abortion (Reporting odds ratio (ROR) 10.16, 95% CI 5.16-20.02), pulmonary embolism (ROR 5.56, 2.93-10.56) and injection site reactions. Hepatotoxicity showed no disproportionate reporting in either FAERS (ROR 1.19, 0.74-1.92; n = 17) or JADER (ROR 0.24, 0.05-1.19; n = 1). Comparator analysis identified cytomegalovirus infection and interstitial lung disease as mirikizumab-specific versus the IL-23 class. Weibull analysis (β = 0.65) indicated early-onset adverse event clustering. This first multi-database pharmacovigilance study of mirikizumab did not confirm the FDA-flagged hepatotoxicity signal. Potential signals warranting further investigation include thromboembolic events and pulmonary toxicity.",
+    "authors": [
+      "Choi JG",
+      "Gong EJ",
+      "Bang CS",
+      "Lee JJ"
+    ],
+    "journal": "Bioengineering (Basel, Switzerland)",
+    "journal_issn": "2306-5354",
+    "year": 2026,
+    "publication_date": "2026-07-29",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS（米国FDA有害事象報告システム、2023-2025年）を併用"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 4.78,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-03T00:09:29.715Z",
+    "classified": true,
+    "title_ja": "ミリキズマブの市販後安全性プロファイル：FAERSとJADERを用いたIL-23阻害薬クラス比較の多データベースファーマコビジランス研究",
+    "abstract_ja": "FAERS（2023-2025年）とJADERを用い、潰瘍性大腸炎治療薬ミリキズマブの市販後安全性を4つの不均衡分析手法で評価した研究。FAERSで564報告、JADERで123報告を同定。FDAが指摘した肝毒性シグナルは確認されず、自然流産・肺塞栓症などの血栓塞栓イベントや肺毒性が要注意シグナルとして示された。"
+  },
+  {
+    "id": "pmid-42509272",
+    "pubmed_id": "42509272",
+    "doi": "10.1038/s41598-026-61190-6",
+    "title": "Seasonality of acute kidney injury incidence in Japanese outpatients.",
+    "abstract": "Acute kidney injury (AKI) is a clinically important condition associated with adverse outcomes. While community-acquired AKI is common, its seasonal patterns remain poorly understood, particularly in outpatient settings. This study aimed to examine the seasonality and community-acquired AKI in Japan. Of 4,401,387 individuals with at least 1 month of data in the Japanese health insurance claims database between August 2016 and July 2018, 4,282,805 were included in the analysis as outpatients. The monthly incidence of community-acquired AKI was evaluated using the incidence rate ratio (IRR) calculated by generalized estimating equations. We constructed multivariable models adjusted for sex, age, comorbidities and medications. There were 20,634 new-onset community-acquired AKI cases. The frequency of new-onset community-acquired AKI gradually increased from June to July, with the highest adjusted IRR in July (1.19 [95% confidence intervals: 1.11-1.27]). Subgroup analyses showed that IRRs for community-acquired AKI were consistently higher in July than in February across all categories. Notably, a significant interaction was observed between seasonality and age (P = 0.029), with the highest IRR observed in the youngest age group (< 20 years). These results suggest the potential relevance of seasonal and environmental factors in AKI prevention in outpatient settings.",
+    "authors": [
+      "Sakazaki Y",
+      "Kondo Y",
+      "Okuma M",
+      "Seki A",
+      "Sakai T",
+      "Irie T",
+      "Ishitsuka Y"
+    ],
+    "journal": "Scientific reports",
+    "journal_issn": "2045-2322",
+    "year": 2026,
+    "publication_date": "2026-07-29",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Acute Kidney Injury",
+      "Female",
+      "Seasons",
+      "Japan",
+      "Male",
+      "Incidence",
+      "Middle Aged",
+      "Aged",
+      "Outpatients",
+      "Adult",
+      "Young Adult",
+      "Aged, 80 and over",
+      "Adolescent",
+      "East Asian People"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の健康保険レセプトデータベース（2016-2018年、DB名非公開）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 4.74,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-03T00:09:29.813Z",
+    "classified": true,
+    "title_ja": "日本の外来患者における急性腎障害発生率の季節性",
+    "abstract_ja": "日本の健康保険レセプトDB（2016-2018年、約428万人）を用い、市中発症急性腎障害（AKI）の季節性を検討した後方視的研究。一般化推定方程式で解析した結果、20,634例の新規AKIは6-7月に増加し7月に最も高かった（調整IRR 1.19）。特に20歳未満で顕著で、季節・環境要因の関与が示唆された。"
+  },
+  {
+    "id": "pmid-42508497",
+    "pubmed_id": "42508497",
+    "doi": "10.1016/j.diabres.2026.113462",
+    "title": "Trends of insulin pump therapy and continuous glucose monitoring use among people with type 1 diabetes by institution and region in Japan during 2014 and 2022: an observational study using nationwide claims data.",
+    "abstract": "To describe national trends in insulin pump and continuous glucose monitoring (CGM) use among individuals with type 1 diabetes in Japan and examine variation by facility and prefecture. We conducted serial cross-sectional analyses using Japan's National Database of Health Insurance Claims (FY2014-2022) and identified individuals with type 1 diabetes receiving regular care. Annual use of insulin pumps, sensor-augmented pumps (SAP), and CGM was quantified and stratified by facility caseload, Japan Diabetes Society certification, prefecture, and prefecture-level diffusion metrics. The study included 91,260 individuals in FY2014 and 119,104 in FY2022. Insulin pump use increased from 5.9% to 9.7%, SAP from 0.2% to 4.3%, and CGM from 0.2% to 39.8%. Uptake was higher in high-volume and certified facilities. Geographic variation persisted, and prefecture-level uptake was more closely associated with broader facility adoption than concentration of care. Trends around FY2020, particularly for CGM and SAP, should be interpreted cautiously because claims-based ascertainment changed following reimbursement revisions. In Japan, use of insulin pumps and CGM increased from 2014 to 2022, but pump uptake remained modest with persistent facility and prefecture variation. Broader adoption across care settings may be important for reducing variations in diabetes technologies use.",
+    "authors": [
+      "Yamaoka T",
+      "Sugiyama T",
+      "Kashiwagi K",
+      "Furuno T",
+      "Yamamoto K",
+      "Imai K",
+      "Ihana-Sugiyama N",
+      "Nishioka Y",
+      "Ohsugi M",
+      "Ueki K",
+      "Shimada A",
+      "Yamauchi T"
+    ],
+    "journal": "Diabetes research and clinical practice",
+    "journal_issn": "1872-8227",
+    "year": 2026,
+    "publication_date": "2026-07-27",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 2.43,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-03T00:09:29.913Z",
+    "classified": true,
+    "title_ja": "日本における1型糖尿病患者のインスリンポンプ療法と持続血糖モニタリング使用の施設・地域別動向（2014-2022年）",
+    "abstract_ja": "日本のNDB（2014-2022年度）を用い、1型糖尿病患者のインスリンポンプ・持続血糖モニタリング（CGM）使用を施設・都道府県別に解析した連続横断研究。CGM使用は0.2%から39.8%へ、ポンプは5.9%から9.7%へ増加した。高症例数・認定施設で使用率が高く、地域差が持続していた。"
+  },
+  {
+    "id": "pmid-42504690",
+    "pubmed_id": "42504690",
+    "doi": "10.1177/15459683261469074",
+    "title": "Safety of Early Rehabilitation Dose After Stroke on Composite Outcomes: Analysis of Nationwide Japanese Medical Claims Data.",
+    "abstract": "Early rehabilitation guidelines lack a consensus on the optimal early rehabilitation regimen; hence, the impact of rehabilitation timing and dose on stroke recovery outcomes remains unclear. Using Japanese medical claims data within a target trial emulation framework, this study evaluated the safety of early in-hospital rehabilitation after stroke. This study analyzed patients aged ≥ 18 years who were admitted to an acute hospital for acute stroke and received in-hospital rehabilitation within 2 days after admission, using the Japan Diagnosis Procedure Combination database (2018-2022). Rehabilitation exposures were defined as 6 predefined regimens (20-60 min/day initiated on days 1 or 2) and continued up to day 14. The outcome was the cumulative incidence of composite adverse events within 15 days after admission. A sequential, doubly robust estimator with a longitudinal modified treatment policy was applied, accounting for time-varying exposures and reducing potential time-related biases. Using a target trial emulation framework with doubly robust estimation, the incidence under the reference regimen was 11.2% (95% CI: 9.75%-12.60%). The highest incidence was 26.20% (95% CI: 24.30%-28.20%), corresponding to a risk ratio (RR) of 2.35 (95% CI: 2.03-2.72) compared with the reference. In contrast, several higher-intensity regimens were associated with lower incidences, with the lowest incidence of .49% (95% CI: .28%-.71%), yielding an RR of .04 (95% CI: .03-.07) versus the reference. However, intermediate-dose regimens showed variable associations across scenarios. In this emulated trial, higher early rehabilitation doses were generally associated with a lower incidence of in-hospital adverse events. Regimens involving 60 min/day, particularly when initiated on day 1, showed the lowest estimated risk. However, the associations were not strictly linear, as intermediate-dose regimens demonstrated variable results across analyses. These findings suggest a potential benefit of adequately dosed early rehabilitation when clinically appropriate, while highlighting the importance of careful patient selection and monitoring.",
+    "authors": [
+      "Tani T",
+      "Cooray U",
+      "Nishida D",
+      "Fushimi K",
+      "Ikeda T"
+    ],
+    "journal": "Neurorehabilitation and neural repair",
+    "journal_issn": "1552-6844",
+    "year": 2026,
+    "publication_date": "2026-07-27",
+    "analysis_methods": [
+      "ターゲットトライアルエミュレーション"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 3.44,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-03T00:09:30.716Z",
+    "classified": true,
+    "title_ja": "脳卒中後の早期リハビリテーション量の安全性：日本の全国医療レセプトデータの解析",
+    "abstract_ja": "日本のDPCデータベース（2018-2022年）を用い、急性期脳卒中患者の早期院内リハビリテーション量の安全性をターゲットトライアルエミュレーションで評価した研究。二重頑健推定により、より高用量（1日60分・入院1日目開始）の早期リハビリは複合有害事象の発生率が低い傾向を示したが、中等量では結果が一定しなかった。"
+  },
+  {
+    "id": "pmid-42504295",
+    "pubmed_id": "42504295",
+    "doi": "10.2147/NDT.S604157",
+    "title": "Real-World Antidepressant Treatment Persistence in Children and Adolescents with Major Depressive Disorder in Japan: A Retrospective Nationwide Claims-Based Study.",
+    "abstract": "Real-world evidence on major depressive disorder (MDD) management in children and adolescents is limited in Japan. This study aimed to evaluate the antidepressant treatment persistence rate in this population. This study evaluated the antidepressant treatment persistence in children and adolescents (aged 6-18 years) with MDD who had claims data from 6 months before to 1 year after the index date between 2012 and 2017 using a large-scale Japanese claims database. Treatment persistence was defined as the absence of a prescription gap beyond 30 days. Factors associated with it were examined using a Cox proportional hazards model (JMP ver.18). In total, 1,582 patients on the index date were included. The treatment persistence rate for any antidepressant was 62.6% on the 30th postindex day, 46.1% on the 60th postindex day, 22.3% on the 180th postindex day, and 10.2% on the 365th postindex day. The most frequently prescribed initial antidepressant was sulpiride (30.0%). By drug class, selective serotonin reuptake inhibitors (SSRIs) were the most frequently prescribed (39.9%), followed by tricyclic or tetracyclic antidepressants (TCAs) (18.3%) and serotonin and norepinephrine reuptake inhibitors (SNRIs) (6.3%). The significant factors associated with treatment discontinuation with any antidepressant were treatment initiation with sulpiride, noradrenergic and specific serotonergic antidepressants, serotonin antagonist and reuptake inhibitors, or TCAs, as well as consultations with nonmental health specialists. Antidepressant treatment persistence rates in children and adolescents with MDD were low. However, the rate varied depending on the first prescribed antidepressant and mental health specialist involvement. Relatively high persistence was observed among those prescribed SSRIs or SNRIs as their initial antidepressant treatment and those who received clinical interventions provided by mental health specialists. Given the claims data and no clinical severity measures, these findings should be interpreted with caution.",
+    "authors": [
+      "Nomoto K",
+      "Inagaki A",
+      "Yamauchi K"
+    ],
+    "journal": "Neuropsychiatric disease and treatment",
+    "journal_issn": "1176-6328",
+    "year": 2026,
+    "publication_date": "2026-07-27",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の大規模レセプトデータベース（2012-2017年、DB名非公開）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.86,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-03T00:09:30.822Z",
+    "classified": true,
+    "title_ja": "日本の大うつ病性障害の小児・青年における実世界の抗うつ薬治療継続性：全国レセプトベースの後方視的研究",
+    "abstract_ja": "日本の大規模レセプトDB（2012-2017年）を用い、6-18歳の大うつ病性障害（MDD）1,582例の抗うつ薬治療継続性を検討した後方視的研究。Cox比例ハザードモデルで解析した結果、継続率は30日62.6%、180日22.3%、365日10.2%と低かった。SSRI/SNRIの初回処方や精神科専門医の関与がある患者で継続率が比較的高かった。"
+  },
+  {
+    "id": "pmid-42504061",
+    "pubmed_id": "42504061",
+    "doi": "10.1111/1346-8138.70406",
+    "title": "Treatment Patterns and Pathways of Systemic Drug Therapy in Patients With Plaque, Erythrodermic, and Generalized Pustular Psoriasis: A Retrospective Cohort Study in Japan.",
+    "abstract": "Systemic psoriasis treatment options have rapidly expanded in Japan, including the approval of tyrosine kinase 2 and interleukin-36 receptor inhibitors in 2022. However, contemporary real-world treatment patterns across plaque, erythrodermic, and generalized pustular psoriasis remain incompletely characterized. Using a Japanese hospital-based insurance claims database (Medical Data Vision Co. Ltd.), we conducted a retrospective cohort study for patients with these psoriasis subtypes who initiated systemic drug therapy between 2020-2023 and had a ≥ 12-month observation period. Overall, 3965 patients with plaque psoriasis, 80 with erythrodermic psoriasis, and 128 with generalized pustular psoriasis were included (median age, 62-66 years). Most patients initiated systemic therapy with a single drug. A phosphodiesterase 4 inhibitor was the most frequently prescribed index treatment for plaque psoriasis (48.8%), whereas a vitamin A derivative was most commonly prescribed for erythrodermic and generalized pustular psoriasis (42.5% and 42.2%, respectively), suggesting a distinctive Japan-specific prescription pattern. The median proportion of days covered for index treatment was nearly 100% across all subtypes. Among the index treatments, biologics generally showed longer time to discontinuation than oral medications. Elderly patients were more likely to receive a phosphodiesterase 4 inhibitor or a vitamin A derivative as index treatment than younger patients, and biologics were more commonly selected for patients with psoriatic arthritis than for those without. Early uptake of tyrosine kinase 2 inhibitor was observed in 2023. Over a median observation period of approximately 30 months, > 85% of patients received three or fewer lines of systemic drug therapy and approximately 50% remained on at least one systemic drug therapy throughout the study period. This first comprehensive Japanese claims database analysis of multiple psoriasis subtypes provides an updated real-world treatment landscape in Japan and helps address an important evidence gap arising from rapidly evolving systemic treatment options and limited contemporary real-world data.",
+    "authors": [
+      "Tada Y",
+      "Maeda Y",
+      "Hasegawa M",
+      "Sakaguchi M",
+      "Hashimoto T",
+      "Narusawa T",
+      "Takabayashi N",
+      "Takahashi T",
+      "Kondo T",
+      "Kuroda S"
+    ],
+    "journal": "The Journal of dermatology",
+    "journal_issn": "1346-8138",
+    "year": 2026,
+    "publication_date": "2026-07-27",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.35,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-03T00:09:30.936Z",
+    "classified": true,
+    "title_ja": "尋常性乾癬・紅皮症性乾癬・汎発性膿疱性乾癬患者における全身薬物療法の治療パターンと経路：日本の後方視的コホート研究",
+    "abstract_ja": "日本の病院ベースレセプトDB（Medical Data Vision）を用い、2020-2023年に全身療法を開始した乾癬患者（尋常性3,965例、紅皮症80例、膿疱性128例）の治療パターンを解析した後方視的コホート研究。尋常性乾癬ではPDE4阻害薬（48.8%）、紅皮症・膿疱性ではビタミンA誘導体が最多で、日本特有の処方パターンが示された。2023年にはTYK2阻害薬の早期導入も認められた。"
+  },
+  {
     "id": "pmid-42498922",
     "pubmed_id": "42498922",
     "doi": "10.1007/s43390-026-01515-7",
