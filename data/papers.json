@@ -1,5 +1,586 @@
 [
   {
+    "id": "pmid-42565440",
+    "pubmed_id": "42565440",
+    "doi": "10.1111/cas.70499",
+    "title": "Five-Year Trends in Biomarker Testing and Targeted Therapy for NSCLC: A Patient-Initiated Nationwide Survey in Japan.",
+    "abstract": "Although multigene testing for advanced non-small cell lung cancer (NSCLC) is reimbursed in Japan, optimizing its real-world clinical impact remains challenging. This study updates nationwide testing trends and evaluates the treatment gap between diagnostic results and first-line therapeutic interventions. We conducted a retrospective cohort study using the Diagnosis Procedure Combination database (April 2019 to May 2024). The analysis included 24,047 patients with Stage IV NSCLC across 300 hospitals who underwent diagnostic lung biopsies. Comprehensive multigene testing shifted significantly; testing for ≥ 5 genes rose sharply from late 2021, followed by a marked increase in 6-7 gene testing from mid-2023. Testing for rare drivers (MET, RET, KRAS, HER2) increased substantially. However, approximately 30% of patients remained untested regardless of region or age. While the proportion of patients receiving first-line targeted therapy plateaued at just under 30%, the use of targeted therapies for rare drivers showed a steady increase. In conclusion, multigene testing has rapidly replaced single-gene testing in Japan, narrowing the diagnostic gap for rare oncogenic drivers. Nevertheless, the persistent 30% untested rate emphasizes the need for better shared decision-making to ensure all patients receive comprehensive biomarker evaluation.",
+    "authors": [
+      "Ikeda S",
+      "Hasegawa K",
+      "Takahama T",
+      "Kachi K",
+      "Yanagisawa A",
+      "Kawakami S",
+      "Yoshida M",
+      "Sakai M",
+      "Watanabe S",
+      "Nakagawa K"
+    ],
+    "journal": "Cancer science",
+    "journal_issn": "1349-7006",
+    "year": 2026,
+    "publication_date": "2026-08-09",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 4.06,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-10T00:06:57.444Z",
+    "classified": true,
+    "title_ja": "非小細胞肺癌におけるバイオマーカー検査と分子標的治療の5年間の動向：日本の患者主導型全国調査",
+    "abstract_ja": "DPCデータベース（2019-2024年）を用い、StageIV非小細胞肺癌24,047例（300施設）で複数遺伝子検査と分子標的治療の5年間の動向を検討した後方視的コホート研究。5遺伝子以上の検査は2021年後半から急増し、稀なドライバー遺伝子の検査・治療も増加したが、約30%が未検査のまま残り、一次治療での分子標的薬使用は30%弱で頭打ちだった。"
+  },
+  {
+    "id": "pmid-42567798",
+    "pubmed_id": "42567798",
+    "doi": "10.1016/j.jos.2026.07.012",
+    "title": "Real-world osteoporosis management before and after sustaining fragility fractures in Japanese older adults aged ≥ 75 years: Japanese bone-fracture osteoporosis in late-stage population database (J-BOLD) study.",
+    "abstract": "As the population ages, the incidence of fragility fractures increases; however, large-scale data on real-world osteoporosis management in late-stage older adults (aged ≥75 years)-a group at extremely high risk of fractures-are limited in Japan. In this study, we aimed to clarify the status of osteoporosis management in this high-risk population, using a large-scale administrative claims database. This retrospective cohort study used data from the DeSC database. We identified 405,416 patients aged ≥75 years with an initial fragility fracture at a major osteoporotic site (the hip, vertebrae, humerus, radius, pelvis, ribs, etc.) between 2014 and 2022. We assessed osteoporosis medication prescription and diagnostic testing (bone mineral density and bone turnover markers) rates in the pre-fracture (day -180 to -1), early post-fracture (day 0-90), and late post-fracture (day 91-365) periods. The mean age of the cohort was 84.3 years, and 73.0% were women. The medication prescription rate was 25.0% in the pre-fracture period, increasing only slightly to 27.5% during the early post-fracture period and 28.5% during the late post-fracture period, leaving over 70% without a prescription. Annual data from 2016 to 2021 showed that post-fracture prescription rates remained consistently low, with little change over time. A marked disparity in prescription rates by fracture site was observed, with late post-fracture prescription rates of 36.7% for vertebral fractures and 20.4% for hip fractures. Even when stratified by age group, prescription rates remained consistently low among patients with hip fractures. This large-scale, real-world study showed that many patients aged ≥75 years remained untreated after an initial fragility fracture. Prescription rates were particularly low among patients with hip fractures, despite their expected high risk of subsequent fractures. These findings highlight the need for strategies to improve diagnosis and treatment in this vulnerable population.",
+    "authors": [
+      "Mizuno N",
+      "Hamasaki T",
+      "Kawaguchi S",
+      "Nakamae T",
+      "Ueki S",
+      "Tsukamoto M",
+      "Fujiwara S",
+      "Adachi N",
+      "Okimoto N"
+    ],
+    "journal": "Journal of orthopaedic science : official journal of the Japanese Orthopaedic Association",
+    "journal_issn": "1436-2023",
+    "year": 2026,
+    "publication_date": "2026-08-07",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DeSC Healthcare"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.05,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-10T00:06:57.109Z",
+    "classified": true,
+    "title_ja": "脆弱性骨折前後の骨粗鬆症治療の実態：75歳以上の日本人高齢者を対象としたJ-BOLD研究",
+    "abstract_ja": "DeSCデータベースを用い、75歳以上で初回脆弱性骨折を来した405,416例の骨粗鬆症治療の実態を検討した後方視的コホート研究。骨粗鬆症薬の処方率は骨折前25.0%、骨折後早期27.5%、後期28.5%と低いままで、7割超が未処方であった。処方率は骨折部位で差があり（椎体36.7%、大腿骨近位部20.4%）、年次推移でも改善は乏しかった。"
+  },
+  {
+    "id": "pmid-42551714",
+    "pubmed_id": "42551714",
+    "doi": "10.1016/j.rmed.2026.109073",
+    "title": "Validation of claims-based algorithms for identifying selected interstitial lung disease (idiopathic interstitial pneumonias and drug-induced interstitial lung disease).",
+    "abstract": "Interstitial lung disease (ILD) is a heterogeneous group of more than 200 diseases that cause fibrosis or inflammation of the pulmonary parenchyma. ILD is a leading cause of death, yet data on its precise incidence and prevalence are limited due to the complexity of diagnostic criteria. To address this gap, we developed and validated claims-based algorithms to identify selected ILD (restricted to idiopathic interstitial pneumonias and drug-induced ILD) in Japan. We identified potential ILD cases from 2010 to 2020 from electronic medical record databases at two large healthcare institutions using a primary claims-based algorithm for high positive predictive value (PPV) and a relaxed algorithm for improved sensitivity. We calculated sensitivity and assessed the validity of the algorithms by comparing them to two gold standard definitions: (1) physician's diagnosis on the medical record, and (2) adjudication by a team of ILD experts based on abstracted medical record data including chest computed tomography images. Among 7638 potential ILD cases, we sampled 460 patients. The estimated PPV was 87.0% (95% CI 83.2-90.8%) for the primary algorithm and 71.4% (64.0-78.7%) for the relaxed algorithm, based on confirmed ILD responses in the expert adjudication as the gold standard. Estimated sensitivity was 30.4% (27.4-33.8%) and 59.4% (54.1-65.1%) for the primary and relaxed algorithms respectively. The algorithms developed in this study may be useful for identifying selected ILD from administrative data in post-marketing database studies and other clinical and epidemiologic research. The appropriate algorithm may be selected based on the specific research objective.",
+    "authors": [
+      "Kataoka K",
+      "Setoguchi S",
+      "Nakashima N",
+      "Chen H",
+      "Rua M",
+      "Okui T",
+      "Hamada N",
+      "Yamauchi H",
+      "Watanabe S",
+      "Kato M",
+      "Arai T",
+      "Ogura T",
+      "Inoue Y",
+      "Kondoh Y",
+      "Nakazuru Y",
+      "Hiro S",
+      "Matsui M",
+      "Kishaba T"
+    ],
+    "journal": "Respiratory medicine",
+    "journal_issn": "1532-3064",
+    "year": 2026,
+    "publication_date": "2026-08-07",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "2施設の大規模医療機関の電子カルテ（EMR）データベース"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "方法論・バリデーション"
+    ],
+    "impact_factor": 2.13,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-10T00:06:57.217Z",
+    "classified": true,
+    "title_ja": "間質性肺疾患（特発性間質性肺炎・薬剤性間質性肺疾患）を同定するレセプトベースアルゴリズムの妥当性検証",
+    "abstract_ja": "2施設の電子カルテデータベース（2010-2020年）を用い、特発性間質性肺炎・薬剤性間質性肺疾患を同定するレセプトベースアルゴリズムを検証した研究。専門家判定をゴールドスタンダードとすると、高PPV重視のアルゴリズムはPPV87.0%・感度30.4%、感度重視版はPPV71.4%・感度59.4%であった。市販後DB研究での間質性肺疾患同定に有用と考えられる。"
+  },
+  {
+    "id": "pmid-42565893",
+    "pubmed_id": "42565893",
+    "doi": "10.1007/s10096-026-05622-1",
+    "title": "Comparison of oral third- versus first-/ second-generation cephalosporins for acute uncomplicated cystitis: a nationwide retrospective cohort study.",
+    "abstract": "Oral cephalosporins are frequently prescribed for uncomplicated cystitis. Although cephalexin and cefaclor (first- and second-generation oral cephalosporins) exhibit favorable pharmacokinetic properties, third-generation agents demonstrate lower and more variable bioavailability, potentially resulting in reduced clinical effectiveness. This study compared oral third-generation cephalosporins with cephalexin and cefaclor in treating uncomplicated cystitis. We conducted a retrospective cohort study using a nationwide claims database in Japan (2006-2022). We included adult women aged ≥ 18 years who newly received oral third-generation (cefdinir, cefpodoxime proxetil, cefditoren pivoxil, or cefcapene pivoxil) or first-/second-generation cephalosporins (cephalexin or cefaclor) for acute uncomplicated cystitis, with a prescription duration of 5-7 days. The primary outcome was a composite of pyelonephritis diagnosis or additional antibiotic use within 7 days. Secondary outcomes included the individual primary outcome components, all-cause hospitalization, and adverse events. We conducted propensity-score overlap weighting to adjust for possible confounders and stratified analyses by age (< 50 or ≥ 50 years). Among 40,003 eligible patients, 90.7% received third-generation cephalosporins. The proportion of the primary outcome was significantly higher in the third-generation group than in the first-/second-generation group (8.4% vs. 6.5%; risk difference, 1.9%; 95% confidence interval, 1.0%-2.7%). Among the secondary outcomes, additional antibiotic treatment was more frequent in the third-generation group, whereas the proportions of pyelonephritis diagnosis and other outcomes were similar between the groups. Subgroup analyses showed consistent results across age strata. Oral third-generation cephalosporins may be associated with more frequent additional antibiotic treatment compared with cephalexin or cefaclor in the management of uncomplicated cystitis.",
+    "authors": [
+      "Taniguchi J",
+      "Aso S",
+      "Yasunaga H"
+    ],
+    "journal": "European journal of clinical microbiology & infectious diseases : official publication of the European Society of Clinical Microbiology",
+    "journal_issn": "1435-4373",
+    "year": 2026,
+    "publication_date": "2026-08-07",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の全国規模レセプトデータベース（2006-2022年、名称非公開）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 3.04,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-10T00:06:57.323Z",
+    "classified": true,
+    "title_ja": "急性単純性膀胱炎に対する経口第三世代 vs 第一・二世代セファロスポリンの比較：全国規模の後方視的コホート研究",
+    "abstract_ja": "日本の全国レセプトDB（2006-2022年）を用い、急性単純性膀胱炎の成人女性40,003例で経口第三世代と第一・二世代セファロスポリンを比較した後方視的コホート研究。傾向スコアオーバーラップ重み付けで調整した結果、腎盂腎炎または追加抗菌薬使用の複合アウトカムは第三世代群で有意に高く（8.4% vs 6.5%、リスク差1.9%）、第三世代の有効性がやや劣る可能性を示した。"
+  },
+  {
+    "id": "pmid-42564023",
+    "pubmed_id": "42564023",
+    "doi": "10.3389/fmed.2026.1832550",
+    "title": "Potential heterogeneity of epcoritamab associated adverse events in demographics and dosing regimens.",
+    "abstract": "Epcoritamab shows potentially curable efficacy in relapsed or refractory B-cell non-Hodgkin's lymphoma, but potential heterogeneity in its adverse events (AEs) across demographics and dosing regimens remain unexplored. This study comprehensively analyzed potential heterogeneity of epcoritamab associated AEs using the data from the FDA Adverse Event Reporting System (FAERS) database and supplemented it with data from the Japanese Adverse Drug Event Report (JADER) database. Based on the clinical characteristics of the epcoritamab-associated AE reports, the potential heterogeneity of AEs across demographic and dosing regimen subgroups was investigated via reporting odds ratio algorithm and Fisher's exact test with Bonferroni correction. Subsequently, sensitivity analysis was performed to validate the potential variations. Patients receiving 0.16 mg dose reported significantly higher frequency of cytokine release syndrome (CRS), especially within the first four treatment weeks. Immune effector cell-associated neurotoxicity syndrome (ICANS) was reported with a significantly higher frequency among patients over the age of 65 compared to those aged 18-65. This study revealed the potential heterogeneity of epcoritamab associated AEs in demographics and dosing regimens. Enhanced CRS monitoring should be prioritized during the initial administration of epcoritamab treatment. Monitoring ICANS may be of particular importance in older patients. Further research is warranted to elucidate the case causality of these associations.",
+    "authors": [
+      "Yu Z",
+      "Jiang C",
+      "Zhou W",
+      "Jin J",
+      "Chen Z"
+    ],
+    "journal": "Frontiers in medicine",
+    "journal_issn": "2296-858X",
+    "year": 2026,
+    "publication_date": "2026-08-07",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS（米国FDA有害事象報告システム）を主に用い、JADERで補完"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.42,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-10T00:06:57.545Z",
+    "classified": true,
+    "title_ja": "エプコリタマブ関連有害事象の人口統計学的特性・投与レジメンによる異質性の検討",
+    "abstract_ja": "FAERSを主に用い日本のJADERで補完し、再発・難治性B細胞リンパ腫治療薬エプコリタマブの有害事象の異質性を報告オッズ比で解析した研究。0.16mg投与例では投与初期のサイトカイン放出症候群（CRS）の頻度が有意に高く、免疫エフェクター細胞関連神経毒性症候群（ICANS）は65歳超で高頻度であった。初回投与時のCRS監視と高齢者でのICANS監視の重要性を示した。"
+  },
+  {
+    "id": "pmid-42559200",
+    "pubmed_id": "42559200",
+    "doi": "10.36469/001c.162558",
+    "title": "Adult T-cell Leukemia/Lymphoma in Japan: Real-World Treatment Patterns, Healthcare Resource Utilization, and Costs.",
+    "abstract": "Adult T-cell leukemia/lymphoma (ATL) is a rare and aggressive type of peripheral T-cell malignancy caused by the human T-lymphotropic virus type 1 (HTLV-1). Approximately 5 to 10 million people are infected with HTLV-1 worldwide, with high prevalence in Japan. This observational study analyzed patient characteristics, treatment patterns, healthcare resource utilization (HRU), and costs of ATL in Japan. A retrospective analysis of ATL patients from the Medical Data Vision database, Sept. 1, 2012-Aug. 31, 2022, was conducted. Among 1572 ATL patients, 384 received systemic therapy. The mean age at diagnosis was 66.4 years, with 63.7% being ≥65 years; 55.2% patients were females. Excluding cancer, 61% of patients had a Charlson Comorbidity Index score of 0. The most frequently observed comorbidities were congestive heart failure (15.8%), diabetes (14.8%), and peptic ulcer disease (14.6%). Among the treated patients, 37.5% received 1 line of therapy, 26% received 2 lines of therapy, and 36.5% received ≥3 lines. Mogamulizumab was most frequently utilized (60.4%), as monotherapy or in combination regimens. The most common combination regimen in all lines of therapy were cyclophosphamide, doxorubicin, vincristine, and prednisone (CHOP), utilized in 46.6% of patients. Additionally, use of combinations such as VCAP-AMP-VECP, which include vincristine, cyclophosphamide, doxorubicin, and prednisone; adriamycin, manimustine, and prednisone; and vindesine, etoposide, carboplatin, and prednisone, was observed in 33.3% of patients. Initial treatment was discontinued in 74.7% patients; only 3.4% received stem cell transplants. Most (96%) patients were hospitalized, 29.7% had emergency room visits, and 79.4% averaged 1.8 outpatient visits monthly. The mean all-cause healthcare cost per patient per month was $29 538 (¥4 647 300), mainly due to outpatient visits and hospitalizations. Although real-world studies based on MDV database have certain limitations, the findings of this study provide deeper understanding of the real-world patient characteristics, treatment patterns, HRU, and costs of ATL patients in Japan. The results indicate that patients often encounter high treatment costs and frequent hospitalizations, demonstrating the necessity for advanced regimens and highlighting the unmet need for more effective therapies in ATL patients that may reduce HRU and economic burden in this patient population.",
+    "authors": [
+      "Dharmani C",
+      "Islam Z",
+      "Qu P",
+      "Jiang Z",
+      "Wang J",
+      "Li L",
+      "Tao Y",
+      "Song L"
+    ],
+    "journal": "Journal of health economics and outcomes research",
+    "journal_issn": "2327-2236",
+    "year": 2026,
+    "publication_date": "2026-08-06",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 0.95,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-10T00:06:57.657Z",
+    "classified": true,
+    "title_ja": "日本の成人T細胞白血病・リンパ腫：実臨床の治療パターン・医療資源利用・コスト",
+    "abstract_ja": "Medical Data Vision（MDV）データベース（2012-2022年）を用い、成人T細胞白血病・リンパ腫（ATL）1,572例の治療パターン・医療資源利用・コストを検討した後方視的研究。全身療法を受けた384例のうちモガムリズマブ使用が最多（60.4%）、CHOP併用が46.6%で、初回治療は74.7%で中止されるなど、実臨床での治療の複雑さと負担を示した。"
+  },
+  {
+    "id": "pmid-42554605",
+    "pubmed_id": "42554605",
+    "doi": "10.1097/CCM.0000000000007315",
+    "title": "Association Between In-Hospital Mortality and ICU Patient Volume at the Facility-Level Stratified by Severity.",
+    "abstract": "Large-volume hospitals for critically ill patients are generally associated with improved outcomes. However, the effect of ICU volume together with patient severity remains insufficiently evaluated. Therefore, the present study aimed to determine the impact of ICU patient volume stratified by Sequential Organ Failure Assessment (SOFA) scores (0-24) on mortality and clarify the possible effect of volume within a specific severity range. Retrospective observational study using a nationwide Japanese database. Japanese Diagnosis Procedure Combination inpatient database. A total of 568,340 adult patients were admitted to the ICU in 430 hospitals between October 1, 2020, and March 31, 2023. None. The primary outcome was in-hospital mortality. We calculated the facility-level annual patient volume above a SOFA score threshold of X (range: 0-24) and examined its association with mortality using multilevel mixed-effects logistic regression models. Although total ICU volume was not significantly associated with mortality (adjusted odds ratio [OR] per 10-patient increase: 0.999; 95% CI, 0.999-1.000; p = 0.147), the volume of ICU patients above a SOFA score threshold of 5 was significantly associated with decreased in-hospital mortality (OR, 0.997; 95% CI, 0.995-0.998; p < 0.001). Overall, the adjusted ORs progressively decreased as the SOFA score threshold increased, indicating an enhanced inverse association at increased severity levels. Increased volumes of patients with severe illnesses were associated with decreased in-hospital mortality rates; this inverse volume-outcome relationship became more pronounced as the severity threshold increased.",
+    "authors": [
+      "Sato T",
+      "Sasabuchi Y",
+      "Miyamoto Y",
+      "Inokuchi R",
+      "Kimura Y",
+      "Yasunaga H",
+      "Doi K"
+    ],
+    "journal": "Critical care medicine",
+    "journal_issn": "1530-0293",
+    "year": 2026,
+    "publication_date": "2026-08-05",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 1.14,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-10T00:06:57.749Z",
+    "classified": true,
+    "title_ja": "重症度で層別化した施設ICU患者数と院内死亡率の関連",
+    "abstract_ja": "DPCデータベースを用い、430施設でICUに入室した成人568,340例を対象に、SOFAスコアで層別化した施設ICU患者数と院内死亡率の関連をマルチレベルロジスティック回帰で解析した後方視的研究。総ICU患者数は死亡率と有意な関連を示さなかったが、SOFAスコア5超の重症患者数が多い施設ほど院内死亡率が低く、重症度が高いほど逆相関が強まった。"
+  },
+  {
+    "id": "pmid-42551278",
+    "pubmed_id": "42551278",
+    "doi": "10.1016/j.surg.2026.110441",
+    "title": "Sex differences in operative opportunities with early adoption of robot-assisted surgery.",
+    "abstract": "Early adoption of new surgical technologies represents a critical period for acquiring operative experience that may influence surgeons' careers. However, whether access to operative opportunities during the introduction of robot-assisted surgery differs according to the surgeon's sex remains unclear. This retrospective observational study used data from the National Clinical Database, a multicenter database covering more than 95% of all surgeries in Japan. Male and female gastroenterological surgeons who performed distal gastrectomy or low anterior resection between January 1, 2023 and December 31, 2024 were included. The primary outcome was the number of operations performed per surgeon, stratified by sex and years since medical registration. A total of 47,934 distal gastrectomies and 38,230 low anterior resections were included in the analysis. For both procedures, the proportion of operations performed by female surgeons was lowest for robot-assisted surgery. For distal gastrectomy, the proportions were 4.32%, 9.47%, and 11.86% and for low anterior resection, 5.41%, 8.41%, and 8.57% (robot-assisted, laparoscopic, and open, respectively). For robot-assisted procedures, the number of operations performed per surgeon increased with years since medical registration among male surgeons, whereas no comparable increase was observed among female surgeons. Sex differences became apparent at approximately 10 years after medical registration. Substantial sex-based disparities in operative opportunities were observed during the early adoption phase of robot-assisted surgery. These disparities were most pronounced for robot-assisted procedures compared with laparoscopic and open surgery. Inequities in access to newly introduced surgical technologies may contribute to persistent sex disparities in surgical careers.",
+    "authors": [
+      "Kono E",
+      "Yamamoto H",
+      "Nomura S",
+      "Tanaka C",
+      "Ueno H",
+      "Kakeji Y",
+      "Shirabe K"
+    ],
+    "journal": "Surgery",
+    "journal_issn": "1532-7361",
+    "year": 2026,
+    "publication_date": "2026-08-04",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 2.12,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-10T00:06:57.845Z",
+    "classified": true,
+    "title_ja": "ロボット支援手術の導入初期における手術機会の性差",
+    "abstract_ja": "National Clinical Database（NCD）を用い、2023-2024年に幽門側胃切除または低位前方切除を実施した消化器外科医を対象に、手術機会の性差を検討した後方視的研究。ロボット支援手術では女性外科医の割合が最も低く（幽門側胃切除4.32%等）、男性医師は医師登録後年数とともに手術数が増えたが女性では増えず、導入初期に大きな性差が存在した。"
+  },
+  {
+    "id": "pmid-42548843",
+    "pubmed_id": "42548843",
+    "doi": "10.1002/rmb2.70084",
+    "title": "Age-Specific Gonadotoxic Alkylating-Agent Exposure in Pediatric and Reproductive-Age Females: A Claims-Based Study Using Cyclophosphamide Equivalent Dose.",
+    "abstract": "To describe age-specific patterns of gonadotoxic alkylating-agent exposure and evaluate how the cyclophosphamide equivalent dose (CED) framework captures real-world exposure relevant to fertility preservation in females aged 0-43 years. This descriptive study used a Japanese claims database. Patients were classified as pediatric (< 15 years) or reproductive-age (15-43 years). Twelve alkylating agents were evaluated, and six CED-calculable agents were converted to CED. Among approximately 3.86 million females, 0.04% of the pediatric cohort and 0.16% of the reproductive-age cohort were exposed to at least one alkylating agent. Total CED identified at least intermediate-risk exposure in 33% of exposed pediatric and 14% of exposed reproductive-age patients. Compared with single-agent assessment, summed total CED identified additional patients mainly in the pediatric group, corresponding to relative increases of 20.2% and 0.3%, respectively. Agents not included in the current CED formula accounted for 8.7% of all alkylating-agent prescription records, approximately 90% of which were observed in reproductive-age patients. CED captured alkylating-agent exposure differently by age group: summed CED added exposure information mainly in pediatric patients, whereas agents lacking conversion coefficients limited exposure capture in reproductive-age females. These findings support refinement of CED-based assessment while emphasizing exposure capture, not outcome prediction.",
+    "authors": [
+      "Taniguchi K",
+      "Ohashi M",
+      "Tanaka Y",
+      "Hanada T",
+      "Takebayashi A",
+      "Takahashi A",
+      "Amano T",
+      "Tsuji S"
+    ],
+    "journal": "Reproductive medicine and biology",
+    "journal_issn": "1445-5781",
+    "year": 2026,
+    "publication_date": "2026-08-04",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本のレセプトデータベース（名称非公開）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 3.74,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-10T00:06:57.961Z",
+    "classified": true,
+    "title_ja": "小児・生殖年齢女性における年齢別の性腺毒性アルキル化薬曝露：シクロホスファミド等価用量を用いたレセプトベース研究",
+    "abstract_ja": "日本のレセプトデータベースを用い、0-43歳の女性約386万人を対象に、年齢別の性腺毒性アルキル化薬曝露をシクロホスファミド等価用量（CED）で評価した記述的研究。曝露は小児0.04%・生殖年齢0.16%で、合計CEDは主に小児で追加的な中等度以上リスク曝露を捉えた一方、換算係数のない薬剤が生殖年齢女性での曝露把握を制限した。"
+  },
+  {
+    "id": "pmid-42544525",
+    "pubmed_id": "42544525",
+    "doi": "10.5414/CP204978",
+    "title": "Drug-induced dysphagia: Analysis of age and time of onset profiles using a Japanese pharmacovigilance database.",
+    "abstract": "To investigate differences in drug-induced dysphagia profiles among causative drugs, with a focus on reporting risk, patient age, and time to onset. Drug-induced dysphagia is one of several causes of dysphagia. However, its detailed profile, including differences among drugs and age groups, has not yet been thoroughly examined. Data were obtained from the Japanese Adverse Drug Event Report Database. Reports submitted between April 2004 and October 2021 were analyzed. The 10 drugs with the highest number of reports of drug-induced dysphagia were selected as the target drugs. Reporting odds ratios were calculated to evaluate the association between each drug and dysphagia. The primary endpoint was the reporting odds ratio, while age distribution and time to onset were secondary outcomes. A total of 756,965 reports were analyzed. All target drugs were associated with drug-induced dysphagia. Cevimeline was identified as a novel finding because dysphagia was not observed during clinical trials. For most drugs, dysphagia occurred within approximately 25 days of administration. In contrast, paroxetine and milnacipran were associated with dysphagia even after long-term use. The age distribution of reported cases differed by drug, suggesting drug-specific differences in susceptible age groups. Drug-induced dysphagia profiles differ among drugs, particularly in terms of timing of onset and patient age distribution. Therefore, clinicians should consider both the causative drug and the patient's age when monitoring for dysphagia.",
+    "authors": [
+      "Kose E",
+      "Kawashima M",
+      "Kimura T"
+    ],
+    "journal": "International journal of clinical pharmacology and therapeutics",
+    "journal_issn": "0946-1965",
+    "year": 2026,
+    "publication_date": "2026-08-04",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 0.82,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-10T00:06:58.167Z",
+    "classified": true,
+    "title_ja": "薬剤性嚥下障害：日本の医薬品副作用データベースを用いた年齢・発現時期プロファイルの解析",
+    "abstract_ja": "JADER（2004-2021年、756,965報告）を用い、薬剤性嚥下障害の報告リスク・年齢・発現時期を報告オッズ比で解析した研究。報告数上位10薬剤すべてが嚥下障害と関連し、多くは投与約25日以内に発現したが、パロキセチンとミルナシプランは長期投与後にも発現した。セビメリンは臨床試験で認められなかった新規所見であった。"
+  },
+  {
+    "id": "pmid-42544738",
+    "pubmed_id": "42544738",
+    "doi": "10.1002/jhbp.70168",
+    "title": "Hospital Volume and Operative Mortality in Pancreaticoduodenectomy and Hepatectomy: Analysis of the National Clinical Database in Japan.",
+    "abstract": "This study evaluated the association between institutional advanced hepatobiliary-pancreatic (HBP) surgical volume and operative mortality for pancreaticoduodenectomy (PD) and advanced hepatectomy using data from the Japanese National Clinical Database. Patients undergoing PD or advanced hepatectomy between 2018 and 2021 were identified. Hospital volume was defined as the mean annual number of advanced HBP procedures performed at each institution. Volume-mortality associations were assessed using thin-plate spline regression with hospital volume as a continuous variable, followed by categorical analyses using four predefined groups (≤ 19, 20-29, 30-49, and ≥ 50 cases/year). The primary outcome was the operative mortality. We analyzed 47 088 patients undergoing PD and 27 358 undergoing hepatectomy. Mortality decreased with increasing institutional advanced HBP surgical volume for both procedures and plateaued at approximately 50 annual procedures. Compared with 30-49-case institutions, ≤ 19-case hospitals had significantly higher adjusted mortality for PD and hepatectomy, whereas ≥ 50-case hospitals had significantly lower mortality. Higher institutional advanced HBP surgical volume was associated with lower operative mortality for both procedures. Although both procedures appeared to achieve stable outcomes at similarly high institutional volumes, their volume-mortality curves differed in shape, suggesting the value of incorporating procedure-specific considerations into future quality assessment frameworks.",
+    "authors": [
+      "Shindo Y",
+      "Endo H",
+      "Yamamoto H",
+      "Takahashi H",
+      "Marubashi S",
+      "Nanashima A",
+      "Endo I",
+      "Ueno H",
+      "Shirabe K",
+      "Nakamura M",
+      "Nagano H",
+      "Ohtsuka M"
+    ],
+    "journal": "Journal of hepato-biliary-pancreatic sciences",
+    "journal_issn": "1868-6982",
+    "year": 2026,
+    "publication_date": "2026-08-03",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 1.41,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-10T00:06:58.069Z",
+    "classified": true,
+    "title_ja": "膵頭十二指腸切除術・肝切除術における施設症例数と手術死亡率：日本のNCDの解析",
+    "abstract_ja": "National Clinical Database（NCD）を用い、2018-2021年の膵頭十二指腸切除47,088例・進行肝切除27,358例で施設の高難度肝胆膵手術症例数と手術死亡率の関連を薄板スプライン回帰で解析した後方視的研究。両術式とも施設症例数の増加に伴い死亡率が低下し年間約50例で頭打ちとなり、年間19例以下の施設は死亡率が有意に高かった。"
+  },
+  {
+    "id": "pmid-42543689",
+    "pubmed_id": "42543689",
+    "doi": "10.2188/jea.JE20260264",
+    "title": "Progressive Age-Related Increase in the Risk of Foreign Body Airway Obstruction: A Descriptive Study Based on LIFE Study Data.",
+    "abstract": "BackgroundPrevious studies on foreign body airway obstruction (FBAO) have primarily focused on patients who received prehospital or emergency department care. The epidemiological features of FBAO in the broader population, including cases managed outside emergency departments, remain unknown. We aimed to determine the incidence and characteristics of clinically managed FBAO using Japanese medical claims data.MethodsThis retrospective observational study was conducted using claims data from public health insurance enrollees across 16 municipalities. FBAO cases were identified from April 2020 to March 2024. The age-stratified and age-adjusted incidence rates of FBAO were calculated using the number of publicly insured individuals in the participating municipalities as the denominator.ResultsDuring the four-year observation period, a total of 1,123 FBAO cases (median age: 84 years) were identified. There were 518 (46.1%) cases in cardiac arrest on arrival and 516 (45.9%) deaths in the same month as the FBAO event. Age-stratified analyses showed that FBAO incidence rates steadily increased with advancing age, with individuals aged ≥95 years exhibiting an approximately 17-fold higher incidence than those aged 65-69 years. The age-adjusted incidence rate was 6.68 per 100,000 person-years.ConclusionThis large-scale claims-based observational study indicated that the risk of FBAO occurrence is disproportionately high among individuals of advanced age, underscoring the need for FBAO prevention and management strategies targeting highly aged populations.",
+    "authors": [
+      "Uemura R",
+      "Igarashi Y",
+      "Norii T",
+      "Maeda M",
+      "Oda F",
+      "Matsuo R",
+      "Fukuda H"
+    ],
+    "journal": "Journal of epidemiology",
+    "journal_issn": "1349-9092",
+    "year": 2026,
+    "publication_date": "2026-08-03",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "LIFE Study（16市町村の公的医療保険レセプトデータ）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.01,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-10T00:06:58.265Z",
+    "classified": true,
+    "title_ja": "気道異物閉塞リスクの加齢に伴う進行性増加：LIFE Studyデータに基づく記述的研究",
+    "abstract_ja": "16市町村の公的医療保険レセプトデータ（LIFE Study、2020-2024年）を用い、臨床的に対応された気道異物閉塞（FBAO）の発生率を検討した後方視的観察研究。1,123例（年齢中央値84歳）が同定され、46.1%が来院時心停止であった。発生率は加齢とともに上昇し、95歳以上は65-69歳の約17倍で、年齢調整発生率は10万人年あたり6.68であった。"
+  },
+  {
+    "id": "pmid-42543601",
+    "pubmed_id": "42543601",
+    "doi": "10.1253/circj.CJ-26-0310",
+    "title": "Association Between Initial Admission Ward and In-Hospital Mortality Among Patients Hospitalized for Cardiovascular Emergencies　- A Nationwide Study Using the JROAD-DPC Database.",
+    "abstract": "Although intensive care is considered important for cardiovascular emergencies, large-scale evidence comparing outcomes by initial admission ward remains limited in Japan. Using the JROAD database, we identified patients hospitalized for cardiovascular emergencies after ambulance transport between April 2016 and March 2024 and classified patients by initial ward (intensive care unit [ICU], high care unit [HCU], or general ward [GW]). Deaths within 24 h were excluded. Multivariable logistic regression analysis was performed with adjustment for demographics, comorbidities, acute therapies, and hospital cardiologist staffing. Among 1,211,636 admissions, there were 323,220 (26.7%) deaths within 24 h; thus, 888,416 admissions (ICU, 212,059; HCU, 124,468; GW, 551,889) were analyzed. In-hospital mortality was 10.8%, 9.7%, and 12.2% for patients admitted to the ICU, HCU, and GW, respectively. Compared with the GW, the adjusted odds of death were lower for the ICU (odds ratio [OR] 0.718; 95% confidence interval [CI] 0.703-0.734) and HCU (OR 0.928; 95% CI 0.906-0.950). A higher number of board-certified cardiologists was independently associated with lower in-hospital mortality (OR 0.977 per additional board-certified cardiologist; 95% CI 0.976-0.978). Findings were consistent for acute myocardial infarction, acute heart failure, aortic dissection, and pulmonary embolism. Higher-acuity admission and a higher number of cardiologists were independently associated with lower in-hospital mortality, supporting optimization of critical care access for high-risk cardiovascular emergencies in Japan.",
+    "authors": [
+      "Kuwabara M",
+      "Yamamoto T",
+      "Tahara Y",
+      "Kikuchi M",
+      "Imamura H",
+      "Takeuchi I",
+      "Sato N",
+      "Itoh T",
+      "Sumita Y",
+      "Miyamoto Y",
+      "Ishihara S",
+      "Isoda K",
+      "Ishizu T",
+      "Ikari Y",
+      "Tanimoto S",
+      "Matsuo Y",
+      "Murai R",
+      "Ikeda T",
+      "Okura H",
+      "Kobayashi Y",
+      "Asai K"
+    ],
+    "journal": "Circulation journal : official journal of the Japanese Circulation Society",
+    "journal_issn": "1347-4820",
+    "year": 2026,
+    "publication_date": "2026-08-03",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [
+      "JROAD（日本循環器学会 循環器疾患診療実態調査、DPCと連結したJROAD-DPC）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 3.22,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-10T00:06:58.360Z",
+    "classified": true,
+    "title_ja": "心血管救急入院患者の初回入院病棟と院内死亡率の関連：JROAD-DPCを用いた全国研究",
+    "abstract_ja": "JROAD-DPCを用い、2016-2024年に救急搬送で心血管救急疾患のため入院した患者を初回入院病棟（ICU/HCU/一般病棟）で分類し院内死亡率を多変量ロジスティック回帰で解析した後方視的研究。888,416例の解析で、一般病棟に比しICU（OR 0.718）・HCU（OR 0.928）で死亡オッズが低く、循環器専門医数が多いほど院内死亡率が低かった。"
+  },
+  {
+    "id": "pmid-42543448",
+    "pubmed_id": "42543448",
+    "doi": "10.1007/s13555-026-01878-9",
+    "title": "Treatment Persistence of Interleukin-17 Inhibitors and Factors Associated with Persistence in Patients with Psoriasis Vulgaris in Japan: Retrospective Database Study.",
+    "abstract": "Psoriasis vulgaris (PsV) is a chronic, immune-mediated skin disorder that significantly impairs quality of life and often necessitates long-term systemic therapy, especially in moderate-to-severe cases. In Japan, biologic agents targeting interleukin-17 (IL-17) have become central to the management of PsV; however, real-world evidence on their long-term persistence and associated factors remains limited. This retrospective study utilized the Medical Data Vision database to evaluate treatment persistence of IL-17 inhibitors (ixekizumab, secukinumab, brodalumab, or bimekizumab) and factors associated with treatment persistence in Japanese patients with PsV. Patients aged ≥ 15 years with a confirmed diagnosis of PsV and at least one claim of an IL-17 inhibitor between February 2015 and October 2023 were included. Persistence rates of IL-17 inhibitors (including ixekizumab) and ixekizumab were analyzed using the Kaplan-Meier method. Cox proportional hazard regression models were also used to calculate hazard ratios for factors associated with the treatment persistence of IL-17 inhibitors and ixekizumab. The persistence rates at 48 months among patients treated with IL-17 inhibitors (n = 2904) and ixekizumab (n = 1105) were 52.4% and 41.2%, respectively. Similar rates were observed for ixekizumab dosing Q2/Q2 (46.9%) and Q2/Q4 (48.1%). Gender was a factor influencing treatment persistence in the IL-17 inhibitor cohort; however, no such association was observed in the ixekizumab cohort. Prior biologic experience was associated with shorter persistence for both IL-17 inhibitors and ixekizumab. No other demographic or clinical factors showed a significant association. Following ixekizumab treatment, use of phototherapy, topical, and systemic therapies declined, suggesting a shift toward biologic monotherapy. These findings provide real-world evidence of the sustained use of IL-17 inhibitors in Japanese patients with PsV. Persistence showed no significant association with patient characteristics such as age, comorbidities, and concomitant medications.",
+    "authors": [
+      "Tada Y",
+      "Kagitani H",
+      "Kimura S",
+      "Tsujimoto N",
+      "Mochizuki K"
+    ],
+    "journal": "Dermatology and therapy",
+    "journal_issn": "2193-8210",
+    "year": 2026,
+    "publication_date": "2026-08-02",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 3.71,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-10T00:06:58.455Z",
+    "classified": true,
+    "title_ja": "日本の尋常性乾癬患者におけるIL-17阻害薬の治療継続性と関連因子：後方視的データベース研究",
+    "abstract_ja": "Medical Data Vision（MDV）データベース（2015-2023年）を用い、尋常性乾癬患者のIL-17阻害薬の治療継続性をKaplan-Meier法とCox比例ハザードで解析した後方視的研究。48か月継続率はIL-17阻害薬全体で52.4%、イキセキズマブで41.2%であった。生物学的製剤の使用歴があると継続期間が短く、性別も治療継続性に関連した。"
+  },
+  {
     "id": "pmid-42539946",
     "pubmed_id": "42539946",
     "doi": "10.23922/jarc.2026-014",
