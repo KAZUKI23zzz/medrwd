@@ -8,7 +8,8 @@
 import * as fs from "fs";
 import * as path from "path";
 
-const BASE_URL = "https://medrwd-f553wm4wi-kazuki23zzzs-projects.vercel.app";
+// デプロイ個別のURL（medrwd-<hash>-...）は不変かつ後で404になるため、恒久エイリアスを使う
+const BASE_URL = "https://medrwd.vercel.app";
 
 interface Paper {
   id: string;

@@ -2968,7 +2968,7 @@
     "databases_used": [
       "JMDC"
     ],
-    "additional_data_sources": "",
+    "additional_data_sources": [],
     "study_design": "症例対照研究",
     "research_categories": [
       "方法論・バリデーション",
@@ -3073,7 +3073,9 @@
     "databases_used": [
       "JMDC"
     ],
-    "additional_data_sources": "英CPRD-Aurum/CPRD-GOLD、米Epic Cosmos、台湾NTUHでも外部検証（本カタログ該当は日本のJMDC）",
+    "additional_data_sources": [
+      "英CPRD-Aurum/CPRD-GOLD、米Epic Cosmos、台湾NTUHでも外部検証（本カタログ該当は日本のJMDC）"
+    ],
     "study_design": "後方視的コホート研究",
     "research_categories": [
       "方法論・バリデーション",
@@ -3123,7 +3125,7 @@
     "databases_used": [
       "NCD"
     ],
-    "additional_data_sources": "",
+    "additional_data_sources": [],
     "study_design": "後方視的コホート研究",
     "research_categories": [
       "安全性・副作用",
@@ -3180,7 +3182,7 @@
     "databases_used": [
       "NDB"
     ],
-    "additional_data_sources": "",
+    "additional_data_sources": [],
     "study_design": "後方視的コホート研究",
     "research_categories": [
       "安全性・副作用"
@@ -3236,7 +3238,9 @@
     ],
     "medline_status": "MEDLINE",
     "databases_used": [],
-    "additional_data_sources": "自治体の定期・キャッチアップ接種記録と連結した医療レセプトデータ（VENUS研究）",
+    "additional_data_sources": [
+      "自治体の定期・キャッチアップ接種記録と連結した医療レセプトデータ（VENUS研究）"
+    ],
     "study_design": "後方視的コホート研究",
     "research_categories": [
       "安全性・副作用"
@@ -3271,7 +3275,7 @@
     "databases_used": [
       "JMDC"
     ],
-    "additional_data_sources": "",
+    "additional_data_sources": [],
     "study_design": "後方視的コホート研究",
     "research_categories": [
       "治療実態・処方パターン"
@@ -3306,7 +3310,9 @@
     "databases_used": [
       "JADER"
     ],
-    "additional_data_sources": "米FDA FAERSも併用（日本側はJADER）",
+    "additional_data_sources": [
+      "米FDA FAERSも併用（日本側はJADER）"
+    ],
     "study_design": "その他",
     "research_categories": [
       "安全性・副作用"
@@ -3344,7 +3350,9 @@
     "databases_used": [
       "DPC"
     ],
-    "additional_data_sources": "大阪府のがん登録とDPCを連結したCanReCO",
+    "additional_data_sources": [
+      "大阪府のがん登録とDPCを連結したCanReCO"
+    ],
     "study_design": "後方視的コホート研究",
     "research_categories": [
       "疾病負荷・自然歴"
@@ -3385,7 +3393,7 @@
     "databases_used": [
       "DPC"
     ],
-    "additional_data_sources": "",
+    "additional_data_sources": [],
     "study_design": "後方視的コホート研究",
     "research_categories": [
       "安全性・副作用"
@@ -3424,7 +3432,9 @@
     "databases_used": [
       "DPC"
     ],
-    "additional_data_sources": "JROAD（日本循環器学会診療実態調査）とDPCの連結データ",
+    "additional_data_sources": [
+      "JROAD（日本循環器学会診療実態調査）とDPCの連結データ"
+    ],
     "study_design": "後方視的コホート研究",
     "research_categories": [
       "治療実態・処方パターン",
@@ -3513,7 +3523,7 @@
     "databases_used": [
       "NDBオープンデータ"
     ],
-    "additional_data_sources": "",
+    "additional_data_sources": [],
     "study_design": "横断的研究",
     "research_categories": [
       "治療実態・処方パターン",

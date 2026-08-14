@@ -30,8 +30,9 @@ GitHub Actions・Google翻訳は廃止し、本Routineに一本化している�
 3. 未分類論文を抽出: `data/papers.json` のうち `classified !== true` の論文（過去データは全て classified:true なので、通常は今回の新着のみ）。0件なら手順4〜5をスキップして手順6へ。
 
 4. 各未分類論文を docs/classification.md のスキーマに**厳密に**従って分類し、以下のフィールドを埋める:
-   - `study_design`（1つ）/ `research_categories`（1〜3つ）/ `analysis_methods`（該当全て、なければ空配列）
-   - `databases_used`（既知DBリスト）/ `additional_data_sources`（DB名不明時の説明）
+   - `study_design`（1つ・**文字列**）/ `research_categories`（1〜3つ・**配列**）/ `analysis_methods`（該当全て・**配列**、なければ `[]`）
+   - `databases_used`（既知DBリスト・**配列**、なければ `[]`）/ `additional_data_sources`（DB名不明時の説明・**配列**、なければ `[]`）
+   - **配列フィールドは1件しか該当しなくても必ず配列で書く**（`["説明文"]`）。単一の文字列を書くとサイトのビルドが落ちる（2026-07-13に実際に発生し、本番デプロイが5週間停止した）。
    - `title_ja`: タイトルの日本語訳
    - `abstract_ja`: **アブストラクトの全文訳ではなく、2〜3文（約150〜250字）の日本語AI要約**。「何のDBで・どんなデザイン/手法で・何を調べ・主要な結果は何か」を簡潔にまとめる。
    - 分類が終わった論文は `classified: true` をセットする。
@@ -47,11 +48,14 @@ GitHub Actions・Google翻訳は廃止し、本Routineに一本化している�
    - `error`: 失敗時の理由（成功時は null）
    - `consecutive_failures`: 失敗なら前回値+1、成功なら 0
 
-7. セーフマージ・ガード（papers.json の自己点検）。次を全て満たすか確認する:
-   - `data/papers.json` が有効な JSON としてパースできる
-   - 全論文に必須フィールド（title, classified, study_design, research_categories, databases_used）が存在する
+7. セーフマージ・ガード（papers.json の自己点検）。次を**全て**満たすか確認する:
+   - `npx tsx scripts/validate-papers.ts` が終了コード0で通る。
+     これが JSONの妥当性・必須フィールドの有無・**各フィールドの型（配列/文字列/数値）**・
+     id重複・`classified !== true` が0件 をまとめて機械的に検証する。目視で代替しないこと。
+   - `npm run build` が成功する。**静的エクスポートを実際に通すこと**が最終確認。
+     データの型崩れはここで初めて `.map is not a function` として顕在化する
+     （2026-07-13にこれを怠り、本番デプロイが5週間停止した）。
    - 総件数が直前から極端に変動していない（新着追加＋偽陽性削除の範囲を超えて数百件減っていない）
-   - `classified !== true` の論文が0件（新着を全部処理した）
 
 8. コミットとマージ（クラウドセッションに `gh` CLI は無い。**セッション組み込みのGitHubツール**でPR作成・マージする）:
    - 新しいブランチ `claude/data-sync-<YYYY-MM-DD>` を作成し、変更をコミットして push する。

@@ -2,7 +2,7 @@
 
 日本の医療RWD研究を「どのDBで・どんな手法で・何を調べたか」で検索できるカタログサイト。
 
-- **本番URL**: https://medrwd-f553wm4wi-kazuki23zzzs-projects.vercel.app
+- **本番URL**: https://medrwd.vercel.app （デプロイ個別のURLは404になるので恒久エイリアスを使う）
 - **GitHub**: https://github.com/KAZUKI23zzz/medrwd
 - **設計原則**: 無料・低メンテナンス・合法（公式API/RSS/公開情報のみ）
 
