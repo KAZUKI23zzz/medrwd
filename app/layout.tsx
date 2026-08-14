@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://medrwd-f553wm4wi-kazuki23zzzs-projects.vercel.app";
+// デプロイ個別のURL（medrwd-<hash>-...）は不変かつ後で404になるため、恒久エイリアスを使う
+const siteUrl = "https://medrwd.vercel.app";
 
 export const metadata: Metadata = {
   title: "医療RWD研究カタログ - 日本の医療リアルワールドデータ研究検索",

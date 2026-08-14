@@ -10,6 +10,30 @@
 
 ## 分類スキーマ（確定版 2026-06-01）
 
+### フィールドの型（厳守）
+
+`types/paper.ts` が正。**下記は1件しか該当しなくても必ず配列**で書くこと。単一の文字列を書くとサイトのビルドが落ちる。
+
+| フィールド | 型 | 該当なしの場合 |
+|---|---|---|
+| `study_design` | `string`（単一の文字列） | — |
+| `research_categories` | `string[]` | — |
+| `analysis_methods` | `string[]` | `[]` |
+| `databases_used` | `string[]` | `[]` |
+| `additional_data_sources` | `string[]` | `[]` |
+| `title_ja` / `abstract_ja` | `string` | — |
+| `classified` | `boolean` | — |
+
+```jsonc
+// 正しい
+"additional_data_sources": ["大阪府のがん登録とDPCを連結したCanReCO"],
+"additional_data_sources": [],
+
+// 誤り（2026-07-13にこれが混入し、本番デプロイが5週間停止した）
+"additional_data_sources": "大阪府のがん登録とDPCを連結したCanReCO",
+"additional_data_sources": "",
+```
+
 ### study_design（1つ選択）
 
 | 値 | 説明 |
@@ -56,7 +80,7 @@
 
 `NDB` / `NDBオープンデータ` / `DPC` / `JADER` / `MID-NET` / `JMDC` / `MDV` / `NCD` / `DeSC Healthcare` / `KDB`
 
-※ DB名不明の場合は `databases_used: []` とし `additional_data_sources` に説明を記載。NCD（外科手術レジストリ）≠ NDB（レセプト）。
+※ DB名不明の場合は `databases_used: []` とし、`additional_data_sources` に説明を **`string[]`（文字列の配列）** で記載する（例: `["自治体の予防接種記録と連結した医療レセプトデータ"]`）。該当なしは `[]`。NCD（外科手術レジストリ）≠ NDB（レセプト）。
 
 ### 偽陽性判定基準
 
