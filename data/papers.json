@@ -1,5 +1,676 @@
 [
   {
+    "id": "pmid-42593795",
+    "pubmed_id": "42593795",
+    "doi": "10.1001/jamanetworkopen.2026.28796",
+    "title": "Comparative Risk of Hyponatremia Among Patients Treated With Second-Generation Antipsychotics.",
+    "abstract": "Hyponatremia is an adverse event associated with antipsychotic use; however, comparative evidence among individual second-generation antipsychotics remains limited. To compare the risk of hyponatremia associated with individual second-generation antipsychotics. In this retrospective cohort study and disproportionality analysis, data were obtained from the US Food and Drug Administration Adverse Event Reporting System (FAERS; quarter 4 1997 to quarter 3 2023), a dataset provided by the Japan Pharmaceutical Information Center, and a Japanese hospital-based claims database (Medical Data Vision; April 2008 to April 2024). The study adopted a new-user design and included patients routinely prescribed antipsychotics. Patients aged 18 to 69 years with at least 180 days of active medical history preceding the initial antipsychotic prescription, with no history of antipsychotics or hyponatremia during that period, were included. Initiation of second-generation antipsychotics. Hyponatremia associated with individual antipsychotics was compared with that associated with olanzapine. Reporting odds ratios with 95% CIs were calculated for FAERS. The incidence within 180 days of treatment initiation was analyzed for claims database using hazard ratios estimated with stabilized inverse probability of treatment weighting based on propensity scores. In the FAERS database, most antipsychotics showed lower reporting odds ratios for hyponatremia than olanzapine. In a Japanese claims database, among 961 010 patients prescribed antipsychotics, 55 394 were included in the final analysis. The mean (SD) age was 50.4 (14.3) years, and there were 25 839 (46.6%) male and 29 555 (53.4%) female patients. After stabilized inverse probability of treatment weighting, aripiprazole was associated with a significantly lower risk of hyponatremia than olanzapine (adjusted hazard ratio, 0.52; 95% CI, 0.35-0.76), whereas other antipsychotics showed no significant differences. Sensitivity analysis confirmed the robustness of the findings. In this retrospective cohort study of antipsychotic users, aripiprazole was associated with a lower risk of hyponatremia than was olanzapine. Although residual confounding should be considered, these findings may help inform clinical decision-making for high-risk patients.",
+    "authors": [
+      "Hatano M",
+      "Koseki T",
+      "Saito T",
+      "Yamada S"
+    ],
+    "journal": "JAMA network open",
+    "journal_issn": "2574-3805",
+    "year": 2026,
+    "publication_date": "2026-08-13",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）",
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Hyponatremia",
+      "Antipsychotic Agents",
+      "Retrospective Studies",
+      "Middle Aged",
+      "Female",
+      "Olanzapine",
+      "Male",
+      "Adult",
+      "Aged",
+      "Japan",
+      "United States",
+      "Aripiprazole",
+      "Quetiapine Fumarate",
+      "Adolescent",
+      "Young Adult"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [
+      "米国FDA有害事象報告システム（FAERS）",
+      "日本医薬情報センター（JAPIC）提供データセット"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 9.16,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-14T08:53:04.967Z",
+    "classified": true,
+    "title_ja": "第二世代抗精神病薬による低ナトリウム血症リスクの比較",
+    "abstract_ja": "日本の医療レセプトデータベース（MDV）等を用い、第二世代抗精神病薬使用者における低ナトリウム血症リスクをオランザピンと比較した後方視的コホート研究。傾向スコアによる逆確率重み付けの結果、アリピプラゾールはオランザピンより低リスクだったが（調整HR 0.52）、他の薬剤では有意差はなかった。"
+  },
+  {
+    "id": "pmid-42588065",
+    "pubmed_id": "42588065",
+    "doi": "10.3390/nu18152442",
+    "title": "Clinical Reality and Outcomes of Home Semi-Solid Enteral Nutrition Guidance and Management Using a Medical Claims Database in Japan: A Retrospective Cohort Study.",
+    "abstract": "The semi-solid enteral nutrition method, in which semi-solid nutrients are administered through a gastrostoma rather than liquid nutrients, is a medical technology for nutritional management developed in Japan. This nutritional method has spread rapidly, and in 2018, the Home Semi-solid Enteral Nutrition Guidance and Management fee was newly established in the payment system for medical services. However, there are few studies evaluating this nutrition method in actual clinical practice. Using the DeSC medical claims database, we investigated patient characteristics, the number of fee calculations, and the length of hospital stay for all hospitalizations and for pneumonia during and after fee calculation. Home semi-solid enteral nutrition guidance and management was received at least once by 3105 patients (mean age: 79.4 years). Cerebrovascular disease, nervous system disease, dementia, and pneumonia were the most common diseases at the start of guidance and management, and the mean number of sessions received was 7.7. The mean length of stay for any hospitalization was significantly shorter during the guidance and management period than after the last guidance and management session (8.2 vs. 29.1 days). Notably, the mean length of hospital stay for pneumonia was also significantly shorter during the guidance and management period than after the last guidance and management session (3.1 vs. 10.2 days). This study clarified the calculation status of the Home Semi-solid Enteral Nutrition Guidance and Management fee and outcomes of patients who received this guidance and management. These findings suggest that the provision of this guidance and management may be associated with the shorter length of hospital stay. However, because residual confounding cannot be ruled out, a causal relationship cannot be established. Overall, the provision of this guidance and management may be associated with maintaining stable home care.",
+    "authors": [
+      "Matsuoka M",
+      "Shimaya H",
+      "Iwanami Y",
+      "Iijima S"
+    ],
+    "journal": "Nutrients",
+    "journal_issn": "2072-6643",
+    "year": 2026,
+    "publication_date": "2026-08-13",
+    "analysis_methods": [],
+    "mesh_terms": [
+      "Humans",
+      "Enteral Nutrition",
+      "Japan",
+      "Retrospective Studies",
+      "Female",
+      "Aged",
+      "Aged, 80 and over",
+      "Length of Stay",
+      "Male",
+      "Databases, Factual",
+      "Home Care Services",
+      "Hospitalization",
+      "Pneumonia"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "DeSC Healthcare"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 5.9,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-14T08:53:05.079Z",
+    "classified": true,
+    "title_ja": "在宅半固形経管栄養法の実態とアウトカム：医療レセプトデータベースを用いた後方視的コホート研究",
+    "abstract_ja": "DeSC医療レセプトデータベースを用い、在宅半固形経管栄養法の指導管理を受けた3,105例（平均79.4歳）の患者背景と転帰を検討した後方視的コホート研究。管理期間中の平均在院日数は管理終了後より有意に短く（8.2日 vs 29.1日）、肺炎による在院日数も同様の傾向を示した。"
+  },
+  {
+    "id": "pmid-42587226",
+    "pubmed_id": "42587226",
+    "doi": "10.1007/s11657-026-01759-w",
+    "title": "Impact of a national reimbursement policy for secondary fracture prevention on early secondary fractures after hip fracture surgery in Japan: a nationwide interrupted time series analysis.",
+    "abstract": "A national reimbursement scheme aimed to enhance secondary fracture prevention after hip fracture. Although prevention processes improved substantially, early secondary fracture incidence did not clearly decline. Differential effects by hospital payment system suggest that financial incentives alone may be insufficient and that organizational readiness and care pathways may influence impact. In 2022, Japan introduced a reimbursement scheme to promote secondary fracture prevention (SFP) after hip fracture. We examined whether this implementation was associated with a reduction in secondary major osteoporotic fractures within 6 months after hip fracture surgery at the national level. We conducted a nationwide interrupted time series analysis including adults aged 60 years or older who underwent surgery for hip fracture between April 2017 and February 2023. The primary outcome was the monthly estimated 6-month cumulative incidence of secondary major osteoporotic fractures. Process measures included osteoporosis assessment, initiation of guideline-recommended osteoporosis medication, and receipt of both during the index hospitalization. Effect modification by hospital payment system (Diagnosis Procedure Combination [DPC] versus non-DPC) was examined. Among 127,676 patients, the introduction of the SFP management fee was associated with substantial immediate and sustained increases in osteoporosis assessment and medication initiation during the index hospitalization. However, no clear immediate change or change in trend in the 6-month cumulative incidence of secondary fractures was observed at the national level. In contrast, a greater post-introduction decline in secondary fracture incidence was observed in DPC hospitals compared with non-DPC hospitals. Although the SFP reimbursement scheme improved in-hospital SFP processes after hip fracture, it was not associated with a clear national-level reduction in secondary fractures within 6 months. Differences by hospital characteristics suggest that organizational capacity and established care pathways may influence how reimbursement incentives translate into clinical benefit.",
+    "authors": [
+      "Hiyama Y"
+    ],
+    "journal": "Archives of osteoporosis",
+    "journal_issn": "1862-3514",
+    "year": 2026,
+    "publication_date": "2026-08-13",
+    "analysis_methods": [
+      "中断時系列分析 (ITS)"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Hip Fractures",
+      "Japan",
+      "Interrupted Time Series Analysis",
+      "Female",
+      "Aged",
+      "Osteoporotic Fractures",
+      "Secondary Prevention",
+      "Male",
+      "Aged, 80 and over",
+      "Middle Aged",
+      "Insurance, Health, Reimbursement",
+      "Osteoporosis",
+      "Incidence",
+      "Proximal Femoral Fractures"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": [
+      "大腿骨近位部骨折手術患者127,676例を対象とした全国規模の医療データベース（具体的なDB名記載なし、DPC参加・非参加病院を含む）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "医療の質・アクセスの格差",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 2.7,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-14T08:53:05.198Z",
+    "classified": true,
+    "title_ja": "大腿骨近位部骨折術後の二次骨折予防に対する診療報酬改定の効果：全国中断時系列分析",
+    "abstract_ja": "日本の全国医療データベースを用い、2022年導入の二次骨折予防（SFP）管理料が大腿骨近位部骨折術後6ヶ月以内の二次性骨折発生に与えた影響を中断時系列分析で検討した。骨粗鬆症評価・薬物治療開始などのプロセス指標は大幅に改善したが、全国レベルでの二次骨折発生率の明確な低下は認められなかった。"
+  },
+  {
+    "id": "pmid-42586501",
+    "pubmed_id": "42586501",
+    "doi": "10.1016/j.jcpo.2026.100796",
+    "title": "Early implementation of radiofrequency ablation for breast cancer in Japan: What national claims data reveal and obscure.",
+    "abstract": "Japan introduced national health insurance coverage for radiofrequency ablation (RFA) in selected patients with early breast cancer on 1 December 2023. We used public aggregate claims data to determine which features of early implementation were observable and which were obscured by disclosure controls. We analyzed the 10th and 11th releases of open data from Japan's National Database of Health Insurance Claims and Specific Health Checkups (NDB Open Data). Breast RFA was identified by procedure code 150444250 (K476-5 in fiscal year 2024). A matching row was found only in inpatient sheets. Fiscal year 2024 contained 376 claim-recorded procedure occurrences. All sex-by-age occurrences were tabulated in female strata. Disclosed age cells for ages 40-84 years accounted for 362 occurrences (96.3%); suppressed female cells for ages 25-39 and 85-89 years accounted for the residual 14 (3.7%). Disclosed prefectural counts summed to 320 (85.1%), whereas 56 occurrences (14.9%) remained unallocated because 20 prefectural cells were suppressed. Monthly counts ranged from 17 to 52. Including public-expense-only claims increased the annual total from 376 to 379. Public aggregate claims provided a national inpatient billing benchmark and limited age profile but could not fully characterize geographic implementation, identify unique patients, or assess appropriateness or outcomes. Post-reimbursement surveillance should use claims and clinical registries as complementary data sources, with aligned observation periods, procedure definitions, and counting units.",
+    "authors": [
+      "Omura T",
+      "Kamihara T"
+    ],
+    "journal": "Journal of cancer policy",
+    "journal_issn": "2213-5383",
+    "year": 2026,
+    "publication_date": "2026-08-13",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "方法論・バリデーション"
+    ],
+    "impact_factor": 1.51,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-14T08:53:05.414Z",
+    "classified": true,
+    "title_ja": "乳がんに対するラジオ波焼灼術の導入初期実態：全国レセプトオープンデータで見えるものと見えないもの",
+    "abstract_ja": "2023年12月に保険収載された乳がんラジオ波焼灼術(RFA)について、NDBオープンデータ（第10・11回公表）を用いてその導入初期実態を検証した研究。2024年度に376件の手技が記録され、年齢別開示は可能だったが、症例数の少ない都道府県セルの多くが秘匿され、地理的実態や患者単位の追跡、アウトカム評価はできないことが示された。"
+  },
+  {
+    "id": "pmid-42576389",
+    "pubmed_id": "42576389",
+    "doi": "10.1111/jdi.70417",
+    "title": "Temporal distribution of acute kidney injury-related hospitalizations after initiation of sodium-glucose cotransporter 2 inhibitors: A nationwide claims database analysis in older adults with an independent complementary single-center eGFR analysis.",
+    "abstract": "Sodium-glucose cotransporter 2 inhibitors (SGLT2i) reduce the risk of acute kidney injury (AKI). However, an initial decline in estimated glomerular filtration rate (eGFR) may occur after initiation, and factors associated with sustained early eGFR decline remain unclear. We evaluated the temporal distribution of AKI-related hospitalizations in older adults using claims data and, in an independent single-center cohort, factors associated with sustained early eGFR decline. A Japanese nationwide claims database identified patients aged ≥75 years emergently hospitalized with AKI after SGLT2i initiation. Intervals were categorized as 1-30, 31-90, and 91-180 days. Baseline characteristics were compared across groups, followed by adjusted comparisons of the 1-30-day group with each later group. An independent single-center analysis without age restriction evaluated early eGFR changes and associated factors as indirect complementary evidence. Among 190 patients, 59 (31.1%) were hospitalized within 1-30 days, 67 (35.3%) within 31-90 days, and 64 (33.7%) within 91-180 days. After inverse-probability-of-treatment weighting, all propensity-score covariates were balanced, and no additionally adjusted medication-related factor was associated with 1- to 30-day-group assignment. Sustained early eGFR decline was associated with older age and use of one or two triple-whammy (TW)-related drug classes. A substantial proportion of AKI-related hospitalizations occurred within 30 days after SGLT2i initiation. In the single-center analysis, sustained early eGFR decline was associated with older age and TW-related drug use. These hypothesis-generating findings require cautious interpretation because the case-only design precludes estimation of early AKI risk.",
+    "authors": [
+      "Hiura K",
+      "Tatsuno A",
+      "Noto Y",
+      "Wakamatsu R",
+      "Sakunami M",
+      "Kobayashi R",
+      "Yamashita M"
+    ],
+    "journal": "Journal of diabetes investigation",
+    "journal_issn": "2040-1124",
+    "year": 2026,
+    "publication_date": "2026-08-13",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "SGLT2阻害薬投与後の急性腎障害入院高齢患者を対象とした全国規模レセプトデータベース（具体的なDB名記載なし）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.74,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-14T08:53:06.338Z",
+    "classified": true,
+    "title_ja": "SGLT2阻害薬開始後の急性腎障害による入院の時間分布：全国レセプトデータベース分析と単施設eGFR解析",
+    "abstract_ja": "全国規模のレセプトデータベースを用い、75歳以上の高齢者におけるSGLT2阻害薬開始後の急性腎障害(AKI)による緊急入院の時期分布を検討した後方視的研究。190例中31.1%が投与開始1-30日以内に入院し、単施設のeGFR解析では持続的な早期eGFR低下が高齢や多剤併用と関連していた。"
+  },
+  {
+    "id": "pmid-42586553",
+    "pubmed_id": "42586553",
+    "doi": "10.1302/2633-1462.78.BJO-2026-0088.R1",
+    "title": "Fracture laterality as an independent prognostic factor for clinical outcomes after hip fracture surgery : an analysis of 72,008 patients.",
+    "abstract": "Fracture laterality is routinely recorded in large hip fracture registries for administrative purposes, yet rarely evaluated as a prognostic variable. We aimed to test whether laterality is independently associated with short-term outcomes after hip fracture surgery. This retrospective cohort study used a regional, prefecture-wide administrative database based on Japan's Diagnosis Procedure Combination system. We identified 72,008 patients who underwent primary surgery for hip fracture between 2015 and 2023. The primary outcome was in-hospital mortality. The secondary outcome was impaired independence in activities of daily living (ADL) at discharge, defined as a Barthel index (BI) score < 60. We used multivariable logistic regression to assess the association between fracture laterality and outcomes, adjusting for age, sex, BMI, smoking history, fracture type, admission BI, diabetes mellitus, and the Charlson Comorbidity Index (CCI). Left-sided fractures were significantly more frequent than right-sided fractures (51.5% vs 48.5%, p < 0.001). In-hospital mortality did not differ significantly between right- and left-sided fractures in either unadjusted (2.0% vs 2.0%, p = 0.093) or adjusted analyses (adjusted odds ratio (aOR), 1.10; 95% CI 0.99 to 1.22; p = 0.075). In contrast, right-sided fracture was independently associated with impaired ADL at discharge (aOR 1.09; 95% CI 1.05 to 1.13; p < 0.001). In a prespecified sub-group analysis, right-sided fracture was associated with higher mortality among patients with high comorbidity burden (CCI ≥ 2; aOR 1.29; 95% CI 1.09 to 1.53; p = 0.004; p for interaction = 0.022). A sensitivity analysis using double-selection lasso logistic regression yielded materially unchanged estimates. In our cohort, right-sided hip fractures were independently associated with impaired ADL at discharge, and with higher in-hospital mortality among patients with substantial comorbidity. These associations persisted across sensitivity analyses but, given the observational design and the inability of administrative data to capture limb dominance, require confirmation in independent cohorts. Fracture laterality, which is a variable routinely captured at presentation but seldom analyzed, nonetheless merits consistent reporting and consideration in registry-based prognostic research.",
+    "authors": [
+      "Takegami Y",
+      "Imaizumi T",
+      "Sato K",
+      "Osawa Y",
+      "Funahashi H",
+      "Imagama S"
+    ],
+    "journal": "Bone & joint open",
+    "journal_issn": "2633-1462",
+    "year": 2026,
+    "publication_date": "2026-08-12",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 3,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-14T08:53:05.326Z",
+    "classified": true,
+    "title_ja": "大腿骨近位部骨折の予後因子としての骨折側性：72,008例の解析",
+    "abstract_ja": "日本のある県のDPCデータベースを用い、2015-2023年に大腿骨近位部骨折手術を受けた72,008例を対象に、骨折側性と術後転帰の関連を検討した後方視的コホート研究。多変量ロジスティック回帰の結果、側性は院内死亡率とは関連しなかったが、右側骨折は退院時ADL低下と有意に関連し、併存疾患の多い群では死亡率とも関連した。"
+  },
+  {
+    "id": "pmid-42583773",
+    "pubmed_id": "42583773",
+    "doi": "10.1111/jog.70441",
+    "title": "Evaluating the Risk of Ischemic Stroke With Low-Dose Combined Oral Contraceptives in Women With Migraine: A Nationwide Claims Database Study.",
+    "abstract": "Combined oral contraceptives (COCs) are often avoided in women with migraine because of concerns about ischemic stroke. However, the risk associated with low-dose and ultra-low-dose COCs remains unclear. We aimed to evaluate the risk of ischemic stroke using contemporary low-dose COC use among women with migraine. We conducted a retrospective cohort study using the JMDC claims database in Japan. Women aged 20-49 years diagnosed with migraine between April 2012 and March 2024 were included. Exposure was defined as administration of COCs containing estrogen doses of 20 and 35 μg, whereas the comparison group was defined as discontinued use after the initial prescription. The hazard ratios (HRs) for ischemic stroke were estimated using Cox regression, and odds ratios (ORs) were calculated using case-time-control analysis to evaluate short-term associations. Among the 215 536 women with migraine, 453 experienced ischemic strokes during follow-up. Among COC continuing users, the 5-year cumulative incidence rates of ischemic stroke were 0.11% (95% CI: 0.01% to 0.81%), and the HR was 0.10 (95% CI: 0.01 to 1.36). The OR in the case-time-control analysis was 0.38 (95% CI: 0.03 to 5.13). This large claims database study found no significant increase in the risk of ischemic stroke or other outcomes associated with low-dose COC use in women with migraine.",
+    "authors": [
+      "Koyanagi S",
+      "Yanai T",
+      "Inayama Y",
+      "Tanaka-Mizuno S",
+      "Kawakami K"
+    ],
+    "journal": "The journal of obstetrics and gynaecology research",
+    "journal_issn": "1447-0756",
+    "year": 2026,
+    "publication_date": "2026-08-12",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Female",
+      "Migraine Disorders",
+      "Adult",
+      "Contraceptives, Oral, Combined",
+      "Ischemic Stroke",
+      "Middle Aged",
+      "Retrospective Studies",
+      "Japan",
+      "Databases, Factual",
+      "Young Adult",
+      "Incidence"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.33,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-14T08:53:05.629Z",
+    "classified": true,
+    "title_ja": "片頭痛を有する女性における低用量経口避妊薬と虚血性脳卒中リスク：全国レセプトデータベース研究",
+    "abstract_ja": "JMDCレセプトデータベースを用い、片頭痛と診断された20-49歳の女性215,536人を対象に、低用量経口避妊薬(COC)使用と虚血性脳卒中リスクの関連をCox回帰・ケースタイムコントロール分析で検討した後方視的コホート研究。COC継続使用者の虚血性脳卒中リスクに有意な増加は認められなかった。"
+  },
+  {
+    "id": "pmid-42581431",
+    "pubmed_id": "42581431",
+    "doi": "10.1111/dom.71209",
+    "title": "Association of GLP-1 Receptor Agonist Use With Cardiovascular Outcomes and Mortality in Japanese Patients With Type 2 Diabetes: A Real-World Claims Database Study.",
+    "abstract": "Large-scale clinical trials have shown multiple effects of glucagon-like peptide 1 receptor agonists (GLP-1RAs); however, similar evidence for Asian patients is limited. Therefore, using a Japanese large-scale claims-based database, the effects of GLP-1RAs on cardiovascular and cerebrovascular events including mortality were compared with those of other glucose-lowering agents. Patients with type 2 diabetes (T2D) were identified from a claims database of approximately 1.9 million individuals. Those newly prescribed GLP-1RAs between 2014 and 2021 were assigned to the GLP-1RA group, while those initiating other glucose-lowering agents served as controls. The primary outcome was cardiovascular or cerebrovascular events or all-cause mortality. Logistic regression analysis was performed using explanatory variables, and nearest-neighbour propensity score matching was performed between the groups. The period from the initiation of new medication to event occurrence was calculated and analysed using the Cox proportional hazards model, with a maximum follow-up of 38 months. Among 469 461 eligible patients, 2401 received GLP-1RAs and 53 946 were controls. After propensity matching, 2147 patients remained in each group. The median follow-up was 12 months. No significant difference was observed in 3-point major adverse cardiovascular events (3-point MACE) (GLP-1RA, 7.08% (n = 152) versus control, 8.20% (n = 176); hazard ratio (HR), 0.920; 95% confidence interval (CI) 0.740-1.143, p = 0.450). However, all-cause mortality was lower in the GLP-1RAs group (5.36% (n = 115) versus 7.36% (n = 158), HR 0.776, 95% CI 0.610-0.987, p = 0.039). GLP-1RA showed no association with 3-point MACE difference but showed lower all-cause mortality. These findings possibly reflect residual confounding.",
+    "authors": [
+      "Koshizaka M",
+      "Ishibashi R",
+      "Ishikawa T",
+      "Goda K",
+      "Sato J",
+      "Kitsuregawa M",
+      "Yokote K",
+      "Mitsutake N"
+    ],
+    "journal": "Diabetes, obesity & metabolism",
+    "journal_issn": "1463-1326",
+    "year": 2026,
+    "publication_date": "2026-08-12",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "2型糖尿病患者約190万人を対象とした日本の大規模レセプトデータベース（具体的なDB名記載なし）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "安全性・副作用"
+    ],
+    "impact_factor": 4.93,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-14T08:53:05.720Z",
+    "classified": true,
+    "title_ja": "日本人2型糖尿病患者におけるGLP-1受容体作動薬使用と心血管アウトカム・死亡率の関連：リアルワールドレセプトデータベース研究",
+    "abstract_ja": "約190万人規模の日本のレセプトデータベースを用い、2型糖尿病患者におけるGLP-1受容体作動薬(GLP-1RA)使用と心血管イベント・全死亡の関連を、傾向スコアマッチング後のCox比例ハザードモデルで検討した後方視的コホート研究。3点MACEに有意差はなかったが、GLP-1RA群で全死亡が有意に低かった（HR 0.776）。"
+  },
+  {
+    "id": "pmid-42581129",
+    "pubmed_id": "42581129",
+    "doi": "10.1007/s00280-026-04929-2",
+    "title": "Adverse events of cetuximab sarotalocan in photoimmunotherapy: insights from the Japanese adverse drug event report database.",
+    "abstract": "Cetuximab sarotalocan is an innovative photoimmunotherapy agent for cancer treatment, with an unclear safety profile. We analysed the clinical adverse event profile of cetuximab sarotalocan in photoimmunotherapy. In this retrospective study, we analysed real-world clinical data of patients with head and neck cancer from the Japanese Adverse Drug Event Report database. Patient demographics, as well as the nature of adverse events and their outcomes and co-occurrences, were analysed. Cetuximab sarotalocan adverse event reports (n = 227) predominantly included older male patients. The most frequent adverse event was laryngeal oedema, followed by upper respiratory and oral complications. Recovery rates were high for laryngeal oedema and tongue-related adverse events but poor for fistula-related complications. Co-occurrence was found between different adverse events, particularly laryngeal oedema and dysphagia. The described safety profile of cetuximab sarotalocan in photoimmunotherapy offers insights for its proper use as well as baseline data for the development and improvement of cancer photoimmunotherapy.",
+    "authors": [
+      "Ueta S",
+      "Niimura T",
+      "Fujino S",
+      "Goda M",
+      "Ishida T",
+      "Nawa H",
+      "Kawata E",
+      "Tsujinaka K",
+      "Kawada K",
+      "Miyata K",
+      "Horikawa I",
+      "Aizawa F",
+      "Yagi K",
+      "Chuma M",
+      "Izawa-Ishizawa Y",
+      "Ishizawa K"
+    ],
+    "journal": "Cancer chemotherapy and pharmacology",
+    "journal_issn": "1432-0843",
+    "year": 2026,
+    "publication_date": "2026-08-12",
+    "analysis_methods": [],
+    "mesh_terms": [
+      "Humans",
+      "Male",
+      "Cetuximab",
+      "Retrospective Studies",
+      "Japan",
+      "Female",
+      "Aged",
+      "Head and Neck Neoplasms",
+      "Middle Aged",
+      "Immunotherapy",
+      "Databases, Factual",
+      "Aged, 80 and over",
+      "Adverse Drug Reaction Reporting Systems",
+      "Antineoplastic Agents, Immunological",
+      "Adult",
+      "Phototherapy",
+      "East Asian People"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.21,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-14T08:53:05.845Z",
+    "classified": true,
+    "title_ja": "光免疫療法におけるセツキシマブ サロタロカンの有害事象：日本の医薬品副作用データベース分析",
+    "abstract_ja": "医薬品副作用データベース(JADER)を用い、頭頸部癌患者における光免疫療法薬セツキシマブ サロタロカンの有害事象227件を分析した後方視的研究。高齢男性患者が多く、喉頭浮腫が最多の有害事象で上気道・口腔合併症が続いた。喉頭浮腫・舌関連事象の回復率は高かったが、瘻孔関連合併症の回復率は低かった。"
+  },
+  {
+    "id": "pmid-42579041",
+    "pubmed_id": "42579041",
+    "doi": "10.1007/s41999-026-01584-x",
+    "title": "Association of implementation of secondary fracture prevention incentives after hip fracture and risk of subsequent fracture in real-world practice.",
+    "abstract": "Secondary fracture prevention (SFP) after hip fracture is recommended in clinical guidelines but implementation remains suboptimal in routine practice. Financial incentives linked to SFP management have been introduced to address implementation gaps; however, whether such strategies reduce subsequent fractures in routine practice remains unclear. We evaluated the association between receipt of SFP incentives and subsequent fractures and explored factors associated with implementation. This nationwide retrospective cohort study using Japanese administrative claims data included 11,147 patients aged 60 years or older who underwent hip fracture surgery. The primary outcome was major osteoporotic fracture within 12 months, analyzed using Fine-Gray models accounting for the competing risk of death. Facility-level factors associated with acute-care incentive billing were examined using multilevel Poisson regression. Overall, 4,019 patients (36.1%) received acute-care SFP incentives during the index hospitalization. Receipt of the acute-care incentive was associated with a 15% lower risk of subsequent fractures (subdistribution hazard ratio, 0.85; 95% confidence interval, 0.73 to 0.99). Incentive uptake was associated with hospital-level characteristics reflecting prior osteoporosis care performance, including Diagnosis Procedure Combination participation (risk ratio, 2.11; 95% confidence interval, 1.45 to 3.08) and higher prior-year osteoporosis assessment rates. Continuity of post-discharge management was limited: 66.0% of recipients had no subsequent incentive claims, and cumulative post-discharge claims were not associated with additional fracture risk reduction. Acute-care SFP incentives were associated with lower fracture risk in routine practice, but implementation and continuity were suboptimal, highlighting the need to improve SFP implementation across the post-fracture care pathway.",
+    "authors": [
+      "Hiyama Y",
+      "Ohtera S"
+    ],
+    "journal": "European geriatric medicine",
+    "journal_issn": "1878-7649",
+    "year": 2026,
+    "publication_date": "2026-08-11",
+    "analysis_methods": [
+      "生存時間分析",
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "大腿骨近位部骨折手術患者11,147例を対象とした全国レセプトデータ（具体的なDB名記載なし）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "医療の質・アクセスの格差",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 2.98,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-14T08:53:05.947Z",
+    "classified": true,
+    "title_ja": "大腿骨近位部骨折後の二次骨折予防加算算定と再骨折リスクの関連：リアルワールド実態調査",
+    "abstract_ja": "日本の全国レセプトデータを用い、60歳以上の大腿骨近位部骨折手術患者11,147例を対象に、二次骨折予防(SFP)管理加算の算定と再骨折リスクの関連をFine-Grayモデルで検討した後方視的コホート研究。急性期SFP加算の算定は再骨折リスクの15%低下と関連したが（sHR 0.85）、算定率は36.1%にとどまり、退院後の継続算定も限定的だった。"
+  },
+  {
+    "id": "pmid-42578127",
+    "pubmed_id": "42578127",
+    "doi": "10.1097/EE9.0000000000000510",
+    "title": "Association between ambient temperature and all-cause hospitalization by functional status in Japan: A time-stratified case-crossover study.",
+    "abstract": "Older adults, children, and low-income populations are recognized as vulnerable to climate-related health risks. However, evidence on morbidity risks by functional status remains limited. This study investigated the association between ambient temperature and all-cause hospitalization by functional dependency in Japan. We obtained daily hospitalization data from the Diagnosis Procedure Combination database and meteorological data for nine Japanese prefectures between 2012 and 2019, comprising over 10 million admissions. Functional status at admission was assessed using the Barthel Index (0-100), with scores >60 classified as functionally independent and ≤60 as functionally dependent. A time-stratified case-crossover design with conditional quasi-Poisson regression was applied to estimate temperature-hospitalization associations. Among functionally independent individuals, relative risks (RRs) were 0.93 (95% confidence interval [CI]: 0.90, 0.96) at extreme cold (5th percentile) and 1.02 (95% CI: 1.01, 1.04) at extreme heat (95th percentile), with the temperature of peak risk (cold) (TPR [cold]) at the 35th percentile (TPR [cold] RR: 1.08 [1.05, 1.10]). Functionally dependent people showed higher risks at extreme cold (RR: 1.11; 95% CI: 1.07, 1.15), comparable risks at TPR (cold) (23rd percentile), and extreme heat (RR: 1.03; 95% CI: 1.02, 1.04). Compared with independent individuals, functionally dependent individuals had higher cold risks, with ratios of RR of 1.20 (95% CI: 1.14, 1.26) at extreme cold and 1.05 (95% CI: 1.01, 1.09) at TPR (cold). These disparities persisted across age and sex subgroups. Temperature-related hospitalization risks vary by functional status. Functionally dependent individuals are particularly vulnerable to cold exposure, highlighting the importance of targeted cold-weather preparedness strategies.",
+    "authors": [
+      "Takeuchi H",
+      "Phung VLH",
+      "Miyamoto Y",
+      "Aso S",
+      "Ng CFS",
+      "Yuan L",
+      "Yasunaga H",
+      "Hashizume M"
+    ],
+    "journal": "Environmental epidemiology (Philadelphia, Pa.)",
+    "journal_issn": "2474-7882",
+    "year": 2026,
+    "publication_date": "2026-08-11",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "症例対照研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.97,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-14T08:53:06.035Z",
+    "classified": true,
+    "title_ja": "日本における機能的状態別の気温と全死因入院の関連：時間層別ケースクロスオーバー研究",
+    "abstract_ja": "DPCデータベースと気象データを用い、日本の9県における2012-2019年の1,000万件超の入院データから、機能的状態別の気温と全死因入院の関連を時間層別ケースクロスオーバーデザインで検討した。機能的依存者（バーセル指数≤60）は自立者と比べて極端な寒さでの入院リスクがより高く、寒冷対策の重要性が示唆された。"
+  },
+  {
+    "id": "pmid-42577567",
+    "pubmed_id": "42577567",
+    "doi": "10.1253/circrep.CR-26-0080",
+    "title": "Association Between Registered Instructors of Cardiac Rehabilitation and Inpatient Cardiac Rehabilitation Participation in Japan: A Nationwide 10-Year Analysis.",
+    "abstract": "There have been no reports examining whether Registered Instructors of Cardiac Rehabilitation (RICRs) contribute to inpatient cardiac rehabilitation (CR) participation. Using data from the Japanese Registry of All Cardiac and Vascular Diseases and the Diagnosis Procedure Combination (JROAD-DPC) database, we calculated the inpatient CR participation rate for each prefecture from 2014 to 2023. The number of RICRs, cardiologists, general hospital physicians, general hospital nurses, and physical therapists per 100,000 population were also calculated for each prefecture. The median CR participation rate increased from 31.2% to 57.3%, and the total number of RICRs increased from 3,399 to 7,367 during the study period. In prefecture-level correlation analyses for 2023, the number of RICRs was positively associated with the CR participation rate (r=0.31; 95% confidence interval 0.02, 0.55; P=0.03). In contrast, the increase in the number of RICRs was not significantly associated with the growth of CR participation during the study period. Regions with a greater number of RICRs consistently demonstrated higher levels of CR implementation; however, increases in the number of RICRs were not directly correlated with longitudinal growth in CR utilization.",
+    "authors": [
+      "Sawamura A",
+      "Kanaoka K",
+      "Katano S",
+      "Kono Y",
+      "Motokawa T",
+      "Ohya Y",
+      "Miura SI",
+      "Fukuma N",
+      "Makita S",
+      "Miyamoto Y",
+      "Fukumoto Y",
+      "Izawa H"
+    ],
+    "journal": "Circulation reports",
+    "journal_issn": "2434-0790",
+    "year": 2026,
+    "publication_date": "2026-08-11",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [
+      "日本循環器学会の循環器疾患診療実態調査（JROAD-DPC）"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "医療の質・アクセスの格差",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.23,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-14T08:53:06.143Z",
+    "classified": true,
+    "title_ja": "心臓リハビリテーション指導士数と入院心臓リハビリテーション参加率の関連：全国10年間分析",
+    "abstract_ja": "JROAD-DPCデータベースを用い、2014-2023年の都道府県別入院心臓リハビリテーション(CR)参加率と心臓リハビリテーション指導士(RICR)数の関連を検討した生態学的研究。CR参加率の中央値は31.2%から57.3%に上昇し、2023年時点でRICR数はCR参加率と正の相関を示したが、RICR数の増加自体は参加率の伸びとは有意に関連しなかった。"
+  },
+  {
+    "id": "pmid-42577230",
+    "pubmed_id": "42577230",
+    "doi": "10.31662/jmaj.2025-0583",
+    "title": "Diverging Trends in Home Respiratory Care in an Aging Society: National Data from Japan.",
+    "abstract": "Japan is among the most rapidly aging countries worldwide, and the need for long-term respiratory care continues to grow. Long-term oxygen therapy (LTOT), home positive airway pressure (PAP), and home mechanical ventilation (HMV) are widely used for chronic respiratory diseases; however, nationwide long-term trends in their use remain insufficiently characterized. We aimed to examine recent national patterns in the use of these modalities. We conducted a descriptive study using National Database of Health Insurance Claims and Specific Health Checkups of Japan Open Data from fiscal years (FYs) 2017 to 2023. The annual claim counts for LTOT, PAP, and HMV were extracted. Population-adjusted rates (claims per 100,000 population) were calculated using national demographic data. Subgroup analyses were performed by sex across five age groups (0-24, 25-44, 45-64, 65-74, and ≥75 years), reflecting the clinically meaningful stages of aging in Japan. The population-adjusted rate of LTOT use increased steadily across all years, age groups, and sexes. PAP use also increased consistently throughout the study period, with larger increases among older adults. In contrast, HMV use demonstrated only small overall changes, with a gradual increase that was most pronounced among adults aged 0-24 years, while a declining trend was observed among those aged ≥75 years. Similar patterns were observed in the age- and sex-stratified analyses. The nationwide use of LTOT and PAP increased between FY 2017 and FY 2023, whereas HMV use exhibited age-dependent variation. These findings indicate shifting needs in home respiratory support, with growing demand for LTOT and PAP and age-divergent patterns of ventilator use. Continued monitoring is essential to anticipate future service requirements and inform planning for age-appropriate home respiratory care.",
+    "authors": [
+      "Akaba T",
+      "Katsura H",
+      "Kubo M",
+      "Tagaya E"
+    ],
+    "journal": "JMA journal",
+    "journal_issn": "2433-3298",
+    "year": 2026,
+    "publication_date": "2026-08-11",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 1.16,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-14T08:53:06.227Z",
+    "classified": true,
+    "title_ja": "高齢化社会における在宅呼吸療法の動向の乖離：日本全国データ",
+    "abstract_ja": "NDBオープンデータ(2017-2023年度)を用い、在宅酸素療法(LTOT)、在宅陽圧呼吸療法(PAP)、在宅人工呼吸療法(HMV)の全国的な利用動向を年齢・性別に検討した記述研究。LTOTとPAPの人口調整利用率は一貫して増加した一方、HMVは年齢層により異なる動きを示し、75歳以上では減少傾向がみられた。"
+  },
+  {
+    "id": "pmid-42577212",
+    "pubmed_id": "42577212",
+    "doi": "10.31662/jmaj.2026-0005",
+    "title": "Changes in Oral Analgesic Prescribing in Japan between Fiscal Year 2014 and Fiscal Year 2022: A Nationwide Analysis Using Open Data from the National Database of Health Insurance Claims and Specific Health Checkups of Japan.",
+    "abstract": "Nonsteroidal anti-inflammatory drugs (NSAIDs) have traditionally been central to pharmacological pain management in Japan, but population aging and increased use of mechanism-based analgesics may be changing prescribing patterns. We compared oral analgesic prescribing between fiscal year (FY) 2014 and FY2022 using nationwide claims-based open data, focusing on age and sex differences. We analyzed aggregated prescription volumes from the 1st and 9th editions of the National Database of Health Insurance Claims and Specific Health Checkups of Japan Open Data for FY2014 (April 2014-March 2015) and FY2022 (April 2022-March 2023). Analgesics were grouped as acetaminophen, NSAIDs, cyclooxygenase-2 selective inhibitors, weak opioids, duloxetine, neuropathic pain medications, and neurotropin. We calculated population-based prescription volume rates (per 1,000 population) using official population estimates and summarized patterns by sex and age group (<20, 20-64, ≥65 years). We also calculated within-age-group composition (percent share). Poisson regression with log(population) offset estimated incidence rate ratios (IRRs) comparing FY2022 versus FY2014 using robust standard errors; NSAID IRRs were further examined by age-sex strata. Total prescription volume increased from 3.69 × 109 in FY2014 to 6.09 × 109 in FY2022. Rates per 1,000 population increased in all age groups, with the largest absolute increase among adults aged ≥65 years. NSAIDs remained the most frequently prescribed class by rate in adults aged 20-64 years, but composition shifted away from NSAIDs toward acetaminophen and neuropathic pain medications, most notably in older adults. Overall IRR was 1.55, with large increases for acetaminophen (2.51), neuropathic pain medications (2.14), duloxetine (2.29), and weak opioids (1.88), while NSAIDs changed modestly (1.15). NSAID rates decreased in older female strata (IRR <1 from ages 70-74 years). Oral analgesic prescribing in Japan increased substantially between FY2014 and FY2022, alongside age-specific shifts away from NSAIDs toward acetaminophen and neuropathic pain medications, particularly among older adults.",
+    "authors": [
+      "Tetsunaga K",
+      "Tetsunaga T",
+      "Tetsunaga T",
+      "Kawada Y"
+    ],
+    "journal": "JMA journal",
+    "journal_issn": "2433-3298",
+    "year": 2026,
+    "publication_date": "2026-08-11",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.16,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-14T08:53:06.227Z",
+    "classified": true,
+    "title_ja": "日本における経口鎮痛薬処方の変化：2014年度から2022年度のNDBオープンデータを用いた全国分析",
+    "abstract_ja": "NDBオープンデータのFY2014・FY2022公表分を用い、日本における経口鎮痛薬の処方量の変化を年齢・性別に検討した記述研究。総処方量はFY2014の36.9億からFY2022の60.9億に増加し、NSAIDsからアセトアミノフェンや神経障害性疼痛治療薬への処方シフトが特に高齢者で顕著だった。"
+  },
+  {
+    "id": "pmid-42576300",
+    "pubmed_id": "42576300",
+    "doi": "10.1111/pcn.70117",
+    "title": "Newly recorded psychiatric diagnoses among 21 million youth before, during, and after COVID-19 restrictions: A nationwide interrupted time-series analysis.",
+    "abstract": "The COVID-19 pandemic had substantial effects on youth mental health. Most previous studies focused on the initial pandemic years, leaving the post-restriction period underexplored. We examined trajectories of newly recorded psychiatric diagnoses among Japanese youths across two policy shifts: March 2020 school closures and May 2023 reclassification of COVID-19 as an influenza-equivalent Category V disease. We conducted an interrupted time-series analysis using the National Database of Health Insurance Claims, covering over 99% of the Japanese population. The study included 21 million individuals aged under 19 years to analyze monthly trends in first recorded psychiatric diagnoses from January 2018 to March 2024. Segmented negative binomial regression was used to estimate shifts in levels and trends following both policy interventions. Following the 2020 closures, eating disorders showed sex-specific patterns: males showed an immediate 28.8% decrease (IRR 0.712, 95% CI 0.619-0.819), whereas females showed a 28.4% increase (IRR 1.284, 95% CI 1.045-1.576). Newly recorded ADHD diagnoses showed an 8.1% immediate decrease (IRR 0.919, 95% CI 0.847-0.997). During the restriction period, anxiety/stress-related and mood disorders showed apparent surge patterns following infection waves. After restrictions were lifted in 2023, eating disorders among males showed an upward level shift (IRR 1.214, 95% CI 1.076-1.370). Neurodevelopmental disorders showed preliminary downward trends in the post-restriction period. This nationwide study of 21 million youths suggested differential diagnostic patterns across pandemic phases. These contrasting trajectories highlight the need for subgroup-level post-pandemic diagnostic surveillance.",
+    "authors": [
+      "Matsumoto N",
+      "Ishida H",
+      "Hayase S",
+      "Asada T",
+      "Shigeyasu Y",
+      "Okada A",
+      "Hirota T",
+      "Yorifuji T"
+    ],
+    "journal": "Psychiatry and clinical neurosciences",
+    "journal_issn": "1440-1819",
+    "year": 2026,
+    "publication_date": "2026-08-11",
+    "analysis_methods": [
+      "中断時系列分析 (ITS)",
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.42,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-14T08:53:06.446Z",
+    "classified": true,
+    "title_ja": "COVID-19流行前後における若年者2,100万人の新規精神科診断：全国中断時系列分析",
+    "abstract_ja": "NDB(国民健康保険レセプトデータベース)を用い、2018年1月から2024年3月までの19歳未満約2,100万人を対象に、COVID-19関連の2つの政策転換（2020年休校、2023年5類移行）前後での新規精神科診断動向を中断時系列分析で検討した。2020年休校後は摂食障害で性差のあるパターン（男性減少・女性増加）とADHD新規診断の減少がみられた。"
+  },
+  {
     "id": "pmid-42565440",
     "pubmed_id": "42565440",
     "doi": "10.1111/cas.70499",
