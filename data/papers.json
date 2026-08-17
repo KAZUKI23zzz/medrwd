@@ -1,5 +1,447 @@
 [
   {
+    "id": "pmid-42604463",
+    "pubmed_id": "42604463",
+    "doi": "10.1007/s00540-026-03869-8",
+    "title": "Nationwide trends in cardiac anesthesia requiring cardiopulmonary bypass and intraoperative transesophageal echocardiography use in Japan: a claims-based analysis, 2019-2023.",
+    "abstract": "This study characterized nationwide trends, demographic distributions, and regional disparities in cardiac anesthesia and intraoperative transesophageal echocardiography (ITEE) in Japan. We conducted a retrospective observational study using the National Database of Health Insurance Claims (NDB) Open Data Japan (2019-2023). Cardiac anesthesia was defined using reimbursement codes for cardiac or thoracic great-vessel surgery requiring cardiopulmonary bypass. ITEE was evaluated using add-on claims classified into two categories: ITEE for cardiac/non-cardiac surgeries, and ITEE for percutaneous interventions. Trends were assessed using linear and Poisson regression models. Age- and sex-specific distributions and regional disparities (Gini coefficients) were assessed. A total of 179,920 cardiac anesthesia events were identified (28.7 per 100,000 person-years), with a male predominance (male-to-female ratio, 1.6:1). Age distribution was bimodal, peaking at 0-4 and 75-79 years. Both cardiac anesthesia and ITEE use declined transiently during Japan's first coronavirus disease 2019 state of emergency in May 2020, followed by recovery in the latter half of fiscal year 2020. Age-adjusted rates of cardiac anesthesia demonstrated no significant annual change. In contrast, ITEE use increased significantly in both cardiac/non-cardiac surgeries (relative risk [RR], 1.011/year; P < 0.0001) and percutaneous interventions (RR, 1.117/year; P < 0.0001). Regional disparities in cardiac anesthesia decreased over time, with Gini coefficients declining from 0.20 to 0.15. Cardiac anesthesia remained generally stable in Japan from 2019 to 2023. Increasing ITEE, especially for percutaneous interventions, suggests evolving cardiovascular perioperative practice, although claims-based categories require cautious interpretation.",
+    "authors": [
+      "Kido M",
+      "Nakayama Y",
+      "Yan L",
+      "Nakajima Y",
+      "Kitaura A",
+      "Anada N",
+      "Hirano U",
+      "Mino T",
+      "Yogai T",
+      "Yoshii K",
+      "Shoda K"
+    ],
+    "journal": "Journal of anesthesia",
+    "journal_issn": "1438-8359",
+    "year": 2026,
+    "publication_date": "2026-08-16",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 1.71,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-17T00:07:42.210Z",
+    "classified": true,
+    "title_ja": "日本における心臓麻酔（心肺バイパスを要する）と術中経食道心エコー使用の全国的動向：レセプトに基づく分析（2019-2023年）",
+    "abstract_ja": "NDBオープンデータ（2019-2023年）を用いて、心肺バイパスを要する心臓麻酔と術中経食道心エコー（ITEE）の全国的動向を調査した。心臓麻酔件数は17万9920件（10万人年あたり28.7件）で男性に多く、0-4歳と75-79歳に二峰性の分布がみられた。心臓麻酔件数は横ばいだったが、ITEEの使用は特に経皮的インターベンションで有意に増加し、地域格差（ジニ係数）は縮小した。"
+  },
+  {
+    "id": "pmid-42604081",
+    "pubmed_id": "42604081",
+    "doi": "10.1016/j.adro.2026.102145",
+    "title": "Impact of Hydrogel Spacer on Radiation Proctitis After Prostate Cancer Radiation Therapy: A Large-Scale Claims Database Analysis.",
+    "abstract": "We evaluated the real-world utility of hydrogel spacer placement for reducing radiation proctitis following prostate cancer radiation therapy using a large-scale claims database. We analyzed male patients from a Japanese administrative claims database (DeSC Database) who initiated primary radiation therapy between July 2018 and December 2024. Propensity score weighting using the average treatment effect on the treated method was applied to balance baseline characteristics between spacer users and nonusers. The primary endpoint was the occurrence of endoscopic gastrointestinal hemostasis, and the secondary endpoint was the diagnosis of radiation proctitis. Fine-Gray models were used to estimate subdistribution hazard ratios (sHRs) with death as a competing risk. Of 7860 eligible patients, 1754 (22.3%) underwent spacer placement. For the primary endpoint (endoscopic hemostasis), the spacer group showed a statistically significant lower risk (sHR 0.26; 95% CI, 0.10-0.69; P = .007). The cumulative incidence at 36 months was 0.8% in the spacer group versus 2.3% in the nonspacer group. For the secondary endpoint (diagnosed proctitis), the sHR was 0.29 (95% CI, 0.16-0.53; P < .001), with a 36-month cumulative incidence of 1.4% versus 4.8%, respectively. This large-scale real-world analysis demonstrates that hydrogel spacer placement is associated with a significantly lower incidence of severe radiation proctitis requiring endoscopic hemostasis.",
+    "authors": [
+      "Takeda K",
+      "Okuda S",
+      "Umezawa R",
+      "Yamamoto T",
+      "Takahashi N",
+      "Takeda K",
+      "Jingu K"
+    ],
+    "journal": "Advances in radiation oncology",
+    "journal_issn": "2452-1094",
+    "year": 2026,
+    "publication_date": "2026-08-16",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "DeSC Healthcare"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.6,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-17T00:07:42.333Z",
+    "classified": true,
+    "title_ja": "前立腺癌放射線治療後の放射線性直腸炎に対するハイドロゲルスペーサーの影響：大規模レセプトデータベース分析",
+    "abstract_ja": "日本の行政レセプトデータベース（DeSCデータベース）を用いて、前立腺癌への一次放射線治療を受けた男性7860人を対象に、ハイドロゲルスペーサー留置の放射線性直腸炎予防効果を傾向スコア重み付けとFine-Gray競合リスクモデルで検証した。スペーサー群は内視鏡的止血を要する直腸炎の36ヶ月時点での累積発生率が有意に低かった（0.8% vs 2.3%）。"
+  },
+  {
+    "id": "pmid-42603088",
+    "pubmed_id": "42603088",
+    "doi": "10.1111/iju.70602",
+    "title": "Perioperative Outcomes of Salvage Radical Prostatectomy After Radiation Therapy: A Nationwide Analysis Using the National Clinical Database of Japan.",
+    "abstract": "Salvage radical prostatectomy (sRP) is a potentially curative treatment for localized recurrence after radiation therapy for prostate cancer; however, nationwide real-world perioperative outcomes remain unclear. We conducted a retrospective descriptive study using the Japanese National Clinical Database (NCD). Patients who underwent sRP after radiation therapy were identified, and perioperative, functional, and pathological outcomes were summarized descriptively according to surgical approach and prior radiation modality without comparative statistical analysis. A total of 162 patients were included. The median age was 71 years, and high-risk features were common (Gleason score ≥ 8, 49.4%; pathological stage ≥ pT3, 45.7%). Robot-assisted surgery was performed in 88.3% of cases. The median operative time was 254.5 min, and estimated blood loss was 101 mL. Blood transfusion was required in 4.3% of patients. Major complications (Clavien-Dindo grade ≥ III) occurred in 4.9%, with one postoperative death (0.6%). Operative time and blood loss tended to be higher in patients with prior BT than EBRT, whereas major complication rates were comparable. Positive surgical margins were observed in 24.1%, and extraprostatic extension in 36.4%. Early continence recovery was limited, with 27.2% of patients using 0-1 pad/day at 1 month. This nationwide NCD study provides contemporary real-world data regarding perioperative outcomes after salvage radical prostatectomy in Japan. Although perioperative morbidity appeared acceptable in appropriately selected patients, these findings should be interpreted descriptively because formal comparative analyses were not performed.",
+    "authors": [
+      "Fujita K",
+      "Makita A",
+      "Ishii D",
+      "Yamamoto H",
+      "Yasui T",
+      "Kikuchi E"
+    ],
+    "journal": "International journal of urology : official journal of the Japanese Urological Association",
+    "journal_issn": "1442-2042",
+    "year": 2026,
+    "publication_date": "2026-08-15",
+    "analysis_methods": [],
+    "mesh_terms": [
+      "Humans",
+      "Male",
+      "Prostatectomy",
+      "Salvage Therapy",
+      "Prostatic Neoplasms",
+      "Japan",
+      "Aged",
+      "Retrospective Studies",
+      "Databases, Factual",
+      "Middle Aged",
+      "Treatment Outcome",
+      "Neoplasm Recurrence, Local",
+      "Postoperative Complications",
+      "Operative Time",
+      "Blood Loss, Surgical",
+      "Robotic Surgical Procedures",
+      "Prostate",
+      "Neoplasm Grading",
+      "Margins of Excision",
+      "Blood Transfusion",
+      "Neoplasm Staging"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.76,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-17T00:07:42.450Z",
+    "classified": true,
+    "title_ja": "放射線治療後のサルベージ根治的前立腺摘除術の周術期成績：National Clinical Databaseを用いた全国調査",
+    "abstract_ja": "日本のNational Clinical Database（NCD）を用いて、放射線治療後の局所再発に対するサルベージ根治的前立腺摘除術162例の周術期・機能的・病理学的成績を記述的に集計した。ロボット支援手術が88.3%を占め、重大合併症（Clavien-Dindo≥III）は4.9%、手術死亡0.6%で、周術期合併症は許容範囲だが比較統計は行っていない記述研究である。"
+  },
+  {
+    "id": "pmid-42601289",
+    "pubmed_id": "42601289",
+    "doi": "10.1016/j.alit.2026.07.008",
+    "title": "Bidirectional changes in recorded pediatric asthma diagnoses with respiratory virus activity: A nationwide interrupted time-series analysis in Japan.",
+    "abstract": "Early-life respiratory infections are associated with subsequent asthma development; however, whether respiratory viruses contribute to asthma onset or merely unmask pre-existing susceptibility remains unclear. The COVID-19 pandemic's non-pharmaceutical interventions (NPIs) suppressed respiratory viruses, followed by their resurgence, offering a natural experiment. We examined whether these population-level changes in respiratory virus activity were associated with changes in newly recorded pediatric asthma diagnoses. We conducted a nationwide interrupted time-series study using Japan's National Database of Health Insurance Claims, covering approximately 99% of the population. Segmented negative binomial regression with two intervention points-NPI implementation (T1: March 2020) and COVID-19 reclassification (T2: May 2023)-was applied to monthly counts of newly recorded asthma diagnoses among children aged under 19 years (January 2018-March 2024), with atopic dermatitis as negative control. Age-stratified/sex-stratified analyses and exploratory ecological analyses of pathogen-specific associations were conducted. Among 10,508,387 new asthma diagnoses, incidence declined significantly following NPI implementation (incidence rate ratio [IRR] 0.511, 95% confidence interval [CI] 0.422-0.620) and rebounded following NPI relaxation (IRR 1.395, 95% CI:1.120-1.737). Atopic dermatitis showed attenuated changes at both points. Rate differences were greatest in infants (0-1 years) at T1 and school-aged children (5-9 years) at T2. Rhinovirus, respiratory syncytial virus, influenza, and Mycoplasma pneumoniae, but not SARS-CoV-2, correlated with asthma diagnoses in ecological analyses. Newly recorded pediatric asthma diagnoses showed bidirectional changes that paralleled respiratory virus suppression and resurgence, compatible with a possible contributory role of respiratory infections, particularly among infants and school-aged children.",
+    "authors": [
+      "Matsumoto N",
+      "Ishida H",
+      "Hayase S",
+      "Ikeda M",
+      "Yorifuji T"
+    ],
+    "journal": "Allergology international : official journal of the Japanese Society of Allergology",
+    "journal_issn": "1440-1592",
+    "year": 2026,
+    "publication_date": "2026-08-14",
+    "analysis_methods": [
+      "中断時系列分析 (ITS)",
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 4.33,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-17T00:07:42.556Z",
+    "classified": true,
+    "title_ja": "呼吸器ウイルス活動性と小児喘息診断記録の双方向的変化：日本における全国中断時系列分析",
+    "abstract_ja": "NDB（健康保険レセプトデータベース、人口の約99%をカバー）を用いて、2018-2024年の19歳未満小児における新規喘息診断1050万件超を対象に分割負の二項回帰による中断時系列分析を実施した。COVID-19対策（NPI）導入後に診断は有意に減少し（IRR 0.511）、NPI緩和後に増加（IRR 1.395）した一方、対照のアトピー性皮膚炎の変化は緩やかで、呼吸器ウイルスの関与が示唆された。"
+  },
+  {
+    "id": "pmid-42601169",
+    "pubmed_id": "42601169",
+    "doi": "10.1136/openhrt-2026-004247",
+    "title": "Major cardiovascular events in Japanese patients with acute and chronic coronary syndrome.",
+    "abstract": "Cardiovascular (CV) disease remains the second leading cause of mortality in Japan, yet real-world estimates of recurrent CV risk across acute coronary syndrome (ACS) and chronic coronary syndrome (CCS) phenotypes are limited. We quantified recurrent CV risk and characterised high-risk subgroups in Japanese patients with ACS and CCS. This retrospective cohort study used the Medical Data Vision claims database. Patients with ACS or CCS were followed from cohort entry to the first composite CV endpoint or end of data. The primary composite endpoint included all-cause death, myocardial infarction or stroke. The secondary composite endpoint included the primary endpoint plus hospitalisation for unstable angina, hospitalisation for heart failure or emergent or elective coronary revascularisation. Baseline clinical characteristics were evaluated as predictors. Time-to-event analyses were conducted.26 656 and 16 172 patients were included in the ACS and CCS cohorts, respectively. Median follow-up was 3.0 years in the ACS cohort and 3.2 years in the CCS cohort. The 1-year risk of the primary endpoint was 17.7% in first-time ACS, 8.0% in prior ACS and 5.3% in CCS; corresponding 5-year risks were 24.0%, 13.8% and 12.0%, respectively. In CCS, elderly men with prior ACS, heart failure, diabetes mellitus and chronic kidney disease had a 23.0% 1-year risk of the primary endpoint. Recurrent CV risk was highest after a first ACS event and was heterogenous in CCS, with substantially higher risk in comorbidity-burdened subgroups. These findings provide contemporary real-world estimates of recurrent CV risk and support further refinement and validation of risk-stratification approaches for secondary prevention.",
+    "authors": [
+      "Osada N",
+      "Sheng F",
+      "Chang CH",
+      "Clouser M",
+      "Tanaka S",
+      "Ludwikowska M",
+      "Kohsaka S"
+    ],
+    "journal": "Open heart",
+    "journal_issn": "2053-3624",
+    "year": 2026,
+    "publication_date": "2026-08-14",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Male",
+      "Japan",
+      "Acute Coronary Syndrome",
+      "Retrospective Studies",
+      "Female",
+      "Aged",
+      "Risk Assessment",
+      "Risk Factors",
+      "Time Factors",
+      "Middle Aged",
+      "Chronic Disease",
+      "Incidence",
+      "Cause of Death",
+      "Recurrence",
+      "Prognosis",
+      "Follow-Up Studies",
+      "East Asian People"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.44,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-17T00:07:42.659Z",
+    "classified": true,
+    "title_ja": "日本人急性・慢性冠症候群患者における主要心血管イベント",
+    "abstract_ja": "Medical Data Vision（MDV）レセプトデータベースを用いて、急性冠症候群（ACS）26,656例と慢性冠症候群（CCS）16,172例を対象に、死亡・心筋梗塞・脳卒中の複合エンドポイントの再発リスクを生存時間解析で評価した。初発ACS後1年リスクは17.7%、CCSは5.3%で、高齢男性かつ心不全・糖尿病・慢性腎臓病を合併するCCS患者では1年リスクが23.0%に達した。"
+  },
+  {
+    "id": "pmid-42600244",
+    "pubmed_id": "42600244",
+    "doi": "10.1016/j.hrtlng.2026.102912",
+    "title": "Etiology of pericardial effusion requiring invasive drainage: nationwide study in Japan.",
+    "abstract": "Pericardial effusion (PE) is a heterogeneous clinical condition arising from diverse cardiovascular and systemic disorders, ranging from incidental findings to life-threatening cardiac tamponade. Although its etiology has been examined in prior studies, most were limited to single-center cohorts with small sample sizes, and comprehensive nationwide data remain limited. To clarify the etiologies and in-hospital outcomes of PE requiring invasive drainage using a nationwide Japanese administrative database. We retrospectively analyzed hospitalized patients with PE who underwent pericardiocentesis or pericardiotomy between April 2021 and March 2022, using the Diagnosis Procedure Combination database. Etiologies were classified according to underlying disease, and in-hospital mortality was assessed across major etiological categories. A total of 3778 patients met the inclusion criteria. The most common etiologies were cardiac disease (30.5%), malignant disease (25.9%), and vascular disease (16.9%). Among cardiac causes, valvular disease (26.7%) and acute myocardial infarction (22.5%) were predominant. Lung cancer (53.8%) and malignant lymphoma (8.5%) were the leading malignant etiologies, while aortic dissection (66.8%) and aortic aneurysm (26.1%) were the common vascular causes. Patients with vascular diseases, particularly aortic dissection, exhibited the highest in-hospital mortality (42.5%). Acute myocardial infarction demonstrated the highest mortality among cardiac etiologies (47.7%). Idiopathic PE was rare, accounting for only 0.6% of cases. Cardiac, malignant, and vascular diseases are the predominant etiologies of pericardial effusion requiring invasive intervention. The findings underscore the high mortality associated with vascular and ischemic cardiac causes, highlighting the importance of risk stratification and decision-making in PE management.",
+    "authors": [
+      "Kanda H",
+      "Akata K",
+      "Yamasaki K",
+      "Tahara M",
+      "Ikegami H",
+      "Nishida C",
+      "Matsuda S",
+      "Fushimi K",
+      "Mukae H",
+      "Yatera K"
+    ],
+    "journal": "Heart & lung : the journal of critical care",
+    "journal_issn": "1527-3288",
+    "year": 2026,
+    "publication_date": "2026-08-14",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 1.91,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-17T00:07:42.765Z",
+    "classified": true,
+    "title_ja": "侵襲的ドレナージを要する心嚢液貯留の病因：日本の全国調査",
+    "abstract_ja": "日本のDPCデータベースを用いて、2021年4月から2022年3月に心嚢穿刺またはドレナージを施行された心嚢液貯留患者3778例の病因と院内転帰を後方視的に検討した。病因は心臓性（30.5%）、悪性腫瘍性（25.9%）、血管性（16.9%）の順に多く、大動脈解離を含む血管性病因の院内死亡率が42.5%と最も高かった。"
+  },
+  {
+    "id": "pmid-42599543",
+    "pubmed_id": "42599543",
+    "doi": "10.1007/s12029-026-01570-3",
+    "title": "Nationwide Practice Patterns of Early Postoperative Kampo Medicine after Gastrectomy for Gastric Cancer: A Japanese Administrative Database Study.",
+    "abstract": "Kampo medicines are incorporated into early postoperative supportive care in Japan, but nationwide real-world data after gastrectomy are limited. We characterized early postoperative use of Daikenchuto and Rikkunshito and explored postoperative length of stay (LOS) as a secondary descriptive outcome. Using a Japanese Diagnosis Procedure Combination administrative database from 472 hospitals (August 2017-July 2022), we identified adults undergoing gastrectomy for gastric cancer. Early postoperative use was defined as administration within 7 postoperative days. Prescription rates were compared by hospital characteristics and surgical procedure (open vs. laparoscopic distal, total, and proximal gastrectomy). Postoperative LOS was calculated from surgery to discharge. Among 26,097 eligible patients, 1,797 (6.9%) received Daikenchuto and 2,309 (8.8%) received Rikkunshito. Daikenchuto was more frequently used after open than laparoscopic surgery (8.3% vs. 5.7%) and was most often prescribed after open distal (8.9%) and open total gastrectomy (7.6%). Rikkunshito was more frequently prescribed in designated cancer hospitals and large hospitals (≥500 beds), and after distal or proximal gastrectomy than total gastrectomy (9.6% vs 6.3%). The median postoperative LOS was 12 days among Daikenchuto users versus 11 days among non-users, and 10 days among Rikkunshito users versus 11 days among non-users. Early postoperative Kampo prescribing after gastrectomy differed across institutions and surgical procedures. The principal finding of this study was nationwide variation in prescribing patterns. Postoperative LOS differed descriptively between users and non-users, although these comparisons were unadjusted and subject to substantial time-dependent and clinical confounding.",
+    "authors": [
+      "Maruyama T",
+      "Ikezawa K",
+      "Suzuki H",
+      "Kurokawa T",
+      "Akashi Y",
+      "Oda T"
+    ],
+    "journal": "Journal of gastrointestinal cancer",
+    "journal_issn": "1941-6636",
+    "year": 2026,
+    "publication_date": "2026-08-14",
+    "analysis_methods": [],
+    "mesh_terms": [
+      "Humans",
+      "Gastrectomy",
+      "Medicine, Kampo",
+      "Female",
+      "Stomach Neoplasms",
+      "Japan",
+      "Male",
+      "Drugs, Chinese Herbal",
+      "Aged",
+      "Length of Stay",
+      "Middle Aged",
+      "Practice Patterns, Physicians'",
+      "Databases, Factual",
+      "Zanthoxylum",
+      "Postoperative Care",
+      "Panax",
+      "Plant Extracts",
+      "Zingiberaceae",
+      "East Asian People"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.03,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-17T00:07:42.865Z",
+    "classified": true,
+    "title_ja": "胃癌に対する胃切除後の早期漢方薬処方パターンの全国調査：日本の行政データベース研究",
+    "abstract_ja": "472施設の日本のDPCデータベース（2017-2022年）を用いて、胃癌に対する胃切除術後26,097例における大建中湯・六君子湯の術後7日以内の早期処方実態を調査した。大建中湯は開腹手術後（8.3%）が腹腔鏡下（5.7%）より多く、六君子湯はがん拠点病院・大規模病院で多く処方されるなど、施設・術式による処方パターンの差異が示された。"
+  },
+  {
+    "id": "pmid-42599295",
+    "pubmed_id": "42599295",
+    "doi": "10.1007/s00402-026-06476-0",
+    "title": "Impact of cognitive impairment on postoperative delirium and discharge disposition following knee arthroplasty: a Japanese nationwide propensity score-matched study.",
+    "abstract": "As populations age, the number of older patients undergoing knee arthroplasty continues to increase. Cognitive impairment is prevalent among older adults and has been associated with adverse perioperative outcomes; however, its impact on postoperative delirium and discharge disposition following knee arthroplasty remains insufficiently defined, particularly in large Asian populations. We conducted a nationwide retrospective cohort study using Japan's Diagnosis Procedure Combination database from April 2016 to March 2023. Older patients who underwent primary total knee arthroplasty (TKA) or unicompartmental knee arthroplasty (UKA) were identified. Cognitive impairment was defined using ICD-10 diagnostic codes at admission. The primary outcome was postoperative delirium, and secondary outcomes included discharge to home, length of hospital stay, and perioperative blood transfusion. Propensity score matching (1:1) was performed to adjust for demographic factors, comorbidities, and surgical characteristics. Multivariable logistic regression and sensitivity analyses were conducted. Among 259,319 eligible patients, 3,934 matched pairs were identified after propensity score matching. Patients with cognitive impairment had a significantly higher risk of postoperative delirium compared with those without cognitive impairment (absolute risk difference, 3.2%; 95% CI, 2.5-3.9). Cognitive impairment was independently associated with postoperative delirium (odds ratio [OR], 4.47; 95% CI, 3.11-6.41) and a reduced likelihood of direct discharge to home (OR, 0.64; 95% CI, 0.57-0.71). Length of hospital stay was modestly longer in patients with cognitive impairment, whereas no clinically meaningful differences were observed in other postoperative complications after adjustment. Cognitive impairment is a strong and independent risk factor for postoperative delirium and reduced likelihood of direct discharge to home following knee arthroplasty in older patients. Incorporating cognitive assessment into perioperative risk stratification may help optimize geriatric orthopedic care and postoperative planning.",
+    "authors": [
+      "Mori Y",
+      "Tarasawa K",
+      "Tanaka H",
+      "Kanabuchi R",
+      "Mori N",
+      "Fushimi K",
+      "Aizawa T",
+      "Fujimori K"
+    ],
+    "journal": "Archives of orthopaedic and trauma surgery",
+    "journal_issn": "1434-3916",
+    "year": 2026,
+    "publication_date": "2026-08-14",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "回帰分析"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Arthroplasty, Replacement, Knee",
+      "Propensity Score",
+      "Female",
+      "Japan",
+      "Aged",
+      "Patient Discharge",
+      "Retrospective Studies",
+      "Male",
+      "Delirium",
+      "Postoperative Complications",
+      "Cognitive Dysfunction",
+      "Length of Stay",
+      "Aged, 80 and over",
+      "Risk Factors",
+      "East Asian People"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 2.61,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-17T00:07:42.986Z",
+    "classified": true,
+    "title_ja": "認知機能障害が膝関節形成術後のせん妄・退院先に与える影響：日本の全国傾向スコアマッチング研究",
+    "abstract_ja": "日本のDPCデータベース（2016-2023年）を用いて、高齢の膝関節形成術患者259,319例を対象に、認知機能障害と術後せん妄・退院先の関連を傾向スコアマッチング（3934組）で検討した。認知機能障害群は術後せん妄リスクが有意に高く（OR 4.47）、自宅退院の可能性が低かった（OR 0.64）ほか、入院期間もわずかに延長していた。"
+  },
+  {
+    "id": "pmid-42597761",
+    "pubmed_id": "42597761",
+    "doi": "10.1177/22799036261471211",
+    "title": "Regional variations in diabetes prevalence and their associations with obesity and dietary habits: An ecological cross-sectional study using the National Database of Japan.",
+    "abstract": "Type 2 diabetes (T2D) is a major global health issue. Many Asian individuals with T2D are non-obese, suggesting that factors beyond body mass index (BMI) may be relevant. This ecological cross-sectional study examined correlations between diabetes prevalence and lifestyle-related factors using age-standardized, prefecture-level data from the 2021 National Database of Health Insurance Claims and Specific Health Checkups of Japan Open Data. Variables included diabetes prevalence (glycated hemoglobin [HbA1c] ≥ 6.5%), obesity (BMI ≥ 25 kg/m2), other obesity-related indicators, and self-reported dietary habits. Associations were assessed using Spearman's rank correlation coefficients with Benjamini-Hochberg false discovery rate (FDR) correction. After FDR correction, prefecture-level diabetes prevalence was positively correlated with BMI ≥ 25 kg/m2, elevated waist circumference, and weight gain in both sexes, and with alanine aminotransferase in women. Among dietary variables, the proportion of individuals with impaired masticatory function was positively correlated with diabetes prevalence in both sexes, whereas daily snacking was inversely correlated only in women; breakfast skipping, late-night dinner, and fast eating were not significantly correlated in either sex. However, after adjustment for BMI ≥ 25 kg/m2, none of the dietary habit variables showed a significant association with diabetes prevalence in either sex. Prefecture-level diabetes prevalence in Japan correlated with several obesity-related indicators and impaired masticatory function in both sexes, although impaired masticatory function was not robust to BMI adjustment. Sex-specific patterns included a positive correlation with alanine aminotransferase and an inverse correlation with daily snacking in women. These findings warrant future individual-level studies.",
+    "authors": [
+      "Yamaguchi F",
+      "Kiyonaga T",
+      "Nitta S",
+      "Yoshinaga N",
+      "Akieda-Asai S",
+      "Date Y",
+      "Sawada H"
+    ],
+    "journal": "Journal of public health research",
+    "journal_issn": "2279-9028",
+    "year": 2026,
+    "publication_date": "2026-08-14",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 1.39,
+    "sjr_quartile": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-17T00:07:43.090Z",
+    "classified": true,
+    "title_ja": "糖尿病有病率の地域差と肥満・食習慣との関連：日本の全国データベースを用いた生態学的横断研究",
+    "abstract_ja": "NDBオープンデータおよび特定健診データ（2021年、都道府県別）を用いて、糖尿病有病率（HbA1c≥6.5%）と肥満・食習慣関連指標との相関を生態学的横断研究で検討した。糖尿病有病率はBMI≥25や腹囲高値、咀嚼機能低下と正相関したが、BMI調整後は食習慣変数との有意な関連は消失した。"
+  },
+  {
     "id": "pmid-42593795",
     "pubmed_id": "42593795",
     "doi": "10.1001/jamanetworkopen.2026.28796",
