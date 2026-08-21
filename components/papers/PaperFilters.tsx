@@ -2,18 +2,22 @@
 
 import { useState, useMemo, useCallback, useEffect, useRef } from "react";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { Dialog } from "@base-ui/react/dialog";
 import { Input } from "@/components/ui/input";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { PaperCard } from "./PaperCard";
+import { PaperFilterPanel } from "./PaperFilterPanel";
+import { cn } from "@/lib/utils";
 import {
   parsePapersUrlState,
   buildPapersQuery,
   hasActiveFilters,
+  countActiveFilters,
   EMPTY_PAPERS_STATE,
   type PapersUrlState,
   type SortOption,
+  type ListFilterKey,
 } from "@/lib/papers-url-state";
 import {
   rememberPapersReturn,
@@ -37,8 +41,8 @@ const RESTORE_TIMEOUT_MS = 1500;
 const RESTORE_HOLD_MS = 300;
 /** 復元中の見張り間隔 */
 const RESTORE_POLL_MS = 16;
-
-type ListFilterKey = "dbs" | "designs" | "categories" | "methods";
+/** ドロワーを閉じたあとのスクロール実行が取りこぼされた場合の保険 */
+const DRAWER_CLOSE_FALLBACK_MS = 300;
 
 function currentListUrl(): string {
   return `${window.location.pathname}${window.location.search}`;
@@ -81,6 +85,12 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
 
   const resultsRef = useRef<HTMLDivElement>(null);
 
+  // モバイルの絞り込みドロワー。一時的な表示状態なので URL にも履歴にも積まない
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const drawerOpenRef = useRef(false);
+  /** ドロワーを開いている間に発生した「一覧の先頭へ」を、閉じたときにまとめて1回だけ実行する */
+  const pendingScrollRef = useRef(false);
+
   // 検索欄・出版年は打鍵のたびに URL を書き換えると履歴も描画も荒れるので、
   // ローカル state を正としてワンテンポ遅れて URL に反映する
   const [searchInput, setSearchInput] = useState(state.search);
@@ -111,7 +121,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
    * 一覧の先頭までスクロールで送り返す。
    * すでに一覧の先頭より上にいる場合は動かさない（勝手に下へ送られると鬱陶しいため）。
    */
-  const scrollToResultsTop = useCallback(() => {
+  const scrollToResultsTopNow = useCallback(() => {
     const el = resultsRef.current;
     if (!el) return;
     const target = Math.max(0, documentTop(el) - HEADER_OFFSET);
@@ -119,6 +129,37 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     // スムーススクロールは環境によって無視されることがあるため即時移動にする
     window.scrollTo(0, target);
   }, []);
+
+  /**
+   * ドロワーを開いている間は背後が見えないため、その場では動かさず予約だけしておく。
+   * ここで動かしてしまうと、ドロワーのスクロールロック解除時に位置が巻き戻る。
+   */
+  const scrollToResultsTop = useCallback(() => {
+    if (drawerOpenRef.current) {
+      pendingScrollRef.current = true;
+      return;
+    }
+    scrollToResultsTopNow();
+  }, [scrollToResultsTopNow]);
+
+  /** 予約されていた「一覧の先頭へ」を実行する。二重に走っても害がないようフラグで潰す */
+  const flushPendingScroll = useCallback(() => {
+    if (!pendingScrollRef.current) return;
+    pendingScrollRef.current = false;
+    scrollToResultsTopNow();
+  }, [scrollToResultsTopNow]);
+
+  const handleDrawerOpenChange = useCallback(
+    (open: boolean) => {
+      drawerOpenRef.current = open;
+      setDrawerOpen(open);
+      // 閉じるアニメーションが無い/完了通知が来ない環境でも取りこぼさないための保険。
+      // 先に onOpenChangeComplete が走っていればフラグは落ちているので二重実行にならない。
+      if (!open)
+        window.setTimeout(flushPendingScroll, DRAWER_CLOSE_FALLBACK_MS);
+    },
+    [flushPendingScroll],
+  );
 
   // 戻る/進むで URL が巻き戻ったときだけ、ローカル入力を URL 側に合わせ直す。
   // 自分の router.replace では popstate は飛ばないので、
@@ -419,139 +460,117 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
   );
 
   const hasFilters = hasActiveFilters(state);
+  const activeFilterCount = countActiveFilters(state);
+
+  // サイドバーとドロワーで同じ入力部品を使う（ロジックの二重化を避けるため）
+  const panelProps = {
+    allDbs,
+    allDesigns,
+    allCategories,
+    allMethods,
+    selectedDbs,
+    selectedDesigns,
+    selectedCategories,
+    selectedMethods,
+    onToggle: toggleValue,
+    years,
+    yearFromInput,
+    yearToInput,
+    onYearFromChange: setYearFromInput,
+    onYearToChange: setYearToInput,
+    hasFilters,
+    onClear: clearFilters,
+  };
 
   return (
     <div className="flex flex-col gap-6 lg:flex-row">
-      {/* Filters sidebar */}
-      <aside className="w-full shrink-0 space-y-6 lg:w-64">
-        <div>
-          <Input
-            placeholder="キーワード検索..."
-            value={searchInput}
-            onChange={(e) => setSearchInput(e.target.value)}
-          />
-        </div>
-
-        <div>
-          <h3 className="mb-2 text-sm font-semibold">使用データベース</h3>
-          <div className="space-y-1.5">
-            {allDbs.map(([db, count]) => (
-              <label
-                key={db}
-                className="flex cursor-pointer items-center gap-2"
-              >
-                <Checkbox
-                  checked={selectedDbs.has(db)}
-                  onCheckedChange={() => toggleValue("dbs", db)}
-                />
-                <span className="text-sm">{db}</span>
-                <span className="text-xs text-muted-foreground">({count})</span>
-              </label>
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <h3 className="mb-2 text-sm font-semibold">研究デザイン</h3>
-          <div className="space-y-1.5">
-            {allDesigns.map(([design, count]) => (
-              <label
-                key={design}
-                className="flex cursor-pointer items-center gap-2"
-              >
-                <Checkbox
-                  checked={selectedDesigns.has(design)}
-                  onCheckedChange={() => toggleValue("designs", design)}
-                />
-                <span className="text-sm">{design}</span>
-                <span className="text-xs text-muted-foreground">({count})</span>
-              </label>
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <h3 className="mb-2 text-sm font-semibold">研究カテゴリ</h3>
-          <div className="space-y-1.5">
-            {allCategories.map(([cat, count]) => (
-              <label
-                key={cat}
-                className="flex cursor-pointer items-center gap-2"
-              >
-                <Checkbox
-                  checked={selectedCategories.has(cat)}
-                  onCheckedChange={() => toggleValue("categories", cat)}
-                />
-                <span className="text-sm">{cat}</span>
-                <span className="text-xs text-muted-foreground">({count})</span>
-              </label>
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <h3 className="mb-2 text-sm font-semibold">解析手法</h3>
-          <div className="space-y-1.5">
-            {allMethods.map(([method, count]) => (
-              <label
-                key={method}
-                className="flex cursor-pointer items-center gap-2"
-              >
-                <Checkbox
-                  checked={selectedMethods.has(method)}
-                  onCheckedChange={() => toggleValue("methods", method)}
-                />
-                <span className="text-sm">{method}</span>
-                <span className="text-xs text-muted-foreground">({count})</span>
-              </label>
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <h3 className="mb-2 text-sm font-semibold">出版年</h3>
-          <div className="flex items-center gap-2">
-            <Input
-              type="number"
-              min={years.min}
-              max={years.max}
-              placeholder={String(years.min)}
-              aria-label="出版年の下限"
-              value={yearFromInput}
-              onChange={(e) => setYearFromInput(e.target.value)}
-              className="w-20"
-            />
-            <span className="text-sm text-muted-foreground">-</span>
-            <Input
-              type="number"
-              min={years.min}
-              max={years.max}
-              placeholder={String(years.max)}
-              aria-label="出版年の上限"
-              value={yearToInput}
-              onChange={(e) => setYearToInput(e.target.value)}
-              className="w-20"
-            />
-          </div>
-        </div>
-
-        {hasFilters && (
-          <button
-            onClick={clearFilters}
-            className="text-sm text-blue-600 hover:underline"
-          >
-            フィルタをクリア
-          </button>
-        )}
+      {/* デスクトップ: 常設サイドバー / モバイル: 下のドロワーへ */}
+      <aside className="hidden w-full shrink-0 space-y-6 lg:block lg:w-64">
+        <Input
+          placeholder="キーワード検索..."
+          aria-label="キーワード検索"
+          value={searchInput}
+          onChange={(e) => setSearchInput(e.target.value)}
+        />
+        <PaperFilterPanel {...panelProps} />
       </aside>
+
+      {/*
+        モバイル: 絞り込みドロワー。modal 既定で focus trap・スクロールロック・Escape が付く。
+
+        開閉アニメーションは意図的に付けていない。Base UI は transition の完了
+        （transitionend）を待ってから閉じるため、ページが非表示のあいだは
+        アニメーションが進まず、ドロワーが閉じないまま残り
+        onOpenChangeComplete も呼ばれない。見栄えより確実に閉じることを優先する。
+
+        加えて data-[closed]:hidden を付けている。Base UI は閉じた印
+        （data-closed）を付けてから実際の unmount までに一拍あり、その判定も
+        非表示ページでは進まないため、印が付いた時点で確実に見えなくする。
+      */}
+      <Dialog.Root
+        open={drawerOpen}
+        onOpenChange={handleDrawerOpenChange}
+        onOpenChangeComplete={(open) => {
+          if (!open) flushPendingScroll();
+        }}
+      >
+        <Dialog.Portal>
+          <Dialog.Backdrop className="fixed inset-0 z-50 bg-black/40 data-[closed]:hidden lg:hidden" />
+          <Dialog.Popup className="fixed inset-y-0 right-0 z-50 flex w-[min(20rem,85vw)] flex-col bg-background shadow-xl data-[closed]:hidden lg:hidden">
+            <div className="flex items-center justify-between border-b px-4 py-3">
+              <Dialog.Title className="text-base font-semibold">
+                絞り込み
+              </Dialog.Title>
+              <Dialog.Close
+                aria-label="絞り込みを閉じる"
+                className="flex h-8 w-8 items-center justify-center rounded-md text-muted-foreground hover:bg-muted hover:text-foreground"
+              >
+                ✕
+              </Dialog.Close>
+            </div>
+
+            <div className="flex-1 overflow-y-auto px-4 py-4">
+              <PaperFilterPanel {...panelProps} />
+            </div>
+
+            <div className="border-t px-4 py-3">
+              <Dialog.Close
+                className={cn(buttonVariants({ size: "lg" }), "w-full")}
+              >
+                {filtered.length} 件を表示
+              </Dialog.Close>
+            </div>
+          </Dialog.Popup>
+        </Dialog.Portal>
+      </Dialog.Root>
 
       {/* Results */}
       <div ref={resultsRef} className="flex-1 space-y-3">
+        {/* モバイル: 検索はドロワーを開かずに使えるところに置く */}
+        <Input
+          placeholder="キーワード検索..."
+          aria-label="キーワード検索"
+          value={searchInput}
+          onChange={(e) => setSearchInput(e.target.value)}
+          className="lg:hidden"
+        />
+
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <p className="text-sm text-muted-foreground">
-            {filtered.length} 件の研究
-            {filtered.length !== papers.length && ` / 全 ${papers.length} 件`}
-          </p>
+          <div className="flex items-center gap-3">
+            <Button
+              variant="outline"
+              size="sm"
+              className="lg:hidden"
+              onClick={() => handleDrawerOpenChange(true)}
+            >
+              絞り込み
+              {activeFilterCount > 0 && ` (${activeFilterCount})`}
+            </Button>
+            <p className="text-sm text-muted-foreground">
+              {filtered.length} 件の研究
+              {filtered.length !== papers.length && ` / 全 ${papers.length} 件`}
+            </p>
+          </div>
 
           <div className="flex items-center gap-2">
             <label

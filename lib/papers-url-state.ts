@@ -26,6 +26,9 @@ export interface PapersUrlState {
   page: number;
 }
 
+/** 複数選択できる絞り込み条件のキー */
+export type ListFilterKey = "dbs" | "designs" | "categories" | "methods";
+
 /** URLSearchParams と ReadonlyURLSearchParams の両方を受けるための最小インタフェース */
 type ParamsLike = { get(key: string): string | null };
 
@@ -92,15 +95,23 @@ export function buildPapersQuery(state: PapersUrlState): string {
   return params.toString();
 }
 
-/** 絞り込みが1つでも掛かっているか（ページ番号・並び順は絞り込みに数えない） */
-export function hasActiveFilters(state: PapersUrlState): boolean {
+/**
+ * 掛かっている絞り込みの数（ページ番号・並び順は絞り込みに数えない）。
+ * モバイルの「絞り込み (2)」表示に使う。出版年は上限・下限それぞれで1つ数える。
+ */
+export function countActiveFilters(state: PapersUrlState): number {
   return (
-    state.search !== "" ||
-    state.dbs.length > 0 ||
-    state.designs.length > 0 ||
-    state.categories.length > 0 ||
-    state.methods.length > 0 ||
-    state.yearFrom !== null ||
-    state.yearTo !== null
+    (state.search !== "" ? 1 : 0) +
+    state.dbs.length +
+    state.designs.length +
+    state.categories.length +
+    state.methods.length +
+    (state.yearFrom !== null ? 1 : 0) +
+    (state.yearTo !== null ? 1 : 0)
   );
+}
+
+/** 絞り込みが1つでも掛かっているか */
+export function hasActiveFilters(state: PapersUrlState): boolean {
+  return countActiveFilters(state) > 0;
 }
