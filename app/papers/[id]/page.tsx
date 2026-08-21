@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { QuartileBadge } from "@/components/papers/QuartileBadge";
+import { BackToPapersLink } from "@/components/papers/BackToPapersLink";
 import { getPapers, getDatabases } from "@/lib/data-loader";
 
 export function generateStaticParams() {
@@ -59,12 +60,7 @@ export default async function PaperDetailPage({
 
   return (
     <div className="mx-auto max-w-4xl space-y-6">
-      <Link
-        href="/papers"
-        className="text-sm text-muted-foreground hover:text-foreground"
-      >
-        ← 研究カタログに戻る
-      </Link>
+      <BackToPapersLink />
 
       <Card>
         <CardHeader>

@@ -1,36 +1,257 @@
 "use client";
 
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback, useEffect, useRef } from "react";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { PaperCard } from "./PaperCard";
+import {
+  parsePapersUrlState,
+  buildPapersQuery,
+  hasActiveFilters,
+  EMPTY_PAPERS_STATE,
+  type PapersUrlState,
+  type SortOption,
+} from "@/lib/papers-url-state";
+import {
+  rememberPapersReturn,
+  peekPapersReturn,
+  clearPapersReturn,
+} from "@/lib/papers-return";
 import type { Paper } from "@/types/paper";
 
 interface PaperFiltersProps {
   papers: Paper[];
 }
 
-type SortOption = "newest" | "oldest" | "if-desc";
-
 const ITEMS_PER_PAGE = 20;
+/** sticky ヘッダー(h-14 = 56px)の下に少し余白を足した位置に送る */
+const HEADER_OFFSET = 72;
+/** 入力中に URL を書き換え続けないための待ち時間 */
+const INPUT_DEBOUNCE_MS = 300;
+/** 詳細ページから戻ったときのスクロール位置復元を諦めるまでの時間 */
+const RESTORE_TIMEOUT_MS = 1500;
+/** 復元位置がこの時間ぶれなければ復元完了とみなす */
+const RESTORE_HOLD_MS = 300;
+/** 復元中の見張り間隔 */
+const RESTORE_POLL_MS = 16;
+
+type ListFilterKey = "dbs" | "designs" | "categories" | "methods";
+
+function currentListUrl(): string {
+  return `${window.location.pathname}${window.location.search}`;
+}
+
+/**
+ * 要素のドキュメント上端からの位置。
+ *
+ * `getBoundingClientRect().top + scrollY` でも同じ値になるが、あちらは
+ * 現在のスクロール位置を巻き込むため、レイアウトが更新されていない場面で
+ * ずれた値を返すことがある。offsetTop の積み上げはスクロール位置に依存しない。
+ */
+function documentTop(el: HTMLElement): number {
+  let top = 0;
+  let node: HTMLElement | null = el;
+  while (node) {
+    top += node.offsetTop;
+    node = node.offsetParent as HTMLElement | null;
+  }
+  return top;
+}
 
 export function PaperFilters({ papers }: PaperFiltersProps) {
-  const [search, setSearch] = useState("");
-  const [selectedDbs, setSelectedDbs] = useState<Set<string>>(new Set());
-  const [selectedDesigns, setSelectedDesigns] = useState<Set<string>>(
-    new Set()
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  const state = useMemo(
+    () => parsePapersUrlState(searchParams),
+    [searchParams],
   );
-  const [selectedCategories, setSelectedCategories] = useState<Set<string>>(
-    new Set()
+
+  // ハンドラを安定させるため、最新の state は ref 経由で読む。
+  // router.replace 後に searchParams が届くまでには一拍あるので、
+  // 続けざまにチェックを付けても取りこぼさないよう applyState 側で先に進めておく。
+  const stateRef = useRef(state);
+  useEffect(() => {
+    stateRef.current = state;
+  }, [state]);
+
+  const resultsRef = useRef<HTMLDivElement>(null);
+
+  // 検索欄・出版年は打鍵のたびに URL を書き換えると履歴も描画も荒れるので、
+  // ローカル state を正としてワンテンポ遅れて URL に反映する
+  const [searchInput, setSearchInput] = useState(state.search);
+  const [yearFromInput, setYearFromInput] = useState(
+    state.yearFrom === null ? "" : String(state.yearFrom),
   );
-  const [selectedMethods, setSelectedMethods] = useState<Set<string>>(
-    new Set()
+  const [yearToInput, setYearToInput] = useState(
+    state.yearTo === null ? "" : String(state.yearTo),
   );
-  const [yearRange, setYearRange] = useState<[number, number]>([2000, 2030]);
-  const [sortBy, setSortBy] = useState<SortOption>("newest");
-  const [currentPage, setCurrentPage] = useState(1);
+
+  const applyState = useCallback(
+    (patch: Partial<PapersUrlState>, opts?: { push?: boolean }) => {
+      const next = { ...stateRef.current, ...patch };
+      stateRef.current = next;
+      const qs = buildPapersQuery(next);
+      const url = qs ? `${pathname}?${qs}` : pathname;
+      // スクロールは自前で制御するので Next 側の自動スクロールは切る
+      if (opts?.push) {
+        router.push(url, { scroll: false });
+      } else {
+        router.replace(url, { scroll: false });
+      }
+    },
+    [pathname, router],
+  );
+
+  /**
+   * 一覧の先頭までスクロールで送り返す。
+   * すでに一覧の先頭より上にいる場合は動かさない（勝手に下へ送られると鬱陶しいため）。
+   */
+  const scrollToResultsTop = useCallback(() => {
+    const el = resultsRef.current;
+    if (!el) return;
+    const target = Math.max(0, documentTop(el) - HEADER_OFFSET);
+    if (window.scrollY <= target + 1) return;
+    // スムーススクロールは環境によって無視されることがあるため即時移動にする
+    window.scrollTo(0, target);
+  }, []);
+
+  // 戻る/進むで URL が巻き戻ったときだけ、ローカル入力を URL 側に合わせ直す。
+  // 自分の router.replace では popstate は飛ばないので、
+  // 入力途中の文字が確定前に書き戻される心配がない。
+  useEffect(() => {
+    const syncInputsFromLocation = () => {
+      const restored = parsePapersUrlState(
+        new URLSearchParams(window.location.search),
+      );
+      setSearchInput(restored.search);
+      setYearFromInput(
+        restored.yearFrom === null ? "" : String(restored.yearFrom),
+      );
+      setYearToInput(restored.yearTo === null ? "" : String(restored.yearTo));
+    };
+    window.addEventListener("popstate", syncInputsFromLocation);
+    return () => window.removeEventListener("popstate", syncInputsFromLocation);
+  }, []);
+
+  // 検索欄 → URL（遅延反映）
+  useEffect(() => {
+    if (searchInput === state.search) return;
+    const timer = setTimeout(() => {
+      applyState({ search: searchInput, page: 1 });
+      scrollToResultsTop();
+    }, INPUT_DEBOUNCE_MS);
+    return () => clearTimeout(timer);
+  }, [searchInput, state.search, applyState, scrollToResultsTop]);
+
+  // 出版年 → URL（遅延反映。空欄は「制限なし」）
+  useEffect(() => {
+    const parse = (raw: string) => {
+      const trimmed = raw.trim();
+      if (trimmed === "") return null;
+      const n = Number.parseInt(trimmed, 10);
+      return Number.isFinite(n) ? n : null;
+    };
+    const nextFrom = parse(yearFromInput);
+    const nextTo = parse(yearToInput);
+    if (nextFrom === state.yearFrom && nextTo === state.yearTo) return;
+    const timer = setTimeout(() => {
+      applyState({ yearFrom: nextFrom, yearTo: nextTo, page: 1 });
+      scrollToResultsTop();
+    }, INPUT_DEBOUNCE_MS);
+    return () => clearTimeout(timer);
+  }, [
+    yearFromInput,
+    yearToInput,
+    state.yearFrom,
+    state.yearTo,
+    applyState,
+    scrollToResultsTop,
+  ]);
+
+  // 詳細ページから戻ってきたときにスクロール位置を復元する。
+  //
+  // 戻った直後は一覧がまだ組み上がっておらず目的の位置まで伸びていないうえ、
+  // Next 側の「遷移したら先頭へ」も後から走ってくる。そのため
+  //   1. 一覧が目的の位置まで伸びるのを待つ
+  //   2. 復元後もしばらく、位置が保たれているか見張る
+  // という形で粘り、ユーザーが自分でスクロールし始めたら即座に手を引く。
+  //
+  // requestAnimationFrame はタブが非表示のあいだ一切発火せず、
+  // 「別タブで開いて後から戻る」と復元も後始末も行われないまま残るため、
+  // 非表示でも動く setTimeout で回している。
+  useEffect(() => {
+    const saved = peekPapersReturn();
+    if (!saved || saved.url !== currentListUrl()) return;
+
+    let cancelled = false;
+    let timer = 0;
+    let heldSince: number | null = null;
+    const deadline = performance.now() + RESTORE_TIMEOUT_MS;
+    const abort = () => {
+      cancelled = true;
+    };
+
+    const restore = () => {
+      if (cancelled) return;
+      const now = performance.now();
+      const maxScroll =
+        document.documentElement.scrollHeight - window.innerHeight;
+      if (maxScroll >= saved.scrollY) {
+        if (Math.abs(window.scrollY - saved.scrollY) > 1) {
+          // Next 側の「遷移したら先頭へ」が後から走っても押し戻す
+          window.scrollTo(0, saved.scrollY);
+          heldSince = null;
+        } else {
+          heldSince ??= now;
+          if (now - heldSince >= RESTORE_HOLD_MS) {
+            clearPapersReturn();
+            return; // 位置が安定したので完了
+          }
+        }
+      }
+      if (now < deadline) {
+        timer = window.setTimeout(restore, RESTORE_POLL_MS);
+      } else {
+        clearPapersReturn();
+      }
+    };
+
+    // ユーザーが自分で操作し始めたら復元をやめる
+    window.addEventListener("wheel", abort, { passive: true, once: true });
+    window.addEventListener("touchstart", abort, { passive: true, once: true });
+    window.addEventListener("keydown", abort, { once: true });
+    restore();
+
+    return () => {
+      cancelled = true;
+      window.clearTimeout(timer);
+      window.removeEventListener("wheel", abort);
+      window.removeEventListener("touchstart", abort);
+      window.removeEventListener("keydown", abort);
+    };
+  }, []);
+
+  // 論文詳細へ抜ける直前に「一覧のどこを見ていたか」を控える。
+  //
+  // React の onClick を親側に置くと Next の <Link> が先に遷移してしまい呼ばれないため、
+  // キャプチャ段階のネイティブリスナーで、リンク自身のハンドラより先に押さえる。
+  useEffect(() => {
+    const el = resultsRef.current;
+    if (!el) return;
+    const onClickCapture = (e: MouseEvent) => {
+      const target = e.target as HTMLElement | null;
+      if (!target?.closest?.('a[href^="/papers/"]')) return;
+      rememberPapersReturn(currentListUrl(), window.scrollY);
+    };
+    el.addEventListener("click", onClickCapture, { capture: true });
+    return () =>
+      el.removeEventListener("click", onClickCapture, { capture: true });
+  }, []);
 
   // Extract unique filter values
   const allDbs = useMemo(() => {
@@ -76,30 +297,53 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     return { min: Math.min(...ys), max: Math.max(...ys) };
   }, [papers]);
 
-  const toggleSet = useCallback(
-    (
-      setter: React.Dispatch<React.SetStateAction<Set<string>>>,
-      value: string
-    ) => {
-      setter((prev) => {
-        const next = new Set(prev);
-        if (next.has(value)) {
-          next.delete(value);
-        } else {
-          next.add(value);
-        }
-        return next;
-      });
-      setCurrentPage(1);
+  const selectedDbs = useMemo(() => new Set(state.dbs), [state.dbs]);
+  const selectedDesigns = useMemo(
+    () => new Set(state.designs),
+    [state.designs],
+  );
+  const selectedCategories = useMemo(
+    () => new Set(state.categories),
+    [state.categories],
+  );
+  const selectedMethods = useMemo(
+    () => new Set(state.methods),
+    [state.methods],
+  );
+
+  const toggleValue = useCallback(
+    (key: ListFilterKey, value: string) => {
+      const current = stateRef.current[key];
+      const next = current.includes(value)
+        ? current.filter((v) => v !== value)
+        : [...current, value];
+      applyState({ [key]: next, page: 1 });
+      scrollToResultsTop();
     },
-    []
+    [applyState, scrollToResultsTop],
+  );
+
+  const clearFilters = useCallback(() => {
+    setSearchInput("");
+    setYearFromInput("");
+    setYearToInput("");
+    applyState({ ...EMPTY_PAPERS_STATE, sort: stateRef.current.sort });
+    scrollToResultsTop();
+  }, [applyState, scrollToResultsTop]);
+
+  const goToPage = useCallback(
+    (page: number) => {
+      applyState({ page }, { push: true });
+      scrollToResultsTop();
+    },
+    [applyState, scrollToResultsTop],
   );
 
   const filtered = useMemo(() => {
     const result = papers.filter((p) => {
       // Text search
-      if (search) {
-        const q = search.toLowerCase();
+      if (state.search) {
+        const q = state.search.toLowerCase();
         const haystack =
           `${p.title} ${p.title_ja ?? ""} ${p.abstract} ${p.abstract_ja ?? ""} ${p.authors.join(" ")} ${p.journal} ${p.databases_used.join(" ")} ${p.study_design} ${(p.research_categories ?? []).join(" ")} ${(p.analysis_methods ?? []).join(" ")}`.toLowerCase();
         if (!haystack.includes(q)) return false;
@@ -112,13 +356,16 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
 
       // Design filter
       if (selectedDesigns.size > 0) {
-        if (!selectedDesigns.has(p.study_design))
-          return false;
+        if (!selectedDesigns.has(p.study_design)) return false;
       }
 
       // Category filter
       if (selectedCategories.size > 0) {
-        if (!(p.research_categories ?? []).some((cat) => selectedCategories.has(cat)))
+        if (
+          !(p.research_categories ?? []).some((cat) =>
+            selectedCategories.has(cat),
+          )
+        )
           return false;
       }
 
@@ -128,15 +375,16 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
           return false;
       }
 
-      // Year filter
-      if (p.year < yearRange[0] || p.year > yearRange[1]) return false;
+      // Year filter（未指定側は制限なし）
+      if (state.yearFrom !== null && p.year < state.yearFrom) return false;
+      if (state.yearTo !== null && p.year > state.yearTo) return false;
 
       return true;
     });
 
     // Sort
     result.sort((a, b) => {
-      switch (sortBy) {
+      switch (state.sort) {
         case "newest":
           return b.publication_date.localeCompare(a.publication_date);
         case "oldest":
@@ -149,16 +397,28 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     });
 
     return result;
-  }, [papers, search, selectedDbs, selectedDesigns, selectedCategories, selectedMethods, yearRange, sortBy]);
+  }, [
+    papers,
+    state.search,
+    state.yearFrom,
+    state.yearTo,
+    state.sort,
+    selectedDbs,
+    selectedDesigns,
+    selectedCategories,
+    selectedMethods,
+  ]);
 
   // Pagination
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+  // 共有された URL のページ番号が現在の絞り込みでは行き過ぎている場合に空振りしないよう丸める
+  const currentPage = Math.min(state.page, Math.max(1, totalPages));
   const paginatedPapers = filtered.slice(
     (currentPage - 1) * ITEMS_PER_PAGE,
-    currentPage * ITEMS_PER_PAGE
+    currentPage * ITEMS_PER_PAGE,
   );
 
-  const hasFilters = selectedDbs.size > 0 || selectedDesigns.size > 0 || selectedCategories.size > 0 || selectedMethods.size > 0 || search;
+  const hasFilters = hasActiveFilters(state);
 
   return (
     <div className="flex flex-col gap-6 lg:flex-row">
@@ -167,11 +427,8 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
         <div>
           <Input
             placeholder="キーワード検索..."
-            value={search}
-            onChange={(e) => {
-              setSearch(e.target.value);
-              setCurrentPage(1);
-            }}
+            value={searchInput}
+            onChange={(e) => setSearchInput(e.target.value)}
           />
         </div>
 
@@ -179,10 +436,13 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
           <h3 className="mb-2 text-sm font-semibold">使用データベース</h3>
           <div className="space-y-1.5">
             {allDbs.map(([db, count]) => (
-              <label key={db} className="flex cursor-pointer items-center gap-2">
+              <label
+                key={db}
+                className="flex cursor-pointer items-center gap-2"
+              >
                 <Checkbox
                   checked={selectedDbs.has(db)}
-                  onCheckedChange={() => toggleSet(setSelectedDbs, db)}
+                  onCheckedChange={() => toggleValue("dbs", db)}
                 />
                 <span className="text-sm">{db}</span>
                 <span className="text-xs text-muted-foreground">({count})</span>
@@ -201,7 +461,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
               >
                 <Checkbox
                   checked={selectedDesigns.has(design)}
-                  onCheckedChange={() => toggleSet(setSelectedDesigns, design)}
+                  onCheckedChange={() => toggleValue("designs", design)}
                 />
                 <span className="text-sm">{design}</span>
                 <span className="text-xs text-muted-foreground">({count})</span>
@@ -220,7 +480,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
               >
                 <Checkbox
                   checked={selectedCategories.has(cat)}
-                  onCheckedChange={() => toggleSet(setSelectedCategories, cat)}
+                  onCheckedChange={() => toggleValue("categories", cat)}
                 />
                 <span className="text-sm">{cat}</span>
                 <span className="text-xs text-muted-foreground">({count})</span>
@@ -239,7 +499,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
               >
                 <Checkbox
                   checked={selectedMethods.has(method)}
-                  onCheckedChange={() => toggleSet(setSelectedMethods, method)}
+                  onCheckedChange={() => toggleValue("methods", method)}
                 />
                 <span className="text-sm">{method}</span>
                 <span className="text-xs text-muted-foreground">({count})</span>
@@ -255,11 +515,10 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
               type="number"
               min={years.min}
               max={years.max}
-              value={yearRange[0]}
-              onChange={(e) => {
-                setYearRange([parseInt(e.target.value) || years.min, yearRange[1]]);
-                setCurrentPage(1);
-              }}
+              placeholder={String(years.min)}
+              aria-label="出版年の下限"
+              value={yearFromInput}
+              onChange={(e) => setYearFromInput(e.target.value)}
               className="w-20"
             />
             <span className="text-sm text-muted-foreground">-</span>
@@ -267,11 +526,10 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
               type="number"
               min={years.min}
               max={years.max}
-              value={yearRange[1]}
-              onChange={(e) => {
-                setYearRange([yearRange[0], parseInt(e.target.value) || years.max]);
-                setCurrentPage(1);
-              }}
+              placeholder={String(years.max)}
+              aria-label="出版年の上限"
+              value={yearToInput}
+              onChange={(e) => setYearToInput(e.target.value)}
               className="w-20"
             />
           </div>
@@ -279,15 +537,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
 
         {hasFilters && (
           <button
-            onClick={() => {
-              setSelectedDbs(new Set());
-              setSelectedDesigns(new Set());
-              setSelectedCategories(new Set());
-              setSelectedMethods(new Set());
-              setSearch("");
-              setYearRange([years.min, years.max]);
-              setCurrentPage(1);
-            }}
+            onClick={clearFilters}
             className="text-sm text-blue-600 hover:underline"
           >
             フィルタをクリア
@@ -296,7 +546,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
       </aside>
 
       {/* Results */}
-      <div className="flex-1 space-y-3">
+      <div ref={resultsRef} className="flex-1 space-y-3">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <p className="text-sm text-muted-foreground">
             {filtered.length} 件の研究
@@ -304,12 +554,18 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
           </p>
 
           <div className="flex items-center gap-2">
-            <label className="text-xs text-muted-foreground">並び替え:</label>
+            <label
+              className="text-xs text-muted-foreground"
+              htmlFor="papers-sort"
+            >
+              並び替え:
+            </label>
             <select
-              value={sortBy}
+              id="papers-sort"
+              value={state.sort}
               onChange={(e) => {
-                setSortBy(e.target.value as SortOption);
-                setCurrentPage(1);
+                applyState({ sort: e.target.value as SortOption, page: 1 });
+                scrollToResultsTop();
               }}
               className="rounded-md border bg-background px-2 py-1 text-xs"
             >
@@ -323,42 +579,42 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
         {/* Active filter tags */}
         {hasFilters && (
           <div className="flex flex-wrap gap-1">
-            {[...selectedDbs].map((db) => (
+            {state.dbs.map((db) => (
               <Badge
                 key={db}
                 variant="default"
                 className="cursor-pointer text-xs"
-                onClick={() => toggleSet(setSelectedDbs, db)}
+                onClick={() => toggleValue("dbs", db)}
               >
                 {db} ×
               </Badge>
             ))}
-            {[...selectedDesigns].map((d) => (
+            {state.designs.map((d) => (
               <Badge
                 key={d}
                 variant="secondary"
                 className="cursor-pointer text-xs"
-                onClick={() => toggleSet(setSelectedDesigns, d)}
+                onClick={() => toggleValue("designs", d)}
               >
                 {d} ×
               </Badge>
             ))}
-            {[...selectedCategories].map((cat) => (
+            {state.categories.map((cat) => (
               <Badge
                 key={cat}
                 variant="outline"
                 className="cursor-pointer text-xs"
-                onClick={() => toggleSet(setSelectedCategories, cat)}
+                onClick={() => toggleValue("categories", cat)}
               >
                 {cat} ×
               </Badge>
             ))}
-            {[...selectedMethods].map((m) => (
+            {state.methods.map((m) => (
               <Badge
                 key={m}
                 variant="secondary"
                 className="cursor-pointer text-xs border-blue-200 bg-blue-50 text-blue-700 hover:bg-blue-100"
-                onClick={() => toggleSet(setSelectedMethods, m)}
+                onClick={() => toggleValue("methods", m)}
               >
                 {m} ×
               </Badge>
@@ -384,7 +640,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
               variant="outline"
               size="sm"
               disabled={currentPage === 1}
-              onClick={() => setCurrentPage((p) => p - 1)}
+              onClick={() => goToPage(currentPage - 1)}
             >
               前へ
             </Button>
@@ -405,7 +661,10 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
                 }, [])
                 .map((item, idx) =>
                   item === "..." ? (
-                    <span key={`ellipsis-${idx}`} className="px-1 text-sm text-muted-foreground">
+                    <span
+                      key={`ellipsis-${idx}`}
+                      className="px-1 text-sm text-muted-foreground"
+                    >
                       ...
                     </span>
                   ) : (
@@ -414,18 +673,19 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
                       variant={currentPage === item ? "default" : "outline"}
                       size="sm"
                       className="min-w-[2rem]"
-                      onClick={() => setCurrentPage(item as number)}
+                      aria-current={currentPage === item ? "page" : undefined}
+                      onClick={() => goToPage(item as number)}
                     >
                       {item}
                     </Button>
-                  )
+                  ),
                 )}
             </div>
             <Button
               variant="outline"
               size="sm"
               disabled={currentPage === totalPages}
-              onClick={() => setCurrentPage((p) => p + 1)}
+              onClick={() => goToPage(currentPage + 1)}
             >
               次へ
             </Button>
