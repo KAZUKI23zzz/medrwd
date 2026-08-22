@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * お気に入り論文の保存。
  *
@@ -13,6 +15,8 @@
  * 同じ画面に並ぶ複数のボタンと件数表示を、購読でまとめて更新する。
  */
 
+import { useSyncExternalStore } from "react";
+
 const KEY = "medrwd:favorites";
 
 /** サーバ描画時と、まだ読めていないときの値。毎回同じ参照を返す必要がある */
@@ -25,6 +29,13 @@ const EMPTY: readonly string[] = Object.freeze([]);
 let cache: readonly string[] | null = null;
 const listeners = new Set<() => void>();
 let watchingOtherTabs = false;
+/**
+ * localStorage に書けなかったか。
+ * プライベートブラウジングや容量超過では setItem が例外を投げる。
+ * 黙って握り潰すと「星は付いたのに次に開いたら消えている」ことになるので、
+ * 画面で断れるようにここで覚えておく。
+ */
+let persistenceFailed = false;
 
 function readFromStorage(): readonly string[] {
   try {
@@ -88,7 +99,42 @@ export function toggleFavorite(paperId: string): void {
       localStorage.removeItem(KEY);
     }
   } catch {
-    // 書けなくても、この画面が閉じるまでは操作できるようにしておく
+    // 書けなくても、この画面を開いている間は操作できるようにする。
+    // ただし保存されていないことは画面で伝える
+    persistenceFailed = true;
+  }
+  notify();
+}
+
+/** 保存できていない状態か（画面で断るために使う） */
+export function getPersistenceFailedSnapshot(): boolean {
+  return persistenceFailed;
+}
+
+function getPersistenceFailedServerSnapshot(): boolean {
+  return false;
+}
+
+/**
+ * 論文側に無いIDを取り除く。
+ *
+ * 週次の同期で偽陽性の論文が削除されるため、放っておくと
+ * 「お気に入り (5)」と出るのに4件しか表示されない、という食い違いが起きる。
+ */
+export function pruneFavorites(existingIds: ReadonlySet<string>): void {
+  const current = getFavoritesSnapshot();
+  const kept = current.filter((id) => existingIds.has(id));
+  if (kept.length === current.length) return;
+
+  cache = kept.length > 0 ? Object.freeze(kept) : EMPTY;
+  try {
+    if (kept.length > 0) {
+      localStorage.setItem(KEY, JSON.stringify(kept));
+    } else {
+      localStorage.removeItem(KEY);
+    }
+  } catch {
+    // 掃除できなくても表示は正しくなるので、ここでは何もしない
   }
   notify();
 }
@@ -102,4 +148,22 @@ export function clearFavorites(): void {
     // 同上
   }
   notify();
+}
+
+/** 同じ画面に並ぶ星と件数表示を、購読でまとめて更新する */
+export function useFavorites(): readonly string[] {
+  return useSyncExternalStore(
+    subscribeFavorites,
+    getFavoritesSnapshot,
+    getFavoritesServerSnapshot,
+  );
+}
+
+/** 保存できていないときに画面で断るためのフック */
+export function useFavoritesPersistenceFailed(): boolean {
+  return useSyncExternalStore(
+    subscribeFavorites,
+    getPersistenceFailedSnapshot,
+    getPersistenceFailedServerSnapshot,
+  );
 }

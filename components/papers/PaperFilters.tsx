@@ -7,9 +7,13 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { PaperCard } from "./PaperCard";
-import { useFavorites } from "./FavoriteButton";
 import { PaperFilterPanel } from "./PaperFilterPanel";
 import { cn } from "@/lib/utils";
+import {
+  useFavorites,
+  useFavoritesPersistenceFailed,
+  pruneFavorites,
+} from "@/lib/favorites";
 import {
   parsePapersUrlState,
   buildPapersQuery,
@@ -404,17 +408,26 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
   const passSearch = searchOutcome.pass;
 
   const favorites = useFavorites();
+  const favoritesUnavailable = useFavoritesPersistenceFailed();
   const favoriteIds = useMemo(() => new Set(favorites), [favorites]);
+
+  // 全件通過。お気に入りの絞り込みが「切」のときは常にこれを使うので、
+  // 星を押しても下流（ファセット件数・並び替え）を計算し直さずに済む。
+  const passAll = useMemo(() => papers.map(() => true), [papers]);
 
   // お気に入りは他の絞り込みと同じく AND の一条件。
   // ファセットの件数もこれを踏まえた数になる。
   const passFavorite = useMemo(
     () =>
-      state.favoritesOnly
-        ? papers.map((p) => favoriteIds.has(p.id))
-        : papers.map(() => true),
-    [papers, state.favoritesOnly, favoriteIds],
+      state.favoritesOnly ? papers.map((p) => favoriteIds.has(p.id)) : passAll,
+    [papers, favoriteIds, state.favoritesOnly, passAll],
   );
+
+  // 指摘: 週次同期で削除された論文のIDが残ると、件数が実態と合わなくなる。
+  // 一覧を開いたときに、論文側に無いIDを取り除いておく。
+  useEffect(() => {
+    pruneFavorites(new Set(papers.map((p) => p.id)));
+  }, [papers]);
 
   const passYear = useMemo(
     () =>
@@ -718,7 +731,6 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
               絞り込み
               {activeFilterCount > 0 && ` (${activeFilterCount})`}
             </Button>
-            {/* 絞り込みで件数が変わったことを読み上げで伝える */}
             <Button
               variant={state.favoritesOnly ? "default" : "outline"}
               size="sm"
@@ -729,6 +741,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
               お気に入り
               {favorites.length > 0 && ` (${favorites.length})`}
             </Button>
+            {/* 絞り込みで件数が変わったことを読み上げで伝える */}
             <p className="text-sm text-muted-foreground" role="status">
               {filtered.length} 件の研究
               {filtered.length !== papers.length && ` / 全 ${papers.length} 件`}
@@ -823,6 +836,17 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
           </div>
         )}
 
+        {/* お気に入りが保存できない環境（プライベートモード等）では、その旨を断る */}
+        {favoritesUnavailable && (
+          <div
+            role="status"
+            className="rounded-md border border-amber-300 bg-amber-50 px-3 py-2 text-sm text-amber-900"
+          >
+            このブラウザではお気に入りを保存できません（プライベートモードなど）。
+            ページを閉じると失われます。
+          </div>
+        )}
+
         {/* 検索条件を自動で緩めたときは、何をしたかを必ず伝える */}
         {(searchOutcome.notFound.length > 0 ||
           searchOutcome.dropped.length > 0) && (
@@ -891,7 +915,10 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
                         キーワードを消す
                       </Button>
                     )}
-                    {chips.length > 0 && (
+                    {/* キーワード以外に絞り込みが掛かっていれば出す。
+                        以前は chips（DB・デザイン等）だけを見ており、
+                        出版年やお気に入りだけのときに逃げ道が消えていた。 */}
+                    {activeFilterCount > (state.search ? 1 : 0) && (
                       <Button
                         variant="outline"
                         size="sm"
