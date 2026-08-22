@@ -16,14 +16,16 @@ Next.js 16 (Static Export) / TypeScript / Tailwind CSS v4 + shadcn/ui v4 / JSON�
 |------|------|
 | `app/` | Next.js App Router（ダッシュボード・研究カタログ・DB一覧・About・status） |
 | `scripts/sync-pubmed.ts` | PubMed収集（収集専任: hasabstract + OpenAlex IF → classified:false で追記）。分類・翻訳はしない |
-| `data/papers.json` | 論文メタデータ（880件、全件分類済み） |
+| `data/papers.json` | 論文メタデータ（1,067件、全件分類済み）。週次Routineが追記・削除する |
 | `data/sync-status.json` | 同期の最終実行状況（Routineが毎回更新、`/status`で表示） |
-| `data/databases.json` | RWDデータベース情報（6件） |
+| `data/databases.json` | RWDデータベース情報（10件。`paper_tag` で論文側の名前と突き合わせる） |
 | `docs/routine-classify.md` | **Routineのプロンプト全文＋セットアップ手順** |
 | `docs/classification.md` | **分類スキーマ・偽陽性基準（Routineが参照する正）** |
 | `docs/DEVELOPMENT.md` | デバッグTips・設計判断・検索式比較・法的リスク・変更履歴 |
 | `docs/related-papers.md` | **未着手**: 詳細ページの「関連研究」が機能していない問題の引き継ぎ（独立課題） |
-| `lib/favorites.ts` | お気に入り論文（localStorage のみ。サーバ・アカウント不要） |
+| `lib/papers-url-state.ts` | 研究カタログの絞り込み状態 ⇄ URLクエリの変換 |
+| `lib/papers-search.ts` | キーワード検索（スペース区切り＝AND、表記ゆれ正規化） |
+| `lib/favorites.ts` | お気に入り（localStorage のみ。サーバ・アカウント不要） |
 
 ## よく使うコマンド
 
@@ -41,13 +43,16 @@ npx tsx scripts/sync-pubmed.ts           # 論文収集（手動。通常はRout
 - 失敗の可視化は `/status` ページ（`data/sync-status.json`）＋セーフマージ・ガード。
 - Routineのセットアップ/運用は `docs/routine-classify.md` 参照。要設定2点: ①クラウド環境のネットワーク許可に `eutils.ncbi.nlm.nih.gov`・`api.openalex.org` ②Claude GitHub Appをwrite権限で導入。
 
-**お気に入り**: `localStorage` にID一覧を持つだけで、アカウント登録もサーバも不要。
-`/papers?fav=1` で絞り込める。端末をまたいで共有されず、iOS Safari は7日間未訪問で
-自動削除することがある（画面上でも断っている）。共有用のURLとしては使えない
-（受け取った人には「その人のお気に入り」が出るため）。
+**研究カタログのUX改修 完了（PR #32–#34 / 2026-08）**
+絞り込み状態のURL化・AND検索・ファセット件数の動的化・モバイルのドロワー化・
+DB一覧の拡充（10件）・お気に入り（localStorage）。
+**経緯と設計判断、UIの検証手順は `docs/DEVELOPMENT.md` を参照。**
 
 **未実装（Phase 3）**: Pagefind全文検索 / SJR CSV取込 / DB詳細ページ充実
 
 ## 既知の課題
 
 1. （解消）~~Google Translate無料EP~~ → 翻訳・要約はRoutine(LLM)に移管し廃止。
+2. `/papers` の初回表示が重い（brotli後 728KB）。全件の抄録を載せているため。
+   検索精度とのトレードオフで現状維持と判断。
+3. 詳細ページの「関連研究」が実質「同じDBの最新5件」→ `docs/related-papers.md`（独立課題）。
