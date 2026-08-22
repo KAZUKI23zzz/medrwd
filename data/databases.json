@@ -37,7 +37,7 @@
     "slug": "jmdc",
     "name": "JMDC Claims Database",
     "name_en": "JMDC Claims Database",
-    "type": "commercial",
+    "type": "private",
     "administrator": "JMDC株式会社",
     "data_types": [
       "組合健保レセプト",
@@ -147,7 +147,7 @@
     "slug": "mdv",
     "name": "MDV（メディカル・データ・ビジョン）データベース",
     "name_en": "Medical Data Vision Database",
-    "type": "commercial",
+    "type": "private",
     "administrator": "メディカル・データ・ビジョン株式会社",
     "data_types": [
       "DPCデータ",
@@ -256,7 +256,7 @@
     "slug": "desc",
     "name": "DeSCデータベース（IQVIA統合DeSCデータ）",
     "name_en": "DeSC Healthcare Database",
-    "type": "other",
+    "type": "private",
     "administrator": "DeSCヘルスケア株式会社（DeNA・住友商事の合弁）",
     "paper_tag": "DeSC Healthcare",
     "data_types": [

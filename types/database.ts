@@ -1,22 +1,29 @@
-export type DatabaseType = "public" | "commercial" | "other";
+/**
+ * データベースの区分。「誰がデータを保有しているか」で分ける。
+ *
+ * 有償か無償かでは分けない。公的DBにも利用料があり（MID-NET には PMDA が
+ * 料金表を公表している）、民間DBにも無償提供がある（DeSC は研究公募で無償）ため、
+ * 費用を軸にすると実態と合わなくなる。
+ */
+export type DatabaseType = "public" | "private";
 
 /** 区分の表示名。バッジと見出しで同じ言葉を使う */
 export const DATABASE_TYPE_LABEL: Record<DatabaseType, string> = {
   public: "公的",
-  commercial: "商業",
-  other: "その他",
+  private: "民間",
+};
+
+/** 一覧の見出しに添える、区分の定義 */
+export const DATABASE_TYPE_DESCRIPTION: Record<DatabaseType, string> = {
+  public: "国・公的機関や学会が、制度として収集しているもの",
+  private: "民間事業者が事業として保有しているもの",
 };
 
 export interface RWDDatabase {
   slug: string;
   name: string;
   name_en: string;
-  /**
-   * 提供のされ方による区分。
-   *  - public:     公的機関が整備・提供
-   *  - commercial: 事業者が有償で提供
-   *  - other:      上記のどちらでもない（研究公募による無償提供など）
-   */
+  /** 保有主体による区分（有償・無償では分けない） */
   type: DatabaseType;
   administrator: string;
   /**
@@ -39,7 +46,7 @@ export interface RWDDatabase {
   related_resources?: { label: string; url: string }[];
 }
 
-export interface CommercialDBLink {
+export interface PrivateDBLink {
   company: string;
   description: string;
   url: string;

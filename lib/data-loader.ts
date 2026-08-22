@@ -1,9 +1,9 @@
 import papersData from "@/data/papers.json";
 import databasesData from "@/data/databases.json";
-import commercialLinksData from "@/data/commercial-db-links.json";
+import privateLinksData from "@/data/private-db-links.json";
 import syncStatusData from "@/data/sync-status.json";
 import type { Paper } from "@/types/paper";
-import type { RWDDatabase, CommercialDBLink } from "@/types/database";
+import type { RWDDatabase, PrivateDBLink } from "@/types/database";
 import type { SyncStatus } from "@/types/sync-status";
 
 /**
@@ -41,8 +41,8 @@ export function getDatabases(): RWDDatabase[] {
   return databasesData as RWDDatabase[];
 }
 
-export function getCommercialLinks(): CommercialDBLink[] {
-  return commercialLinksData as CommercialDBLink[];
+export function getPrivateDbLinks(): PrivateDBLink[] {
+  return privateLinksData as PrivateDBLink[];
 }
 
 export function getSyncStatus(): SyncStatus {

@@ -1,24 +1,26 @@
-import { getDatabases, getPapers, getCommercialLinks } from "@/lib/data-loader";
+import { getDatabases, getPapers, getPrivateDbLinks } from "@/lib/data-loader";
 import { DatabaseCard } from "@/components/databases/DatabaseCard";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import {
+  DATABASE_TYPE_LABEL,
+  DATABASE_TYPE_DESCRIPTION,
+} from "@/types/database";
 
 export const metadata = {
   title: "データベース一覧 - 医療RWD研究カタログ",
   description:
-    "日本の医療RWDデータベースを公的・商業別に一覧。特徴や向いている研究を比較",
+    "日本の医療RWDデータベースを公的・民間別に一覧。特徴や向いている研究を比較",
 };
 
 export default function DatabasesPage() {
   const databases = getDatabases();
   const papers = getPapers();
-  const commercialLinks = getCommercialLinks();
+  const privateDbLinks = getPrivateDbLinks();
 
   const publicDbs = databases.filter((db) => db.type === "public");
-  const commercialDbs = databases.filter((db) => db.type === "commercial");
-  // 公的でも商業でもないもの（研究公募による無償提供など）
-  const otherDbs = databases.filter((db) => db.type === "other");
+  const privateDbs = databases.filter((db) => db.type === "private");
 
   // DBごとの研究数。カタログの絞り込みと同じ基準（paper_tag の完全一致）で数えるので、
   // トップページ・DB一覧・DB詳細・研究カタログの4箇所で必ず同じ数字になる。
@@ -41,12 +43,15 @@ export default function DatabasesPage() {
 
       {/* Public DBs */}
       <section>
-        <h2 className="mb-4 text-xl font-semibold">
+        <h2 className="mb-1 text-xl font-semibold">
           公的データベース
           <Badge variant="default" className="ml-2">
             {publicDbs.length}
           </Badge>
         </h2>
+        <p className="mb-4 text-sm text-muted-foreground">
+          {DATABASE_TYPE_DESCRIPTION.public}
+        </p>
         <div className="grid gap-4 md:grid-cols-2">
           {publicDbs.map((db) => (
             <DatabaseCard
@@ -60,16 +65,19 @@ export default function DatabasesPage() {
 
       <Separator />
 
-      {/* Commercial DBs */}
+      {/* 民間DB */}
       <section>
-        <h2 className="mb-4 text-xl font-semibold">
-          商業データベース
+        <h2 className="mb-1 text-xl font-semibold">
+          民間データベース
           <Badge variant="secondary" className="ml-2">
-            {commercialDbs.length}
+            {privateDbs.length}
           </Badge>
         </h2>
+        <p className="mb-4 text-sm text-muted-foreground">
+          {DATABASE_TYPE_DESCRIPTION.private}
+        </p>
         <div className="grid gap-4 md:grid-cols-2">
-          {commercialDbs.map((db) => (
+          {privateDbs.map((db) => (
             <DatabaseCard
               key={db.slug}
               db={db}
@@ -79,39 +87,11 @@ export default function DatabasesPage() {
         </div>
       </section>
 
-      {otherDbs.length > 0 && (
-        <>
-          <Separator />
-
-          <section>
-            <h2 className="mb-1 text-xl font-semibold">
-              その他
-              <Badge variant="outline" className="ml-2">
-                {otherDbs.length}
-              </Badge>
-            </h2>
-            <p className="mb-4 text-sm text-muted-foreground">
-              公的機関の整備でも、事業者による有償提供でもないもの。
-              研究公募で無償提供されるデータベースなど。
-            </p>
-            <div className="grid gap-4 md:grid-cols-2">
-              {otherDbs.map((db) => (
-                <DatabaseCard
-                  key={db.slug}
-                  db={db}
-                  paperCount={paperCounts.get(db.slug) || 0}
-                />
-              ))}
-            </div>
-          </section>
-        </>
-      )}
-
-      {/* Commercial DB publication links */}
+      {/* 民間DB各社の論文一覧 */}
       <section>
-        <h2 className="mb-4 text-xl font-semibold">商業DB各社の論文一覧</h2>
+        <h2 className="mb-4 text-xl font-semibold">民間DB各社の論文一覧</h2>
         <div className="grid gap-4 md:grid-cols-3">
-          {commercialLinks.map((link) => (
+          {privateDbLinks.map((link) => (
             <Card key={link.company}>
               <CardHeader className="pb-2">
                 <CardTitle className="text-base">{link.company}</CardTitle>
@@ -172,7 +152,7 @@ export default function DatabasesPage() {
                       variant={db.type === "public" ? "default" : "secondary"}
                       className="text-xs"
                     >
-                      {db.type === "public" ? "公的" : "商業"}
+                      {DATABASE_TYPE_LABEL[db.type]}
                     </Badge>
                   </td>
                   <td className="px-3 py-2 text-muted-foreground">
