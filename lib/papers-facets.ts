@@ -16,8 +16,6 @@ export interface FacetOption {
   value: string;
   /** 現在の絞り込みでの件数。0 ならその選択肢を選んでも0件になる */
   count: number;
-  /** 絞り込み前の件数。並び順の決定に使う */
-  totalCount: number;
 }
 
 /** その論文が持つ、指定ファセットの値 */
@@ -55,11 +53,8 @@ export function computeFacetOptions(
     }
   });
 
+  // 並び順は絞り込み前の件数で決める（件数に追随させると選択肢が動いてしまう）
   return [...total.entries()]
     .sort((a, b) => b[1] - a[1])
-    .map(([value, totalCount]) => ({
-      value,
-      totalCount,
-      count: current.get(value) ?? 0,
-    }));
+    .map(([value]) => ({ value, count: current.get(value) ?? 0 }));
 }

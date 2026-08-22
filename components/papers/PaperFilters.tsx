@@ -37,8 +37,11 @@ interface PaperFiltersProps {
 }
 
 const ITEMS_PER_PAGE = 20;
-/** sticky ヘッダー(h-14 = 56px)の下に少し余白を足した位置に送る */
-const HEADER_OFFSET = 72;
+/**
+ * sticky ヘッダー(h-14 = 56px)の下に少し余白を足した位置。
+ * サイドバーの貼り付き位置（下の lg:top-20）と同じ値にしておくこと。
+ */
+const HEADER_OFFSET = 80;
 /** 入力中に URL を書き換え続けないための待ち時間 */
 const INPUT_DEBOUNCE_MS = 300;
 /** 詳細ページから戻ったときのスクロール位置復元を諦めるまでの時間 */
@@ -167,6 +170,19 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     [flushPendingScroll],
   );
 
+  // lg 以上ではドロワーを使わない。開いたまま画面幅が広がると
+  // Dialog は modal のままなのに CSS(lg:hidden)で見えなくなり、
+  // スクロールロックとフォーカストラップだけが残って画面が固まる。
+  // （タブレットを縦から横に回したときに起きる）
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 1024px)");
+    const closeIfDesktop = () => {
+      if (mq.matches) handleDrawerOpenChange(false);
+    };
+    mq.addEventListener("change", closeIfDesktop);
+    return () => mq.removeEventListener("change", closeIfDesktop);
+  }, [handleDrawerOpenChange]);
+
   // 戻る/進むで URL が巻き戻ったときだけ、ローカル入力を URL 側に合わせ直す。
   // 自分の router.replace では popstate は飛ばないので、
   // 入力途中の文字が確定前に書き戻される心配がない。
@@ -233,7 +249,13 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
   // 非表示でも動く setTimeout で回している。
   useEffect(() => {
     const saved = peekPapersReturn();
-    if (!saved || saved.url !== currentListUrl()) return;
+    if (!saved) return;
+    if (saved.url !== currentListUrl()) {
+      // ヘッダーのナビ等、別経路で一覧に来た。古い控えを残すと
+      // 後で開いた詳細ページの「戻る」が、見ていない絞り込みに飛んでしまう
+      clearPapersReturn();
+      return;
+    }
 
     let cancelled = false;
     let timer = 0;
@@ -340,7 +362,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
   const searchOutcome = useMemo(() => {
     const passAll = () => papers.map(() => true);
     if (searchTerms.length === 0) {
-      return { pass: passAll(), notFound: [], dropped: [], noMatch: false };
+      return { pass: passAll(), notFound: [], dropped: [] };
     }
 
     const passFor = (terms: string[]) =>
@@ -349,7 +371,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
 
     const full = passFor(searchTerms);
     if (any(full)) {
-      return { pass: full, notFound: [], dropped: [], noMatch: false };
+      return { pass: full, notFound: [], dropped: [] };
     }
 
     // 1. どの論文にも出てこない語を落とす
@@ -358,16 +380,11 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     );
     let kept = searchTerms.filter((t) => !notFound.includes(t));
     if (kept.length === 0) {
-      return {
-        pass: papers.map(() => false),
-        notFound,
-        dropped: [],
-        noMatch: true,
-      };
+      return { pass: papers.map(() => false), notFound, dropped: [] };
     }
     let pass = passFor(kept);
     if (any(pass)) {
-      return { pass, notFound, dropped: [], noMatch: false };
+      return { pass, notFound, dropped: [] };
     }
 
     // 2. まだ0件なら、後ろの語から順に落とす
@@ -377,10 +394,10 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
       kept = kept.slice(0, -1);
       pass = passFor(kept);
       if (any(pass)) {
-        return { pass, notFound, dropped, noMatch: false };
+        return { pass, notFound, dropped };
       }
     }
-    return { pass: papers.map(() => false), notFound, dropped, noMatch: true };
+    return { pass: papers.map(() => false), notFound, dropped };
   }, [papers, searchIndex, searchTerms]);
 
   const passSearch = searchOutcome.pass;
@@ -511,6 +528,9 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     (page: number) => {
       applyState({ page }, { push: true });
       scrollToResultsTop();
+      // スクロールだけだと、キーボード/読み上げ利用者は画面外に残った
+      // ページ送りボタンに立ったままになる。フォーカスも一覧の先頭へ移す。
+      resultsRef.current?.focus({ preventScroll: true });
     },
     [applyState, scrollToResultsTop],
   );
@@ -640,7 +660,11 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
       </Dialog.Root>
 
       {/* Results */}
-      <div ref={resultsRef} className="flex-1 space-y-3">
+      <div
+        ref={resultsRef}
+        tabIndex={-1}
+        className="flex-1 space-y-3 outline-none"
+      >
         {/* モバイル: 検索はドロワーを開かずに使えるところに置く */}
         <Input
           placeholder="キーワード検索..."
@@ -661,7 +685,8 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
               絞り込み
               {activeFilterCount > 0 && ` (${activeFilterCount})`}
             </Button>
-            <p className="text-sm text-muted-foreground">
+            {/* 絞り込みで件数が変わったことを読み上げで伝える */}
+            <p className="text-sm text-muted-foreground" role="status">
               {filtered.length} 件の研究
               {filtered.length !== papers.length && ` / 全 ${papers.length} 件`}
             </p>

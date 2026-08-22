@@ -77,6 +77,9 @@ export function normalizeForSearch(text: string): string {
     s = s.replace(pattern, replacement);
   }
   s = s.replace(/[-–—/]/g, " ");
+  // 引用符は区切り記号として扱い、語には残さない。
+  // 本文側にも同じ処理を掛けるので、片方だけ消えて一致しなくなることはない。
+  s = s.replace(/[\u0022\u201c\u201d]/g, " ");
   return s.replace(/\s+/g, " ").trim();
 }
 
@@ -117,7 +120,12 @@ export function buildSearchIndex(papers: Paper[]): string[] {
  */
 export function parseSearchQuery(query: string): string[] {
   const terms: string[] = [];
-  const pattern = /"([^"]*)"|(\S+)/g;
+  // 閉じ引用符は任意。入力途中で `"heart failure` のように閉じていない状態でも、
+  // 残りをまとめて1語として扱う（閉じ引用符を必須にすると、開き引用符が
+  // ただの文字として語に混ざり、どの論文にも一致しなくなる）。
+  // カーリークォート（“ ”）も引用符として受け付ける。
+  const pattern =
+    /[\u0022\u201c]([^\u0022\u201c\u201d]*)[\u0022\u201d]?|(\S+)/g;
   let match: RegExpExecArray | null;
 
   while ((match = pattern.exec(query)) !== null) {
