@@ -23,6 +23,7 @@ Next.js 16 (Static Export) / TypeScript / Tailwind CSS v4 + shadcn/ui v4 / JSON�
 | `docs/classification.md` | **分類スキーマ・偽陽性基準（Routineが参照する正）** |
 | `docs/DEVELOPMENT.md` | デバッグTips・設計判断・検索式比較・法的リスク・変更履歴 |
 | `docs/related-papers.md` | **未着手**: 詳細ページの「関連研究」が機能していない問題の引き継ぎ（独立課題） |
+| `lib/favorites.ts` | お気に入り論文（localStorage のみ。サーバ・アカウント不要） |
 
 ## よく使うコマンド
 
@@ -39,6 +40,11 @@ npx tsx scripts/sync-pubmed.ts           # 論文収集（手動。通常はRout
 - `abstract_ja` は全文訳ではなく**2〜3文の日本語AI要約**（WEB上は「AI要約」表示）。
 - 失敗の可視化は `/status` ページ（`data/sync-status.json`）＋セーフマージ・ガード。
 - Routineのセットアップ/運用は `docs/routine-classify.md` 参照。要設定2点: ①クラウド環境のネットワーク許可に `eutils.ncbi.nlm.nih.gov`・`api.openalex.org` ②Claude GitHub Appをwrite権限で導入。
+
+**お気に入り**: `localStorage` にID一覧を持つだけで、アカウント登録もサーバも不要。
+`/papers?fav=1` で絞り込める。端末をまたいで共有されず、iOS Safari は7日間未訪問で
+自動削除することがある（画面上でも断っている）。共有用のURLとしては使えない
+（受け取った人には「その人のお気に入り」が出るため）。
 
 **未実装（Phase 3）**: Pagefind全文検索 / SJR CSV取込 / DB詳細ページ充実
 

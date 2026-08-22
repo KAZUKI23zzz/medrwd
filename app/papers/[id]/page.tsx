@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { QuartileBadge } from "@/components/papers/QuartileBadge";
 import { BackToPapersLink } from "@/components/papers/BackToPapersLink";
+import { FavoriteButton } from "@/components/papers/FavoriteButton";
 import { getPapers, getDatabases } from "@/lib/data-loader";
 
 export function generateStaticParams() {
@@ -74,6 +75,7 @@ export default async function PaperDetailPage({
               </Badge>
             )}
             <span className="text-sm text-muted-foreground">{paper.year}</span>
+            <FavoriteButton paperId={paper.id} className="ml-auto" />
           </div>
           <CardTitle className="text-xl leading-snug">{paper.title}</CardTitle>
           {paper.title_ja && (

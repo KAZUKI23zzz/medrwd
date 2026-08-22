@@ -24,6 +24,14 @@ export interface PapersUrlState {
   yearTo: number | null;
   sort: SortOption;
   page: number;
+  /**
+   * お気に入りだけに絞るか。
+   *
+   * お気に入りはブラウザごとの情報なので、この状態を含むURLを他人に送ると
+   * 相手には「相手のお気に入り」が表示される。共有には向かない絞り込みだが、
+   * 戻る/進むと自分のブックマークのために URL に載せている。
+   */
+  favoritesOnly: boolean;
 }
 
 /** 複数選択できる絞り込み条件のキー */
@@ -45,6 +53,7 @@ export const EMPTY_PAPERS_STATE: PapersUrlState = {
   yearTo: null,
   sort: DEFAULT_SORT,
   page: 1,
+  favoritesOnly: false,
 };
 
 /**
@@ -88,6 +97,7 @@ export function parsePapersUrlState(params: ParamsLike): PapersUrlState {
       ? (sortRaw as SortOption)
       : DEFAULT_SORT,
     page: Number.isFinite(pageRaw) && pageRaw > 0 ? pageRaw : 1,
+    favoritesOnly: params.get("fav") === "1",
   };
 }
 
@@ -103,6 +113,7 @@ export function buildPapersQuery(state: PapersUrlState): string {
   if (state.yearFrom !== null) params.set("from", String(state.yearFrom));
   if (state.yearTo !== null) params.set("to", String(state.yearTo));
   if (state.sort !== DEFAULT_SORT) params.set("sort", state.sort);
+  if (state.favoritesOnly) params.set("fav", "1");
   if (state.page > 1) params.set("page", String(state.page));
 
   return params.toString();
@@ -120,7 +131,8 @@ export function countActiveFilters(state: PapersUrlState): number {
     state.categories.length +
     state.methods.length +
     (state.yearFrom !== null ? 1 : 0) +
-    (state.yearTo !== null ? 1 : 0)
+    (state.yearTo !== null ? 1 : 0) +
+    (state.favoritesOnly ? 1 : 0)
   );
 }
 
