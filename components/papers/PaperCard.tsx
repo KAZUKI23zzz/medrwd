@@ -11,14 +11,21 @@ export function PaperCard({ paper }: { paper: Paper }) {
       : paper.authors.join(", ");
 
   return (
-    <Card className="transition-shadow hover:shadow-md">
+    // カード全体を押せるようにするが、リンクを入れ子にはしない。
+    // タイトルの <a> に擬似要素を敷いてカード全体を覆う（stretched link）。
+    // DOI/PubMed は外部リンクなので、その上に出るよう z-10 で持ち上げている。
+    <Card className="relative transition-shadow hover:shadow-md focus-within:ring-2 focus-within:ring-ring/50">
       <CardContent className="space-y-3 p-4">
         <div className="flex flex-wrap items-center gap-2">
           {paper.sjr_quartile && (
             <QuartileBadge quartile={paper.sjr_quartile} />
           )}
           {paper.impact_factor && (
-            <Badge variant="secondary" className="text-xs" title="OpenAlex 2yr Mean Citedness">
+            <Badge
+              variant="secondary"
+              className="text-xs"
+              title="OpenAlex 2yr Mean Citedness"
+            >
               CI: {paper.impact_factor}
             </Badge>
           )}
@@ -27,7 +34,7 @@ export function PaperCard({ paper }: { paper: Paper }) {
 
         <Link
           href={`/papers/${paper.id}`}
-          className="block font-medium leading-snug hover:text-primary"
+          className="block font-medium leading-snug hover:text-primary after:absolute after:inset-0 after:content-[''] focus-visible:outline-none"
         >
           {paper.title}
         </Link>
@@ -80,18 +87,19 @@ export function PaperCard({ paper }: { paper: Paper }) {
             </Badge>
           </div>
 
-          {(paper.research_categories ?? []).length > 0 && paper.research_categories[0] !== "その他" && (
-            <div className="flex flex-wrap items-center gap-1.5">
-              <span className="text-xs font-medium text-muted-foreground">
-                カテゴリ:
-              </span>
-              {paper.research_categories.map((cat) => (
-                <Badge key={cat} variant="outline" className="text-xs">
-                  {cat}
-                </Badge>
-              ))}
-            </div>
-          )}
+          {(paper.research_categories ?? []).length > 0 &&
+            paper.research_categories[0] !== "その他" && (
+              <div className="flex flex-wrap items-center gap-1.5">
+                <span className="text-xs font-medium text-muted-foreground">
+                  カテゴリ:
+                </span>
+                {paper.research_categories.map((cat) => (
+                  <Badge key={cat} variant="outline" className="text-xs">
+                    {cat}
+                  </Badge>
+                ))}
+              </div>
+            )}
 
           {(paper.analysis_methods ?? []).length > 0 && (
             <div className="flex flex-wrap items-center gap-1.5">
@@ -99,7 +107,11 @@ export function PaperCard({ paper }: { paper: Paper }) {
                 解析手法:
               </span>
               {paper.analysis_methods.map((method) => (
-                <Badge key={method} variant="secondary" className="text-xs border-blue-200 bg-blue-50 text-blue-700">
+                <Badge
+                  key={method}
+                  variant="secondary"
+                  className="text-xs border-blue-200 bg-blue-50 text-blue-700"
+                >
                   {method}
                 </Badge>
               ))}
@@ -107,7 +119,7 @@ export function PaperCard({ paper }: { paper: Paper }) {
           )}
         </div>
 
-        <div className="flex gap-3 pt-1 text-xs">
+        <div className="relative z-10 flex w-fit gap-3 pt-1 text-xs">
           {paper.doi && (
             <a
               href={`https://doi.org/${paper.doi}`}

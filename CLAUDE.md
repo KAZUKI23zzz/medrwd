@@ -22,6 +22,7 @@ Next.js 16 (Static Export) / TypeScript / Tailwind CSS v4 + shadcn/ui v4 / JSON�
 | `docs/routine-classify.md` | **Routineのプロンプト全文＋セットアップ手順** |
 | `docs/classification.md` | **分類スキーマ・偽陽性基準（Routineが参照する正）** |
 | `docs/DEVELOPMENT.md` | デバッグTips・設計判断・検索式比較・法的リスク・変更履歴 |
+| `docs/related-papers.md` | **未着手**: 詳細ページの「関連研究」が機能していない問題の引き継ぎ（独立課題） |
 
 ## よく使うコマンド
 
