@@ -87,6 +87,8 @@ export default function DatabasesPage() {
         </div>
       </section>
 
+      <Separator />
+
       {/* 民間DB各社の論文一覧 */}
       <section>
         <h2 className="mb-4 text-xl font-semibold">民間DB各社の論文一覧</h2>

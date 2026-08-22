@@ -8,5 +8,10 @@
     "company": "MDV（メディカル・データ・ビジョン）",
     "description": "MDVのデータベース事業（EBM insight）",
     "url": "https://www.mdv.co.jp/ebm/"
+  },
+  {
+    "company": "DeSCヘルスケア",
+    "description": "DeSCデータベースを使った学会発表・論文",
+    "url": "https://desc-hc.co.jp/archives/publication"
   }
 ]

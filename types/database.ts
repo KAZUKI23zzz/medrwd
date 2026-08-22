@@ -13,6 +13,12 @@ export const DATABASE_TYPE_LABEL: Record<DatabaseType, string> = {
   private: "民間",
 };
 
+/** バッジの色。文字（DATABASE_TYPE_LABEL）と同じ表から引いて、直し漏れを防ぐ */
+export const DATABASE_TYPE_VARIANT: Record<DatabaseType, "default" | "secondary"> = {
+  public: "default",
+  private: "secondary",
+};
+
 /** 一覧の見出しに添える、区分の定義 */
 export const DATABASE_TYPE_DESCRIPTION: Record<DatabaseType, string> = {
   public: "国・公的機関や学会が、制度として収集しているもの",

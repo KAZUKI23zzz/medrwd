@@ -4,7 +4,11 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { getDatabases, getPapers } from "@/lib/data-loader";
-import { DATABASE_TYPE_LABEL } from "@/types/database";
+import {
+  DATABASE_TYPE_LABEL,
+  DATABASE_TYPE_VARIANT,
+  DATABASE_TYPE_DESCRIPTION,
+} from "@/types/database";
 import { papersUrlForDatabase } from "@/lib/papers-url-state";
 
 export function generateStaticParams() {
@@ -65,13 +69,18 @@ export default async function DatabaseDetailPage({
       <Card>
         <CardHeader>
           <div className="flex items-center gap-2">
-            <Badge variant={db.type === "public" ? "default" : "secondary"}>
+            <Badge variant={DATABASE_TYPE_VARIANT[db.type]}>
               {DATABASE_TYPE_LABEL[db.type]}
             </Badge>
             <span className="text-sm text-muted-foreground">
               {db.administrator}
             </span>
           </div>
+          {/* 区分の意味は一覧ページにしか無かったので、ここにも添える。
+              「民間」を有償提供の意味だと取り違えられないようにするため。 */}
+          <p className="text-xs text-muted-foreground">
+            {DATABASE_TYPE_LABEL[db.type]}：{DATABASE_TYPE_DESCRIPTION[db.type]}
+          </p>
           <CardTitle className="text-xl">{db.name}</CardTitle>
           <p className="text-sm text-muted-foreground">{db.name_en}</p>
         </CardHeader>
