@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { QuartileBadge } from "./QuartileBadge";
+import { FavoriteButton } from "./FavoriteButton";
 import type { Paper } from "@/types/paper";
 
 export function PaperCard({ paper }: { paper: Paper }) {
@@ -30,6 +31,8 @@ export function PaperCard({ paper }: { paper: Paper }) {
             </Badge>
           )}
           <span className="text-xs text-muted-foreground">{paper.year}</span>
+          {/* カード全体を覆うリンクより上に出す（FavoriteButton 側で z-10 を持つ） */}
+          <FavoriteButton paperId={paper.id} className="ml-auto -my-1" />
         </div>
 
         <Link

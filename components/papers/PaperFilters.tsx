@@ -10,6 +10,11 @@ import { PaperCard } from "./PaperCard";
 import { PaperFilterPanel } from "./PaperFilterPanel";
 import { cn } from "@/lib/utils";
 import {
+  useFavorites,
+  useFavoritesPersistenceFailed,
+  pruneFavorites,
+} from "@/lib/favorites";
+import {
   parsePapersUrlState,
   buildPapersQuery,
   hasActiveFilters,
@@ -402,6 +407,28 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
 
   const passSearch = searchOutcome.pass;
 
+  const favorites = useFavorites();
+  const favoritesUnavailable = useFavoritesPersistenceFailed();
+  const favoriteIds = useMemo(() => new Set(favorites), [favorites]);
+
+  // 全件通過。お気に入りの絞り込みが「切」のときは常にこれを使うので、
+  // 星を押しても下流（ファセット件数・並び替え）を計算し直さずに済む。
+  const passAll = useMemo(() => papers.map(() => true), [papers]);
+
+  // お気に入りは他の絞り込みと同じく AND の一条件。
+  // ファセットの件数もこれを踏まえた数になる。
+  const passFavorite = useMemo(
+    () =>
+      state.favoritesOnly ? papers.map((p) => favoriteIds.has(p.id)) : passAll,
+    [papers, favoriteIds, state.favoritesOnly, passAll],
+  );
+
+  // 指摘: 週次同期で削除された論文のIDが残ると、件数が実態と合わなくなる。
+  // 一覧を開いたときに、論文側に無いIDを取り除いておく。
+  useEffect(() => {
+    pruneFavorites(new Set(papers.map((p) => p.id)));
+  }, [papers]);
+
   const passYear = useMemo(
     () =>
       papers.map(
@@ -438,12 +465,13 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
         (_, i) =>
           passSearch[i] &&
           passYear[i] &&
+          passFavorite[i] &&
           (key === "dbs" || passFacet.dbs[i]) &&
           (key === "designs" || passFacet.designs[i]) &&
           (key === "categories" || passFacet.categories[i]) &&
           (key === "methods" || passFacet.methods[i]),
       ),
-    [papers, passSearch, passYear, passFacet],
+    [papers, passSearch, passYear, passFavorite, passFacet],
   );
 
   const facets = useMemo(
@@ -509,6 +537,11 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     scrollToResultsTop();
   }, [applyState, scrollToResultsTop]);
 
+  const toggleFavoritesOnly = useCallback(() => {
+    applyState({ favoritesOnly: !stateRef.current.favoritesOnly, page: 1 });
+    scrollToResultsTop();
+  }, [applyState, scrollToResultsTop]);
+
   const clearYearRange = useCallback(() => {
     setYearFromInput("");
     setYearToInput("");
@@ -563,6 +596,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
       (_, i) =>
         passSearch[i] &&
         passYear[i] &&
+        passFavorite[i] &&
         passFacet.dbs[i] &&
         passFacet.designs[i] &&
         passFacet.categories[i] &&
@@ -583,7 +617,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     });
 
     return result;
-  }, [papers, passSearch, passYear, passFacet, state.sort]);
+  }, [papers, passSearch, passYear, passFavorite, passFacet, state.sort]);
 
   // Pagination
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
@@ -697,6 +731,16 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
               絞り込み
               {activeFilterCount > 0 && ` (${activeFilterCount})`}
             </Button>
+            <Button
+              variant={state.favoritesOnly ? "default" : "outline"}
+              size="sm"
+              aria-pressed={state.favoritesOnly}
+              onClick={toggleFavoritesOnly}
+            >
+              <span aria-hidden="true">{state.favoritesOnly ? "★" : "☆"}</span>
+              お気に入り
+              {favorites.length > 0 && ` (${favorites.length})`}
+            </Button>
             {/* 絞り込みで件数が変わったことを読み上げで伝える */}
             <p className="text-sm text-muted-foreground" role="status">
               {filtered.length} 件の研究
@@ -757,6 +801,18 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
               </Badge>
             ))}
 
+            {state.favoritesOnly && (
+              <Badge
+                render={<button type="button" />}
+                variant="secondary"
+                className="cursor-pointer border-amber-200 bg-amber-50 text-xs text-amber-800 hover:bg-amber-100"
+                aria-label="お気に入りのみの絞り込みを解除"
+                onClick={toggleFavoritesOnly}
+              >
+                お気に入りのみ <span aria-hidden="true">×</span>
+              </Badge>
+            )}
+
             {(state.yearFrom !== null || state.yearTo !== null) && (
               <Badge
                 render={<button type="button" />}
@@ -777,6 +833,17 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
             >
               すべて解除
             </button>
+          </div>
+        )}
+
+        {/* お気に入りが保存できない環境（プライベートモード等）では、その旨を断る */}
+        {favoritesUnavailable && (
+          <div
+            role="status"
+            className="rounded-md border border-amber-300 bg-amber-50 px-3 py-2 text-sm text-amber-900"
+          >
+            このブラウザではお気に入りを保存できません（プライベートモードなど）。
+            ページを閉じると失われます。
           </div>
         )}
 
@@ -808,28 +875,62 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
             <PaperCard key={paper.id} paper={paper} />
           ))}
 
-          {filtered.length === 0 && (
-            <div className="space-y-3 py-12 text-center">
-              <p className="font-medium">該当する研究が見つかりませんでした</p>
-              <p className="text-sm text-muted-foreground">
-                キーワードを減らすか、絞り込みを外すと見つかることがあります。
-              </p>
-              {hasFilters && (
-                <div className="flex flex-wrap justify-center gap-2 pt-1">
-                  {state.search && (
-                    <Button variant="outline" size="sm" onClick={clearSearch}>
-                      キーワードを消す
-                    </Button>
-                  )}
-                  {chips.length > 0 && (
-                    <Button variant="outline" size="sm" onClick={clearFilters}>
-                      すべての絞り込みを解除
-                    </Button>
-                  )}
+          {filtered.length === 0 &&
+            state.favoritesOnly &&
+            favorites.length === 0 && (
+              <div className="space-y-3 py-12 text-center">
+                <p className="font-medium">お気に入りはまだありません</p>
+                <p className="text-sm text-muted-foreground">
+                  各研究の <span aria-hidden="true">☆</span>{" "}
+                  を押すと、ここに集まります。
+                  <br />
+                  保存先はこのブラウザの中だけです。端末をまたいでは共有されず、
+                  ブラウザのデータを消すと失われます。
+                </p>
+                <div className="pt-1">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={toggleFavoritesOnly}
+                  >
+                    すべての研究を見る
+                  </Button>
                 </div>
-              )}
-            </div>
-          )}
+              </div>
+            )}
+
+          {filtered.length === 0 &&
+            !(state.favoritesOnly && favorites.length === 0) && (
+              <div className="space-y-3 py-12 text-center">
+                <p className="font-medium">
+                  該当する研究が見つかりませんでした
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  キーワードを減らすか、絞り込みを外すと見つかることがあります。
+                </p>
+                {hasFilters && (
+                  <div className="flex flex-wrap justify-center gap-2 pt-1">
+                    {state.search && (
+                      <Button variant="outline" size="sm" onClick={clearSearch}>
+                        キーワードを消す
+                      </Button>
+                    )}
+                    {/* キーワード以外に絞り込みが掛かっていれば出す。
+                        以前は chips（DB・デザイン等）だけを見ており、
+                        出版年やお気に入りだけのときに逃げ道が消えていた。 */}
+                    {activeFilterCount > (state.search ? 1 : 0) && (
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        onClick={clearFilters}
+                      >
+                        すべての絞り込みを解除
+                      </Button>
+                    )}
+                  </div>
+                )}
+              </div>
+            )}
         </div>
 
         {/* Pagination */}

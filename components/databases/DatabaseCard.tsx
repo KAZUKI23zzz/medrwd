@@ -16,11 +16,17 @@ export function DatabaseCard({
   paperCount: number;
 }) {
   return (
-    <Card className="transition-shadow hover:shadow-md">
+    // 論文カードと同じく、カード全体を押せるようにする。
+    // リンクを入れ子にはせず、DB名の <a> に擬似要素を敷いてカードを覆う（stretched link）。
+    // 研究カタログへのリンクは別の行き先なので、その上に出す。
+    <Card className="relative transition-shadow hover:shadow-md focus-within:ring-2 focus-within:ring-ring/50">
       <CardHeader className="pb-3">
         <div className="flex items-start justify-between">
           <CardTitle className="text-base">
-            <Link href={`/databases/${db.slug}`} className="hover:text-primary">
+            <Link
+              href={`/databases/${db.slug}`}
+              className="hover:text-primary after:absolute after:inset-0 after:content-[''] focus-visible:outline-none"
+            >
               {db.name}
             </Link>
           </CardTitle>
@@ -41,7 +47,8 @@ export function DatabaseCard({
             ))}
           </ul>
         </div>
-        <div className="flex items-center justify-between pt-2">
+        {/* w-fit にして、リンクの無い右側の余白はカード全体のリンクに残す */}
+        <div className="relative z-10 flex w-fit items-center pt-2">
           {/* 文言どおり、研究が並ぶ側（絞り込み済みのカタログ）へ直接送る */}
           <Link
             href={papersUrlForDatabase(db.paper_tag)}
