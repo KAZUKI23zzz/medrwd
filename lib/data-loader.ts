@@ -1,9 +1,10 @@
 import papersData from "@/data/papers.json";
 import databasesData from "@/data/databases.json";
-import commercialLinksData from "@/data/commercial-db-links.json";
+import privateLinksData from "@/data/private-db-links.json";
 import syncStatusData from "@/data/sync-status.json";
 import type { Paper } from "@/types/paper";
-import type { RWDDatabase, CommercialDBLink } from "@/types/database";
+import { DATABASE_TYPE_LABEL } from "@/types/database";
+import type { RWDDatabase, PrivateDBLink } from "@/types/database";
 import type { SyncStatus } from "@/types/sync-status";
 
 /**
@@ -38,11 +39,29 @@ export function getPapers(): Paper[] {
 }
 
 export function getDatabases(): RWDDatabase[] {
-  return databasesData as RWDDatabase[];
+  const databases = databasesData as RWDDatabase[];
+  // 区分の表記は DATABASE_TYPE_LABEL 等の表から引いており、想定外の値が入ると
+  // バッジが黙って空欄になる。JSON は as でキャストしているだけで型検査が効かないので、
+  // ビルド時にここで気づけるようにしておく。
+  for (const db of databases) {
+    if (!(db.type in DATABASE_TYPE_LABEL)) {
+      throw new Error(
+        `databases.json: ${db.slug} の type "${db.type}" は未知の区分です（public / private のいずれか）`,
+      );
+    }
+    // 古い形式のURL（?db=A,B）を読めるようにしてある都合で、絞り込み値に
+    // カンマが入ると2つの値に割れてしまう。混入したらここで気づけるようにする。
+    if (db.paper_tag.includes(",")) {
+      throw new Error(
+        `databases.json: ${db.slug} の paper_tag "${db.paper_tag}" にカンマは使えません（URLの区切りと衝突します）`,
+      );
+    }
+  }
+  return databases;
 }
 
-export function getCommercialLinks(): CommercialDBLink[] {
-  return commercialLinksData as CommercialDBLink[];
+export function getPrivateDbLinks(): PrivateDBLink[] {
+  return privateLinksData as PrivateDBLink[];
 }
 
 export function getSyncStatus(): SyncStatus {

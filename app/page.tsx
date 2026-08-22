@@ -2,19 +2,18 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PaperCard } from "@/components/papers/PaperCard";
-import {
-  getPapers,
-  getDatabases,
-  getCommercialLinks,
-} from "@/lib/data-loader";
+import { getPapers, getDatabases, getPrivateDbLinks } from "@/lib/data-loader";
 
 export default function Home() {
   const papers = getPapers();
   const databases = getDatabases();
-  const commercialLinks = getCommercialLinks();
+  const privateDbLinks = getPrivateDbLinks();
 
-  // Recent papers (top 5)
-  const recentPapers = papers.slice(0, 5);
+  // 最近追加された研究。papers.json の並び順に頼ると、収集の仕方が変わったときに
+  // 気づかないまま「最近」でないものが並ぶので、日付で明示的に並べ替える。
+  const recentPapers = [...papers]
+    .sort((a, b) => b.publication_date.localeCompare(a.publication_date))
+    .slice(0, 5);
 
   // DB usage counts
   const dbCounts = new Map<string, number>();
@@ -30,11 +29,11 @@ export default function Home() {
   for (const p of papers) {
     designCounts.set(
       p.study_design,
-      (designCounts.get(p.study_design) || 0) + 1
+      (designCounts.get(p.study_design) || 0) + 1,
     );
   }
   const sortedDesignCounts = [...designCounts.entries()].sort(
-    (a, b) => b[1] - a[1]
+    (a, b) => b[1] - a[1],
   );
 
   // Research category counts
@@ -45,7 +44,7 @@ export default function Home() {
     }
   }
   const sortedCategoryCounts = [...categoryCounts.entries()].sort(
-    (a, b) => b[1] - a[1]
+    (a, b) => b[1] - a[1],
   );
 
   // Analysis method counts
@@ -56,7 +55,7 @@ export default function Home() {
     }
   }
   const sortedMethodCounts = [...methodCounts.entries()].sort(
-    (a, b) => b[1] - a[1]
+    (a, b) => b[1] - a[1],
   );
 
   return (
@@ -120,7 +119,7 @@ export default function Home() {
                 ? Math.round(
                     (papers.filter((p) => p.databases_used.length > 0).length /
                       papers.length) *
-                      100
+                      100,
                   )
                 : 0}
               %
@@ -180,7 +179,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Sidebar: designs + commercial links */}
+        {/* Sidebar: designs + 民間DB各社リンク */}
         <div className="space-y-6">
           {/* Study designs */}
           <Card>
@@ -192,7 +191,9 @@ export default function Home() {
                 {sortedDesignCounts.map(([design, count]) => (
                   <Badge key={design} variant="secondary" className="text-sm">
                     {design}
-                    <span className="ml-1 text-muted-foreground">({count})</span>
+                    <span className="ml-1 text-muted-foreground">
+                      ({count})
+                    </span>
                   </Badge>
                 ))}
               </div>
@@ -209,7 +210,9 @@ export default function Home() {
                 {sortedCategoryCounts.map(([cat, count]) => (
                   <Badge key={cat} variant="outline" className="text-sm">
                     {cat}
-                    <span className="ml-1 text-muted-foreground">({count})</span>
+                    <span className="ml-1 text-muted-foreground">
+                      ({count})
+                    </span>
                   </Badge>
                 ))}
               </div>
@@ -224,7 +227,11 @@ export default function Home() {
             <CardContent>
               <div className="flex flex-wrap gap-2">
                 {sortedMethodCounts.map(([method, count]) => (
-                  <Badge key={method} variant="secondary" className="text-sm border-blue-200 bg-blue-50 text-blue-700">
+                  <Badge
+                    key={method}
+                    variant="secondary"
+                    className="text-sm border-blue-200 bg-blue-50 text-blue-700"
+                  >
                     {method}
                     <span className="ml-1 text-blue-400">({count})</span>
                   </Badge>
@@ -233,13 +240,15 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          {/* Commercial DB links */}
+          {/* 民間DB各社のデータベース事業 */}
           <Card>
             <CardHeader>
-              <CardTitle className="text-base">商業DB各社のデータベース事業</CardTitle>
+              <CardTitle className="text-base">
+                民間DB各社のデータベース事業
+              </CardTitle>
             </CardHeader>
             <CardContent className="space-y-2">
-              {commercialLinks.map((link) => (
+              {privateDbLinks.map((link) => (
                 <a
                   key={link.company}
                   href={link.url}

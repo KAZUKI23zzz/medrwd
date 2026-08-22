@@ -524,6 +524,29 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     scrollToResultsTop();
   }, [applyState, scrollToResultsTop]);
 
+  /** 検索欄。×で中身を消せるようにする（サイドバーとモバイルの2箇所で使う） */
+  const searchBox = (className?: string) => (
+    <div className={cn("relative", className)}>
+      <Input
+        placeholder="キーワード検索..."
+        aria-label="キーワード検索"
+        value={searchInput}
+        onChange={(e) => setSearchInput(e.target.value)}
+        className={searchInput ? "pr-8" : undefined}
+      />
+      {searchInput && (
+        <button
+          type="button"
+          aria-label="検索キーワードを消す"
+          onClick={clearSearch}
+          className="absolute top-1/2 right-1 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-md text-muted-foreground after:absolute after:-inset-2.5 after:content-[''] hover:bg-muted hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+      )}
+    </div>
+  );
+
   const goToPage = useCallback(
     (page: number) => {
       applyState({ page }, { push: true });
@@ -601,12 +624,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
         top はヘッダー(h-14=56px)＋余白。
       */}
       <aside className="hidden w-full shrink-0 space-y-6 lg:block lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] lg:w-64 lg:self-start lg:overflow-y-auto lg:pr-2">
-        <Input
-          placeholder="キーワード検索..."
-          aria-label="キーワード検索"
-          value={searchInput}
-          onChange={(e) => setSearchInput(e.target.value)}
-        />
+        {searchBox()}
         <PaperFilterPanel {...panelProps} />
       </aside>
 
@@ -666,13 +684,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
         className="flex-1 space-y-3 outline-none"
       >
         {/* モバイル: 検索はドロワーを開かずに使えるところに置く */}
-        <Input
-          placeholder="キーワード検索..."
-          aria-label="キーワード検索"
-          value={searchInput}
-          onChange={(e) => setSearchInput(e.target.value)}
-          className="lg:hidden"
-        />
+        {searchBox("lg:hidden")}
 
         <div className="flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-3">

@@ -60,7 +60,7 @@ export default function RootLayout({
             <Link href="/" className="mr-8 text-lg font-bold">
               医療RWD研究カタログ
             </Link>
-            <nav className="hidden gap-1 md:flex">
+            <nav aria-label="メインメニュー" className="hidden gap-1 md:flex">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
@@ -77,8 +77,13 @@ export default function RootLayout({
         <main className="mx-auto max-w-7xl px-4 py-6">{children}</main>
         <footer className="border-t py-6 text-center text-sm text-muted-foreground">
           <div className="mx-auto flex max-w-7xl flex-col items-center gap-1 px-4">
-            <span>医療RWD研究カタログ - 日本の医療リアルワールドデータ研究検索</span>
-            <Link href="/status" className="hover:text-foreground hover:underline">
+            <span>
+              医療RWD研究カタログ - 日本の医療リアルワールドデータ研究検索
+            </span>
+            <Link
+              href="/status"
+              className="hover:text-foreground hover:underline"
+            >
               同期ステータス
             </Link>
           </div>

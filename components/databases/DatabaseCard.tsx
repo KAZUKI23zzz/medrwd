@@ -1,7 +1,12 @@
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import type { RWDDatabase } from "@/types/database";
+import {
+  DATABASE_TYPE_LABEL,
+  DATABASE_TYPE_VARIANT,
+  type RWDDatabase,
+} from "@/types/database";
+import { papersUrlForDatabase } from "@/lib/papers-url-state";
 
 export function DatabaseCard({
   db,
@@ -15,15 +20,12 @@ export function DatabaseCard({
       <CardHeader className="pb-3">
         <div className="flex items-start justify-between">
           <CardTitle className="text-base">
-            <Link
-              href={`/databases/${db.slug}`}
-              className="hover:text-primary"
-            >
+            <Link href={`/databases/${db.slug}`} className="hover:text-primary">
               {db.name}
             </Link>
           </CardTitle>
-          <Badge variant={db.type === "public" ? "default" : "secondary"}>
-            {db.type === "public" ? "公的" : "商業"}
+          <Badge variant={DATABASE_TYPE_VARIANT[db.type]}>
+            {DATABASE_TYPE_LABEL[db.type]}
           </Badge>
         </div>
         <p className="text-xs text-muted-foreground">{db.administrator}</p>
@@ -40,8 +42,9 @@ export function DatabaseCard({
           </ul>
         </div>
         <div className="flex items-center justify-between pt-2">
+          {/* 文言どおり、研究が並ぶ側（絞り込み済みのカタログ）へ直接送る */}
           <Link
-            href={`/databases/${db.slug}`}
+            href={papersUrlForDatabase(db.paper_tag)}
             className="text-sm text-blue-600 hover:underline"
           >
             このDBを使った研究: {paperCount}件

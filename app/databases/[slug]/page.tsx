@@ -3,15 +3,24 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { PaperCard } from "@/components/papers/PaperCard";
 import { getDatabases, getPapers } from "@/lib/data-loader";
+import {
+  DATABASE_TYPE_LABEL,
+  DATABASE_TYPE_VARIANT,
+  DATABASE_TYPE_DESCRIPTION,
+} from "@/types/database";
+import { papersUrlForDatabase } from "@/lib/papers-url-state";
 
 export function generateStaticParams() {
   const databases = getDatabases();
   return databases.map((db) => ({ slug: db.slug }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const databases = getDatabases();
   const db = databases.find((d) => d.slug === slug);
@@ -36,15 +45,17 @@ export default async function DatabaseDetailPage({
     notFound();
   }
 
-  // Find papers using this DB
-  const dbPapers = papers.filter((p) =>
-    p.databases_used.some(
-      (dbName) =>
-        dbName.toLowerCase().includes(db.slug) ||
-        db.name.includes(dbName) ||
-        db.name_en.includes(dbName)
-    )
-  );
+  // このDBを使った研究の件数。カタログの絞り込みと同じ基準（paper_tag の完全一致）で数える。
+  // 以前は名前の部分一致で集めていたため、NDB のページに NDBオープンデータ の研究が
+  // 混ざり、トップページの「96件」とこのページの「153件」が食い違っていた。
+  const paperCount = papers.filter((p) =>
+    p.databases_used.includes(db.paper_tag),
+  ).length;
+
+  // 一覧は研究カタログに任せ、このDBで絞り込んだ状態へ送る。
+  // 論文を全部並べると DPC で221件・スマホで画面123枚分になり、
+  // しかも検索も並び替えもできなかった。
+  const catalogHref = papersUrlForDatabase(db.paper_tag);
 
   return (
     <div className="mx-auto max-w-4xl space-y-6">
@@ -58,13 +69,18 @@ export default async function DatabaseDetailPage({
       <Card>
         <CardHeader>
           <div className="flex items-center gap-2">
-            <Badge variant={db.type === "public" ? "default" : "secondary"}>
-              {db.type === "public" ? "公的" : "商業"}
+            <Badge variant={DATABASE_TYPE_VARIANT[db.type]}>
+              {DATABASE_TYPE_LABEL[db.type]}
             </Badge>
             <span className="text-sm text-muted-foreground">
               {db.administrator}
             </span>
           </div>
+          {/* 区分の意味は一覧ページにしか無かったので、ここにも添える。
+              「民間」を有償提供の意味だと取り違えられないようにするため。 */}
+          <p className="text-xs text-muted-foreground">
+            {DATABASE_TYPE_LABEL[db.type]}：{DATABASE_TYPE_DESCRIPTION[db.type]}
+          </p>
           <CardTitle className="text-xl">{db.name}</CardTitle>
           <p className="text-sm text-muted-foreground">{db.name_en}</p>
         </CardHeader>
@@ -190,19 +206,26 @@ export default async function DatabaseDetailPage({
         </CardContent>
       </Card>
 
-      <div>
-        <h2 className="mb-4 text-lg font-semibold">
-          このDBを使った研究（{dbPapers.length}件）
+      <div className="rounded-lg border p-5">
+        <h2 className="text-lg font-semibold">
+          このDBを使った研究（{paperCount}件）
         </h2>
-        {dbPapers.length > 0 ? (
-          <div className="space-y-3">
-            {dbPapers.map((paper) => (
-              <PaperCard key={paper.id} paper={paper} />
-            ))}
-          </div>
+        {paperCount > 0 ? (
+          <>
+            <p className="mt-1 text-sm text-muted-foreground">
+              研究カタログで、{db.name}に絞り込んだ状態から探せます。
+              キーワード検索・研究デザイン・解析手法での絞り込みも使えます。
+            </p>
+            <Link
+              href={catalogHref}
+              className="mt-4 inline-flex h-10 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+            >
+              研究カタログで{paperCount}件を見る →
+            </Link>
+          </>
         ) : (
-          <p className="text-muted-foreground">
-            このDBを使った研究はまだ登録されていません
+          <p className="mt-1 text-sm text-muted-foreground">
+            このDBを使った研究はまだ登録されていません。
           </p>
         )}
       </div>
