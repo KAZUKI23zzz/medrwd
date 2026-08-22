@@ -13,8 +13,11 @@ export default function Home() {
   const databases = getDatabases();
   const commercialLinks = getCommercialLinks();
 
-  // Recent papers (top 5)
-  const recentPapers = papers.slice(0, 5);
+  // 最近追加された研究。papers.json の並び順に頼ると、収集の仕方が変わったときに
+  // 気づかないまま「最近」でないものが並ぶので、日付で明示的に並べ替える。
+  const recentPapers = [...papers]
+    .sort((a, b) => b.publication_date.localeCompare(a.publication_date))
+    .slice(0, 5);
 
   // DB usage counts
   const dbCounts = new Map<string, number>();

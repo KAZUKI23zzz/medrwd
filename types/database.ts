@@ -4,6 +4,13 @@ export interface RWDDatabase {
   name_en: string;
   type: "public" | "commercial";
   administrator: string;
+  /**
+   * 論文側の `databases_used` に入っている名前。
+   * 研究カタログの絞り込みと数を一致させるため、部分一致ではなくこの値で突き合わせる。
+   * （以前は名前の部分一致で集めており、NDB のページに NDBオープンデータ の58件が
+   *   混ざって「96件」と「153件」が食い違っていた）
+   */
+  paper_tag: string;
   data_types: string[];
   coverage: string;
   data_start: number;

@@ -17,20 +17,14 @@ export default function DatabasesPage() {
   const publicDbs = databases.filter((db) => db.type === "public");
   const commercialDbs = databases.filter((db) => db.type === "commercial");
 
-  // Count papers per DB
+  // DBごとの研究数。カタログの絞り込みと同じ基準（paper_tag の完全一致）で数えるので、
+  // トップページ・DB一覧・DB詳細・研究カタログの4箇所で必ず同じ数字になる。
   const paperCounts = new Map<string, number>();
-  for (const p of papers) {
-    for (const db of p.databases_used) {
-      const slug = databases.find(
-        (d) =>
-          d.name.includes(db) ||
-          d.name_en.includes(db) ||
-          db.toLowerCase() === d.slug
-      )?.slug;
-      if (slug) {
-        paperCounts.set(slug, (paperCounts.get(slug) || 0) + 1);
-      }
-    }
+  for (const db of databases) {
+    paperCounts.set(
+      db.slug,
+      papers.filter((p) => p.databases_used.includes(db.paper_tag)).length,
+    );
   }
 
   return (
