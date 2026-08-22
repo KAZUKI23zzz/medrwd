@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import type { RWDDatabase } from "@/types/database";
+import { DATABASE_TYPE_LABEL, type RWDDatabase } from "@/types/database";
 
 export function DatabaseCard({
   db,
@@ -15,15 +15,12 @@ export function DatabaseCard({
       <CardHeader className="pb-3">
         <div className="flex items-start justify-between">
           <CardTitle className="text-base">
-            <Link
-              href={`/databases/${db.slug}`}
-              className="hover:text-primary"
-            >
+            <Link href={`/databases/${db.slug}`} className="hover:text-primary">
               {db.name}
             </Link>
           </CardTitle>
           <Badge variant={db.type === "public" ? "default" : "secondary"}>
-            {db.type === "public" ? "公的" : "商業"}
+            {DATABASE_TYPE_LABEL[db.type]}
           </Badge>
         </div>
         <p className="text-xs text-muted-foreground">{db.administrator}</p>

@@ -138,7 +138,7 @@
     "related_resources": [
       {
         "label": "NDBオープンデータ",
-        "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000177182.html"
+        "url": "/databases/ndb-open"
       }
     ],
     "paper_tag": "NDB"
@@ -248,38 +248,39 @@
     "related_resources": [
       {
         "label": "NDB（個票の第三者提供）",
-        "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/reseputo/index.html"
+        "url": "/databases/ndb"
       }
     ]
   },
   {
     "slug": "desc",
-    "name": "DeSCデータベース",
+    "name": "DeSCデータベース（IQVIA統合DeSCデータ）",
     "name_en": "DeSC Healthcare Database",
-    "type": "commercial",
+    "type": "other",
     "administrator": "DeSCヘルスケア株式会社（DeNA・住友商事の合弁）",
     "paper_tag": "DeSC Healthcare",
     "data_types": [
       "レセプト（医科・歯科・調剤）",
       "特定健診",
       "加入者台帳",
-      "ライフログ（歩数等）"
+      "ライフログ（歩数等）",
+      "アンケート（QOL/WPAI等）"
     ],
-    "coverage": "約1,200万〜1,600万人（利用論文の記載による。健保組合・国保・後期高齢者医療を含む）",
+    "coverage": "約1,200万〜1,600万人規模（推定。公式サイトに記載がなく、本サイト収載論文の記述による）",
     "data_start": 2014,
-    "access": "研究公募および有償提供（DeSCヘルスケアへ問い合わせ）",
-    "access_url": "https://desc-hc.co.jp/",
+    "access": "研究公募（外部審査委員会による採択制・データは無償提供）。所属施設との利用許諾契約が必要",
+    "access_url": "https://desc-hc.co.jp/reserch/20260528",
     "strengths": [
       "健保組合だけでなく国保・後期高齢者も含み、高齢者を追える",
       "健診値とレセプトが同一人で紐づく",
       "歩数などのライフログを持つ点が他DBにない",
-      "研究公募の枠があり、アカデミアが使いやすい"
+      "採択されればデータが無償で提供される"
     ],
     "limitations": [
-      "収載人数・収載期間の公式な公表が乏しい",
+      "収載人数・収載期間が公式に公表されておらず、本サイトの記載は論文からの推定",
+      "研究公募の採択枠が限られる（年に十数名程度）",
       "保険者の入れ替わりで追跡が途切れることがある",
-      "検査値は健診由来が中心で、日常診療の検査値は限定的",
-      "死亡の把握に制約"
+      "検査値は健診由来が中心で、日常診療の検査値は限定的"
     ],
     "linkable_with": [],
     "best_for": [

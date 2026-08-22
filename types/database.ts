@@ -1,8 +1,23 @@
+export type DatabaseType = "public" | "commercial" | "other";
+
+/** 区分の表示名。バッジと見出しで同じ言葉を使う */
+export const DATABASE_TYPE_LABEL: Record<DatabaseType, string> = {
+  public: "公的",
+  commercial: "商業",
+  other: "その他",
+};
+
 export interface RWDDatabase {
   slug: string;
   name: string;
   name_en: string;
-  type: "public" | "commercial";
+  /**
+   * 提供のされ方による区分。
+   *  - public:     公的機関が整備・提供
+   *  - commercial: 事業者が有償で提供
+   *  - other:      上記のどちらでもない（研究公募による無償提供など）
+   */
+  type: DatabaseType;
   administrator: string;
   /**
    * 論文側の `databases_used` に入っている名前。

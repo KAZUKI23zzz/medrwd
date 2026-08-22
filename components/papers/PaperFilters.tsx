@@ -472,29 +472,6 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     [applyState, scrollToResultsTop],
   );
 
-  /** 検索欄。×で中身を消せるようにする（サイドバーとモバイルの2箇所で使う） */
-  const searchBox = (className?: string) => (
-    <div className={cn("relative", className)}>
-      <Input
-        placeholder="キーワード検索..."
-        aria-label="キーワード検索"
-        value={searchInput}
-        onChange={(e) => setSearchInput(e.target.value)}
-        className={searchInput ? "pr-8" : undefined}
-      />
-      {searchInput && (
-        <button
-          type="button"
-          aria-label="検索キーワードを消す"
-          onClick={clearSearch}
-          className="absolute top-1/2 right-1 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-md text-muted-foreground hover:bg-muted hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
-        >
-          <span aria-hidden="true">×</span>
-        </button>
-      )}
-    </div>
-  );
-
   /** 適用中の絞り込みをチップとして並べるための一覧 */
   const chips = useMemo(
     () => [
@@ -546,6 +523,29 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     applyState({ ...EMPTY_PAPERS_STATE, sort: stateRef.current.sort });
     scrollToResultsTop();
   }, [applyState, scrollToResultsTop]);
+
+  /** 検索欄。×で中身を消せるようにする（サイドバーとモバイルの2箇所で使う） */
+  const searchBox = (className?: string) => (
+    <div className={cn("relative", className)}>
+      <Input
+        placeholder="キーワード検索..."
+        aria-label="キーワード検索"
+        value={searchInput}
+        onChange={(e) => setSearchInput(e.target.value)}
+        className={searchInput ? "pr-8" : undefined}
+      />
+      {searchInput && (
+        <button
+          type="button"
+          aria-label="検索キーワードを消す"
+          onClick={clearSearch}
+          className="absolute top-1/2 right-1 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-md text-muted-foreground after:absolute after:-inset-2.5 after:content-[''] hover:bg-muted hover:text-foreground focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
+        >
+          <span aria-hidden="true">×</span>
+        </button>
+      )}
+    </div>
+  );
 
   const goToPage = useCallback(
     (page: number) => {

@@ -51,13 +51,10 @@ export default async function PaperDetailPage({
     .slice(0, 5);
 
   // Match DB slugs for linking
+  // DBページへのリンク。名前の部分一致だと似た名前のDBを取り違えるので、
+  // 一覧・詳細ページと同じく paper_tag の完全一致で引く。
   const dbLinks = paper.databases_used.map((dbName) => {
-    const db = databases.find(
-      (d) =>
-        d.name.includes(dbName) ||
-        d.name_en.includes(dbName) ||
-        dbName === d.slug.toUpperCase(),
-    );
+    const db = databases.find((d) => d.paper_tag === dbName);
     return db ? { name: dbName, slug: db.slug } : { name: dbName, slug: null };
   });
 

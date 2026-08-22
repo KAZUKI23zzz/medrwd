@@ -87,6 +87,7 @@ export function MobileNav() {
         <nav
           ref={navRef}
           id={MENU_ID}
+          aria-label="メインメニュー"
           className="absolute left-0 top-14 z-50 w-full border-b bg-background p-4 shadow-lg md:hidden"
         >
           <div className="flex flex-col gap-1">

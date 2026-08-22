@@ -6,7 +6,8 @@ import { Separator } from "@/components/ui/separator";
 
 export const metadata = {
   title: "データベース一覧 - 医療RWD研究カタログ",
-  description: "日本の医療RWDデータベースを公的・商業別に一覧。特徴や向いている研究を比較",
+  description:
+    "日本の医療RWDデータベースを公的・商業別に一覧。特徴や向いている研究を比較",
 };
 
 export default function DatabasesPage() {
@@ -16,6 +17,8 @@ export default function DatabasesPage() {
 
   const publicDbs = databases.filter((db) => db.type === "public");
   const commercialDbs = databases.filter((db) => db.type === "commercial");
+  // 公的でも商業でもないもの（研究公募による無償提供など）
+  const otherDbs = databases.filter((db) => db.type === "other");
 
   // DBごとの研究数。カタログの絞り込みと同じ基準（paper_tag の完全一致）で数えるので、
   // トップページ・DB一覧・DB詳細・研究カタログの4箇所で必ず同じ数字になる。
@@ -76,7 +79,33 @@ export default function DatabasesPage() {
         </div>
       </section>
 
-      <Separator />
+      {otherDbs.length > 0 && (
+        <>
+          <Separator />
+
+          <section>
+            <h2 className="mb-1 text-xl font-semibold">
+              その他
+              <Badge variant="outline" className="ml-2">
+                {otherDbs.length}
+              </Badge>
+            </h2>
+            <p className="mb-4 text-sm text-muted-foreground">
+              公的機関の整備でも、事業者による有償提供でもないもの。
+              研究公募で無償提供されるデータベースなど。
+            </p>
+            <div className="grid gap-4 md:grid-cols-2">
+              {otherDbs.map((db) => (
+                <DatabaseCard
+                  key={db.slug}
+                  db={db}
+                  paperCount={paperCounts.get(db.slug) || 0}
+                />
+              ))}
+            </div>
+          </section>
+        </>
+      )}
 
       {/* Commercial DB publication links */}
       <section>

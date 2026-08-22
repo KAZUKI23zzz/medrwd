@@ -4,6 +4,8 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { getDatabases, getPapers } from "@/lib/data-loader";
+import { DATABASE_TYPE_LABEL } from "@/types/database";
+import { papersUrlForDatabase } from "@/lib/papers-url-state";
 
 export function generateStaticParams() {
   const databases = getDatabases();
@@ -49,7 +51,7 @@ export default async function DatabaseDetailPage({
   // 一覧は研究カタログに任せ、このDBで絞り込んだ状態へ送る。
   // 論文を全部並べると DPC で221件・スマホで画面123枚分になり、
   // しかも検索も並び替えもできなかった。
-  const catalogHref = `/papers?db=${encodeURIComponent(db.paper_tag)}`;
+  const catalogHref = papersUrlForDatabase(db.paper_tag);
 
   return (
     <div className="mx-auto max-w-4xl space-y-6">
@@ -64,7 +66,7 @@ export default async function DatabaseDetailPage({
         <CardHeader>
           <div className="flex items-center gap-2">
             <Badge variant={db.type === "public" ? "default" : "secondary"}>
-              {db.type === "public" ? "公的" : "商業"}
+              {DATABASE_TYPE_LABEL[db.type]}
             </Badge>
             <span className="text-sm text-muted-foreground">
               {db.administrator}

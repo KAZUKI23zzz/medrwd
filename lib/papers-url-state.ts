@@ -44,12 +44,19 @@ export const EMPTY_PAPERS_STATE: PapersUrlState = {
   page: 1,
 };
 
+/** 値そのものに含まれるカンマは %2C にしておき、区切りのカンマと区別する */
+const COMMA_ESCAPE = "%2C";
+
 function parseList(raw: string | null): string[] {
   if (!raw) return [];
   return raw
     .split(",")
-    .map((v) => v.trim())
+    .map((v) => v.trim().split(COMMA_ESCAPE).join(","))
     .filter(Boolean);
+}
+
+function joinList(values: string[]): string {
+  return values.map((v) => v.split(",").join(COMMA_ESCAPE)).join(",");
 }
 
 function parseYear(raw: string | null): number | null {
@@ -82,11 +89,11 @@ export function buildPapersQuery(state: PapersUrlState): string {
   const params = new URLSearchParams();
 
   if (state.search) params.set("q", state.search);
-  if (state.dbs.length > 0) params.set("db", state.dbs.join(","));
-  if (state.designs.length > 0) params.set("design", state.designs.join(","));
+  if (state.dbs.length > 0) params.set("db", joinList(state.dbs));
+  if (state.designs.length > 0) params.set("design", joinList(state.designs));
   if (state.categories.length > 0)
-    params.set("cat", state.categories.join(","));
-  if (state.methods.length > 0) params.set("method", state.methods.join(","));
+    params.set("cat", joinList(state.categories));
+  if (state.methods.length > 0) params.set("method", joinList(state.methods));
   if (state.yearFrom !== null) params.set("from", String(state.yearFrom));
   if (state.yearTo !== null) params.set("to", String(state.yearTo));
   if (state.sort !== DEFAULT_SORT) params.set("sort", state.sort);
@@ -109,6 +116,18 @@ export function countActiveFilters(state: PapersUrlState): number {
     (state.yearFrom !== null ? 1 : 0) +
     (state.yearTo !== null ? 1 : 0)
   );
+}
+
+/**
+ * あるDBで絞り込んだ研究カタログの URL。
+ *
+ * 絞り込み値はカンマ区切りで並べるため、値そのものにカンマが入ると
+ * 2つの値に割れてしまう。組み立てを buildPapersQuery に通して1箇所にまとめ、
+ * カンマは URL 上でエスケープしておく。
+ */
+export function papersUrlForDatabase(paperTag: string): string {
+  const qs = buildPapersQuery({ ...EMPTY_PAPERS_STATE, dbs: [paperTag] });
+  return qs ? `/papers?${qs}` : "/papers";
 }
 
 /** 絞り込みが1つでも掛かっているか */
