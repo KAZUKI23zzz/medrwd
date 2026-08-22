@@ -24,6 +24,12 @@ import {
   peekPapersReturn,
   clearPapersReturn,
 } from "@/lib/papers-return";
+import {
+  buildSearchIndex,
+  parseSearchQuery,
+  matchesAllTerms,
+} from "@/lib/papers-search";
+import { computeFacetOptions, facetValuesOf } from "@/lib/papers-facets";
 import type { Paper } from "@/types/paper";
 
 interface PaperFiltersProps {
@@ -294,49 +300,17 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
       el.removeEventListener("click", onClickCapture, { capture: true });
   }, []);
 
-  // Extract unique filter values
-  const allDbs = useMemo(() => {
-    const dbs = new Map<string, number>();
-    for (const p of papers) {
-      for (const db of p.databases_used) {
-        dbs.set(db, (dbs.get(db) || 0) + 1);
-      }
-    }
-    return [...dbs.entries()].sort((a, b) => b[1] - a[1]);
-  }, [papers]);
-
-  const allDesigns = useMemo(() => {
-    const designs = new Map<string, number>();
-    for (const p of papers) {
-      designs.set(p.study_design, (designs.get(p.study_design) || 0) + 1);
-    }
-    return [...designs.entries()].sort((a, b) => b[1] - a[1]);
-  }, [papers]);
-
-  const allCategories = useMemo(() => {
-    const cats = new Map<string, number>();
-    for (const p of papers) {
-      for (const cat of p.research_categories ?? []) {
-        cats.set(cat, (cats.get(cat) || 0) + 1);
-      }
-    }
-    return [...cats.entries()].sort((a, b) => b[1] - a[1]);
-  }, [papers]);
-
-  const allMethods = useMemo(() => {
-    const methods = new Map<string, number>();
-    for (const p of papers) {
-      for (const method of p.analysis_methods ?? []) {
-        methods.set(method, (methods.get(method) || 0) + 1);
-      }
-    }
-    return [...methods.entries()].sort((a, b) => b[1] - a[1]);
-  }, [papers]);
-
   const years = useMemo(() => {
     const ys = papers.map((p) => p.year);
     return { min: Math.min(...ys), max: Math.max(...ys) };
   }, [papers]);
+
+  // 正規化済みの検索対象テキストを1度だけ作る（papers と同じ並び）
+  const searchIndex = useMemo(() => buildSearchIndex(papers), [papers]);
+  const searchTerms = useMemo(
+    () => parseSearchQuery(state.search),
+    [state.search],
+  );
 
   const selectedDbs = useMemo(() => new Set(state.dbs), [state.dbs]);
   const selectedDesigns = useMemo(
@@ -352,6 +326,123 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     [state.methods],
   );
 
+  // 条件ごとに「その条件だけ見たら通るか」を持っておく。
+  // ここから、全条件を満たす一覧と、ファセットごとの件数の両方を組み立てる。
+  /**
+   * キーワード検索。0件になったら自動で条件を緩め、緩めたことを呼び出し側に返す。
+   *
+   * PubMed は 0件の画面をほぼ出さず、「元のクエリ」「実際に使ったクエリ」「その結果」
+   * の3点を並べて見せる。ここでも同じ考え方で、
+   *   1. どの論文にも無い語は落とす
+   *   2. それでも0件なら、後ろの語から順に落とす
+   * という順で緩める。緩めた事実は必ず画面に出す（黙って別の検索をしない）。
+   */
+  const searchOutcome = useMemo(() => {
+    const passAll = () => papers.map(() => true);
+    if (searchTerms.length === 0) {
+      return { pass: passAll(), notFound: [], dropped: [], noMatch: false };
+    }
+
+    const passFor = (terms: string[]) =>
+      searchIndex.map((h) => matchesAllTerms(h, terms));
+    const any = (arr: boolean[]) => arr.some(Boolean);
+
+    const full = passFor(searchTerms);
+    if (any(full)) {
+      return { pass: full, notFound: [], dropped: [], noMatch: false };
+    }
+
+    // 1. どの論文にも出てこない語を落とす
+    const notFound = searchTerms.filter(
+      (t) => !searchIndex.some((h) => h.includes(t)),
+    );
+    let kept = searchTerms.filter((t) => !notFound.includes(t));
+    if (kept.length === 0) {
+      return {
+        pass: papers.map(() => false),
+        notFound,
+        dropped: [],
+        noMatch: true,
+      };
+    }
+    let pass = passFor(kept);
+    if (any(pass)) {
+      return { pass, notFound, dropped: [], noMatch: false };
+    }
+
+    // 2. まだ0件なら、後ろの語から順に落とす
+    const dropped: string[] = [];
+    while (kept.length > 1) {
+      dropped.unshift(kept[kept.length - 1]);
+      kept = kept.slice(0, -1);
+      pass = passFor(kept);
+      if (any(pass)) {
+        return { pass, notFound, dropped, noMatch: false };
+      }
+    }
+    return { pass: papers.map(() => false), notFound, dropped, noMatch: true };
+  }, [papers, searchIndex, searchTerms]);
+
+  const passSearch = searchOutcome.pass;
+
+  const passYear = useMemo(
+    () =>
+      papers.map(
+        (p) =>
+          (state.yearFrom === null || p.year >= state.yearFrom) &&
+          (state.yearTo === null || p.year <= state.yearTo),
+      ),
+    [papers, state.yearFrom, state.yearTo],
+  );
+
+  const passFacet = useMemo(() => {
+    const forKey = (key: ListFilterKey, selected: Set<string>) =>
+      selected.size === 0
+        ? papers.map(() => true)
+        : papers.map((p) => facetValuesOf(p, key).some((v) => selected.has(v)));
+    return {
+      dbs: forKey("dbs", selectedDbs),
+      designs: forKey("designs", selectedDesigns),
+      categories: forKey("categories", selectedCategories),
+      methods: forKey("methods", selectedMethods),
+    };
+  }, [
+    papers,
+    selectedDbs,
+    selectedDesigns,
+    selectedCategories,
+    selectedMethods,
+  ]);
+
+  /** 指定ファセット「以外」の条件をすべて満たすか。ファセット件数の母集団になる */
+  const passExcept = useCallback(
+    (key: ListFilterKey) =>
+      papers.map(
+        (_, i) =>
+          passSearch[i] &&
+          passYear[i] &&
+          (key === "dbs" || passFacet.dbs[i]) &&
+          (key === "designs" || passFacet.designs[i]) &&
+          (key === "categories" || passFacet.categories[i]) &&
+          (key === "methods" || passFacet.methods[i]),
+      ),
+    [papers, passSearch, passYear, passFacet],
+  );
+
+  const facets = useMemo(
+    () => ({
+      dbs: computeFacetOptions(papers, "dbs", passExcept("dbs")),
+      designs: computeFacetOptions(papers, "designs", passExcept("designs")),
+      categories: computeFacetOptions(
+        papers,
+        "categories",
+        passExcept("categories"),
+      ),
+      methods: computeFacetOptions(papers, "methods", passExcept("methods")),
+    }),
+    [papers, passExcept],
+  );
+
   const toggleValue = useCallback(
     (key: ListFilterKey, value: string) => {
       const current = stateRef.current[key];
@@ -363,6 +454,50 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     },
     [applyState, scrollToResultsTop],
   );
+
+  /** 適用中の絞り込みをチップとして並べるための一覧 */
+  const chips = useMemo(
+    () => [
+      ...state.dbs.map((value) => ({
+        key: "dbs" as ListFilterKey,
+        value,
+        variant: "default" as const,
+        className: "",
+      })),
+      ...state.designs.map((value) => ({
+        key: "designs" as ListFilterKey,
+        value,
+        variant: "secondary" as const,
+        className: "",
+      })),
+      ...state.categories.map((value) => ({
+        key: "categories" as ListFilterKey,
+        value,
+        variant: "outline" as const,
+        className: "",
+      })),
+      ...state.methods.map((value) => ({
+        key: "methods" as ListFilterKey,
+        value,
+        variant: "secondary" as const,
+        className: "border-blue-200 bg-blue-50 text-blue-700 hover:bg-blue-100",
+      })),
+    ],
+    [state.dbs, state.designs, state.categories, state.methods],
+  );
+
+  const clearSearch = useCallback(() => {
+    setSearchInput("");
+    applyState({ search: "", page: 1 });
+    scrollToResultsTop();
+  }, [applyState, scrollToResultsTop]);
+
+  const clearYearRange = useCallback(() => {
+    setYearFromInput("");
+    setYearToInput("");
+    applyState({ yearFrom: null, yearTo: null, page: 1 });
+    scrollToResultsTop();
+  }, [applyState, scrollToResultsTop]);
 
   const clearFilters = useCallback(() => {
     setSearchInput("");
@@ -381,49 +516,16 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
   );
 
   const filtered = useMemo(() => {
-    const result = papers.filter((p) => {
-      // Text search
-      if (state.search) {
-        const q = state.search.toLowerCase();
-        const haystack =
-          `${p.title} ${p.title_ja ?? ""} ${p.abstract} ${p.abstract_ja ?? ""} ${p.authors.join(" ")} ${p.journal} ${p.databases_used.join(" ")} ${p.study_design} ${(p.research_categories ?? []).join(" ")} ${(p.analysis_methods ?? []).join(" ")}`.toLowerCase();
-        if (!haystack.includes(q)) return false;
-      }
+    const result = papers.filter(
+      (_, i) =>
+        passSearch[i] &&
+        passYear[i] &&
+        passFacet.dbs[i] &&
+        passFacet.designs[i] &&
+        passFacet.categories[i] &&
+        passFacet.methods[i],
+    );
 
-      // DB filter
-      if (selectedDbs.size > 0) {
-        if (!p.databases_used.some((db) => selectedDbs.has(db))) return false;
-      }
-
-      // Design filter
-      if (selectedDesigns.size > 0) {
-        if (!selectedDesigns.has(p.study_design)) return false;
-      }
-
-      // Category filter
-      if (selectedCategories.size > 0) {
-        if (
-          !(p.research_categories ?? []).some((cat) =>
-            selectedCategories.has(cat),
-          )
-        )
-          return false;
-      }
-
-      // Analysis methods filter
-      if (selectedMethods.size > 0) {
-        if (!(p.analysis_methods ?? []).some((m) => selectedMethods.has(m)))
-          return false;
-      }
-
-      // Year filter（未指定側は制限なし）
-      if (state.yearFrom !== null && p.year < state.yearFrom) return false;
-      if (state.yearTo !== null && p.year > state.yearTo) return false;
-
-      return true;
-    });
-
-    // Sort
     result.sort((a, b) => {
       switch (state.sort) {
         case "newest":
@@ -438,17 +540,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     });
 
     return result;
-  }, [
-    papers,
-    state.search,
-    state.yearFrom,
-    state.yearTo,
-    state.sort,
-    selectedDbs,
-    selectedDesigns,
-    selectedCategories,
-    selectedMethods,
-  ]);
+  }, [papers, passSearch, passYear, passFacet, state.sort]);
 
   // Pagination
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
@@ -464,10 +556,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
 
   // サイドバーとドロワーで同じ入力部品を使う（ロジックの二重化を避けるため）
   const panelProps = {
-    allDbs,
-    allDesigns,
-    allCategories,
-    allMethods,
+    facets,
     selectedDbs,
     selectedDesigns,
     selectedCategories,
@@ -595,49 +684,79 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
           </div>
         </div>
 
-        {/* Active filter tags */}
+        {/* 適用中の絞り込み。PubMed 同様、結果の直上にも全解除を置く */}
         {hasFilters && (
-          <div className="flex flex-wrap gap-1">
-            {state.dbs.map((db) => (
+          <div className="flex flex-wrap items-center gap-1.5">
+            <span className="text-xs text-muted-foreground">絞り込み中:</span>
+
+            {state.search && (
               <Badge
-                key={db}
-                variant="default"
-                className="cursor-pointer text-xs"
-                onClick={() => toggleValue("dbs", db)}
-              >
-                {db} ×
-              </Badge>
-            ))}
-            {state.designs.map((d) => (
-              <Badge
-                key={d}
-                variant="secondary"
-                className="cursor-pointer text-xs"
-                onClick={() => toggleValue("designs", d)}
-              >
-                {d} ×
-              </Badge>
-            ))}
-            {state.categories.map((cat) => (
-              <Badge
-                key={cat}
+                render={<button type="button" />}
                 variant="outline"
                 className="cursor-pointer text-xs"
-                onClick={() => toggleValue("categories", cat)}
+                aria-label={`キーワード「${state.search}」を解除`}
+                onClick={clearSearch}
               >
-                {cat} ×
+                {state.search} <span aria-hidden="true">×</span>
               </Badge>
-            ))}
-            {state.methods.map((m) => (
+            )}
+
+            {chips.map((chip) => (
               <Badge
-                key={m}
-                variant="secondary"
-                className="cursor-pointer text-xs border-blue-200 bg-blue-50 text-blue-700 hover:bg-blue-100"
-                onClick={() => toggleValue("methods", m)}
+                key={`${chip.key}:${chip.value}`}
+                render={<button type="button" />}
+                variant={chip.variant}
+                className={cn("cursor-pointer text-xs", chip.className)}
+                aria-label={`絞り込み「${chip.value}」を解除`}
+                onClick={() => toggleValue(chip.key, chip.value)}
               >
-                {m} ×
+                {chip.value} <span aria-hidden="true">×</span>
               </Badge>
             ))}
+
+            {(state.yearFrom !== null || state.yearTo !== null) && (
+              <Badge
+                render={<button type="button" />}
+                variant="outline"
+                className="cursor-pointer text-xs"
+                aria-label="出版年の絞り込みを解除"
+                onClick={clearYearRange}
+              >
+                {state.yearFrom ?? years.min}〜{state.yearTo ?? years.max}年{" "}
+                <span aria-hidden="true">×</span>
+              </Badge>
+            )}
+
+            <button
+              type="button"
+              onClick={clearFilters}
+              className="ml-1 rounded-sm text-xs text-blue-600 underline-offset-2 hover:underline focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:outline-none"
+            >
+              すべて解除
+            </button>
+          </div>
+        )}
+
+        {/* 検索条件を自動で緩めたときは、何をしたかを必ず伝える */}
+        {(searchOutcome.notFound.length > 0 ||
+          searchOutcome.dropped.length > 0) && (
+          <div
+            role="status"
+            className="rounded-md border border-amber-300 bg-amber-50 px-3 py-2 text-sm text-amber-900"
+          >
+            {searchOutcome.notFound.length > 0 && (
+              <p>
+                <strong>{searchOutcome.notFound.join("、")}</strong>{" "}
+                に一致する研究はありませんでした。
+              </p>
+            )}
+            {searchOutcome.dropped.length > 0 && (
+              <p>
+                すべての語を含む研究が無かったため、{" "}
+                <strong>{searchOutcome.dropped.join("、")}</strong>{" "}
+                を外して検索しています。
+              </p>
+            )}
           </div>
         )}
 
@@ -645,10 +764,28 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
           {paginatedPapers.map((paper) => (
             <PaperCard key={paper.id} paper={paper} />
           ))}
+
           {filtered.length === 0 && (
-            <p className="py-12 text-center text-muted-foreground">
-              該当する研究が見つかりませんでした
-            </p>
+            <div className="space-y-3 py-12 text-center">
+              <p className="font-medium">該当する研究が見つかりませんでした</p>
+              <p className="text-sm text-muted-foreground">
+                キーワードを減らすか、絞り込みを外すと見つかることがあります。
+              </p>
+              {hasFilters && (
+                <div className="flex flex-wrap justify-center gap-2 pt-1">
+                  {state.search && (
+                    <Button variant="outline" size="sm" onClick={clearSearch}>
+                      キーワードを消す
+                    </Button>
+                  )}
+                  {chips.length > 0 && (
+                    <Button variant="outline" size="sm" onClick={clearFilters}>
+                      すべての絞り込みを解除
+                    </Button>
+                  )}
+                </div>
+              )}
+            </div>
           )}
         </div>
 
