@@ -12,7 +12,11 @@ export function generateStaticParams() {
   return papers.map((p) => ({ id: p.id }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
   const { id } = await params;
   const papers = getPapers();
   const paper = papers.find((p) => p.id === id);
@@ -42,21 +46,20 @@ export default async function PaperDetailPage({
     .filter(
       (p) =>
         p.id !== paper.id &&
-        p.databases_used.some((db) => paper.databases_used.includes(db))
+        p.databases_used.some((db) => paper.databases_used.includes(db)),
     )
     .slice(0, 5);
 
   // Match DB slugs for linking
-  const dbLinks = paper.databases_used
-    .map((dbName) => {
-      const db = databases.find(
-        (d) =>
-          d.name.includes(dbName) ||
-          d.name_en.includes(dbName) ||
-          dbName === d.slug.toUpperCase()
-      );
-      return db ? { name: dbName, slug: db.slug } : { name: dbName, slug: null };
-    });
+  const dbLinks = paper.databases_used.map((dbName) => {
+    const db = databases.find(
+      (d) =>
+        d.name.includes(dbName) ||
+        d.name_en.includes(dbName) ||
+        dbName === d.slug.toUpperCase(),
+    );
+    return db ? { name: dbName, slug: db.slug } : { name: dbName, slug: null };
+  });
 
   return (
     <div className="mx-auto max-w-4xl space-y-6">
@@ -130,7 +133,7 @@ export default async function PaperDetailPage({
                         <Badge key={db.name} variant="default">
                           {db.name}
                         </Badge>
-                      )
+                      ),
                     )
                   ) : (
                     <span className="text-sm text-muted-foreground">
@@ -187,7 +190,11 @@ export default async function PaperDetailPage({
                   </p>
                   <div className="mt-1 flex flex-wrap gap-1.5">
                     {paper.analysis_methods.map((method) => (
-                      <Badge key={method} variant="secondary" className="border-blue-200 bg-blue-50 text-blue-700">
+                      <Badge
+                        key={method}
+                        variant="secondary"
+                        className="border-blue-200 bg-blue-50 text-blue-700"
+                      >
                         {method}
                       </Badge>
                     ))}
@@ -237,9 +244,7 @@ export default async function PaperDetailPage({
 
       {related.length > 0 && (
         <div>
-          <h3 className="mb-3 font-semibold">
-            同じDBを使った関連研究
-          </h3>
+          <h3 className="mb-3 font-semibold">同じDBを使った関連研究</h3>
           <div className="space-y-2">
             {related.map((r) => (
               <Link
@@ -263,6 +268,11 @@ export default async function PaperDetailPage({
           </div>
         </div>
       )}
+
+      {/* ページが長いので、読み終わった位置にも戻る導線を置く */}
+      <div className="border-t pt-4">
+        <BackToPapersLink />
+      </div>
     </div>
   );
 }

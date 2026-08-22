@@ -574,7 +574,13 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
   return (
     <div className="flex flex-col gap-6 lg:flex-row">
       {/* デスクトップ: 常設サイドバー / モバイル: 下のドロワーへ */}
-      <aside className="hidden w-full shrink-0 space-y-6 lg:block lg:w-64">
+      {/*
+        デスクトップでは絞り込みを画面に貼り付けておく。
+        flex の子は既定で親の高さまで伸ばされ、そのままだと sticky が効かないので
+        self-start で縮めている。中身は画面より高いので、はみ出す分はここでスクロールさせる。
+        top はヘッダー(h-14=56px)＋余白。
+      */}
+      <aside className="hidden w-full shrink-0 space-y-6 lg:block lg:sticky lg:top-20 lg:max-h-[calc(100vh-6rem)] lg:w-64 lg:self-start lg:overflow-y-auto lg:pr-2">
         <Input
           placeholder="キーワード検索..."
           aria-label="キーワード検索"
