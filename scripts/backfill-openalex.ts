@@ -59,8 +59,10 @@ async function main() {
   const papersPath = path.join(process.cwd(), "data", "papers.json");
   const papers: Paper[] = JSON.parse(fs.readFileSync(papersPath, "utf-8"));
 
+  // null も対象にする。収集時に OpenAlex がまだその論文を収載しておらず
+  // 404 になった場合、null のまま二度と取りに行かないと永久に欠けてしまう。
   const targets = papers.filter(
-    (p) => all || p.openalex_topic === undefined || p.impact_factor == null,
+    (p) => all || p.openalex_topic == null || p.impact_factor == null,
   );
   console.log(`Papers: ${papers.length}, to fetch: ${targets.length}`);
 

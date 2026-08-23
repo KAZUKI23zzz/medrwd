@@ -52,8 +52,24 @@ const SCHEMA: Record<string, FieldType> = {
   openalex_field: "string|null?",
 };
 
-/** null を許容するフィールド（types/paper.ts で `T | null`） */
-const NULLABLE = new Set(["doi", "journal_issn", "impact_factor", "sjr_quartile"]);
+/**
+ * 値が null でもよいが、キー自体は必ず存在しなければならないフィールド。
+ *
+ * openalex_* は型としては省略可能だが、収集スクリプトが取得できなかった場合も
+ * null を書き込むので、収集を通った論文には必ず存在する。ここで存在を必須に
+ * しておかないと、Routine がフィールドごと落としても検証をすり抜けて
+ * 「診療領域が無い論文」が黙って増えてしまう。
+ */
+const NULLABLE = new Set([
+  "doi",
+  "journal_issn",
+  "impact_factor",
+  "sjr_quartile",
+  "openalex_topic",
+  "openalex_topic_score",
+  "openalex_subfield",
+  "openalex_field",
+]);
 
 function matches(value: unknown, type: FieldType): boolean {
   switch (type) {
