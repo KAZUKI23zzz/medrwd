@@ -7,6 +7,7 @@ import { QuartileBadge } from "@/components/papers/QuartileBadge";
 import { BackToPapersLink } from "@/components/papers/BackToPapersLink";
 import { FavoriteButton } from "@/components/papers/FavoriteButton";
 import { getPapers, getDatabases } from "@/lib/data-loader";
+import { getRelatedPapers } from "@/lib/related-papers";
 
 export function generateStaticParams() {
   const papers = getPapers();
@@ -42,14 +43,10 @@ export default async function PaperDetailPage({
     notFound();
   }
 
-  // Find related papers (same DB used)
-  const related = papers
-    .filter(
-      (p) =>
-        p.id !== paper.id &&
-        p.databases_used.some((db) => paper.databases_used.includes(db)),
-    )
-    .slice(0, 5);
+  // 本文（英語の title + abstract）の類似度で並べる。同じDBというだけの
+  // 論文を並べていた頃は、DPC論文221件すべてで同じ5件が出ていた。
+  // 関連度が閾値に届かない場合は5件に満たなくてよい。
+  const related = getRelatedPapers(paper.id);
 
   // Match DB slugs for linking
   // DBページへのリンク。名前の部分一致だと似た名前のDBを取り違えるので、
@@ -243,19 +240,32 @@ export default async function PaperDetailPage({
 
       {related.length > 0 && (
         <div>
-          <h3 className="mb-3 font-semibold">同じDBを使った関連研究</h3>
+          <h3 className="mb-3 font-semibold">関連研究</h3>
           <div className="space-y-2">
-            {related.map((r) => (
+            {related.map(({ paper: r }) => (
               <Link
                 key={r.id}
                 href={`/papers/${r.id}`}
                 className="block rounded-md border p-3 transition-colors hover:bg-muted/50"
               >
-                <p className="text-sm font-medium">{r.title}</p>
-                <div className="mt-1 flex flex-wrap gap-1">
+                {/* 日本語タイトルを主、英語タイトルを副として併記する */}
+                <p className="text-sm font-medium leading-snug">
+                  {r.title_ja ?? r.title}
+                </p>
+                {r.title_ja && (
+                  <p className="mt-0.5 text-xs leading-snug text-muted-foreground">
+                    {r.title}
+                  </p>
+                )}
+                <div className="mt-2 flex flex-wrap gap-1">
                   {r.databases_used.map((db) => (
                     <Badge key={db} variant="default" className="text-xs">
                       {db}
+                    </Badge>
+                  ))}
+                  {r.research_categories.map((category) => (
+                    <Badge key={category} variant="outline" className="text-xs">
+                      {category}
                     </Badge>
                   ))}
                   <Badge variant="secondary" className="text-xs">

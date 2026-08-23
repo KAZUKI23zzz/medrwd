@@ -22,7 +22,8 @@ Next.js 16 (Static Export) / TypeScript / Tailwind CSS v4 + shadcn/ui v4 / JSON�
 | `docs/routine-classify.md` | **Routineのプロンプト全文＋セットアップ手順** |
 | `docs/classification.md` | **分類スキーマ・偽陽性基準（Routineが参照する正）** |
 | `docs/DEVELOPMENT.md` | デバッグTips・設計判断・検索式比較・法的リスク・変更履歴 |
-| `docs/related-papers.md` | **未着手**: 詳細ページの「関連研究」が機能していない問題の引き継ぎ（独立課題） |
+| `docs/related-papers.md` | 関連研究の設計判断・ブラインド評価の結果・不採用案の記録 |
+| `lib/related-papers.ts` | 関連研究の算出（英語本文のBM25コサイン＋タグ加点、ビルド時計算） |
 | `lib/papers-url-state.ts` | 研究カタログの絞り込み状態 ⇄ URLクエリの変換 |
 | `lib/papers-search.ts` | キーワード検索（スペース区切り＝AND、表記ゆれ正規化） |
 | `lib/favorites.ts` | お気に入り（localStorage のみ。サーバ・アカウント不要） |
@@ -55,4 +56,6 @@ DB一覧の拡充（10件）・お気に入り（localStorage）。
 1. （解消）~~Google Translate無料EP~~ → 翻訳・要約はRoutine(LLM)に移管し廃止。
 2. `/papers` の初回表示が重い（brotli後 728KB）。全件の抄録を載せているため。
    検索精度とのトレードオフで現状維持と判断。
-3. 詳細ページの「関連研究」が実質「同じDBの最新5件」→ `docs/related-papers.md`（独立課題）。
+3. （解消）~~詳細ページの「関連研究」が実質「同じDBの最新5件」~~ → 本文ベースの
+   類似度（BM25＋タグ加点）に置き換え済み。`lib/related-papers.ts`。
+   経緯とブラインド評価の結果は `docs/related-papers.md`。

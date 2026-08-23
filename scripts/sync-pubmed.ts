@@ -225,22 +225,41 @@ async function fetchPubMedArticles(pmids: string[]): Promise<(ParsedArticle | nu
 // --- OpenAlex API ---
 const journalIFCache = new Map<string, { impact_factor: number | null; sjr_quartile: string | null }>();
 
+/**
+ * polite pool 用の連絡先。OpenAlex は mailto を付けたリクエストを優遇する。
+ * 実在しないアドレスを送るのは趣旨に反するので、環境変数で渡せるようにしてある。
+ */
+const OPENALEX_MAILTO = process.env.OPENALEX_MAILTO;
+
 async function getJournalMetrics(issn: string): Promise<{ impact_factor: number | null; sjr_quartile: string | null }> {
   if (journalIFCache.has(issn)) return journalIFCache.get(issn)!;
 
   try {
-    const url = `https://api.openalex.org/sources?filter=issn:${issn}&mailto=rwd-catalog@example.com`;
+    // singleton形式（/sources/issn:XXXX）を使う。
+    // OpenAlex は 2026-02 に従量課金へ移行し、list形式（/sources?filter=issn:XXXX）は
+    // 課金対象になった。共有IPの匿名枠は $0.10/日ですぐ枯渇するため、list形式だと
+    // 429 "Insufficient budget" が返ってIFが取れなくなる。
+    // singleton は cost 0 で、残高が尽きていても 200 を返す。
+    const params = OPENALEX_MAILTO ? `?mailto=${encodeURIComponent(OPENALEX_MAILTO)}` : "";
+    const url = `https://api.openalex.org/sources/issn:${issn}${params}`;
     const res = await fetch(url);
-    if (!res.ok) throw new Error(`OpenAlex HTTP ${res.status}`);
+
+    // 404 は「その ISSN が OpenAlex に無い」なので想定内。それ以外は理由を出す。
+    // 握りつぶすと IF が無言で null になり、原因の切り分けができなくなる。
+    if (!res.ok) {
+      if (res.status !== 404) {
+        console.warn(`  OpenAlex ${res.status} for ISSN ${issn}: ${(await res.text()).slice(0, 200)}`);
+      }
+      throw new Error(`OpenAlex HTTP ${res.status}`);
+    }
+
     const data = (await res.json()) as {
-      results: {
-        summary_stats?: { "2yr_mean_citedness"?: number };
-      }[];
+      summary_stats?: { "2yr_mean_citedness"?: number };
     };
 
     let impact_factor: number | null = null;
-    if (data.results?.[0]?.summary_stats?.["2yr_mean_citedness"]) {
-      impact_factor = Math.round(data.results[0].summary_stats["2yr_mean_citedness"] * 100) / 100;
+    if (data.summary_stats?.["2yr_mean_citedness"]) {
+      impact_factor = Math.round(data.summary_stats["2yr_mean_citedness"] * 100) / 100;
     }
 
     const result = { impact_factor, sjr_quartile: null };
