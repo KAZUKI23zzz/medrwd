@@ -104,6 +104,20 @@ export function PaperCard({ paper }: { paper: Paper }) {
               </div>
             )}
 
+          {paper.openalex_subfield && (
+            <div className="flex flex-wrap items-center gap-1.5">
+              <span className="text-xs font-medium text-muted-foreground">
+                診療領域:
+              </span>
+              <Badge
+                variant="outline"
+                className="text-xs border-emerald-200 bg-emerald-50 text-emerald-700"
+              >
+                {paper.openalex_subfield}
+              </Badge>
+            </div>
+          )}
+
           {(paper.analysis_methods ?? []).length > 0 && (
             <div className="flex flex-wrap items-center gap-1.5">
               <span className="text-xs font-medium text-muted-foreground">

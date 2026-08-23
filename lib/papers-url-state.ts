@@ -18,6 +18,8 @@ export interface PapersUrlState {
   designs: string[];
   categories: string[];
   methods: string[];
+  /** 診療領域（OpenAlex の subfield）。Surgery / Oncology など */
+  areas: string[];
   /** null = 下限なし（データ全体を対象にする） */
   yearFrom: number | null;
   /** null = 上限なし */
@@ -35,7 +37,12 @@ export interface PapersUrlState {
 }
 
 /** 複数選択できる絞り込み条件のキー */
-export type ListFilterKey = "dbs" | "designs" | "categories" | "methods";
+export type ListFilterKey =
+  | "dbs"
+  | "designs"
+  | "categories"
+  | "methods"
+  | "areas";
 
 /** URLSearchParams と ReadonlyURLSearchParams の両方を受けるための最小インタフェース */
 type ParamsLike = {
@@ -49,6 +56,7 @@ export const EMPTY_PAPERS_STATE: PapersUrlState = {
   designs: [],
   categories: [],
   methods: [],
+  areas: [],
   yearFrom: null,
   yearTo: null,
   sort: DEFAULT_SORT,
@@ -66,11 +74,21 @@ export const EMPTY_PAPERS_STATE: PapersUrlState = {
  * 繰り返しパラメータなら、符号化は URLSearchParams に一度だけ任せられる。
  *
  * カンマ区切りの古いURL（`?db=DPC,JMDC`）も読めるようにしてある。
+ *
+ * ただしこの後方互換は、値そのものにカンマが入るファセットでは使えない。
+ * 診療領域には "Public Health, Environmental and Occupational Health" のように
+ * カンマを含む値が5種（99件）あり、分割すると2つの別々の条件に割れて0件になる。
+ * 診療領域は後から追加した軸でカンマ区切りの古いURLが存在しないので、
+ * そちらは分割しない。
  */
-function parseList(params: ParamsLike, key: string): string[] {
+function parseList(
+  params: ParamsLike,
+  key: string,
+  splitLegacyCommas = true,
+): string[] {
   return params
     .getAll(key)
-    .flatMap((raw) => raw.split(","))
+    .flatMap((raw) => (splitLegacyCommas ? raw.split(",") : [raw]))
     .map((v) => v.trim())
     .filter(Boolean);
 }
@@ -91,6 +109,7 @@ export function parsePapersUrlState(params: ParamsLike): PapersUrlState {
     designs: parseList(params, "design"),
     categories: parseList(params, "cat"),
     methods: parseList(params, "method"),
+    areas: parseList(params, "area", false),
     yearFrom: parseYear(params.get("from")),
     yearTo: parseYear(params.get("to")),
     sort: SORT_OPTIONS.includes(sortRaw as SortOption)
@@ -110,6 +129,7 @@ export function buildPapersQuery(state: PapersUrlState): string {
   for (const v of state.designs) params.append("design", v);
   for (const v of state.categories) params.append("cat", v);
   for (const v of state.methods) params.append("method", v);
+  for (const v of state.areas) params.append("area", v);
   if (state.yearFrom !== null) params.set("from", String(state.yearFrom));
   if (state.yearTo !== null) params.set("to", String(state.yearTo));
   if (state.sort !== DEFAULT_SORT) params.set("sort", state.sort);
@@ -130,6 +150,7 @@ export function countActiveFilters(state: PapersUrlState): number {
     state.designs.length +
     state.categories.length +
     state.methods.length +
+    state.areas.length +
     (state.yearFrom !== null ? 1 : 0) +
     (state.yearTo !== null ? 1 : 0) +
     (state.favoritesOnly ? 1 : 0)
@@ -145,6 +166,12 @@ export function countActiveFilters(state: PapersUrlState): number {
  */
 export function papersUrlForDatabase(paperTag: string): string {
   const qs = buildPapersQuery({ ...EMPTY_PAPERS_STATE, dbs: [paperTag] });
+  return qs ? `/papers?${qs}` : "/papers";
+}
+
+/** ある診療領域で絞り込んだ研究カタログの URL */
+export function papersUrlForArea(area: string): string {
+  const qs = buildPapersQuery({ ...EMPTY_PAPERS_STATE, areas: [area] });
   return qs ? `/papers?${qs}` : "/papers";
 }
 

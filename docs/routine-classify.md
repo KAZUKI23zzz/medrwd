@@ -36,6 +36,9 @@ GitHub Actions・Google翻訳は廃止し、本Routineに一本化している�
    - `title_ja`: タイトルの日本語訳
    - `abstract_ja`: **アブストラクトの全文訳ではなく、2〜3文（約150〜250字）の日本語AI要約**。「何のDBで・どんなデザイン/手法で・何を調べ・主要な結果は何か」を簡潔にまとめる。
    - 分類が終わった論文は `classified: true` をセットする。
+   - `openalex_topic` / `openalex_topic_score` / `openalex_subfield` / `openalex_field` は
+     **収集スクリプトが OpenAlex から埋めるフィールドなので、絶対に書き換えない**。
+     取得できなかった場合は `null` が入っている。これがサイトの「診療領域」の絞り込み軸になる。
 
 5. 偽陽性の除外: docs/classification.md の「偽陽性判定基準」に該当する論文（日本のヒトを対象としたRWDデータベース研究でないもの＝動物実験・日本以外の研究・計量書誌学・レター/正誤表等・純粋な画像診断研究・住民前向きコホート等）は、`data/papers.json` から**削除**する。除外した件数を数えておく。
 
@@ -84,7 +87,7 @@ GitHub Actions・Google翻訳は廃止し、本Routineに一本化している�
 3. **環境（クラウド環境）**:
    - **ネットワーク許可（必須）**: Default(Trusted) では PubMed/OpenAlex に届かず収集が 403 で失敗する。環境設定で **Network access を Custom** にし、Allowed domains に追加（「デフォルト許可リストも含める」をオン）:
      - `eutils.ncbi.nlm.nih.gov`（PubMed E-utilities）
-     - `api.openalex.org`（雑誌IF）
+     - `api.openalex.org`（雑誌IF・診療領域）
    - **セットアップスクリプト**: `npm ci`
 4. **トリガー**: Schedule → 毎週月曜（例: 02:00 JST）。
 5. **ブランチ**: ブランチ名は `claude/` プレフィックス。repo設定「Automatically delete head branches」が ON なので、マージ後のブランチは GitHub が自動削除する。

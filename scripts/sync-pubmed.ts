@@ -12,6 +12,7 @@
  * このスクリプトはキーワード分類や翻訳を行わない。
  */
 
+import { fetchTopic, fetchImpactFactor } from "./openalex";
 import * as fs from "fs";
 import * as path from "path";
 
@@ -36,6 +37,10 @@ interface Paper {
   mesh_terms: string[];
   impact_factor: number | null;
   sjr_quartile: string | null;
+  openalex_topic?: string | null;
+  openalex_topic_score?: number | null;
+  openalex_subfield?: string | null;
+  openalex_field?: string | null;
   research_categories: string[];
   auto_detected: boolean;
   collected_at: string;
@@ -223,35 +228,9 @@ async function fetchPubMedArticles(pmids: string[]): Promise<(ParsedArticle | nu
 }
 
 // --- OpenAlex API ---
-const journalIFCache = new Map<string, { impact_factor: number | null; sjr_quartile: string | null }>();
-
-async function getJournalMetrics(issn: string): Promise<{ impact_factor: number | null; sjr_quartile: string | null }> {
-  if (journalIFCache.has(issn)) return journalIFCache.get(issn)!;
-
-  try {
-    const url = `https://api.openalex.org/sources?filter=issn:${issn}&mailto=rwd-catalog@example.com`;
-    const res = await fetch(url);
-    if (!res.ok) throw new Error(`OpenAlex HTTP ${res.status}`);
-    const data = (await res.json()) as {
-      results: {
-        summary_stats?: { "2yr_mean_citedness"?: number };
-      }[];
-    };
-
-    let impact_factor: number | null = null;
-    if (data.results?.[0]?.summary_stats?.["2yr_mean_citedness"]) {
-      impact_factor = Math.round(data.results[0].summary_stats["2yr_mean_citedness"] * 100) / 100;
-    }
-
-    const result = { impact_factor, sjr_quartile: null };
-    journalIFCache.set(issn, result);
-    return result;
-  } catch {
-    const result = { impact_factor: null, sjr_quartile: null };
-    journalIFCache.set(issn, result);
-    return result;
-  }
-}
+// 取得処理は scripts/openalex.ts に集約してある（バックフィルと共通）。
+// 以前はこのファイルとバックフィルに同じ処理が別々にあり、再試行・間隔・例外処理が
+// 食い違っていた。
 
 // --- Main ---
 async function main() {
@@ -297,11 +276,20 @@ async function main() {
       continue;
     }
 
-    // 雑誌IF（OpenAlex）
-    let metrics = { impact_factor: null as number | null, sjr_quartile: null as string | null };
+    // 雑誌IF（OpenAlex）。取得失敗（undefined）は null 扱いで先に進む
+    let impactFactor: number | null = null;
     if (article.journal_issn) {
-      metrics = await getJournalMetrics(article.journal_issn);
+      impactFactor = (await fetchImpactFactor(article.journal_issn)) ?? null;
     }
+
+    // 診療領域（OpenAlex）。取得失敗なら全て null で入れておき、
+    // 後から scripts/backfill-openalex.ts が拾い直す
+    const topic = (await fetchTopic(article.pubmed_id)) ?? {
+      openalex_topic: null,
+      openalex_topic_score: null,
+      openalex_subfield: null,
+      openalex_field: null,
+    };
 
     // 分類・要約は Routine が後から埋める。ここでは空で出力し classified:false にする。
     const paper: Paper = {
@@ -311,8 +299,9 @@ async function main() {
       study_design: "",
       analysis_methods: [],
       research_categories: [],
-      impact_factor: metrics.impact_factor,
-      sjr_quartile: metrics.sjr_quartile,
+      impact_factor: impactFactor,
+      sjr_quartile: null,
+      ...topic,
       auto_detected: true,
       collected_at: new Date().toISOString(),
       classified: false,
@@ -332,7 +321,7 @@ async function main() {
     (a, b) => b.year - a.year || b.publication_date.localeCompare(a.publication_date)
   );
 
-  fs.writeFileSync(papersPath, JSON.stringify(allPapers, null, 2), "utf-8");
+  fs.writeFileSync(papersPath, JSON.stringify(allPapers, null, 2) + "\n", "utf-8");
   console.log(`Total papers saved: ${allPapers.length}`);
 }
 

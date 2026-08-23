@@ -13,7 +13,15 @@
 import * as fs from "fs";
 import * as path from "path";
 
-type FieldType = "string" | "string?" | "number" | "boolean" | "string[]";
+type FieldType =
+  | "string"
+  | "string?"
+  | "number"
+  | "boolean"
+  | "string[]"
+  /** 省略可能かつ null も許す（OpenAlex から取れなかった場合に null が入る） */
+  | "string|null?"
+  | "number|null?";
 
 /** types/paper.ts の Paper インターフェースに対応。null許容フィールドは個別に扱う。 */
 const SCHEMA: Record<string, FieldType> = {
@@ -38,10 +46,30 @@ const SCHEMA: Record<string, FieldType> = {
   abstract_ja: "string?",
   medline_status: "string?",
   last_updated: "string?",
+  openalex_topic: "string|null?",
+  openalex_topic_score: "number|null?",
+  openalex_subfield: "string|null?",
+  openalex_field: "string|null?",
 };
 
-/** null を許容するフィールド（types/paper.ts で `T | null`） */
-const NULLABLE = new Set(["doi", "journal_issn", "impact_factor", "sjr_quartile"]);
+/**
+ * 値が null でもよいが、キー自体は必ず存在しなければならないフィールド。
+ *
+ * openalex_* は型としては省略可能だが、収集スクリプトが取得できなかった場合も
+ * null を書き込むので、収集を通った論文には必ず存在する。ここで存在を必須に
+ * しておかないと、Routine がフィールドごと落としても検証をすり抜けて
+ * 「診療領域が無い論文」が黙って増えてしまう。
+ */
+const NULLABLE = new Set([
+  "doi",
+  "journal_issn",
+  "impact_factor",
+  "sjr_quartile",
+  "openalex_topic",
+  "openalex_topic_score",
+  "openalex_subfield",
+  "openalex_field",
+]);
 
 function matches(value: unknown, type: FieldType): boolean {
   switch (type) {
@@ -55,6 +83,14 @@ function matches(value: unknown, type: FieldType): boolean {
       return typeof value === "boolean";
     case "string[]":
       return Array.isArray(value) && value.every((v) => typeof v === "string");
+    case "string|null?":
+      return value === undefined || value === null || typeof value === "string";
+    case "number|null?":
+      return (
+        value === undefined ||
+        value === null ||
+        (typeof value === "number" && Number.isFinite(value))
+      );
   }
 }
 
@@ -102,6 +138,22 @@ function main() {
       const prev = seen.get(paper.id);
       if (prev !== undefined) errors.push(`${paper.id}: id が重複 (index ${prev} と ${i})`);
       else seen.set(paper.id, i);
+    }
+
+    // 絞り込み値にカンマが入るとURLで壊れる。
+    // 複数選択は `?db=A&db=B` を使うが、古い `?db=A,B` 形式も読めるようにしてある
+    // 都合で、値そのもののカンマが2つの条件に割れてしまう（該当0件になる）。
+    // databases.json の paper_tag には同じ理由でガードが入っている。
+    for (const field of ["research_categories", "analysis_methods", "study_design"]) {
+      const value = paper[field];
+      const values = Array.isArray(value) ? value : [value];
+      for (const v of values) {
+        if (typeof v === "string" && v.includes(",")) {
+          errors.push(
+            `${label}: ${field} の "${v}" にカンマが入っている（URLの区切りと衝突し、絞り込みが0件になる）`
+          );
+        }
+      }
     }
 
     if (paper.classified !== true) {

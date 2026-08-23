@@ -19,6 +19,16 @@ export interface Paper {
   impact_factor: number | null;
   sjr_quartile: string | null;
   research_categories: string[];
+  /**
+   * OpenAlex の primary_topic（CC0）。疾患・診療領域の軸として使う。
+   * `openalex_topic` は約4,500種の細かいトピック名、`openalex_subfield` は
+   * その上位（Surgery / Oncology など）で、絞り込みの軸にはこちらを使う。
+   * 未取得は undefined、取得を試みて得られなかった場合は null。
+   */
+  openalex_topic?: string | null;
+  openalex_topic_score?: number | null;
+  openalex_subfield?: string | null;
+  openalex_field?: string | null;
   auto_detected: boolean;
   collected_at: string;
   medline_status?: string;

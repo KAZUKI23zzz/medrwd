@@ -352,6 +352,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     () => new Set(state.methods),
     [state.methods],
   );
+  const selectedAreas = useMemo(() => new Set(state.areas), [state.areas]);
 
   // 条件ごとに「その条件だけ見たら通るか」を持っておく。
   // ここから、全条件を満たす一覧と、ファセットごとの件数の両方を組み立てる。
@@ -449,6 +450,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
       designs: forKey("designs", selectedDesigns),
       categories: forKey("categories", selectedCategories),
       methods: forKey("methods", selectedMethods),
+      areas: forKey("areas", selectedAreas),
     };
   }, [
     papers,
@@ -456,6 +458,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     selectedDesigns,
     selectedCategories,
     selectedMethods,
+    selectedAreas,
   ]);
 
   /** 指定ファセット「以外」の条件をすべて満たすか。ファセット件数の母集団になる */
@@ -469,7 +472,8 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
           (key === "dbs" || passFacet.dbs[i]) &&
           (key === "designs" || passFacet.designs[i]) &&
           (key === "categories" || passFacet.categories[i]) &&
-          (key === "methods" || passFacet.methods[i]),
+          (key === "methods" || passFacet.methods[i]) &&
+          (key === "areas" || passFacet.areas[i]),
       ),
     [papers, passSearch, passYear, passFavorite, passFacet],
   );
@@ -484,6 +488,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
         passExcept("categories"),
       ),
       methods: computeFacetOptions(papers, "methods", passExcept("methods")),
+      areas: computeFacetOptions(papers, "areas", passExcept("areas")),
     }),
     [papers, passExcept],
   );
@@ -527,8 +532,15 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
         variant: "secondary" as const,
         className: "border-blue-200 bg-blue-50 text-blue-700 hover:bg-blue-100",
       })),
+      ...state.areas.map((value) => ({
+        key: "areas" as ListFilterKey,
+        value,
+        variant: "outline" as const,
+        className:
+          "border-emerald-200 bg-emerald-50 text-emerald-700 hover:bg-emerald-100",
+      })),
     ],
-    [state.dbs, state.designs, state.categories, state.methods],
+    [state.dbs, state.designs, state.categories, state.methods, state.areas],
   );
 
   const clearSearch = useCallback(() => {
@@ -600,7 +612,8 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
         passFacet.dbs[i] &&
         passFacet.designs[i] &&
         passFacet.categories[i] &&
-        passFacet.methods[i],
+        passFacet.methods[i] &&
+        passFacet.areas[i],
     );
 
     result.sort((a, b) => {
@@ -638,6 +651,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     selectedDesigns,
     selectedCategories,
     selectedMethods,
+    selectedAreas,
     onToggle: toggleValue,
     years,
     yearFromInput,
