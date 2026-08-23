@@ -140,6 +140,22 @@ function main() {
       else seen.set(paper.id, i);
     }
 
+    // 絞り込み値にカンマが入るとURLで壊れる。
+    // 複数選択は `?db=A&db=B` を使うが、古い `?db=A,B` 形式も読めるようにしてある
+    // 都合で、値そのもののカンマが2つの条件に割れてしまう（該当0件になる）。
+    // databases.json の paper_tag には同じ理由でガードが入っている。
+    for (const field of ["research_categories", "analysis_methods", "study_design"]) {
+      const value = paper[field];
+      const values = Array.isArray(value) ? value : [value];
+      for (const v of values) {
+        if (typeof v === "string" && v.includes(",")) {
+          errors.push(
+            `${label}: ${field} の "${v}" にカンマが入っている（URLの区切りと衝突し、絞り込みが0件になる）`
+          );
+        }
+      }
+    }
+
     if (paper.classified !== true) {
       errors.push(`${label}: classified が true でない（未分類のままマージしてはいけない）`);
     }

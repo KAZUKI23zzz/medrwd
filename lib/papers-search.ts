@@ -97,6 +97,9 @@ function buildHaystack(paper: Paper): string {
     paper.study_design,
     (paper.research_categories ?? []).join(" "),
     (paper.analysis_methods ?? []).join(" "),
+    // 診療領域はカード上にバッジで出ているので、見えている語で検索できるようにする
+    paper.openalex_subfield ?? "",
+    paper.openalex_topic ?? "",
     // mesh_terms は入れない。付与率が約半分なうえ、頻出語が
     // Humans / Female / Japan / Male / Aged といったチェックタグ的な語で、
     // 「female」で 500 件超が並ぶような結果になってしまう。

@@ -48,20 +48,34 @@ function CheckboxGroup({
   maxVisible,
 }: CheckboxGroupProps) {
   const [expanded, setExpanded] = useState(false);
+  const listId = `facet-${filterKey}`;
 
   // 折り畳んでいる間も、選択済みの値は必ず見せる。見えないところに条件が
   // 掛かっていると、絞り込まれている理由が分からなくなる。
+  //
+  // 何を残すかは「今の絞り込みでの件数」で決める。options の並びは絞り込み前の
+  // 件数で固定してあり（チェックのたびに選択肢が動くのを避けるため）、そのまま
+  // 先頭から切ると、他の条件を掛けたときに0件の行ばかりが見えて、実際に選べる
+  // 領域が「すべて表示」の裏に隠れてしまう。並び順自体は動かさない。
   const collapsed =
     maxVisible !== undefined && !expanded && options.length > maxVisible;
-  const visible = collapsed
-    ? options.filter((o, i) => i < maxVisible || selected.has(o.value))
+  const keep = collapsed
+    ? new Set(
+        [...options]
+          .sort((a, b) => b.count - a.count)
+          .slice(0, maxVisible)
+          .map((o) => o.value),
+      )
+    : null;
+  const visible = keep
+    ? options.filter((o) => keep.has(o.value) || selected.has(o.value))
     : options;
   const hiddenCount = options.length - visible.length;
 
   return (
     <div>
       <h3 className="mb-2 text-sm font-semibold">{title}</h3>
-      <div className="space-y-1.5">
+      <div id={listId} className="space-y-1.5">
         {visible.map(({ value, count }) => {
           const isSelected = selected.has(value);
           // 選ぶと0件になる選択肢は行き止まりなので選べなくする。
@@ -91,6 +105,8 @@ function CheckboxGroup({
         <button
           type="button"
           onClick={() => setExpanded(!expanded)}
+          aria-expanded={expanded}
+          aria-controls={listId}
           className="mt-1.5 text-xs text-muted-foreground underline underline-offset-2 hover:text-foreground"
         >
           {expanded ? "表示を減らす" : `すべて表示 (+${hiddenCount})`}

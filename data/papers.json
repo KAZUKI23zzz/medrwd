@@ -11770,7 +11770,7 @@
     "research_categories": [
       "疾病負荷・自然歴"
     ],
-    "impact_factor": null,
+    "impact_factor": 0,
     "sjr_quartile": null,
     "auto_detected": true,
     "collected_at": "2026-04-27T18:00:38.436Z",
@@ -32813,7 +32813,7 @@
     "research_categories": [
       "疾病負荷・自然歴"
     ],
-    "impact_factor": null,
+    "impact_factor": 0,
     "sjr_quartile": null,
     "auto_detected": true,
     "collected_at": "2026-03-25T11:02:00.512Z",
@@ -34735,7 +34735,7 @@
     "research_categories": [
       "医療資源利用・経済評価"
     ],
-    "impact_factor": null,
+    "impact_factor": 0,
     "sjr_quartile": null,
     "auto_detected": true,
     "collected_at": "2026-03-25T11:01:11.172Z",
@@ -39160,10 +39160,10 @@
     "title_ja": "日本における玉ねぎ出荷量と大腸がん死亡率：全国健康保険レセプトデータベースを用いた生態学的研究",
     "abstract_ja": "全国47都道府県を対象に、2022年の玉ねぎ出荷量と75歳以上の大腸がん年齢調整死亡率の関連を検討した生態学的横断研究。農林水産省の出荷データと国立がん研究センターの死亡統計を用いて解析。玉ねぎ出荷量の多い都道府県で大腸がん死亡率が低い傾向が見られたが、統計的有意差は認められなかった（Kruskal-Wallis p=0.643）。効果量は中程度（Cohen's d=0.524）であった。他の含硫野菜では一貫した関連は見られなかった。",
     "classified": true,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null
+    "openalex_topic": "Garlic and Onion Studies",
+    "openalex_topic_score": 0.779,
+    "openalex_subfield": "Plant Science",
+    "openalex_field": "Agricultural and Biological Sciences"
   },
   {
     "id": "pmid-41084631",
@@ -49796,7 +49796,7 @@
     "research_categories": [
       "方法論・バリデーション"
     ],
-    "impact_factor": null,
+    "impact_factor": 0,
     "sjr_quartile": null,
     "auto_detected": true,
     "collected_at": "2026-03-25T11:02:13.997Z",

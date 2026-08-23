@@ -21,7 +21,16 @@ function PaperFiltersFallback() {
 }
 
 export default function PapersPage() {
-  const papers = getPapers();
+  // 一覧は全論文をクライアントに渡して絞り込むため、1件あたりの重さがそのまま
+  // 初回表示の転送量になる（既知の課題: brotli後 約720KB）。
+  // openalex_topic_score / openalex_field は一覧では表示にも検索にも使わないので落とす。
+  // openalex_subfield はバッジと絞り込みに、openalex_topic は検索に使うので残す。
+  const papers = getPapers().map((paper) => {
+    const { openalex_topic_score, openalex_field, ...rest } = paper;
+    void openalex_topic_score;
+    void openalex_field;
+    return rest;
+  });
 
   return (
     <div className="space-y-6">

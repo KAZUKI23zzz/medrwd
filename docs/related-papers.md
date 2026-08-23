@@ -423,6 +423,39 @@ singleton形式は課金対象外で、残高が尽きていても200を返す�
 polite pool 用の `mailto` は環境変数 `OPENALEX_MAILTO` から渡す。
 以前はダミーの `rwd-catalog@example.com` が埋め込まれていた。
 
+## 未修正の既知バグ（トークナイザ）
+
+コードレビューで出た2件。**どちらも直せば再現率が上がるはずだが、直すと順位が変わる**ため、
+ブラインド評価で測り直すまでこのままにしてある。次に手を入れるならここ。
+
+### 1. `stem()` に最短長のガードが無い
+
+`(ing|ed)$` を無条件に落とすので、同じ語が別のトークンに割れる。
+
+| 語 | ステム | 語 | ステム | 一致するか |
+|---|---|---|---|---|
+| bleeding | bleed | bleed | ble | ✕ |
+| dosing | dos | dose | dose | ✕ |
+| imaging | imag | image | image | ✕ |
+| staging | stag | stage | stage | ✕ |
+| based | bas | base | base | ✕ |
+| aging / aged | ag（2文字で捨てられる） | — | — | ✕ |
+
+「post-operative bleeding」の論文と「major bleeds」の論文が1語も共有しない。
+機能の主信号が本文類似度なので、これは直接の取りこぼしになる。
+直すなら「落とした結果が4文字未満なら落とさない」＋語尾の e の復元。
+
+### 2. `tokenize()` が `normalizeForSearch()` を使っていない
+
+検索側（`lib/papers-search.ts`）は既に英米綴りを吸収している
+（haem→hem / oesophag→esophag / paediatr→pediatr / tumour→tumor / ischaem→ischem）
+のに、関連研究のトークナイザは自前の小文字化＋分割しかしていない。
+
+コーパス実測: tumour 7 対 tumor 40 / oesophag 6 対 esophag 32 /
+ischaemi 6 対 ischemi 25 / paediatric 4 対 pediatric 40 / randomised 1 対 randomized 11。
+`randomised` は `MIN_DF = 3` でそもそも捨てられる。
+`normalizeForSearch` を再利用すれば済む。
+
 ## 検証の勘所（再確認するとき）
 
 - **同じDBの論文を3件開いて、関連研究欄が別物になるか**。旧実装ではDPC221件すべてで
