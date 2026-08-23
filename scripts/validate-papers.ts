@@ -13,7 +13,15 @@
 import * as fs from "fs";
 import * as path from "path";
 
-type FieldType = "string" | "string?" | "number" | "boolean" | "string[]";
+type FieldType =
+  | "string"
+  | "string?"
+  | "number"
+  | "boolean"
+  | "string[]"
+  /** 省略可能かつ null も許す（OpenAlex から取れなかった場合に null が入る） */
+  | "string|null?"
+  | "number|null?";
 
 /** types/paper.ts の Paper インターフェースに対応。null許容フィールドは個別に扱う。 */
 const SCHEMA: Record<string, FieldType> = {
@@ -38,6 +46,10 @@ const SCHEMA: Record<string, FieldType> = {
   abstract_ja: "string?",
   medline_status: "string?",
   last_updated: "string?",
+  openalex_topic: "string|null?",
+  openalex_topic_score: "number|null?",
+  openalex_subfield: "string|null?",
+  openalex_field: "string|null?",
 };
 
 /** null を許容するフィールド（types/paper.ts で `T | null`） */
@@ -55,6 +67,14 @@ function matches(value: unknown, type: FieldType): boolean {
       return typeof value === "boolean";
     case "string[]":
       return Array.isArray(value) && value.every((v) => typeof v === "string");
+    case "string|null?":
+      return value === undefined || value === null || typeof value === "string";
+    case "number|null?":
+      return (
+        value === undefined ||
+        value === null ||
+        (typeof value === "number" && Number.isFinite(value))
+      );
   }
 }
 

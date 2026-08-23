@@ -36,6 +36,10 @@ interface Paper {
   mesh_terms: string[];
   impact_factor: number | null;
   sjr_quartile: string | null;
+  openalex_topic?: string | null;
+  openalex_topic_score?: number | null;
+  openalex_subfield?: string | null;
+  openalex_field?: string | null;
   research_categories: string[];
   auto_detected: boolean;
   collected_at: string;
@@ -231,6 +235,58 @@ const journalIFCache = new Map<string, { impact_factor: number | null; sjr_quart
  */
 const OPENALEX_MAILTO = process.env.OPENALEX_MAILTO;
 
+type OpenAlexTopic = {
+  display_name: string;
+  score: number;
+  subfield?: { display_name: string };
+  field?: { display_name: string };
+};
+
+/**
+ * 疾患・診療領域の軸を OpenAlex の primary_topic から取る。
+ * 論文ごとの singleton なので課金対象外。既存分は
+ * scripts/backfill-openalex.ts で埋めてある。
+ */
+async function getTopic(pubmedId: string): Promise<{
+  openalex_topic: string | null;
+  openalex_topic_score: number | null;
+  openalex_subfield: string | null;
+  openalex_field: string | null;
+}> {
+  const empty = {
+    openalex_topic: null,
+    openalex_topic_score: null,
+    openalex_subfield: null,
+    openalex_field: null,
+  };
+  try {
+    const params = OPENALEX_MAILTO
+      ? `&mailto=${encodeURIComponent(OPENALEX_MAILTO)}`
+      : "";
+    const res = await fetch(
+      `https://api.openalex.org/works/pmid:${pubmedId}?select=id,primary_topic${params}`,
+    );
+    // 404 は「まだ OpenAlex に載っていない」。新しい論文では普通に起きる
+    if (!res.ok) {
+      if (res.status !== 404) {
+        console.warn(`  OpenAlex ${res.status} for PMID ${pubmedId}`);
+      }
+      return empty;
+    }
+    const data = (await res.json()) as { primary_topic?: OpenAlexTopic | null };
+    const topic = data.primary_topic;
+    if (!topic?.display_name) return empty;
+    return {
+      openalex_topic: topic.display_name,
+      openalex_topic_score: Math.round(topic.score * 1000) / 1000,
+      openalex_subfield: topic.subfield?.display_name ?? null,
+      openalex_field: topic.field?.display_name ?? null,
+    };
+  } catch {
+    return empty;
+  }
+}
+
 async function getJournalMetrics(issn: string): Promise<{ impact_factor: number | null; sjr_quartile: string | null }> {
   if (journalIFCache.has(issn)) return journalIFCache.get(issn)!;
 
@@ -322,6 +378,9 @@ async function main() {
       metrics = await getJournalMetrics(article.journal_issn);
     }
 
+    // 診療領域（OpenAlex）
+    const topic = await getTopic(article.pubmed_id);
+
     // 分類・要約は Routine が後から埋める。ここでは空で出力し classified:false にする。
     const paper: Paper = {
       ...article,
@@ -332,6 +391,7 @@ async function main() {
       research_categories: [],
       impact_factor: metrics.impact_factor,
       sjr_quartile: metrics.sjr_quartile,
+      ...topic,
       auto_detected: true,
       collected_at: new Date().toISOString(),
       classified: false,

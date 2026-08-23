@@ -1,16 +1,21 @@
 "use client";
 
+import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import type { ListFilterKey } from "@/lib/papers-url-state";
 import type { FacetOption } from "@/lib/papers-facets";
 
 export interface PaperFilterPanelProps {
-  facets: Record<"dbs" | "designs" | "categories" | "methods", FacetOption[]>;
+  facets: Record<
+    "dbs" | "designs" | "categories" | "methods" | "areas",
+    FacetOption[]
+  >;
   selectedDbs: Set<string>;
   selectedDesigns: Set<string>;
   selectedCategories: Set<string>;
   selectedMethods: Set<string>;
+  selectedAreas: Set<string>;
   onToggle: (key: ListFilterKey, value: string) => void;
   years: { min: number; max: number };
   yearFromInput: string;
@@ -27,6 +32,11 @@ interface CheckboxGroupProps {
   selected: Set<string>;
   filterKey: ListFilterKey;
   onToggle: (key: ListFilterKey, value: string) => void;
+  /**
+   * 最初に見せる選択肢の数。診療領域だけは値が数十種あり、全部並べると
+   * サイドバーが極端に長くなるので折り畳む。他のファセットは10種前後なので既定は無制限。
+   */
+  maxVisible?: number;
 }
 
 function CheckboxGroup({
@@ -35,12 +45,24 @@ function CheckboxGroup({
   selected,
   filterKey,
   onToggle,
+  maxVisible,
 }: CheckboxGroupProps) {
+  const [expanded, setExpanded] = useState(false);
+
+  // 折り畳んでいる間も、選択済みの値は必ず見せる。見えないところに条件が
+  // 掛かっていると、絞り込まれている理由が分からなくなる。
+  const collapsed =
+    maxVisible !== undefined && !expanded && options.length > maxVisible;
+  const visible = collapsed
+    ? options.filter((o, i) => i < maxVisible || selected.has(o.value))
+    : options;
+  const hiddenCount = options.length - visible.length;
+
   return (
     <div>
       <h3 className="mb-2 text-sm font-semibold">{title}</h3>
       <div className="space-y-1.5">
-        {options.map(({ value, count }) => {
+        {visible.map(({ value, count }) => {
           const isSelected = selected.has(value);
           // 選ぶと0件になる選択肢は行き止まりなので選べなくする。
           // ただし選択済みのものは、解除できないと詰むので常に操作可能にする。
@@ -65,6 +87,15 @@ function CheckboxGroup({
           );
         })}
       </div>
+      {(collapsed || expanded) && (
+        <button
+          type="button"
+          onClick={() => setExpanded(!expanded)}
+          className="mt-1.5 text-xs text-muted-foreground underline underline-offset-2 hover:text-foreground"
+        >
+          {expanded ? "表示を減らす" : `すべて表示 (+${hiddenCount})`}
+        </button>
+      )}
     </div>
   );
 }
@@ -85,6 +116,7 @@ export function PaperFilterPanel({
   selectedDesigns,
   selectedCategories,
   selectedMethods,
+  selectedAreas,
   onToggle,
   years,
   yearFromInput,
@@ -116,6 +148,14 @@ export function PaperFilterPanel({
         selected={selectedCategories}
         filterKey="categories"
         onToggle={onToggle}
+      />
+      <CheckboxGroup
+        title="診療領域"
+        options={facets.areas}
+        selected={selectedAreas}
+        filterKey="areas"
+        onToggle={onToggle}
+        maxVisible={8}
       />
       <CheckboxGroup
         title="解析手法"

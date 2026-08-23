@@ -8,6 +8,7 @@ import { BackToPapersLink } from "@/components/papers/BackToPapersLink";
 import { FavoriteButton } from "@/components/papers/FavoriteButton";
 import { getPapers, getDatabases } from "@/lib/data-loader";
 import { getRelatedPapers } from "@/lib/related-papers";
+import { papersUrlForArea } from "@/lib/papers-url-state";
 
 export function generateStaticParams() {
   const papers = getPapers();
@@ -178,6 +179,30 @@ export default async function PaperDetailPage({
                   ))}
                 </div>
               </div>
+
+              {paper.openalex_subfield && (
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">
+                    診療領域
+                  </p>
+                  <div className="mt-1 flex flex-wrap items-center gap-1.5">
+                    <Link href={papersUrlForArea(paper.openalex_subfield)}>
+                      <Badge
+                        variant="outline"
+                        className="cursor-pointer border-emerald-200 bg-emerald-50 text-emerald-700"
+                      >
+                        {paper.openalex_subfield}
+                      </Badge>
+                    </Link>
+                    {/* 細かいトピック名。絞り込みの軸にするには種類が多すぎるので表示のみ */}
+                    {paper.openalex_topic && (
+                      <span className="text-xs text-muted-foreground">
+                        {paper.openalex_topic}
+                      </span>
+                    )}
+                  </div>
+                </div>
+              )}
 
               {(paper.analysis_methods ?? []).length > 0 && (
                 <div>

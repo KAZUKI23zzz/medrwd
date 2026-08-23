@@ -15,8 +15,9 @@ Next.js 16 (Static Export) / TypeScript / Tailwind CSS v4 + shadcn/ui v4 / JSON�
 | パス | 役割 |
 |------|------|
 | `app/` | Next.js App Router（ダッシュボード・研究カタログ・DB一覧・About・status） |
-| `scripts/sync-pubmed.ts` | PubMed収集（収集専任: hasabstract + OpenAlex IF → classified:false で追記）。分類・翻訳はしない |
-| `data/papers.json` | 論文メタデータ（1,067件、全件分類済み）。週次Routineが追記・削除する |
+| `scripts/sync-pubmed.ts` | PubMed収集（収集専任: hasabstract + OpenAlex IF/診療領域 → classified:false で追記）。分類・翻訳はしない |
+| `scripts/backfill-openalex.ts` | 既存論文にOpenAlexの診療領域・欠けているIFを補う（一度実行済み。再実行は冪等） |
+| `data/papers.json` | 論文メタデータ（1,067件、全件分類済み）。週次Routineが追記・削除する。`openalex_*` は診療領域の軸（OpenAlex由来・CC0） |
 | `data/sync-status.json` | 同期の最終実行状況（Routineが毎回更新、`/status`で表示） |
 | `data/databases.json` | RWDデータベース情報（10件。`paper_tag` で論文側の名前と突き合わせる） |
 | `docs/routine-classify.md` | **Routineのプロンプト全文＋セットアップ手順** |
@@ -49,12 +50,17 @@ npx tsx scripts/sync-pubmed.ts           # 論文収集（手動。通常はRout
 DB一覧の拡充（10件）・お気に入り（localStorage）。
 **経緯と設計判断、UIの検証手順は `docs/DEVELOPMENT.md` を参照。**
 
-**未実装（Phase 3）**: Pagefind全文検索 / SJR CSV取込 / DB詳細ページ充実
+**診療領域の軸を追加（2026-08）**
+OpenAlex の primary_topic（CC0・singletonは課金対象外）から `openalex_subfield` を取り、
+「診療領域」として絞り込み軸に追加（74種／1,062件に付与）。細かい `openalex_topic`（364種）は
+詳細ページに表示のみ。既存分は `scripts/backfill-openalex.ts` で一度埋めてある。
+
+**未実装**: Pagefind全文検索 / SJR CSV取込 / DB詳細ページ充実
 
 ## 既知の課題
 
 1. （解消）~~Google Translate無料EP~~ → 翻訳・要約はRoutine(LLM)に移管し廃止。
-2. `/papers` の初回表示が重い（brotli後 728KB）。全件の抄録を載せているため。
+2. `/papers` の初回表示が重い（brotli後 723KB）。全件の抄録を載せているため。
    検索精度とのトレードオフで現状維持と判断。
 3. （解消）~~詳細ページの「関連研究」が実質「同じDBの最新5件」~~ → 本文ベースの
    類似度（BM25＋タグ加点）に置き換え済み。`lib/related-papers.ts`。
