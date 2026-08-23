@@ -47,12 +47,30 @@ const TITLE_REPEAT = 3;
  * タグ一致による加点。本文類似のタイブレークとして効かせる。
  * メタデータ単体では順位が付かない（DB・デザイン・カテゴリが完全一致する組は
  * 最大48件が同点になる）ので、あくまで乗算の補正にとどめる。
- * 「同じDBか」より「同じ研究カテゴリか」を優先する。
+ * 「同じDBか」より「同じ話題か」を優先する。
+ *
+ * 値を差し替えて比較できるよう引数で渡せるようにしてある。
+ * 実際に2案をブラインド評価で比べて決めた（docs/related-papers.md）。
  */
-const BOOST_CATEGORY = 0.14;
-const BOOST_DATABASE = 0.08;
-const BOOST_METHOD = 0.06;
-const BOOST_DESIGN = 0.03;
+export type BoostWeights = {
+  /** OpenAlex の細かいトピック（364種）が一致 */
+  topic: number;
+  /** 診療領域（OpenAlex subfield、74種）が一致 */
+  area: number;
+  category: number;
+  database: number;
+  method: number;
+  design: number;
+};
+
+export const DEFAULT_BOOSTS: BoostWeights = {
+  topic: 0.18,
+  area: 0.08,
+  category: 0.12,
+  database: 0.06,
+  method: 0.05,
+  design: 0.03,
+};
 
 /**
  * 英語の一般語に加え、この分野のほぼ全論文に出る語を落とす。
@@ -175,7 +193,11 @@ export type RelatedPaper = {
   similarity: number;
 };
 
-export function getRelatedPapers(paperId: string, limit = TOP_K): RelatedPaper[] {
+export function getRelatedPapers(
+  paperId: string,
+  limit = TOP_K,
+  boosts: BoostWeights = DEFAULT_BOOSTS,
+): RelatedPaper[] {
   const { papers, vectors, postings, indexById } = getIndex();
   const self = indexById.get(paperId);
   if (self === undefined) return [];
@@ -196,14 +218,21 @@ export function getRelatedPapers(paperId: string, limit = TOP_K): RelatedPaper[]
     if (similarity < MIN_SIMILARITY) continue;
     const target = papers[other];
     let boost = 1;
+    if (source.openalex_topic && source.openalex_topic === target.openalex_topic)
+      boost += boosts.topic;
+    if (
+      source.openalex_subfield &&
+      source.openalex_subfield === target.openalex_subfield
+    )
+      boost += boosts.area;
     if (overlaps(source.research_categories, target.research_categories))
-      boost += BOOST_CATEGORY;
+      boost += boosts.category;
     if (overlaps(source.databases_used, target.databases_used))
-      boost += BOOST_DATABASE;
+      boost += boosts.database;
     if (overlaps(source.analysis_methods, target.analysis_methods))
-      boost += BOOST_METHOD;
+      boost += boosts.method;
     if (source.study_design && source.study_design === target.study_design)
-      boost += BOOST_DESIGN;
+      boost += boosts.design;
     candidates.push({ paper: target, score: similarity * boost, similarity });
   }
 
