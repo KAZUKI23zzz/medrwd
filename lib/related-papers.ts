@@ -73,6 +73,32 @@ export const DEFAULT_BOOSTS: BoostWeights = {
 };
 
 /**
+ * トピック一致の加点は、そのトピックの珍しさで薄める。
+ *
+ * トピックは364種あるが均等ではない。最大の
+ * 「Pharmacovigilance and Adverse Drug Reactions」には50件が集まり、
+ * うち47件がJADER論文（JADER論文127件の37%）。この場合トピックの一致は
+ * 「同じ薬剤・同じ疾患」ではなく「これは安全性研究である」というだけの
+ * ラベルになり、薬剤が違う論文まで押し上げてしまう。
+ * 一方、1件しかないトピックは163種、2〜5件が158種あり、そこでの一致は
+ * きわめて具体的な信号になる。
+ *
+ * 本文のBM25でIDFを掛けているのと同じ理屈で、頻出タグの重みを下げる。
+ * コーパス全体の0.5%（現在の1,067件なら約5件）を超えたあたりから効きが落ちる。
+ */
+const TOPIC_COMMON_RATIO = 0.005;
+
+/**
+ * そのトピックに何件集まっているかで 0〜1 を返す。
+ * 1件しかないトピック（＝最も具体的）で 1 になるよう正規化してあるので、
+ * 効いている側の加点は弱めずに、頻出タグの分だけを削れる。
+ */
+function topicSpecificity(count: number, total: number): number {
+  const decay = (n: number) => 1 / (1 + n / (total * TOPIC_COMMON_RATIO));
+  return decay(count) / decay(1);
+}
+
+/**
  * 英語の一般語に加え、この分野のほぼ全論文に出る語を落とす。
  * MAX_DF_RATIO でも大半は落ちるが、明示しておいた方が意図が伝わる。
  */
@@ -115,6 +141,8 @@ function tokenize(paper: Paper): string[] {
 
 type Index = {
   papers: Paper[];
+  /** トピックごとの論文数。加点を珍しさで薄めるのに使う */
+  topicCounts: Map<string, number>;
   /** 論文ごとの、L2正規化済みBM25ベクトル */
   vectors: Map<string, number>[];
   /** 語 → その語を含む[論文の位置, 重み] のリスト */
@@ -167,10 +195,20 @@ function buildIndex(): Index {
     }
   });
 
+  const topicCounts = new Map<string, number>();
+  for (const paper of papers) {
+    if (paper.openalex_topic)
+      topicCounts.set(
+        paper.openalex_topic,
+        (topicCounts.get(paper.openalex_topic) ?? 0) + 1,
+      );
+  }
+
   return {
     papers,
     vectors,
     postings,
+    topicCounts,
     indexById: new Map(papers.map((p, i) => [p.id, i])),
   };
 }
@@ -198,7 +236,7 @@ export function getRelatedPapers(
   limit = TOP_K,
   boosts: BoostWeights = DEFAULT_BOOSTS,
 ): RelatedPaper[] {
-  const { papers, vectors, postings, indexById } = getIndex();
+  const { papers, vectors, postings, topicCounts, indexById } = getIndex();
   const self = indexById.get(paperId);
   if (self === undefined) return [];
 
@@ -218,8 +256,13 @@ export function getRelatedPapers(
     if (similarity < MIN_SIMILARITY) continue;
     const target = papers[other];
     let boost = 1;
-    if (source.openalex_topic && source.openalex_topic === target.openalex_topic)
-      boost += boosts.topic;
+    if (
+      source.openalex_topic &&
+      source.openalex_topic === target.openalex_topic
+    ) {
+      const count = topicCounts.get(source.openalex_topic) ?? 1;
+      boost += boosts.topic * topicSpecificity(count, papers.length);
+    }
     if (
       source.openalex_subfield &&
       source.openalex_subfield === target.openalex_subfield
