@@ -248,13 +248,11 @@ export default async function PaperDetailPage({
                 href={`/papers/${r.id}`}
                 className="block rounded-md border p-3 transition-colors hover:bg-muted/50"
               >
-                {/* 日本語タイトルを主、英語タイトルを副として併記する */}
-                <p className="text-sm font-medium leading-snug">
-                  {r.title_ja ?? r.title}
-                </p>
+                {/* 一覧のカード(PaperCard)と同じく英語タイトルが主、日本語が副 */}
+                <p className="text-sm font-medium leading-snug">{r.title}</p>
                 {r.title_ja && (
-                  <p className="mt-0.5 text-xs leading-snug text-muted-foreground">
-                    {r.title}
+                  <p className="mt-0.5 text-[13px] leading-snug text-muted-foreground">
+                    {r.title_ja}
                   </p>
                 )}
                 <div className="mt-2 flex flex-wrap gap-1">
