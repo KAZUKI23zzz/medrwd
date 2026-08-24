@@ -1,5 +1,859 @@
 [
   {
+    "id": "pmid-42633280",
+    "pubmed_id": "42633280",
+    "doi": "10.1016/j.parepi.2026.e00527",
+    "title": "Nationwide epidemiology of hospitalized schistosomiasis in Japan: Coexistence of residual Schistosoma japonicum and non-japonicum infections.",
+    "abstract": "Schistosomiasis remains a global public health concern, and although transmission of Schistosoma japonicum was eliminated in Japan in 1977, patients continue to be encountered as chronic sequelae of past infections and as imported infections acquired overseas. However, nationwide data on hospitalized patients are limited. We conducted a nationwide retrospective study using the Japanese Diagnosis Procedure Combination inpatient database to clarify the contemporary epidemiological and clinical characteristics of hospitalized patients with schistosomiasis between fiscal years 2014 and 2020. A total of 111 unique hospitalized patients were identified, of whom 103 (93%) had S. japonicum infection and 8 (7%) had non-japonicum schistosomiasis. Patients with S. japonicum infection were older than those with non-japonicum infection (mean age 77.4 vs. 43.8 years), and the age distribution showed a predominant peak in elderly individuals, with a smaller relative increase among middle-aged adults. Coexisting hepatobiliary conditions among S. japonicum cases, including liver cirrhosis (25%) and hepatocellular carcinoma (14%), and colorectal cancer was identified in 4% of patients. Geographic clustering was evident in historically endemic regions, particularly Yamanashi and Fukuoka Prefectures. In contrast, non-japonicum cases were sporadic and more frequently observed in younger individuals. Praziquantel was administered to 4 patients (4%), consistent with the predominance of chronic sequelae rather than active infection. In conclusion, the current inpatient burden of schistosomiasis in Japan predominantly reflects the long-term clinical legacy of past S. japonicum transmission, underscoring the importance of continued clinical awareness and surveillance despite the elimination of domestic transmission.",
+    "authors": [
+      "Shingu T",
+      "Ohkubo N",
+      "Yamasaki K",
+      "Torii R",
+      "Hata R",
+      "Tahara M",
+      "Nakamura K",
+      "Nishida C",
+      "Okawara M",
+      "Fujino Y",
+      "Matsuda S",
+      "Fushimi K",
+      "Mukae H",
+      "Yatera K"
+    ],
+    "journal": "Parasite epidemiology and control",
+    "journal_issn": "2405-6731",
+    "year": 2026,
+    "publication_date": "2026-08-23",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.16,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-24T00:06:29.618Z",
+    "classified": true,
+    "title_ja": "日本における入院を要した住血吸虫症の全国疫学：残存する日本住血吸虫症と非日本住血吸虫症の共存",
+    "abstract_ja": "DPC（診断群分類）入院データベースを用い、2014〜2020年度の日本における住血吸虫症入院患者111例を解析した全国後方視的研究。93%が既往の日本住血吸虫症、7%が海外由来の非日本住血吸虫症で、前者は高齢者に多く肝硬変・肝細胞癌の併存が目立った。国内伝播根絶後も慢性後遺症としての臨床的意義が続いていることを示した。"
+  },
+  {
+    "id": "pmid-42628613",
+    "pubmed_id": "42628613",
+    "doi": "10.1016/j.bone.2026.118056",
+    "title": "Risk of bone fracture following saccharated ferric oxide in Japan.",
+    "abstract": "Intravenous (IV) iron is recommended for the treatment of iron deficiency anemia (IDA) when oral iron is ineffective or poorly tolerated, or when rapid iron replenishment is needed. However, specific IV iron formulations, including saccharated ferric oxide (SFO) and ferric carboxymaltose (FCM), are associated with increased rates of hypophosphatemia and subsequent osteomalacia. Clinical trials of these IV iron formulations were not sufficiently large or long enough to assess whether these effects translate into increased risk of fracture. This observational cohort study used claims data from a Japanese health insurance database between June 2018 and May 2021 to assess the risk of fracture following treatment with SFO in patients with IDA who were propensity score-matched (approximately 4:1) to controls who had anemia but were not treated with IV iron. Since kidney dysfunction partially protects against severe IV iron-induced hypophosphatemia, a secondary analysis was restricted to patients with normal kidney function. Of the patients treated with SFO, 29,037 were matched to 128,311 untreated controls. Treatment with SFO was associated with significantly higher risk of incident fracture compared with controls (hazard ratio [HR]: 1.154; 95% confidence interval [CI]: 1.088, 1.225; p < 0.0001). In patients with normal kidney function, the risk of fracture was increased in those who received higher cumulative doses of SFO. Patients with kidney dysfunction were also at significantly increased risk of fracture following SFO (HR: 1.512; 95% CI: 1.344, 1.702; p < 0.0001). These real-world data suggest that SFO, known to cause significant hypophosphatemia, also increases the risk of fracture.",
+    "authors": [
+      "Iwasaki K",
+      "Terauchi M",
+      "Wolf M"
+    ],
+    "journal": "Bone",
+    "journal_issn": "1873-2763",
+    "year": 2026,
+    "publication_date": "2026-08-21",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の健康保険レセプトデータベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.44,
+    "sjr_quartile": null,
+    "openalex_topic": "Iron Metabolism and Disorders",
+    "openalex_topic_score": 0.922,
+    "openalex_subfield": "Hematology",
+    "openalex_field": "Medicine",
+    "auto_detected": true,
+    "collected_at": "2026-08-24T00:06:30.339Z",
+    "classified": true,
+    "title_ja": "日本における含糖酸化鉄投与後の骨折リスク",
+    "abstract_ja": "日本の健康保険レセプトデータ（2018〜2021年）を用い、含糖酸化鉄（SFO）投与患者29,037例と非投与の貧血対照128,311例を傾向スコアマッチングして比較した後方視的コホート研究。SFO投与群は骨折リスクが有意に高く（HR 1.15）、腎機能低下例ではさらにリスクが高かった（HR 1.51）。静注鉄剤による低リン血症が骨折リスク上昇に関与する可能性を示した。"
+  },
+  {
+    "id": "pmid-42624608",
+    "pubmed_id": "42624608",
+    "doi": "10.1136/bmjopen-2025-115665",
+    "title": "Association between non-communicable diseases and work productivity and health-related quality of life among Japanese workers: a cross-sectional study using a claims database and survey data.",
+    "abstract": "To assess the impact of non-communicable diseases (NCDs) by number and pattern on productivity loss costs (PLCs) and health-related quality of life (HRQoL) in a large working-age population in Japan. Cross-sectional analysis of linked claims-survey data with sex-stratified multivariable regression. Employment-Based Health Insurance Associations in Japan. Administrative claims using International Classification of Diseases, Tenth Revision codes were linked to an online questionnaire (November 2022). Insured workers and families aged 18-65 years who completed the survey (n=18 236; mean age 48.7 years; 66.2% men). Primary: PLC, estimated from the Work Productivity and Activity Impairment instrument using the Human Capital Method (annual US$). HRQoL measured using the EuroQoL 5-Dimension 5-Level index. Exposures were NCD categories, multimorbidity counts and high-impact disease combinations. Models adjusted for sex, age and the number of other conditions. Multimorbidity (≥2 conditions) was present in 58.4% (56.3% men; 62.5% women); 29.3% had ≥5 conditions. Women had higher NCD prevalence (76.9% vs 70.0%), higher median PLC (US$3683 vs US$117) and lower median HRQoL (0.89 vs 1.00) than men. In adjusted analyses, neuropsychiatric conditions were associated with higher PLC in both sexes (men: US$2393 (95% CI 1966 to 2820); women: US$2097 (US$1442 to US$2751)). Musculoskeletal disorders were statistically significant in men but not in women (US$809 (US$381 to US$1236)), whereas genitourinary disorders were statistically significant in women but not in men (US$701 (US$121 to US$1282)). Neuropsychiatric disorders were associated with lower HRQoL in both sexes (men: -0.040 (-0.045 to -0.034); women: -0.044 (-0.053 to -0.035)); musculoskeletal disorders showed similar decrements (men: -0.031 (-0.037 to -0.025); women: -0.040 (-0.049 to -0.031)). Combinations involving sleep and neuropsychiatric disorders produced the highest PLC (eg, depressive episode and sleep disorder: men: US$5219.9 (US$3646.4 to US$6793.4); women: US$5858.5 (US$2634.4 to US$9082.5)). Each additional condition was independently associated with higher PLC and lower HRQoL. In this cross-sectional study of Japanese workers, specific combinations of chronic conditions, particularly neuropsychiatric conditions co-occurring with sleep disorders and musculoskeletal disorders, were associated with greater productivity loss and lower HRQoL than predicted by the number of co-occurring diseases alone. These findings suggest that workplace health strategies addressing high-impact disease combinations may warrant further investigation in longitudinal studies.",
+    "authors": [
+      "Itoh N",
+      "Saito Y",
+      "Ogata Y",
+      "Karasawa Y",
+      "Nozawa K"
+    ],
+    "journal": "BMJ open",
+    "journal_issn": "2044-6055",
+    "year": 2026,
+    "publication_date": "2026-08-20",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [
+      "Adolescent",
+      "Adult",
+      "Aged",
+      "Female",
+      "Humans",
+      "Male",
+      "Middle Aged",
+      "Young Adult",
+      "Cross-Sectional Studies",
+      "Efficiency",
+      "Japan",
+      "Noncommunicable Diseases",
+      "Quality of Life",
+      "Surveys and Questionnaires"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": [
+      "健康保険組合のレセプトとオンライン調査を連結したデータ"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "医療資源利用・経済評価",
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.45,
+    "sjr_quartile": null,
+    "openalex_topic": "Workplace Health and Well-being",
+    "openalex_topic_score": 0.824,
+    "openalex_subfield": "General Health Professions",
+    "openalex_field": "Health Professions",
+    "auto_detected": true,
+    "collected_at": "2026-08-24T00:06:30.719Z",
+    "classified": true,
+    "title_ja": "日本の労働者における非感染性疾患と労働生産性・健康関連QOLの関連：レセプトと調査データを用いた横断研究",
+    "abstract_ja": "健康保険組合のレセプトデータとオンライン調査（対象18,236人）を連結し、非感染性疾患の数・組み合わせと生産性損失コスト・健康関連QOLの関連を性別層別の多変量回帰で検討した横断研究。多疾患併存は58%に見られ、精神神経疾患は男女とも生産性損失増加・QOL低下と強く関連し、睡眠障害との併存で損失が最大となった。"
+  },
+  {
+    "id": "pmid-42622795",
+    "pubmed_id": "42622795",
+    "doi": "10.1007/s40801-026-00575-5",
+    "title": "Association Between Follow-Up Therapeutic Drug Monitoring and Vancomycin-Induced Nephrotoxicity: A Claims Database Study.",
+    "abstract": "In vancomycin treatment, follow-up therapeutic drug monitoring (TDM) within 1 week after the initial TDM is recommended in patients with dose change after the initial TDM or high risk of vancomycin-induced nephrotoxicity (VIN); however, the effectiveness of follow-up TDM implementation remains unclear. This study aimed to delineate outcomes of follow-up TDM after the initial assessment under real-world conditions in Japan and clarify its association with VIN. Retrospective data analysis was conducted using a Japanese health insurance claims database. Approval was granted by the Ethics Committee of Osaka Medical and Pharmaceutical University (protocol number: 2022-105). Adult patients who received intravenous vancomycin, excluding those without a dose change after the initial TDM and without risk of VIN between January 2020 and December 2021, were included. Follow-up TDM was defined as conducting TDM within 1 week after the initial assessment. The association between performing follow-up TDM and the occurrence of VIN was assessed in patients with dose change after the initial TDM or high risk of VIN. Among 492 patients who underwent the initial TDM, 403 (81.9%) had follow-up TDM performed. Cox proportional hazards model analysis revealed that follow-up TDM was associated with a lower occurrence of VIN after adjustment for estimated glomerular filtration rate <30 mL/min/1.73 m2, concomitant nephrotoxic drugs, vasopressors, loop diuretics, initial vancomycin trough concentration >15 mg/L (hazard ratio 0.47; 95% confidence interval (CI) 0.25-0.86, p = 0.015). In a sensitivity analysis using inverse probability of treatment weighting, which additionally adjusted for institutional characteristics and baseline clinical risk factors, the association was attenuated and did not reach statistical significance (hazard ratio 0.62; 95% CI 0.31-1.23; p = 0.167), with residual imbalance remaining for some covariates after weighting. An exploratory receiver operating characteristic (ROC) analysis suggested a TDM frequency of 1.009 per week with a modest area under the ROC curve of 0.673 (95% CI 0.597-0.749), sensitivity of 0.618, and specificity of 0.661 (p < 0.001). This study found that follow-up TDM was associated with a lower occurrence of VIN, supporting guidelines recommending follow-up TDM in vancomycin therapy. Health providers should consider conducting follow-up TDM to potentially lower the occurrence of VIN, although further prospective studies are warranted to clarify its independent effect.",
+    "authors": [
+      "Yamada T",
+      "Imai S",
+      "Minami K",
+      "Ogawa T",
+      "Ukimura A",
+      "Nishihara M",
+      "Neo M"
+    ],
+    "journal": "Drugs - real world outcomes",
+    "journal_issn": "2199-1154",
+    "year": 2026,
+    "publication_date": "2026-08-20",
+    "analysis_methods": [
+      "生存時間分析",
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の医療機関の医療保険レセプトデータベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.33,
+    "sjr_quartile": null,
+    "openalex_topic": "Antibiotics Pharmacokinetics and Efficacy",
+    "openalex_topic_score": 0.544,
+    "openalex_subfield": "Pharmacology",
+    "openalex_field": "Medicine",
+    "auto_detected": true,
+    "collected_at": "2026-08-24T00:06:31.249Z",
+    "classified": true,
+    "title_ja": "バンコマイシン腎障害とフォローアップ治療薬物モニタリングの関連：レセプトデータベース研究",
+    "abstract_ja": "日本の医療保険レセプトデータ（2020〜2021年）を用い、初回治療薬物モニタリング（TDM）後1週間以内のフォローアップTDM実施とバンコマイシン誘発腎障害（VIN）の関連をCox比例ハザードモデルで検討した後方視的研究。フォローアップTDM実施はVIN発生率低下と関連したが（HR 0.47）、IPTWによる感度分析では統計的有意性が減弱した。"
+  },
+  {
+    "id": "pmid-42622788",
+    "pubmed_id": "42622788",
+    "doi": "10.1007/s10147-026-03160-6",
+    "title": "Recommendations for generating real-world evidence with regulatory-grade relevance and reliability.",
+    "abstract": "Real-world data (RWD) and real-world evidence (RWE) are increasingly incorporated into regulatory decision-making to complement randomized controlled trials (RCTs), particularly in settings where conventional trial designs are infeasible, such as rare diseases, rare molecular subtypes, and post-marketing evaluation. Across regulatory authorities, the use of RWD/RWE is consistently framed by the fit-for-purpose principle, centered on two foundational concepts: relevance and reliability. However, the absence of operational guidance has created uncertainty regarding how academic registries and healthcare databases can be designed or upgraded to meet regulatory expectations. Drawing on practical experience with disease registries in Japan and their regulatory applications, this review proposes a purpose-oriented framework clarifying the levels of relevance and reliability required according to specific regulatory objectives. We categorize considerations into three use cases: (1) drug development for rare diseases and rare molecular subtypes; (2) Pharmacovigilance; and (3) evidence generation for clinical questions that cannot be sufficiently evaluated through randomized controlled trials (RCTs). For each category, we outline essential requirements related to study design, data elements, quality management, governance, statistical planning, and operational feasibility. We further compare regulatory expectations across the U.S. Food and Drug Administration (FDA), the European Medicines Agency (EMA), the Pharmaceuticals and Medical Devices Agency (PMDA), and the International Council for Harmonisation (ICH). While international convergence is evident at the level of principles, operational thresholds and implementation frameworks differ. By articulating relevance and reliability as a shared regulatory language and emphasizing purpose-driven design and early regulatory engagement, this review provides practical recommendations for generating regulatory-grade RWE that meaningfully informs regulatory decision-making while complementing conventional clinical trials.",
+    "authors": [
+      "Sakamoto Y",
+      "Bando H",
+      "Aoyagi Y",
+      "Sokuoka H",
+      "Misumi T",
+      "Oba K",
+      "Mori Y",
+      "Okui J",
+      "Miyazaki M",
+      "Sadatsuki Y",
+      "Koizumi K",
+      "Otake R",
+      "Yuri A",
+      "Tajima E",
+      "Ueno T",
+      "Nakamura T",
+      "Yoshihara H",
+      "Itoya K",
+      "Annaka R",
+      "Nakamura H",
+      "Okita N",
+      "Takahashi H",
+      "Kuroda T",
+      "Nakamura K",
+      "Yoshino T",
+      "Ohtsu A"
+    ],
+    "journal": "International journal of clinical oncology",
+    "journal_issn": "1437-7772",
+    "year": 2026,
+    "publication_date": "2026-08-20",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [],
+    "study_design": "その他",
+    "research_categories": [
+      "方法論・バリデーション"
+    ],
+    "impact_factor": 2.71,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.636,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "auto_detected": true,
+    "collected_at": "2026-08-24T00:06:31.714Z",
+    "classified": true,
+    "title_ja": "規制当局にとって妥当性と信頼性を備えたリアルワールドエビデンス創出への提言",
+    "abstract_ja": "日本の疾患レジストリでの実務経験をもとに、リアルワールドデータ・エビデンス（RWD/RWE）を規制対応に活用するための「目的適合性」の枠組みを提案するレビュー。希少疾患の開発、市販後安全性監視、RCTでは検証困難な臨床課題の3用途ごとに必要な要件を整理し、FDA・EMA・PMDA・ICHの規制上の期待の違いを比較した。"
+  },
+  {
+    "id": "pmid-42621843",
+    "pubmed_id": "42621843",
+    "doi": "10.1002/alz.71692",
+    "title": "Angiotensin receptor blockers and dementia risk in older adults: A target trial emulation.",
+    "abstract": "Whether antihypertensive drug class influences dementia risk beyond blood pressure lowering remains uncertain. We emulated a target trial comparing new initiation of angiotensin receptor blockers (ARBs) versus calcium channel blockers (CCBs) among dementia-free adults aged ≥65 years in a nationwide Japanese database. Weighted discrete-time hazards models estimated intention-to-treat and per-protocol effects, accounting for censoring and death. Among 52,019 eligible new users followed for a median of 3.6 years, 3524 incident dementia events occurred. ARB initiation was associated with lower all-cause dementia risk than CCB initiation (hazard ratio [HR], 0.916; 95% confidence interval [CI], 0.852-0.985), with similar achieved blood pressure. For Alzheimer's disease (2231 events), the association was not statistically significant (HR, 0.930; 95% CI, 0.849-1.018). The association was stronger for vascular dementia (129 events; HR, 0.617; 95% CI, 0.409-0.930). ARB initiation was associated with modestly lower dementia risk, particularly vascular dementia, versus CCB initiation.",
+    "authors": [
+      "Noma H",
+      "Sunada H",
+      "Sugimoto T",
+      "Fujisawa T",
+      "Oda F",
+      "Maeda M",
+      "Fukuda H"
+    ],
+    "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+    "journal_issn": "1552-5279",
+    "year": 2026,
+    "publication_date": "2026-08-20",
+    "analysis_methods": [
+      "ターゲットトライアルエミュレーション",
+      "生存時間分析"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Angiotensin Receptor Antagonists",
+      "Dementia",
+      "Aged",
+      "Female",
+      "Calcium Channel Blockers",
+      "Male",
+      "Aged, 80 and over",
+      "Japan",
+      "Antihypertensive Agents",
+      "Risk Factors"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": [
+      "全国規模の日本の医療データベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 2.01,
+    "sjr_quartile": null,
+    "openalex_topic": "Renin-Angiotensin System Studies",
+    "openalex_topic_score": 0.536,
+    "openalex_subfield": "Cardiology and Cardiovascular Medicine",
+    "openalex_field": "Medicine",
+    "auto_detected": true,
+    "collected_at": "2026-08-24T00:06:32.238Z",
+    "classified": true,
+    "title_ja": "高齢者におけるアンジオテンシン受容体拮抗薬と認知症リスク：ターゲットトライアルエミュレーション",
+    "abstract_ja": "全国規模の日本のデータベースを用い、65歳以上でARBまたはカルシウム拮抗薬(CCB)を新規開始した52,019人を対象にターゲットトライアルエミュレーションを実施。ARB開始群はCCB開始群に比べ全認知症リスクがやや低く（HR 0.92）、特に血管性認知症で有意に低下した（HR 0.62）ことを示した。"
+  },
+  {
+    "id": "pmid-42620965",
+    "pubmed_id": "42620965",
+    "doi": "10.1016/j.ekir.2026.106709",
+    "title": "Causal Effects of Early Discontinuation of Proton Pump Inhibitors on Kidney Failure.",
+    "abstract": "Proton pump inhibitors (PPIs) are associated with adverse kidney outcomes. In clinical practice, however, long-term PPI use without a clear indication is common. It remains unclear whether discontinuing PPIs reduces the risk of kidney failure in patients who initiate PPIs. Using a target trial emulation approach, we estimated the causal effects of initiation and discontinuation of PPIs on the risk of kidney failure. Using data from the Osaka Consortium for Kidney Disease Research, a retrospective multicenter cohort in Japan, we emulated 2 target trials in patients with nondialyzed chronic kidney disease (CKD). First, we compared the risk of kidney failure with replacement therapy (KFRT) between PPI use and histamine2 receptor antagonist (H2 blocker) use, using an active comparator new user design. Second, the estimated effect of PPI discontinuation within 90 days after initiation on KFRT was evaluated using a clone-censor-weighting approach. We identified 3512 PPI new users (76.1%) and 1102 H2 blocker new users (23.9%). At treatment initiation, the mean age and estimated glomerular filtration rate (eGFR) were 71 years and 30 ml/min per 1.73 m2, respectively. Over a median follow-up of 2.1 years, 654 (14.2%) progressed to KFRT. PPI initiation was significantly associated with a higher hazard of KFRT (hazard ratio [HR]: 1.39; 95% confidence interval [CI]: 1.13-1.72). Of 4187 patients who initiated PPIs, 1254 (30.0%) discontinued PPIs within 90 days. Discontinuation was significantly associated with a lower hazard of KFRT (HR: 0.85; 95% CI: 0.72-0.97) than continuation. Discontinuing PPIs within 90 days after initiation was associated with better kidney outcome.",
+    "authors": [
+      "Kawano Y",
+      "Oka T",
+      "Sakaguchi Y",
+      "Kadono H",
+      "Uwatoko R",
+      "Fukuda S",
+      "Doi Y",
+      "Hashimoto N",
+      "Kusunoki Y",
+      "Yamamoto S",
+      "Yamato M",
+      "Yamamoto R",
+      "Matsui I",
+      "Mizui M",
+      "Kaimori JY",
+      "Isaka Y"
+    ],
+    "journal": "Kidney international reports",
+    "journal_issn": "2468-0249",
+    "year": 2026,
+    "publication_date": "2026-08-20",
+    "analysis_methods": [
+      "ターゲットトライアルエミュレーション",
+      "生存時間分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": [
+      "大阪腎臓病研究コンソーシアムの多施設共同コホートデータ"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "安全性・副作用"
+    ],
+    "impact_factor": 0.77,
+    "sjr_quartile": null,
+    "openalex_topic": "Potassium and Related Disorders",
+    "openalex_topic_score": 0.187,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "auto_detected": true,
+    "collected_at": "2026-08-24T00:06:32.739Z",
+    "classified": true,
+    "title_ja": "プロトンポンプ阻害薬の早期中止が腎不全に与える因果効果",
+    "abstract_ja": "大阪腎臓病研究コンソーシアム（多施設共同コホート）のデータを用い、非透析慢性腎臓病患者を対象にターゲットトライアルエミュレーションでPPIの開始・中止と腎代替療法移行の因果効果を推定。PPI開始は腎代替療法リスク増加と関連し（HR 1.39）、開始後90日以内の中止はそのリスクを有意に低下させた（HR 0.85）。"
+  },
+  {
+    "id": "pmid-42619359",
+    "pubmed_id": "42619359",
+    "doi": "10.1111/ped.70537",
+    "title": "Incidence and Long-Term Outcomes of Pediatric Tracheostomy in Japan: A Cohort Study Using a Japanese Claims Database.",
+    "abstract": "Epidemiological data on pediatric tracheostomy are limited, particularly in Asia. We estimated the incidence and evaluated long-term post-tracheostomy outcomes and their predictors using a large Japanese claims database. We used the Japanese administrative claims database (JMDC) from 2005 to 2025. All individuals aged < 20 years observed during continuous enrollment contributed person-time to the incidence analysis. Individuals who underwent incident tracheostomy constituted the post-tracheostomy cohort. Cumulative incidences of decannulation and death were estimated using competing-risk methods, and predictors of each outcome were evaluated with cause-specific Cox proportional hazards models. Among 6,046,879 individuals aged < 20 years, 1032 underwent incident tracheostomy and constituted the post-tracheostomy cohort (median age, 1.2 years [IQR, 0.4-12.6]). The incidence was 4.0 (95% CI, 3.7-4.2) per 100,000 person-years; it was highest in infants (< 1 year: 42.4) and increased modestly in late adolescence (15-19 years: 2.8). The cumulative incidence of decannulation was 22.9% (95% CI, 20.3-25.5) at 1 year and 40.6% (95% CI, 37.1-44.1) at 5 years; the cumulative incidence of death was 12.9% (95% CI, 10.7-15.0) at 1 year and 22.2% (95% CI, 19.4-25.1) at 5 years. Older age (6-19 years) and trauma were associated with earlier decannulation, whereas malignancy, cardiovascular disease, congenital/genetic comorbidity, and post-cardiac arrest diagnosis were associated with earlier death. The incidence of pediatric tracheostomy peaked in infancy and increased modestly in late adolescence. During long-term follow-up, substantial proportions of patients experienced decannulation or death, with distinct predictors for each outcome.",
+    "authors": [
+      "Miura S",
+      "Obayashi J",
+      "Miyamoto Y"
+    ],
+    "journal": "Pediatrics international : official journal of the Japan Pediatric Society",
+    "journal_issn": "1442-200X",
+    "year": 2026,
+    "publication_date": "2026-08-20",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "mesh_terms": [
+      "Adolescent",
+      "Child",
+      "Child, Preschool",
+      "Female",
+      "Humans",
+      "Infant",
+      "Infant, Newborn",
+      "Male",
+      "Young Adult",
+      "Cohort Studies",
+      "Databases, Factual",
+      "Incidence",
+      "Japan",
+      "Postoperative Complications",
+      "Tracheostomy",
+      "Tracheostomy Decannulation"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 0.51,
+    "sjr_quartile": null,
+    "openalex_topic": "Tracheal and airway disorders",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "auto_detected": true,
+    "collected_at": "2026-08-24T00:06:33.236Z",
+    "classified": true,
+    "title_ja": "日本における小児気管切開の発生率と長期転帰：レセプトデータベースを用いたコホート研究",
+    "abstract_ja": "JMDCレセプトデータベース（2005〜2025年）を用い、20歳未満約604万人から気管切開を受けた1,032例を同定し、発生率と長期転帰を競合リスク法とCoxモデルで解析。発生率は乳児期に最も高く（10万人年あたり42.4）、5年時点でカニューレ抜去22.9%、死亡22.2%に達し、年齢や外傷が抜去、悪性腫瘍等が死亡と関連した。"
+  },
+  {
+    "id": "pmid-42618232",
+    "pubmed_id": "42618232",
+    "doi": "10.1265/ehpm.26-00125",
+    "title": "Geographic variation in proportions meeting the waist circumference criterion and having elevated hemoglobin A1c among Specific Health Checkup examinees in Japan: an ecological analysis of the 10th NDB Open Data.",
+    "abstract": "Publicly available aggregate health data can support regional surveillance of cardiometabolic risk, but analyses must address aggregation, ecological inference, and cell suppression or unavailability. Waist circumference and body mass index (BMI) capture related but distinct aspects of adiposity. We evaluated the usefulness and limitations of selected 10th National Database (NDB) Open Data indicators for prefecture-level cardiometabolic surveillance among Specific Health Checkup examinees in Japan. We conducted an ecological descriptive analysis of the 10th NDB Open Data. Data were analyzed by prefecture, sex, and 5-year age band among examinees aged 40-74 years. Primary indicators were the percentage meeting the waist circumference criterion (≥85 cm in men, ≥90 cm in women) and the percentage with hemoglobin A1c (HbA1c) ≥6.5%; BMI categories were examined as exploratory indicators. Prefecture-level percentages were internally age-standardized within sex using the age distribution of publicly displayed examinee counts pooled across prefectures for each indicator as the internal standard. Cells displayed as \"-\" were treated as suppressed/unavailable and not as zero values. Waist circumference criterion data were complete across prefectures, sexes, and age bands. HbA1c ≥6.5% data were complete among men but included suppressed/unavailable cells among women, and BMI indicators had substantial cell suppression/unavailability. The age-standardized percentage meeting the waist circumference criterion ranged from 45.5% in Niigata to 60.6% in Okinawa among men and from 13.7% in Kyoto to 24.0% in Okinawa among women. HbA1c ≥6.5% ranged from 8.3% in Nagano to 11.3% in Miyagi among men and from 3.9% in Kanagawa to 7.8% in Saga among women. Okinawa had the highest percentage meeting the waist circumference criterion in both sexes. Waist-HbA1c correlations were positive in available-cell analyses, but estimates among women and estimates involving BMI were sensitive to cell availability and the prefectures included in the analysis. The percentage meeting the waist circumference criterion was the most complete and robust descriptive indicator for prefecture-level cardiometabolic surveillance using the 10th NDB Open Data. HbA1c analyses among women and BMI-based analyses require suppression-aware interpretation. Ecological correlations should be interpreted as descriptive co-patterning of aggregate surveillance indicators, not as individual-level associations or evidence of regional determinants. Not applicable.",
+    "authors": [
+      "Nakashima H",
+      "Kamihara T",
+      "Omura T"
+    ],
+    "journal": "Environmental health and preventive medicine",
+    "journal_issn": "1347-4715",
+    "year": 2026,
+    "publication_date": "2026-08-20",
+    "analysis_methods": [],
+    "mesh_terms": [
+      "Geography",
+      "Waist Circumference",
+      "Glycated Hemoglobin",
+      "Japan",
+      "Physical Examination",
+      "Humans",
+      "Male",
+      "Female",
+      "Adult",
+      "Middle Aged",
+      "Aged",
+      "Body Mass Index",
+      "Databases, Factual",
+      "Sex Distribution",
+      "Age Distribution",
+      "Heart Disease Risk Factors"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 2.45,
+    "sjr_quartile": null,
+    "openalex_topic": "Diabetes, Cardiovascular Risks, and Lipoproteins",
+    "openalex_topic_score": 0.228,
+    "openalex_subfield": "Endocrinology, Diabetes and Metabolism",
+    "openalex_field": "Medicine",
+    "auto_detected": true,
+    "collected_at": "2026-08-24T00:06:35.198Z",
+    "classified": true,
+    "title_ja": "第10回NDBオープンデータを用いた特定健診受診者における腹囲基準該当割合・HbA1c高値割合の地域差",
+    "abstract_ja": "第10回NDBオープンデータを用い、特定健診受診者の腹囲基準該当割合・HbA1c高値割合を都道府県別に生態学的に解析。腹囲基準該当割合は男性45.5〜60.6%、女性13.7〜24.0%と地域差があり沖縄で最高だった。セル秘匿の影響を踏まえ、腹囲指標が地域比較に最も頑健な指標であることを示した。"
+  },
+  {
+    "id": "pmid-42618627",
+    "pubmed_id": "42618627",
+    "doi": "10.1038/s41440-026-02776-5",
+    "title": "Cost-effectiveness analysis of early antihypertensive treatment for hypertension detected at health screening.",
+    "abstract": "Delayed initiation of antihypertensive therapy after the initial identification of hypertension during health checkups has been linked to an increased risk of cardiovascular disease. However, the long-term economic implications of this practice are not well understood. This study aimed to analyze the cost-effectiveness of early antihypertensive treatment. A Markov cohort model with four health states (baseline hypertension, acute cardiovascular disease (CVD), post-CVD, and death) was developed to project long-term outcomes for adults with screening-detected hypertension using data from the Japan Medical Data Center database, recorded January 2005-April 2021. Age-specific transition probabilities, CVD-related costs, and mortality were derived from a previously published cohort. Quality-adjusted life-years (QALYs) were estimated using utility values from prior literature. Early (<1 year) versus delayed (≥1 year) treatment initiation were compared across four age groups over a 20-year horizon from the healthcare payer perspective, applying a 2% annual discount rate. Deterministic and probabilistic sensitivity analyses assessed parameter uncertainty, and cost-effectiveness was evaluated against a willingness-to-pay threshold of ¥5 million per QALY. In adults in their 40 s, early initiation yielded 13.52 QALYs and lifetime costs of ¥3,991,757, compared with 12.85 QALYs and ¥3,976,709 with delayed initiation, resulting in an incremental cost-effectiveness ratio of ¥22,489 per QALY. Early initiation remained highly cost-effective across all age groups, and probabilistic analyses demonstrated a high likelihood of cost-effectiveness. These findings support encouraging healthcare payers to use screening results proactively to promote early hypertension management and strengthen follow-up systems that reduce delays between detection and appropriate treatment.",
+    "authors": [
+      "Ito H",
+      "Seki T",
+      "Takiguchi T",
+      "Akagi Y",
+      "Kubota K",
+      "Miyake K",
+      "Okada M",
+      "Ohe K",
+      "Kawazoe Y"
+    ],
+    "journal": "Hypertension research : official journal of the Japanese Society of Hypertension",
+    "journal_issn": "1348-4214",
+    "year": 2026,
+    "publication_date": "2026-08-19",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "その他",
+    "research_categories": [
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 3.69,
+    "sjr_quartile": null,
+    "openalex_topic": "Health Promotion and Cardiovascular Prevention",
+    "openalex_topic_score": 0.716,
+    "openalex_subfield": "Public Health, Environmental and Occupational Health",
+    "openalex_field": "Medicine",
+    "auto_detected": true,
+    "collected_at": "2026-08-24T00:06:33.727Z",
+    "classified": true,
+    "title_ja": "健診で発見された高血圧に対する早期降圧治療の費用対効果分析",
+    "abstract_ja": "Japan Medical Data Center（JMDC）データベース（2005〜2021年）由来のコホートを用い、健診で発見された高血圧への早期(1年未満)降圧治療開始と遅延開始の費用対効果をマルコフモデルで比較。早期治療は全年齢層で高い費用対効果を示し（40代でICER 22,489円/QALY）、確率的感度分析でも頑健性が確認された。"
+  },
+  {
+    "id": "pmid-42618281",
+    "pubmed_id": "42618281",
+    "doi": "10.1248/bpb.b26-00127",
+    "title": "Real-World Medication Regimen Change in Adults with ADHD: A Large Claims Database Study.",
+    "abstract": "Pharmacotherapy persistence in adults with attention-deficit/hyperactivity disorder (ADHD) remains concerning; however, evidence describing early treatment changes and discontinuation is limited. This study aimed to describe initial ADHD pharmacotherapy patterns and quantify claims-based initial regimen instability in Japanese adults. Using a Japanese claims database, we assembled a cohort of adults who initiated ADHD medication with methylphenidate, atomoxetine, guanfacine, or polytherapy (combination therapy) at initiation. Initial regimen instability was defined as the first observed regimen modification, including switching, add-on/polytherapy, de-escalation or combination-pattern change among initial polytherapy users, or a temporary drug-free interruption followed by restart after 31-179 d. A sustained medication-free period of ≥180 d without restart was treated as a competing event. We estimated cumulative incidence functions for initial regimen instability, treating the sustained medication-free period as a competing event. Fine-Gray models adjusted for age, sex, and major psychiatric comorbidities were used to compare initial regimens with methylphenidate as a reference. Landmark analysis was used to assess robustness. Among 14814 initiators, 3085, 8517, 3076, and 136 started methylphenidate, atomoxetine, guanfacine, and initial polytherapy, respectively. In the adjusted Fine-Gray model, the subdistribution hazard ratio for initial regimen instability was 0.74 for atomoxetine and 0.72 for guanfacine, whereas it was higher (2.65) for initial polytherapy in the main analysis. However, this estimate was sensitive to the operational definition of regimen instability. Landmark analysis yielded consistent differences between regimens. Initial ADHD pharmacotherapy showed heterogeneity in Japanese adults and included initial polytherapy, with initial regimen instability differing substantially depending on the starting regimen.",
+    "authors": [
+      "Yonezawa N",
+      "Momo K"
+    ],
+    "journal": "Biological & pharmaceutical bulletin",
+    "journal_issn": "1347-5215",
+    "year": 2026,
+    "publication_date": "2026-08-19",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "mesh_terms": [
+      "Attention Deficit Disorder with Hyperactivity",
+      "Humans",
+      "Methylphenidate",
+      "Atomoxetine Hydrochloride",
+      "Databases, Factual",
+      "Guanfacine",
+      "Central Nervous System Stimulants",
+      "Female",
+      "Japan",
+      "Adult",
+      "Male",
+      "Drug Therapy, Combination",
+      "Middle Aged",
+      "Young Adult"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の診療報酬明細書(レセプト)データベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.78,
+    "sjr_quartile": null,
+    "openalex_topic": "Attention Deficit Hyperactivity Disorder",
+    "openalex_topic_score": 0.995,
+    "openalex_subfield": "Psychiatry and Mental health",
+    "openalex_field": "Medicine",
+    "auto_detected": true,
+    "collected_at": "2026-08-24T00:06:34.229Z",
+    "classified": true,
+    "title_ja": "成人ADHDにおけるリアルワールドの薬物治療変更：大規模レセプトデータベース研究",
+    "abstract_ja": "日本のレセプトデータベースを用い、メチルフェニデート・アトモキセチン・グアンファシン・多剤併用でADHD薬物治療を開始した成人14,814人の初期治療変更(スイッチ・追加・減量・中断再開)をFine-Gray競合リスクモデルで解析。アトモキセチン・グアンファシン開始群は初期治療変更が少なく、初期多剤併用群は多かった。"
+  },
+  {
+    "id": "pmid-42618270",
+    "pubmed_id": "42618270",
+    "doi": "10.2169/internalmedicine.7746-26",
+    "title": "Trends in Pharmacological, Radioactive Iodine, and Surgical Treatments for Hyperthyroidism in Japan: A Decade-Long Nationwide Claims-Based Analysis (2014-2023).",
+    "abstract": "To investigate the nationwide trends in pharmacological, radioactive iodine (RAI), and surgical treatments for hyperthyroidism in Japan from 2014 to 2023. Annual sex- and age-stratified data on methimazole (MMI), propylthiouracil (PTU), potassium iodide (KI), RAI therapy, and thyroidectomy were extracted from the National Database of Health Insurance Claims (NDB). Crude and age-adjusted counts and rates per 1,000 (drugs) or 100,000 (RAI and surgery) person-years were calculated for each year. The annual trends were analyzed using linear and Poisson regression models. The cross-sectional distributions strongly reflected the female reproductive life stages. Notably, RAI therapy charges exhibited a bimodal peak distribution in females (25-29 and 45-49 years), whereas thyroidectomy peaked at 30-34 years, coinciding with the intervening childbearing period. Longitudinally, age-adjusted MMI and KI prescriptions and surgeries increased significantly (P ＜0.0001), whereas PTU prescriptions and RAI therapy declined (P ＜0.0001). Subgroup analyses revealed distinct age-dependent shifts, with MMI and KI use increasing across most age groups, particularly among individuals aged ≥90 years. PTU use showed divergent trends by sex, decreasing among males, but increasing among older females, particularly those aged ≥90 years. Surgical interventions increased mainly among older adults, whereas RAI therapy declined across most age groups. Over the past decade, hyperthyroidism management in Japan has shifted toward MMI consolidation, expanded KI use in the super-elderly population, declining RAI therapy in broad-aged populations, and increasing surgery in older adults. These age-dependent treatment shifts reflect the evolving clinical practice and therapeutic challenges posed by a rapidly aging society.",
+    "authors": [
+      "Kido M",
+      "Ushigome E",
+      "Nakajima H",
+      "Tsujikawa T",
+      "Mukudai S",
+      "Nishimura M",
+      "Ichijo Y",
+      "Aibe N",
+      "Nagasawa S",
+      "Hashimoto Y",
+      "Yoshii K",
+      "Shoda AK"
+    ],
+    "journal": "Internal medicine (Tokyo, Japan)",
+    "journal_issn": "1349-7235",
+    "year": 2026,
+    "publication_date": "2026-08-19",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 0.85,
+    "sjr_quartile": null,
+    "openalex_topic": "Thyroid Disorders and Treatments",
+    "openalex_topic_score": 0.974,
+    "openalex_subfield": "Endocrinology, Diabetes and Metabolism",
+    "openalex_field": "Medicine",
+    "auto_detected": true,
+    "collected_at": "2026-08-24T00:06:34.716Z",
+    "classified": true,
+    "title_ja": "日本における甲状腺機能亢進症治療の10年間の動向：全国レセプトデータ分析(2014-2023)",
+    "abstract_ja": "国民健康保険等のNDB（レセプト情報・特定健診等情報データベース）を用い、2014〜2023年の薬物療法・放射性ヨウ素治療・手術の年次動向を年齢調整して解析。メチマゾール・ヨウ化カリウムと手術は増加した一方、プロピルチオウラシルと放射性ヨウ素治療は減少し、高齢化に伴う治療選択の変化を示した。"
+  },
+  {
+    "id": "pmid-42614889",
+    "pubmed_id": "42614889",
+    "doi": "10.1002/bco2.70270",
+    "title": "Procedure-specific temperature dependence and lag structure of urinary stone surgery: A nationwide open-data study in Japan, 2019-2024.",
+    "abstract": "To determine whether the seasonality of urinary stone surgery and its association with ambient temperature differ between surgical procedures and to compare the time lag between temperature and each procedure. We used the nationwide open data of the National Database of health insurance claims in Japan for fiscal years 2019-2024 (April 2019 to March 2025, 72 months). We counted monthly inpatient surgeries for extracorporeal shock wave lithotripsy (ESWL), ureteroscopic lithotripsy (URS), percutaneous nephrolithotomy (PCNL) and transurethral cystolitholapaxy and expressed them as a seasonal index of surgeries per business day normalized to a mean of 1 within each fiscal year. Observed monthly mean temperatures for 12 representative meteorological stations were correlated with the index at lags of -1 to +4 months. A total of 71 791 ESWL, 320 863 URS, 71 272 cystolitholapaxy and 20 387 PCNL procedures were performed. Volume rose from summer to autumn and was lowest in winter for ESWL, URS and cystolitholapaxy. In the same month, the correlation with temperature was strongest for ESWL (r = 0.83, 95% CI 0.74-0.89), followed by URS (r = 0.43, 0.22-0.60) and cystolitholapaxy (r = 0.35, 0.13-0.54), whereas PCNL showed no association (r = 0.05, -0.19-0.27). The correlation peaked at 1 month for ESWL (r = 0.87), at 2 months for URS (r = 0.69) and cystolitholapaxy (r = 0.52) and at 3 months for PCNL, where it was not significant at any lag. PCNL showed significant month-to-month variation that was not explained by temperature. The seasonality of urinary stone surgery and the time lag relative to ambient temperature differ by procedure, being shortest for ESWL and longer for procedures requiring anaesthesia and hospitalization, while PCNL shows no association with temperature.",
+    "authors": [
+      "Sakurai Y",
+      "Kawahara T",
+      "Hashizume A",
+      "Yamazaki M",
+      "Takeshima T",
+      "Kuroda S",
+      "Tatenuma T",
+      "Uemura H",
+      "Makiyama K",
+      "Teranishi JI"
+    ],
+    "journal": "BJUI compass",
+    "journal_issn": "2688-4526",
+    "year": 2026,
+    "publication_date": "2026-08-19",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.54,
+    "sjr_quartile": null,
+    "openalex_topic": "Kidney Stones and Urolithiasis Treatments",
+    "openalex_topic_score": 0.905,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "auto_detected": true,
+    "collected_at": "2026-08-24T00:06:35.718Z",
+    "classified": true,
+    "title_ja": "尿路結石手術の術式別気温依存性とタイムラグ：2019〜2024年のNDBオープンデータを用いた全国研究",
+    "abstract_ja": "NDBオープンデータ（2019〜2024年度）を用い、体外衝撃波結石破砕術(ESWL)・経尿道的結石破砕術(URS)・経皮的腎結石破砕術(PCNL)等の月別手術件数と気温の関連を術式別に解析。ESWLは気温との相関が最も強くタイムラグも短い一方、PCNLは気温との関連が認められなかった。"
+  },
+  {
+    "id": "pmid-42614751",
+    "pubmed_id": "42614751",
+    "doi": "10.37737/ace.26011",
+    "title": "Effect of the revision of the recommended vaccination schedule for preventing vertical transmission of hepatitis B virus on vaccination status of infants in Japan.",
+    "abstract": "In 1986, a strategy of vaccinating infants at 2, 3, and 5 months of age was implemented in Japan to prevent the vertical transmission of the hepatitis B virus. This strategy was revised in 2013 to vaccinate infants at birth, 1 month, and 6 months of age. We aimed to evaluate the effect of this policy change on the vaccination status of infants born to mothers with positive hepatitis B surface antigen. We identified infants born between April 2009 and March 2021 from the JMDC Claims Database. Administration of hepatitis B immunoglobulin at birth was used to identify infants who received preventive measures against vertical transmission. The timing of hepatitis B vaccine administration within 12 months of birth was compared between old (born between April 2009 and September 2013) and new (born between October 2013 and March 2021) groups. Among the 77,797 and 510,584 infants born before and after October 1 2013, respectively, 190 (0.24%) and 732 (0.14%) were analyzed. The proportion of infants receiving at least one dose of the vaccine increased from 63% to 96% (p < 0.001). The proportion of infants who received timely first, second, and third doses of vaccines changed from 54% to 90% (p < 0.001), 46% to 59% (p = 0.002), and 39% to 31% (p = 0.034), respectively. The change in strategy against the vertical transmission of hepatitis B virus resulted in an increased rate of receiving the first dose of the vaccine and a decreased rate of timely completion of the recommended doses.",
+    "authors": [
+      "Yamana H",
+      "Ono S",
+      "Michihata N",
+      "Uemura K",
+      "Yasunaga H"
+    ],
+    "journal": "Annals of clinical epidemiology",
+    "journal_issn": "2434-4338",
+    "year": 2026,
+    "publication_date": "2026-08-19",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "PubMed-not-MEDLINE",
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 4.81,
+    "sjr_quartile": null,
+    "openalex_topic": "Hepatitis B Virus Studies",
+    "openalex_topic_score": 0.92,
+    "openalex_subfield": "Epidemiology",
+    "openalex_field": "Medicine",
+    "auto_detected": true,
+    "collected_at": "2026-08-24T00:06:36.222Z",
+    "classified": true,
+    "title_ja": "B型肝炎ウイルス母子感染予防のワクチン接種スケジュール改定が乳児の接種状況に与えた影響",
+    "abstract_ja": "JMDCレセプトデータベースを用い、2013年のB型肝炎ワクチン接種スケジュール改定（生後2・3・5か月→出生時・1・6か月）前後で生まれた乳児の接種状況を比較。改定後、少なくとも1回接種した割合は63%から96%に増加した一方、推奨全3回を期限内に完了した割合はやや低下した。"
+  },
+  {
+    "id": "pmid-42613674",
+    "pubmed_id": "42613674",
+    "doi": "10.1093/ageing/afag246",
+    "title": "Real-world effectiveness of SGLT2 inhibitors in adults aged 75 years or older: a target trial emulation.",
+    "abstract": "Sodium-glucose cotransporter 2 inhibitors (SGLT2i) improve cardiovascular and renal outcomes, but evidence in adults aged ≥75 years remains limited, particularly compared with dipeptidyl peptidase-4 inhibitors (DPP-4i). We conducted a target trial emulation using linked administrative claims and health examination data in Japan. Individuals aged ≥75 years with type 2 diabetes who newly initiated an SGLT2i or DPP-4i were identified. Intention-to-treat (ITT) effects were estimated using inverse probability weighting, with a 1-month induction period for mortality, cardiovascular and renal outcomes. The study included 8486 individuals (2204 SGLT2i users, 6282 DPP-4i users). After a 1-month induction period, SGLT2i initiation was associated with lower all-cause mortality (hazard ratio [HR] 0.677, 95% confidence interval [CI] 0.500-0.916) and lower risk of end-stage renal disease or dialysis (HR 0.374, 95% CI 0.157-0.890). No clear differences were observed for heart failure hospitalisation (HR 1.103, 95% CI 0.854-1.426) or myocardial infarction (HR 1.015, 95% CI 0.768-1.341) in the ITT analysis. Stroke occurred more frequently among SGLT2i users (HR 1.420, 95% CI 1.165-1.828), although this finding should be interpreted cautiously. Among adults aged ≥75 years with type 2 diabetes, SGLT2i initiation was associated with lower all-cause mortality and renal risk compared with DPP-4i initiation. The higher observed stroke risk requires cautious interpretation because residual confounding, competing mortality and heterogeneity in vulnerable older adults may contribute to this signal.",
+    "authors": [
+      "Noma H",
+      "Goto A",
+      "Sugimoto T",
+      "Sunada H",
+      "Oda F",
+      "Maeda M",
+      "Fukuda H"
+    ],
+    "journal": "Age and ageing",
+    "journal_issn": "1468-2834",
+    "year": 2026,
+    "publication_date": "2026-08-19",
+    "analysis_methods": [
+      "ターゲットトライアルエミュレーション",
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "mesh_terms": [
+      "Humans",
+      "Sodium-Glucose Transporter 2 Inhibitors",
+      "Aged",
+      "Diabetes Mellitus, Type 2",
+      "Dipeptidyl-Peptidase IV Inhibitors",
+      "Female",
+      "Japan",
+      "Male",
+      "Aged, 80 and over",
+      "Age Factors",
+      "Treatment Outcome",
+      "Risk Factors",
+      "Cardiovascular Diseases",
+      "Kidney Failure, Chronic"
+    ],
+    "medline_status": "MEDLINE",
+    "databases_used": [],
+    "additional_data_sources": [
+      "医療保険レセプトデータと健診データを連結したデータ"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 2.5,
+    "sjr_quartile": null,
+    "openalex_topic": "Diabetes Treatment and Management",
+    "openalex_topic_score": 0.998,
+    "openalex_subfield": "Endocrinology, Diabetes and Metabolism",
+    "openalex_field": "Medicine",
+    "auto_detected": true,
+    "collected_at": "2026-08-24T00:06:36.737Z",
+    "classified": true,
+    "title_ja": "75歳以上高齢者におけるSGLT2阻害薬のリアルワールド有効性：ターゲットトライアルエミュレーション",
+    "abstract_ja": "日本のレセプトと健診データを連結し、75歳以上の2型糖尿病患者でSGLT2阻害薬またはDPP-4阻害薬を新規開始した8,486人を対象にターゲットトライアルエミュレーションを実施。SGLT2阻害薬開始群は全死亡（HR 0.68）・末期腎不全（HR 0.37）のリスクが低い一方、脳卒中はやや多かった（HR 1.42）。"
+  },
+  {
+    "id": "pmid-42611419",
+    "pubmed_id": "42611419",
+    "doi": "10.1007/s13300-026-01905-0",
+    "title": "Considering Deintensification and Deprescribing with Higher HbA1c Targets in Vulnerable Older Adults with Type 2 Diabetes: A Retrospective Database Study.",
+    "abstract": "In older adults with diabetes mellitus, guidelines recommend individualized hemoglobin (Hb) A1c targets based on cognitive impairment, functional status, and comorbidity burden, which collectively represent vulnerability. However, adherence to these recommendations in real-world clinical practice has not been well characterized. We aimed to investigate the association between vulnerability and incidence of severe hypoglycemia and to evaluate the distribution of HbA1c stratified by vulnerability- and drug-based categories. Using a Japanese claims database, we identified adults aged ≥ 65 years with type 2 diabetes who were prescribed outpatient glucose-lowering drugs with a 1-year baseline and up to 1-year follow-up. The most vulnerable patients were classified as category III (moderate-to-severe dementia or ≥ 4 of 8 comorbidities); all others were classified as category I + II. The outcome was incidence of severe hypoglycemia. Incidence rate ratios (IRRs) were estimated using negative binomial regression adjusted for covariates including age, comorbidities, prior severe hypoglycemia, and use of glucose-lowering drugs. HbA1c was summarized from health checkup results. Among 61,351 patients, 5221 (8.5%) were category III. Incidence of severe hypoglycemia was higher in category III than in category I + II (24.96 vs. 4.76 per 1000 person-years), and category III remained associated with severe hypoglycemia after adjustment (IRR 2.71, 95% confidence interval 2.00-3.68). Insulin/sulfonylurea/glinide-containing regimens and prior severe hypoglycemia were major risk factors. HbA1c levels were available for 15,372 patients, and category III more often had HbA1c < 6.5% (category III vs. category I + II, 315/649 [48.5%] vs. 5734/14,723 [38.9%]). Among 173 category III patients receiving insulin, sulfonylureas, or glinides, 133 (76.9%) had HbA1c below the recommended lower limit (7.5%). Vulnerable older adults with high comorbidity burden were at substantially higher risk of severe hypoglycemia. A large proportion of patients treated with hypoglycemia-prone agents had HbA1c levels below the recommended lower bounds, supporting medication review to guide deintensification and deprescribing.",
+    "authors": [
+      "Koto R",
+      "Yoshida S",
+      "Nakajima A",
+      "Sugimoto K"
+    ],
+    "journal": "Diabetes therapy : research, treatment and education of diabetes and related disorders",
+    "journal_issn": "1869-6953",
+    "year": 2026,
+    "publication_date": "2026-08-18",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の診療報酬明細書(レセプト)データベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 5.33,
+    "sjr_quartile": null,
+    "openalex_topic": "Diabetes Management and Education",
+    "openalex_topic_score": 0.342,
+    "openalex_subfield": "Endocrinology, Diabetes and Metabolism",
+    "openalex_field": "Medicine",
+    "auto_detected": true,
+    "collected_at": "2026-08-24T00:06:37.194Z",
+    "classified": true,
+    "title_ja": "脆弱な高齢2型糖尿病患者における高めのHbA1c目標値設定と減量・減薬の検討：後方視的データベース研究",
+    "abstract_ja": "日本のレセプトデータベースを用い、65歳以上の2型糖尿病患者61,351人を認知機能・併存症に基づく脆弱性カテゴリーで分類し、重症低血糖発生率とHbA1cの関連を負の二項回帰で解析。最も脆弱な群は重症低血糖リスクが高く（IRR 2.71）、低血糖リスクの高い薬剤を使いながらHbA1cが目標下限未満の患者が多く見られた。"
+  },
+  {
+    "id": "pmid-42611108",
+    "pubmed_id": "42611108",
+    "doi": "10.1007/s12185-026-04260-9",
+    "title": "Diagnostic delay and clinical outcomes of paroxysmal nocturnal hemoglobinuria: a retrospective cohort study using Japanese claims data.",
+    "abstract": "Paroxysmal nocturnal hemoglobinuria (PNH) is a rare, potentially life-threatening hematologic disease, often misdiagnosed because of its non-specific symptoms. PNH is characterized by terminal complement activity and intravascular hemolysis, potentially leading to thrombosis, kidney failure, and premature mortality. Early identification remains challenging, necessitating improved diagnostic strategies. In this retrospective JMDC Claims Database analysis, we evaluated the PNH patient journey, including the time from PNH-related symptom onset to first diagnosis and the association of this interval with outcomes. Overall, 160 patients were definitively diagnosed with PNH between July 2010 and April 2022. Flow cytometry (diagnostic standard to detect PNH-type blood cells) was performed in 99 of 160 patients. Ninety-two of 160 patients (57.5%) had PNH-related symptoms before first diagnosis. The median time from PNH-related symptom onset to diagnosis was 26.5 (range, 1-146) months. The incidence of PNH-related complications (kidney failure, thrombosis [including venous thromboembolism]) per 1000 patient-years increased with time from symptom onset to diagnosis. Considerable time elapsed between symptom onset and definitive PNH diagnosis. Longer intervals from symptom onset to diagnosis were descriptively associated with higher rates of complications, including kidney failure and thrombosis, highlighting the potential importance of improved awareness and earlier diagnostic testing for improving PNH outcomes.",
+    "authors": [
+      "Ueda Y",
+      "Kawaguchi T",
+      "Ikezoe T",
+      "Shimono A",
+      "Hayashi H",
+      "Uchiyama M",
+      "Nishimura JI",
+      "Nishiwaki K"
+    ],
+    "journal": "International journal of hematology",
+    "journal_issn": "1865-3774",
+    "year": 2026,
+    "publication_date": "2026-08-18",
+    "analysis_methods": [],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 1.86,
+    "sjr_quartile": null,
+    "openalex_topic": "Complement system in diseases",
+    "openalex_topic_score": 0.998,
+    "openalex_subfield": "Immunology",
+    "openalex_field": "Immunology and Microbiology",
+    "auto_detected": true,
+    "collected_at": "2026-08-24T00:06:37.729Z",
+    "classified": true,
+    "title_ja": "発作性夜間ヘモグロビン尿症の診断遅延と臨床転帰：日本のレセプトデータを用いた後方視的コホート研究",
+    "abstract_ja": "JMDCレセプトデータベース（2010〜2022年）を用い、発作性夜間ヘモグロビン尿症(PNH)と診断された160例の症状出現から診断までの期間と臨床転帰の関連を解析。診断までの期間は中央値26.5か月と長く、期間が長いほど腎不全・血栓症などの合併症の発生率が高い傾向がみられた。"
+  },
+  {
     "id": "pmid-42604463",
     "pubmed_id": "42604463",
     "doi": "10.1007/s00540-026-03869-8",
@@ -93,6 +947,51 @@
     "openalex_topic_score": 0.299,
     "openalex_subfield": "Radiation",
     "openalex_field": "Physics and Astronomy"
+  },
+  {
+    "id": "pmid-42604875",
+    "pubmed_id": "42604875",
+    "doi": "10.1007/s00210-026-05803-x",
+    "title": "Safety profiles of two XOD and two URAT1 inhibitors in hyperuricemic patients: a real-world pharmacovigilance analysis based on the FAERS and JADER databases.",
+    "abstract": "Hyperuricemia is a major risk factor of gout and other metabolic diseases. Allopurinol, febuxostat, dotinurad, and benzbromarone are commonly used clinically as uric acid-lowering drugs. Real-world pharmacovigilance studies of four drug-related adverse drug reactions (ADRs) were conducted in the Food and Drug Administration Adverse Event Reporting System (FAERS) and Japanese Database of Adverse Reactions (JADER) to provide a reference for the safe clinical use of drugs. Adverse reaction data (Q1 2004 through Q3 2024) for data pertaining to the four drugs were retrieved from the FAERS and JADER databases. Four disproportionality analysis algorithms, including proportional reporting ratio (PRR), reporting ratio of ratios (ROR), Bayesian confidence propagation neural network (BCPNN), and empirical Bayesian geometric mean (EBGM) methods, were used to analyze the signals of ADRs. A total of 14,125 ADR reports were included. Patients aged ≥ 65 years constituted the largest age group, and the proportion of reports was higher in males than in females. At the system organ class (SOC) level, positive signals for hepatobiliary disorders and renal and urinary disorders were detected for all four drugs. The predominant ADRs associated with allopurinol were drug reaction with eosinophilia and systemic symptoms and acute kidney injury, whereas those associated with febuxostat were primarily rash and nausea. Abnormal liver function and acute kidney injury were the main ADRs reported for benzbromarone and dotinurad. Several unexpected signals not previously documented in the literature were also identified, including allopurinol-associated sepsis, multiple organ dysfunction syndrome, and tubulointerstitial nephritis. Most ADRs associated with the four drugs occurred during the early stage of treatment, particularly within the first 30 days, although some were reported more than 1 year after treatment initiation. External validation using the JADER database showed that disproportionality analyses of allopurinol and febuxostat supported the findings obtained from the FAERS database. Sensitivity analyses further confirmed the robustness of the main results. This study compares ADR signaling differences between two XOD and two URAT1 inhibitors as well as high-risk signals, providing evidence for clinical monitoring of drug safety. However, large-scale prospective studies are still needed for future validation.",
+    "authors": [
+      "Shi W",
+      "Huang X",
+      "Zhao X",
+      "Jiang J",
+      "Fan G",
+      "Lou Y"
+    ],
+    "journal": "Naunyn-Schmiedeberg's archives of pharmacology",
+    "journal_issn": "1432-1912",
+    "year": 2026,
+    "publication_date": "2026-08-16",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "mesh_terms": [],
+    "medline_status": "Publisher",
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS（米国FDA有害事象報告システム）を併用"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.3,
+    "sjr_quartile": null,
+    "openalex_topic": "Gout, Hyperuricemia, Uric Acid",
+    "openalex_topic_score": 0.902,
+    "openalex_subfield": "Nephrology",
+    "openalex_field": "Medicine",
+    "auto_detected": true,
+    "collected_at": "2026-08-24T00:06:38.597Z",
+    "classified": true,
+    "title_ja": "2種のXOD阻害薬・2種のURAT1阻害薬の安全性プロファイル：FAERSとJADERを用いたリアルワールド薬剤疫学分析",
+    "abstract_ja": "FAERSとJADERの両有害事象報告データベース（2004〜2024年）を用い、アロプリノール・フェブキソスタット・ドチヌラド・ベンズブロマロンの副作用シグナルをROR・PRR・BCPNN・EBGMの4手法で解析。4薬剤全てで肝胆道系・腎泌尿器系障害のシグナルが検出され、JADERでもFAERSの主要な結果が概ね支持された。"
   },
   {
     "id": "pmid-42603088",
