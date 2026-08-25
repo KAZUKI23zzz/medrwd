@@ -9,7 +9,7 @@
  * チェックを付けるたびに選択肢が動いて非常に押しにくくなるため。
  */
 
-import type { Paper } from "@/types/paper";
+import type { ListPaper } from "@/types/paper";
 import type { ListFilterKey } from "./papers-url-state";
 
 export interface FacetOption {
@@ -19,7 +19,7 @@ export interface FacetOption {
 }
 
 /** その論文が持つ、指定ファセットの値 */
-export function facetValuesOf(paper: Paper, key: ListFilterKey): string[] {
+export function facetValuesOf(paper: ListPaper, key: ListFilterKey): string[] {
   switch (key) {
     case "dbs":
       return paper.databases_used;
@@ -40,7 +40,7 @@ export function facetValuesOf(paper: Paper, key: ListFilterKey): string[] {
  * @param passOthers そのファセット以外の条件をすべて満たすか。papers と同じ並び
  */
 export function computeFacetOptions(
-  papers: Paper[],
+  papers: ListPaper[],
   key: ListFilterKey,
   passOthers: boolean[],
 ): FacetOption[] {

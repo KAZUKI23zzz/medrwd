@@ -32,13 +32,15 @@ import {
 import {
   buildSearchIndex,
   parseSearchQuery,
+  compileTerms,
   matchesAllTerms,
+  type CompiledTerm,
 } from "@/lib/papers-search";
 import { computeFacetOptions, facetValuesOf } from "@/lib/papers-facets";
-import type { Paper } from "@/types/paper";
+import type { ListPaper } from "@/types/paper";
 
 interface PaperFiltersProps {
-  papers: Paper[];
+  papers: ListPaper[];
 }
 
 const ITEMS_PER_PAGE = 20;
@@ -179,8 +181,12 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
   // Dialog は modal のままなのに CSS(lg:hidden)で見えなくなり、
   // スクロールロックとフォーカストラップだけが残って画面が固まる。
   // （タブレットを縦から横に回したときに起きる）
+  //
+  // 幅は Tailwind の `lg` と同じ 64rem で書く。1024px と直に書くと、
+  // ブラウザの既定フォントサイズを大きくしている利用者で CSS 側の境界
+  // （rem 基準）とずれ、モバイル配置のままドロワーだけ閉じられてしまう。
   useEffect(() => {
-    const mq = window.matchMedia("(min-width: 1024px)");
+    const mq = window.matchMedia("(min-width: 64rem)");
     const closeIfDesktop = () => {
       if (mq.matches) handleDrawerOpenChange(false);
     };
@@ -332,8 +338,24 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     return { min: Math.min(...ys), max: Math.max(...ys) };
   }, [papers]);
 
-  // 正規化済みの検索対象テキストを1度だけ作る（papers と同じ並び）
-  const searchIndex = useMemo(() => buildSearchIndex(papers), [papers]);
+  // 正規化済みの検索対象テキスト（papers と同じ並び）。
+  //
+  // 全1,067件・約2MBに20本以上の正規表現を通すため、組み立てに 94ms 掛かる
+  // （Node・M系Mac の実測。低速な端末ではこの数倍）。レンダリング中に同期実行されるので、
+  // useMemo で持つと検索しない利用者にもそのぶん初回表示が遅れる。
+  // 最初に検索語が入った時点で組み立て、以後は使い回す。
+  const searchIndexCache = useRef<{
+    papers: ListPaper[];
+    index: string[];
+  } | null>(
+    null,
+  );
+  const getSearchIndex = useCallback(() => {
+    if (searchIndexCache.current?.papers !== papers) {
+      searchIndexCache.current = { papers, index: buildSearchIndex(papers) };
+    }
+    return searchIndexCache.current.index;
+  }, [papers]);
   const searchTerms = useMemo(
     () => parseSearchQuery(state.search),
     [state.search],
@@ -371,20 +393,24 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
       return { pass: passAll(), notFound: [], dropped: [] };
     }
 
-    const passFor = (terms: string[]) =>
+    // ここで初めて検索インデックスを組み立てる
+    const searchIndex = getSearchIndex();
+    const compiled = compileTerms(searchTerms);
+    const passFor = (terms: CompiledTerm[]) =>
       searchIndex.map((h) => matchesAllTerms(h, terms));
     const any = (arr: boolean[]) => arr.some(Boolean);
 
-    const full = passFor(searchTerms);
+    const full = passFor(compiled);
     if (any(full)) {
       return { pass: full, notFound: [], dropped: [] };
     }
 
-    // 1. どの論文にも出てこない語を落とす
-    const notFound = searchTerms.filter(
-      (t) => !searchIndex.some((h) => h.includes(t)),
-    );
-    let kept = searchTerms.filter((t) => !notFound.includes(t));
+    // 1. どの論文にも出てこない語を落とす。
+    //    照合は本番と同じ照合器を使うこと。ここだけ部分一致にすると、
+    //    「語境界では0件なのに『一致しませんでした』にも出てこない」語が生まれる。
+    const missing = compiled.filter((c) => !searchIndex.some(c.test));
+    const notFound = missing.map((c) => c.term);
+    let kept = compiled.filter((c) => !missing.includes(c));
     if (kept.length === 0) {
       return { pass: papers.map(() => false), notFound, dropped: [] };
     }
@@ -396,7 +422,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     // 2. まだ0件なら、後ろの語から順に落とす
     const dropped: string[] = [];
     while (kept.length > 1) {
-      dropped.unshift(kept[kept.length - 1]);
+      dropped.unshift(kept[kept.length - 1].term);
       kept = kept.slice(0, -1);
       pass = passFor(kept);
       if (any(pass)) {
@@ -404,7 +430,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
       }
     }
     return { pass: papers.map(() => false), notFound, dropped };
-  }, [papers, searchIndex, searchTerms]);
+  }, [papers, getSearchIndex, searchTerms]);
 
   const passSearch = searchOutcome.pass;
 
@@ -636,6 +662,12 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
   // 共有された URL のページ番号が現在の絞り込みでは行き過ぎている場合に空振りしないよう丸める
   const currentPage = Math.min(state.page, Math.max(1, totalPages));
+
+  // 丸めた結果は URL にも反映する。`?page=999` のまま最終ページを表示していると、
+  // そこでブックマークや共有をしたときに実際の位置が伝わらない。
+  useEffect(() => {
+    if (state.page !== currentPage) applyState({ page: currentPage });
+  }, [state.page, currentPage, applyState]);
   const paginatedPapers = filtered.slice(
     (currentPage - 1) * ITEMS_PER_PAGE,
     currentPage * ITEMS_PER_PAGE,

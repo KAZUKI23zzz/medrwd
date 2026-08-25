@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import type { ListFilterKey } from "@/lib/papers-url-state";
@@ -48,7 +48,10 @@ function CheckboxGroup({
   maxVisible,
 }: CheckboxGroupProps) {
   const [expanded, setExpanded] = useState(false);
-  const listId = `facet-${filterKey}`;
+  // サイドバーとドロワーで同じパネルを同時に描画するので、id は要素ごとに振る。
+  // `facet-dbs` のような固定値にしていた頃は、ドロワーを開くと id が5つ重複し、
+  // ドロワー内の aria-controls が非表示側（display:none のサイドバー）を指していた。
+  const listId = useId();
 
   // 折り畳んでいる間も、選択済みの値は必ず見せる。見えないところに条件が
   // 掛かっていると、絞り込まれている理由が分からなくなる。
@@ -210,6 +213,7 @@ export function PaperFilterPanel({
 
       {hasFilters && (
         <button
+          type="button"
           onClick={onClear}
           className="text-sm text-blue-600 hover:underline"
         >

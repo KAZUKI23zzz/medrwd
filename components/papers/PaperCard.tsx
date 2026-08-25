@@ -3,9 +3,9 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { QuartileBadge } from "./QuartileBadge";
 import { FavoriteButton } from "./FavoriteButton";
-import type { Paper } from "@/types/paper";
+import type { ListPaper } from "@/types/paper";
 
-export function PaperCard({ paper }: { paper: Paper }) {
+export function PaperCard({ paper }: { paper: ListPaper }) {
   const authorDisplay =
     paper.authors.length > 3
       ? `${paper.authors.slice(0, 3).join(", ")}, et al.`

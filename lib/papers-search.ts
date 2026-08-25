@@ -5,12 +5,13 @@
  *  - スペース区切りは AND（4サイトすべてが AND。Google も同じなので説明が要らない）
  *  - 二重引用符はフレーズとして扱う
  *  - 表記ゆれは検索前に吸収する（医中誌の「あいまい検索」に相当）
+ *  - 英数字の語は語境界で照合する（日本語は部分一致のまま）
  *
  * OR / NOT / 括弧・フィールド指定は今回は入れていない。知っている人だけが使う機能で、
  * フィールド指定を入れるなら将来「詳細検索」として別に用意する。
  */
 
-import type { Paper } from "@/types/paper";
+import type { ListPaper } from "@/types/paper";
 
 /**
  * 異体字。医中誌の「あいまい検索」が常に同一視している類。
@@ -61,6 +62,21 @@ const SPELLING_VARIANTS: [RegExp, string][] = [
 ];
 
 /**
+ * 複数形の s を落とす。英米綴りと同じく検索語・本文の両方に掛ける。
+ *
+ * 照合を語境界一致にした結果、cancer と cancers が別の語になってしまった
+ * （outcome 499件 → 214件、fracture 62件 → 49件、statin 11件 → 5件）。
+ *
+ * 残りが3文字以上になる語だけを対象にし、ss / us / is で終わる語は外してある。
+ * これで status・analysis・access・process はそのまま残り、was・hrs・aes・gas の
+ * ような3文字語も削られない。ASCII の語だけが対象なので日本語には影響しない。
+ *
+ * 後読み（lookbehind）を使えば素直に書けるが、Safari 16.4 未満で動かないため
+ * 「除外したい文字を1つ挟む」形にしてある。
+ */
+const PLURAL_S = /\b([a-z]{2,}?[^siu])s\b/g;
+
+/**
  * 検索用に文字列をならす。検索語・本文の両方に同じものを通すこと。
  *
  * NFKC で全角英数・機種依存文字（Ⅰ→I、㎝→cm、①→1）がまとめて片付く。
@@ -80,11 +96,13 @@ export function normalizeForSearch(text: string): string {
   // 引用符は区切り記号として扱い、語には残さない。
   // 本文側にも同じ処理を掛けるので、片方だけ消えて一致しなくなることはない。
   s = s.replace(/[\u0022\u201c\u201d]/g, " ");
+  // 複数形は、ハイフンを空白に開いたあとで落とす（`breast-cancers` も対象にするため）
+  s = s.replace(PLURAL_S, "$1");
   return s.replace(/\s+/g, " ").trim();
 }
 
 /** 1件ぶんの検索対象テキストを1本につなぐ */
-function buildHaystack(paper: Paper): string {
+function buildHaystack(paper: ListPaper): string {
   return [
     paper.title,
     paper.title_ja ?? "",
@@ -112,7 +130,7 @@ function buildHaystack(paper: Paper): string {
  * 以前は絞り込みのたびに全件ぶんの文字列を組み立て直しており、
  * 打鍵1回あたり 8.1ms 掛かっていた。1度だけ作って使い回すと 2.3ms になる。
  */
-export function buildSearchIndex(papers: Paper[]): string[] {
+export function buildSearchIndex(papers: ListPaper[]): string[] {
   return papers.map((p) => normalizeForSearch(buildHaystack(p)));
 }
 
@@ -145,7 +163,57 @@ export function parseSearchQuery(query: string): string[] {
   return terms;
 }
 
-/** すべての検索語を含むか（AND） */
-export function matchesAllTerms(haystack: string, terms: string[]): boolean {
-  return terms.every((t) => haystack.includes(t));
+/**
+ * 英数字だけの語かどうか。フレーズ（引用符でくくった語）は空白を含むので許している。
+ */
+const ASCII_TERM = /^[a-z0-9]+(?: [a-z0-9]+)*$/;
+
+/**
+ * 正規表現の特殊文字を打ち消す。
+ *
+ * 現状 ASCII_TERM を通った語には特殊文字が含まれないので、この関数は実質何もしない。
+ * それでも挟んでいるのは、`new RegExp` が構文エラーで**例外を投げる**ため。
+ * 括弧が閉じていない語がここへ届くと、レンダリング中に throw して画面全体が落ちる。
+ * ASCII_TERM を広げるときに気づけなくても、被害が出ないようにしておく。
+ */
+function escapeRegExp(text: string): string {
+  return text.replace(/[.*+?^${}()|[\]\\]/g, (c) => "\\" + c);
+}
+
+/** 語ごとに1度だけ組み立てた照合器 */
+export interface CompiledTerm {
+  /** 正規化後の語。緩和したことを画面で伝えるのに使う */
+  term: string;
+  test: (haystack: string) => boolean;
+}
+
+/**
+ * 検索語を照合器に変換する。全件ぶん回す前に1度だけ呼ぶこと。
+ *
+ * 英数字の語は語境界で照合する。以前は本文にその文字列が含まれるかだけを見ており、
+ * 医学の2〜3文字略語がほぼ全件に一致していた（MI 1,034件・RA 1,065件・OS 1,048件。
+ * ICU 260件のうち実際に ICU を含むのは30件で、残りは particular などに当たっていた）。
+ * 0件のときしか緩和通知を出さないので、利用者からは「絞り込みが効かなかった」
+ * ようにしか見えなかった。
+ *
+ * 日本語は語境界を取れない（\b は ASCII の語構成文字を前提にしている）ため、
+ * 従来どおり部分一致で照合する。「心不全」で「急性心不全」に当てたいので、
+ * 日本語についてはそちらの方が望ましい。
+ */
+export function compileTerms(terms: string[]): CompiledTerm[] {
+  return terms.map((term) => {
+    if (!ASCII_TERM.test(term)) {
+      return { term, test: (haystack: string) => haystack.includes(term) };
+    }
+    const pattern = new RegExp(`\\b${escapeRegExp(term)}\\b`);
+    return { term, test: (haystack: string) => pattern.test(haystack) };
+  });
+}
+
+/** すべての検索語に一致するか（AND） */
+export function matchesAllTerms(
+  haystack: string,
+  compiled: CompiledTerm[],
+): boolean {
+  return compiled.every((c) => c.test(haystack));
 }

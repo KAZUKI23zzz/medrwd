@@ -323,7 +323,7 @@ score = BM25コサイン(英語 title×3 + abstract)
 ### 転送量への影響はゼロ
 
 詳細ページはサーバコンポーネントなので、関連研究はビルド時にHTMLへ焼き込まれる。
-既知の課題2（`/papers` 一覧が728KB）には影響しない。
+既知の課題2（`/papers` 一覧が728KB。当時の値）には影響しない。
 
 ## 採用しなかった案
 
@@ -423,38 +423,67 @@ singleton形式は課金対象外で、残高が尽きていても200を返す�
 polite pool 用の `mailto` は環境変数 `OPENALEX_MAILTO` から渡す。
 以前はダミーの `rwd-catalog@example.com` が埋め込まれていた。
 
-## 未修正の既知バグ（トークナイザ）
+## 既知バグ（トークナイザ）
 
-コードレビューで出た2件。**どちらも直せば再現率が上がるはずだが、直すと順位が変わる**ため、
-ブラインド評価で測り直すまでこのままにしてある。次に手を入れるならここ。
+コードレビューで出た2件。**1は一部修正済み、2は未修正。**
 
-### 1. `stem()` に最短長のガードが無い
+### 1. `stem()` に最短長のガードが無い → 一部修正済み（2026-08-25）
 
-`(ing|ed)$` を無条件に落とすので、同じ語が別のトークンに割れる。
+`(ing|ed)$` を無条件に落とすので、同じ語が別のトークンに割れていた。
+
+**直した部分**
+
+- **語尾を落とすのは残りが3文字以上のときだけ**にした。以前は
+  `bed`/`beds`→"b"、`ring`/`rings`→"r"、`hrs`→"hr"、`los`→"lo"、`aes`→"ae" と潰れ、
+  3文字未満は `tokenize` が捨てるので索引から消えていた。
+  実測で **116種・延べ7,363回が消失 → 0**。DPC研究の「病床」、ハザード比(hrs)、
+  在院日数(los)、有害事象(aes) が該当する。
+- **`-eed` で終わる語を除外**した（Porter step 1b と同じ）。これが無いと
+  `bleeding`→"bleed" と `bleed`→"ble" が割れる。出血は抗凝固薬の安全性研究の
+  中心的な語なので、割れると近傍の質に響く。
+  `bleed`/`bleeds`/`bleeding`、`feed` 系、`need` 系、`exceed` 系がまとまった。
+
+関連件数の分布は修正前後でほぼ不変（5件表示 821→818件、0件 16→19件）。
+**順位が良くなったかは測っていない。**
+
+**直していない部分（語尾の e の復元）**
 
 | 語 | ステム | 語 | ステム | 一致するか |
 |---|---|---|---|---|
-| bleeding | bleed | bleed | ble | ✕ |
 | dosing | dos | dose | dose | ✕ |
 | imaging | imag | image | image | ✕ |
 | staging | stag | stage | stage | ✕ |
 | based | bas | base | base | ✕ |
-| aging / aged | ag（2文字で捨てられる） | — | — | ✕ |
+| aging | aging | aged | aged | ✕（消えはしなくなったが別トークン） |
 
-「post-operative bleeding」の論文と「major bleeds」の論文が1語も共有しない。
-機能の主信号が本文類似度なので、これは直接の取りこぼしになる。
-直すなら「落とした結果が4文字未満なら落とさない」＋語尾の e の復元。
+Porter step 1b の「cvc で終わるなら e を足す」を入れれば上4行は直る
+（`dos`→`dose`、`imag`→`image`）。ただし `increased`→"increas" と
+`increase` の分裂は Porter でも残る。**順位が変わるので、ブラインド評価とセットで。**
 
-### 2. `tokenize()` が `normalizeForSearch()` を使っていない
+**新たに見つかった同種の問題（未修正）**
 
-検索側（`lib/papers-search.ts`）は既に英米綴りを吸収している
-（haem→hem / oesophag→esophag / paediatr→pediatr / tumour→tumor / ischaem→ischem）
+複数形規則 `([^s])s$` が `-sis` / `-us` で終わる**単数形**も削っている。
+`analysis`→"analysi"（1,037回）、`diagnosis`→"diagnosi"（469回）、
+`status`→"statu"（148回）、`osteoporosis`/`dialysis`/`prognosis`/`thrombosis`/
+`sepsis`/`colitis` など **289種・延べ5,725回**。
+
+全論文が同じ処理を通るので**取りこぼしは生まれない**。実害は
+`focus`→"focu" と `focused`→"focus" のような語族の分裂だけ。
+`([^s])s$` を `([^siu])s$` にすれば直る（`lib/papers-search.ts` の
+`PLURAL_S` は同じ理由で `[^siu]` にしてある）。これも順位が変わる。
+
+### 2. `tokenize()` が `normalizeForSearch()` を使っていない → 未修正
+
+検索側（`lib/papers-search.ts`）は英米綴りや異体字を正規化して照合している
 のに、関連研究のトークナイザは自前の小文字化＋分割しかしていない。
 
 コーパス実測: tumour 7 対 tumor 40 / oesophag 6 対 esophag 32 /
 ischaemi 6 対 ischemi 25 / paediatric 4 対 pediatric 40 / randomised 1 対 randomized 11。
 `randomised` は `MIN_DF = 3` でそもそも捨てられる。
 `normalizeForSearch` を再利用すれば済む。
+
+なお `normalizeForSearch` には 2026-08-25 に複数形吸収（`PLURAL_S`）が入った。
+2 を直すと、その規則も関連研究側に効く。
 
 ## 検証の勘所（再確認するとき）
 

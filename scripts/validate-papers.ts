@@ -143,8 +143,17 @@ function main() {
     // 絞り込み値にカンマが入るとURLで壊れる。
     // 複数選択は `?db=A&db=B` を使うが、古い `?db=A,B` 形式も読めるようにしてある
     // 都合で、値そのもののカンマが2つの条件に割れてしまう（該当0件になる）。
-    // databases.json の paper_tag には同じ理由でガードが入っている。
-    for (const field of ["research_categories", "analysis_methods", "study_design"]) {
+    //
+    // databases_used を必ず含めること。`?db=` の絞り込み値を実際に供給しているのは
+    // このフィールド（lib/papers-facets.ts の facetValuesOf）で、しかも Routine(LLM) が
+    // 書き込む。databases.json の paper_tag 側のガードは、そこに載っていない
+    // 新しいDB名を捕まえられない。
+    for (const field of [
+      "databases_used",
+      "research_categories",
+      "analysis_methods",
+      "study_design",
+    ]) {
       const value = paper[field];
       const values = Array.isArray(value) ? value : [value];
       for (const v of values) {

@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import { getPapers } from "@/lib/data-loader";
+import type { ListPaper } from "@/types/paper";
 import { PaperFilters } from "@/components/papers/PaperFilters";
 
 export const metadata = {
@@ -21,16 +22,48 @@ function PaperFiltersFallback() {
 }
 
 export default function PapersPage() {
-  // 一覧は全論文をクライアントに渡して絞り込むため、1件あたりの重さがそのまま
-  // 初回表示の転送量になる（既知の課題: brotli後 約720KB）。
-  // openalex_topic_score / openalex_field は一覧では表示にも検索にも使わないので落とす。
-  // openalex_subfield はバッジと絞り込みに、openalex_topic は検索に使うので残す。
-  const papers = getPapers().map((paper) => {
-    const { openalex_topic_score, openalex_field, ...rest } = paper;
-    void openalex_topic_score;
-    void openalex_field;
-    return rest;
-  });
+  // 一覧は全論文をクライアントへ渡して絞り込む作りなので、1件あたりの重さが
+  // そのまま初回表示の転送量になる。一覧が実際に使うフィールドだけを写し取る。
+  //
+  // キャストを使わず1つずつ書き写しているのは、TypeScript に過不足を検査させるため。
+  // 返り値に型注釈を付けてあるので、必須フィールドの書き忘れも、ListPaper に無い
+  // フィールドの書き足しも、どちらもビルドが落ちる（実際に両方試して確認済み）。
+  //
+  // ただし省略可能なフィールド（title_ja / abstract_ja / openalex_subfield /
+  // openalex_topic）の書き忘れは型では捕まらない。消すと検索や表示から黙って
+  // 抜けるので、この4つを触るときは実際の画面で確かめること。
+  //
+  // ここに無いフィールドは配信されない。落としている主なもの:
+  //  - mesh_terms: 生JSONで147KBと最大だが、詳細ページでしか表示していない。
+  //    検索対象からも意図的に外してある（lib/papers-search.ts のコメント参照）
+  //  - journal_issn / collected_at / medline_status / last_updated /
+  //    auto_detected / classified / openalex_topic_score / openalex_field:
+  //    一覧のどこからも参照していない
+  //
+  // データ側からは消さない。詳細ページ・About の権利表記・将来の軸で使う。
+  // 全部落として brotli 後 736KB → 705KB。
+  const papers: ListPaper[] = getPapers().map((paper): ListPaper => ({
+    id: paper.id,
+    pubmed_id: paper.pubmed_id,
+    doi: paper.doi,
+    title: paper.title,
+    title_ja: paper.title_ja,
+    abstract: paper.abstract,
+    abstract_ja: paper.abstract_ja,
+    authors: paper.authors,
+    journal: paper.journal,
+    year: paper.year,
+    publication_date: paper.publication_date,
+    databases_used: paper.databases_used,
+    additional_data_sources: paper.additional_data_sources,
+    study_design: paper.study_design,
+    analysis_methods: paper.analysis_methods,
+    research_categories: paper.research_categories,
+    impact_factor: paper.impact_factor,
+    sjr_quartile: paper.sjr_quartile,
+    openalex_subfield: paper.openalex_subfield,
+    openalex_topic: paper.openalex_topic,
+  }));
 
   return (
     <div className="space-y-6">

@@ -2,13 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-
-const navItems = [
-  { href: "/", label: "ダッシュボード" },
-  { href: "/papers", label: "研究カタログ" },
-  { href: "/databases", label: "DB一覧" },
-  { href: "/about", label: "About" },
-];
+import { NAV_ITEMS } from "@/lib/nav-items";
 
 const MENU_ID = "mobile-nav-menu";
 
@@ -91,7 +85,7 @@ export function MobileNav() {
           className="absolute left-0 top-14 z-50 w-full border-b bg-background p-4 shadow-lg md:hidden"
         >
           <div className="flex flex-col gap-1">
-            {navItems.map((item) => (
+            {NAV_ITEMS.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
