@@ -104,13 +104,34 @@ const STOP_WORDS = new Set(
     .filter(Boolean),
 );
 
-/** 語尾のゆれを吸収する簡易ステマー。Porter相当は依存が増えるので入れない */
+/**
+ * 語尾のゆれを吸収する簡易ステマー。Porter相当は依存が増えるので入れない。
+ *
+ * 語尾を落とすのは、残りが3文字以上になる場合だけ。無条件に落としていた頃は
+ * bed/beds→"b"、ring/rings→"r"、hrs→"hr"、los→"lo"、aes→"ae" のように潰れており、
+ * 3文字未満は tokenize が捨てるので索引から消えていた。実データで延べ7,363回。
+ * DPC研究の「病床」、ハザード比(hrs)、在院日数(los)、有害事象(aes)が該当する。
+ *
+ * -eed で終わる語（bleed / feed / need / exceed / breed …）は落とさない。Porter の
+ * step 1b と同じ扱いで、これが無いと bleeding→"bleed" と bleed→"ble" が別語に割れる。
+ * 出血は抗凝固薬の安全性研究の中心的な語なので、割れると近傍の質に響く。
+ *
+ * 既知の残り: 複数形規則が -sis / -us で終わる単数形も削っている
+ * （analysis→"analysi"、osteoporosis→"osteoporosi"、status→"statu" 等。
+ * 289種・延べ5,725回）。全論文が同じ処理を通るので取りこぼしは生まれず、
+ * 実害は focus→"focu" と focused→"focus" のような語族の分裂だけ。
+ * `([^s])s$` を `([^siu])s$` にすれば直るが、近傍の質が上がるかは
+ * ブラインド評価（docs/related-papers.md の手順）で測ってからにすること。
+ */
 function stem(word: string): string {
-  return word
+  const plural = word
     .replace(/(ies)$/, "y")
     .replace(/(sses|shes|ches|xes)$/, (m) => m.slice(0, -2))
-    .replace(/([^s])s$/, "$1")
-    .replace(/(ing|ed)$/, "");
+    .replace(/([^s])s$/, "$1");
+  const base = plural.length >= 3 ? plural : word;
+  if (/eed$/.test(base)) return base;
+  const trimmed = base.replace(/(ing|ed)$/, "");
+  return trimmed.length >= 3 ? trimmed : base;
 }
 
 /**

@@ -26,8 +26,9 @@ Next.js 16 (Static Export) / TypeScript / Tailwind CSS v4 + shadcn/ui v4 / JSON�
 | `docs/related-papers.md` | 関連研究の設計判断・ブラインド評価の結果・不採用案の記録 |
 | `lib/related-papers.ts` | 関連研究の算出（英語本文のBM25コサイン＋タグ加点、ビルド時計算） |
 | `lib/papers-url-state.ts` | 研究カタログの絞り込み状態 ⇄ URLクエリの変換 |
-| `lib/papers-search.ts` | キーワード検索（スペース区切り＝AND、表記ゆれ正規化） |
+| `lib/papers-search.ts` | キーワード検索（スペース区切り＝AND、表記ゆれ正規化、英数字は語境界一致） |
 | `lib/favorites.ts` | お気に入り（localStorage のみ。サーバ・アカウント不要） |
+| `lib/nav-items.ts` | ヘッダーのナビ項目（デスクトップ・モバイルで共有） |
 
 ## よく使うコマンド
 
@@ -60,8 +61,9 @@ OpenAlex の primary_topic（CC0・singletonは課金対象外）から `openale
 ## 既知の課題
 
 1. （解消）~~Google Translate無料EP~~ → 翻訳・要約はRoutine(LLM)に移管し廃止。
-2. `/papers` の初回表示が重い（brotli後 723KB）。全件の抄録を載せているため。
-   検索精度とのトレードオフで現状維持と判断。
+2. `/papers` の初回表示が重い（brotli後 705KB）。全件の抄録を載せているため
+   （抄録だけで生JSONの58%）。検索精度とのトレードオフで現状維持と判断。
+   一覧で使わないフィールド9つは `app/papers/page.tsx` で落としてある（736KB→705KB）。
 3. （解消）~~詳細ページの「関連研究」が実質「同じDBの最新5件」~~ → 本文ベースの
    類似度（BM25＋タグ加点）に置き換え済み。`lib/related-papers.ts`。
    経緯とブラインド評価の結果は `docs/related-papers.md`。

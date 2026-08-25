@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import { MobileNav } from "@/components/MobileNav";
+import { NAV_ITEMS } from "@/lib/nav-items";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -38,13 +39,6 @@ export const metadata: Metadata = {
   },
 };
 
-const navItems = [
-  { href: "/", label: "ダッシュボード" },
-  { href: "/papers", label: "研究カタログ" },
-  { href: "/databases", label: "DB一覧" },
-  { href: "/about", label: "About" },
-];
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -61,7 +55,7 @@ export default function RootLayout({
               医療RWD研究カタログ
             </Link>
             <nav aria-label="メインメニュー" className="hidden gap-1 md:flex">
-              {navItems.map((item) => (
+              {NAV_ITEMS.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}

@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import {
   DATABASE_TYPE_LABEL,
+  DATABASE_TYPE_VARIANT,
   DATABASE_TYPE_DESCRIPTION,
 } from "@/types/database";
 
@@ -45,7 +46,7 @@ export default function DatabasesPage() {
       <section>
         <h2 className="mb-1 text-xl font-semibold">
           公的データベース
-          <Badge variant="default" className="ml-2">
+          <Badge variant={DATABASE_TYPE_VARIANT.public} className="ml-2">
             {publicDbs.length}
           </Badge>
         </h2>
@@ -69,7 +70,7 @@ export default function DatabasesPage() {
       <section>
         <h2 className="mb-1 text-xl font-semibold">
           民間データベース
-          <Badge variant="secondary" className="ml-2">
+          <Badge variant={DATABASE_TYPE_VARIANT.private} className="ml-2">
             {privateDbs.length}
           </Badge>
         </h2>
@@ -151,7 +152,7 @@ export default function DatabasesPage() {
                   <td className="px-3 py-2 font-medium">{db.name}</td>
                   <td className="px-3 py-2">
                     <Badge
-                      variant={db.type === "public" ? "default" : "secondary"}
+                      variant={DATABASE_TYPE_VARIANT[db.type]}
                       className="text-xs"
                     >
                       {DATABASE_TYPE_LABEL[db.type]}
