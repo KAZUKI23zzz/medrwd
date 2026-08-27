@@ -1,0 +1,1831 @@
+{
+  "_readme": [
+    "OpenAlex の primary_topic を、日本の診療科に沿った「診療分野」へ写像する辞書。",
+    "openalex_subfield は OpenAlex 側のタクソノミが誤っており（胃癌→呼吸器など）、",
+    "かつ単一ラベルしか持てないため、絞り込み軸としても重み付けとしても使わない。",
+    "",
+    "方針:",
+    "  - がんは臓器に寄せる（胃癌→消化器）。「腫瘍」という分野は作らない。",
+    "  - 内科・外科は分けない（トピック名から判別できないため）。",
+    "  - 1トピックに複数の分野を許す（例: 妊娠中の循環器疾患→産婦人科＋循環器）。",
+    "  - 診療分野に落ちないトピック（薬剤疫学・医療政策・統計手法など）は空配列にする。",
+    "    絞り込みにも出ず、関連研究の加点も付かない。",
+    "",
+    "新しいトピックが増えたら（週1〜2種）ここに追記する。未登録は空配列と同じ扱い。",
+    "分類の裏取りには、そのトピックを持つ論文の MeSH 頻出語を使うとよい。"
+  ],
+  "areas": [
+    "循環器",
+    "呼吸器",
+    "消化器",
+    "腎臓",
+    "泌尿器",
+    "内分泌・代謝",
+    "血液",
+    "脳神経",
+    "精神科",
+    "整形外科",
+    "皮膚科",
+    "眼科",
+    "耳鼻咽喉科",
+    "産婦人科",
+    "小児科",
+    "乳腺",
+    "感染症",
+    "膠原病・リウマチ",
+    "老年医学",
+    "救急・集中治療",
+    "麻酔科・疼痛",
+    "歯科口腔",
+    "リハビリテーション",
+    "放射線科",
+    "形成外科"
+  ],
+  "topics": {
+    "Abdominal Trauma and Injuries": [
+      "救急・集中治療",
+      "消化器"
+    ],
+    "Abdominal vascular conditions and treatments": [
+      "循環器",
+      "消化器"
+    ],
+    "Academic integrity and plagiarism": [],
+    "Acne and Rosacea Treatments and Effects": [
+      "皮膚科"
+    ],
+    "Acute Ischemic Stroke Management": [
+      "脳神経"
+    ],
+    "Acute Kidney Injury Research": [
+      "腎臓"
+    ],
+    "Acute Lymphoblastic Leukemia research": [
+      "血液"
+    ],
+    "Acute Myeloid Leukemia Research": [
+      "血液"
+    ],
+    "Acute Myocardial Infarction Research": [
+      "循環器"
+    ],
+    "Adenosine and Purinergic Signaling": [],
+    "Adipokines, Inflammation, and Metabolic Diseases": [
+      "内分泌・代謝"
+    ],
+    "Adolescent and Pediatric Healthcare": [
+      "小児科"
+    ],
+    "Adrenal and Paraganglionic Tumors": [
+      "内分泌・代謝"
+    ],
+    "Adrenal Hormones and Disorders": [
+      "内分泌・代謝"
+    ],
+    "Advanced Biosensing Techniques and Applications": [],
+    "Advanced Breast Cancer Therapies": [
+      "乳腺"
+    ],
+    "Advanced Causal Inference Techniques": [],
+    "Advanced Chemical Sensor Technologies": [],
+    "Advanced Radiotherapy Techniques": [
+      "放射線科"
+    ],
+    "Advanced Statistical Methods and Models": [],
+    "Advanced Statistical Process Monitoring": [],
+    "Advances in Oncology and Radiotherapy": [
+      "放射線科"
+    ],
+    "Agriculture and Farm Safety": [],
+    "AI in cancer detection": [],
+    "Air Quality and Health Impacts": [],
+    "Airway Management and Intubation Techniques": [
+      "麻酔科・疼痛",
+      "救急・集中治療"
+    ],
+    "Alcohol Consumption and Health Effects": [
+      "精神科"
+    ],
+    "Alcoholism and Thiamine Deficiency": [
+      "精神科"
+    ],
+    "Alkaloids: synthesis and pharmacology": [],
+    "Allergic Rhinitis and Sensitization": [
+      "耳鼻咽喉科"
+    ],
+    "Alzheimer's disease research and treatments": [
+      "脳神経",
+      "老年医学"
+    ],
+    "Amyloidosis: Diagnosis, Treatment, Outcomes": [
+      "血液"
+    ],
+    "Amyotrophic Lateral Sclerosis Research": [
+      "脳神経"
+    ],
+    "Analytical Methods in Pharmaceuticals": [],
+    "Anesthesia and Neurotoxicity Research": [
+      "麻酔科・疼痛"
+    ],
+    "Anesthesia and Pain Management": [
+      "麻酔科・疼痛"
+    ],
+    "Anesthesia and Sedative Agents": [
+      "麻酔科・疼痛"
+    ],
+    "Angiogenesis and VEGF in Cancer": [],
+    "Animal health and immunology": [],
+    "Anorectal Disease Treatments and Outcomes": [
+      "消化器"
+    ],
+    "Antibiotic Resistance in Bacteria": [
+      "感染症"
+    ],
+    "Antibiotic Use and Resistance": [
+      "感染症"
+    ],
+    "Antibiotics Pharmacokinetics and Efficacy": [
+      "感染症"
+    ],
+    "Antifungal resistance and susceptibility": [
+      "感染症"
+    ],
+    "Antimicrobial Resistance in Staphylococcus": [
+      "感染症"
+    ],
+    "Antioxidant Activity and Oxidative Stress": [],
+    "Antiplatelet Therapy and Cardiovascular Diseases": [
+      "循環器"
+    ],
+    "Anxiety, Depression, Psychometrics, Treatment, Cognitive Processes": [
+      "精神科"
+    ],
+    "Aortic aneurysm repair treatments": [
+      "循環器"
+    ],
+    "Aortic Disease and Treatment Approaches": [
+      "循環器"
+    ],
+    "Aortic Thrombus and Embolism": [
+      "循環器"
+    ],
+    "Appendicitis Diagnosis and Management": [
+      "消化器"
+    ],
+    "Artificial Intelligence in Healthcare": [],
+    "Artificial Intelligence in Healthcare and Education": [],
+    "Assistive Technology in Communication and Mobility": [
+      "リハビリテーション"
+    ],
+    "Asthma and respiratory diseases": [
+      "呼吸器"
+    ],
+    "Atherosclerosis and Cardiovascular Diseases": [
+      "循環器"
+    ],
+    "Atmospheric Ozone and Climate": [],
+    "Atrial Fibrillation Management and Outcomes": [
+      "循環器"
+    ],
+    "Attention Deficit Hyperactivity Disorder": [
+      "精神科",
+      "小児科"
+    ],
+    "Autoimmune and Inflammatory Disorders": [
+      "膠原病・リウマチ"
+    ],
+    "Autoimmune and Inflammatory Disorders Research": [
+      "膠原病・リウマチ"
+    ],
+    "Autoimmune Bullous Skin Diseases": [
+      "皮膚科"
+    ],
+    "Autoimmune Neurological Disorders and Treatments": [
+      "脳神経"
+    ],
+    "Automotive and Human Injury Biomechanics": [],
+    "Bacterial Identification and Susceptibility Testing": [
+      "感染症"
+    ],
+    "Bacterial Infections and Vaccines": [
+      "感染症"
+    ],
+    "Balance, Gait, and Falls Prevention": [
+      "リハビリテーション",
+      "老年医学"
+    ],
+    "Bariatric Surgery and Outcomes": [
+      "内分泌・代謝",
+      "消化器"
+    ],
+    "Barrier Structure and Function Studies": [],
+    "Biliary and Gastrointestinal Fistulas": [
+      "消化器"
+    ],
+    "Biochemical Analysis and Sensing Techniques": [],
+    "Biomedical Text Mining and Ontologies": [],
+    "Biosimilars and Bioanalytical Methods": [],
+    "Bipolar Disorder and Treatment": [
+      "精神科"
+    ],
+    "Birth, Development, and Health": [
+      "産婦人科",
+      "小児科"
+    ],
+    "Bladder and Urothelial Cancer Treatments": [
+      "泌尿器"
+    ],
+    "Blood Coagulation and Thrombosis Mechanisms": [
+      "血液"
+    ],
+    "Blood disorders and treatments": [
+      "血液"
+    ],
+    "Blood donation and transfusion practices": [
+      "血液"
+    ],
+    "Blood Pressure and Hypertension Studies": [
+      "循環器"
+    ],
+    "Blood transfusion and management": [
+      "血液"
+    ],
+    "Body Composition Measurement Techniques": [],
+    "Bone and Joint Diseases": [
+      "整形外科"
+    ],
+    "Bone fractures and treatments": [
+      "整形外科"
+    ],
+    "Bone health and osteoporosis research": [
+      "整形外科"
+    ],
+    "Bone health and treatments": [
+      "整形外科"
+    ],
+    "Bone Metabolism and Diseases": [
+      "整形外科"
+    ],
+    "Bone Tumor Diagnosis and Treatments": [
+      "整形外科"
+    ],
+    "Botulinum Toxin and Related Neurological Disorders": [
+      "脳神経"
+    ],
+    "Brain Metastases and Treatment": [
+      "脳神経"
+    ],
+    "Breast Cancer Treatment Studies": [
+      "乳腺"
+    ],
+    "Breast Implant and Reconstruction": [
+      "乳腺",
+      "形成外科"
+    ],
+    "Breast Lesions and Carcinomas": [
+      "乳腺"
+    ],
+    "Burn Injury Management and Outcomes": [
+      "形成外科",
+      "救急・集中治療"
+    ],
+    "Cancer and Skin Lesions": [
+      "皮膚科"
+    ],
+    "Cancer Genomics and Diagnostics": [],
+    "Cancer Immunotherapy and Biomarkers": [],
+    "Cancer Risks and Factors": [],
+    "Cancer survivorship and care": [],
+    "Cancer therapeutics and mechanisms": [],
+    "Cancer Treatment and Pharmacology": [],
+    "Cancer, Hypoxia, and Metabolism": [],
+    "Cancer, Lipids, and Metabolism": [],
+    "Cancer, Stress, Anesthesia, and Immune Response": [
+      "麻酔科・疼痛"
+    ],
+    "Cancer-related cognitive impairment studies": [],
+    "Cancer-related Molecular Pathways": [],
+    "CAR-T cell therapy research": [
+      "血液"
+    ],
+    "Cardiac and Coronary Surgery Techniques": [
+      "循環器"
+    ],
+    "Cardiac Arrest and Resuscitation": [
+      "救急・集中治療",
+      "循環器"
+    ],
+    "Cardiac Arrhythmias and Treatments": [
+      "循環器"
+    ],
+    "Cardiac electrophysiology and arrhythmias": [
+      "循環器"
+    ],
+    "Cardiac Fibrosis and Remodeling": [
+      "循環器"
+    ],
+    "Cardiac Health and Mental Health": [
+      "循環器",
+      "精神科"
+    ],
+    "Cardiac Imaging and Diagnostics": [
+      "循環器",
+      "放射線科"
+    ],
+    "Cardiac Ischemia and Reperfusion": [
+      "循環器"
+    ],
+    "Cardiac pacing and defibrillation studies": [
+      "循環器"
+    ],
+    "Cardiac Structural Anomalies and Repair": [
+      "循環器"
+    ],
+    "Cardiac tumors and thrombi": [
+      "循環器"
+    ],
+    "Cardiac Valve Diseases and Treatments": [
+      "循環器"
+    ],
+    "Cardiac, Anesthesia and Surgical Outcomes": [
+      "麻酔科・疼痛",
+      "循環器"
+    ],
+    "Cardiomyopathy and Myosin Studies": [
+      "循環器"
+    ],
+    "Cardiovascular and Diving-Related Complications": [
+      "循環器"
+    ],
+    "Cardiovascular and exercise physiology": [
+      "循環器",
+      "リハビリテーション"
+    ],
+    "Cardiovascular Conditions and Treatments": [
+      "循環器"
+    ],
+    "Cardiovascular Disease and Adiposity": [
+      "循環器",
+      "内分泌・代謝"
+    ],
+    "Cardiovascular Function and Risk Factors": [
+      "循環器"
+    ],
+    "Cardiovascular Health and Disease Prevention": [
+      "循環器"
+    ],
+    "Cardiovascular Health and Risk Factors": [
+      "循環器"
+    ],
+    "Cardiovascular Issues in Pregnancy": [
+      "産婦人科",
+      "循環器"
+    ],
+    "Cardiovascular Syncope and Autonomic Disorders": [
+      "循環器",
+      "脳神経"
+    ],
+    "Celiac Disease Research and Management": [
+      "消化器"
+    ],
+    "Central Venous Catheters and Hemodialysis": [
+      "腎臓"
+    ],
+    "Cerebrovascular and Carotid Artery Diseases": [
+      "脳神経"
+    ],
+    "Cervical and Thoracic Myelopathy": [
+      "整形外科",
+      "脳神経"
+    ],
+    "Cervical Cancer and HPV Research": [
+      "産婦人科"
+    ],
+    "Chemokine receptors and signaling": [],
+    "Chemotherapy-induced cardiotoxicity and mitigation": [
+      "循環器"
+    ],
+    "Chemotherapy-induced organ toxicity mitigation": [],
+    "Chemotherapy-related skin toxicity": [
+      "皮膚科"
+    ],
+    "Child Abuse and Related Trauma": [
+      "小児科"
+    ],
+    "Child Abuse and Trauma": [
+      "小児科"
+    ],
+    "Child and Adolescent Health": [
+      "小児科"
+    ],
+    "Child and Adolescent Psychosocial and Emotional Development": [
+      "小児科",
+      "精神科"
+    ],
+    "Childhood Cancer Survivors' Quality of Life": [
+      "小児科"
+    ],
+    "Cholangiocarcinoma and Gallbladder Cancer Studies": [
+      "消化器"
+    ],
+    "Cholinesterase and Neurodegenerative Diseases": [
+      "脳神経"
+    ],
+    "Chronic Disease Management Strategies": [],
+    "Chronic Kidney Disease and Diabetes": [
+      "腎臓",
+      "内分泌・代謝"
+    ],
+    "Chronic Lymphocytic Leukemia Research": [
+      "血液"
+    ],
+    "Chronic Myeloid Leukemia Treatments": [
+      "血液"
+    ],
+    "Chronic Obstructive Pulmonary Disease (COPD) Research": [
+      "呼吸器"
+    ],
+    "Circadian rhythm and melatonin": [
+      "脳神経"
+    ],
+    "Cleft Lip and Palate Research": [
+      "形成外科",
+      "歯科口腔"
+    ],
+    "Climate Change and Health Impacts": [],
+    "Clinical Nutrition and Gastroenterology": [
+      "消化器"
+    ],
+    "Clinical practice guidelines implementation": [],
+    "Clinical Reasoning and Diagnostic Skills": [],
+    "Clostridium difficile and Clostridium perfringens research": [
+      "感染症"
+    ],
+    "CNS Lymphoma Diagnosis and Treatment": [
+      "脳神経",
+      "血液"
+    ],
+    "Coagulation, Bradykinin, Polyphosphates, and Angioedema": [
+      "血液"
+    ],
+    "Coffee research and impacts": [],
+    "Colorectal Cancer Screening and Detection": [
+      "消化器"
+    ],
+    "Colorectal Cancer Surgical Treatments": [
+      "消化器"
+    ],
+    "Colorectal Cancer Treatments and Studies": [
+      "消化器"
+    ],
+    "Complement system in diseases": [
+      "血液"
+    ],
+    "Complementary and Alternative Medicine Studies": [],
+    "Computational Drug Discovery Methods": [],
+    "Congenital Anomalies and Fetal Surgery": [
+      "産婦人科",
+      "小児科"
+    ],
+    "Congenital Diaphragmatic Hernia Studies": [
+      "小児科"
+    ],
+    "Congenital gastrointestinal and neural anomalies": [
+      "小児科",
+      "消化器"
+    ],
+    "Congenital heart defects research": [
+      "循環器",
+      "小児科"
+    ],
+    "Congenital Heart Disease Studies": [
+      "循環器",
+      "小児科"
+    ],
+    "Connective tissue disorders research": [
+      "膠原病・リウマチ"
+    ],
+    "Connexins and lens biology": [
+      "眼科"
+    ],
+    "Consumer Attitudes and Food Labeling": [],
+    "Contact Dermatitis and Allergies": [
+      "皮膚科"
+    ],
+    "Corneal surgery and disorders": [
+      "眼科"
+    ],
+    "Coronary Interventions and Diagnostics": [
+      "循環器"
+    ],
+    "COVID-19 and healthcare impacts": [
+      "感染症"
+    ],
+    "COVID-19 and Mental Health": [
+      "精神科",
+      "感染症"
+    ],
+    "COVID-19 Clinical Research Studies": [
+      "感染症"
+    ],
+    "COVID-19 epidemiological studies": [
+      "感染症"
+    ],
+    "COVID-19 impact on air quality": [],
+    "COVID-19 Impact on Reproduction": [
+      "産婦人科",
+      "感染症"
+    ],
+    "Craniofacial Disorders and Treatments": [
+      "形成外科"
+    ],
+    "Cutaneous lymphoproliferative disorders research": [
+      "皮膚科",
+      "血液"
+    ],
+    "Cystic Fibrosis Research Advances": [
+      "呼吸器"
+    ],
+    "Cytomegalovirus and herpesvirus research": [
+      "感染症"
+    ],
+    "Data-Driven Disease Surveillance": [],
+    "Delphi Technique in Research": [],
+    "Dementia and Cognitive Impairment Research": [
+      "脳神経",
+      "老年医学"
+    ],
+    "Dental Anxiety and Anesthesia Techniques": [
+      "歯科口腔"
+    ],
+    "Dental Education, Practice, Research": [
+      "歯科口腔"
+    ],
+    "Dental Erosion and Treatment": [
+      "歯科口腔"
+    ],
+    "Dental Health and Care Utilization": [
+      "歯科口腔"
+    ],
+    "Dental Implant Techniques and Outcomes": [
+      "歯科口腔"
+    ],
+    "Dental Radiography and Imaging": [
+      "歯科口腔"
+    ],
+    "Dental Research and COVID-19": [
+      "歯科口腔"
+    ],
+    "Dermatological and COVID-19 studies": [
+      "皮膚科"
+    ],
+    "Dermatological diseases and infestations": [
+      "皮膚科"
+    ],
+    "Dermatology and Skin Diseases": [
+      "皮膚科"
+    ],
+    "Diabetes and associated disorders": [
+      "内分泌・代謝"
+    ],
+    "Diabetes Management and Education": [
+      "内分泌・代謝"
+    ],
+    "Diabetes Management and Research": [
+      "内分泌・代謝"
+    ],
+    "Diabetes Treatment and Management": [
+      "内分泌・代謝"
+    ],
+    "Diabetes, Cardiovascular Risks, and Lipoproteins": [
+      "内分泌・代謝",
+      "循環器"
+    ],
+    "Diabetic Foot Ulcer Assessment and Management": [
+      "内分泌・代謝",
+      "皮膚科"
+    ],
+    "Diagnosis and treatment of tuberculosis": [
+      "感染症",
+      "呼吸器"
+    ],
+    "Diagnosis and Treatment of Venous Diseases": [
+      "循環器"
+    ],
+    "Dialysis and Renal Disease Management": [
+      "腎臓"
+    ],
+    "Diet and metabolism studies": [],
+    "Diet, Metabolism, and Disease": [],
+    "Dietary Effects on Health": [],
+    "Digital Imaging for Blood Diseases": [
+      "血液"
+    ],
+    "Digital Mental Health Interventions": [
+      "精神科"
+    ],
+    "Diphtheria, Corynebacterium, and Tetanus": [
+      "感染症"
+    ],
+    "Disaster Management and Resilience": [
+      "救急・集中治療"
+    ],
+    "Disaster Response and Management": [
+      "救急・集中治療"
+    ],
+    "Diversity and Career in Medicine": [],
+    "Diverticular Disease and Complications": [
+      "消化器"
+    ],
+    "Down syndrome and intellectual disability research": [
+      "小児科"
+    ],
+    "Drug-Induced Adverse Reactions": [],
+    "Drug-Induced Hepatotoxicity and Protection": [
+      "消化器"
+    ],
+    "Drug-Induced Ocular Toxicity": [
+      "眼科"
+    ],
+    "Dysphagia Assessment and Management": [
+      "リハビリテーション",
+      "耳鼻咽喉科"
+    ],
+    "Ear Surgery and Otitis Media": [
+      "耳鼻咽喉科"
+    ],
+    "Economic and Financial Impacts of Cancer": [],
+    "EEG and Brain-Computer Interfaces": [
+      "脳神経"
+    ],
+    "Effects of Radiation Exposure": [
+      "放射線科"
+    ],
+    "Efficiency Analysis Using DEA": [],
+    "Elbow and Forearm Trauma Treatment": [
+      "整形外科"
+    ],
+    "Electroconvulsive Therapy Studies": [
+      "精神科"
+    ],
+    "Electrolyte and hormonal disorders": [
+      "内分泌・代謝"
+    ],
+    "Electromagnetic Fields and Biological Effects": [],
+    "Emergency and Acute Care Studies": [
+      "救急・集中治療"
+    ],
+    "Employment and Welfare Studies": [],
+    "Endometrial and Cervical Cancer Treatments": [
+      "産婦人科"
+    ],
+    "Endometriosis Research and Treatment": [
+      "産婦人科"
+    ],
+    "Enhanced Recovery After Surgery": [],
+    "Epilepsy research and treatment": [
+      "脳神経"
+    ],
+    "Ergonomics and Musculoskeletal Disorders": [
+      "整形外科",
+      "リハビリテーション"
+    ],
+    "Erythropoietin and Anemia Treatment": [
+      "血液"
+    ],
+    "Esophageal and GI Pathology": [
+      "消化器"
+    ],
+    "Esophageal Cancer Research and Treatment": [
+      "消化器"
+    ],
+    "Estrogen and related hormone effects": [
+      "産婦人科",
+      "内分泌・代謝"
+    ],
+    "Ethics in Clinical Research": [],
+    "Facial Nerve Paralysis Treatment and Research": [
+      "耳鼻咽喉科",
+      "脳神経"
+    ],
+    "Facial Trauma and Fracture Management": [
+      "形成外科"
+    ],
+    "Family and Patient Care in Intensive Care Units": [
+      "救急・集中治療"
+    ],
+    "Ferroptosis and cancer prognosis": [],
+    "Fibromyalgia and Chronic Fatigue Syndrome Research": [
+      "膠原病・リウマチ"
+    ],
+    "Folate and B Vitamins Research": [],
+    "Food Allergy and Anaphylaxis Research": [
+      "小児科"
+    ],
+    "Food Security and Health in Diverse Populations": [],
+    "Foot and Ankle Surgery": [
+      "整形外科"
+    ],
+    "Foreign Body Medical Cases": [
+      "救急・集中治療"
+    ],
+    "Forensic Anthropology and Bioarchaeology Studies": [],
+    "Forensic Toxicology and Drug Analysis": [],
+    "Frailty in Older Adults": [
+      "老年医学"
+    ],
+    "Gallbladder and Bile Duct Disorders": [
+      "消化器"
+    ],
+    "Gambling Behavior and Treatments": [
+      "精神科"
+    ],
+    "Garlic and Onion Studies": [],
+    "Gastric Cancer Management and Outcomes": [
+      "消化器"
+    ],
+    "Gastroesophageal reflux and treatments": [
+      "消化器"
+    ],
+    "Gastrointestinal Bleeding Diagnosis and Treatment": [
+      "消化器"
+    ],
+    "Gastrointestinal disorders and treatments": [
+      "消化器"
+    ],
+    "Gastrointestinal motility and disorders": [
+      "消化器"
+    ],
+    "Gastrointestinal Tumor Research and Treatment": [
+      "消化器"
+    ],
+    "Genetic Associations and Epidemiology": [],
+    "Geriatric Care and Nursing Homes": [
+      "老年医学"
+    ],
+    "Gestational Diabetes Research and Management": [
+      "産婦人科",
+      "内分泌・代謝"
+    ],
+    "Ginkgo biloba and Cashew Applications": [],
+    "Glaucoma and retinal disorders": [
+      "眼科"
+    ],
+    "Glioma Diagnosis and Treatment": [
+      "脳神経"
+    ],
+    "Global Cancer Incidence and Screening": [],
+    "Global Health and Surgery": [],
+    "Global Health Care Issues": [],
+    "Global Health Workforce Issues": [],
+    "Global Maternal and Child Health": [
+      "産婦人科",
+      "小児科"
+    ],
+    "Gout, Hyperuricemia, Uric Acid": [
+      "内分泌・代謝",
+      "膠原病・リウマチ"
+    ],
+    "Growth Hormone and Insulin-like Growth Factors": [
+      "内分泌・代謝"
+    ],
+    "Gut microbiota and health": [
+      "消化器"
+    ],
+    "Gynecological conditions and treatments": [
+      "産婦人科"
+    ],
+    "Hair Growth and Disorders": [
+      "皮膚科"
+    ],
+    "Hallucinations in medical conditions": [
+      "精神科"
+    ],
+    "Head and Neck Cancer Studies": [
+      "耳鼻咽喉科"
+    ],
+    "Health and Well-being Studies": [],
+    "Health and Wellbeing Research": [],
+    "Health disparities and outcomes": [],
+    "Health Promotion and Cardiovascular Prevention": [
+      "循環器"
+    ],
+    "Health Systems, Economic Evaluations, Quality of Life": [],
+    "Health, Environment, Cognitive Aging": [
+      "老年医学"
+    ],
+    "Health, Technology, Consumer Behavior": [],
+    "Healthcare cost, quality, practices": [],
+    "Healthcare Decision-Making and Restraints": [],
+    "Healthcare Operations and Scheduling Optimization": [],
+    "Healthcare Policy and Management": [],
+    "Healthcare professionals’ stress and burnout": [],
+    "Healthcare Systems and Reforms": [],
+    "Healthcare Systems and Technology": [],
+    "Healthcare Technology and Patient Monitoring": [],
+    "Hearing Loss and Rehabilitation": [
+      "耳鼻咽喉科",
+      "リハビリテーション"
+    ],
+    "Hearing, Cochlea, Tinnitus, Genetics": [
+      "耳鼻咽喉科"
+    ],
+    "Heart Failure Treatment and Management": [
+      "循環器"
+    ],
+    "Heart rate and cardiovascular health": [
+      "循環器"
+    ],
+    "Heart Rate Variability and Autonomic Control": [
+      "循環器"
+    ],
+    "Heavy Metal Exposure and Toxicity": [],
+    "Helicobacter pylori-related gastroenterology studies": [
+      "消化器"
+    ],
+    "Hematopoietic Stem Cell Transplantation": [
+      "血液"
+    ],
+    "Hemodynamic Monitoring and Therapy": [
+      "救急・集中治療",
+      "循環器"
+    ],
+    "Hemoglobinopathies and Related Disorders": [
+      "血液"
+    ],
+    "Hemophilia Treatment and Research": [
+      "血液"
+    ],
+    "Hemostasis and retained surgical items": [],
+    "Heparin-Induced Thrombocytopenia and Thrombosis": [
+      "血液"
+    ],
+    "Hepatitis B Virus Studies": [
+      "消化器",
+      "感染症"
+    ],
+    "Hepatitis C virus research": [
+      "消化器",
+      "感染症"
+    ],
+    "Hepatitis Viruses Studies and Epidemiology": [
+      "消化器",
+      "感染症"
+    ],
+    "Hepatocellular Carcinoma Treatment and Prognosis": [
+      "消化器"
+    ],
+    "HER2/EGFR in Cancer Research": [],
+    "Hernia repair and management": [
+      "消化器"
+    ],
+    "Herpesvirus Infections and Treatments": [
+      "感染症"
+    ],
+    "Hidradenitis Suppurativa and Treatments": [
+      "皮膚科"
+    ],
+    "High Altitude and Hypoxia": [],
+    "Hip and Femur Fractures": [
+      "整形外科"
+    ],
+    "Hip disorders and treatments": [
+      "整形外科"
+    ],
+    "HIV, Drug Use, Sexual Risk": [
+      "感染症"
+    ],
+    "HIV-related health complications and treatments": [
+      "感染症"
+    ],
+    "HIV/AIDS drug development and treatment": [
+      "感染症"
+    ],
+    "HIV/AIDS Research and Interventions": [
+      "感染症"
+    ],
+    "Homicide, Infanticide, and Child Abuse": [
+      "小児科"
+    ],
+    "Hormonal Regulation and Hypertension": [
+      "循環器",
+      "内分泌・代謝"
+    ],
+    "Hospital Admissions and Outcomes": [],
+    "Hydraulic Fracturing and Reservoir Analysis": [],
+    "Hyperglycemia and glycemic control in critically ill and hospitalized patients": [
+      "内分泌・代謝",
+      "救急・集中治療"
+    ],
+    "IL-33, ST2, and ILC Pathways": [],
+    "Imbalanced Data Classification Techniques": [],
+    "Immune Response and Inflammation": [],
+    "Immune responses and vaccinations": [
+      "感染症"
+    ],
+    "Immunodeficiency and Autoimmune Disorders": [
+      "膠原病・リウマチ"
+    ],
+    "Indoor Air Quality and Microbial Exposure": [],
+    "Infant Development and Preterm Care": [
+      "小児科"
+    ],
+    "Infant Health and Development": [
+      "小児科"
+    ],
+    "Infant Nutrition and Health": [
+      "小児科"
+    ],
+    "Infection Control and Ventilation": [
+      "感染症"
+    ],
+    "Infection Control in Healthcare": [
+      "感染症"
+    ],
+    "Infectious Diseases and Tuberculosis": [
+      "感染症"
+    ],
+    "Infectious Encephalopathies and Encephalitis": [
+      "感染症",
+      "脳神経"
+    ],
+    "Infective Endocarditis Diagnosis and Management": [
+      "循環器",
+      "感染症"
+    ],
+    "Inflammasome and immune disorders": [],
+    "Inflammatory Biomarkers in Disease Prognosis": [],
+    "Inflammatory Bowel Disease": [
+      "消化器"
+    ],
+    "Inflammatory mediators and NSAID effects": [],
+    "Inflammatory Myopathies and Dermatomyositis": [
+      "膠原病・リウマチ"
+    ],
+    "Influenza Virus Research Studies": [
+      "感染症"
+    ],
+    "Inhalation and Respiratory Drug Delivery": [
+      "呼吸器"
+    ],
+    "Injury Epidemiology and Prevention": [
+      "救急・集中治療"
+    ],
+    "Integrated Circuits and Semiconductor Failure Analysis": [],
+    "Intensive Care Unit Cognitive Disorders": [
+      "救急・集中治療"
+    ],
+    "Intergenerational and Educational Inequality Studies": [],
+    "Intergenerational Family Dynamics and Caregiving": [],
+    "Interprofessional Education and Collaboration": [],
+    "Interstitial Lung Diseases and Idiopathic Pulmonary Fibrosis": [
+      "呼吸器"
+    ],
+    "Intestinal and Peritoneal Adhesions": [
+      "消化器"
+    ],
+    "Intestinal Malrotation and Obstruction Disorders": [
+      "消化器",
+      "小児科"
+    ],
+    "Intracerebral and Subarachnoid Hemorrhage Research": [
+      "脳神経"
+    ],
+    "Intracranial Aneurysms: Treatment and Complications": [
+      "脳神経"
+    ],
+    "Intraocular Surgery and Lenses": [
+      "眼科"
+    ],
+    "Intraoperative Neuromonitoring and Anesthetic Effects": [
+      "麻酔科・疼痛"
+    ],
+    "Intraperitoneal and Appendiceal Malignancies": [
+      "消化器"
+    ],
+    "Iron Metabolism and Disorders": [
+      "血液"
+    ],
+    "Kawasaki Disease and Coronary Complications": [
+      "小児科",
+      "循環器"
+    ],
+    "Kidney Stones and Urolithiasis Treatments": [
+      "泌尿器"
+    ],
+    "Knee injuries and reconstruction techniques": [
+      "整形外科"
+    ],
+    "Lipoproteins and Cardiovascular Health": [
+      "循環器",
+      "内分泌・代謝"
+    ],
+    "Liver Disease and Transplantation": [
+      "消化器"
+    ],
+    "Liver Disease Diagnosis and Treatment": [
+      "消化器"
+    ],
+    "Liver Diseases and Immunity": [
+      "消化器"
+    ],
+    "Long-Term Effects of COVID-19": [
+      "感染症"
+    ],
+    "Lung Cancer Diagnosis and Treatment": [
+      "呼吸器"
+    ],
+    "Lung Cancer Research Studies": [
+      "呼吸器"
+    ],
+    "Lung Cancer Treatments and Mutations": [
+      "呼吸器"
+    ],
+    "Lymphadenopathy Diagnosis and Analysis": [
+      "血液"
+    ],
+    "Lymphatic Disorders and Treatments": [],
+    "Lymphatic System and Diseases": [],
+    "Lymphoma Diagnosis and Treatment": [
+      "血液"
+    ],
+    "Machine Learning in Healthcare": [],
+    "Machine Learning in Materials Science": [],
+    "Magnesium in Health and Disease": [],
+    "Management of metastatic bone disease": [
+      "整形外科"
+    ],
+    "Mast cells and histamine": [],
+    "Maternal and fetal healthcare": [
+      "産婦人科"
+    ],
+    "Maternal and Perinatal Health Interventions": [
+      "産婦人科"
+    ],
+    "Maternal Mental Health During Pregnancy and Postpartum": [
+      "産婦人科",
+      "精神科"
+    ],
+    "Mechanical Circulatory Support Devices": [
+      "循環器",
+      "救急・集中治療"
+    ],
+    "Medical Coding and Health Information": [],
+    "Medical Device Sterilization and Disinfection": [
+      "感染症"
+    ],
+    "Medical Imaging and Analysis": [
+      "放射線科"
+    ],
+    "Medical Imaging Techniques and Applications": [
+      "放射線科"
+    ],
+    "Medical Malpractice and Liability Issues": [],
+    "Medication Adherence and Compliance": [],
+    "Medicine and Dermatology Studies History": [
+      "皮膚科"
+    ],
+    "Melanoma and MAPK Pathways": [
+      "皮膚科"
+    ],
+    "Meningioma and schwannoma management": [
+      "脳神経"
+    ],
+    "Menopause: Health Impacts and Treatments": [
+      "産婦人科"
+    ],
+    "Menstrual Health and Disorders": [
+      "産婦人科"
+    ],
+    "Mental Health Research Topics": [
+      "精神科"
+    ],
+    "Mental Health Treatment and Access": [
+      "精神科"
+    ],
+    "Meta-analysis and systematic reviews": [],
+    "Metabolism and Genetic Disorders": [
+      "内分泌・代謝"
+    ],
+    "Metabolism, Diabetes, and Cancer": [
+      "内分泌・代謝"
+    ],
+    "Metastasis and carcinoma case studies": [],
+    "Microbial Metabolism and Applications": [],
+    "Microscopic Colitis": [
+      "消化器"
+    ],
+    "Migraine and Headache Studies": [
+      "脳神経"
+    ],
+    "Minimally Invasive Surgical Techniques": [],
+    "Mobile Health and mHealth Applications": [],
+    "Monoclonal and Polyclonal Antibodies Research": [],
+    "MRI in cancer diagnosis": [
+      "放射線科"
+    ],
+    "Multiple and Secondary Primary Cancers": [],
+    "Multiple Myeloma Research and Treatments": [
+      "血液"
+    ],
+    "Multiple Sclerosis Research Studies": [
+      "脳神経"
+    ],
+    "Muscle and Compartmental Disorders": [
+      "整形外科"
+    ],
+    "Muscle Physiology and Disorders": [
+      "整形外科"
+    ],
+    "Musculoskeletal Disorders and Rehabilitation": [
+      "整形外科",
+      "リハビリテーション"
+    ],
+    "Musculoskeletal pain and rehabilitation": [
+      "リハビリテーション",
+      "整形外科"
+    ],
+    "Music Therapy and Health": [
+      "リハビリテーション"
+    ],
+    "Myasthenia Gravis and Thymoma": [
+      "脳神経"
+    ],
+    "Mycobacterium research and diagnosis": [
+      "感染症",
+      "呼吸器"
+    ],
+    "Myeloproliferative Neoplasms: Diagnosis and Treatment": [
+      "血液"
+    ],
+    "Nail Diseases and Treatments": [
+      "皮膚科"
+    ],
+    "Nasal Surgery and Airway Studies": [
+      "耳鼻咽喉科"
+    ],
+    "Natural Compounds in Disease Treatment": [],
+    "Nausea and vomiting management": [],
+    "Neonatal and Maternal Infections": [
+      "小児科",
+      "感染症"
+    ],
+    "Neonatal Health and Biochemistry": [
+      "小児科"
+    ],
+    "Neonatal Respiratory Health Research": [
+      "小児科",
+      "呼吸器"
+    ],
+    "Neonatal skin health care": [
+      "小児科",
+      "皮膚科"
+    ],
+    "Nerve Injury and Rehabilitation": [
+      "脳神経",
+      "リハビリテーション"
+    ],
+    "Neural and Behavioral Psychology Studies": [],
+    "Neuroendocrine regulation and behavior": [],
+    "Neuroendocrine Tumor Research Advances": [
+      "内分泌・代謝"
+    ],
+    "Neuroethics, Human Enhancement, Biomedical Innovations": [],
+    "Neurological and metabolic disorders": [
+      "脳神経",
+      "内分泌・代謝"
+    ],
+    "Neurological Complications and Syndromes": [
+      "脳神経"
+    ],
+    "Neurological Disease Mechanisms and Treatments": [
+      "脳神経"
+    ],
+    "Neuropeptides and Animal Physiology": [],
+    "Neurosurgical Procedures and Complications": [
+      "脳神経"
+    ],
+    "Neutropenia and Cancer Infections": [
+      "血液",
+      "感染症"
+    ],
+    "Neutrophil, Myeloperoxidase and Oxidative Mechanisms": [],
+    "Nonmelanoma Skin Cancer Studies": [
+      "皮膚科"
+    ],
+    "Nosocomial Infections in ICU": [
+      "感染症",
+      "救急・集中治療"
+    ],
+    "Nuclear Receptors and Signaling": [],
+    "Nursing education and management": [],
+    "Nutrition and Health in Aging": [
+      "老年医学"
+    ],
+    "Nutrition, Health and Food Behavior": [],
+    "Nutritional Studies and Diet": [],
+    "Obesity and Health Practices": [
+      "内分泌・代謝"
+    ],
+    "Obesity, Physical Activity, Diet": [
+      "内分泌・代謝"
+    ],
+    "Obstructive Sleep Apnea Research": [
+      "呼吸器",
+      "耳鼻咽喉科"
+    ],
+    "Occupational and environmental lung diseases": [
+      "呼吸器"
+    ],
+    "Occupational Therapy Practice and Research": [
+      "リハビリテーション"
+    ],
+    "Ocular Diseases and Behçet’s Syndrome": [
+      "眼科",
+      "膠原病・リウマチ"
+    ],
+    "Ocular Infections and Treatments": [
+      "眼科",
+      "感染症"
+    ],
+    "Ocular Oncology and Treatments": [
+      "眼科"
+    ],
+    "Ocular Surface and Contact Lens": [
+      "眼科"
+    ],
+    "Olfactory and Sensory Function Studies": [
+      "耳鼻咽喉科"
+    ],
+    "Ophthalmology and Eye Disorders": [
+      "眼科"
+    ],
+    "Ophthalmology and Visual Impairment Studies": [
+      "眼科"
+    ],
+    "Opioid Use Disorder Treatment": [
+      "麻酔科・疼痛",
+      "精神科"
+    ],
+    "Oral and gingival health research": [
+      "歯科口腔"
+    ],
+    "Oral health in cancer treatment": [
+      "歯科口腔"
+    ],
+    "Oral Health Pathology and Treatment": [
+      "歯科口腔"
+    ],
+    "Oral microbiology and periodontitis research": [
+      "歯科口腔"
+    ],
+    "Organ Transplantation Techniques and Outcomes": [],
+    "Orthodontics and Dentofacial Orthopedics": [
+      "歯科口腔"
+    ],
+    "Orthopaedic implants and arthroplasty": [
+      "整形外科"
+    ],
+    "Orthopedic Infections and Treatments": [
+      "整形外科",
+      "感染症"
+    ],
+    "Osteoarthritis Treatment and Mechanisms": [
+      "整形外科"
+    ],
+    "Osteomyelitis and Bone Disorders Research": [
+      "整形外科",
+      "感染症"
+    ],
+    "Ovarian cancer diagnosis and treatment": [
+      "産婦人科"
+    ],
+    "Ovarian function and disorders": [
+      "産婦人科"
+    ],
+    "Pain Management and Opioid Use": [
+      "麻酔科・疼痛"
+    ],
+    "Pain Management and Placebo Effect": [
+      "麻酔科・疼痛"
+    ],
+    "Pain Management and Treatment": [
+      "麻酔科・疼痛"
+    ],
+    "Pain Mechanisms and Treatments": [
+      "麻酔科・疼痛"
+    ],
+    "Palliative Care and End-of-Life Issues": [],
+    "Pancreatic and Hepatic Oncology Research": [
+      "消化器"
+    ],
+    "Pancreatic function and diabetes": [
+      "内分泌・代謝",
+      "消化器"
+    ],
+    "Pancreatitis Pathology and Treatment": [
+      "消化器"
+    ],
+    "Parasite Biology and Host Interactions": [
+      "感染症"
+    ],
+    "Parasites and Host Interactions": [
+      "感染症"
+    ],
+    "Parasitic Diseases Research and Treatment": [
+      "感染症"
+    ],
+    "Parasitic Infections and Diagnostics": [
+      "感染症"
+    ],
+    "Parasitic infections in humans and animals": [
+      "感染症"
+    ],
+    "Parathyroid Disorders and Treatments": [
+      "内分泌・代謝"
+    ],
+    "Parkinson's Disease and Spinal Disorders": [
+      "脳神経",
+      "整形外科"
+    ],
+    "Parkinson's Disease Mechanisms and Treatments": [
+      "脳神経"
+    ],
+    "PARP inhibition in cancer therapy": [],
+    "Pathogenesis and Treatment of Hiccups": [],
+    "Patient Safety and Medication Errors": [],
+    "Patient Satisfaction in Healthcare": [],
+    "Pediatric Hepatobiliary Diseases and Treatments": [
+      "小児科",
+      "消化器"
+    ],
+    "Pediatric Pain Management Techniques": [
+      "小児科",
+      "麻酔科・疼痛"
+    ],
+    "Pediatric Urology and Nephrology Studies": [
+      "小児科",
+      "泌尿器",
+      "腎臓"
+    ],
+    "Pelvic and Acetabular Injuries": [
+      "整形外科"
+    ],
+    "Pelvic floor disorders treatments": [
+      "産婦人科",
+      "泌尿器"
+    ],
+    "Peptidase Inhibition and Analysis": [],
+    "Pericarditis and Cardiac Tamponade": [
+      "循環器"
+    ],
+    "Peripheral Artery Disease Management": [
+      "循環器"
+    ],
+    "Peripheral Neuropathies and Disorders": [
+      "脳神経"
+    ],
+    "Peroxisome Proliferator-Activated Receptors": [],
+    "Pesticide Exposure and Toxicity": [],
+    "Pharmaceutical and Antibiotic Environmental Impacts": [],
+    "Pharmaceutical Economics and Policy": [],
+    "Pharmaceutical industry and healthcare": [],
+    "Pharmaceutical Practices and Patient Outcomes": [],
+    "Pharmaceutical Quality and Counterfeiting": [],
+    "Pharmaceutical studies and practices": [],
+    "Pharmacogenetics and Drug Metabolism": [],
+    "Pharmacological Effects and Toxicity Studies": [],
+    "Pharmacological Effects of Medicinal Plants": [],
+    "Pharmacological Effects of Natural Compounds": [],
+    "Pharmacological Receptor Mechanisms and Effects": [],
+    "Pharmacology and Obesity Treatment": [
+      "内分泌・代謝"
+    ],
+    "Pharmacovigilance and Adverse Drug Reactions": [],
+    "Pharmacy and Medical Practices": [],
+    "Phosphodiesterase function and regulation": [],
+    "Physical Activity and Health": [],
+    "Pituitary Gland Disorders and Treatments": [
+      "内分泌・代謝"
+    ],
+    "Platelet Disorders and Treatments": [
+      "血液"
+    ],
+    "Pleural and Pulmonary Diseases": [
+      "呼吸器"
+    ],
+    "Pneumocystis jirovecii pneumonia detection and treatment": [
+      "感染症",
+      "呼吸器"
+    ],
+    "Pneumonia and Respiratory Infections": [
+      "呼吸器",
+      "感染症"
+    ],
+    "Pneumothorax, Barotrauma, Emphysema": [
+      "呼吸器"
+    ],
+    "Polyomavirus and related diseases": [
+      "感染症"
+    ],
+    "Posttraumatic Stress Disorder Research": [
+      "精神科"
+    ],
+    "Potassium and Related Disorders": [
+      "内分泌・代謝",
+      "腎臓"
+    ],
+    "Poxvirus research and outbreaks": [
+      "感染症"
+    ],
+    "Pregnancy and Medication Impact": [
+      "産婦人科"
+    ],
+    "Pregnancy and preeclampsia studies": [
+      "産婦人科"
+    ],
+    "Pregnancy-related medical research": [
+      "産婦人科"
+    ],
+    "Prenatal Substance Exposure Effects": [
+      "産婦人科",
+      "小児科"
+    ],
+    "Pressure Ulcer Prevention and Management": [
+      "皮膚科",
+      "リハビリテーション"
+    ],
+    "Preterm Birth and Chorioamnionitis": [
+      "産婦人科",
+      "小児科"
+    ],
+    "Primary Care and Health Outcomes": [],
+    "Probiotics and Fermented Foods": [
+      "消化器"
+    ],
+    "Prostate Cancer Diagnosis and Treatment": [
+      "泌尿器"
+    ],
+    "Prostate Cancer Treatment and Research": [
+      "泌尿器"
+    ],
+    "Prosthetics and Rehabilitation Robotics": [
+      "リハビリテーション"
+    ],
+    "Protein Degradation and Inhibitors": [],
+    "Psoriasis: Treatment and Pathogenesis": [
+      "皮膚科"
+    ],
+    "Psychiatric care and mental health services": [
+      "精神科"
+    ],
+    "Psychosomatic Disorders and Their Treatments": [
+      "精神科"
+    ],
+    "Pulmonary Hypertension Research and Treatments": [
+      "循環器",
+      "呼吸器"
+    ],
+    "Radiation Dose and Imaging": [
+      "放射線科"
+    ],
+    "Radiology practices and education": [
+      "放射線科"
+    ],
+    "Radiopharmaceutical Chemistry and Applications": [
+      "放射線科"
+    ],
+    "Regulation of Appetite and Obesity": [
+      "内分泌・代謝"
+    ],
+    "Reliability and Agreement in Measurement": [],
+    "Renal and Vascular Pathologies": [
+      "腎臓"
+    ],
+    "Renal cell carcinoma treatment": [
+      "泌尿器"
+    ],
+    "Renal Diseases and Glomerulopathies": [
+      "腎臓"
+    ],
+    "Renal Transplantation Outcomes and Treatments": [
+      "腎臓"
+    ],
+    "Renin-Angiotensin System Studies": [
+      "循環器"
+    ],
+    "Reproductive Biology and Fertility": [
+      "産婦人科"
+    ],
+    "Reproductive Health and Contraception": [
+      "産婦人科"
+    ],
+    "Reproductive Health and Technologies": [
+      "産婦人科"
+    ],
+    "Reproductive System and Pregnancy": [
+      "産婦人科"
+    ],
+    "Reproductive tract infections research": [
+      "産婦人科",
+      "感染症"
+    ],
+    "Research on Leishmaniasis Studies": [
+      "感染症"
+    ],
+    "Respiratory and Cough-Related Research": [
+      "呼吸器"
+    ],
+    "Respiratory Support and Mechanisms": [
+      "呼吸器"
+    ],
+    "Respiratory viral infections research": [
+      "感染症",
+      "呼吸器"
+    ],
+    "Retinal and Macular Surgery": [
+      "眼科"
+    ],
+    "Retinal and Optic Conditions": [
+      "眼科"
+    ],
+    "Retinal Diseases and Treatments": [
+      "眼科"
+    ],
+    "Retinal Imaging and Analysis": [
+      "眼科"
+    ],
+    "Retinopathy of Prematurity Studies": [
+      "眼科",
+      "小児科"
+    ],
+    "Rheumatoid Arthritis Research and Therapies": [
+      "膠原病・リウマチ"
+    ],
+    "Salivary Gland Disorders and Functions": [
+      "耳鼻咽喉科",
+      "歯科口腔"
+    ],
+    "Sarcoidosis and Beryllium Toxicity Research": [
+      "呼吸器"
+    ],
+    "Sarcoma Diagnosis and Treatment": [
+      "整形外科"
+    ],
+    "SARS-CoV-2 and COVID-19 Research": [
+      "感染症"
+    ],
+    "SARS-CoV-2 detection and testing": [
+      "感染症"
+    ],
+    "Schizophrenia research and treatment": [
+      "精神科"
+    ],
+    "School Health and Nursing Education": [],
+    "Scoliosis diagnosis and treatment": [
+      "整形外科"
+    ],
+    "Sepsis Diagnosis and Treatment": [
+      "救急・集中治療",
+      "感染症"
+    ],
+    "Sex and Gender in Healthcare": [],
+    "Sexual function and dysfunction studies": [
+      "泌尿器"
+    ],
+    "Shoulder and Clavicle Injuries": [
+      "整形外科"
+    ],
+    "Shoulder Injury and Treatment": [
+      "整形外科"
+    ],
+    "Sinusitis and nasal conditions": [
+      "耳鼻咽喉科"
+    ],
+    "Skin Protection and Aging": [
+      "皮膚科"
+    ],
+    "Sleep and related disorders": [
+      "脳神経",
+      "精神科"
+    ],
+    "Sleep and Wakefulness Research": [
+      "脳神経",
+      "精神科"
+    ],
+    "Sleep and Work-Related Fatigue": [
+      "精神科"
+    ],
+    "Smoking Behavior and Cessation": [],
+    "Sodium Intake and Health": [],
+    "Soft Robotics and Applications": [],
+    "Soft tissue tumor case studies": [
+      "整形外科"
+    ],
+    "Spectroscopy and Chemometric Analyses": [],
+    "Spinal Cord Injury Research": [
+      "整形外科",
+      "リハビリテーション"
+    ],
+    "Spinal Fractures and Fixation Techniques": [
+      "整形外科"
+    ],
+    "Spine and Intervertebral Disc Pathology": [
+      "整形外科"
+    ],
+    "Spondyloarthritis Studies and Treatments": [
+      "膠原病・リウマチ"
+    ],
+    "Sports injuries and prevention": [
+      "整形外科"
+    ],
+    "Statistical Methods and Bayesian Inference": [],
+    "Statistical Methods and Inference": [],
+    "Statistical Methods in Clinical Trials": [],
+    "Statistical Methods in Epidemiology": [],
+    "Stoma care and complications": [
+      "消化器"
+    ],
+    "Streptococcal Infections and Treatments": [
+      "感染症"
+    ],
+    "Stroke Rehabilitation and Recovery": [
+      "リハビリテーション",
+      "脳神経"
+    ],
+    "Substance Abuse Treatment and Outcomes": [
+      "精神科"
+    ],
+    "Suicide and Self-Harm Studies": [
+      "精神科"
+    ],
+    "Sulfur Compounds in Biology": [],
+    "Surgical Simulation and Training": [],
+    "Surgical site infection prevention": [
+      "感染症"
+    ],
+    "Survey Methodology and Nonresponse": [],
+    "Sympathectomy and Hyperhidrosis Treatments": [
+      "皮膚科"
+    ],
+    "Syphilis Diagnosis and Treatment": [
+      "感染症"
+    ],
+    "Systemic Lupus Erythematosus Research": [
+      "膠原病・リウマチ"
+    ],
+    "Systemic Sclerosis and Related Diseases": [
+      "膠原病・リウマチ"
+    ],
+    "T-cell and Retrovirus Studies": [
+      "感染症",
+      "血液"
+    ],
+    "Takotsubo Cardiomyopathy and Associated Phenomena": [
+      "循環器"
+    ],
+    "Tea Polyphenols and Effects": [],
+    "Telemedicine and Telehealth Implementation": [],
+    "Temporomandibular Joint Disorders": [
+      "歯科口腔"
+    ],
+    "Tendon Structure and Treatment": [
+      "整形外科"
+    ],
+    "Teratomas and Epidermoid Cysts": [],
+    "Therapeutic Uses of Natural Elements": [],
+    "Thermal Regulation in Medicine": [],
+    "Thermoregulation and physiological responses": [],
+    "Thyroid and Parathyroid Surgery": [
+      "内分泌・代謝"
+    ],
+    "Thyroid Cancer Diagnosis and Treatment": [
+      "内分泌・代謝"
+    ],
+    "Thyroid Disorders and Treatments": [
+      "内分泌・代謝"
+    ],
+    "Tissue Engineering and Regenerative Medicine": [],
+    "Total Knee Arthroplasty Outcomes": [
+      "整形外科"
+    ],
+    "Trace Elements in Health": [],
+    "Tracheal and airway disorders": [
+      "耳鼻咽喉科",
+      "呼吸器"
+    ],
+    "Transplantation: Methods and Outcomes": [],
+    "Trauma and Emergency Care Studies": [
+      "救急・集中治療"
+    ],
+    "Trauma, Hemostasis, Coagulopathy, Resuscitation": [
+      "救急・集中治療",
+      "血液"
+    ],
+    "Traumatic Brain Injury and Neurovascular Disturbances": [
+      "脳神経",
+      "救急・集中治療"
+    ],
+    "Traumatic Brain Injury Research": [
+      "脳神経",
+      "救急・集中治療"
+    ],
+    "Traumatic Ocular and Foreign Body Injuries": [
+      "眼科",
+      "救急・集中治療"
+    ],
+    "Treatment of Major Depression": [
+      "精神科"
+    ],
+    "Tryptophan and brain disorders": [],
+    "Tuberculosis Research and Epidemiology": [
+      "感染症",
+      "呼吸器"
+    ],
+    "Ultrasound in Clinical Applications": [
+      "放射線科"
+    ],
+    "Urban Transport and Accessibility": [],
+    "Ureteral procedures and complications": [
+      "泌尿器"
+    ],
+    "Urinary and Genital Oncology Studies": [
+      "泌尿器"
+    ],
+    "Urinary Bladder and Prostate Research": [
+      "泌尿器"
+    ],
+    "Urinary Tract Infections Management": [
+      "泌尿器",
+      "感染症"
+    ],
+    "Urological Disorders and Treatments": [
+      "泌尿器"
+    ],
+    "Urticaria and Related Conditions": [
+      "皮膚科"
+    ],
+    "Uterine Myomas and Treatments": [
+      "産婦人科"
+    ],
+    "Vaccine Coverage and Hesitancy": [
+      "感染症"
+    ],
+    "Vascular Anomalies and Treatments": [
+      "循環器"
+    ],
+    "Vascular Procedures and Complications": [
+      "循環器"
+    ],
+    "Vasculitis and related conditions": [
+      "膠原病・リウマチ"
+    ],
+    "Vector-Borne Animal Diseases": [
+      "感染症"
+    ],
+    "Venous Thromboembolism Diagnosis and Management": [
+      "循環器",
+      "血液"
+    ],
+    "Vestibular and auditory disorders": [
+      "耳鼻咽喉科"
+    ],
+    "Viral gastroenteritis research and epidemiology": [
+      "感染症",
+      "消化器"
+    ],
+    "Viral Infections and Immunology Research": [
+      "感染症"
+    ],
+    "Viral-associated cancers and disorders": [
+      "感染症"
+    ],
+    "Virology and Viral Diseases": [
+      "感染症"
+    ],
+    "Vitamin D Research Studies": [
+      "内分泌・代謝"
+    ],
+    "Vitamin K Research Studies": [
+      "血液"
+    ],
+    "Voice and Speech Disorders": [
+      "耳鼻咽喉科"
+    ],
+    "Williams Syndrome Research": [
+      "小児科"
+    ],
+    "Workplace Health and Well-being": [],
+    "Wound Healing and Treatments": [
+      "形成外科",
+      "皮膚科"
+    ],
+    "Youth Substance Use and School Attendance": [
+      "精神科",
+      "小児科"
+    ],
+    "Zoonotic diseases and public health": [
+      "感染症"
+    ]
+  }
+}

@@ -39,6 +39,7 @@ interface Paper {
   sjr_quartile: string | null;
   openalex_topic?: string | null;
   openalex_topic_score?: number | null;
+  openalex_topics?: { name: string; score: number }[] | null;
   openalex_subfield?: string | null;
   openalex_field?: string | null;
   research_categories: string[];
@@ -289,6 +290,7 @@ async function main() {
       openalex_topic_score: null,
       openalex_subfield: null,
       openalex_field: null,
+      openalex_topics: null,
     };
 
     // 分類・要約は Routine が後から埋める。ここでは空で出力し classified:false にする。

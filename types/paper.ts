@@ -27,6 +27,12 @@ export interface Paper {
    */
   openalex_topic?: string | null;
   openalex_topic_score?: number | null;
+  /**
+   * トピックを関連度つきで全件（OpenAlex は最大3件返す）。スコアの降順で、
+   * 先頭は `openalex_topic` と同じ値。1論文が複数の診療分野にまたがることを
+   * 表すために使う（例: 乳がん患者の眼有害事象 → 眼科＋乳腺）。
+   */
+  openalex_topics?: { name: string; score: number }[] | null;
   openalex_subfield?: string | null;
   openalex_field?: string | null;
   auto_detected: boolean;
@@ -79,6 +85,12 @@ export type ListPaper = Pick<
   | "research_categories"
   | "impact_factor"
   | "sjr_quartile"
-  | "openalex_subfield"
   | "openalex_topic"
->;
+>& {
+  /**
+   * 算出済みの診療分野（lib/clinical-areas.ts）。Paper には無い派生値で、
+   * 一覧はこれを絞り込み・バッジ・検索に使う。生の openalex_topics は
+   * 一覧では使わないので配信していない。
+   */
+  clinical_areas: string[];
+};

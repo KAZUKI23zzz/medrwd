@@ -115,8 +115,10 @@ function buildHaystack(paper: ListPaper): string {
     paper.study_design,
     (paper.research_categories ?? []).join(" "),
     (paper.analysis_methods ?? []).join(" "),
-    // 診療領域はカード上にバッジで出ているので、見えている語で検索できるようにする
-    paper.openalex_subfield ?? "",
+    // 診療分野はカード上にバッジで出ているので、見えている語で検索できるようにする
+    paper.clinical_areas.join(" "),
+    // OpenAlex のトピック名（英語）。バッジには出ないが、Sepsis のような
+    // 語で引いたときに拾えるよう残してある
     paper.openalex_topic ?? "",
     // mesh_terms は入れない。付与率が約半分なうえ、頻出語が
     // Humans / Female / Japan / Male / Aged といったチェックタグ的な語で、
