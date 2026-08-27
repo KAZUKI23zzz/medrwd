@@ -26,8 +26,12 @@
  * （MeSHとの一致 71%→77%）、レカネマブ（アルツハイマー薬）に「膠原病」、
  * 乳がんのラジオ波焼灼に「消化器」といった誤りが混ざる。
  *
- * **関連研究の重み付けでは閾値を使わないこと。** あちらはスコアを係数として
- * 掛けるので、低スコアのトピックは自動的にほぼ効かなくなる。
+ * ## 関連研究の重み付けは、まだ置き換えていない
+ *
+ * `lib/related-papers.ts` の `area` 加点は**いまも `openalex_subfield` を見ている**。
+ * 診療分野に置き換える予定だが未着手（構想段階）。
+ * 置き換えるときは**閾値を使わないこと。** あちらはスコアを係数として掛けられるので、
+ * 低スコアのトピックは自動的にほぼ効かなくなる。
  */
 
 import topicAreas from "@/data/topic-areas.json";
@@ -35,7 +39,13 @@ import topicAreas from "@/data/topic-areas.json";
 /** 第2トピック以降を採用する下限。第1トピックはスコアに関わらず必ず採る */
 export const AREA_SCORE_THRESHOLD = 0.1;
 
-/** 表示順。件数ではなく診療科の並びで固定する（件数順だと選択のたびに動く） */
+/**
+ * 分野の一覧。並びは辞書の `areas` の順で、`clinicalAreasOf` の戻り値を
+ * この順に揃えるのに使う（バッジの並びがカードごとに変わらないようにするため）。
+ *
+ * サイドバーの絞り込みの並びはここでは決まらない。あちらは lib/papers-facets.ts が
+ * 「絞り込み前の件数」の降順で固定している（チェックを付けても動かない）。
+ */
 export const CLINICAL_AREAS: string[] = topicAreas.areas;
 
 const TOPIC_TO_AREAS = topicAreas.topics as Record<string, string[] | undefined>;
@@ -50,11 +60,15 @@ export function clinicalAreasOf(
   topics: TopicLike[] | null | undefined,
 ): string[] {
   if (!topics?.length) return [];
+  // 最上位のトピックはスコアが閾値に届かなくても必ず採る。「配列の先頭」ではなく
+  // 最大スコアで判定するのは、並び順を前提にしないため。降順に並べているのは
+  // scripts/openalex.ts の取得時だけで、papers.json を読む側に保証がない。
+  const topScore = Math.max(...topics.map((t) => t.score));
   const found = new Set<string>();
-  topics.forEach((topic, index) => {
-    if (index > 0 && topic.score < AREA_SCORE_THRESHOLD) return;
+  for (const topic of topics) {
+    if (topic.score < AREA_SCORE_THRESHOLD && topic.score < topScore) continue;
     for (const area of TOPIC_TO_AREAS[topic.name] ?? []) found.add(area);
-  });
+  }
   // 分野の並びは CLINICAL_AREAS の順に揃える。トピックの順に任せると
   // 同じ組み合わせでもカードごとにバッジの並びが変わって落ち着かない。
   return CLINICAL_AREAS.filter((area) => found.has(area));

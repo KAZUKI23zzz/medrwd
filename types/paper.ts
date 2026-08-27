@@ -85,12 +85,17 @@ export type ListPaper = Pick<
   | "research_categories"
   | "impact_factor"
   | "sjr_quartile"
-  | "openalex_topic"
->& {
+> & {
   /**
    * 算出済みの診療分野（lib/clinical-areas.ts）。Paper には無い派生値で、
-   * 一覧はこれを絞り込み・バッジ・検索に使う。生の openalex_topics は
-   * 一覧では使わないので配信していない。
+   * 一覧はこれを絞り込み・バッジ・検索に使う。
    */
   clinical_areas: string[];
+  /**
+   * OpenAlex のトピック名だけを取り出したもの（スコアは落とす）。
+   * 一覧のカードには出さないが、"sepsis" のような英語のトピック名で
+   * 検索に引っかかるようにするために配信する。スコアつきの生の
+   * `openalex_topics` は一覧では使わないので配信していない。
+   */
+  topic_names: string[];
 };

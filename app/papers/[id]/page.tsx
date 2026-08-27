@@ -52,6 +52,9 @@ export default async function PaperDetailPage({
 
   // 診療分野は OpenAlex のトピックから辞書で引く（lib/clinical-areas.ts）
   const clinicalAreas = clinicalAreasOf(paper.openalex_topics);
+  // トピックは第2・第3も含めて全件出す。診療分野に落ちなかった論文でも、
+  // 何を根拠にそう判断したのかが読み手に見えるようにするため。
+  const topics = paper.openalex_topics ?? [];
 
   // Match DB slugs for linking
   // DBページへのリンク。名前の部分一致だと似た名前のDBを取り違えるので、
@@ -184,7 +187,7 @@ export default async function PaperDetailPage({
                 </div>
               </div>
 
-              {(clinicalAreas.length > 0 || paper.openalex_topic) && (
+              {clinicalAreas.length > 0 && (
                 <div>
                   <p className="text-sm font-medium text-muted-foreground">
                     診療分野
@@ -200,13 +203,32 @@ export default async function PaperDetailPage({
                         </Badge>
                       </Link>
                     ))}
-                    {/* 元になった OpenAlex のトピック名。絞り込みの軸にするには
-                        365種と多すぎるので、根拠として表示するだけ。 */}
-                    {paper.openalex_topic && (
-                      <span className="text-xs text-muted-foreground">
-                        {paper.openalex_topic}
+                  </div>
+                </div>
+              )}
+
+              {/* 診療分野の根拠。分野は自前の辞書で決めているのに対し、こちらは
+                  OpenAlex がそのまま付けた値なので、見出しで出所を分けている。
+                  絞り込みの軸にするには 679種と多すぎるので表示だけ。
+                  関連度を並べて出すのは、第2・第3に 0.001 のようなトピックが
+                  混ざるため。数字が無いと第1と同じ重みに見えてしまう。 */}
+              {topics.length > 0 && (
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">
+                    トピック（OpenAlex）
+                  </p>
+                  <div className="mt-1 flex flex-col gap-0.5">
+                    {topics.map((topic) => (
+                      <span
+                        key={topic.name}
+                        className="text-xs text-muted-foreground"
+                      >
+                        {topic.name}
+                        <span className="ml-1.5 tabular-nums opacity-70">
+                          {topic.score.toFixed(3)}
+                        </span>
                       </span>
-                    )}
+                    ))}
                   </div>
                 </div>
               )}

@@ -19,6 +19,7 @@ export default function Home() {
     .map((paper) => ({
       ...paper,
       clinical_areas: clinicalAreasOf(paper.openalex_topics),
+      topic_names: (paper.openalex_topics ?? []).map((t) => t.name),
     }));
 
   // DB usage counts
