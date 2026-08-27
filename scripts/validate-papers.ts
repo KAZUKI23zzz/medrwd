@@ -21,7 +21,9 @@ type FieldType =
   | "string[]"
   /** 省略可能かつ null も許す（OpenAlex から取れなかった場合に null が入る） */
   | "string|null?"
-  | "number|null?";
+  | "number|null?"
+  /** 省略可能かつ null も許す、{name, score} の配列 */
+  | "topics|null?";
 
 /** types/paper.ts の Paper インターフェースに対応。null許容フィールドは個別に扱う。 */
 const SCHEMA: Record<string, FieldType> = {
@@ -48,6 +50,7 @@ const SCHEMA: Record<string, FieldType> = {
   last_updated: "string?",
   openalex_topic: "string|null?",
   openalex_topic_score: "number|null?",
+  openalex_topics: "topics|null?",
   openalex_subfield: "string|null?",
   openalex_field: "string|null?",
 };
@@ -67,6 +70,7 @@ const NULLABLE = new Set([
   "sjr_quartile",
   "openalex_topic",
   "openalex_topic_score",
+  "openalex_topics",
   "openalex_subfield",
   "openalex_field",
 ]);
@@ -90,6 +94,20 @@ function matches(value: unknown, type: FieldType): boolean {
         value === undefined ||
         value === null ||
         (typeof value === "number" && Number.isFinite(value))
+      );
+    case "topics|null?":
+      return (
+        value === undefined ||
+        value === null ||
+        (Array.isArray(value) &&
+          value.every(
+            (v) =>
+              typeof v === "object" &&
+              v !== null &&
+              typeof (v as { name?: unknown }).name === "string" &&
+              typeof (v as { score?: unknown }).score === "number" &&
+              Number.isFinite((v as { score: number }).score),
+          ))
       );
   }
 }

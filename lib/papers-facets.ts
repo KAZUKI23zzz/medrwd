@@ -30,7 +30,7 @@ export function facetValuesOf(paper: ListPaper, key: ListFilterKey): string[] {
     case "methods":
       return paper.analysis_methods ?? [];
     case "areas":
-      return paper.openalex_subfield ? [paper.openalex_subfield] : [];
+      return paper.clinical_areas;
   }
 }
 

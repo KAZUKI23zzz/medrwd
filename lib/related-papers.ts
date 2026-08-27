@@ -53,9 +53,16 @@ const TITLE_REPEAT = 3;
  * 実際に2案をブラインド評価で比べて決めた（docs/related-papers.md）。
  */
 export type BoostWeights = {
-  /** OpenAlex の細かいトピック（364種）が一致 */
+  /** OpenAlex の細かいトピック（第1トピックのみ。370種）が一致 */
   topic: number;
-  /** 診療領域（OpenAlex subfield、74種）が一致 */
+  /**
+   * 診療領域が一致。**いまも OpenAlex の subfield（74種）を見ている。**
+   *
+   * subfield の写像が誤っていることは分かっている（胃癌→呼吸器など。
+   * 経緯は lib/clinical-areas.ts の冒頭コメント）。`clinical_areas` と
+   * トピックのスコアを使う形に**置き換える予定だが、まだ未着手**。
+   * 置き換えるときは重みをブラインド評価で決め直すこと（docs/related-papers.md）。
+   */
   area: number;
   category: number;
   database: number;
@@ -261,6 +268,9 @@ export function getRelatedPapers(
     let boost = 1;
     if (source.openalex_topic && source.openalex_topic === target.openalex_topic)
       boost += boosts.topic;
+    // TODO: 診療分野（clinical_areas）＋トピックのスコアに置き換える。未着手。
+    // ここだけが openalex_subfield の唯一の参照箇所で、実測では加点1,900組のうち
+    // 383組が診療分野を1つも共有していない（逆に946組を取りこぼしている）。
     if (
       source.openalex_subfield &&
       source.openalex_subfield === target.openalex_subfield

@@ -33,8 +33,8 @@ interface CheckboxGroupProps {
   filterKey: ListFilterKey;
   onToggle: (key: ListFilterKey, value: string) => void;
   /**
-   * 最初に見せる選択肢の数。診療領域だけは値が数十種あり、全部並べると
-   * サイドバーが極端に長くなるので折り畳む。他のファセットは10種前後なので既定は無制限。
+   * 最初に見せる選択肢の数。診療分野は25種あるので折り畳む。
+   * 他のファセットは10種前後なので既定は無制限。
    */
   maxVisible?: number;
 }
@@ -169,7 +169,7 @@ export function PaperFilterPanel({
         onToggle={onToggle}
       />
       <CheckboxGroup
-        title="診療領域"
+        title="診療分野"
         options={facets.areas}
         selected={selectedAreas}
         filterKey="areas"

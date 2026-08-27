@@ -15,9 +15,11 @@ Next.js 16 (Static Export) / TypeScript / Tailwind CSS v4 + shadcn/ui v4 / JSON�
 | パス | 役割 |
 |------|------|
 | `app/` | Next.js App Router（ダッシュボード・研究カタログ・DB一覧・About・status） |
-| `scripts/sync-pubmed.ts` | PubMed収集（収集専任: hasabstract + OpenAlex IF/診療領域 → classified:false で追記）。分類・翻訳はしない |
-| `scripts/backfill-openalex.ts` | 既存論文にOpenAlexの診療領域・欠けているIFを補う（一度実行済み。再実行は冪等） |
-| `data/papers.json` | 論文メタデータ（1,067件、全件分類済み）。週次Routineが追記・削除する。`openalex_*` は診療領域の軸（OpenAlex由来・CC0） |
+| `scripts/sync-pubmed.ts` | PubMed収集（収集専任: hasabstract + OpenAlex IF/トピック → classified:false で追記）。分類・翻訳はしない |
+| `scripts/backfill-openalex.ts` | 既存論文にOpenAlexのトピック・欠けているIFを補う（`--all` で全件取り直し。冪等） |
+| `data/papers.json` | 論文メタデータ（1,085件、全件分類済み）。週次Routineが追記・削除する。`openalex_topics` は関連度つきトピック（OpenAlex由来・CC0） |
+| `data/topic-areas.json` | **トピック→診療分野の辞書**（25分野／OpenAlex全4,516トピック、うち696件に分野）。診療分野の軸はここが正 |
+| `lib/clinical-areas.ts` | 論文の診療分野を求める（辞書引き＋スコア閾値0.10）。設計判断はここのコメントに集約 |
 | `data/sync-status.json` | 同期の最終実行状況（Routineが毎回更新、`/status`で表示） |
 | `data/databases.json` | RWDデータベース情報（10件。`paper_tag` で論文側の名前と突き合わせる） |
 | `docs/routine-classify.md` | **Routineのプロンプト全文＋セットアップ手順** |
@@ -51,19 +53,43 @@ npx tsx scripts/sync-pubmed.ts           # 論文収集（手動。通常はRout
 DB一覧の拡充（10件）・お気に入り（localStorage）。
 **経緯と設計判断、UIの検証手順は `docs/DEVELOPMENT.md` を参照。**
 
-**診療領域の軸を追加（2026-08）**
-OpenAlex の primary_topic（CC0・singletonは課金対象外）から `openalex_subfield` を取り、
-「診療領域」として絞り込み軸に追加（74種／1,062件に付与）。細かい `openalex_topic`（364種）は
-詳細ページに表示のみ。既存分は `scripts/backfill-openalex.ts` で一度埋めてある。
+**診療分野の軸（2026-08）**
+OpenAlex のトピック（`topics`、関連度つき最大3件。CC0・singletonは課金対象外）を
+`data/topic-areas.json` の辞書で日本の診療科25分野に写像し、絞り込み軸にしている
+（1,085件中940件＝87%に付与、平均1.39分野）。
+
+辞書は **OpenAlex の公開スナップショットから全4,516トピックを収録**している
+（`https://openalex.s3.amazonaws.com/data/jsonl/topics/manifest.json`、2026-06-26版）。
+**API の list エンドポイント（`?filter=`）は課金対象なので使わないこと。**
+手元の論文に出たトピックだけで作ると、新しい論文が持ち込むトピックを取りこぼす
+（実際、196件は現時点で未出現だが分野を用意してある）。
+
+**`openalex_subfield` は使わない。** OpenAlex 側のトピック→subfield 写像が誤っており
+（`Gastric Cancer Management and Outcomes` の親が `Pulmonary and Respiratory Medicine`）、
+subfield「呼吸器」82件の半分が胃癌・前立腺癌・大動脈だった。単一ラベルしか持てない点も
+「乳がん患者の眼有害事象＝乳腺＋眼科」を表せず不適。
+絞り込み軸・バッジ・検索からは外してある。
+
+**ただし関連研究の加点はまだ置き換えていない（未着手）。**
+`lib/related-papers.ts` の `area` 加点はいまも `openalex_subfield` の一致を見ている。
+実測では加点1,900組のうち383組が診療分野を1つも共有しておらず、逆に946組を
+取りこぼしている。診療分野＋トピックのスコアに置き換える予定。
+
+第2トピック以降は 0.10 以上のときだけ採る。閾値なしだと `膠原病・リウマチ` が
+26→73件に膨らみ、増えた分は無関係な論文だった。**関連研究の重み付けに移すときは
+閾値を使わずスコアを係数にすること**（低スコアが自動的に効かなくなる）。
+重みはブラインド評価で決め直すこと（`docs/related-papers.md`）。
 
 **未実装**: Pagefind全文検索 / SJR CSV取込 / DB詳細ページ充実
 
 ## 既知の課題
 
 1. （解消）~~Google Translate無料EP~~ → 翻訳・要約はRoutine(LLM)に移管し廃止。
-2. `/papers` の初回表示が重い（brotli後 705KB）。全件の抄録を載せているため
+2. `/papers` の初回表示が重い（brotli後 720KB）。全件の抄録を載せているため
    （抄録だけで生JSONの58%）。検索精度とのトレードオフで現状維持と判断。
-   一覧で使わないフィールド9つは `app/papers/page.tsx` で落としてある（736KB→705KB）。
+   一覧で使わないフィールドは `app/papers/page.tsx` で落としてある（736KB→705KB）。
+   その後、検索でサブトピックも引けるよう `topic_names` を全件配信して 720KB
+   （+15KB）。測り直すときは `npm run build` 後の `out/papers.txt` を brotli -q 11 で。
 3. （解消）~~詳細ページの「関連研究」が実質「同じDBの最新5件」~~ → 本文ベースの
    類似度（BM25＋タグ加点）に置き換え済み。`lib/related-papers.ts`。
    経緯とブラインド評価の結果は `docs/related-papers.md`。

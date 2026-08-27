@@ -1,6 +1,10 @@
 import { Suspense } from "react";
 import { getPapers } from "@/lib/data-loader";
 import type { ListPaper } from "@/types/paper";
+import {
+  clinicalAreasOf,
+  assertTopicAreasValid,
+} from "@/lib/clinical-areas";
 import { PaperFilters } from "@/components/papers/PaperFilters";
 
 export const metadata = {
@@ -22,6 +26,8 @@ function PaperFiltersFallback() {
 }
 
 export default function PapersPage() {
+  // 辞書の自己点検。分野名の変更漏れやカンマ混入をビルド時に落とす
+  assertTopicAreasValid();
   // 一覧は全論文をクライアントへ渡して絞り込む作りなので、1件あたりの重さが
   // そのまま初回表示の転送量になる。一覧が実際に使うフィールドだけを写し取る。
   //
@@ -29,16 +35,18 @@ export default function PapersPage() {
   // 返り値に型注釈を付けてあるので、必須フィールドの書き忘れも、ListPaper に無い
   // フィールドの書き足しも、どちらもビルドが落ちる（実際に両方試して確認済み）。
   //
-  // ただし省略可能なフィールド（title_ja / abstract_ja / openalex_subfield /
-  // openalex_topic）の書き忘れは型では捕まらない。消すと検索や表示から黙って
-  // 抜けるので、この4つを触るときは実際の画面で確かめること。
+  // ただし省略可能なフィールド（title_ja / abstract_ja）の書き忘れは型では
+  // 捕まらない。消すと検索や表示から黙って抜けるので、この2つを触るときは
+  // 実際の画面で確かめること。
   //
   // ここに無いフィールドは配信されない。落としている主なもの:
   //  - mesh_terms: 生JSONで147KBと最大だが、詳細ページでしか表示していない。
   //    検索対象からも意図的に外してある（lib/papers-search.ts のコメント参照）
   //  - journal_issn / collected_at / medline_status / last_updated /
-  //    auto_detected / classified / openalex_topic_score / openalex_field:
-  //    一覧のどこからも参照していない
+  //    auto_detected / classified / openalex_topic / openalex_topic_score /
+  //    openalex_subfield / openalex_field: 一覧のどこからも参照していない
+  //  - openalex_topics: スコアつきの生データ。一覧が要るのは検索用の名前だけ
+  //    なので、topic_names に写して落としている
   //
   // データ側からは消さない。詳細ページ・About の権利表記・将来の軸で使う。
   // 全部落として brotli 後 736KB → 705KB。
@@ -61,8 +69,8 @@ export default function PapersPage() {
     research_categories: paper.research_categories,
     impact_factor: paper.impact_factor,
     sjr_quartile: paper.sjr_quartile,
-    openalex_subfield: paper.openalex_subfield,
-    openalex_topic: paper.openalex_topic,
+    clinical_areas: clinicalAreasOf(paper.openalex_topics),
+    topic_names: (paper.openalex_topics ?? []).map((t) => t.name),
   }));
 
   return (

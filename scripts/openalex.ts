@@ -77,29 +77,43 @@ async function getJson<T>(url: string): Promise<FetchResult<T>> {
   return { status: "failed", reason: lastReason };
 }
 
+/** OpenAlex が1論文に付けるトピックの1つ。score は0〜1の関連度 */
+export type ScoredTopic = { name: string; score: number };
+
 export type TopicFields = {
   openalex_topic: string | null;
   openalex_topic_score: number | null;
   openalex_subfield: string | null;
   openalex_field: string | null;
+  /**
+   * トピックを関連度つきで全件（OpenAlex は最大3件返す）。スコアの降順。
+   * `openalex_topic` はこの先頭と同じ値で、既存の表示・検索がそのまま動くよう残してある。
+   */
+  openalex_topics: ScoredTopic[] | null;
 };
 
 /** 取得できなかった（＝既存値を残すべき）ことを表す */
 export const TOPIC_UNAVAILABLE = null;
 
-type Work = {
-  primary_topic?: {
-    display_name: string;
-    score: number;
-    subfield?: { display_name: string };
-    field?: { display_name: string };
-  } | null;
+type Topic = {
+  display_name?: string;
+  score?: number;
+  subfield?: { display_name: string };
+  field?: { display_name: string };
 };
+type Work = { topics?: Topic[] | null };
 
 /**
- * 論文の診療領域を取る。
+ * 論文のトピックを取る。
  * 戻り値が null なら「取得に失敗した」＝呼び出し側は既存の値を触らないこと。
  * 200 が返ってトピックが無い場合と404の場合は、全フィールド null のオブジェクトを返す。
+ *
+ * `primary_topic` ではなく `topics`（最大3件、関連度つき）を取る。
+ * 以前は第1トピックだけを取り「第2・第3はスコア0.00〜0.06でほぼノイズ」としていたが、
+ * 実測すると第1の確信度が低い論文では第2に意味のあるスコアが載っていた
+ * （例: 乳がん周術期化学療法の論文は 0.751 好中球減少症 / 0.103 乳がん治療）。
+ * 第1が 0.98 のように確信的な論文でのみ第2が 0.008 まで落ちる。
+ * 診療分野を1論文に複数付けるにはこの第2以降が要る。
  */
 export async function fetchTopic(
   pubmedId: string,
@@ -109,9 +123,10 @@ export async function fetchTopic(
     openalex_topic_score: null,
     openalex_subfield: null,
     openalex_field: null,
+    openalex_topics: null,
   };
   const res = await getJson<Work>(
-    `https://api.openalex.org/works/pmid:${pubmedId}?select=id,primary_topic`,
+    `https://api.openalex.org/works/pmid:${pubmedId}?select=id,topics`,
   );
   if (res.status === "failed") {
     console.warn(`  OpenAlex topic 取得失敗 PMID ${pubmedId}: ${res.reason}`);
@@ -119,13 +134,25 @@ export async function fetchTopic(
   }
   if (res.status === "absent") return empty;
 
-  const topic = res.data.primary_topic;
-  if (!topic?.display_name) return empty;
+  const round = (n: number) => Math.round(n * 1000) / 1000;
+  const topics = (res.data.topics ?? []).filter(
+    (t): t is Topic & { display_name: string; score: number } =>
+      typeof t?.display_name === "string" && typeof t.score === "number",
+  );
+  if (topics.length === 0) return empty;
+
+  // OpenAlex はスコア降順で返すが、依存しないよう明示的に並べ替える
+  const sorted = [...topics].sort((a, b) => b.score - a.score);
+  const primary = sorted[0];
   return {
-    openalex_topic: topic.display_name,
-    openalex_topic_score: Math.round(topic.score * 1000) / 1000,
-    openalex_subfield: topic.subfield?.display_name ?? null,
-    openalex_field: topic.field?.display_name ?? null,
+    openalex_topic: primary.display_name,
+    openalex_topic_score: round(primary.score),
+    openalex_subfield: primary.subfield?.display_name ?? null,
+    openalex_field: primary.field?.display_name ?? null,
+    openalex_topics: sorted.map((t) => ({
+      name: t.display_name,
+      score: round(t.score),
+    })),
   };
 }
 

@@ -9,6 +9,7 @@ import { FavoriteButton } from "@/components/papers/FavoriteButton";
 import { getPapers, getDatabases } from "@/lib/data-loader";
 import { getRelatedPapers } from "@/lib/related-papers";
 import { papersUrlForArea } from "@/lib/papers-url-state";
+import { clinicalAreasOf } from "@/lib/clinical-areas";
 
 export function generateStaticParams() {
   const papers = getPapers();
@@ -48,6 +49,12 @@ export default async function PaperDetailPage({
   // 論文を並べていた頃は、DPC論文221件すべてで同じ5件が出ていた。
   // 関連度が閾値に届かない場合は5件に満たなくてよい。
   const related = getRelatedPapers(paper.id);
+
+  // 診療分野は OpenAlex のトピックから辞書で引く（lib/clinical-areas.ts）
+  const clinicalAreas = clinicalAreasOf(paper.openalex_topics);
+  // トピックは第2・第3も含めて全件出す。診療分野に落ちなかった論文でも、
+  // 何を根拠にそう判断したのかが読み手に見えるようにするため。
+  const topics = paper.openalex_topics ?? [];
 
   // Match DB slugs for linking
   // DBページへのリンク。名前の部分一致だと似た名前のDBを取り違えるので、
@@ -180,26 +187,48 @@ export default async function PaperDetailPage({
                 </div>
               </div>
 
-              {paper.openalex_subfield && (
+              {clinicalAreas.length > 0 && (
                 <div>
                   <p className="text-sm font-medium text-muted-foreground">
-                    診療領域
+                    診療分野
                   </p>
                   <div className="mt-1 flex flex-wrap items-center gap-1.5">
-                    <Link href={papersUrlForArea(paper.openalex_subfield)}>
-                      <Badge
-                        variant="outline"
-                        className="cursor-pointer border-emerald-200 bg-emerald-50 text-emerald-700"
+                    {clinicalAreas.map((area) => (
+                      <Link key={area} href={papersUrlForArea(area)}>
+                        <Badge
+                          variant="outline"
+                          className="cursor-pointer border-emerald-200 bg-emerald-50 text-emerald-700"
+                        >
+                          {area}
+                        </Badge>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* 診療分野の根拠。分野は自前の辞書で決めているのに対し、こちらは
+                  OpenAlex がそのまま付けた値なので、見出しで出所を分けている。
+                  絞り込みの軸にするには 679種と多すぎるので表示だけ。
+                  関連度を並べて出すのは、第2・第3に 0.001 のようなトピックが
+                  混ざるため。数字が無いと第1と同じ重みに見えてしまう。 */}
+              {topics.length > 0 && (
+                <div>
+                  <p className="text-sm font-medium text-muted-foreground">
+                    トピック（OpenAlex）
+                  </p>
+                  <div className="mt-1 flex flex-col gap-0.5">
+                    {topics.map((topic) => (
+                      <span
+                        key={topic.name}
+                        className="text-xs text-muted-foreground"
                       >
-                        {paper.openalex_subfield}
-                      </Badge>
-                    </Link>
-                    {/* 細かいトピック名。絞り込みの軸にするには種類が多すぎるので表示のみ */}
-                    {paper.openalex_topic && (
-                      <span className="text-xs text-muted-foreground">
-                        {paper.openalex_topic}
+                        {topic.name}
+                        <span className="ml-1.5 tabular-nums opacity-70">
+                          {topic.score.toFixed(3)}
+                        </span>
                       </span>
-                    )}
+                    ))}
                   </div>
                 </div>
               )}

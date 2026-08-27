@@ -104,17 +104,20 @@ export function PaperCard({ paper }: { paper: ListPaper }) {
               </div>
             )}
 
-          {paper.openalex_subfield && (
+          {paper.clinical_areas.length > 0 && (
             <div className="flex flex-wrap items-center gap-1.5">
               <span className="text-xs font-medium text-muted-foreground">
-                診療領域:
+                診療分野:
               </span>
-              <Badge
-                variant="outline"
-                className="text-xs border-emerald-200 bg-emerald-50 text-emerald-700"
-              >
-                {paper.openalex_subfield}
-              </Badge>
+              {paper.clinical_areas.map((area) => (
+                <Badge
+                  key={area}
+                  variant="outline"
+                  className="text-xs border-emerald-200 bg-emerald-50 text-emerald-700"
+                >
+                  {area}
+                </Badge>
+              ))}
             </div>
           )}
 

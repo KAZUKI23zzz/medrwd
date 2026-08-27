@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PaperCard } from "@/components/papers/PaperCard";
 import { getPapers, getDatabases, getPrivateDbLinks } from "@/lib/data-loader";
+import { clinicalAreasOf } from "@/lib/clinical-areas";
 
 export default function Home() {
   const papers = getPapers();
@@ -13,7 +14,13 @@ export default function Home() {
   // 気づかないまま「最近」でないものが並ぶので、日付で明示的に並べ替える。
   const recentPapers = [...papers]
     .sort((a, b) => b.publication_date.localeCompare(a.publication_date))
-    .slice(0, 5);
+    .slice(0, 5)
+    // PaperCard は診療分野を算出済みで受け取る（一覧と同じ見た目にするため）
+    .map((paper) => ({
+      ...paper,
+      clinical_areas: clinicalAreasOf(paper.openalex_topics),
+      topic_names: (paper.openalex_topics ?? []).map((t) => t.name),
+    }));
 
   // DB usage counts
   const dbCounts = new Map<string, number>();

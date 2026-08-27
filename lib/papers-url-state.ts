@@ -18,7 +18,7 @@ export interface PapersUrlState {
   designs: string[];
   categories: string[];
   methods: string[];
-  /** 診療領域（OpenAlex の subfield）。Surgery / Oncology など */
+  /** 診療分野（data/topic-areas.json 由来）。消化器 / 循環器 など */
   areas: string[];
   /** null = 下限なし（データ全体を対象にする） */
   yearFrom: number | null;
@@ -76,10 +76,9 @@ export const EMPTY_PAPERS_STATE: PapersUrlState = {
  * カンマ区切りの古いURL（`?db=DPC,JMDC`）も読めるようにしてある。
  *
  * ただしこの後方互換は、値そのものにカンマが入るファセットでは使えない。
- * 診療領域には "Public Health, Environmental and Occupational Health" のように
- * カンマを含む値が5種（99件）あり、分割すると2つの別々の条件に割れて0件になる。
- * 診療領域は後から追加した軸でカンマ区切りの古いURLが存在しないので、
- * そちらは分割しない。
+ * 診療分野（`area`）は後から追加した軸でカンマ区切りの古いURLが存在しないので、
+ * そちらは分割しない。分野名にカンマを入れないことは
+ * lib/clinical-areas.ts の assertTopicAreasValid がビルド時に確かめている。
  */
 function parseList(
   params: ParamsLike,
@@ -169,7 +168,7 @@ export function papersUrlForDatabase(paperTag: string): string {
   return qs ? `/papers?${qs}` : "/papers";
 }
 
-/** ある診療領域で絞り込んだ研究カタログの URL */
+/** ある診療分野で絞り込んだ研究カタログの URL */
 export function papersUrlForArea(area: string): string {
   const qs = buildPapersQuery({ ...EMPTY_PAPERS_STATE, areas: [area] });
   return qs ? `/papers?${qs}` : "/papers";
