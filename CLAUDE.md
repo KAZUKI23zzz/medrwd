@@ -18,7 +18,7 @@ Next.js 16 (Static Export) / TypeScript / Tailwind CSS v4 + shadcn/ui v4 / JSON�
 | `scripts/sync-pubmed.ts` | PubMed収集（収集専任: hasabstract + OpenAlex IF/トピック → classified:false で追記）。分類・翻訳はしない |
 | `scripts/backfill-openalex.ts` | 既存論文にOpenAlexのトピック・欠けているIFを補う（`--all` で全件取り直し。冪等） |
 | `data/papers.json` | 論文メタデータ（1,085件、全件分類済み）。週次Routineが追記・削除する。`openalex_topics` は関連度つきトピック（OpenAlex由来・CC0） |
-| `data/topic-areas.json` | **トピック→診療分野の辞書**（25分野／679トピック）。診療分野の軸はここが正 |
+| `data/topic-areas.json` | **トピック→診療分野の辞書**（25分野／OpenAlex全4,516トピック、うち696件に分野）。診療分野の軸はここが正 |
 | `lib/clinical-areas.ts` | 論文の診療分野を求める（辞書引き＋スコア閾値0.10）。設計判断はここのコメントに集約 |
 | `data/sync-status.json` | 同期の最終実行状況（Routineが毎回更新、`/status`で表示） |
 | `data/databases.json` | RWDデータベース情報（10件。`paper_tag` で論文側の名前と突き合わせる） |
@@ -57,6 +57,12 @@ DB一覧の拡充（10件）・お気に入り（localStorage）。
 OpenAlex のトピック（`topics`、関連度つき最大3件。CC0・singletonは課金対象外）を
 `data/topic-areas.json` の辞書で日本の診療科25分野に写像し、絞り込み軸にしている
 （1,085件中940件＝87%に付与、平均1.39分野）。
+
+辞書は **OpenAlex の公開スナップショットから全4,516トピックを収録**している
+（`https://openalex.s3.amazonaws.com/data/jsonl/topics/manifest.json`、2026-06-26版）。
+**API の list エンドポイント（`?filter=`）は課金対象なので使わないこと。**
+手元の論文に出たトピックだけで作ると、新しい論文が持ち込むトピックを取りこぼす
+（実際、196件は現時点で未出現だが分野を用意してある）。
 
 **`openalex_subfield` は使わない。** OpenAlex 側のトピック→subfield 写像が誤っており
 （`Gastric Cancer Management and Outcomes` の親が `Pulmonary and Respiratory Medicine`）、
