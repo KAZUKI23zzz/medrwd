@@ -77,8 +77,14 @@ async function getJson<T>(url: string): Promise<FetchResult<T>> {
   return { status: "failed", reason: lastReason };
 }
 
-/** OpenAlex が1論文に付けるトピックの1つ。score は0〜1の関連度 */
-export type ScoredTopic = { name: string; score: number };
+/**
+ * OpenAlex が1論文に付けるトピックの1つ。score は0〜1の関連度。
+ *
+ * `id` は `T10183` の短い形（応答は `https://openalex.org/T10183` で返る）。
+ * 診療分野の辞書 `data/topic-areas.json` はこのIDで引く。名前で引かないのは、
+ * OpenAlex がトピックを改名したときに写像が黙って外れるのを避けるため。
+ */
+export type ScoredTopic = { id: string; name: string; score: number };
 
 export type TopicFields = {
   openalex_topic: string | null;
@@ -96,6 +102,7 @@ export type TopicFields = {
 export const TOPIC_UNAVAILABLE = null;
 
 type Topic = {
+  id?: string;
   display_name?: string;
   score?: number;
   subfield?: { display_name: string };
@@ -135,10 +142,17 @@ export async function fetchTopic(
   if (res.status === "absent") return empty;
 
   const round = (n: number) => Math.round(n * 1000) / 1000;
+  // id が無いトピックは辞書を引けないので捨てる。実際には OpenAlex は必ず返すが、
+  // 黙って名前だけのトピックが混ざると診療分野が付かない原因が分からなくなる。
   const topics = (res.data.topics ?? []).filter(
-    (t): t is Topic & { display_name: string; score: number } =>
-      typeof t?.display_name === "string" && typeof t.score === "number",
+    (t): t is Topic & { id: string; display_name: string; score: number } =>
+      typeof t?.id === "string" &&
+      typeof t.display_name === "string" &&
+      typeof t.score === "number",
   );
+  const dropped = (res.data.topics ?? []).length - topics.length;
+  if (dropped > 0)
+    console.warn(`  PMID ${pubmedId}: id か score が無いトピックを${dropped}件捨てた`);
   if (topics.length === 0) return empty;
 
   // OpenAlex はスコア降順で返すが、依存しないよう明示的に並べ替える
@@ -150,6 +164,8 @@ export async function fetchTopic(
     openalex_subfield: primary.subfield?.display_name ?? null,
     openalex_field: primary.field?.display_name ?? null,
     openalex_topics: sorted.map((t) => ({
+      // `https://openalex.org/T10183` → `T10183`
+      id: t.id.replace(/^.*\//, ""),
       name: t.display_name,
       score: round(t.score),
     })),

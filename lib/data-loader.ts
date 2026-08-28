@@ -2,10 +2,12 @@ import papersData from "@/data/papers.json";
 import databasesData from "@/data/databases.json";
 import privateLinksData from "@/data/private-db-links.json";
 import syncStatusData from "@/data/sync-status.json";
+import unknownTopicsData from "@/data/unknown-topics.json";
 import type { Paper } from "@/types/paper";
 import { DATABASE_TYPE_LABEL } from "@/types/database";
 import type { RWDDatabase, PrivateDBLink } from "@/types/database";
 import type { SyncStatus } from "@/types/sync-status";
+import type { UnknownTopicsFile } from "@/types/unknown-topics";
 
 /**
  * 配列であるべきフィールド。Routine(LLM)が単一文字列を書き込むと
@@ -66,4 +68,13 @@ export function getPrivateDbLinks(): PrivateDBLink[] {
 
 export function getSyncStatus(): SyncStatus {
   return syncStatusData as SyncStatus;
+}
+
+
+/**
+ * 辞書に無い（または改名された）OpenAlex トピック。
+ * 収集のたびに scripts/unknown-topics.ts が作り直す。/status で見せる。
+ */
+export function getUnknownTopics(): UnknownTopicsFile {
+  return unknownTopicsData as UnknownTopicsFile;
 }

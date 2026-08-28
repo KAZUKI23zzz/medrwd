@@ -62,8 +62,9 @@ GitHub Actions・Google翻訳は廃止し、本Routineに一本化している�
 
 8. コミットとマージ（クラウドセッションに `gh` CLI は無い。**セッション組み込みのGitHubツール**でPR作成・マージする）:
    - 新しいブランチ `claude/data-sync-<YYYY-MM-DD>` を作成し、変更をコミットして push する。
-   - **手順7が全て通った場合**: サイトマップを再生成（`npx tsx scripts/generate-sitemap.ts`）してから、`data/papers.json`・`data/sync-status.json`・`public/sitemap.xml` をコミット・push → このブランチから main への Pull Request を作成し、squash でマージする。
-   - **手順7が1つでも失敗、または手順2で収集失敗した場合**: `data/papers.json` は**コミットしない**（サイトマップも再生成しない）。`data/sync-status.json`（status:"failed", error に理由）だけをコミット・push → PR作成 → main にマージ。不正な論文データを本番に出さない。
+   - **手順7が全て通った場合**: サイトマップを再生成（`npx tsx scripts/generate-sitemap.ts`）してから、`data/papers.json`・`data/sync-status.json`・`data/unknown-topics.json`・`public/sitemap.xml` をコミット・push → このブランチから main への Pull Request を作成し、squash でマージする。
+     - `data/unknown-topics.json` は手順2の収集スクリプトが自動で書き換える（辞書に無いOpenAlexトピックの待ち行列）。**中身を判断したり編集したりしないこと。** 分野の割り当ては人がやる。差分が出ていたらそのままコミットする。
+   - **手順7が1つでも失敗、または手順2で収集失敗した場合**: `data/papers.json` と `data/unknown-topics.json` は**コミットしない**（サイトマップも再生成しない）。`data/sync-status.json`（status:"failed", error に理由）だけをコミット・push → PR作成 → main にマージ。不正な論文データを本番に出さない。
    - push や PR/マージで権限エラー（403 等）が出たら、原因を `data/sync-status.json` の `error` に記録して終了する（握りつぶさない）。
    - いずれの場合も、何をしたか・何で失敗したかをセッションの最後に明記する。
 

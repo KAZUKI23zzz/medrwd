@@ -22,7 +22,7 @@ type FieldType =
   /** 省略可能かつ null も許す（OpenAlex から取れなかった場合に null が入る） */
   | "string|null?"
   | "number|null?"
-  /** 省略可能かつ null も許す、{name, score} の配列 */
+  /** 省略可能かつ null も許す、{id, name, score} の配列 */
   | "topics|null?";
 
 /** types/paper.ts の Paper インターフェースに対応。null許容フィールドは個別に扱う。 */
@@ -100,14 +100,19 @@ function matches(value: unknown, type: FieldType): boolean {
         value === undefined ||
         value === null ||
         (Array.isArray(value) &&
-          value.every(
-            (v) =>
-              typeof v === "object" &&
-              v !== null &&
-              typeof (v as { name?: unknown }).name === "string" &&
-              typeof (v as { score?: unknown }).score === "number" &&
-              Number.isFinite((v as { score: number }).score),
-          ))
+          value.every((v) => {
+            if (typeof v !== "object" || v === null) return false;
+            const t = v as { id?: unknown; name?: unknown; score?: unknown };
+            return (
+              // id は診療分野の辞書を引く鍵。欠けると分野が黙って付かなくなるので
+              // 形もここで確かめる（`T` + 数字）
+              typeof t.id === "string" &&
+              /^T\d+$/.test(t.id) &&
+              typeof t.name === "string" &&
+              typeof t.score === "number" &&
+              Number.isFinite(t.score)
+            );
+          }))
       );
   }
 }
