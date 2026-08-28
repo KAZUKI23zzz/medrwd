@@ -31,8 +31,11 @@ export interface Paper {
    * トピックを関連度つきで全件（OpenAlex は最大3件返す）。スコアの降順で、
    * 先頭は `openalex_topic` と同じ値。1論文が複数の診療分野にまたがることを
    * 表すために使う（例: 乳がん患者の眼有害事象 → 眼科＋乳腺）。
+   *
+   * `id` は `T10183` の形。診療分野の辞書はこのIDで引く（名前で引くと
+   * OpenAlex の改名で写像が黙って外れる）。lib/clinical-areas.ts 参照。
    */
-  openalex_topics?: { name: string; score: number }[] | null;
+  openalex_topics?: { id: string; name: string; score: number }[] | null;
   openalex_subfield?: string | null;
   openalex_field?: string | null;
   auto_detected: boolean;

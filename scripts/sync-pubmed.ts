@@ -13,6 +13,7 @@
  */
 
 import { fetchTopic, fetchImpactFactor } from "./openalex";
+import { updateUnknownTopics } from "./unknown-topics";
 import * as fs from "fs";
 import * as path from "path";
 
@@ -39,7 +40,7 @@ interface Paper {
   sjr_quartile: string | null;
   openalex_topic?: string | null;
   openalex_topic_score?: number | null;
-  openalex_topics?: { name: string; score: number }[] | null;
+  openalex_topics?: { id: string; name: string; score: number }[] | null;
   openalex_subfield?: string | null;
   openalex_field?: string | null;
   research_categories: string[];
@@ -325,6 +326,13 @@ async function main() {
 
   fs.writeFileSync(papersPath, JSON.stringify(allPapers, null, 2) + "\n", "utf-8");
   console.log(`Total papers saved: ${allPapers.length}`);
+
+  // 辞書に無いトピックを記録する。新しいトピックが付いた論文は診療分野が
+  // 付かないまま公開されるので、気づけるようにしておく（/status に出る）
+  const issues = updateUnknownTopics(allPapers);
+  console.log(
+    `未登録トピック ${issues.unknown}種 / 改名 ${issues.renamed}種 → data/unknown-topics.json`,
+  );
 }
 
 main().catch((e) => {

@@ -11,6 +11,7 @@
 import fs from "fs";
 import path from "path";
 import { fetchTopic, fetchImpactFactor } from "./openalex";
+import { updateUnknownTopics } from "./unknown-topics";
 
 type Paper = {
   pubmed_id: string;
@@ -69,8 +70,12 @@ async function main() {
   }
 
   save();
+  const issues = updateUnknownTopics(papers);
   console.log(
     `Done. topic ${topicHit} hit / ${topicEmpty} empty / ${topicFailed} failed, IF filled ${ifFilled}`,
+  );
+  console.log(
+    `未登録トピック ${issues.unknown}種 / 改名 ${issues.renamed}種 → data/unknown-topics.json`,
   );
   if (topicFailed > 0) {
     console.log("失敗した論文は値を変更していない。再実行すれば拾い直せる。");

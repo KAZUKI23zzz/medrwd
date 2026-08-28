@@ -48,13 +48,23 @@ export const AREA_SCORE_THRESHOLD = 0.1;
  */
 export const CLINICAL_AREAS: string[] = topicAreas.areas;
 
-const TOPIC_TO_AREAS = topicAreas.topics as Record<string, string[] | undefined>;
+/** 辞書1件ぶん。キーは OpenAlex のトピックID（`T10183`） */
+type TopicEntry = { name: string; areas: string[] };
 
-type TopicLike = { name: string; score: number };
+const TOPIC_TO_AREAS = topicAreas.topics as Record<
+  string,
+  TopicEntry | undefined
+>;
+
+/** 論文が持つトピック1件（`Paper["openalex_topics"]` の要素） */
+export type TopicLike = { id: string; name: string; score: number };
 
 /**
  * 論文の診療分野。辞書に無いトピックと、どの分野にも落ちないトピック
  * （薬剤疫学・医療政策・統計手法など）は空として扱う。
+ *
+ * 引くのは名前ではなくIDである点に注意。OpenAlex がトピックを改名しても
+ * 写像が外れないようにするため（改名は topicIssuesOf が拾う）。
  */
 export function clinicalAreasOf(
   topics: TopicLike[] | null | undefined,
@@ -67,7 +77,7 @@ export function clinicalAreasOf(
   const found = new Set<string>();
   for (const topic of topics) {
     if (topic.score < AREA_SCORE_THRESHOLD && topic.score < topScore) continue;
-    for (const area of TOPIC_TO_AREAS[topic.name] ?? []) found.add(area);
+    for (const area of TOPIC_TO_AREAS[topic.id]?.areas ?? []) found.add(area);
   }
   // 分野の並びは CLINICAL_AREAS の順に揃える。トピックの順に任せると
   // 同じ組み合わせでもカードごとにバッジの並びが変わって落ち着かない。
@@ -75,10 +85,50 @@ export function clinicalAreasOf(
 }
 
 /**
+ * 辞書と食い違っているトピック。
+ *
+ * `unknown` は辞書に無いID。OpenAlex がトピックを新設するとこれが出る。
+ * その論文には診療分野が付かないので、放っておくと静かに取りこぼしが増える。
+ *
+ * `renamed` はIDはあるが名前が変わったもの。分野は無事（IDに紐づいているため）で、
+ * 辞書の `name` を直せばよい。名前で引いていたらここで写像が外れていた。
+ *
+ * 収集時に data/unknown-topics.json へ溜め、`/status` に出す。
+ * 判断は人がやる（自動で分野を付けない）ので、ここは検出だけを担う。
+ */
+export type TopicIssue =
+  | { kind: "unknown"; id: string; name: string }
+  | { kind: "renamed"; id: string; name: string; knownName: string };
+
+export function topicIssuesOf(
+  topics: TopicLike[] | null | undefined,
+): TopicIssue[] {
+  const issues: TopicIssue[] = [];
+  for (const topic of topics ?? []) {
+    const entry = TOPIC_TO_AREAS[topic.id];
+    if (!entry) {
+      issues.push({ kind: "unknown", id: topic.id, name: topic.name });
+    } else if (entry.name !== topic.name) {
+      issues.push({
+        kind: "renamed",
+        id: topic.id,
+        name: topic.name,
+        knownName: entry.name,
+      });
+    }
+  }
+  return issues;
+}
+
+/**
  * 辞書の自己点検。ビルド時に一度だけ呼ぶ。
  *
  * 絞り込み値は URL に載るので、カンマが入ると旧 `?area=A,B` 形式との
  * 兼ね合いで壊れる。分野名の変更漏れもここで気づけるようにしておく。
+ *
+ * 未登録トピックではここで落とさない。新しいトピックが増えるのは異常ではなく
+ * 通常の出来事で、週次の取り込みをビルド失敗で止めるのは過剰なため。
+ * そちらは data/unknown-topics.json と `/status` で見えるようにしてある。
  */
 export function assertTopicAreasValid(): void {
   const known = new Set(CLINICAL_AREAS);
@@ -89,11 +139,16 @@ export function assertTopicAreasValid(): void {
       );
     }
   }
-  for (const [topic, areas] of Object.entries(TOPIC_TO_AREAS)) {
-    for (const area of areas ?? []) {
+  for (const [id, entry] of Object.entries(TOPIC_TO_AREAS)) {
+    if (!/^T\d+$/.test(id)) {
+      throw new Error(
+        `topic-areas.json: キー "${id}" は OpenAlex のトピックID（T+数字）ではありません`,
+      );
+    }
+    for (const area of entry?.areas ?? []) {
       if (!known.has(area)) {
         throw new Error(
-          `topic-areas.json: トピック "${topic}" の分野 "${area}" は areas に無い値です`,
+          `topic-areas.json: トピック "${id}"（${entry?.name}）の分野 "${area}" は areas に無い値です`,
         );
       }
     }
