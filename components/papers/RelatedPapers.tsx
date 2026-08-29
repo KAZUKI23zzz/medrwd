@@ -7,13 +7,17 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 
 /**
- * 画面に出す件数。フィルタで足りなくなってよい。
+ * 最初に出す件数と、「さらに表示」1回ぶんの件数。
+ *
+ * 候補は15件あるが、詳細ページの下端に15件並べると縦に長すぎる。5件ずつ出して、
+ * 続きがあることをボタンで示す。全部見られるようにしてあるので、絞り込みの
+ * 件数表示（例: 産婦人科(7)）と実際に見える数が食い違わない。
  *
  * **lib/related-papers.ts から import しないこと。** あちらは data-loader 経由で
  * data/papers.json を読むので、クライアントから触るとバンドルに 4.1MB の
  * papers.json 全体が載る（実際に一度やって計測した）。定数はここに置く。
  */
-const RELATED_VISIBLE = 5;
+const RELATED_PAGE = 5;
 
 /** 絞り込みの種類。値が違うもの同士は AND、同じ種類の中は OR で効く */
 export type RelatedFilterKey = "areas" | "topics" | "dbs";
@@ -84,6 +88,7 @@ function matches(
  */
 export function RelatedPapers({ candidates, filters }: RelatedPapersProps) {
   const [open, setOpen] = useState(false);
+  const [shown, setShown] = useState(RELATED_PAGE);
   const [selected, setSelected] = useState<Record<RelatedFilterKey, Set<string>>>({
     areas: new Set(),
     topics: new Set(),
@@ -98,12 +103,12 @@ export function RelatedPapers({ candidates, filters }: RelatedPapersProps) {
     [filters],
   );
 
-  const visible = useMemo(() => {
-    const hit = candidates.filter((c) =>
-      keys.every((k) => matches(c, k, selected[k])),
-    );
-    return hit.slice(0, RELATED_VISIBLE);
-  }, [candidates, keys, selected]);
+  const hits = useMemo(
+    () => candidates.filter((c) => keys.every((k) => matches(c, k, selected[k]))),
+    [candidates, keys, selected],
+  );
+  const visible = hits.slice(0, shown);
+  const remaining = hits.length - visible.length;
 
   /**
    * 選択肢ごとの件数。自分の種類の選択は外して数えるので、同じ種類の中で
@@ -127,16 +132,22 @@ export function RelatedPapers({ candidates, filters }: RelatedPapersProps) {
 
   const activeCount = keys.reduce((n, k) => n + selected[k].size, 0);
 
-  const toggle = (key: RelatedFilterKey, value: string) =>
+  // 条件を変えたら展開は畳み直す。前の条件で開いた状態が残っていると、
+  // 絞り込んだのに長いままで、何件に絞れたのかが分かりにくい
+  const toggle = (key: RelatedFilterKey, value: string) => {
+    setShown(RELATED_PAGE);
     setSelected((prev) => {
       const next = new Set(prev[key]);
       if (next.has(value)) next.delete(value);
       else next.add(value);
       return { ...prev, [key]: next };
     });
+  };
 
-  const clear = () =>
+  const clear = () => {
+    setShown(RELATED_PAGE);
     setSelected({ areas: new Set(), topics: new Set(), dbs: new Set() });
+  };
 
   return (
     <div>
@@ -240,6 +251,19 @@ export function RelatedPapers({ candidates, filters }: RelatedPapersProps) {
               </div>
             </Link>
           ))}
+          {remaining > 0 && (
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              className="w-full"
+              onClick={() =>
+                setShown((n) => Math.min(n + RELATED_PAGE, hits.length))
+              }
+            >
+              次の{Math.min(remaining, RELATED_PAGE)}件を見る（あと{remaining}件）
+            </Button>
+          )}
         </div>
       )}
     </div>
