@@ -1,5 +1,782 @@
 [
   {
+    "id": "pmid-42666150",
+    "pubmed_id": "42666150",
+    "doi": "10.1002/pds.70453",
+    "title": "Risk of Heart Failure Hospitalization Associated With Hypoxia-Inducible Factor Prolyl Hydroxylase Inhibitors Versus Erythropoiesis-Stimulating Agents: A Nationwide Claims-Based Cohort Study.",
+    "abstract": "Hypoxia-inducible factor prolyl hydroxylase inhibitors (HIF-PHIs) are increasingly used to treat renal anemia in patients with chronic kidney disease (CKD). We evaluated the risk of heart failure associated with HIF-PHIs compared with erythropoiesis-stimulating agents (ESAs) in routine clinical practice. We conducted a nationwide, retrospective, active-comparator cohort study using a Japanese claims database. We included adults with non-dialysis CKD and heart failure initiating HIF-PHIs or ESAs alongside diuretic therapy between August 2020 and March 2025. The primary outcome was heart failure hospitalization. Secondary outcomes included emergency heart failure hospitalization and hospitalization requiring intravenous diuretics. Baseline characteristics were balanced using inverse probability of treatment weighting (IPTW) based on propensity scores. Hazard ratios (HRs), 95% confidence intervals (CIs), and sensitivity analyses were evaluated in predefined subgroups using Cox proportional hazards models. The cohorts comprised 14 995 HIF-PHI and 22 889 ESA users with baseline characteristics well balanced after IPTW adjustment. Heart failure hospitalization incidence rates per 1000 person-years (PY) were 157.8 for HIF-PHIs and 177.0 for ESAs. HRs were 0.93 [95% CI 0.87-1.01] for heart failure hospitalization, 0.94 [95% CI 0.84-1.03] for emergency heart failure, and 0.87 [95% CI 0.81-0.94] for intravenous diuretic administration. Results were generally consistent across subgroup and sensitivity analyses. Although residual confounding cannot be excluded because of the observational study design, HIF-PHIs were not associated with evidence of an increased risk of heart failure hospitalization in patients with heart failure. Hypoxia‐inducible factor prolyl hydroxylase inhibitors (HIF‐PHIs) are newer medicines used to treat anemia in people with chronic kidney disease. However, concerns have been raised that these medicines might worsen heart failure, especially in patients with pre‐existing heart failure. To investigate this issue, we analyzed healthcare claims data from a large nationwide database in Japan. We compared patients with heart failure who started HIF‐PHIs with similar patients who started conventional anemia treatments called erythropoiesis‐stimulating agents (ESAs), evaluating hospitalizations for heart failure and related outcomes. Among more than 37 000 patients, we found that HIF‐PHIs were not associated with a higher risk of heart failure hospitalization compared with ESAs. Similar results were observed when examining emergency hospitalizations and other indicators of worsening heart failure, and additional analyses using different statistical approaches produced consistent findings. These results suggest that HIF‐PHIs do not appear to substantially increase the risk of worsening heart failure in routine clinical practice, providing important information for clinicians treating anemia in patients with chronic kidney disease and heart failure.",
+    "authors": [
+      "Kunitsu Y",
+      "Ikuta K",
+      "Hira D",
+      "Nakagawa S",
+      "Terada T"
+    ],
+    "journal": "Pharmacoepidemiology and drug safety",
+    "journal_issn": "1099-1557",
+    "year": 2026,
+    "publication_date": "2026-08-29",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "全国規模の医療レセプトデータベース（データベース名不明）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.14,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:23.201Z",
+    "classified": true,
+    "title_ja": "HIF-PHI薬とESA製剤の心不全入院リスク比較:全国レセプトデータによるコホート研究",
+    "abstract_ja": "非透析CKD患者を対象に、HIF-PHI開始群とESA開始群で心不全入院リスクをIPTWで調整して比較した。心不全入院のハザード比は0.93(95%CI 0.87-1.01)で、両群間に明確な差は見られなかった。HIF-PHIはESAと比較して心不全増悪のリスクを実質的に高めないことが示唆された。"
+  },
+  {
+    "id": "pmid-42661278",
+    "pubmed_id": "42661278",
+    "doi": "10.1111/1346-8138.70458",
+    "title": "Economic Burden and Treatment Patterns Among Patients Diagnosed With Vitiligo in Japan: An Observational Retrospective Cohort Study.",
+    "abstract": "Vitiligo, a common and chronic depigmentation disorder, significantly impacts patients' quality of life and exerts a substantial economic burden. The deleterious impact of vitiligo can be exacerbated by comorbid conditions, including psychiatric and autoimmune conditions. Treatment may vary across geographic regions, and there is sparse evidence of treatment patterns for vitiligo in Japan. Evaluations of healthcare costs are also needed to help underline unmet needs, including data on the influence of comorbid conditions on costs. Here we report results of a retrospective cohort analysis using claims data from the Japan Medical Data Center database to evaluate the economic burden and treatment patterns among patients with vitiligo in Japan. Primary study outcomes were costs and healthcare resource utilization (HCRU) 12 months post-index (diagnosis date) for patients with vitiligo versus matched controls, based on inpatient, outpatient, and pharmacy claims. In total, 28 800 patients were included (4800 in the vitiligo cohort; 24 000 matched controls). Patients with vitiligo had significantly greater all-cause healthcare costs (¥84 766 vs. ¥55 011, p < 0.0001) and HCRU than matched controls, primarily driven by outpatient, dermatology-, and vitiligo-related procedure costs. In patients with vitiligo, comorbid psychiatric and autoimmune conditions significantly increased all-cause healthcare costs versus no comorbid condition (¥193 468 vs. ¥78 313 and ¥185 179 vs. ¥77 184, respectively; both p < 0.0001). Most patients (67.5%) did not receive treatment for vitiligo in the 12 months following diagnosis. Of those who did, 76.0% received only phototherapy. Only 2.2% received second-line treatment. Overall, Japanese patients with vitiligo face substantially higher healthcare costs and resource utilization than those without vitiligo, with burden further increased by psychiatric and autoimmune comorbidities; notably, most remained untreated in the year after diagnosis, and treated patients primarily received phototherapy.",
+    "authors": [
+      "Oiso N",
+      "Hanson KA",
+      "Soliman AM",
+      "Li C",
+      "Taura M",
+      "Mercer D",
+      "Rava A",
+      "Bynoe D",
+      "Sun H",
+      "Suzuki T"
+    ],
+    "journal": "The Journal of dermatology",
+    "journal_issn": "1346-8138",
+    "year": 2026,
+    "publication_date": "2026-08-28",
+    "analysis_methods": [],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "医療資源利用・経済評価",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.4,
+    "sjr_quartile": null,
+    "openalex_topic": "melanin and skin pigmentation",
+    "openalex_topic_score": 0.988,
+    "openalex_subfield": "Cell Biology",
+    "openalex_field": "Biochemistry, Genetics and Molecular Biology",
+    "openalex_topics": [
+      {
+        "id": "T11144",
+        "name": "melanin and skin pigmentation",
+        "score": 0.988
+      },
+      {
+        "id": "T11346",
+        "name": "Mast cells and histamine",
+        "score": 0.002
+      },
+      {
+        "id": "T11172",
+        "name": "Dermatologic Treatments and Research",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:20.809Z",
+    "classified": true,
+    "title_ja": "尋常性白斑患者の医療費と治療パターン:JMDCデータを用いた後方視的コホート研究",
+    "abstract_ja": "JMDCデータベースを用い、尋常性白斑患者4,800例と対照24,000例の医療費・医療資源利用を比較した。白斑患者は対照より医療費が有意に高く(84,766円 vs 55,011円)、精神疾患や自己免疫疾患を併存するとさらに費用が増加した。診断後1年で67.5%が未治療のままであり、治療を受けた患者の大半は光線療法にとどまっていた。"
+  },
+  {
+    "id": "pmid-42661528",
+    "pubmed_id": "42661528",
+    "doi": "10.1111/1756-185x.70838",
+    "title": "Comparative Safety Analysis of Targeted Synthetic and Biologic Disease-Modifying Antirheumatic Drugs Among Patients With Rheumatoid Arthritis: A Nationwide Cohort Study in Japan.",
+    "abstract": "To compare risks of malignancy, opportunistic infections, and venous thromboembolism between the targeted synthetic disease-modifying antirheumatic drugs (tsDMARDs) and biologic DMARDs (bDMARDs) at the 2nd and 3rd lines of therapy (LOT). We conducted a cohort study using the National Database of Health Insurance Claims (2013-2021). Patients with rheumatoid arthritis (RA) initiating tsDMARDs or bDMARDs after conventional synthetic DMARDs (csDMARDs) were identified at the 2nd LOT or 3rd LOT. Hazard ratios (HRs) with 95% confidence intervals (CIs) were estimated using Cox models weighted by inverse probability of treatment weighting. Among 498 813 csDMARD initiators, 66 638 and 4177 initiated bDMARDs and tsDMARDs at 2nd LOT; 14 085 and 1757 initiated bDMARDs and tsDMARDs at 3rd LOT. For malignancy, HRs (95% CIs) for tsDMARDs versus bDMARDs were 0.92 (0.60-1.43) at 2nd LOT and 0.94 (0.53-1.65) at 3rd LOT. HRs (95% CIs) for pneumocystis pneumonia (PCP) and deep vein thrombosis (DVT) were as follows: PCP, 0.98 (0.75-1.29) at 2nd LOT and 1.12 (0.81-1.54) at 3rd LOT; DVT, 1.13 (0.64-1.99) at 2nd LOT and 0.96 (0.52-1.78) at 3rd LOT. In contrast, herpes zoster (HZ) risk was consistently higher with tsDMARDs (2nd LOT: HR, 2.61 [95% CI, 2.24-3.05]; 3rd LOT: HR, 2.90 [95% CI, 2.38-3.53]). In the nationwide Japanese cohort, tsDMARDs did not show increased malignancy risk compared to bDMARDs, and PCP risk had no clear difference at 2nd and 3rd LOTs, whereas the risk of HZ was higher with tsDMARDs.",
+    "authors": [
+      "Nishimura S",
+      "Hirano T",
+      "Setoguchi S",
+      "Matsui H",
+      "Takeuchi Y",
+      "Inoue Y",
+      "Tanaka Y",
+      "Yamaoka K",
+      "Ii Y",
+      "Hiro S",
+      "Hoshi M",
+      "Sugiyama N",
+      "Matsuyama Y",
+      "Kumamaru H"
+    ],
+    "journal": "International journal of rheumatic diseases",
+    "journal_issn": "1756-185X",
+    "year": 2026,
+    "publication_date": "2026-08-28",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.13,
+    "sjr_quartile": null,
+    "openalex_topic": "Rheumatoid Arthritis Research and Therapies",
+    "openalex_topic_score": 0.693,
+    "openalex_subfield": "Rheumatology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10200",
+        "name": "Rheumatoid Arthritis Research and Therapies",
+        "score": 0.693
+      },
+      {
+        "id": "T12255",
+        "name": "Biosimilars and Bioanalytical Methods",
+        "score": 0.05
+      },
+      {
+        "id": "T11616",
+        "name": "Autoimmune and Inflammatory Disorders Research",
+        "score": 0.05
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:21.311Z",
+    "classified": true,
+    "title_ja": "関節リウマチにおけるtsDMARDとbDMARDの安全性比較:NDBを用いた全国コホート研究",
+    "abstract_ja": "NDB(2013-2021年)を用い、csDMARD使用後にtsDMARDまたはbDMARDを開始した関節リウマチ患者について、悪性腫瘍・日和見感染・静脈血栓塞栓症のリスクをIPTW調整Coxモデルで比較した。悪性腫瘍やニューモシスチス肺炎、深部静脈血栓症のリスクに明確な差はなかったが、帯状疱疹のリスクはtsDMARD群で一貫して高かった(2nd LOT HR 2.61、3rd LOT HR 2.90)。"
+  },
+  {
+    "id": "pmid-42663102",
+    "pubmed_id": "42663102",
+    "doi": "10.1002/pds.70468",
+    "title": "Corticosteroid Use and In-Hospital Mortality in Patients With Brain Abscess: A Target Trial Emulation.",
+    "abstract": "Corticosteroids are sometimes administered to patients with severe brain edema associated with brain abscess. However, no studies have used methods that appropriately account for time-varying covariates and immortal time to evaluate the impact of intravenous corticosteroid use on in-hospital mortality. Therefore, we aimed to address these limitations and estimate the impact on in-hospital mortality using a target trial emulation framework. We identified patients admitted with brain abscess, not caused by head trauma or neurosurgical interventions, from two large-scale hospital-based databases in Japan between 2014 and 2024. We compared two treatment strategies: Strategy 1 was initiation of intravenous dexamethasone or betamethasone administration within 7 days after admission and continuing for at least 3 consecutive days; Strategy 2 was no intravenous corticosteroid use throughout hospitalization. Using a clone-censor-weight approach, we estimated the 60-day in-hospital mortality. A total of 627 patients met the eligibility criteria. Overall, 34 patients (5.4%) died within 60 days. The estimated total effect of treatment strategy on 60-day all-cause in-hospital death was 4.8% (95% CI, 1.1-9.2) for Strategy 1, and 4.6% (95% CI, 2.9-6.6) for Strategy 2, corresponding to a risk ratio of 1.04 (95% CI, 0.26-2.08) and risk difference of 0.2% (95% CI, -3.3 to 4.3). No clear difference in 60-day in-hospital mortality between the two treatment strategies; however, the wide confidence intervals indicate that clinically important benefit or harm could not be excluded. This study's framework may guide future studies using more granular data. Brain abscess is a serious condition that can cause brain edema, which may lead to life‐threatening brain herniation, and clinicians sometimes administer corticosteroids to reduce this edema. However, the effect of intravenous corticosteroid use, which can suppress the immune response, on in‐hospital mortality has been unclear, partly because previous observational studies did not adequately account for biases arising from failures of study design. In this study, to address these biases, we carefully designed our analysis to closely mimic a clinical trial. We analyzed data from two large hospital‐based databases in Japan, including patients admitted with brain abscess between 2014 and 2024. We compared two treatment strategies: initiation of intravenous dexamethasone or betamethasone administration within 7 days after admission and continuing for at least 3 consecutive days, versus no intravenous corticosteroid use throughout hospitalization. Among 627 eligible patients, 5.4% died within 60 days of admission. We found no clear difference in 60‐day in‐hospital mortality between patients who received corticosteroids and those who did not. However, the estimates were imprecise, and further studies using more detailed data are needed to better understand these findings.",
+    "authors": [
+      "Anno T",
+      "Fukasawa T",
+      "Kawakami K"
+    ],
+    "journal": "Pharmacoepidemiology and drug safety",
+    "journal_issn": "1099-1557",
+    "year": 2026,
+    "publication_date": "2026-08-28",
+    "analysis_methods": [
+      "ターゲットトライアルエミュレーション"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の大規模病院データベース2施設分（データベース名不明）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 2.14,
+    "sjr_quartile": null,
+    "openalex_topic": "Bacterial Infections and Vaccines",
+    "openalex_topic_score": 0.978,
+    "openalex_subfield": "Microbiology",
+    "openalex_field": "Immunology and Microbiology",
+    "openalex_topics": [
+      {
+        "id": "T10873",
+        "name": "Bacterial Infections and Vaccines",
+        "score": 0.978
+      },
+      {
+        "id": "T10984",
+        "name": "Sinusitis and nasal conditions",
+        "score": 0.006
+      },
+      {
+        "id": "T11381",
+        "name": "Infectious Diseases and Tuberculosis",
+        "score": 0.003
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:21.811Z",
+    "classified": true,
+    "title_ja": "脳膿瘍患者へのステロイド投与と院内死亡率:ターゲットトライアルエミュレーションによる検討",
+    "abstract_ja": "日本の2つの大規模病院データベース(2014-2024年)を用い、脳膿瘍患者627例を対象にステロイド投与戦略と非投与戦略の60日院内死亡率をクローン・センサー・ウェイト法で推定した。両戦略間のリスク差は0.2%(95%CI -3.3~4.3)と明確な差は認められなかったが、信頼区間が広く臨床的に重要な差を否定できなかった。"
+  },
+  {
+    "id": "pmid-42663366",
+    "pubmed_id": "42663366",
+    "doi": "10.1016/j.jacasi.2026.07.036",
+    "title": "Pragmatic DanGer Shock Eligibility, Outcomes, and Costs in Acute Myocardial Infarction: A Nationwide Cohort Study.",
+    "abstract": "In-hospital mortality remains 45% among patients with acute myocardial infarction (AMI)-related cardiogenic shock despite advances in mechanical circulatory support (MCS), including microaxial flow pumps and venoarterial extracorporeal membrane oxygenation. These findings suggest that not all patients benefit from MCS. This study aimed to identify patients less likely to benefit from MCS based on pragmatically approximated Danish-German Cardiogenic Shock trial (pDanGer) eligibility. Using a Japanese nationwide administrative dataset (JROAD-DPC [Japanese Registry Of All cardiac and vascular Diseases-Diagnostic Procedure Combination]) from 2022 to 2023, we evaluated the association of pDanGer eligibility with in-hospital mortality, failure to be discharged home, and medical costs; pDanGer eligibility was defined by the absence of mechanical complications, out-of-hospital cardiac arrest with persistent coma, and severe dementia. Of 52,927 AMI patients, 2,226 were treated with MCS. Among them, in-hospital death and failure to be discharged home were identified in 1,339 (pDanGer-eligible, 945; ineligible, 394) and in 379 (pDanGer-eligible, 281; ineligible, 98), respectively. The median follow-up was 11 days (IQR: 8-16). pDanGer eligibility was associated with lower in-hospital mortality (adjusted OR [aOR]: 0.58; 95% CI: 0.47-0.73) and lower failure to be discharged home (aOR: 0.37; 95% CI: 0.25-0.54). Medical costs were higher in pDanGer-ineligible survivors and those discharged home, while among patients who died, costs were higher in pDanGer-eligible patients. pDanGer eligibility was associated with lower in-hospital mortality and failure to be discharged home among AMI patients treated with MCS. In contrast, ineligible patients incurred substantial medical costs, highlighting the importance of appropriate patient selection for MCS use.",
+    "authors": [
+      "Higuchi S",
+      "Kohsaka S",
+      "Sumita Y",
+      "Kanaoka K",
+      "Yokota Y",
+      "Matsumoto H",
+      "Shinke T"
+    ],
+    "journal": "JACC. Asia",
+    "journal_issn": "2772-3747",
+    "year": 2026,
+    "publication_date": "2026-08-28",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [
+      "JROAD-DPC（日本循環器学会の循環器疾患診療実態調査とDPCを組み合わせたデータベース）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 2.14,
+    "sjr_quartile": null,
+    "openalex_topic": "Mechanical Circulatory Support Devices",
+    "openalex_topic_score": 0.998,
+    "openalex_subfield": "Biomedical Engineering",
+    "openalex_field": "Engineering",
+    "openalex_topics": [
+      {
+        "id": "T10675",
+        "name": "Mechanical Circulatory Support Devices",
+        "score": 0.998
+      },
+      {
+        "id": "T10292",
+        "name": "Acute Myocardial Infarction Research",
+        "score": 0.001
+      },
+      {
+        "id": "T10645",
+        "name": "Cardiac Arrest and Resuscitation",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:22.321Z",
+    "classified": true,
+    "title_ja": "DanGer Shock適格性から見た急性心筋梗塞の機械的循環補助:JROAD-DPCによる全国コホート研究",
+    "abstract_ja": "JROAD-DPC(2022-2023年)を用い、機械的循環補助を受けた急性心筋梗塞患者2,226例をpDanGer適格性で層別し、院内死亡・自宅退院不能・医療費との関連を評価した。pDanGer適格例は非適格例より院内死亡(調整OR 0.58)と自宅退院不能(調整OR 0.37)のリスクが低かった一方、非適格の生存者では医療費がより高かった。"
+  },
+  {
+    "id": "pmid-42665419",
+    "pubmed_id": "42665419",
+    "doi": "10.21873/invivo.14441",
+    "title": "Infection-related and Hepatobiliary Death Outcome Reports Involving Avacopan in the Japanese Pharmacovigilance Database.",
+    "abstract": "Avacopan is used to treat antineutrophil cytoplasmic antibody-associated vasculitis. In Japan, serious hepatobiliary adverse events, including vanishing bile duct syndrome, have recently become a major safety concern. This study characterized reports with death recorded as the outcome involving avacopan in the Japanese Adverse Drug Event Report database (JADER). Reports involving avacopan as a suspected drug and death recorded as the outcome were extracted from JADER. Adverse events were classified by primary system organ class and preferred term. Quarterly reporting trends and time-to-onset were evaluated for hepatobiliary and infection-related adverse events. A total of 79 reports were identified; 64 involved patients aged ≥70 years. Infections and infestations were the most frequent system organ classes among adverse events with death recorded as the outcome (n=46), followed by hepatobiliary disorders (n=21). Vanishing bile duct syndrome was the most frequent hepatobiliary preferred term (n=13). Pneumocystis jirovecii pneumonia and pneumonia were the most frequent infection-related preferred terms (n=9 each). Median time-to-onset was 49 days for hepatobiliary disorders and 75 days for infections and infestations. The proportions of events occurring within 90 days were 94.1% for hepatobiliary disorders and 57.1% for infections and infestations. In JADER, death outcome reports involving avacopan frequently included infection-related and hepatobiliary events. Hepatobiliary events occurred mainly within 90 days, whereas infection-related events showed a broader time-to-onset distribution. These findings suggest the need for early hepatobiliary monitoring and continued attention to serious infections during avacopan treatment.",
+    "authors": [
+      "Ide N",
+      "Sako KI",
+      "Maeda T"
+    ],
+    "journal": "In vivo (Athens, Greece)",
+    "journal_issn": "1791-7549",
+    "year": 2026,
+    "publication_date": "2026-08-28",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "症例対照研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.7,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:22.813Z",
+    "classified": true,
+    "title_ja": "アバコパンによる死亡転帰報告の特徴:JADERを用いた不均衡分析",
+    "abstract_ja": "JADERデータベースを用い、アバコパンが疑われ死亡が転帰として記録された報告79件を解析した。感染症関連(46件)と肝胆道系障害(21件、うち胆管消失症候群13件)が主な有害事象であり、肝胆道系障害は投与開始から中央値49日、感染症は75日で発現していた。肝胆道系イベントの早期モニタリングと感染症への継続的な注意が必要と考察された。"
+  },
+  {
+    "id": "pmid-42659696",
+    "pubmed_id": "42659696",
+    "doi": "10.1016/j.clnu.2026.106765",
+    "title": "Real-world implementation, documentation, and prognostic implications of routinely recorded nutritional assessment based on the Global Leadership Initiative on Malnutrition criteria in critically ill patients: A nationwide retrospective cohort study.",
+    "abstract": "We examined real-world documentation under the Global Leadership Initiative on Malnutrition (GLIM) framework, the proportion of critically ill patients with a recorded, classifiable GLIM nutritional status, and associations of recorded GLIM nutritional status with mortality. This retrospective cohort study used a nationwide Japanese Diagnosis Procedure Combination database of adults admitted to an intensive care unit (June 2024-September 2025). The exposure was database-recorded, classifiable GLIM nutritional status (malnutrition or non-malnutrition). Multivariable Cox regression compared malnutrition with non-malnutrition for in-hospital mortality within 30 days of admission. Secondary outcomes were overall in-hospital mortality and length of hospital stay (LOS) among survivors. Additional analyses included the not-assessed and no-documentation categories. Among 51,580 patients (mean age 70.4 years [SD 14.6]; 60.4% male), 27,613 (53.5%) had a recorded, classifiable GLIM nutritional status; 10.2% were malnourished. Malnutrition was associated with higher in-hospital mortality within 30 days of admission than non-malnutrition (adjusted hazard ratio [aHR] 1.23, 95% confidence interval [CI] 1.08-1.41), higher overall in-hospital mortality (adjusted odds ratio [aOR] 1.47, 95% CI 1.28-1.68), and longer LOS among survivors (mean difference 2.27 days, 95% CI 1.44-3.10). The not-assessed and no-documentation categories were also associated with higher in-hospital mortality within 30 days of admission than non-malnutrition. A classifiable GLIM nutritional status was recorded in only approximately half of critically ill patients. Among these patients, recorded malnutrition was associated with higher mortality and longer hospital stay. Associations of non-classifiable categories with mortality require further study.",
+    "authors": [
+      "Shimizu A",
+      "Yoshida M",
+      "Tomata Y",
+      "Momosaki R",
+      "Shimizu S"
+    ],
+    "journal": "Clinical nutrition (Edinburgh, Scotland)",
+    "journal_issn": "1532-1983",
+    "year": 2026,
+    "publication_date": "2026-08-27",
+    "analysis_methods": [
+      "回帰分析",
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 6.06,
+    "sjr_quartile": null,
+    "openalex_topic": "Nutrition and Health in Aging",
+    "openalex_topic_score": 0.969,
+    "openalex_subfield": "Physiology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10397",
+        "name": "Nutrition and Health in Aging",
+        "score": 0.969
+      },
+      {
+        "id": "T10858",
+        "name": "Clinical Nutrition and Gastroenterology",
+        "score": 0.021
+      },
+      {
+        "id": "T11011",
+        "name": "Frailty in Older Adults",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:19.286Z",
+    "classified": true,
+    "title_ja": "GLIM基準による低栄養評価の実施実態と予後との関連:全国DPCデータベース研究",
+    "abstract_ja": "日本のDPCデータベース(2024年6月-2025年9月)を用い、ICU入室患者51,580例におけるGLIM基準に基づく低栄養評価の記録状況と死亡率との関連を検討した。分類可能な評価が記録されていたのは53.5%にとどまり、そのうち低栄養(10.2%)は非低栄養と比べ院内死亡(調整HR 1.23)や在院日数の延長と関連していた。評価が未実施・未記録のカテゴリーも死亡率上昇と関連していた。"
+  },
+  {
+    "id": "pmid-42659751",
+    "pubmed_id": "42659751",
+    "doi": "10.1016/j.psychres.2026.117392",
+    "title": "Prevalence of metabolic syndrome among people with psychiatric disorders in Japan: A cross-sectional study using nationwide health insurance claims and health check-up data.",
+    "abstract": "Psychiatric disorders increase the risks of lifestyle-related diseases. This study revealed the prevalence of metabolic syndrome across a spectrum of psychiatric diagnoses and compared it to that of those without psychiatric disorders. We utilized the JMDC Claims database, which accumulates health insurance claims and health check-up data from multiple health insurance associations in Japan. The number of individuals aged 40-64 years who were continuously in the database from April 2023 to March 2024 totaled 4815,834. Among them, those with any psychiatric disorders were 198,692 (4.13%). Health check-up recipients among those with and without psychiatric disorders were 153,222 (77.12%) and 3629,155 (83.59%), respectively. We used this data to calculate the sex-stratified, age-adjusted prevalence of metabolic syndrome and its related risk factors. The prevalences of metabolic syndrome among those with and without psychiatric disorders were 24.81% and 20.34%, respectively, in men, and 7.77% and 4.60%, respectively, in women. The prevalence of metabolic syndrome increased with age and was consistently higher among those with psychiatric disorders. Higher prevalence of metabolic syndrome was confirmed among individuals with schizophrenia, bipolar disorder, and depressive disorder. The prevalence was especially high in men with organic mental disorders and post-traumatic stress disorder, and in women with organic mental disorders, intellectual disabilities, and developmental disorders. The prevalence of individual metabolic abnormalities was also higher among those with psychiatric disorders than those without, except for high blood pressure. Providing treatments for psychiatric conditions alongside monitoring metabolic syndrome and its components may benefit in preventing lifestyle-related diseases and premature mortality.",
+    "authors": [
+      "Fukasawa M",
+      "Usuda K",
+      "Kataoka M",
+      "Kuroda N"
+    ],
+    "journal": "Psychiatry research",
+    "journal_issn": "1872-7123",
+    "year": 2026,
+    "publication_date": "2026-08-27",
+    "analysis_methods": [],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 4.44,
+    "sjr_quartile": null,
+    "openalex_topic": "Schizophrenia research and treatment",
+    "openalex_topic_score": 0.59,
+    "openalex_subfield": "Psychiatry and Mental health",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10023",
+        "name": "Schizophrenia research and treatment",
+        "score": 0.59
+      },
+      {
+        "id": "T14212",
+        "name": "Health Promotion and Cardiovascular Prevention",
+        "score": 0.262
+      },
+      {
+        "id": "T10027",
+        "name": "Diabetes, Cardiovascular Risks, and Lipoproteins",
+        "score": 0.031
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:19.792Z",
+    "classified": true,
+    "title_ja": "精神疾患患者におけるメタボリックシンドローム有病率:JMDCデータを用いた横断研究",
+    "abstract_ja": "JMDCデータベースを用い、40-64歳の481万人超のうち精神疾患を有する198,692人と有さない者でメタボリックシンドローム有病率を年齢調整の上比較した。精神疾患を有する群は男性24.81%・女性7.77%と、有さない群(男性20.34%・女性4.60%)より一貫して高く、統合失調症・双極性障害・うつ病などで特に高値であった。"
+  },
+  {
+    "id": "pmid-42660202",
+    "pubmed_id": "42660202",
+    "doi": "10.1016/j.diabres.2026.113539",
+    "title": "Temporal trends and clinical factors associated with hypoglycemia-related hospitalization of patients with type 2 diabetes: a large-scale claims database study in Japan.",
+    "abstract": "Severe hypoglycemia is an important adverse event in type 2 diabetes, particularly among older adults and clinically vulnerable patients. However, recent real-world trends in hypoglycemia requiring hospitalization in Japan are insufficiently characterized. We conducted a retrospective cross-sectional study by using Japanese hospital-based claims data for 2009-2022. Patients receiving glucose-lowering medications for type 2 diabetes were included (N = 1,391,948). The primary outcome was hospitalization for hypoglycemia, defined using codes for diagnosis, same-day hospitalization, and intravenous administration of 50% glucose. Secondary outcomes were nocturnal hospitalization and the requirement of emergency transport. Annual frequencies were described, and adjusted risk ratios were estimated using modified Poisson regression analysis. Overall, 7,157 patients were hospitalized for hypoglycemia. The annual frequency decreased from 0.41% in 2009 to 0.21% in 2022; the greatest decline was among patients aged ≥ 75 years, who continued to account for the majority of hospitalizations. An older age and lower body mass index were associated with all hypoglycemia-related outcomes, as were insulin, pioglitazone, glucagon-like peptide-1 receptor agonists, alpha-glucosidase inhibitors, and sulfonylureas. In the sensitivity analysis, impaired kidney function was associated with an increased risk. Hypoglycemia-related hospitalization declined in Japan during 2009-2022, the residual burden remaining concentrated among older adults.",
+    "authors": [
+      "Kageyama M",
+      "Horii T",
+      "Oikawa Y",
+      "Mihara K"
+    ],
+    "journal": "Diabetes research and clinical practice",
+    "journal_issn": "1872-8227",
+    "year": 2026,
+    "publication_date": "2026-08-27",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の病院ベース診療報酬請求データベース（データベース名不明）"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用",
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.55,
+    "sjr_quartile": null,
+    "openalex_topic": "Diabetes Management and Research",
+    "openalex_topic_score": 0.452,
+    "openalex_subfield": "Endocrinology, Diabetes and Metabolism",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10560",
+        "name": "Diabetes Management and Research",
+        "score": 0.452
+      },
+      {
+        "id": "T10027",
+        "name": "Diabetes, Cardiovascular Risks, and Lipoproteins",
+        "score": 0.109
+      },
+      {
+        "id": "T10793",
+        "name": "Diabetes Management and Education",
+        "score": 0.107
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:20.286Z",
+    "classified": true,
+    "title_ja": "2型糖尿病患者の低血糖入院の時系列変化:大規模レセプトデータベース研究",
+    "abstract_ja": "日本の病院ベースレセプトデータ(2009-2022年)を用い、血糖降下薬を使用する2型糖尿病患者139万人超における低血糖入院の推移を検討した。年間発生頻度は2009年の0.41%から2022年の0.21%へ減少したが、75歳以上の高齢者では依然として入院の大半を占め、インスリンやSU薬などの使用や腎機能低下がリスク増加と関連していた。"
+  },
+  {
+    "id": "pmid-42643068",
+    "pubmed_id": "42643068",
+    "doi": "10.1111/acps.70137",
+    "title": "Patients Receiving 100 or More Electroconvulsive Therapy Treatments in a Nationwide Cohort.",
+    "abstract": "Very high cumulative exposure to electroconvulsive therapy (ECT) has primarily been described in individual case reports. We examined cumulative ECT exposure in a nationwide Japanese claims database to characterize patients receiving very high numbers of treatments. We identified 3,733 patients who received ECT and classified them according to cumulative ECT exposure. Clinical characteristics of patients receiving 100 or more treatments were examined. Among 3,733 patients who received ECT, 39 (1.0%) received 100 or more treatments. These patients had treatment durations of several years and substantially greater numbers of psychiatric hospitalizations and cumulative hospitalization days. Clozapine use increased across cumulative ECT exposure categories, although it was recorded in only 13% of patients receiving 100 or more treatments. Patients receiving 100 or more ECT treatments represent an identifiable subgroup of ECT recipients characterized by prolonged and recurrent psychiatric care.",
+    "authors": [
+      "Hata M",
+      "Miyazaki Y",
+      "Takahashi S"
+    ],
+    "journal": "Acta psychiatrica Scandinavica",
+    "journal_issn": "1600-0447",
+    "year": 2026,
+    "publication_date": "2026-08-26",
+    "analysis_methods": [],
+    "databases_used": [],
+    "additional_data_sources": [
+      "全国規模の医療レセプトデータベース（データベース名不明）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 3.78,
+    "sjr_quartile": null,
+    "openalex_topic": "Electroconvulsive Therapy Studies",
+    "openalex_topic_score": 0.996,
+    "openalex_subfield": "Psychiatry and Mental health",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11921",
+        "name": "Electroconvulsive Therapy Studies",
+        "score": 0.996
+      },
+      {
+        "id": "T11678",
+        "name": "Healthcare Decision-Making and Restraints",
+        "score": 0
+      },
+      {
+        "id": "T10023",
+        "name": "Schizophrenia research and treatment",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:17.796Z",
+    "classified": true,
+    "title_ja": "電気けいれん療法を100回以上受けた患者の特徴:全国レセプトデータによるコホート研究",
+    "abstract_ja": "全国規模の医療レセプトデータベースを用い、電気けいれん療法(ECT)を受けた患者3,733例の累積施行回数を分類した。100回以上のECTを受けた患者は39例(1.0%)で、治療期間が数年に及び、精神科入院回数・累積入院日数が顕著に多かった。クロザピン使用率は累積ECT回数とともに増加したが、100回以上の群でも13%にとどまった。"
+  },
+  {
+    "id": "pmid-42643725",
+    "pubmed_id": "42643725",
+    "doi": "10.5582/irdr.2026.01017",
+    "title": "Cutaneous lymphomas reported following the use of dupilumab, nemolizumab, tralokinumab, or lebrikizumab: A case investigation based on JADER database and disproportionality analysis.",
+    "abstract": "Reports of cutaneous lymphomas (CL) following dupilumab administration are increasingly being documented, most frequently in patients with atopic dermatitis (AD). However, information regarding the association between CL and other biologic agents (nemolizumab, tralokinumab, or lebrikizumab) used for the treatment of AD is limited. To date, no large-scale pharmacovigilance study has systematically evaluated this issue in Japan. Therefore, we conducted a case investigation and disproportionality analysis using the Japanese Adverse Drug Event Report (JADER) database. Reports registered between April 2004 and August 2025 were analyzed. Both frequentist and Bayesian disproportionality analyses were performed using the reporting odds ratio (ROR) and information component (IC). In the primary analysis, including all reports in the JADER database, the ROR for dupilumab was 257.64 (95% confidence interval [CI], 164.50-404.39), and the IC was 4.52 (IC025 = 3.89). For nemolizumab, the ROR was 169.13 (95% CI, 61.78-463.00), and the IC was 2.29 (IC025 = 0.95). Reports of CL following tralokinumab or lebrikizumab administration were rare (one and zero cases, respectively) and did not meet the criteria for ROR calculation due to the small number. For sensitivity analysis, disproportionality analyses were restricted to reports with available data on age and sex, submitted by physicians, and cases involving no other suspected drugs. Under these conditions, safety signals based on both the ROR and IC were detected only for dupilumab. The safety signals identified in this study are exploratory in nature and require confirmation in future epidemiological studies.",
+    "authors": [
+      "Tanaka H",
+      "Ishii T"
+    ],
+    "journal": "Intractable & rare diseases research",
+    "journal_issn": "2186-3644",
+    "year": 2026,
+    "publication_date": "2026-08-26",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "症例対照研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.28,
+    "sjr_quartile": null,
+    "openalex_topic": "Cutaneous lymphoproliferative disorders research",
+    "openalex_topic_score": 0.248,
+    "openalex_subfield": "Dermatology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11811",
+        "name": "Cutaneous lymphoproliferative disorders research",
+        "score": 0.248
+      },
+      {
+        "id": "T10469",
+        "name": "Psoriasis: Treatment and Pathogenesis",
+        "score": 0.182
+      },
+      {
+        "id": "T10158",
+        "name": "Cancer Immunotherapy and Biomarkers",
+        "score": 0.153
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:18.282Z",
+    "classified": true,
+    "title_ja": "デュピルマブ等生物学的製剤と皮膚リンパ腫:JADERを用いた不均衡分析",
+    "abstract_ja": "JADERデータベース(2004-2025年)を用い、デュピルマブ・ネモリズマブ・トラロキヌマブ・レブリキズマブと皮膚リンパ腫の関連を頻度論的・ベイズ的不均衡分析で評価した。デュピルマブ(ROR 257.64)とネモリズマブ(ROR 169.13)で明確なシグナルが検出された一方、トラロキヌマブ・レブリキズマブは報告数が少なくシグナル検出には至らなかった。"
+  },
+  {
+    "id": "pmid-42648051",
+    "pubmed_id": "42648051",
+    "doi": "10.1016/j.vaccine.2026.129079",
+    "title": "Comparing the potential impacts of seasonal immunisation against year-round immunisation to prevent RSV infant hospitalisations in Japan: A modelling study.",
+    "abstract": "The seasonal circulation of respiratory syncytial virus (RSV) in countries such as Japan, together with the transient nature of passive immunity conferred to infants via maternal vaccination or monoclonal antibody administration, may warrant a differential strategy for those born between the RSV seasons. Maximal effectiveness may be achieved by deferring immunisation of this cohort from birth until entry into their first RSV season using catch-up administration of monoclonal antibody through a seasonal and catch-up programme, compared with year-round administration. To estimate the benefit of seasonal and catch-up programmes in reducing RSV infant hospitalisations in Japan, we developed a static cohort model following infants through their first year of life, parameterised by Japanese data on weekly and municipality-specific RSV incidence during 2018 to 2025 and on RSV case hospitalisation risk from a health claims database study. We used Bayesian inference to estimate the effectiveness and its waning for maternal vaccine (RSVpreF) and long-acting monoclonal antibody (nirsevimab) from trial data. We estimate that year-round programme of RSVpreF or nirsevimab could reduce RSV hospitalisations from the status quo, under which only high-risk infants are eligible for monoclonal antibodies, by 46% (95% uncertainty range (UR): 31%, 65%) or 58% (95% UR: 39%, 79%), respectively. In comparison, the seasonal and catch-up programme could reduce by 52% (95% UR: 37%, 65%) or 57% (95% UR: 38%, 75%), respectively. If seasonality matches the seasonal immunisation timing, using 2024 as an example, the reduction by the seasonal and catch-up programme would be 56% (95% UR: 46%, 67%) or 61% (95% UR: 44%, 77%), respectively. If protection from nirsevimab remained substantial after six months, the year-round programme would likely to be more effective. RSVpreF and nirsevimab may substantially reduce RSV infant hospitalisations in Japan. The benefit of the seasonal programmes depends on predictability of RSV seasonality and potential logistical challenges.",
+    "authors": [
+      "Monoi A",
+      "Endo A",
+      "Kriznar M",
+      "Suzuki M",
+      "Flasche S"
+    ],
+    "journal": "Vaccine",
+    "journal_issn": "1873-2518",
+    "year": 2026,
+    "publication_date": "2026-08-26",
+    "analysis_methods": [],
+    "databases_used": [],
+    "additional_data_sources": [
+      "国内のRSV罹患動向データおよびレセプトに基づく入院リスク推定値を用いたコホートモデル"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 3.21,
+    "sjr_quartile": null,
+    "openalex_topic": "Respiratory viral infections research",
+    "openalex_topic_score": 0.471,
+    "openalex_subfield": "Epidemiology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11243",
+        "name": "Respiratory viral infections research",
+        "score": 0.471
+      },
+      {
+        "id": "T10167",
+        "name": "Influenza Virus Research Studies",
+        "score": 0.137
+      },
+      {
+        "id": "T10410",
+        "name": "COVID-19 epidemiological studies",
+        "score": 0.075
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:18.786Z",
+    "classified": true,
+    "title_ja": "RSV乳児入院予防における季節接種と通年接種の比較:日本のコホートモデル研究",
+    "abstract_ja": "日本国内のRSV流行動向とレセプトデータに基づく入院リスク推定値を用いたコホートモデルにより、母子免疫と長時間作用型モノクローナル抗体の季節接種・キャッチアップ接種プログラムと通年接種プログラムのRSV乳児入院予防効果を比較した。通年プログラムは46-58%、季節・キャッチアッププログラムは52-57%の入院減少が推計され、両者の優劣は季節性の予測可能性に依存すると考察された。"
+  },
+  {
+    "id": "pmid-42639280",
+    "pubmed_id": "42639280",
+    "doi": "10.2106/JBJS.OA.26.00212",
+    "title": "Effectiveness of Extended Intravenous Antibiotic Prophylaxis in Preventing Periprosthetic Joint Infection After Total Knee and Hip Arthroplasty: An Analysis of a Japanese Nationwide Database.",
+    "abstract": "Although major international guidelines recommend discontinuing antibiotic prophylaxis within 24 hours after total joint arthroplasty, recent studies have suggested potential benefits of extended administration. The aim of this study was to evaluate the effectiveness of extended intravenous antibiotic prophylaxis in preventing periprosthetic joint infection (PJI). The Japanese Diagnosis Procedure Combination database was used to identify adults who underwent primary total knee arthroplasty (TKA) and total hip arthroplasty (THA) from April 2014 to March 2024. Based on the duration of postoperative intravenous antibiotic prophylaxis, patients were divided into the standard intravenous antibiotic prophylaxis (0-1 day) and extended intravenous antibiotic prophylaxis (2-3 days) groups. Patients who received any oral antibiotic prophylaxis during the intravenous prophylactic period were excluded. The outcome was PJI within 90 and 365 days after surgery, defined as surgical site infection requiring surgical intervention. Propensity score matching and subgroup analyses in high-risk patients were conducted (e.g., obesity, smoking, diabetes mellitus with chronic complications, kidney disease, hepatic disease, autoimmune disease, and oral corticosteroid use). Among 506,710 eligible patients (244,156 TKA and 262,554 THA), the 90-day PJI incidence was 0.34% in TKA and 0.37% in THA. In propensity score-matched analysis, extended intravenous antibiotic prophylaxis was associated with a small reduction in 90-day PJI after TKA, with a risk difference (RD) of -0.07% (95% confidence interval [CI], -0.12% to -0.01%) and a corresponding risk ratio (RR) of 0.83 (95% CI, 0.72-0.96). In high-risk TKA patients, a stronger association was observed (RD, -0.13% [95% CI, -0.25% to -0.01%]; RR, 0.78 [95% CI, 0.63-0.98]). Similar findings were observed for 365-day PJI after TKA. No clear association was observed in THA, either in the overall cohort or in the high-risk subgroup. Extended intravenous antibiotic prophylaxis was associated with a marginal reduction in PJI within 90 and 365 days after TKA, with a greater effect in high-risk TKA patients. While routine extension is not supported for all patients, it may be considered in selected high-risk TKA cases. Therapeutic Level Ⅲ. See Instructions for Authors for a complete description of levels of evidence.",
+    "authors": [
+      "Kurihara S",
+      "Ichita C",
+      "Goto T",
+      "Hatayama K",
+      "Fushimi K",
+      "Shimizu S"
+    ],
+    "journal": "JB & JS open access",
+    "journal_issn": "2472-7245",
+    "year": 2026,
+    "publication_date": "2026-08-25",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 1.62,
+    "sjr_quartile": null,
+    "openalex_topic": "Orthopedic Infections and Treatments",
+    "openalex_topic_score": 0.895,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11293",
+        "name": "Orthopedic Infections and Treatments",
+        "score": 0.895
+      },
+      {
+        "id": "T10562",
+        "name": "Total Knee Arthroplasty Outcomes",
+        "score": 0.054
+      },
+      {
+        "id": "T11080",
+        "name": "Surgical site infection prevention",
+        "score": 0.008
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:17.281Z",
+    "classified": true,
+    "title_ja": "人工膝関節・股関節置換術における抗菌薬予防投与延長の効果:全国DPCデータベース研究",
+    "abstract_ja": "日本のDPCデータベース(2014-2024年)を用い、TKA・THAを受けた506,710例を対象に静注抗菌薬予防投与を標準(0-1日)と延長(2-3日)に分け、人工関節周囲感染(PJI)発生率を傾向スコアマッチングで比較した。延長投与はTKAにおいて90日PJIをわずかに減少させ(RR 0.83)、高リスク患者ではより明確な効果が見られたが、THAでは明確な関連は認められなかった。"
+  },
+  {
+    "id": "pmid-42634690",
+    "pubmed_id": "42634690",
+    "doi": "10.7759/cureus.113326",
+    "title": "Exploratory Clinical and Cost Evaluation of Robot-Assisted Adrenalectomy Using the hinotori™ Surgical Robotic System: A Single-Center Retrospective Study.",
+    "abstract": "Although the hinotori™ surgical robotic system is Japan's first domestically developed platform, evidence regarding its clinical feasibility remains limited. Because adrenalectomy is a standardized minimally invasive procedure with well-defined perioperative outcomes, it provides an appropriate model for evaluating newly introduced robotic platforms. We evaluated the clinical outcomes and medical costs of robot-assisted adrenalectomy (RAAD) using the hinotori™ system (H-RAAD) and compared them retrospectively with those of da Vinci Xi™-assisted RAAD (D-RAAD). We retrospectively examined patients who underwent RAAD at Nippon Medical School Hospital between September 2023 and May 2025. Baseline demographic characteristics, perioperative variables, postoperative outcomes, pathological findings, and medical costs extracted from the Diagnosis Procedure Combination (DPC) database were evaluated. We evaluated 12 patients (H-RAAD, n = 5; D-RAAD, n = 7). Baseline characteristics were comparable between the groups, although the median tumor diameter was numerically smaller in the H-RAAD group. The median anesthesia, operative, and console times in the H-RAAD group were 264 (253-307, U = 10.0, p = 0.22), 189 (156-264, U = 10.0, p = 0.29), and 108 (71-180, U = 14.0, p = 0.57) minutes, respectively, comparable with those in the D-RAAD group. Total medical costs per case were similar between the D-RAAD ($6,333.1) and H-RAAD ($6,398.4) groups (U = 23.0, p = 0.34). In this small cohort, H-RAAD was completed safely without conversion or major complications, demonstrating perioperative outcomes similar to those of D-RAAD. Although individual cost components varied, total reimbursed medical costs under the DPC system were comparable. Given the limited sample size and exclusion of robotic system capital and maintenance costs, these findings remain exploratory.",
+    "authors": [
+      "Obayashi K",
+      "Nishino T",
+      "Takadate M",
+      "Hasegawa H",
+      "Mikami H",
+      "Takeda H",
+      "Endo Y",
+      "Toyama Y",
+      "Takahashi T",
+      "Akatsuka J"
+    ],
+    "journal": "Cureus",
+    "journal_issn": "2168-8184",
+    "year": 2026,
+    "publication_date": "2026-08-24",
+    "analysis_methods": [],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "医療資源利用・経済評価",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.11,
+    "sjr_quartile": null,
+    "openalex_topic": "Adrenal and Paraganglionic Tumors",
+    "openalex_topic_score": 0.952,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11054",
+        "name": "Adrenal and Paraganglionic Tumors",
+        "score": 0.952
+      },
+      {
+        "id": "T11728",
+        "name": "Thyroid and Parathyroid Surgery",
+        "score": 0.008
+      },
+      {
+        "id": "T10832",
+        "name": "Pituitary Gland Disorders and Treatments",
+        "score": 0.007
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:16.829Z",
+    "classified": true,
+    "title_ja": "国産手術支援ロボットhinotoriによる副腎摘出術の臨床・コスト評価:単施設後方視的研究",
+    "abstract_ja": "国内で開発された手術支援ロボットhinotoriを用いたロボット支援副腎摘出術(H-RAAD、5例)とda Vinci Xiによる同術式(D-RAAD、7例)をDPCデータに基づく医療費とともに単施設で比較した。麻酔時間・手術時間・コンソール時間、総医療費(H-RAAD 6,398.4ドル vs D-RAAD 6,333.1ドル)はいずれも同等であり、H-RAADは合併症なく安全に施行可能であった。"
+  },
+  {
     "id": "pmid-42633280",
     "pubmed_id": "42633280",
     "doi": "10.1016/j.parepi.2026.e00527",
@@ -62,6 +839,128 @@
         "score": 0
       }
     ]
+  },
+  {
+    "id": "pmid-42633912",
+    "pubmed_id": "42633912",
+    "doi": "10.5582/ddt.2026.01040",
+    "title": "Disproportionality analysis of opioid-related urinary retention using the JADER database: Focus on the lack of signal for transdermal fentanyl.",
+    "abstract": "Urinary retention is a known adverse effect of opioids, but limited information is available on how this adverse event varies among individual opioids. This study evaluated disproportionality signals between major opioids and urinary retention using the Japanese Adverse Drug Event Report database (JADER). We performed a disproportionality analysis of reports submitted between April 2004 and October 2025. Signals were assessed using reporting odds ratios (RORs), 95% confidence intervals (CIs), and the Information Component (IC). Adverse events were identified using the Medical Dictionary for Regulatory Activities/Japanese version (MedDRA/J) term \"urinary retention.\" A sensitivity analysis was conducted using a broader definition of urinary dysfunction that also included \"Dysuria.\" Time to onset was calculated from the start of opioid administration to event onset, and daily doses were converted to oral morphine equivalents. Significant signals were detected for morphine, oxycodone, tramadol, and codeine. Transdermal fentanyl was the only opioid without a detectable signal, even under the broader definition of urinary dysfunction. Among opioids with detected signals and available dose information, urinary retention was reported even at relatively low morphine-equivalent doses, suggesting the need for careful monitoring at the start of opioid therapy. The absence of a signal for transdermal fentanyl may reflect a lower reporting frequency in JADER, but not a lower clinical risk, of urinary retention. Given the limitations of spontaneous reporting systems, these findings are hypothesis-generating and are insufficient to guide opioid selection or switching.",
+    "authors": [
+      "Tanaka Y",
+      "Kimura M",
+      "Ide N",
+      "Sako KI",
+      "Maeda T"
+    ],
+    "journal": "Drug discoveries & therapeutics",
+    "journal_issn": "1881-784X",
+    "year": 2026,
+    "publication_date": "2026-08-23",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "症例対照研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.9,
+    "sjr_quartile": null,
+    "openalex_topic": "Pain Management and Opioid Use",
+    "openalex_topic_score": 0.492,
+    "openalex_subfield": "Anesthesiology and Pain Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11199",
+        "name": "Pain Management and Opioid Use",
+        "score": 0.492
+      },
+      {
+        "id": "T10279",
+        "name": "Urinary Bladder and Prostate Research",
+        "score": 0.125
+      },
+      {
+        "id": "T11232",
+        "name": "Urinary Tract Infections Management",
+        "score": 0.085
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:15.786Z",
+    "classified": true,
+    "title_ja": "オピオイドと尿閉:JADERを用いた不均衡分析、経皮フェンタニルではシグナルなし",
+    "abstract_ja": "JADERデータベース(2004-2025年)を用い、主要なオピオイドと尿閉の不均衡分析を実施した。モルヒネ・オキシコドン・トラマドール・コデインでは有意なシグナルが検出されたが、経皮フェンタニルのみシグナルは検出されなかった。著者らは、これがフェンタニル貼付剤の報告頻度の低さを反映している可能性があり、臨床的リスクの低さを意味するとは限らないと考察した。"
+  },
+  {
+    "id": "pmid-42633938",
+    "pubmed_id": "42633938",
+    "doi": "10.1253/circj.CJ-26-0128",
+    "title": "Aortic Dissection or Aneurysm and In-Hospital Mortality in Patients With Turner Syndrome　- A Retrospective Cohort Study in Japan.",
+    "abstract": "Aortic dissection and aneurysm are major causes of early mortality in Turner syndrome. However, data on aortic dissection in Turner syndrome remain limited compared with those for Marfan syndrome. We evaluated the associations of Turner syndrome and Marfan syndrome with in-hospital mortality among female patients hospitalized for aortic dissection or aneurysm, using patients without either syndrome as the common reference group for both comparisons. This retrospective cohort study used data from the Diagnosis Procedure Combination, a national inpatient database in Japan. Adult female patients hospitalized for first-time aortic dissection or aneurysm between 2010 and 2022 were included, with in-hospital mortality as the primary outcome. Associations between Turner/Marfan syndrome and mortality were evaluated using multivariable logistic regression analysis. Of 10,927 eligible female patients aged 16-61 years, 29 (0.27%) had Turner syndrome and 686 (6.3%) had Marfan syndrome. In-hospital mortality was higher for Turner syndrome (odds ratio [OR] 5.35; 95% confidence interval [CI] 1.61-17.8) compared with the group without either syndrome. In contrast, Marfan syndrome was not significantly associated with mortality (OR 0.72; 95% CI 0.44-1.17). Unscheduled admission was similar in Turner syndrome, but less frequent in Marfan syndrome, compared with the group without either syndrome. In-hospital mortality was higher among patients with Turner syndrome admitted for aortic dissection or aneurysm, highlighting the need to raise awareness of aortic risk in this high-risk population.",
+    "authors": [
+      "Ikeda Kurakawa K",
+      "Okada A",
+      "Kawai M",
+      "Inoue T",
+      "Inoue R",
+      "Matsuo Y",
+      "Fushimi K",
+      "Matsui H",
+      "Yasunaga H",
+      "Yamauchi T",
+      "Nangaku M",
+      "Kadowaki T",
+      "Yamaguchi S"
+    ],
+    "journal": "Circulation journal : official journal of the Japanese Circulation Society",
+    "journal_issn": "1347-4820",
+    "year": 2026,
+    "publication_date": "2026-08-23",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 3.22,
+    "sjr_quartile": null,
+    "openalex_topic": "Genetic and Clinical Aspects of Sex Determination and Chromosomal Abnormalities",
+    "openalex_topic_score": 0.613,
+    "openalex_subfield": "Genetics",
+    "openalex_field": "Biochemistry, Genetics and Molecular Biology",
+    "openalex_topics": [
+      {
+        "id": "T11077",
+        "name": "Genetic and Clinical Aspects of Sex Determination and Chromosomal Abnormalities",
+        "score": 0.613
+      },
+      {
+        "id": "T13258",
+        "name": "Williams Syndrome Research",
+        "score": 0.149
+      },
+      {
+        "id": "T12747",
+        "name": "Moyamoya disease diagnosis and treatment",
+        "score": 0.026
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:16.286Z",
+    "classified": true,
+    "title_ja": "ターナー症候群における大動脈解離・大動脈瘤の院内死亡率:DPCデータベースを用いたコホート研究",
+    "abstract_ja": "日本のDPCデータベース(2010-2022年)を用い、大動脈解離・大動脈瘤で入院した女性10,927例を対象に、ターナー症候群・マルファン症候群と院内死亡率の関連を多変量ロジスティック回帰で評価した。ターナー症候群群は院内死亡率が有意に高かった(OR 5.35)一方、マルファン症候群群では有意な関連は認められなかった。"
   },
   {
     "id": "pmid-42628613",
@@ -4979,6 +5878,62 @@
     ]
   },
   {
+    "id": "pmid-42372806",
+    "pubmed_id": "42372806",
+    "doi": "10.1016/j.bone.2026.117993",
+    "title": "Systemic and local predictors of medication-related osteonecrosis of the jaw in patients receiving antiresorptive therapy: The Shizuoka Kokuho Database study.",
+    "abstract": "Medication-related osteonecrosis of the jaw (MRONJ) is a rare but serious adverse effect of antiresorptive therapy. We aimed to identify dose-specific predictors for MRONJ risk stratification. We conducted a retrospective cohort study using the Shizuoka Kokuho Database, an insurance claims database. Patients ≥40 years with osteoporosis or cancer who initiated bisphosphonate or denosumab between April 2015 and September 2022 were stratified into low- and high-dose groups. The outcome was MRONJ. Candidate predictors were defined using the information available before initiation of antiresorptive therapy, including demographics, comorbidities, medications, and dental care in the preceding month (no visit, maintenance, or oral risk treatment). We estimated the subdistribution hazard ratio (SHR) and its 95% confidence interval (CI) using Fine-Gray competing risk models with all-cause mortality as the competing risk. Among 104,349 patients (low-dose, 99,572; high-dose, 4777), MRONJ occurred in 148 (46.7/100,000 person-years) and 105 (2116/100,000 person-years), respectively. Oral risk treatment within 1 month before therapy initiation was associated with MRONJ in both groups (low-dose: SHR 2.99 [95% CI 1.47-6.07]); high-dose: 4.28 [2.47-7.42]). Additional predictors were anemia (1.89 [1.31-2.71]) and oral corticosteroid use (2.27 [1.43-3.62]) in the low-dose group. Predictors of MRONJ differed between antiresorptive dose groups. Oral risk treatment immediately before therapy initiation was consistently associated with higher MRONJ occurrence, suggesting that oral risk conditions near initiation may be important for risk stratification.",
+    "authors": [
+      "Tsuboi K",
+      "Kinoshita K",
+      "Matsushita F",
+      "Sato Y"
+    ],
+    "journal": "Bone",
+    "journal_issn": "1873-2763",
+    "year": 2026,
+    "publication_date": "2026-07-23",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "静岡県国保データベース（Shizuoka Kokuho Database、国民健康保険レセプトデータ）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.47,
+    "sjr_quartile": null,
+    "openalex_topic": "Bone health and treatments",
+    "openalex_topic_score": 0.994,
+    "openalex_subfield": "Oncology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11221",
+        "name": "Bone health and treatments",
+        "score": 0.994
+      },
+      {
+        "id": "T12198",
+        "name": "Oral health in cancer treatment",
+        "score": 0.002
+      },
+      {
+        "id": "T10516",
+        "name": "Parathyroid Disorders and Treatments",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:13.281Z",
+    "classified": true,
+    "title_ja": "骨吸収抑制薬関連顎骨壊死の予測因子:静岡県国保データベースを用いたコホート研究",
+    "abstract_ja": "静岡県国保データベースを用い、骨粗鬆症・がんでビスホスホネートまたはデノスマブを開始した104,349例を低用量群・高用量群に分け、顎骨壊死(MRONJ)の予測因子をFine-Gray競合リスクモデルで検討した。投与開始1か月前の歯科リスク処置は両群でMRONJと関連し(低用量群SHR 2.99、高用量群SHR 4.28)、低用量群では貧血や経口ステロイド使用も予測因子であった。"
+  },
+  {
     "id": "pmid-42486303",
     "pubmed_id": "42486303",
     "doi": "10.1016/j.cmi.2026.07.025",
@@ -8134,6 +9089,68 @@
     ]
   },
   {
+    "id": "pmid-42395150",
+    "pubmed_id": "42395150",
+    "doi": "10.1002/ags3.70185",
+    "title": "The National Clinical Database Risk Calculator and the 5-Item Modified Frailty Index Predict the Development of Postoperative Delirium After Surgery for Hepatocellular Carcinoma.",
+    "abstract": "Postoperative delirium in elderly patients is a critical clinical issue because of its adverse effect on recovery and prognosis. The National Clinical Database (NCD) Risk Calculator, a clinical tool developed in Japan, is widely used to predict various postoperative complications, including delirium. In this study, we aimed to develop a more accurate delirium prediction model by integrating the NCD Risk Calculator with additional clinical indicators. This study included 106 patients who underwent segmentectomy or more extensive procedures for hepatocellular carcinoma between 2013 and 2023. The training cohort comprised patients treated between 2013 and 2017, and those treated afterward formed the validation cohort. In the training cohort, we assessed the NCD Risk Calculator and additional indices for the favorable-risk group, and validated the best-performing index in combination with the NCD Risk Calculator. Using the median predicted risk (6.4%) as a threshold, the adverse-risk group had a significantly higher incidence of delirium than the favorable-risk group (p < 0.01). Among several indices, the 5-Item Modified Frailty Index (mFI-5) showed the strongest association with delirium (AUC 0.76, p < 0.01). Patients classified as high-risk by both the NCD Risk Calculator and mFI-5 had significantly higher delirium incidence in the training (p < 0.01) and validation (p = 0.05) cohorts. Multivariate analysis identified high-risk status as an independent predictor of postoperative delirium (p < 0.01). The combination of the NCD Risk Calculator and mFI-5 enhances predictive accuracy and serves as a reliable tool for assessing delirium risk in older patients.",
+    "authors": [
+      "Hosoda K",
+      "Shimizu A",
+      "Kubota K",
+      "Notake T",
+      "Sakai H",
+      "Yoshikawa K",
+      "Ikehara T",
+      "Hayashi H",
+      "Yasukawa K",
+      "Soejima Y"
+    ],
+    "journal": "Annals of gastroenterological surgery",
+    "journal_issn": "2475-0328",
+    "year": 2026,
+    "publication_date": "2026-07-03",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.04,
+    "sjr_quartile": null,
+    "openalex_topic": "Intensive Care Unit Cognitive Disorders",
+    "openalex_topic_score": 0.982,
+    "openalex_subfield": "Critical Care and Intensive Care Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10867",
+        "name": "Intensive Care Unit Cognitive Disorders",
+        "score": 0.982
+      },
+      {
+        "id": "T11011",
+        "name": "Frailty in Older Adults",
+        "score": 0.006
+      },
+      {
+        "id": "T12020",
+        "name": "Enhanced Recovery After Surgery",
+        "score": 0.002
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:14.303Z",
+    "classified": true,
+    "title_ja": "NCDリスク計算モデルと修正フレイルティ指数による肝細胞癌術後せん妄の予測",
+    "abstract_ja": "肝細胞癌の区域切除以上の手術を受けた106例を対象に、National Clinical Database(NCD)リスク計算モデルと5項目修正フレイルティ指数(mFI-5)を組み合わせた術後せん妄予測モデルを検討した。両指標の高リスクに分類された患者は訓練コホート・検証コホートともにせん妄発生率が有意に高く、多変量解析でも独立した予測因子であった。"
+  },
+  {
     "id": "pmid-42392020",
     "pubmed_id": "42392020",
     "doi": "10.1016/j.sleep.2026.109108",
@@ -8904,6 +9921,59 @@
         "score": 0
       }
     ]
+  },
+  {
+    "id": "pmid-42368224",
+    "pubmed_id": "42368224",
+    "doi": "10.1016/j.dialog.2026.100320",
+    "title": "Structural physical activity restriction, cerebrovascular and diabetes mortality, and long-term care intensity in Japan: An ecological panel study across 47 prefectures (2013-2022) with a COVID-19 counterfactual analysis.",
+    "abstract": "Physical inactivity is an established cardiovascular risk factor at the individual level, but the population-level mortality cost attributable to modifiable, built-environment constraints on daily physical activity - rather than to individual behaviour - has lacked an empirical benchmark, leaving investment in walkable urban design without a clear health-economic case. We asked whether structurally constrained population physical activity is associated with cause-specific mortality, and used the 2020 COVID-19 mobility restriction - a society-wide curtailment that could never be imposed experimentally - to estimate the effect size of an acute collective PA shock on cardiovascular and metabolic deaths. 10-year ecological panel of Japan's 47 prefectures (2013-2022; N = 470). We modelled cerebrovascular (CVD), diabetes (DM), and heat-illness deaths with age-sex-standardized CRE Mundlak Poisson regression and the severe long-term-care ratio (SHR) with a fractional logit, applying stepwise confounder adjustment (M0-M5: medical resources, income, education, age structure, birth rate). 2020 excess was estimated against a counterfactual trend trained on 2013-2019. Higher car-only commuting (range 8.5-79.0%) was associated with greater CVD (IRR per SD = 1.064; 95% CI 1.037-1.093; +29% across the observed range) and DM mortality (IRR = 1.030; 1.000-1.060), and with greater long-term-care severity (SHR OR = 1.39; 1.18-1.64). CVD persisted across all five adjustment models; DM attenuated to non-significance after consumption-expenditure adjustment, consistent with a correlated socioeconomic cluster rather than an independent driver. In 2020, the most car-dependent tertile recorded +8.3% excess CVD deaths (95% CI +2.8% to +14.0%) versus near-zero excess elsewhere - a quantifiable effect of acute collective PA restriction on cardiovascular mortality. A modifiable feature of modern life - car dependence - carries a measurable population-level cardiovascular mortality cost that amplifies when behavioural PA is acutely curtailed. The effect size justifies treating walkable urban design and public transit as primary NCD prevention in super-ageing societies, not as ancillary transport policy. None declared.",
+    "authors": [
+      "Kimura A"
+    ],
+    "journal": "Dialogues in health",
+    "journal_issn": "2772-6533",
+    "year": 2026,
+    "publication_date": "2026-06-29",
+    "analysis_methods": [
+      "中断時系列分析 (ITS)"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "47都道府県の人口動態統計・要介護度等の公的統計データ"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.51,
+    "sjr_quartile": null,
+    "openalex_topic": "Physical Activity and Health",
+    "openalex_topic_score": 0.235,
+    "openalex_subfield": "Physiology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10352",
+        "name": "Physical Activity and Health",
+        "score": 0.235
+      },
+      {
+        "id": "T10235",
+        "name": "Health disparities and outcomes",
+        "score": 0.173
+      },
+      {
+        "id": "T11368",
+        "name": "Long-Term Effects of COVID-19",
+        "score": 0.127
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:12.265Z",
+    "classified": true,
+    "title_ja": "自動車依存的な生活環境と脳血管・糖尿病死亡:47都道府県のエコロジカル・パネル研究",
+    "abstract_ja": "2013-2022年の47都道府県データを用い、自動車依存的な移動様式と脳血管疾患・糖尿病死亡率、要介護度との関連をポアソン回帰・ロジットモデルで検討した。自動車通勤率が高い都道府県ほど脳血管疾患死亡(IRR 1.064/SD)や要介護度の重症化と関連し、2020年のCOVID-19による活動制限時には自動車依存度の高い地域で脳血管死亡の超過(+8.3%)が観察された。"
   },
   {
     "id": "pmid-42351284",
