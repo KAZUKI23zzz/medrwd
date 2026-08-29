@@ -15,9 +15,10 @@ Next.js 16 (Static Export) / TypeScript / Tailwind CSS v4 + shadcn/ui v4 / JSON�
 | パス | 役割 |
 |------|------|
 | `app/` | Next.js App Router（ダッシュボード・研究カタログ・DB一覧・About・status） |
-| `scripts/sync-pubmed.ts` | PubMed収集（収集専任: hasabstract + OpenAlex IF/トピック → classified:false で追記）。分類・翻訳はしない |
-| `scripts/backfill-openalex.ts` | 既存論文にOpenAlexのトピック・欠けているIFを補う（`--all` で全件取り直し。冪等） |
-| `data/papers.json` | 論文メタデータ（1,085件、全件分類済み）。週次Routineが追記・削除する。`openalex_topics` は関連度つきトピック（OpenAlex由来・CC0） |
+| `scripts/sync-pubmed.ts` | PubMed収集（収集専任: 直近90日 + hasabstract → OpenAlexのIF/トピックを付けて classified:false で追記）。分類・翻訳はしない。**1回の取り込みは50件まで**（あふれた分は翌週） |
+| `scripts/backfill-openalex.ts` | トピック・IFが欠けている論文を埋め直す（`--all` で全件取り直し。冪等）。**Routineが毎週ビルド前に実行する** |
+| `data/papers.json` | 論文メタデータ（全件分類済み）。週次Routineが追記・削除する。`openalex_topics` は関連度つきトピック（OpenAlex由来・CC0） |
+| `data/excluded-pmids.json` | 偽陽性として削除した論文のPMID。収集時に `papers.json` と一緒に除外する。**分類に失敗しただけの論文を入れないこと**（二度と収録されなくなる） |
 | `data/topic-areas.json` | **トピック→診療分野の辞書**（25分野／OpenAlex全4,516トピック、うち696件に分野）。**キーはトピックID**（`T10183`）。診療分野の軸はここが正 |
 | `lib/clinical-areas.ts` | 論文の診療分野を求める（辞書引き＋スコア閾値0.10）。設計判断はここのコメントに集約 |
 | `data/unknown-topics.json` | 辞書に無い／改名されたトピックの待ち行列。収集のたびに作り直され、`/status` に出る。**分野の判断は人がやる** |
@@ -46,10 +47,32 @@ npx tsx scripts/sync-pubmed.ts           # 論文収集（手動。通常はRout
 ## 現在の状態
 
 **Track 2 完了: 収集・分類フローをRoutine一本化**
-- 自動化は週次の **Claude Routine 1つ**（収集→分類→日本語要約→偽陽性除外→main自動マージ）。GitHub Actions・Google翻訳・PMDAニュースは廃止。
+- 自動化は週次の **Claude Routine 1つ**。GitHub Actions・Google翻訳・PMDAニュースは廃止。
+- 手順は8段階。**PRを作らず main へ直接push**する（ブランチ保護なし）。
+  ```
+  1 npm ci → 2 収集(script) → 3 分類(LLM) → 4 偽陽性除外(LLM) → 5 status更新(LLM)
+  → 6 欠損の補充(script) → 7 自己点検(script+build) → 8 main へ直接push
+  ```
+- **判断はLLM、合否は機械。** 自己点検は `validate-papers.ts` と `npm run build` が判定する。
+  検証に落ちたら該当論文だけを最大2回まで直し、直らなければその論文だけ取り除いて残りを通す
+  （`excluded-pmids.json` には入れない＝翌週やり直す）。
 - `abstract_ja` は全文訳ではなく**2〜3文の日本語AI要約**（WEB上は「AI要約」表示）。
 - 失敗の可視化は `/status` ページ（`data/sync-status.json`）＋セーフマージ・ガード。
-- Routineのセットアップ/運用は `docs/routine-classify.md` 参照。要設定2点: ①クラウド環境のネットワーク許可に `eutils.ncbi.nlm.nih.gov`・`api.openalex.org` ②Claude GitHub Appをwrite権限で導入。
+- Routineのセットアップ/運用と**指示文の全文**は `docs/routine-classify.md` 参照。
+  要設定2点: ①クラウド環境のネットワーク許可に `eutils.ncbi.nlm.nih.gov`・`api.openalex.org`
+  ②Claude GitHub Appをwrite権限で導入。
+- **指示文を変えたら claude.ai 側にも貼り直すこと。** リポジトリのファイルは原本にすぎず、
+  実際に動くのはRoutineに貼られたテキスト。
+
+**収集の設計（2026-08-29）**
+- **検索窓は90日。** `hasabstract` で絞るので、登録時点でアブストラクトが無い論文は
+  当たらない。後から付いても登録日は変わらないため、窓が狭いと二度と拾えない
+  （実測で14日→90日にすると新規が15件→24件に増えた）。
+- **検索結果に件数上限を置かない。** 以前は100件で切っており、PubMedが新しい順に返すため
+  古い側を静かに捨てていた。上限に達したら例外で止める。
+- **1回の取り込みは50件**（古い順）。LLMの作業量を決めているのはこちらで、検索結果の
+  件数ではない（IDは1件19バイト、詳細は7.7KB）。あふれた分は翌週。
+- 偽陽性は `excluded-pmids.json` に記録する。しないと窓に入っている間ずっと拾い直す。
 
 **研究カタログのUX改修 完了（PR #32–#34 / 2026-08）**
 絞り込み状態のURL化・AND検索・ファセット件数の動的化・モバイルのドロワー化・
@@ -59,7 +82,7 @@ DB一覧の拡充（10件）・お気に入り（localStorage）。
 **診療分野の軸（2026-08）**
 OpenAlex のトピック（`topics`、関連度つき最大3件。CC0・singletonは課金対象外）を
 `data/topic-areas.json` の辞書で日本の診療科25分野に写像し、絞り込み軸にしている
-（1,085件中940件＝87%に付与、平均1.39分野）。
+（約87%に付与、平均1.39分野）。
 
 辞書は **OpenAlex の公開スナップショットから全4,516トピックを収録**している
 （`https://openalex.s3.amazonaws.com/data/jsonl/topics/manifest.json`、2026-06-26版）。
@@ -92,6 +115,12 @@ subfield「呼吸器」82件の半分が胃癌・前立腺癌・大動脈だっ�
 使わずスコアを係数にしている**（低スコアが自動的に効かなくなる）。
 絞り込みの選択肢に出すトピックだけは二値なので 0.10 の閾値を使う。
 
+**MeSHは廃止（2026-08-29）**
+収集・表示ともやめた。PubMedの索引付けは公開から遅れるため収集時点では半数にしか付かず、
+付いた後に取り直す処理も無いので、集め続けても永久に半分のままだった。診療分野の辞書づくりと
+関連研究のスコア検証（参照指標）に使い切ったので役目は終わり。`validate-papers.ts` が
+スキーマ外フィールドを弾くので、Routineが書き戻しても検出できる。
+
 **未実装**: Pagefind全文検索 / SJR CSV取込 / DB詳細ページ充実
 
 **保留中の判断**: 関連研究のBM25が手法語（機械学習・Markovモデル・中断時系列など）
@@ -107,7 +136,14 @@ subfield「呼吸器」82件の半分が胃癌・前立腺癌・大動脈だっ�
    一覧で使わないフィールドは `app/papers/page.tsx` で落としてある（736KB→705KB）。
    その後、検索でサブトピックも引けるよう `topic_names` を全件配信して 720KB
    （+15KB）。測り直すときは `npm run build` 後の `out/papers.txt` を brotli -q 11 で。
-3. （解消）~~詳細ページの「関連研究」が実質「同じDBの最新5件」~~ → 本文ベースの
+3. 診療分野と関連研究は **papers.json に保存せず、ビルドのたびに全件を計算する**
+   （診療分野7ms・関連研究724ms。ビルド全体20秒の4%）。保存しないのは、辞書
+   （`topic-areas.json`）を唯一の正に保つため。棚卸しで辞書に追記すれば、次のビルドで
+   既存論文にも自動的に反映され、papers.json を書き直す処理も再計算の管理も要らない。
+   索引はモジュールに1つキャッシュするので、1,100ページ生成しても組み立ては1回きり
+   （N×Nにはならない）。値はビルド成果物には焼き込まれるので、ブラウザでの絞り込みは
+   計算せず照合するだけ。
+4. （解消）~~詳細ページの「関連研究」が実質「同じDBの最新5件」~~ → 本文ベースの
    類似度に置き換え済み。`score = BM25コサイン × (1 + 0.30·診療分野 + 0.20·トピック)`。
    研究カテゴリ・DB・解析手法・研究デザインには**加点しない**（話題の一致に対して
    逆相関だったため。根拠は `lib/related-papers.ts` のコメント）。
