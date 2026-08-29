@@ -19,9 +19,13 @@ export interface Paper {
   sjr_quartile: string | null;
   research_categories: string[];
   /**
-   * OpenAlex の primary_topic（CC0）。疾患・診療領域の軸として使う。
-   * `openalex_topic` は約4,500種の細かいトピック名、`openalex_subfield` は
-   * その上位（Surgery / Oncology など）で、絞り込みの軸にはこちらを使う。
+   * OpenAlex の primary_topic（CC0）。`openalex_topics` の先頭と同じ値で、
+   * 互換のために残してある。検索の対象に入れているほかは表示にも使わない。
+   *
+   * `openalex_subfield` / `openalex_field` は**使っていない**。OpenAlex 側の
+   * トピック→subfield 写像が誤っているため（胃癌→呼吸器など。経緯は
+   * lib/clinical-areas.ts のコメント）。比較用にデータには残している。
+   *
    * 未取得は undefined、取得を試みて得られなかった場合は null。
    */
   openalex_topic?: string | null;

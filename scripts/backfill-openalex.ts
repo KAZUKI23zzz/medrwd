@@ -1,5 +1,5 @@
 /**
- * OpenAlex から論文ごとの診療領域と、欠けているIFを補う。
+ * OpenAlex から論文ごとのトピックと、欠けているIFを補う。
  * 取得処理は scripts/openalex.ts に集約してある（収集スクリプトと共通）。
  *
  *   npx tsx scripts/backfill-openalex.ts          # 未取得・欠損のある論文だけ

@@ -277,8 +277,9 @@ async function main() {
       impactFactor = (await fetchImpactFactor(article.journal_issn)) ?? null;
     }
 
-    // 診療領域（OpenAlex）。取得失敗なら全て null で入れておき、
-    // 後から scripts/backfill-openalex.ts が拾い直す
+    // トピック（OpenAlex）。取得失敗なら全て null で入れておき、
+    // 後から scripts/backfill-openalex.ts が拾い直す。
+    // サイトの「診療分野」は、このトピックを data/topic-areas.json で引いて求める
     const topic = (await fetchTopic(article.pubmed_id)) ?? {
       openalex_topic: null,
       openalex_topic_score: null,
