@@ -107,5 +107,5 @@ subfield「呼吸器」82件の半分が胃癌・前立腺癌・大動脈だっ�
    研究カテゴリ・DB・解析手法・研究デザインには**加点しない**（話題の一致に対して
    逆相関だったため。根拠は `lib/related-papers.ts` のコメント）。
    詳細ページで診療分野・トピック・DBによる絞り込みができる
-   （`components/papers/RelatedPapers.tsx`。候補15件を渡し、表示は5件）。
+   （`components/papers/RelatedPapers.tsx`。候補15件を渡し、5件ずつ展開）。
    経緯とブラインド評価の結果は `docs/related-papers.md`。
