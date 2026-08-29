@@ -40,9 +40,7 @@ export default function PapersPage() {
   // 実際の画面で確かめること。
   //
   // ここに無いフィールドは配信されない。落としている主なもの:
-  //  - mesh_terms: 生JSONで147KBと最大だが、詳細ページでしか表示していない。
-  //    検索対象からも意図的に外してある（lib/papers-search.ts のコメント参照）
-  //  - journal_issn / collected_at / medline_status / last_updated /
+  //  - journal_issn / collected_at / last_updated /
   //    auto_detected / classified / openalex_topic / openalex_topic_score /
   //    openalex_subfield / openalex_field: 一覧のどこからも参照していない
   //  - openalex_topics: スコアつきの生データ。一覧が要るのは検索用の名前だけ

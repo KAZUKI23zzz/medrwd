@@ -122,9 +122,6 @@ function buildHaystack(paper: ListPaper): string {
     // 第2・第3トピックも入れる。診療分野が付かなかった論文では、
     // これが検索の手がかりとして唯一残るものになる。
     paper.topic_names.join(" "),
-    // mesh_terms は入れない。付与率が約半分なうえ、頻出語が
-    // Humans / Female / Japan / Male / Aged といったチェックタグ的な語で、
-    // 「female」で 500 件超が並ぶような結果になってしまう。
   ].join(" ");
 }
 
