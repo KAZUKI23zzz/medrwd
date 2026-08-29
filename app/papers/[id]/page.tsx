@@ -8,8 +8,14 @@ import { BackToPapersLink } from "@/components/papers/BackToPapersLink";
 import { FavoriteButton } from "@/components/papers/FavoriteButton";
 import { getPapers, getDatabases } from "@/lib/data-loader";
 import { getRelatedPapers } from "@/lib/related-papers";
+import {
+  RelatedPapers,
+  type RelatedCandidate,
+  type RelatedFilterKey,
+  type RelatedFilterOption,
+} from "@/components/papers/RelatedPapers";
 import { papersUrlForArea } from "@/lib/papers-url-state";
-import { clinicalAreasOf } from "@/lib/clinical-areas";
+import { clinicalAreasOf, AREA_SCORE_THRESHOLD } from "@/lib/clinical-areas";
 
 export function generateStaticParams() {
   const papers = getPapers();
@@ -47,7 +53,7 @@ export default async function PaperDetailPage({
 
   // 本文（英語の title + abstract）の類似度で並べる。同じDBというだけの
   // 論文を並べていた頃は、DPC論文221件すべてで同じ5件が出ていた。
-  // 関連度が閾値に届かない場合は5件に満たなくてよい。
+  // 画面に出すのは5件だが、絞り込めるよう候補は多めに渡す（lib/related-papers.ts）。
   const related = getRelatedPapers(paper.id);
 
   // 診療分野は OpenAlex のトピックから辞書で引く（lib/clinical-areas.ts）
@@ -55,6 +61,30 @@ export default async function PaperDetailPage({
   // トピックは第2・第3も含めて全件出す。診療分野に落ちなかった論文でも、
   // 何を根拠にそう判断したのかが読み手に見えるようにするため。
   const topics = paper.openalex_topics ?? [];
+
+  // 関連研究の絞り込みは「この論文が持っている値」だけを選択肢にする。
+  // 候補側にしか無い値まで並べると、選ぶ意味のない条件が増える。
+  // 件数と0件の無効化はクライアント側で選択状態に応じて計算する
+  // （components/papers/RelatedPapers.tsx）。
+  const candidates: RelatedCandidate[] = related.map((r) => ({
+    id: r.paper.id,
+    title: r.paper.title,
+    title_ja: r.paper.title_ja ?? null,
+    databases_used: r.paper.databases_used,
+    research_categories: r.paper.research_categories ?? [],
+    study_design: r.paper.study_design,
+    clinical_areas: r.clinical_areas,
+    topic_ids: r.topic_ids,
+  }));
+  const relatedFilters: Record<RelatedFilterKey, RelatedFilterOption[]> = {
+    areas: clinicalAreas.map((area) => ({ value: area, label: area })),
+    // 絞り込みに使うトピックは候補側と同じ閾値でそろえる。付随的なトピックまで
+    // 選択肢にすると、絞ったのに主題の違う論文が並ぶ
+    topics: topics
+      .filter((t) => t.score >= AREA_SCORE_THRESHOLD)
+      .map((t) => ({ value: t.id, label: t.name })),
+    dbs: paper.databases_used.map((db) => ({ value: db, label: db })),
+  };
 
   // Match DB slugs for linking
   // DBページへのリンク。名前の部分一致だと似た名前のDBを取り違えるので、
@@ -292,42 +322,8 @@ export default async function PaperDetailPage({
         </CardContent>
       </Card>
 
-      {related.length > 0 && (
-        <div>
-          <h3 className="mb-3 font-semibold">関連研究</h3>
-          <div className="space-y-2">
-            {related.map(({ paper: r }) => (
-              <Link
-                key={r.id}
-                href={`/papers/${r.id}`}
-                className="block rounded-md border p-3 transition-colors hover:bg-muted/50"
-              >
-                {/* 一覧のカード(PaperCard)と同じく英語タイトルが主、日本語が副 */}
-                <p className="text-sm font-medium leading-snug">{r.title}</p>
-                {r.title_ja && (
-                  <p className="mt-0.5 text-[13px] leading-snug text-muted-foreground">
-                    {r.title_ja}
-                  </p>
-                )}
-                <div className="mt-2 flex flex-wrap gap-1">
-                  {r.databases_used.map((db) => (
-                    <Badge key={db} variant="default" className="text-xs">
-                      {db}
-                    </Badge>
-                  ))}
-                  {r.research_categories.map((category) => (
-                    <Badge key={category} variant="outline" className="text-xs">
-                      {category}
-                    </Badge>
-                  ))}
-                  <Badge variant="secondary" className="text-xs">
-                    {r.study_design}
-                  </Badge>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
+      {candidates.length > 0 && (
+        <RelatedPapers candidates={candidates} filters={relatedFilters} />
       )}
 
       {/* ページが長いので、読み終わった位置にも戻る導線を置く */}

@@ -1,4 +1,5 @@
 import { getPapers } from "@/lib/data-loader";
+import { clinicalAreasOf, AREA_SCORE_THRESHOLD } from "@/lib/clinical-areas";
 import type { Paper } from "@/types/paper";
 
 /**
@@ -23,15 +24,34 @@ import type { Paper } from "@/types/paper";
  * 書き換えるため。ビルドのたびに再計算すれば運用が増えない。
  */
 
-/** 表示件数。閾値を下回る場合はこれに満たなくてよい（無関係な論文で枠を埋めない） */
-const TOP_K = 5;
+/**
+ * 詳細ページに渡す候補の数。表示するのは先頭5件だが、利用者が診療分野・トピック・
+ * DBで絞り込めるようにするため、多めに持たせておく（絞ったときに中身が無いと困る）。
+ * 15件で1ページあたり生JSONが約3.4KB。圧縮後の増分はごくわずか。
+ */
+const CANDIDATE_K = 15;
+
+// 画面に出す件数は components/papers/RelatedPapers.tsx が持つ。
+// このモジュールは data/papers.json を読むので、クライアントから import させない。
 
 /**
- * BM25コサインの足切り。0.15〜0.22 を実測で比較したところ、上げても質はほとんど
- * 変わらない（平均2.11→2.29）のに候補の出る論文が 20/20 → 15/20 まで落ちたため
- * 0.15 を採用している。この閾値でも0点は1%しかない。
+ * BM25コサインの足切り。
+ *
+ * 当初は 0.15〜0.22 を比べて 0.15 にしていた（上げても質はほとんど変わらないのに
+ * 候補の出る論文が 20/20 → 15/20 まで落ちたため）。
+ *
+ * 2026-08-29 に 0.12 へ緩めた。詳細ページで絞り込めるようにしたので、
+ * 絞ったときの母数が要るため。緩めた効果は実測で:
+ *
+ * | 足切り | 候補の中央値 | 候補5件未満 | 候補0件 |
+ * |---|---|---|---|
+ * | 0.15 | 8件 | 253件 | 21件 |
+ * | 0.12 | 17件 | 41件 | **0件** |
+ *
+ * 関連研究が1件も出ない論文が無くなる。下位には従来より弱い候補が入るが、
+ * 論文が増えれば自然に押し出される。
  */
-const MIN_SIMILARITY = 0.15;
+const MIN_SIMILARITY = 0.12;
 
 const BM25_K1 = 1.5;
 const BM25_B = 0.75;
@@ -53,31 +73,117 @@ const TITLE_REPEAT = 3;
  * 実際に2案をブラインド評価で比べて決めた（docs/related-papers.md）。
  */
 export type BoostWeights = {
-  /** OpenAlex の細かいトピック（第1トピックのみ。370種）が一致 */
-  topic: number;
-  /**
-   * 診療領域が一致。**いまも OpenAlex の subfield（74種）を見ている。**
-   *
-   * subfield の写像が誤っていることは分かっている（胃癌→呼吸器など。
-   * 経緯は lib/clinical-areas.ts の冒頭コメント）。`clinical_areas` と
-   * トピックのスコアを使う形に**置き換える予定だが、まだ未着手**。
-   * 置き換えるときは重みをブラインド評価で決め直すこと（docs/related-papers.md）。
-   */
+  /** 診療分野の重なり（`areaSimilarity`、0〜1）に掛ける */
   area: number;
-  category: number;
-  database: number;
-  method: number;
-  design: number;
+  /** OpenAlex のトピックの重なり（`topicSimilarity`、0〜1）に掛ける */
+  topic: number;
 };
 
+/**
+ * 加点の重み。
+ *
+ * 「一致したら定数を足す」ではなく、0〜1の重なり具合を掛ける。
+ * 0.3/0.2 と 0.5/0.3 は実測で同じ成績だったので、動きの小さいほうを採った。
+ * 効くのは正確な値ではなく、**何を足して何を足さないか**のほう。
+ */
 export const DEFAULT_BOOSTS: BoostWeights = {
-  topic: 0.18,
-  area: 0.08,
-  category: 0.12,
-  database: 0.06,
-  method: 0.05,
-  design: 0.03,
+  area: 0.3,
+  topic: 0.2,
 };
+
+/**
+ * 加点の実測値（候補13,864組）。トピック側は関連度が両側から掛かるので、
+ * 名目の 0.2 には届かない。「Aの主題＝Bの主題」のときだけ満点に近づく作り。
+ *
+ * | 組み合わせ | 組数 | 加点の中央値 |
+ * |---|---|---|
+ * | 同トピック かつ 同診療分野 | 2,960 | 0.440 |
+ * | 同診療分野のみ | 3,698 | 0.300 |
+ * | 同トピックのみ | 765 | 0.108 |
+ * | どちらも該当しない | 6,441 | 0 |
+ */
+
+/**
+ * ## 並べ替えは単一のスコア順。絞り込みは利用者に任せる
+ *
+ * 「JADERで不均衡分析をした」という共通点だけで薬剤も疾患も違う論文が並ぶ、
+ * という問題があった。手法が同じこと自体は悪くない。**分野を無視して手法だけで
+ * 並ぶのが問題**である。
+ *
+ * これをスコアの重み付けだけで解こうとすると、ある利用者には正解でも別の
+ * 利用者には不正解になる（「DPCで他にどんな研究があるか」を見たい人にとっては
+ * 同じDBで並ぶことこそが目的）。そこで順序は単一のスコアに任せ、
+ * 診療分野・トピック・DBでの絞り込みを詳細ページの UI として出している
+ * （components/papers/RelatedPapers.tsx）。絞り込みの母数を確保するため、
+ * 表示は5件でも候補は CANDIDATE_K 件まで渡す。
+ *
+ * ## 加点しない項目（研究カテゴリ・使用DB・解析手法・研究デザイン）
+ *
+ * 以前はこの4つにも加点していた（category 0.12 / database 0.06 / method 0.05 /
+ * design 0.03）。2026-08-29 に全部やめた。**話題の一致に対して逆相関だったため。**
+ *
+ * MeSHの重なりを独立した参照にして、足切りを通った候補2,938組で測った結果:
+ *
+ * | 信号 | AUC |
+ * |---|---|
+ * | BM25コサイン | 0.753 |
+ * | 診療分野 | 0.681 |
+ * | トピック | 0.645 |
+ * | 研究カテゴリ | **0.456** |
+ * | 使用DB | **0.443** |
+ * | 解析手法 | **0.439** |
+ *
+ * 0.5 が「情報なし」なので、下3つは足すと無関係な論文を押し上げていた。
+ * 実際、新しい式にこの3つを足し戻すと成績が落ちる（cat −0.012 / db −0.008 /
+ * method −0.007）。design は ±0.001 で無害だが、効かないので置かない。
+ *
+ * **この測定には落とし穴がある。** MeSHには「JADERを使った」ことに紐づく語が混ざる
+ * （JADER論文の96%が `Adverse Drug Reaction Reporting Systems` を持つ）。これを
+ * 除かずに測ると結論が反転し、DBに大きな重みを置くのが最善に見えてしまう。
+ * DB由来のMeSHを除いて初めて上の並びになる。
+ *
+ * 除いたほうが正しいことは、人手のブラインド評価が独立に裏づけている。評価者2名が
+ * どちらも「同じDB・同じ不均衡分析というだけで薬剤も疾患も違うJADER論文が並ぶ」
+ * 「機械学習・Markovモデル・中断時系列といったデザイン語で引っ張られる」と
+ * 指摘した。汚染された指標は、人が誤りと呼んだ挙動をちょうど高く評価する。
+ *
+ * 経緯は docs/related-papers.md の「4回目」に書いてある。
+ */
+
+/**
+ * 診療分野の重なり（0〜1）。
+ *
+ * 共通集合を「少ないほうの分野数」で割る。Jaccard にすると
+ * 「血液・乳腺・感染症」と「乳腺」が 1/3 になってしまい、分野を多く持つ論文が
+ * 一律に不利になる。実測では 1.0 が2,266組・0.5 が175組で、ほぼ二値に近い。
+ */
+export function areaSimilarity(a: string[], b: string[]): number {
+  if (!a.length || !b.length) return 0;
+  const shared = a.filter((x) => b.includes(x)).length;
+  return shared / Math.min(a.length, b.length);
+}
+
+/**
+ * トピックの重なり（0〜1）。共有するトピックについて、両者の関連度スコアの積を足す。
+ *
+ * **閾値は使わない。** スコアをそのまま係数にすれば、関連度0.001のトピックを
+ * 共有していても 0.001×0.9=0.0009 にしかならず、自動的に効かなくなる。
+ * 診療分野の絞り込み（lib/clinical-areas.ts）が閾値0.10を使うのとは扱いが逆で、
+ * あちらは「入る/入らない」の二値だから閾値が要る。
+ *
+ * スコアは1より小さい値なので、積は素直に小さくなる。実測では候補の55%が>0で、
+ * 中央値0.005・p90が0.943と、同じ話題の組だけがはっきり立ち上がる。
+ * OpenAlex のスコアは合計が1に正規化されていない（最大2.999の論文がある）ため、
+ * 稀に1を超える。二重に効かないよう1で頭打ちにする（p99=0.994なので影響は1%未満）。
+ */
+export function topicSimilarity(
+  a: Map<string, number>,
+  b: Map<string, number>,
+): number {
+  let dot = 0;
+  for (const [id, score] of b) dot += (a.get(id) ?? 0) * score;
+  return Math.min(1, dot);
+}
 
 /**
  * トピック加点を「そのトピックの珍しさ」で薄める案を試したが、**実測で否定された**。
@@ -168,6 +274,17 @@ type Index = {
   /** 語 → その語を含む[論文の位置, 重み] のリスト */
   postings: Map<string, [number, number][]>;
   indexById: Map<string, number>;
+  /** 論文ごとの診療分野。papers と同じ並び。加点のたびに引き直さないよう先に作る */
+  areas: string[][];
+  /** 論文ごとの トピックID → 関連度。同上 */
+  topicScores: Map<string, number>[];
+  /**
+   * 論文ごとの、絞り込みに使うトピックID（関連度0.10以上のみ）。
+   * スコア計算に使う topicScores とは別物。あちらは関連度を係数として掛けるので
+   * 低いトピックも入れてよいが、絞り込みは「入る/入らない」の二値なので閾値が要る。
+   * lib/clinical-areas.ts の AREA_SCORE_THRESHOLD と同じ考え方。
+   */
+  filterTopicIds: string[][];
 };
 
 let cached: Index | null = null;
@@ -220,6 +337,15 @@ function buildIndex(): Index {
     vectors,
     postings,
     indexById: new Map(papers.map((p, i) => [p.id, i])),
+    areas: papers.map((p) => clinicalAreasOf(p.openalex_topics)),
+    topicScores: papers.map(
+      (p) => new Map((p.openalex_topics ?? []).map((t) => [t.id, t.score])),
+    ),
+    filterTopicIds: papers.map((p) =>
+      (p.openalex_topics ?? [])
+        .filter((t) => t.score >= AREA_SCORE_THRESHOLD)
+        .map((t) => t.id),
+    ),
   };
 }
 
@@ -228,29 +354,39 @@ function getIndex(): Index {
   return cached;
 }
 
-function overlaps(a: string[] | undefined, b: string[] | undefined): boolean {
-  if (!a?.length || !b?.length) return false;
-  return a.some((x) => b.includes(x));
-}
-
 export type RelatedPaper = {
   paper: Paper;
-  /** タグ加点まで含めた最終スコア。表示には使わないがデバッグで効く */
+  /** 加点まで含めた最終スコア。この降順に並ぶ */
   score: number;
   /** 本文だけの類似度（0〜1） */
   similarity: number;
+  /** 絞り込みの照合に使う。この候補が持つ診療分野 */
+  clinical_areas: string[];
+  /**
+   * 絞り込みの照合に使う。この候補が持つトピックID。
+   * 関連度0.10未満のトピックは入れない。付随的なトピックまで拾うと、
+   * 「同じトピック」で絞ったのに主題の違う論文が並ぶため。
+   */
+  topic_ids: string[];
 };
 
 export function getRelatedPapers(
   paperId: string,
-  limit = TOP_K,
+  limit = CANDIDATE_K,
   boosts: BoostWeights = DEFAULT_BOOSTS,
 ): RelatedPaper[] {
-  const { papers, vectors, postings, indexById } = getIndex();
+  const {
+    papers,
+    vectors,
+    postings,
+    indexById,
+    areas,
+    topicScores,
+    filterTopicIds,
+  } = getIndex();
   const self = indexById.get(paperId);
   if (self === undefined) return [];
 
-  const source = papers[self];
   const scores = new Map<number, number>();
   for (const [word, weight] of vectors[self]) {
     const list = postings.get(word);
@@ -265,26 +401,19 @@ export function getRelatedPapers(
   for (const [other, similarity] of scores) {
     if (similarity < MIN_SIMILARITY) continue;
     const target = papers[other];
-    let boost = 1;
-    if (source.openalex_topic && source.openalex_topic === target.openalex_topic)
-      boost += boosts.topic;
-    // TODO: 診療分野（clinical_areas）＋トピックのスコアに置き換える。未着手。
-    // ここだけが openalex_subfield の唯一の参照箇所で、実測では加点1,900組のうち
-    // 383組が診療分野を1つも共有していない（逆に946組を取りこぼしている）。
-    if (
-      source.openalex_subfield &&
-      source.openalex_subfield === target.openalex_subfield
-    )
-      boost += boosts.area;
-    if (overlaps(source.research_categories, target.research_categories))
-      boost += boosts.category;
-    if (overlaps(source.databases_used, target.databases_used))
-      boost += boosts.database;
-    if (overlaps(source.analysis_methods, target.analysis_methods))
-      boost += boosts.method;
-    if (source.study_design && source.study_design === target.study_design)
-      boost += boosts.design;
-    candidates.push({ paper: target, score: similarity * boost, similarity });
+    // 話題が重なるほど押し上げる。研究カテゴリ・DB・解析手法・研究デザインは
+    // 加点しない（下の「加点しない項目」を参照）
+    const boost =
+      1 +
+      boosts.area * areaSimilarity(areas[self], areas[other]) +
+      boosts.topic * topicSimilarity(topicScores[self], topicScores[other]);
+    candidates.push({
+      paper: target,
+      score: similarity * boost,
+      similarity,
+      clinical_areas: areas[other],
+      topic_ids: filterTopicIds[other],
+    });
   }
 
   return candidates.sort((a, b) => b.score - a.score).slice(0, limit);
