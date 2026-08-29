@@ -1,26 +1,16 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { getPapers, getDatabases } from "@/lib/data-loader";
-import { clinicalAreasOf, CLINICAL_AREAS } from "@/lib/clinical-areas";
+import { CLINICAL_AREAS } from "@/lib/clinical-areas";
 
 export const metadata = {
   title: "About - 医療RWD研究カタログ",
   description: "医療RWD研究カタログについて",
 };
 
+// 収録件数や付与率といった数字はここに書かない。必ず古くなるうえ、
+// 論文数はダッシュボードに出ている。ここは「何をどう作っているか」だけを書く。
 export default function AboutPage() {
-  // 件数は毎週変わるので、文中に直接書かずデータから出す。
-  // 手で書いた数字は必ず古くなる（このページが実際にそうなっていた）。
-  const papers = getPapers();
-  const databases = getDatabases();
-  const withAreas = papers.filter(
-    (p) => clinicalAreasOf(p.openalex_topics).length > 0,
-  ).length;
-  const withDb = papers.filter((p) => p.databases_used.length > 0).length;
-  const withMesh = papers.filter((p) => (p.mesh_terms ?? []).length > 0).length;
-  const pct = (n: number) => Math.round((100 * n) / papers.length);
-
   return (
     <div className="mx-auto max-w-3xl space-y-6">
       <h1 className="text-2xl font-bold">About 医療RWD研究カタログ</h1>
@@ -35,9 +25,8 @@ export default function AboutPage() {
             <strong>
               「どのデータベースで・どんな手法で・何を調べたか」
             </strong>
-            で検索できるカタログサイトです。現在{" "}
-            <strong>{papers.length.toLocaleString()}件</strong> の論文を収録し、
-            {databases.length}件のRWDデータベースと対応づけています。
+            で検索できるカタログサイトです。収録した論文を、日本で使われている
+            主要なRWDデータベースと対応づけています。
           </p>
           <p>
             例えば、「NDBを使ったコホート研究にはどんなものがあるか」
@@ -71,12 +60,10 @@ export default function AboutPage() {
               </Badge>
               <div>
                 <p className="font-medium">
-                  タイトル（英語）・著者・雑誌名・出版日・DOI・アブストラクト・MeSH用語
+                  タイトル（英語）・著者・雑誌名・出版日・DOI・アブストラクト
                 </p>
                 <p className="mt-1 text-muted-foreground">
                   PubMed から取得した値をそのまま表示しています。加工していません。
-                  MeSH用語は PubMed 側で付与が済んだ論文にのみ付きます（現在{" "}
-                  {withMesh.toLocaleString()}件 / {pct(withMesh)}%）。
                 </p>
               </div>
             </div>
@@ -122,10 +109,8 @@ export default function AboutPage() {
                   </li>
                   <li>
                     <strong>使用データベース</strong>
-                    ：本文中の記述から判断しています。現在{" "}
-                    {withDb.toLocaleString()}件（{pct(withDb)}
-                    %）で特定できており、残りはDB名が明示されていないものです
-                    （判明した範囲を「追加データソース」として記載）。
+                    ：本文中の記述から判断しています。DB名が明示されていない論文では
+                    特定できず、判明した範囲を「追加データソース」として記載しています。
                   </li>
                 </ul>
               </div>
@@ -142,10 +127,8 @@ export default function AboutPage() {
                 <p className="mt-1 text-muted-foreground">
                   OpenAlex のトピックを、当サイトが独自に作成した辞書で日本の診療科
                   {CLINICAL_AREAS.length}分野へ写像したものです。OpenAlex
-                  が提供する分類ではありません。現在{" "}
-                  {withAreas.toLocaleString()}件（{pct(withAreas)}
-                  %）に付与しています。1つの論文が複数の分野を持つことがあります
-                  （例：乳がん患者の眼有害事象 → 乳腺・眼科）。
+                  が提供する分類ではありません。1つの論文が複数の分野を持つことが
+                  あります（例：乳がん患者の眼有害事象 → 乳腺・眼科）。
                   辞書に無いトピックには分野が付きません。
                 </p>
               </div>
@@ -185,7 +168,7 @@ export default function AboutPage() {
                   <strong>PubMed E-utilities API</strong>（NCBI / NLM / NIH）
                 </p>
                 <p className="mt-1 text-muted-foreground">
-                  論文の書誌情報（タイトル・著者名・雑誌名・DOI・MeSH用語等）およびアブストラクトは、
+                  論文の書誌情報（タイトル・著者名・雑誌名・DOI等）およびアブストラクトは、
                   米国国立医学図書館（NLM）が提供する PubMed E-utilities API
                   を通じて取得しています。アブストラクトの著作権は各出版社に帰属します。
                   本サイトは NLM・NIH・HHS による推薦・支持を受けたものではありません。

@@ -35,7 +35,6 @@ interface Paper {
   additional_data_sources: string[];
   study_design: string;
   analysis_methods: string[];
-  mesh_terms: string[];
   impact_factor: number | null;
   sjr_quartile: string | null;
   openalex_topic?: string | null;
@@ -47,7 +46,6 @@ interface Paper {
   auto_detected: boolean;
   collected_at: string;
   classified: boolean;
-  medline_status?: string;
   last_updated?: string;
 }
 
@@ -151,10 +149,6 @@ function parseArticleXML(articleXml: string): ParsedArticle | null {
   const pmid = extractTag(articleXml, "PMID");
   if (!pmid) return null;
 
-  // MedlineCitation Status: "MEDLINE", "In-Process", "Publisher", "PubMed-not-MEDLINE"
-  const statusMatch = articleXml.match(/<MedlineCitation\s[^>]*Status="([^"]+)"/);
-  const medline_status = statusMatch ? statusMatch[1] : undefined;
-
   const title = extractTag(articleXml, "ArticleTitle");
   const abstractTexts = extractAllTags(articleXml, "AbstractText");
   const abstract = abstractTexts.join(" ");
@@ -189,9 +183,10 @@ function parseArticleXML(articleXml: string): ParsedArticle | null {
   const day = dayStr.padStart(2, "0") || "01";
   const publication_date = `${year}-${month}-${day}`;
 
-  // MeSH terms
-  const meshDescriptors = extractAllTags(articleXml, "DescriptorName");
-  const mesh_terms = [...new Set(meshDescriptors)];
+  // MeSH は収集しない。PubMed の索引付けは公開から遅れるため、収集時点では
+  // 半数にしか付かない。付いた後に取り直す処理も無いので、集めても永久に半分
+  // のまま埋まらない。診療分野の辞書づくりには使い切ったので役目は終わり
+  // （経緯は docs/related-papers.md）。MedlineCitation Status も同じ理由で不要。
 
   return {
     id: `pmid-${pmid}`,
@@ -205,8 +200,6 @@ function parseArticleXML(articleXml: string): ParsedArticle | null {
     year,
     publication_date,
     analysis_methods: [],
-    mesh_terms,
-    medline_status,
   };
 }
 

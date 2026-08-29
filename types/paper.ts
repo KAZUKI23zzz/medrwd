@@ -15,7 +15,6 @@ export interface Paper {
   additional_data_sources: string[];
   study_design: string;
   analysis_methods: string[];
-  mesh_terms: string[];
   impact_factor: number | null;
   sjr_quartile: string | null;
   research_categories: string[];
@@ -40,16 +39,7 @@ export interface Paper {
   openalex_field?: string | null;
   auto_detected: boolean;
   collected_at: string;
-  /**
-   * PubMed の MedlineCitation Status（MEDLINE / In-Process / Publisher /
-   * PubMed-not-MEDLINE）。収集時の値を記録するだけで、UI からは参照していない。
-   *
-   * 以前は「Publisher / In-Process の論文を月1回取り直し、MEDLINE になったら打ち切る」
-   * という追跡に使っていたが、収集をRoutine一本化した際にその処理ごと削除した。
-   * そのため last_updated は 2026-05-18 を最後に更新されていない。
-   */
-  medline_status?: string;
-  /** 上記の再取得で最後に取り直した時刻。再取得を廃止したので現在は増えない */
+  /** 過去の再取得で最後に取り直した時刻。再取得を廃止したので現在は増えない */
   last_updated?: string;
 }
 

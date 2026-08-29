@@ -18,7 +18,6 @@ const ARRAY_FIELDS = [
   "databases_used",
   "additional_data_sources",
   "analysis_methods",
-  "mesh_terms",
   "research_categories",
 ] as const;
 

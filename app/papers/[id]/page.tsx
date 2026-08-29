@@ -282,20 +282,6 @@ export default async function PaperDetailPage({
                 </div>
               )}
 
-              {paper.mesh_terms.length > 0 && (
-                <div>
-                  <p className="text-sm font-medium text-muted-foreground">
-                    MeSH Terms
-                  </p>
-                  <div className="mt-1 flex flex-wrap gap-1">
-                    {paper.mesh_terms.map((term) => (
-                      <Badge key={term} variant="outline" className="text-xs">
-                        {term}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-              )}
             </div>
           </div>
 
