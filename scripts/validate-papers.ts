@@ -59,7 +59,7 @@ const SCHEMA: Record<string, FieldType> = {
  * openalex_* は型としては省略可能だが、収集スクリプトが取得できなかった場合も
  * null を書き込むので、収集を通った論文には必ず存在する。ここで存在を必須に
  * しておかないと、Routine がフィールドごと落としても検証をすり抜けて
- * 「診療領域が無い論文」が黙って増えてしまう。
+ * 「診療分野が付かない論文」が黙って増えてしまう。
  */
 const NULLABLE = new Set([
   "doi",
@@ -153,6 +153,18 @@ function main() {
 
     for (const field of NULLABLE) {
       if (!(field in paper)) errors.push(`${label}: ${field} が存在しない`);
+    }
+
+    // スキーマに無いフィールドは弾く。型検査はスキーマに載っている項目しか見ないので、
+    // これが無いと余計なフィールドが黙って通る。実際 mesh_terms を1件に足しても
+    // 終了コード0で通っていた（2026-08-29 に確認）。
+    // Routine(LLM) は過去のデータ形を覚えていて、廃止したフィールドを書き戻す
+    // ことがありうる。復活に気づけるようにしておく。
+    for (const field of Object.keys(paper)) {
+      if (field in SCHEMA || NULLABLE.has(field)) continue;
+      errors.push(
+        `${label}: ${field} はスキーマに無いフィールド（廃止済みか綴り違い）`,
+      );
     }
 
     if (typeof paper.id === "string") {
