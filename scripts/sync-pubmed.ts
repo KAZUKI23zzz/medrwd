@@ -106,15 +106,62 @@ async function pubmedFetchText(url: string): Promise<string> {
   return res.text();
 }
 
+/**
+ * PubMed の1リクエストで返せるID数の上限（E-utilities の仕様）。
+ * ここに達したら残りを取りこぼすので、黙って切らずに失敗させる。
+ */
+const ESEARCH_MAX = 10000;
+
+/**
+ * 検索窓。PubMed の登録日（Entrez Date）基準。
+ *
+ * 14日では足りない。検索条件に `hasabstract` を入れているので、登録時点で
+ * アブストラクトが無い論文は当たらない。後から付いても登録日は変わらないため、
+ * 窓が狭いとその論文は二度と拾えなくなる。実測では 14日→90日 で新規が
+ * 15件→24件に増えた（差の9件が取りこぼしていた分）。
+ */
+const SEARCH_WINDOW_DAYS = 90;
+
+/**
+ * 1回の実行で新しく取り込む上限。あふれた分は翌週に回る。
+ *
+ * 分類はRoutine（LLM）がやるので、ここが実質的にLLMの作業量を決める。
+ * 検索結果の件数を絞っても意味はない（あちらはIDだけで1件19バイト）。
+ * 定常状態では週20件程度なので、通常は上限に当たらない。
+ */
+const MAX_NEW_PER_RUN = 50;
+
+/** data/excluded-pmids.json の形 */
+type ExcludedFile = { pmids: string[] };
+
+/**
+ * 条件に合う論文のPMIDを取る。**件数の上限は設けない。**
+ *
+ * 以前は `retmax=100` を決め打ちしていた。PubMed は新しい順に返すので、
+ * 100件を超えると古い側が丸ごと捨てられる。しかも `count`（該当総数）を
+ * 見ていなかったので、取りこぼしてもログにも `/status` にも出なかった。
+ * 実測では直近90日で229件あり、100では129件を落としていた。
+ *
+ * 毎回同じ側が切られるため「翌週拾い直せる」も成り立たない。窓から出るまで
+ * 一度も拾われずに失われる。
+ */
 async function searchPubMed(
   query: string,
   days: number = 30
 ): Promise<string[]> {
-  const url = `${PUBMED_BASE}/esearch.fcgi?db=pubmed&term=${encodeURIComponent(query)}&reldate=${days}&retmax=100&retmode=json`;
+  const url = `${PUBMED_BASE}/esearch.fcgi?db=pubmed&term=${encodeURIComponent(query)}&reldate=${days}&retmax=${ESEARCH_MAX}&retmode=json`;
   const data = (await pubmedFetchJSON(url)) as {
-    esearchresult: { idlist: string[] };
+    esearchresult: { idlist: string[]; count: string };
   };
-  return data.esearchresult.idlist;
+  const { idlist, count } = data.esearchresult;
+  const total = Number(count);
+  if (total > idlist.length) {
+    throw new Error(
+      `検索結果 ${total} 件のうち ${idlist.length} 件しか取得できていない` +
+        `（上限 ${ESEARCH_MAX}）。取りこぼすので中断する。retstart でのページ送りが必要`
+    );
+  }
+  return idlist;
 }
 
 // Decode HTML/XML numeric character references (&#x2009; → thin space, &#169; → ©, etc.)
@@ -238,20 +285,42 @@ async function main() {
   );
   const existingPmids = new Set(existingPapers.map((p) => p.pubmed_id));
 
-  console.log(`Existing papers: ${existingPapers.length}`);
+  // 偽陽性として除いた論文。papers.json には残らないので、これが無いと
+  // 検索窓に入っている間ずっと拾い直しては分類し、また消す、を繰り返す
+  const excludedPath = path.join(process.cwd(), "data", "excluded-pmids.json");
+  const excluded: Set<string> = new Set(
+    (JSON.parse(fs.readFileSync(excludedPath, "utf-8")) as ExcludedFile).pmids
+  );
+
+  console.log(`Existing papers: ${existingPapers.length}, excluded: ${excluded.size}`);
 
   // Search PubMed for new papers (hasabstract で絞り込み済み)
   const allPmids = new Set<string>();
   for (const query of SEARCH_QUERIES) {
-    const days = existingPapers.length === 0 ? 365 : 14;
+    const days = existingPapers.length === 0 ? 365 : SEARCH_WINDOW_DAYS;
     console.log(`Searching PubMed (last ${days} days, hasabstract)...`);
     const pmids = await searchPubMed(query, days);
     pmids.forEach((id) => allPmids.add(id));
   }
+  console.log(`Search hits: ${allPmids.size}`);
 
-  // Filter out already collected
-  const newPmids = [...allPmids].filter((id) => !existingPmids.has(id));
-  console.log(`New PMIDs found: ${newPmids.length}`);
+  // 収集済みと除外済みを落とす
+  const candidates = [...allPmids].filter(
+    (id) => !existingPmids.has(id) && !excluded.has(id)
+  );
+
+  // 1回で処理する数を絞る。あふれた分は翌週に回る（収集済みを除外しているので
+  // 二重にはならない）。**古い順**に採るのは、検索窓から先に外れるものを
+  // 優先するため。新しい側は翌週も窓に残る。
+  const newPmids = candidates
+    .slice()
+    .sort((a, b) => Number(a) - Number(b))
+    .slice(0, MAX_NEW_PER_RUN);
+  const deferred = candidates.length - newPmids.length;
+  console.log(
+    `New PMIDs: ${newPmids.length}` +
+      (deferred > 0 ? ` (${deferred} deferred to next run)` : "")
+  );
 
   if (newPmids.length === 0) {
     console.log("No new papers found. Exiting.");

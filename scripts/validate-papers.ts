@@ -61,6 +61,43 @@ const SCHEMA: Record<string, FieldType> = {
  * しておかないと、Routine がフィールドごと落としても検証をすり抜けて
  * 「診療分野が付かない論文」が黙って増えてしまう。
  */
+/**
+ * 分類の選択肢。docs/classification.md の表と一致させること。
+ * databases_used は data/databases.json の paper_tag が正なので、ここでは見ない
+ * （下のカンマ検査と、DBページ側の突き合わせで拾う）。
+ */
+const ENUMS: Record<string, Set<string>> = {
+  study_design: new Set([
+    "後方視的コホート研究",
+    "横断的研究",
+    "症例対照研究",
+    "その他",
+  ]),
+  research_categories: new Set([
+    "治療実態・処方パターン",
+    "安全性・副作用",
+    "治療効果・有効性",
+    "疾病負荷・自然歴",
+    "医療資源利用・経済評価",
+    "医療の質・アクセスの格差",
+    "方法論・バリデーション",
+    "その他",
+  ]),
+  analysis_methods: new Set([
+    "回帰分析",
+    "生存時間分析",
+    "傾向スコア (PSM/IPTW)",
+    "不均衡分析（ROR/PRR等）",
+    "中断時系列分析 (ITS)",
+    "機械学習・AI",
+    "メタアナリシス",
+    "差分の差分法 (DID)",
+    "ターゲットトライアルエミュレーション",
+    "操作変数法",
+    "自己対照ケースシリーズ (SCCS)",
+  ]),
+};
+
 const NULLABLE = new Set([
   "doi",
   "journal_issn",
@@ -200,6 +237,20 @@ function main() {
 
     if (paper.classified !== true) {
       errors.push(`${label}: classified が true でない（未分類のままマージしてはいけない）`);
+    }
+
+    // 分類の値が docs/classification.md の選択肢に載っているか。
+    // Routine(LLM) は表記を揺らすことがあり、実際に「ロジスティック回帰」
+    // （正しくは「回帰分析」に含まれる）と「その他（薬剤に限定しない）」が
+    // 混入していた。絞り込みに重複した選択肢として出てしまう。
+    for (const [field, allowed] of Object.entries(ENUMS)) {
+      const value = paper[field];
+      for (const v of Array.isArray(value) ? value : [value]) {
+        if (typeof v !== "string" || v === "" || allowed.has(v)) continue;
+        errors.push(
+          `${label}: ${field} の "${v}" は docs/classification.md の選択肢にない（表記ゆれ？）`,
+        );
+      }
     }
   });
 
