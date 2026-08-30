@@ -8,7 +8,7 @@ GitHub Actions・Google翻訳は廃止し、本Routineに一本化している�
 | | 担当 | 内容 |
 |---|---|---|
 | 収集 | `scripts/sync-pubmed.ts` | PubMed検索 → 収集済み・除外済みを落とす → 上限まで詳細取得 → OpenAlexのCI/トピック付与 → `classified:false` で追記 |
-| 欠損の補充 | `scripts/backfill-openalex.ts` | トピック・CIが欠けている論文だけ OpenAlex に問い合わせ直す。新しい論文は収載が遅れるため。**ビルドの直前に走らせる**（診療分野と関連研究がこのトピックから決まる） |
+| 欠損の補充 | `scripts/backfill-openalex.ts` | トピック・CIが欠けている論文だけ OpenAlex に問い合わせ直す。新しい論文は収載が遅れるため。**自己点検（ビルド）の直前に走らせる**（診療分野と関連研究がこのトピックから決まる） |
 | 診療分野・関連研究 | `npm run build` | どちらも保存せず、ビルドのたびに全件を計算する。Routineが指示することは無い |
 | 分類・要約・偽陽性除外 | **Routine（LLM）** | `docs/classification.md` に従って判断する |
 | 自己点検 | `scripts/validate-papers.ts` と `npm run build` | 合否は機械が決める。Routineはコマンドを打つだけ |
@@ -46,7 +46,7 @@ GitHub Actions・Google翻訳は廃止し、本Routineに一本化している�
    新着を `classified:false` で `data/papers.json` に追記する。取り込み数には上限があり、
    あふれた分は翌週に回るので追いかけなくてよい。
    一時的エラー（タイムアウト・接続失敗・HTTP 5xx/429）は同じ実行の中で最大3回まで再試行。
-   3回とも失敗したら収集0件として手順5へ進み、`error` に「収集失敗: <理由>」を記録する。
+   3回とも失敗したら収集0件として手順7へ進み、`error` に「収集失敗: <理由>」を記録する。
    `data/papers.json` は変更しない。
 
 3. 分類: `classified !== true` の論文を **docs/classification.md に厳密に従って**分類し、
@@ -60,16 +60,11 @@ GitHub Actions・Google翻訳は廃止し、本Routineに一本化している�
    `data/excluded-pmids.json` の `pmids` に追記する。追記しないと翌週また拾う。
    除外件数を数えておく。
 
-5. `data/sync-status.json` を更新（成功・失敗どちらでも必ず書く）:
-   `last_run`（ISO 8601）/ `status`（"success" | "failed"）/ `new_papers`（今回残した新着数）/
-   `filtered_out`（除外数）/ `total_papers`（更新後の総件数）/ `error`（成功時 null）/
-   `consecutive_failures`（失敗なら前回値+1、成功なら 0）
+5. 欠損の補充: `npx tsx scripts/backfill-openalex.ts`
+   欠けているトピック・CIを埋める。最大3回まで再試行し、駄目なら
+   「補充失敗: <理由>」を控えて手順6へ進む。ここで全体を止めない。
 
-6. 欠損の補充: `npx tsx scripts/backfill-openalex.ts`
-   欠けているトピック・CIを埋める。最大3回まで再試行し、駄目なら `error` に
-   「補充失敗: <理由>」を書き添えて手順7へ進む。ここで全体を止めない。
-
-7. 自己点検。次を**全て**満たすこと:
+6. 自己点検。次を**全て**満たすこと:
    - `npx tsx scripts/validate-papers.ts` が終了コード0。目視で代替しない。
    - `npm run build` が成功する（型崩れはここで初めて顕在化する。2026-07-13にこれを
      怠り本番デプロイが5週間停止した）。
@@ -84,12 +79,26 @@ GitHub Actions・Google翻訳は廃止し、本Routineに一本化している�
 
    `npm run build` の失敗は修正対象外。落ちたら手順8の失敗経路へ進む。
 
+7. `data/sync-status.json` を更新（成功・失敗どちらでも必ず書く）。
+   **自己点検の後に書くこと。** 手順6で論文を取り除くと件数が変わるため、
+   先に書くと実態とずれた数字が残る。
+   - `status`: 手順6を**全て満たしたときだけ** `"success"`。
+     一つでも欠けたら `"failed"` にする（手順2で収集に失敗した場合も `"failed"`）。
+   - `error`: 成功なら `null`。失敗なら**必ず理由を書く**
+     （「収集失敗: <理由>」「補充失敗: <理由>」「分類できず保留: <PMID>」など）。
+     空のまま push すると lib/data-loader.ts のガードがビルドで落とす。
+   - `last_run`（ISO 8601）/ `new_papers`（今回残した新着数）/ `filtered_out`（除外数）/
+     `total_papers`（更新後の総件数）/ `consecutive_failures`（失敗なら前回値+1、成功なら 0）
+   - `status` の綴り違いや負の件数はビルドで落ちる（`lib/data-loader.ts` の
+     `getSyncStatus`）。`/status` の総論文数は papers.json から数え直すので、
+     `total_papers` は記録用。
+
 8. main へ反映（`gh` CLI は無い。**セッション組み込みのGitHubツール**を使う。PRは作らない）:
-   - **手順7を満たした場合**: `npx tsx scripts/generate-sitemap.ts` を実行し、
+   - **手順6を満たした場合**: `npx tsx scripts/generate-sitemap.ts` を実行し、
      `data/papers.json`・`data/excluded-pmids.json`・`data/sync-status.json`・
      `data/unknown-topics.json`・`public/sitemap.xml` を main へ直接コミット・push。
      `unknown-topics.json` は**中身を編集しない**（分野の判断は人がやる）。
-   - **満たさない、または手順2で収集失敗した場合**: `data/sync-status.json` だけを
+   - **満たさない、または手順2で収集失敗した場合**（`status` は `"failed"`）: `data/sync-status.json` だけを
      コミット・push。papers.json 系はコミットせず、サイトマップも再生成しない。
    - 権限エラー（403等）は `error` に記録して終了（握りつぶさない）。
    - 最後に、何をしたか・何で失敗したかを明記する。

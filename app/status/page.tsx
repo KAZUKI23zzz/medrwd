@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { getSyncStatus, getUnknownTopics } from "@/lib/data-loader";
+import { getPapers, getSyncStatus, getUnknownTopics } from "@/lib/data-loader";
+import { StaleWarning } from "@/components/status/StaleWarning";
 
 export const metadata = {
   title: "同期ステータス - 医療RWD研究カタログ",
@@ -20,7 +21,13 @@ function formatJst(iso: string): string {
   }).format(d);
 }
 
-// 静的エクスポートはビルド時に評価される。最終同期からの経過日数で鮮度を判定。
+/**
+ * 経過日数。**静的エクスポートなのでビルド時に評価される。**
+ *
+ * 使ってよいのは、比較相手が過去の固定日で、遅れて困らないものだけ
+ * （未登録トピックの棚卸し期限がこれ）。最終同期の鮮度判定には使えない
+ * ので、そちらは components/status/StaleWarning.tsx が閲覧者の時計で測る。
+ */
 function daysSince(iso: string): number {
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return Infinity;
@@ -36,7 +43,9 @@ const TOPIC_REVIEW_DAYS = 180;
 export default function StatusPage() {
   const s = getSyncStatus();
   const isSuccess = s.status === "success";
-  const stale = daysSince(s.last_run) > 10; // 週次のはずが10日以上更新なし＝異常
+  // 総件数は papers.json から数える。sync-status.json 側の値は Routine(LLM) が
+  // 手で書いており、手順7で論文を取り除くと実態とずれる（機械が数えれば嘘をつかない）
+  const totalPapers = getPapers().length;
 
   // 辞書に無いトピック。エラーではなく「そのうち辞書に足すもの」の待ち行列。
   const topics = getUnknownTopics();
@@ -85,11 +94,7 @@ export default function StatusPage() {
             </div>
           )}
 
-          {isSuccess && stale && (
-            <div className="rounded-md border border-amber-200 bg-amber-50 p-3 text-amber-700">
-              最終同期から10日以上更新がありません。Routineが停止している可能性があります。
-            </div>
-          )}
+          {isSuccess && <StaleWarning lastRun={s.last_run} />}
 
           <div className="grid grid-cols-3 gap-3">
             <div className="rounded-md border p-3 text-center">
@@ -101,7 +106,7 @@ export default function StatusPage() {
               <p className="text-xs text-muted-foreground">偽陽性除外</p>
             </div>
             <div className="rounded-md border p-3 text-center">
-              <p className="text-2xl font-bold">{s.total_papers}</p>
+              <p className="text-2xl font-bold">{totalPapers}</p>
               <p className="text-xs text-muted-foreground">総論文数</p>
             </div>
           </div>

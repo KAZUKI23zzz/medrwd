@@ -69,8 +69,42 @@ export function getPrivateDbLinks(): PrivateDBLink[] {
   return privateLinksData as PrivateDBLink[];
 }
 
+/**
+ * 同期の最終実行状況。
+ *
+ * このファイルは Routine(LLM) が手で書いており、機械の検証を一切通らない。
+ * `as SyncStatus` は型検査を無効にするので、`"succes"` のような綴り違いが入ると
+ * `/status` は理由の書かれていない「失敗」を表示するだけになる。
+ * getDatabases() と同じく、ビルド時に気づけるようにしておく。
+ */
 export function getSyncStatus(): SyncStatus {
-  return syncStatusData as SyncStatus;
+  const s = syncStatusData as SyncStatus;
+  if (s.status !== "success" && s.status !== "failed") {
+    throw new Error(
+      `sync-status.json: status "${s.status}" は未知の値です（success / failed のいずれか）`,
+    );
+  }
+  if (Number.isNaN(new Date(s.last_run).getTime())) {
+    throw new Error(
+      `sync-status.json: last_run "${s.last_run}" が日時として読めません（ISO 8601）`,
+    );
+  }
+  for (const key of [
+    "new_papers",
+    "filtered_out",
+    "total_papers",
+    "consecutive_failures",
+  ] as const) {
+    const n = s[key];
+    if (!Number.isInteger(n) || n < 0) {
+      throw new Error(`sync-status.json: ${key} が0以上の整数ではありません（${n}）`);
+    }
+  }
+  // 失敗なら理由が要る。空のまま push されると /status に赤いだけの箱が出る
+  if (s.status === "failed" && !s.error) {
+    throw new Error("sync-status.json: status が failed なのに error が空です");
+  }
+  return s;
 }
 
 

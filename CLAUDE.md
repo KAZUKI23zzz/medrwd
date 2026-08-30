@@ -50,14 +50,19 @@ npx tsx scripts/sync-pubmed.ts           # 論文収集（手動。通常はRout
 - 自動化は週次の **Claude Routine 1つ**。GitHub Actions・Google翻訳・PMDAニュースは廃止。
 - 手順は8段階。**PRを作らず main へ直接push**する（ブランチ保護なし）。
   ```
-  1 npm ci → 2 収集(script) → 3 分類(LLM) → 4 偽陽性除外(LLM) → 5 status更新(LLM)
-  → 6 欠損の補充(script) → 7 自己点検(script+build) → 8 main へ直接push
+  1 npm ci → 2 収集(script) → 3 分類(LLM) → 4 偽陽性除外(LLM) → 5 欠損の補充(script)
+  → 6 自己点検(script+build) → 7 status更新(LLM) → 8 main へ直接push
   ```
 - **判断はLLM、合否は機械。** 自己点検は `validate-papers.ts` と `npm run build` が判定する。
   検証に落ちたら該当論文だけを最大2回まで直し、直らなければその論文だけ取り除いて残りを通す
   （`excluded-pmids.json` には入れない＝翌週やり直す）。
 - `abstract_ja` は全文訳ではなく**2〜3文の日本語AI要約**（WEB上は「AI要約」表示）。
 - 失敗の可視化は `/status` ページ（`data/sync-status.json`）＋セーフマージ・ガード。
+  **status は自己点検の後に書く**（先に書くと、点検で論文を取り除いたときに数字がずれる）。
+  `getSyncStatus`（`lib/data-loader.ts`）が status の値・日時・件数をビルド時に検査し、
+  `/status` の総論文数は papers.json から数え直す（手書きの数字を信じない）。
+  最終同期の鮮度警告は**閲覧者の時計**で測る（`components/status/StaleWarning.tsx`）。
+  ビルド時に測ると、Routineが完全に停止した場合＝ビルドも走らない場合に永久に出ない。
 - Routineのセットアップ/運用と**指示文の全文**は `docs/routine-classify.md` 参照。
   要設定2点: ①クラウド環境のネットワーク許可に `eutils.ncbi.nlm.nih.gov`・`api.openalex.org`
   ②Claude GitHub Appをwrite権限で導入。
