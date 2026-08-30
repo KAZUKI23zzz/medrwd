@@ -29,8 +29,10 @@ interface Paper {
   authors: string[];
   journal: string;
   journal_issn: string | null;
-  year: number;
-  publication_date: string;
+  /** PubMed への収載日の年（`entrez_date` の先頭4桁） */
+  entrez_year: number;
+  /** PubMed への収載日（EDAT, `YYYY-MM-DD`）。extractEntrezDate 参照 */
+  entrez_date: string;
   databases_used: string[];
   additional_data_sources: string[];
   study_design: string;
@@ -192,6 +194,36 @@ function extractAllTags(xml: string, tag: string): string[] {
   return results;
 }
 
+/**
+ * PubMed への収載日（Entrez Date / EDAT）を `YYYY-MM-DD` で返す。読めなければ null。
+ *
+ * **タグ名だけで引かないこと。** 以前はレコード全体から最初の `<Year>` を拾っていたが、
+ * efetch XML では `<DateCompleted>` / `<DateRevised>` が `<PubDate>` より前に置かれる。
+ * そのため `publication_date` には出版日ではなく MEDLINE の索引完了日・最終更新日が
+ * 入っていた（実測: 年が違う57件・月が違う387件）。しかも `DateRevised` は再索引の
+ * たびに動くので、同じ論文を取り直すと日付が変わっていた（1,104件中286件）。
+ *
+ * EDAT を採るのは、収集の検索窓（`reldate=90`、`datetype` 省略＝`edat`）と同じ軸だから。
+ * 全1,104件で欠損ゼロ・年月日が完全で、一度付いたら動かない。
+ * 出版日（`PubDate`）は35%で日が欠け12%は年だけなので、絞り込みの軸には使えない。
+ */
+function extractEntrezDate(articleXml: string): string | null {
+  const block = articleXml.match(
+    /<PubMedPubDate PubStatus="entrez">([\s\S]*?)<\/PubMedPubDate>/,
+  );
+  if (!block) return null;
+  const pick = (tag: string) =>
+    (block[1].match(new RegExp(`<${tag}>(\\d+)</${tag}>`)) ?? [])[1] ?? null;
+  const [y, m, d] = [pick("Year"), pick("Month"), pick("Day")];
+  if (!y || !m || !d) return null;
+  const iso = `${y}-${m.padStart(2, "0")}-${d.padStart(2, "0")}`;
+  // 実在しない日付（2026-02-30 等）を弾く。Date は繰り上げて黙って受け入れるので、
+  // 往復させて一致を見る
+  const parsed = new Date(`${iso}T00:00:00Z`);
+  if (Number.isNaN(parsed.getTime())) return null;
+  return parsed.toISOString().slice(0, 10) === iso ? iso : null;
+}
+
 function parseArticleXML(articleXml: string): ParsedArticle | null {
   const pmid = extractTag(articleXml, "PMID");
   if (!pmid) return null;
@@ -221,14 +253,13 @@ function parseArticleXML(articleXml: string): ParsedArticle | null {
     return `${last} ${initials}`.trim();
   }).filter(Boolean);
 
-  // Publication date
-  const yearStr = extractTag(articleXml, "Year");
-  const monthStr = extractTag(articleXml, "Month");
-  const dayStr = extractTag(articleXml, "Day");
-  const year = parseInt(yearStr) || new Date().getFullYear();
-  const month = monthStr.padStart(2, "0");
-  const day = dayStr.padStart(2, "0") || "01";
-  const publication_date = `${year}-${month}-${day}`;
+  // PubMed への収載日（EDAT）。取れない論文は取り込まない（下の警告を参照）
+  const entrez_date = extractEntrezDate(articleXml);
+  if (!entrez_date) {
+    console.warn(`  PMID ${pmid}: 収載日(EDAT)が読めないので取り込まない`);
+    return null;
+  }
+  const entrez_year = Number(entrez_date.slice(0, 4));
 
   // MeSH は収集しない。PubMed の索引付けは公開から遅れるため、収集時点では
   // 半数にしか付かない。付いた後に取り直す処理も無いので、集めても永久に半分
@@ -244,8 +275,8 @@ function parseArticleXML(articleXml: string): ParsedArticle | null {
     authors,
     journal,
     journal_issn,
-    year,
-    publication_date,
+    entrez_year,
+    entrez_date,
     analysis_methods: [],
   };
 }
@@ -384,7 +415,9 @@ async function main() {
   }
 
   const allPapers = [...existingPapers, ...newPapers].sort(
-    (a, b) => b.year - a.year || b.publication_date.localeCompare(a.publication_date)
+    (a, b) =>
+      b.entrez_year - a.entrez_year ||
+      b.entrez_date.localeCompare(a.entrez_date)
   );
 
   fs.writeFileSync(papersPath, JSON.stringify(allPapers, null, 2) + "\n", "utf-8");

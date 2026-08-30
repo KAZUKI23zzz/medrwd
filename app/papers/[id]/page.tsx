@@ -109,7 +109,7 @@ export default async function PaperDetailPage({
                 CI: {paper.impact_factor}
               </Badge>
             )}
-            <span className="text-sm text-muted-foreground">{paper.year}</span>
+            <span className="text-sm text-muted-foreground">{paper.entrez_year}</span>
             <FavoriteButton paperId={paper.id} className="ml-auto" />
           </div>
           <CardTitle className="text-xl leading-snug">{paper.title}</CardTitle>

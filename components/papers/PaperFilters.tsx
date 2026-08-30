@@ -107,7 +107,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
   /** ドロワーを開いている間に発生した「一覧の先頭へ」を、閉じたときにまとめて1回だけ実行する */
   const pendingScrollRef = useRef(false);
 
-  // 検索欄・出版年は打鍵のたびに URL を書き換えると履歴も描画も荒れるので、
+  // 検索欄・収載年は打鍵のたびに URL を書き換えると履歴も描画も荒れるので、
   // ローカル state を正としてワンテンポ遅れて URL に反映する
   const [searchInput, setSearchInput] = useState(state.search);
   const [yearFromInput, setYearFromInput] = useState(
@@ -222,7 +222,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     return () => clearTimeout(timer);
   }, [searchInput, state.search, applyState, scrollToResultsTop]);
 
-  // 出版年 → URL（遅延反映。空欄は「制限なし」）
+  // 収載年 → URL（遅延反映。空欄は「制限なし」）
   useEffect(() => {
     const parse = (raw: string) => {
       const trimmed = raw.trim();
@@ -334,7 +334,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
   }, []);
 
   const years = useMemo(() => {
-    const ys = papers.map((p) => p.year);
+    const ys = papers.map((p) => p.entrez_year);
     return { min: Math.min(...ys), max: Math.max(...ys) };
   }, [papers]);
 
@@ -460,8 +460,8 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     () =>
       papers.map(
         (p) =>
-          (state.yearFrom === null || p.year >= state.yearFrom) &&
-          (state.yearTo === null || p.year <= state.yearTo),
+          (state.yearFrom === null || p.entrez_year >= state.yearFrom) &&
+          (state.yearTo === null || p.entrez_year <= state.yearTo),
       ),
     [papers, state.yearFrom, state.yearTo],
   );
@@ -645,9 +645,9 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
     result.sort((a, b) => {
       switch (state.sort) {
         case "newest":
-          return b.publication_date.localeCompare(a.publication_date);
+          return b.entrez_date.localeCompare(a.entrez_date);
         case "oldest":
-          return a.publication_date.localeCompare(b.publication_date);
+          return a.entrez_date.localeCompare(b.entrez_date);
         case "if-desc":
           return (b.impact_factor ?? 0) - (a.impact_factor ?? 0);
         default:
@@ -864,7 +864,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
                 render={<button type="button" />}
                 variant="outline"
                 className="cursor-pointer text-xs"
-                aria-label="出版年の絞り込みを解除"
+                aria-label="収載年の絞り込みを解除"
                 onClick={clearYearRange}
               >
                 {state.yearFrom ?? years.min}〜{state.yearTo ?? years.max}年{" "}
@@ -963,7 +963,7 @@ export function PaperFilters({ papers }: PaperFiltersProps) {
                     )}
                     {/* キーワード以外に絞り込みが掛かっていれば出す。
                         以前は chips（DB・デザイン等）だけを見ており、
-                        出版年やお気に入りだけのときに逃げ道が消えていた。 */}
+                        収載年やお気に入りだけのときに逃げ道が消えていた。 */}
                     {activeFilterCount > (state.search ? 1 : 0) && (
                       <Button
                         variant="outline"

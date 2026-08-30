@@ -11,9 +11,9 @@ export default function Home() {
   const privateDbLinks = getPrivateDbLinks();
 
   // 最近追加された研究。papers.json の並び順に頼ると、収集の仕方が変わったときに
-  // 気づかないまま「最近」でないものが並ぶので、日付で明示的に並べ替える。
+  // 気づかないまま「最近」でないものが並ぶので、収載日で明示的に並べ替える。
   const recentPapers = [...papers]
-    .sort((a, b) => b.publication_date.localeCompare(a.publication_date))
+    .sort((a, b) => b.entrez_date.localeCompare(a.entrez_date))
     .slice(0, 5)
     // PaperCard は診療分野を算出済みで受け取る（一覧と同じ見た目にするため）
     .map((paper) => ({

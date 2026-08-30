@@ -9,8 +9,16 @@ export interface Paper {
   authors: string[];
   journal: string;
   journal_issn: string | null;
-  year: number;
-  publication_date: string;
+  /**
+   * PubMed に収載された日（Entrez Date / EDAT, `YYYY-MM-DD`）と、その年。
+   *
+   * **出版日ではない。** 誌面の出版日（PubDate）は35%で日が欠け12%は年だけなので、
+   * 並び替え・絞り込みの軸に使えない。EDAT は全件で年月日が揃い、一度付いたら
+   * 動かない。収集の検索窓（reldate=90、datetype 省略＝edat）とも同じ軸になる。
+   * 経緯は scripts/sync-pubmed.ts の extractEntrezDate を参照。
+   */
+  entrez_year: number;
+  entrez_date: string;
   databases_used: string[];
   additional_data_sources: string[];
   study_design: string;
@@ -73,8 +81,8 @@ export type ListPaper = Pick<
   | "abstract_ja"
   | "authors"
   | "journal"
-  | "year"
-  | "publication_date"
+  | "entrez_year"
+  | "entrez_date"
   | "databases_used"
   | "additional_data_sources"
   | "study_design"

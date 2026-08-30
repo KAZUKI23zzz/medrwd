@@ -30,7 +30,7 @@ export function PaperCard({ paper }: { paper: ListPaper }) {
               CI: {paper.impact_factor}
             </Badge>
           )}
-          <span className="text-xs text-muted-foreground">{paper.year}</span>
+          <span className="text-xs text-muted-foreground">{paper.entrez_year}</span>
           {/* カード全体を覆うリンクより上に出す（FavoriteButton 側で z-10 を持つ） */}
           <FavoriteButton paperId={paper.id} className="ml-auto -my-1" />
         </div>

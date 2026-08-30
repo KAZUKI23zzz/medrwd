@@ -19,6 +19,8 @@ type FieldType =
   | "number"
   | "boolean"
   | "string[]"
+  /** `YYYY-MM-DD` の実在する日付。並び替えの軸なので形が崩れると順序が壊れる */
+  | "date"
   /** 省略可能かつ null も許す（OpenAlex から取れなかった場合に null が入る） */
   | "string|null?"
   | "number|null?"
@@ -32,9 +34,9 @@ const SCHEMA: Record<string, FieldType> = {
   title: "string",
   abstract: "string",
   journal: "string",
-  publication_date: "string",
+  entrez_date: "date",
   study_design: "string",
-  year: "number",
+  entrez_year: "number",
   auto_detected: "boolean",
   collected_at: "string",
   classified: "boolean",
@@ -122,6 +124,13 @@ function matches(value: unknown, type: FieldType): boolean {
       return typeof value === "boolean";
     case "string[]":
       return Array.isArray(value) && value.every((v) => typeof v === "string");
+    case "date": {
+      if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+      // 2026-02-30 のような実在しない日付を弾く。Date は繰り上げて黙って通すので
+      // 往復させて一致を見る
+      const d = new Date(`${value}T00:00:00Z`);
+      return !Number.isNaN(d.getTime()) && d.toISOString().slice(0, 10) === value;
+    }
     case "string|null?":
       return value === undefined || value === null || typeof value === "string";
     case "number|null?":

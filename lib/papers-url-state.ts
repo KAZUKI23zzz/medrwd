@@ -140,7 +140,7 @@ export function buildPapersQuery(state: PapersUrlState): string {
 
 /**
  * 掛かっている絞り込みの数（ページ番号・並び順は絞り込みに数えない）。
- * モバイルの「絞り込み (2)」表示に使う。出版年は上限・下限それぞれで1つ数える。
+ * モバイルの「絞り込み (2)」表示に使う。収載年は上限・下限それぞれで1つ数える。
  */
 export function countActiveFilters(state: PapersUrlState): number {
   return (

@@ -185,14 +185,14 @@ export function PaperFilterPanel({
       />
 
       <div>
-        <h3 className="mb-2 text-sm font-semibold">出版年</h3>
+        <h3 className="mb-2 text-sm font-semibold">収載年</h3>
         <div className="flex items-center gap-2">
           <Input
             type="number"
             min={years.min}
             max={years.max}
             placeholder={String(years.min)}
-            aria-label="出版年の下限"
+            aria-label="収載年の下限"
             value={yearFromInput}
             onChange={(e) => onYearFromChange(e.target.value)}
             className="w-20"
@@ -203,7 +203,7 @@ export function PaperFilterPanel({
             min={years.min}
             max={years.max}
             placeholder={String(years.max)}
-            aria-label="出版年の上限"
+            aria-label="収載年の上限"
             value={yearToInput}
             onChange={(e) => onYearToChange(e.target.value)}
             className="w-20"

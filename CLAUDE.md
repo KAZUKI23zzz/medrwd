@@ -74,6 +74,23 @@ npx tsx scripts/sync-pubmed.ts           # 論文収集（手動。通常はRout
   件数ではない（IDは1件19バイト、詳細は7.7KB）。あふれた分は翌週。
 - 偽陽性は `excluded-pmids.json` に記録する。しないと窓に入っている間ずっと拾い直す。
 
+**日付の軸は EDAT（2026-08-30）**
+- 論文の日付は `entrez_date` / `entrez_year`（**PubMed への収載日**、`YYYY-MM-DD`）。
+  UI の表示は「収載年」。**出版日ではない。**
+- 2026-08-30 まで `publication_date` という名前で **MEDLINE の索引完了日・最終更新日**が
+  入っていた。efetch XML で `<DateCompleted>` が `<PubDate>` より前に置かれており、
+  パーサがレコード全体から最初の `<Year>` を拾っていたため（実測: 年が違う57件・
+  月が違う387件）。しかも `DateRevised` は再索引のたびに動くので、取り直すと
+  1,104件中286件の日付が変わっていた。
+- **出版日（`PubDate`）は採らない。** 35%で日が欠け、12%は年だけ。オンライン先行公開だと
+  誌面の号（`PubDate`）と電子版公開（`ArticleDate`）が年をまたいで食い違う。
+  このサイトに学術的な引用の厳密さは要らないので、欠損が無く不変な軸を採った。
+- **EDAT を選んだ理由**: 全件で年月日が揃い（欠損0）、一度付いたら動かず、
+  収集の検索窓（`reldate=90`、`datetype` 省略＝`edat`）と同じ軸になる。
+- 取得は `scripts/sync-pubmed.ts` の `extractEntrezDate`
+  （`<PubMedPubDate PubStatus="entrez">` をスコープして引く）。
+  **タグ名だけで `<Year>` を引かないこと。**同じ罠を踏む。
+
 **研究カタログのUX改修 完了（PR #32–#34 / 2026-08）**
 絞り込み状態のURL化・AND検索・ファセット件数の動的化・モバイルのドロワー化・
 DB一覧の拡充（10件）・お気に入り（localStorage）。
