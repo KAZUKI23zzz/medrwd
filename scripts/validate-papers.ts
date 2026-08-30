@@ -21,6 +21,9 @@ type FieldType =
   | "string[]"
   /** `YYYY-MM-DD` の実在する日付。並び替えの軸なので形が崩れると順序が壊れる */
   | "date"
+  /** null は許すが、キーは必ず存在する（types/paper.ts で `string | null` のもの） */
+  | "string|null"
+  | "number|null"
   /** 省略可能かつ null も許す（OpenAlex から取れなかった場合に null が入る） */
   | "string|null?"
   | "number|null?"
@@ -34,6 +37,10 @@ const SCHEMA: Record<string, FieldType> = {
   title: "string",
   abstract: "string",
   journal: "string",
+  doi: "string|null",
+  journal_issn: "string|null",
+  impact_factor: "number|null",
+  sjr_quartile: "string|null",
   entrez_date: "date",
   study_design: "string",
   entrez_year: "number",
@@ -55,14 +62,6 @@ const SCHEMA: Record<string, FieldType> = {
   openalex_field: "string|null?",
 };
 
-/**
- * 値が null でもよいが、キー自体は必ず存在しなければならないフィールド。
- *
- * openalex_* は型としては省略可能だが、収集スクリプトが取得できなかった場合も
- * null を書き込むので、収集を通った論文には必ず存在する。ここで存在を必須に
- * しておかないと、Routine がフィールドごと落としても検証をすり抜けて
- * 「診療分野が付かない論文」が黙って増えてしまう。
- */
 /**
  * 分類の選択肢。docs/classification.md の表と一致させること。
  * databases_used は data/databases.json の paper_tag が正なので、ここでは見ない
@@ -100,11 +99,15 @@ const ENUMS: Record<string, Set<string>> = {
   ]),
 };
 
+/**
+ * 値が null でもよいが、キー自体は必ず存在しなければならないフィールド。
+ *
+ * openalex_* は型としては省略可能だが、収集スクリプトが取得できなかった場合も
+ * null を書き込むので、収集を通った論文には必ず存在する。ここで存在を必須に
+ * しておかないと、Routine がフィールドごと落としても検証をすり抜けて
+ * 「診療分野が付かない論文」が黙って増えてしまう。
+ */
 const NULLABLE = new Set([
-  "doi",
-  "journal_issn",
-  "impact_factor",
-  "sjr_quartile",
   "openalex_topic",
   "openalex_topic_score",
   "openalex_topics",
@@ -131,6 +134,10 @@ function matches(value: unknown, type: FieldType): boolean {
       const d = new Date(`${value}T00:00:00Z`);
       return !Number.isNaN(d.getTime()) && d.toISOString().slice(0, 10) === value;
     }
+    case "string|null":
+      return value === null || typeof value === "string";
+    case "number|null":
+      return value === null || (typeof value === "number" && Number.isFinite(value));
     case "string|null?":
       return value === undefined || value === null || typeof value === "string";
     case "number|null?":
