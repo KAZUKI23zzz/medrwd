@@ -27,7 +27,11 @@ function toStringArray(value: unknown): string[] {
   return [];
 }
 
-const papers: Paper[] = (papersData as unknown as Paper[]).map((paper) => {
+// `as` を挟まないこと。挟むと TypeScript が papers.json の実体を見なくなり、
+// 配列であるべき所に文字列が入っていてもビルドが通ってしまう（2026-07-13 に
+// 本番が5週間止まった型崩れが、まさにそれ）。キャスト無しなら
+// `npm run build` がフィールド名を名指しで落とす。下の正規化は実行時の保険。
+const papers: Paper[] = papersData.map((paper) => {
   const needsFix = ARRAY_FIELDS.some((f) => !Array.isArray(paper[f]));
   if (!needsFix) return paper;
   const fixed = { ...paper };
