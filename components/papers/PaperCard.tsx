@@ -21,7 +21,9 @@ export function PaperCard({ paper }: { paper: ListPaper }) {
           {paper.sjr_quartile && (
             <QuartileBadge quartile={paper.sjr_quartile} />
           )}
-          {paper.impact_factor && (
+          {/* `&&` で書くと IF が 0 の雑誌（実在する。和文誌に4件）で
+              `0` という文字がそのまま描画される。null との区別も付かない */}
+          {paper.impact_factor != null && (
             <Badge
               variant="secondary"
               className="text-xs"

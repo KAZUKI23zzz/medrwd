@@ -104,7 +104,8 @@ export default async function PaperDetailPage({
             {paper.sjr_quartile && (
               <QuartileBadge quartile={paper.sjr_quartile} />
             )}
-            {paper.impact_factor && (
+            {/* 0 は「値が無い」ではない。scripts/openalex.ts のコメント参照 */}
+            {paper.impact_factor != null && (
               <Badge variant="secondary" title="OpenAlex 2yr Mean Citedness">
                 CI: {paper.impact_factor}
               </Badge>
