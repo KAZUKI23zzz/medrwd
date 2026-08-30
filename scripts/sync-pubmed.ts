@@ -207,6 +207,28 @@ function extractAllTags(xml: string, tag: string): string[] {
  * 全1,104件で欠損ゼロ・年月日が完全で、一度付いたら動かない。
  * 出版日（`PubDate`）は35%で日が欠け12%は年だけなので、絞り込みの軸には使えない。
  */
+/**
+ * 抄録。**`<Abstract>` の中だけを見ること。**
+ *
+ * レコード全体に `extractAllTags(xml, "AbstractText")` を当てると、
+ * `<OtherAbstract>`（出版社による再掲や plain-language summary）の中の
+ * `<AbstractText>` まで拾い、抄録が二重になる。実測で39件・50,160文字が重複しており
+ * （全抄録の2.50%）、画面に同じ内容が2度出るうえ、その39件だけ語頻度がほぼ倍になって
+ * lib/related-papers.ts の BM25 を歪めていた。
+ *
+ * `<Abstract>` が無いレコードだけ `<OtherAbstract>` に落とす（下のコメント参照）。
+ */
+function extractAbstract(articleXml: string): string {
+  const main = articleXml.match(/<Abstract>([\s\S]*?)<\/Abstract>/);
+  if (main) return extractAllTags(main[1], "AbstractText").join(" ");
+  // `<Abstract>` を持たず `<OtherAbstract>` だけのレコードがある（本文が和文で、
+  // 英語の plain-language summary だけが付くもの。PMID 40468574）。PubMed の
+  // `hasabstract` はこれも「抄録あり」と数えるため、空を返すと検索には当たるのに
+  // 毎週弾かれ、取り込み上限（MAX_NEW_PER_RUN）の枠だけを消費し続ける。
+  const other = articleXml.match(/<OtherAbstract[^>]*>([\s\S]*?)<\/OtherAbstract>/);
+  return other ? extractAllTags(other[1], "AbstractText").join(" ") : "";
+}
+
 function extractEntrezDate(articleXml: string): string | null {
   const block = articleXml.match(
     /<PubMedPubDate PubStatus="entrez">([\s\S]*?)<\/PubMedPubDate>/,
@@ -229,8 +251,7 @@ function parseArticleXML(articleXml: string): ParsedArticle | null {
   if (!pmid) return null;
 
   const title = extractTag(articleXml, "ArticleTitle");
-  const abstractTexts = extractAllTags(articleXml, "AbstractText");
-  const abstract = abstractTexts.join(" ");
+  const abstract = extractAbstract(articleXml);
   const journal = extractTag(articleXml, "Title");
 
   // ISSN
