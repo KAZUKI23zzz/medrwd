@@ -14540,55 +14540,6 @@
     ]
   },
   {
-    "id": "pmid-42117351",
-    "pubmed_id": "42117351",
-    "doi": "10.1111/iju.70500",
-    "title": "Editorial Comment to Prescribing Patterns and Treatment Persistence for Overactive Bladder in Japan Across Medical Specialties and Facility Types: A Nationwide Claims Database Study.",
-    "abstract": "",
-    "authors": [
-      "Kitta T"
-    ],
-    "journal": "International journal of urology : official journal of the Japanese Urological Association",
-    "journal_issn": "1442-2042",
-    "entrez_year": 2026,
-    "entrez_date": "2026-05-12",
-    "analysis_methods": [],
-    "title_ja": "日本における診療科・施設類型別の過活動膀胱に対する処方パターンと治療継続性に関する全国レセプトデータベース研究への編集コメント",
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "治療実態・処方パターン"
-    ],
-    "impact_factor": 1.62,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-05-18T18:27:34.732Z",
-    "abstract_ja": "",
-    "classified": true,
-    "openalex_topic": "Urinary Bladder and Prostate Research",
-    "openalex_topic_score": 0.963,
-    "openalex_subfield": "Urology",
-    "openalex_field": "Medicine",
-    "openalex_topics": [
-      {
-        "id": "T10279",
-        "name": "Urinary Bladder and Prostate Research",
-        "score": 0.963
-      },
-      {
-        "id": "T11232",
-        "name": "Urinary Tract Infections Management",
-        "score": 0.025
-      },
-      {
-        "id": "T10418",
-        "name": "Pelvic floor disorders treatments",
-        "score": 0.003
-      }
-    ]
-  },
-  {
     "id": "pmid-42119415",
     "pubmed_id": "42119415",
     "doi": "10.1016/j.resinv.2026.101440",
@@ -16041,56 +15992,6 @@
         "id": "T11337",
         "name": "Tryptophan and brain disorders",
         "score": 0.001
-      }
-    ]
-  },
-  {
-    "id": "pmid-42057503",
-    "pubmed_id": "42057503",
-    "doi": "10.1111/iju.70481",
-    "title": "Editorial Comment to Real-World Outcomes After Radical Cystectomy for Muscle-Invasive Bladder Cancer in Japan: A Nationwide Descriptive Study From the National Clinical Database.",
-    "abstract": "",
-    "authors": [
-      "Miyake M"
-    ],
-    "journal": "International journal of urology : official journal of the Japanese Urological Association",
-    "journal_issn": "1442-2042",
-    "entrez_year": 2026,
-    "entrez_date": "2026-04-30",
-    "analysis_methods": [],
-    "title_ja": "日本における筋層浸潤性膀胱がんに対する根治的膀胱全摘除術後の実臨床転帰：National Clinical Databaseからの全国記述研究への編集コメント",
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "治療効果・有効性"
-    ],
-    "impact_factor": 1.62,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-05-11T18:52:17.198Z",
-    "last_updated": "2026-05-18T18:27:02.458Z",
-    "abstract_ja": "",
-    "classified": true,
-    "openalex_topic": "Bladder and Urothelial Cancer Treatments",
-    "openalex_topic_score": 0.999,
-    "openalex_subfield": "Surgery",
-    "openalex_field": "Medicine",
-    "openalex_topics": [
-      {
-        "id": "T10458",
-        "name": "Bladder and Urothelial Cancer Treatments",
-        "score": 0.999
-      },
-      {
-        "id": "T12695",
-        "name": "Urinary and Genital Oncology Studies",
-        "score": 0
-      },
-      {
-        "id": "T10619",
-        "name": "Esophageal Cancer Research and Treatment",
-        "score": 0
       }
     ]
   },
