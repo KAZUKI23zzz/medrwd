@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://medrwd-f553wm4wi-kazuki23zzzs-projects.vercel.app/sitemap.xml
+# デプロイ個別のURL（medrwd-<hash>-...vercel.app）は後で404になるため、恒久エイリアスを使う。
+# 同じ値が scripts/generate-sitemap.ts の BASE_URL と app/layout.tsx の siteUrl にもある。
+Sitemap: https://medrwd.vercel.app/sitemap.xml
