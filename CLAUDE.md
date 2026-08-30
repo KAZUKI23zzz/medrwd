@@ -29,6 +29,7 @@ Next.js 16 (Static Export) / TypeScript / Tailwind CSS v4 + shadcn/ui v4 / JSON�
 | `docs/classification.md` | **分類スキーマ・偽陽性基準（Routineが参照する正）** |
 | `docs/DEVELOPMENT.md` | デバッグTips・設計判断・検索式比較・法的リスク・変更履歴 |
 | `docs/related-papers.md` | 関連研究の設計判断・ブラインド評価の結果・不採用案の記録 |
+| `docs/backlog.md` | **積み残しの課題**（2026-08-30の全体レビュー）。スケールの実測値・「今やらない理由」・**問題ではなかったと確認済みの項目**。同じ場所を疑う前にここを見る |
 | `lib/related-papers.ts` | 関連研究の算出（英語本文のBM25コサイン＋診療分野・トピックの加点、ビルド時計算） |
 | `components/papers/RelatedPapers.tsx` | 詳細ページの関連研究。診療分野・トピック・DBで絞り込む（**`lib/related-papers` を import しないこと**。papers.json 全体がクライアントに載る） |
 | `lib/papers-url-state.ts` | 研究カタログの絞り込み状態 ⇄ URLクエリの変換 |
@@ -144,6 +145,12 @@ subfield「呼吸器」82件の半分が胃癌・前立腺癌・大動脈だっ�
 スキーマ外フィールドを弾くので、Routineが書き戻しても検出できる。
 
 **未実装**: Pagefind全文検索 / SJR CSV取込 / DB詳細ページ充実
+
+**積み残しは `docs/backlog.md`（2026-08-30の全体レビュー）。**
+スケールは実測で「10倍まで実勢9.6年・100倍は該当文献が存在しない」ため着手しない。
+10倍に到達するとしたら最初に壊れるのは `out/` のファイル数（約11,100本でVercelの上限）と
+papers.json のgitサイズ（約12,800本でGitHubが警告）で、**BM25ではない。**
+「調べたが問題ではなかった」項目も同じ文書に記録してある。
 
 **保留中の判断**: 関連研究のBM25が手法語（機械学習・Markovモデル・中断時系列など）
 の一致を拾う問題は、**論文が増えてから再検証する**と決めている（2026-08-29）。
