@@ -1,5 +1,45 @@
 [
   {
+    "id": "pmid-42669179",
+    "pubmed_id": "42669179",
+    "doi": "10.1080/03007995.2026.2722388",
+    "title": "Antidepressant initiation after sublingual immunotherapy in Japanese cedar pollinosis: a real-world propensity score-matched cohort study.",
+    "abstract": "To evaluate whether sublingual immunotherapy (SLIT) for Japanese cedar pollinosis is associated with subsequent initiation of antidepressants, and to assess its clinical implications for mental health management in real-world clinical practice. We conducted a retrospective real-world cohort study using a large nationwide administrative claims database in Japan from 2014 to 2021. Adult patients diagnosed with Japanese cedar pollinosis were identified and classified as SLIT users or non-users using a new-user design. Propensity score matching was performed to balance patients' baseline characteristics, including age, sex, insurance type, and medical history. The primary outcome was initiation of antidepressant prescriptions. Hazard ratios were estimated using matched cohorts. A total of 4,126 SLIT users and 88,455 non-users were identified, with 3,991 propensity-matched patients in each group. Before matching, mental disorders were more prevalent among SLIT users than among non-users, whereas allergic rhinitis severity was similar between groups. Crude initiation rates of antidepressants were 5.0 and 2.9 per 1,000 person-years among SLIT users and non-users, respectively. After matching, no statistically significant association was observed between SLIT use and antidepressant initiation (hazard ratio = 1.11, 95% confidence interval = 0.73-1.69). Kaplan-Meier analysis also showed no significant between-group differences. No statistically significant association was observed between SLIT for Japanese cedar pollinosis and antidepressant initiation. These findings suggest that mental health outcomes should continue to be monitored independently of immunotherapy use in routine clinical practice. Further adequately powered studies with longer follow-up periods are warranted to better characterize depressive outcomes in this population.",
+    "authors": [
+      "Matsushita R",
+      "Tanaka-Mizuno S",
+      "Kawakami K"
+    ],
+    "journal": "Current medical research and opinion",
+    "journal_issn": "1473-4877",
+    "entrez_year": 2026,
+    "entrez_date": "2026-08-30",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "全国規模の医療レセプト請求データベース(2014年~2021年)"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.01,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-08-31T00:07:43.357Z",
+    "classified": true,
+    "title_ja": "スギ花粉症に対する舌下免疫療法後の抗うつ薬処方開始:リアルワールド傾向スコアマッチングコホート研究",
+    "abstract_ja": "日本の全国規模レセプトデータを用い、スギ花粉症に対する舌下免疫療法(SLIT)と抗うつ薬処方開始の関連を後方視的コホート研究で検証した。傾向スコアマッチング後の解析では、SLIT使用群と非使用群で抗うつ薬開始のハザード比に統計学的有意差はみられなかった(HR 1.11、95%CI 0.73-1.69)。SLITによるメンタルヘルスへの明確な影響は認められず、今後も免疫療法とは独立した経過観察が望ましいとしている。"
+  },
+  {
     "id": "pmid-42666150",
     "pubmed_id": "42666150",
     "doi": "10.1002/pds.70453",
@@ -30,16 +70,139 @@
     ],
     "impact_factor": 2.14,
     "sjr_quartile": null,
+    "openalex_topic": "Erythropoietin and Anemia Treatment",
+    "openalex_topic_score": 0.983,
+    "openalex_subfield": "Hematology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11534",
+        "name": "Erythropoietin and Anemia Treatment",
+        "score": 0.983
+      },
+      {
+        "id": "T10631",
+        "name": "Cancer, Hypoxia, and Metabolism",
+        "score": 0.013
+      },
+      {
+        "id": "T10693",
+        "name": "Blood transfusion and management",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-29T14:04:23.201Z",
+    "classified": true,
+    "title_ja": "HIF-PHI薬とESA製剤の心不全入院リスク比較:全国レセプトデータによるコホート研究",
+    "abstract_ja": "非透析CKD患者を対象に、HIF-PHI開始群とESA開始群で心不全入院リスクをIPTWで調整して比較した。心不全入院のハザード比は0.93(95%CI 0.87-1.01)で、両群間に明確な差は見られなかった。HIF-PHIはESAと比較して心不全増悪のリスクを実質的に高めないことが示唆された。"
+  },
+  {
+    "id": "pmid-42667122",
+    "pubmed_id": "42667122",
+    "doi": "10.1001/jamanetworkopen.2026.34516",
+    "title": "Periprocedural Mortality Risk After Elective Atrial Fibrillation Ablation in Japan.",
+    "abstract": "Evidence on the safety of atrial fibrillation ablation during rapid growth in both procedural volume and the number of hospitals performing it remains inconsistent. Although clinical registries and randomized trial meta-analyses report extremely low mortality, administrative databases have suggested rates up to 10-fold higher, with concerning temporal increases. To define the periprocedural mortality risk following elective atrial fibrillation ablation using a validated nationwide database and to determine whether this expansion was associated with diffusion-related safety penalties (ie, transient erosion of safety driven by a widening efficacy-effectiveness gap). This retrospective, nationwide, population-based cohort study used data from a nationwide administrative database of participating cardiovascular hospitals in Japan from April 1, 2012, to March 31, 2023. Analyses were conducted in 2025 to 2026, with follow-up through discharge from the index hospitalization for the primary outcome. Patients with atrial fibrillation who underwent scheduled elective catheter ablation with transseptal puncture were included. Elective atrial fibrillation ablation. The primary outcome was in-hospital mortality during the index hospitalization. In-hospital mortality and other event rates are presented as proportions with exact (Clopper-Pearson) binomial 95% CIs. Multivariable analyses used Firth penalized logistic regression. Among 618 024 catheter ablation procedures, 412 947 were elective atrial fibrillation ablations (median [IQR] patient age, 68 [60-74] years; 288 825 male patients [69.9%]) performed between 2012 and 2022. Annual procedural volume increased from 10 969 procedures in 2012 to 63 014 procedures in 2022. In-hospital mortality occurred in 119 patients (0.029%; 95% CI, 0.024%-0.034%), with a modest but statistically significant decline (P for trend = .04). Within 30 days of the procedure, deaths occurred during the index hospitalization in 91 patients (0.022%; 95% CI, 0.018%-0.027%) and during readmission in 72 patients (0.017%; 95% CI, 0.014%-0.022%). The most frequent concurrent complication among index-hospitalization deaths was cardiac tamponade (26 patients [21.8%]). In Firth penalized multivariable analysis, factors independently associated with in-hospital mortality included older age (odds ratio [OR], 1.04; 95% CI, 1.01-1.07), lower body mass index (OR, 0.94; 95% CI, 0.89-1.00), Charlson Comorbidity Index score of 3 or higher (OR, 4.59; 95% CI, 2.59-8.12), low institutional volume (OR, 2.52; 95% CI, 1.45-4.38), and preserved functional status (Barthel Index >90; OR, 0.11; 95% CI, 0.07-0.19). In this Japanese nationwide registry study of 412 947 elective atrial fibrillation ablation procedures, in-hospital mortality was 0.029%, comparable to contemporary registry benchmarks. No evidence of a diffusion-related safety penalty was observed during rapid expansion.",
+    "authors": [
+      "Inoue K",
+      "Kanaoka K",
+      "Ueda Y",
+      "Abe H",
+      "Ikeoka K",
+      "Mishima T",
+      "Ozaki T",
+      "Ohashi T",
+      "Osaki S",
+      "Sumita Y",
+      "Iwanaga Y",
+      "Matsumura Y",
+      "Sakata Y"
+    ],
+    "journal": "JAMA network open",
+    "journal_issn": "2574-3805",
+    "entrez_year": 2026,
+    "entrez_date": "2026-08-29",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "参加心血管病院の全国規模診療データベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 9.38,
+    "sjr_quartile": null,
+    "openalex_topic": "Atrial Fibrillation Management and Outcomes",
+    "openalex_topic_score": 0.991,
+    "openalex_subfield": "Cardiology and Cardiovascular Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10065",
+        "name": "Atrial Fibrillation Management and Outcomes",
+        "score": 0.991
+      },
+      {
+        "id": "T11217",
+        "name": "Cardiac Arrhythmias and Treatments",
+        "score": 0.002
+      },
+      {
+        "id": "T10193",
+        "name": "Coronary Interventions and Diagnostics",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-08-31T00:07:42.328Z",
+    "classified": true,
+    "title_ja": "日本における待機的心房細動アブレーション後の周術期死亡リスク",
+    "abstract_ja": "日本の全国規模データベースを用い、待機的カテーテルアブレーションを受けた心房細動患者41万件超を対象に院内死亡リスクを検討した。院内死亡率は0.029%と低く、年次で緩やかな低下傾向がみられ、高齢・低BMI・高いCharlson併存疾患指数・低施設症例数などが死亡と関連していた。手技件数が急増した期間においても、普及に伴う安全性低下の明確な兆候は認められなかった。"
+  },
+  {
+    "id": "pmid-42668059",
+    "pubmed_id": "42668059",
+    "doi": "10.1016/j.ijid.2026.109070",
+    "title": "Association between Bacterial Culture before Carbapenem Use and Treatment Duration and Clinical Outcomes: A Nationwide Inpatient Claims Database Study in Japan.",
+    "abstract": "To determine whether bacterial culture before carbapenem initiation is associated with shorter carbapenem exposure and better clinical outcomes in hospitalized patients in Japan. We conducted a multicenter retrospective study using the 2022 Diagnosis Procedure Combination Study Group database. Carbapenem treatment episodes were included, excluding those from special functioning hospitals, perioperative prophylaxis, and scheduled admissions. The primary outcome was carbapenem discontinuation within 10 days, with in-hospital death and transfer treated as competing events. Exposure was defined as bacterial culture performed on or within 2 days before carbapenem initiation: at least two sets of blood cultures, at least one blood culture, or any bacterial culture. Fourteen-day in-hospital mortality was assessed during first episodes. Among 206,908 episodes from 167,705 patients, bacterial culture before carbapenem initiation was associated with earlier discontinuation. Adjusted hazard ratios were 1.07 for at least two blood culture sets, 1.07 for at least one blood culture, and 1.05 for any bacterial culture. Bacterial culture was associated with lower 14-day in-hospital mortality, with hazard ratios of 0.89, 0.89, and 0.81, respectively. Bacterial culture before carbapenem initiation was associated with shorter carbapenem treatment and lower short-term mortality, supporting further evaluation of culture collection as a potential antimicrobial stewardship quality indicator.",
+    "authors": [
+      "Yamamoto K",
+      "Edakubo S",
+      "Fushimi K",
+      "Shinjo D"
+    ],
+    "journal": "International journal of infectious diseases : IJID : official publication of the International Society for Infectious Diseases",
+    "journal_issn": "1878-3511",
+    "entrez_year": 2026,
+    "entrez_date": "2026-08-29",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "治療効果・有効性",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 2.46,
+    "sjr_quartile": null,
     "openalex_topic": null,
     "openalex_topic_score": null,
     "openalex_subfield": null,
     "openalex_field": null,
     "openalex_topics": null,
     "auto_detected": true,
-    "collected_at": "2026-08-29T14:04:23.201Z",
+    "collected_at": "2026-08-31T00:07:42.815Z",
     "classified": true,
-    "title_ja": "HIF-PHI薬とESA製剤の心不全入院リスク比較:全国レセプトデータによるコホート研究",
-    "abstract_ja": "非透析CKD患者を対象に、HIF-PHI開始群とESA開始群で心不全入院リスクをIPTWで調整して比較した。心不全入院のハザード比は0.93(95%CI 0.87-1.01)で、両群間に明確な差は見られなかった。HIF-PHIはESAと比較して心不全増悪のリスクを実質的に高めないことが示唆された。"
+    "title_ja": "カルバペネム使用前の細菌培養と治療期間・臨床転帰との関連:日本の全国入院レセプトデータベース研究",
+    "abstract_ja": "2022年のDPCデータベースを用い、入院患者約20.7万エピソードを対象にカルバペネム開始前の細菌培養実施と治療期間・転帰の関連を検討した。培養実施群では10日以内のカルバペネム中止がやや早く、14日以内の院内死亡率も低い傾向がみられた(補正ハザード比0.81-0.89)。培養実施は抗菌薬適正使用の質指標となりうることを示唆する結果である。"
   },
   {
     "id": "pmid-42661278",
@@ -314,11 +477,27 @@
     ],
     "impact_factor": 1.7,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Vasculitis and related conditions",
+    "openalex_topic_score": 0.452,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10697",
+        "name": "Vasculitis and related conditions",
+        "score": 0.452
+      },
+      {
+        "id": "T11465",
+        "name": "Drug-Induced Hepatotoxicity and Protection",
+        "score": 0.078
+      },
+      {
+        "id": "T11834",
+        "name": "Liver Diseases and Immunity",
+        "score": 0.027
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-08-29T14:04:22.813Z",
     "classified": true,

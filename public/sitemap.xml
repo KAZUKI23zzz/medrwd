@@ -76,8 +76,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://medrwd.vercel.app/papers/pmid-42669179</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://medrwd.vercel.app/papers/pmid-42666150</loc>
     <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://medrwd.vercel.app/papers/pmid-42667122</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://medrwd.vercel.app/papers/pmid-42668059</loc>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
