@@ -12,7 +12,7 @@ GitHub Actions・Google翻訳は廃止し、本Routineに一本化している�
 | 診療分野・関連研究 | `npm run build` | どちらも保存せず、ビルドのたびに全件を計算する。Routineが指示することは無い |
 | 分類・要約・偽陽性除外 | **Routine（LLM）** | `docs/classification.md` に従って判断する |
 | 自己点検 | `scripts/validate-papers.ts` と `npm run build` | 合否は機械が決める。Routineはコマンドを打つだけ |
-| main反映 | **Routine（LLM）** | PRは作らず直接push |
+| main反映 | **Routine（LLM）** | PRは作らず、`branch: "main"` を明示して直接push。**push後に着地を確認する** |
 
 **収集スクリプトの設定**（Routineは意識しなくてよい）
 
@@ -93,13 +93,34 @@ GitHub Actions・Google翻訳は廃止し、本Routineに一本化している�
      `getSyncStatus`）。`/status` の総論文数は papers.json から数え直すので、
      `total_papers` は記録用。
 
-8. main へ反映（`gh` CLI は無い。**セッション組み込みのGitHubツール**を使う。PRは作らない）:
+8. main へ反映（PRは作らない。`gh` CLI は無いので**セッション組み込みのGitHubツール**を使う）:
+
+   **⚠️ 行き先に `main` を明示すること。素の `git push` を使わない。**
+   スケジュール実行のセッションは main ではなく自動生成ブランチ
+   （`claude/<自動生成名>`）にチェックアウトされている。そこで `git push` を打つと
+   上流であるそのブランチに行くだけで、**main には永久に届かない**。
+   2026-08-31 の実行がこれで、収集・分類は正常に終わったのに本番へ反映されなかった。
+
    - **手順6を満たした場合**: `npx tsx scripts/generate-sitemap.ts` を実行し、
-     `data/papers.json`・`data/excluded-pmids.json`・`data/sync-status.json`・
-     `data/unknown-topics.json`・`public/sitemap.xml` を main へ直接コミット・push。
+     GitHubツール `push_files` で **`branch: "main"` を指定して**コミットする:
+     - `owner: KAZUKI23zzz` / `repo: medrwd` / `branch: "main"`
+     - files: `data/papers.json`・`data/excluded-pmids.json`・`data/sync-status.json`・
+       `data/unknown-topics.json`・`public/sitemap.xml`
+     - message: `chore: 週次収集・分類（新着N件・偽陽性M件除外）`
+
      `unknown-topics.json` は**中身を編集しない**（分野の判断は人がやる）。
-   - **満たさない、または手順2で収集失敗した場合**（`status` は `"failed"`）: `data/sync-status.json` だけを
-     コミット・push。papers.json 系はコミットせず、サイトマップも再生成しない。
+     git を使う場合も行き先を明示すること（`git push origin HEAD:main`）。
+   - **満たさない、または手順2で収集失敗した場合**（`status` は `"failed"`）:
+     `data/sync-status.json` だけを同じ方法で main へ。papers.json 系はコミットせず、
+     サイトマップも再生成しない。
+
+   - **着地を確認する（必須）。** push 後に main の最新コミットを読み直し、
+     自分のコミットが載っていることを確かめる。載っていなければ:
+     1. `data/sync-status.json` の `status` を `"failed"`、`error` を
+        「mainへのpushに失敗: <理由>」に直し、それだけを main へ push し直す。
+     2. それも失敗したら、実行結果に**大きく明記して終了**する（握りつぶさない）。
+     この確認が無いと、手順7で `status: "success"` と書いた後に push だけ失敗した場合、
+     `/status` は成功を表示し続け、止まったことに誰も気づけない。
    - 権限エラー（403等）は `error` に記録して終了（握りつぶさない）。
    - 最後に、何をしたか・何で失敗したかを明記する。
 
@@ -127,7 +148,12 @@ GitHub Actions・Google翻訳は廃止し、本Routineに一本化している�
    - **セットアップスクリプト**: `npm ci`
 4. **トリガー**: Schedule → 毎週月曜（例: 02:00 JST）。
 5. **ブランチ**: 週次同期は main へ直接pushする（PRは作らない）。mainにブランチ保護は掛けていない。
-6. 保存後 **Run now** で動作確認。緑ステータスだけで判断せず、トランスクリプトと実際のPR/マージ結果、`/status` ページの表示を確認する。
+   スケジュール実行のセッションは自動生成ブランチにチェックアウトされるので、
+   **push の行き先に `main` を明示しないと届かない**（手順8の警告を参照）。
+6. 保存後 **Run now** で動作確認。**緑ステータスだけで判断しないこと。**
+   Routine の「成功」はセッションが落ちずに終わったという意味でしかなく、
+   main に届いたかは見ていない（2026-08-31 は成功表示のまま未反映だった）。
+   `main` の最新コミットと `/status` の表示を必ず確認する。
 
 ## 3. 失敗時の確認と再実行
 - サイトの `/status` ページに最終実行日時・成功/失敗・件数・エラー理由が出る。これが主な監視手段。
