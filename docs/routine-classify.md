@@ -32,6 +32,10 @@ GitHub Actions・Google翻訳は廃止し、本Routineに一本化している�
 ## 1. Routineに貼り付けるプロンプト
 
 > 下記をそのまま Routine の Instructions に貼り付ける。リポジトリは `KAZUKI23zzz/medrwd`、ブランチはデフォルト（main）から開始。
+>
+> **指示文には「何をするか」だけを書く。「なぜそうするか」はここより下の節と
+> `CLAUDE.md` に置く。** 毎回のトークンを食ううえ、長い指示文は一部が読み飛ばされる。
+> 判断の根拠を残したくなったら、指示文ではなくリポジトリ側に書くこと。
 
 ```text
 あなたは日本の医療RWD（リアルワールドデータ）研究カタログの自動更新エージェントです。
@@ -79,50 +83,27 @@ GitHub Actions・Google翻訳は廃止し、本Routineに一本化している�
 
    `npm run build` の失敗は修正対象外。落ちたら手順8の失敗経路へ進む。
 
-7. `data/sync-status.json` を更新（成功・失敗どちらでも必ず書く）。
-   **自己点検の後に書くこと。** 手順6で論文を取り除くと件数が変わるため、
-   先に書くと実態とずれた数字が残る。
-   - `status`: 手順6を**全て満たしたときだけ** `"success"`。
-     一つでも欠けたら `"failed"` にする（手順2で収集に失敗した場合も `"failed"`）。
-   - `error`: 成功なら `null`。失敗なら**必ず理由を書く**
-     （「収集失敗: <理由>」「補充失敗: <理由>」「分類できず保留: <PMID>」など）。
-     空のまま push すると lib/data-loader.ts のガードがビルドで落とす。
-   - `last_run`（ISO 8601）/ `new_papers`（今回残した新着数）/ `filtered_out`（除外数）/
-     `total_papers`（更新後の総件数）/ `consecutive_failures`（失敗なら前回値+1、成功なら 0）
-   - `status` の綴り違いや負の件数はビルドで落ちる（`lib/data-loader.ts` の
-     `getSyncStatus`）。`/status` の総論文数は papers.json から数え直すので、
-     `total_papers` は記録用。
+7. `data/sync-status.json` を更新（**自己点検の後**。先に書くと手順6で論文を
+   取り除いたときに数字がずれる）。成功・失敗どちらでも必ず書く。
+   - `status`: 手順6を全て満たしたときだけ `"success"`。一つでも欠けたら `"failed"`
+     （手順2の収集失敗も `"failed"`）。
+   - `error`: 成功なら `null`。失敗なら**必ず理由を書く**（空だとビルドが落ちる）。
+   - `last_run`(ISO 8601) / `new_papers` / `filtered_out` / `total_papers` /
+     `consecutive_failures`（失敗なら前回値+1、成功なら 0）
 
-8. main へ反映（PRは作らない。`gh` CLI は無いので**セッション組み込みのGitHubツール**を使う）:
-
-   **⚠️ 行き先に `main` を明示すること。素の `git push` を使わない。**
-   スケジュール実行のセッションは main ではなく自動生成ブランチ
-   （`claude/<自動生成名>`）にチェックアウトされている。そこで `git push` を打つと
-   上流であるそのブランチに行くだけで、**main には永久に届かない**。
-   2026-08-31 の実行がこれで、収集・分類は正常に終わったのに本番へ反映されなかった。
-
+8. main へ反映（PRは作らない。`gh` CLI は無い）:
+   - **push先に `main` を明示する。** 素の `git push` はセッションのブランチに行き、
+     main に届かない。`push_files` に `branch: "main"` を渡すか `git push origin HEAD:main`。
    - **手順6を満たした場合**: `npx tsx scripts/generate-sitemap.ts` を実行し、
-     GitHubツール `push_files` で **`branch: "main"` を指定して**コミットする:
-     - `owner: KAZUKI23zzz` / `repo: medrwd` / `branch: "main"`
-     - files: `data/papers.json`・`data/excluded-pmids.json`・`data/sync-status.json`・
-       `data/unknown-topics.json`・`public/sitemap.xml`
-     - message: `chore: 週次収集・分類（新着N件・偽陽性M件除外）`
-
-     `unknown-topics.json` は**中身を編集しない**（分野の判断は人がやる）。
-     git を使う場合も行き先を明示すること（`git push origin HEAD:main`）。
-   - **満たさない、または手順2で収集失敗した場合**（`status` は `"failed"`）:
-     `data/sync-status.json` だけを同じ方法で main へ。papers.json 系はコミットせず、
-     サイトマップも再生成しない。
-
-   - **着地を確認する（必須）。** push 後に main の最新コミットを読み直し、
-     自分のコミットが載っていることを確かめる。載っていなければ:
-     1. `data/sync-status.json` の `status` を `"failed"`、`error` を
-        「mainへのpushに失敗: <理由>」に直し、それだけを main へ push し直す。
-     2. それも失敗したら、実行結果に**大きく明記して終了**する（握りつぶさない）。
-     この確認が無いと、手順7で `status: "success"` と書いた後に push だけ失敗した場合、
-     `/status` は成功を表示し続け、止まったことに誰も気づけない。
-   - 権限エラー（403等）は `error` に記録して終了（握りつぶさない）。
-   - 最後に、何をしたか・何で失敗したかを明記する。
+     `data/papers.json`・`data/excluded-pmids.json`・`data/sync-status.json`・
+     `data/unknown-topics.json`・`public/sitemap.xml` を
+     `chore: 週次収集・分類（新着N件・偽陽性M件除外）` でコミット。
+     `unknown-topics.json` は中身を編集しない。
+   - **満たさない場合**: `data/sync-status.json` だけ。他はコミットしない。
+   - **push後、main の最新コミットに自分のコミットが載っていることを確認する。**
+     載っていなければ `status` を `"failed"`、`error` を「mainへのpushに失敗: <理由>」に
+     直して push し直す。それも駄目なら実行結果に明記して終了。
+   - 権限エラー（403等）も `error` に記録して終了（握りつぶさない）。
 
 ## 制約
 - main には `classified:true` の論文だけを載せる。
