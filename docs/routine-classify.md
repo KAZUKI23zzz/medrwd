@@ -12,7 +12,7 @@ GitHub Actions・Google翻訳は廃止し、本Routineに一本化している�
 | 診療分野・関連研究 | `npm run build` | どちらも保存せず、ビルドのたびに全件を計算する。Routineが指示することは無い |
 | 分類・要約・偽陽性除外 | **Routine（LLM）** | `docs/classification.md` に従って判断する |
 | 自己点検 | `scripts/validate-papers.ts` と `npm run build` | 合否は機械が決める。Routineはコマンドを打つだけ |
-| main反映 | **Routine（LLM）** | PRは作らず、`branch: "main"` を明示して直接push。**push後に着地を確認する** |
+| main反映 | **Routine（LLM）** | 自分のブランチから main への PR を作って squash マージ。**マージ後に着地を確認する** |
 
 **収集スクリプトの設定**（Routineは意識しなくてよい）
 
@@ -91,18 +91,19 @@ GitHub Actions・Google翻訳は廃止し、本Routineに一本化している�
    - `last_run`(ISO 8601) / `new_papers` / `filtered_out` / `total_papers` /
      `consecutive_failures`（失敗なら前回値+1、成功なら 0）
 
-8. main へ反映（PRは作らない。`gh` CLI は無い）:
-   - **push先に `main` を明示する。** 素の `git push` はセッションのブランチに行き、
-     main に届かない。`push_files` に `branch: "main"` を渡すか `git push origin HEAD:main`。
+8. main へ反映（`gh` CLI は無い。組み込みのGitHubツールを使う）:
+   - **main へ直接 push しないこと。** このセッションは自分のブランチ以外へ push
+     できない。main へ届ける経路は **PR を作ってマージする**ことだけ。
    - **手順6を満たした場合**: `npx tsx scripts/generate-sitemap.ts` を実行し、
      `data/papers.json`・`data/excluded-pmids.json`・`data/sync-status.json`・
-     `data/unknown-topics.json`・`public/sitemap.xml` を
-     `chore: 週次収集・分類（新着N件・偽陽性M件除外）` でコミット。
+     `data/unknown-topics.json`・`public/sitemap.xml` を**いまいるブランチ**に
+     コミット・push → main への PR を作成 → **squash でマージする**。
+     タイトルは `chore: 週次収集・分類（新着N件・偽陽性M件除外）`。
      `unknown-topics.json` は中身を編集しない。
-   - **満たさない場合**: `data/sync-status.json` だけ。他はコミットしない。
-   - **push後、main の最新コミットに自分のコミットが載っていることを確認する。**
-     載っていなければ `status` を `"failed"`、`error` を「mainへのpushに失敗: <理由>」に
-     直して push し直す。それも駄目なら実行結果に明記して終了。
+   - **満たさない場合**: `data/sync-status.json` だけを同じ流れで。他はコミットしない。
+   - **マージ後、main の最新コミットに自分の変更が載っていることを確認する。**
+     載っていなければ `status` を `"failed"`、`error` を「mainへの反映に失敗: <理由>」に
+     直して同じ流れでやり直す。それも駄目なら実行結果に明記して終了。
    - 権限エラー（403等）も `error` に記録して終了（握りつぶさない）。
 
 ## 制約
@@ -128,9 +129,11 @@ GitHub Actions・Google翻訳は廃止し、本Routineに一本化している�
      - `api.openalex.org`（雑誌IF・トピック）
    - **セットアップスクリプト**: `npm ci`
 4. **トリガー**: Schedule → 毎週月曜（例: 02:00 JST）。
-5. **ブランチ**: 週次同期は main へ直接pushする（PRは作らない）。mainにブランチ保護は掛けていない。
-   スケジュール実行のセッションは自動生成ブランチにチェックアウトされるので、
-   **push の行き先に `main` を明示しないと届かない**（手順8の警告を参照）。
+5. **ブランチ**: セッションは自動生成ブランチにチェックアウトされ、**そこ以外へは push
+   できない**（システムプロンプトに注入される規則で、指示文では上書きできない）。
+   そのため main へは **PR を作ってマージする**。mainにブランチ保護は掛けていない。
+   repo設定「Automatically delete head branches」を ON にしてあるので、
+   マージ済みのブランチは自動で消える。
 6. 保存後 **Run now** で動作確認。**緑ステータスだけで判断しないこと。**
    Routine の「成功」はセッションが落ちずに終わったという意味でしかなく、
    main に届いたかは見ていない（2026-08-31 は成功表示のまま未反映だった）。

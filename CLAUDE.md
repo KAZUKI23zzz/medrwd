@@ -49,15 +49,16 @@ npx tsx scripts/sync-pubmed.ts           # 論文収集（手動。通常はRout
 
 **Track 2 完了: 収集・分類フローをRoutine一本化**
 - 自動化は週次の **Claude Routine 1つ**。GitHub Actions・Google翻訳・PMDAニュースは廃止。
-- 手順は8段階。**PRを作らず main へ直接push**する（ブランチ保護なし）。
-  **push の行き先に `main` を明示すること。** スケジュール実行のセッションは
-  自動生成ブランチにチェックアウトされるので、素の `git push` はそこに行くだけで
-  main に届かない（2026-08-31 に発生。収集は正常なのに本番未反映、Routineは成功表示）。
-  `push_files` に `branch: "main"` を渡し、**push後に着地を確認する**。
+- 手順は8段階。**main へは PR を作って squash マージする**（ブランチ保護なし）。
   ```
   1 npm ci → 2 収集(script) → 3 分類(LLM) → 4 偽陽性除外(LLM) → 5 欠損の補充(script)
-  → 6 自己点検(script+build) → 7 status更新(LLM) → 8 main へ直接push
+  → 6 自己点検(script+build) → 7 status更新(LLM) → 8 PR作成→マージ
   ```
+  **main へ直接 push させないこと。** セッションには「指定ブランチ以外へ push しない」
+  という規則がシステムプロンプトに注入されており、指示文では上書きできない。
+  2026-08-29 に「PRを作らず直接push」へ変えたところ 8/31 の実行が矛盾を検知して
+  停止し（収集は正常なのに本番未反映・表示は成功）、2026-09-01 に戻した。
+  **PRはレビューのためではなく、mainへ届くための経路**。5秒で自分でマージされる。
 - **判断はLLM、合否は機械。** 自己点検は `validate-papers.ts` と `npm run build` が判定する。
   検証に落ちたら該当論文だけを最大2回まで直し、直らなければその論文だけ取り除いて残りを通す
   （`excluded-pmids.json` には入れない＝翌週やり直す）。
