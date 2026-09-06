@@ -224,8 +224,13 @@ export default async function PaperDetailPage({
                     診療分野
                   </p>
                   <div className="mt-1 flex flex-wrap items-center gap-1.5">
+                    {/* /papers は1本3.6MB。先読みさせない（理由は lib/nav-items.ts） */}
                     {clinicalAreas.map((area) => (
-                      <Link key={area} href={papersUrlForArea(area)}>
+                      <Link
+                        key={area}
+                        href={papersUrlForArea(area)}
+                        prefetch={false}
+                      >
                         <Badge
                           variant="outline"
                           className="cursor-pointer border-emerald-200 bg-emerald-50 text-emerald-700"

@@ -79,6 +79,8 @@ export default function Home() {
         <div className="flex gap-3 pt-2">
           <Link
             href="/papers"
+            /* /papers は1本3.6MB。先読みさせない（理由は lib/nav-items.ts） */
+            prefetch={false}
             className="inline-flex h-10 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground hover:bg-primary/90"
           >
             研究カタログを見る
@@ -174,6 +176,8 @@ export default function Home() {
             <h2 className="text-lg font-semibold">最近追加された研究</h2>
             <Link
               href="/papers"
+              /* /papers は1本3.6MB。先読みさせない（理由は lib/nav-items.ts） */
+              prefetch={false}
               className="text-sm text-blue-600 hover:underline"
             >
               すべて見る →

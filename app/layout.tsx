@@ -59,6 +59,7 @@ export default function RootLayout({
                 <Link
                   key={item.href}
                   href={item.href}
+                  prefetch={item.prefetch}
                   className="rounded-md px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
                 >
                   {item.label}
