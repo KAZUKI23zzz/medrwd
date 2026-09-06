@@ -218,6 +218,8 @@ export default async function DatabaseDetailPage({
             </p>
             <Link
               href={catalogHref}
+              /* /papers は1本3.6MB。先読みさせない（理由は lib/nav-items.ts） */
+              prefetch={false}
               className="mt-4 inline-flex h-10 items-center rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground hover:bg-primary/90"
             >
               研究カタログで{paperCount}件を見る →

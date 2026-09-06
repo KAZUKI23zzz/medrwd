@@ -16,6 +16,7 @@ Next.js 16 (Static Export) / TypeScript / Tailwind CSS v4 + shadcn/ui v4 / JSON�
 |------|------|
 | `app/` | Next.js App Router（ダッシュボード・研究カタログ・DB一覧・About・status） |
 | `scripts/sync-pubmed.ts` | PubMed収集（収集専任: 直近90日 + hasabstract → OpenAlexのIF/トピックを付けて classified:false で追記）。分類・翻訳はしない。**1回の取り込みは50件まで**（あふれた分は翌週） |
+| `scripts/prune-export.ts` | ビルド後に `out/**/__next._full.txt` を消す（隣の `<route>.txt` と同一の複製。誰も読まない）。`npm run build` の後段で自動実行。**1デプロイ 33MB・1,121ファイル減る** |
 | `scripts/backfill-openalex.ts` | トピック・IFが欠けている論文を埋め直す（`--all` で全件取り直し。冪等）。**Routineが毎週ビルド前に実行する** |
 | `data/papers.json` | 論文メタデータ（全件分類済み）。週次Routineが追記・削除する。`openalex_topics` は関連度つきトピック（OpenAlex由来・CC0） |
 | `data/excluded-pmids.json` | 偽陽性として削除した論文のPMID。収集時に `papers.json` と一緒に除外する。**分類に失敗しただけの論文を入れないこと**（二度と収録されなくなる） |
@@ -170,6 +171,13 @@ papers.json のgitサイズ（約12,800本でGitHubが警告）で、**BM25で�
    一覧で使わないフィールドは `app/papers/page.tsx` で落としてある（736KB→705KB）。
    その後、検索でサブトピックも引けるよう `topic_names` を全件配信して 720KB
    （+15KB）。測り直すときは `npm run build` 後の `out/papers.txt` を brotli -q 11 で。
+   **この720KBは「/papers を開いたときの転送量」ではなかった**（2026-09-06 に実測）。
+   ヘッダーの「研究カタログ」リンクを Next が先読みするので、**どのページを開いても
+   `/papers` の3.6MBが余計に落ちてきていた**（未圧縮でトップ4.51MB・論文詳細4.49MB、
+   `/papers` 自身は自分のHTMLと自分の先読みで8.13MB）。`/papers` 系リンクだけ
+   `prefetch={false}` にして解消（`lib/nav-items.ts` に理由）。実測は
+   トップ0.89MB・詳細0.87MB・`/papers` 4.64MB。**ページの重さはファイル単体ではなく
+   ブラウザの通信で測ること。**
 3. 診療分野と関連研究は **papers.json に保存せず、ビルドのたびに全件を計算する**
    （診療分野7ms・関連研究724ms。ビルド全体20秒の4%）。保存しないのは、辞書
    （`topic-areas.json`）を唯一の正に保つため。棚卸しで辞書に追記すれば、次のビルドで
@@ -184,3 +192,11 @@ papers.json のgitサイズ（約12,800本でGitHubが警告）で、**BM25で�
    詳細ページで診療分野・トピック・DBによる絞り込みができる
    （`components/papers/RelatedPapers.tsx`。候補15件を渡し、5件ずつ展開）。
    経緯とブラインド評価の結果は `docs/related-papers.md`。
+5. **Vercel の Deployment Storage（無料枠10GB）は「1デプロイの大きさ×保持数」**。
+   2026-09-06 に100%の警告。1デプロイ198MB・保持30日・8月は33コミット
+   （各コミットにプレビューと本番の2デプロイ）で埋まった。
+   **枠を空けるのはコードではなく Vercel の設定**（プロジェクト → Settings →
+   Deployment Retention を短くする／古いデプロイを削除）。Hobbyの保持は最長30日、
+   直近10件の本番デプロイとエイリアス付きは保持期間に関係なく残る。
+   コード側では `scripts/prune-export.ts` で198MB→163MB・10,126→9,005ファイル。
+   まだ削れる余地（セグメントプリフェッチ残り33.6MB）は `docs/backlog.md` の S1 参照。

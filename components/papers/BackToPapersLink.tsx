@@ -25,6 +25,8 @@ export function BackToPapersLink() {
   return (
     <Link
       href={href}
+      /* /papers は1本3.6MB。先読みさせない（理由は lib/nav-items.ts） */
+      prefetch={false}
       className="text-sm text-muted-foreground hover:text-foreground"
     >
       ← 研究カタログに戻る

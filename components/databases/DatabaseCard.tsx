@@ -52,6 +52,8 @@ export function DatabaseCard({
           {/* 文言どおり、研究が並ぶ側（絞り込み済みのカタログ）へ直接送る */}
           <Link
             href={papersUrlForDatabase(db.paper_tag)}
+            /* /papers は1本3.6MB。先読みさせない（理由は lib/nav-items.ts） */
+            prefetch={false}
             className="text-sm text-blue-600 hover:underline"
           >
             このDBを使った研究: {paperCount}件
