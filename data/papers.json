@@ -1,5 +1,1095 @@
 [
   {
+    "id": "pmid-42701639",
+    "pubmed_id": "42701639",
+    "doi": "10.7759/cureus.114044",
+    "title": "Age-Related Time-to-Onset Analysis of Drug-Associated Erythema Multiforme Using the Japanese Adverse Drug Event Report Database.",
+    "abstract": "Erythema multiforme (EM) is a rare immune-mediated skin condition often triggered by infections, drugs, or autoimmune diseases. Age-related differences in drug exposure, comorbidities, and biological factors may affect adverse event reporting patterns; however, age-related patterns in EM onset remain unclear. This study investigated age-related patterns in reported time-to-onset of EM. The observation period was defined as 1-180 days from the initiation of drug administration. Kendall's tau-b rank correlation analysis was used to evaluate the association between ordered age categories and reported time to onset. The Kaplan-Meier method with a log-rank test was used to compare EM onset profiles between two age groups (<60 and ≥60 years). A positive association was observed between age category and reported time-to-onset (Kendall's tau-b = 0.188, p < 0.001). The median time-to-onset was 10.0 days in both men and women, although the Kaplan-Meier curves differed significantly by sex (log-rank p = 0.012). The median time-to-onset was 8.0 (3.0-13.0) days for those aged <60 years and 12.0 (7.0-24.5) days for those aged ≥60 years (log-rank p < 0.001). Older age was associated with longer reported time-to-onset of EM, suggesting age-related differences in reported EM onset patterns in a spontaneous reporting database.",
+    "authors": [
+      "Tanaka H",
+      "Nakao S",
+      "Sugishita K",
+      "Yamazaki T",
+      "Ito S",
+      "Kageyama K",
+      "Sato M",
+      "Ino Y",
+      "Iguchi K",
+      "Nakamura M"
+    ],
+    "journal": "Cureus",
+    "journal_issn": "2168-8184",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-06",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.11,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:40.941Z",
+    "classified": true,
+    "title_ja": "日本の医薬品副作用データベース(JADER)を用いた薬剤誘発性多形紅斑の年齢別発症時期解析",
+    "abstract_ja": "JADERのデータを用い、薬剤関連の多形紅斑(EM)発症までの期間と年齢の関係をKendallのτ相関およびKaplan-Meier法・log-rank検定で検討した。60歳以上は60歳未満に比べ発症までの期間が有意に長く(中央値12日 vs 8日)、性別によっても発症パターンに差がみられた。自発報告データベース上のEM発症時期には年齢差があることが示唆された。"
+  },
+  {
+    "id": "pmid-42701987",
+    "pubmed_id": "42701987",
+    "doi": "10.1007/s12325-026-03759-1",
+    "title": "Real-World Longitudinal Treatment Outcomes for Patients with Metastatic Castration-Sensitive Prostate Cancer in Japan.",
+    "abstract": "With recent approvals in Japan, identifying optimal first-line therapy for metastatic castration-sensitive prostate cancer (mCSPC) is critical. We evaluated real-world outcomes of androgen-deprivation therapy (ADT) plus androgen receptor signaling inhibitors (ARSIs) as first-line therapies using prostate-specific antigen (PSA) responses and treatment duration. This retrospective study used the Medical Data Vision database (May 2020-April 2024). The study population included males with mCSPC, with two cohorts: cohort 1 (with PSA data); cohort 2 (all eligible patients). cumulative incidence of ≥ 90% PSA reduction (PSA90) during the first-line period. Secondary endpoints: PSA50; PSA ≤ 0.2 ng/mL; time to PSA progression (TTPP); time-to-treatment discontinuation (TTD). Endpoints were estimated using the Kaplan-Meier method evaluated using the Cox proportional hazards model, adjusted for baseline characteristics. In cohort 1 (n = 1306), cumulative PSA90 response rates were higher with ADT + ARSI ± docetaxel (ARSI-based treatments) than with ADT alone or ADT + nonsteroidal antiandrogens (NSAAs) (at 3 months: ADT alone, 63.2%; ADT + NSAAs, 69.3%; ADT + enzalutamide, 91.8%; ADT + apalutamide, 90.9%; ADT + abiraterone, 90.7%; ADT + darolutamide + docetaxel, 81.2%). Cumulative PSA50 and PSA ≤ 0.2 ng/mL response rates were consistent with PSA90 findings. Median TTPP was longer for ARSI-based treatments versus ADT alone and ADT + NSAA. No significant differences were observed among ARSI-based treatments across these PSA-related endpoints. In cohort 2 (n = 11,737), the median TTD was longer for ARSI-based treatments versus ADT alone and ADT + NSAAs. Notably, ADT + apalutamide showed a shorter median TTD than other ARSI-based treatments. Compared with ADT alone or ADT + NSAA, ARSI-based treatments showed faster PSA declines and longer treatment durations. While ARSI-based treatments demonstrated similar PSA-lowering effects, differences in treatment continuation likely reflect real-world clinical management influenced by not only PSA response but also adverse events and patient characteristics.",
+    "authors": [
+      "Kawai T",
+      "Kiyonaga F",
+      "Uno S",
+      "Shibata H",
+      "Saito A"
+    ],
+    "journal": "Advances in therapy",
+    "journal_issn": "1865-8652",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-06",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 4.1,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:41.372Z",
+    "classified": true,
+    "title_ja": "日本における転移性去勢感受性前立腺癌に対するリアルワールド長期治療転帰",
+    "abstract_ja": "Medical Data Visionデータベースを用い、転移性去勢感受性前立腺癌に対するADT単独・ADT+非ステロイド性抗アンドロゲン薬・ADT+アンドロゲン受容体シグナル阻害薬(ARSI)のPSA反応と治療継続期間を比較した。ARSI併用群はADT単独群等に比べPSA低下が速く治療継続期間も長かったが、ARSI同士では大きな差はなかった。治療継続の違いには有害事象や患者背景も影響していると考察された。"
+  },
+  {
+    "id": "pmid-42698056",
+    "pubmed_id": "42698056",
+    "doi": "10.1007/s40120-026-01016-9",
+    "title": "Characteristics and Hospitalization Details of Patients with Advanced Parkinson's Disease Receiving Continuous Subcutaneous Infusion of Foslevodopa/Foscarbidopa: Real-World First-Year Descriptive Study from Japan.",
+    "abstract": "The real-world characteristics of patients with advanced Parkinson's disease (PD) who receive foslevodopa/foscarbidopa (LDp/CDp) continuous subcutaneous infusion therapy (CSCI) remain poorly understood. This study aimed to describe the characteristics and hospitalization details of patients with advanced PD hospitalized for LDp/CDp CSCI in Japan. This study was a retrospective descriptive analysis conducted using a hospital-based database provided by Medical Data Vision, Co. Ltd. Patients with advanced PD who underwent LDp/CDp CSCI during hospitalization between July 2023 and June 2024 were enrolled. The index date was defined as the date of the first LDp/CDp prescription. Baseline patient characteristics, levodopa-equivalent dose (LED), number of pills/transdermal patches, medication classes for concomitant PD medications, and non-motor symptom medications assessed within 4 weeks prior to and including the index date, along with hospitalization details, were collected. We enrolled 96 patients with a mean age of 65.6 years [standard deviation (SD), 10.2], of whom 58 (60.4%) were female. The median Barthel Index was 90.0 [interquartile range (IQR): 44.2], and the hospitalization duration was 15.0 days (IQR: 9.0). Eighteen patients (18.8%) discontinued LDp/CDp CSCI during hospitalization. The mean LED of any PD medications prior to LDp/CDp CSCI initiation, the mean number of PD medication classes, and the daily pill/transdermal patch count for PD medications were 1,111.0 mg/day (SD 575.7), 3.9 (SD 1.3), and 10.6 (SD 5.0), respectively. Except for levodopa (L-Dopa), dopamine agonists (78.1%) were the most commonly used concomitant PD medications. In real-world clinical practice in Japan, patients with LDp/CDp CSCI tend to be younger and have preserved activities of daily living. Our results implied that patients are often managed with multiple concomitant PD medications rather than with L-Dopa dose titration prior to initiation. Further research is warranted to maximize the benefits of LDp/CDp CSCI and assess its real-world impact on pill burden.",
+    "authors": [
+      "Baba T",
+      "Nozaki T",
+      "Toya S",
+      "Migita H",
+      "Ri K",
+      "Takeda A"
+    ],
+    "journal": "Neurology and therapy",
+    "journal_issn": "2193-8253",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-05",
+    "analysis_methods": [],
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 3.94,
+    "sjr_quartile": null,
+    "openalex_topic": "Parkinson's Disease Mechanisms and Treatments",
+    "openalex_topic_score": 0.78,
+    "openalex_subfield": "Neurology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10085",
+        "name": "Parkinson's Disease Mechanisms and Treatments",
+        "score": 0.78
+      },
+      {
+        "id": "T10919",
+        "name": "Neurological disorders and treatments",
+        "score": 0.087
+      },
+      {
+        "id": "T14286",
+        "name": "Parkinson's Disease and Spinal Disorders",
+        "score": 0.023
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:39.494Z",
+    "classified": true,
+    "title_ja": "進行期パーキンソン病患者におけるホスレボドパ/ホスカルビドパ持続皮下注療法の実態と入院状況：日本のリアルワールド初年度記述研究",
+    "abstract_ja": "Medical Data Visionの病院データベースを用い、ホスレボドパ/ホスカルビドパ(LDp/CDp)持続皮下注療法(CSCI)を導入した進行期パーキンソン病患者96例の背景と入院状況を記述した。平均年齢65.6歳で、入院期間の中央値は15日、18.8%が入院中にCSCIを中断した。導入前は複数のパーキンソン病薬を併用している患者が多く、レボドパの用量調整よりも多剤併用での管理が主流であることが示唆された。"
+  },
+  {
+    "id": "pmid-42698470",
+    "pubmed_id": "42698470",
+    "doi": "10.3389/fonc.2026.1889964",
+    "title": "Interstitial pneumonia signals of apalutamide, darolutamide, and enzalutamide in FAERS and JADER.",
+    "abstract": "Apalutamide, darolutamide, and enzalutamide are widely used androgen receptor signaling inhibitors (ARSIs) for prostate cancer. Although their clinical benefits are established, interstitial pneumonia remains an uncommon but potentially serious pulmonary adverse event that is insufficiently characterized in routine practice. We conducted a retrospective pharmacovigilance study using the FDA Adverse Event Reporting System (FAERS) and the Japanese Adverse Drug Event Report database (JADER). Reports listing apalutamide, darolutamide, or enzalutamide as the primary or suspected drug were identified after drug-name standardization. Interstitial pneumonia/interstitial lung disease was defined at the preferred-term level. Reporting odds ratio (ROR) analysis was used for signal detection; a positive signal was defined as at least three reports and a lower 95% confidence interval of the ROR greater than 1. Time-to-onset patterns were assessed using monthly and cumulative reporting proportions and Weibull distribution analysis. After data cleaning, 59, 603 target-drug reports were identified in FAERS and 4, 812 in JADER. In FAERS, interstitial lung disease showed positive disproportionality signals for all three ARSIs, with the strongest signal for darolutamide, followed by apalutamide and enzalutamide. In JADER, positive signals were observed for apalutamide and darolutamide, whereas enzalutamide did not meet the predefined signal criterion. Weibull analysis suggested a random-failure pattern for apalutamide in both databases. Darolutamide showed a wear-out pattern in FAERS and a random-failure pattern in JADER. Enzalutamide showed a consistent early-failure pattern in both databases. The three ARSIs showed heterogeneous interstitial pneumonia reporting patterns in FAERS and JADER. Apalutamide and darolutamide demonstrated more consistent disproportionality signals, whereas enzalutamide showed weaker signal strength but a reproducible early-onset pattern among reports with valid time-to-onset information. These findings support continued pharmacovigilance and early clinical monitoring, while recognizing that spontaneous reporting signals cannot establish causality or true incidence.",
+    "authors": [
+      "Zheng Z",
+      "Zhao Z",
+      "Jin P"
+    ],
+    "journal": "Frontiers in oncology",
+    "journal_issn": "2234-943X",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-05",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.61,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:39.844Z",
+    "classified": true,
+    "title_ja": "FAERSとJADERにおけるアパルタミド・ダロルタミド・エンザルタミドの間質性肺炎シグナル",
+    "abstract_ja": "FAERSとJADERを用い、前立腺癌治療薬アパルタミド・ダロルタミド・エンザルタミドによる間質性肺炎/間質性肺疾患の報告オッズ比(ROR)を算出した。3剤とも間質性肺炎のシグナルが検出されたが、薬剤・データベースにより発症パターン(Weibull分布)が異なっていた。自発報告に基づく解析であり因果関係や真の発生率は判断できないとしている。"
+  },
+  {
+    "id": "pmid-42700199",
+    "pubmed_id": "42700199",
+    "doi": "10.1007/s40487-026-00459-2",
+    "title": "Real-World Testing Landscape and Costs of Companion Diagnostics and Comprehensive Genomic Profiling Across Nine Solid Tumors in Japan: A 10-Year Analysis.",
+    "abstract": "This study aimed to examine utilization, testing sequences, and associated genomic testing costs of companion diagnostics (CDx) and comprehensive genomic profiling (CGP) among Japanese patients with nine representative solid tumors. This retrospective study used anonymized data, from Medical Data Vision Co., Ltd. (MDV; January 2015-March 2025) and JMDC Inc. (JMDC; January 2015-January 2025), for patients with solid tumors of nine cancer types who underwent CDx and/or CGP testing or received any cancer treatment. Patient demographics, distribution and testing sequences of CDx and CGP, and associated genomic testing costs per patient were evaluated. Proportions of CDx and CGP testing varied across nine cancer types. Most patients underwent CDx testing once or twice, although some cohorts, particularly with non-small cell lung cancer (NSCLC), were tested thrice or more. Biliary tract cancer demonstrated the highest proportions for CGP testing alone, and both CDx and CGP testing. For both CDx and CGP testing, the greatest median costs were observed for ovarian and breast cancers, with bimodal peaks near US dollars (USD) 4000 and USD 5000. Median CDx costs were equal to or higher for patients who underwent both CDx and CGP testing compared with those who had CDx testing alone, particularly in breast, pancreatic, prostate, and ovarian cancers. For CDx testing alone, NSCLC, ovarian cancer, and prostate cancer had the highest costs, with a small peak near USD 1333. These results were mostly consistent across databases. Multiple CDx testing followed by CGP testing increased genomic testing costs per patient. Early implementation of CGP testing could reduce redundant testing and associated delays in treatment, thereby contributing to lower overall healthcare costs and more efficient treatment selection amid rapid advances in targeted therapies.",
+    "authors": [
+      "Sunami K",
+      "Aoyagi SS",
+      "Mikami M",
+      "Togo K"
+    ],
+    "journal": "Oncology and therapy",
+    "journal_issn": "2366-1089",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-05",
+    "analysis_methods": [],
+    "databases_used": [
+      "MDV",
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 2.33,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:40.334Z",
+    "classified": true,
+    "title_ja": "日本における9癌腫のコンパニオン診断・包括的ゲノムプロファイリングの実施状況とコスト：10年間の分析",
+    "abstract_ja": "Medical Data VisionとJMDCのデータ(2015年以降)を用い、9種類の固形癌におけるコンパニオン診断(CDx)・包括的ゲノムプロファイリング(CGP)の実施状況と1人あたりのゲノム検査コストを分析した。癌種によりCDx・CGPの実施割合や費用は大きく異なり、卵巣癌・乳癌でコストが高い傾向にあった。CDxとCGPを両方実施するとCDx単独より費用が高くなる傾向があり、CGPの早期実施が重複検査の削減につながる可能性が示唆された。"
+  },
+  {
+    "id": "pmid-42694226",
+    "pubmed_id": "42694226",
+    "doi": "10.3389/fendo.2026.1957734",
+    "title": "Disproportionate reporting of euglycaemic and diabetic ketoacidosis with SGLT-2 inhibitors across expanding cardiorenal indications: a cross-database study of FAERS and JADER.",
+    "abstract": "SGLT-2 inhibitors are now used beyond type 2 diabetes (T2DM) in heart failure (HF) and chronic kidney disease (CKD), where glucose is monitored less routinely. Whether their established ketoacidosis signal-particularly euglycaemic diabetic ketoacidosis (euDKA)-is maintained as the indications expand, and whether it reproduces across independent reporting systems, is untested. We analysed the US FAERS (2020Q1-2026Q1) and Japanese JADER using one pipeline. Signals required consensus across four methods (ROR, PRR, IC, EBGM/EB05). Analyses were run overall, within report-level indication strata [T2DM, HF, CKD, off-label type 1 diabetes (T1DM)] and against an active comparator (DPP-4 inhibitors), with two pre-specified negative controls, time-to-onset modelling and sensitivity analyses. The DKA signal met four-method consensus within every indication stratum, including HF and CKD, and was highest in off-label T1DM; it was therefore maintained, not diluted, as indications expanded. Overall RORs were 67.4 (95% CI 65.7-69.2) in FAERS and 112.3 (104.8-120.3) in JADER. SGLT-2 inhibitors accounted for 85.8% (FAERS) and 91.7% (JADER) of all euDKA reports, though euDKA was only 4.1% and 7.8% of SGLT-2 inhibitor reports. Both negative controls were null in both databases. Median time-to-onset was 60 days (Weibull β=0.48, 95% CI 0.46-0.50). Across two independent reporting systems, the SGLT-2 inhibitor ketoacidosis signal was maintained across the expanding cardiorenal indications, with euDKA concentrated within this class and early onset. Ketone-based assessment is warranted when ketoacidosis is suspected, particularly soon after initiation. As a disproportionality analysis, these are hypothesis-generating signals that cannot establish incidence, relative risk, or causality.",
+    "authors": [
+      "Chen J",
+      "Wang D",
+      "Duan X",
+      "Wang J",
+      "Zhao Z",
+      "Xing X"
+    ],
+    "journal": "Frontiers in endocrinology",
+    "journal_issn": "1664-2392",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-04",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 4.58,
+    "sjr_quartile": null,
+    "openalex_topic": "Diabetes Treatment and Management",
+    "openalex_topic_score": 0.318,
+    "openalex_subfield": "Endocrinology, Diabetes and Metabolism",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10401",
+        "name": "Diabetes Treatment and Management",
+        "score": 0.318
+      },
+      {
+        "id": "T11171",
+        "name": "Diabetes and associated disorders",
+        "score": 0.305
+      },
+      {
+        "id": "T10839",
+        "name": "Pancreatic function and diabetes",
+        "score": 0.201
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:38.773Z",
+    "classified": true,
+    "title_ja": "心腎適応拡大の中でのSGLT2阻害薬による正常血糖・糖尿病性ケトアシドーシスの不均衡報告：FAERSとJADERの横断的解析",
+    "abstract_ja": "FAERSとJADERを用い、心不全・慢性腎臓病へ適応が拡大する中でSGLT2阻害薬によるケトアシドーシス、特に正常血糖ケトアシドーシス(euDKA)のシグナルをROR・PRR・IC・EBGMの4手法で検討した。適応症を問わずシグナルは維持され、特に適応外の1型糖尿病で最も強かった。euDKAの発症は投与開始後早期(中央値60日)に多く、ケトン体モニタリングの重要性が示唆された。"
+  },
+  {
+    "id": "pmid-42687846",
+    "pubmed_id": "42687846",
+    "doi": "10.5414/CP205008",
+    "title": "Pharmacotherapy of heart failure: Impact of the 2021 guideline update on guideline-directed medical therapy assessed using a Japanese employee health insurance claims database.",
+    "abstract": "To investigate the impact of the 2021 guideline update on guideline-directed medical therapy (GDMT) utilization in patients with heart failure (HF). The 2021 update of the Japanese guidelines for HF management followed the introduction of sacubitril/valsartan and dapagliflozin into clinical practice. However, the impact of this guideline update on drug utilization patterns remains unclear. Patient data were obtained from the Japanese employee health insurance claims database (JMDC). The simple GDMT score was determined based on the combination and dose of four key pharmacological classes: β-blockers, renin-angiotensin system inhibitors, mineralocorticoid receptor antagonists, and sodium-glucose cotransporter 2 inhibitors. Because a simple GDMT score of ≥ 5 has been associated with improved prognosis in patients with HF, patients with scores ≥ 5 were classified into the high-score group for analysis. Following the guideline update, the proportion of patients in the high-score group increased from 6.97% (n = 4,013) to 9.33% (n = 6,363), standardized difference 0.09. The mean simple GDMT score also showed a small but statistically significant increase (5.72 ± 0.79 vs. 6.00 ± 1.09) with standardized difference 0.28. This upward trend was particularly marked for the prescription rates of sacubitril/valsartan and dapagliflozin (sacubitril/valsartan: 1.40% before the update vs. 22.57% after the update; standardized difference, 0.69; dapagliflozin: 12.41% before the update vs. 26.64% after the update; standardized difference, 0.36). The 2021 guideline update was associated with increased use of sacubitril/valsartan and dapagliflozin, resulting in greater overall GDMT intensity. However, these findings are limited to data from 2021, and further long-term studies are needed to evaluate trends in GDMT utilization.",
+    "authors": [
+      "Uno T",
+      "Hosomi K",
+      "Yokoyama S"
+    ],
+    "journal": "International journal of clinical pharmacology and therapeutics",
+    "journal_issn": "0946-1965",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-03",
+    "analysis_methods": [],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 0.81,
+    "sjr_quartile": null,
+    "openalex_topic": "Diabetes Treatment and Management",
+    "openalex_topic_score": 0.671,
+    "openalex_subfield": "Endocrinology, Diabetes and Metabolism",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10401",
+        "name": "Diabetes Treatment and Management",
+        "score": 0.671
+      },
+      {
+        "id": "T10198",
+        "name": "Heart Failure Treatment and Management",
+        "score": 0.263
+      },
+      {
+        "id": "T10065",
+        "name": "Atrial Fibrillation Management and Outcomes",
+        "score": 0.01
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:36.934Z",
+    "classified": true,
+    "title_ja": "心不全の薬物療法：2021年ガイドライン改訂がガイドライン推奨薬物療法に与えた影響（JMDCレセプトデータ解析）",
+    "abstract_ja": "JMDC健保レセプトデータを用い、2021年の心不全診療ガイドライン改訂前後でのガイドライン推奨薬物療法(GDMT)スコアの変化を検討した。改訂後、高スコア群の割合が6.97%から9.33%に増加し、特にサクビトリルバルサルタンとダパグリフロジンの処方率が大きく上昇した。ガイドライン改訂はGDMTの強化と関連していたが、長期的な処方動向の評価にはさらなる研究が必要とされた。"
+  },
+  {
+    "id": "pmid-42690510",
+    "pubmed_id": "42690510",
+    "doi": "10.1007/s10384-026-01410-8",
+    "title": "Epidemiology of macular dystrophy in Japan (2011-2020): a nationwide population-based study.",
+    "abstract": "To describe the characteristics and prevalence of macular dystrophy using a comprehensive national claims database in Japan. Population-based retrospective study using a nationwide claims database. Approximately 126 million individuals covered by Japan's universal health coverage system were included. Health insurance claims from 2011 to 2020 stored in the National Database of Health Insurance Claims (NDB) of Japan were analyzed. Patients with macular dystrophy, including best vitelliform macular dystrophy (BVMD), Stargardt disease (STGD), cone/cone-rod dystrophy, or central areolar choroidal dystrophy (CACD), were identified using diagnostic codes recorded in the database. The population-based prevalence of diagnosed macular dystrophy was calculated, and age-standardized rates were derived using the WHO standard world population. Between 2011 and 2020, 1,268 patients with BVMD, 460 with STGD, 5758 with cone/cone-rod dystrophy, and 280 with CACD were identified in the NDB. As of October 1, 2020, the corresponding prevalence rates were 10.05, 3.65, 45.65, and 2.35 per 1,000,000 persons, respectively. This nationwide study provides updated epidemiological estimates of macular dystrophy in Japan. These findings may inform clinical management, healthcare planning, and future research on macular dystrophy.",
+    "authors": [
+      "Ikeda HO",
+      "Otsuka A",
+      "Kamei T",
+      "Otsuka Y",
+      "Numa S",
+      "Miyata M",
+      "Oishi A",
+      "Hiragi S",
+      "Ueshima H",
+      "Tsujikawa A",
+      "Miyake M",
+      "Tamura H"
+    ],
+    "journal": "Japanese journal of ophthalmology",
+    "journal_issn": "1613-2246",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-03",
+    "analysis_methods": [],
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.28,
+    "sjr_quartile": null,
+    "openalex_topic": "Retinal Diseases and Treatments",
+    "openalex_topic_score": 0.638,
+    "openalex_subfield": "Ophthalmology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10170",
+        "name": "Retinal Diseases and Treatments",
+        "score": 0.638
+      },
+      {
+        "id": "T10563",
+        "name": "Corneal surgery and disorders",
+        "score": 0.087
+      },
+      {
+        "id": "T10381",
+        "name": "Ophthalmology and Visual Impairment Studies",
+        "score": 0.071
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:37.023Z",
+    "classified": true,
+    "title_ja": "日本における黄斑ジストロフィの疫学(2011-2020年)：全国レセプトデータに基づく研究",
+    "abstract_ja": "全国医療保険レセプトデータベース(NDB)を用い、2011年から2020年までの黄斑ジストロフィ(卵黄状黄斑変性・スタルガルト病・錐体/錐体杆体ジストロフィ・中心性輪状脈絡膜ジストロフィ)の患者数と有病率を算出した。2020年時点の有病率は人口100万人あたりそれぞれ10.05・3.65・45.65・2.35人であった。今回の推計は今後の臨床対応や医療政策の検討に資すると考察された。"
+  },
+  {
+    "id": "pmid-42690837",
+    "pubmed_id": "42690837",
+    "doi": "10.1177/08850666261469500",
+    "title": "Incidence and Risk Factors for Invasive Mechanical Ventilation Dependency in Japan: A Nationwide Retrospective Cohort Study.",
+    "abstract": "ObjectivesTo describe the incidence and risk factors for becoming dependent on invasive mechanical ventilation (IMV) in Japan.DesignRetrospective cohort study using a nationwide inpatient database from April 1, 2014, to March 31, 2020.SettingMore than 1500 acute care hospitals participating in the Diagnosis Procedure Combination Study Group Database, covering approximately 50% of all hospitalizations in acute care hospitals in Japan.PatientsAdults (≥18 years), in whom IMV was initiated during hospitalization. IMV-dependency was defined as discharge while still receiving IMV after ≥7 days and having undergone tracheostomy during hospitalization.InterventionsNone.Measurements And Main ResultsOf the 388,752 patients in whom IMV was initiated, 7805 (2.0%) became IMV dependent. In-hospital mortality occurred in 138,111 (35.5%) patients, and 242,836 (62.5%) were discharged without IMV dependency. The incidence of IMV dependency increased over time, from 1.6% in 2014 to 2.4% in 2019. Patients who became IMV dependent had a mean age of 71.3 years, and 49% were ≥75 years. Emergency admissions accounted for 91.7% of cases, and 68.1% presented with impaired consciousness at admission. In multinomial regression analysis (reference: discharged alive without IMV dependency), older age (≥75 years; RRR 1.48, 95% CI 1.41-1.56), impaired consciousness at admission (RRR 1.75, 95% CI 1.63-1.88), emergency admission (RRR 2.18, 95% CI 1.97-2.42), and surgery prior to IMV (RRR 1.92, 95% CI 1.82-2.03) were independently associated with IMV dependency.ConclusionsThe incidence of IMV dependency increased over time. Identified risk factors may inform clinical decision-making and advance care planning.",
+    "authors": [
+      "Ohbe H",
+      "Daniels M",
+      "Kudo D",
+      "Matsui H",
+      "Groenewoud S",
+      "Brouwer W",
+      "Yasunaga H"
+    ],
+    "journal": "Journal of intensive care medicine",
+    "journal_issn": "1525-1489",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-03",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.07,
+    "sjr_quartile": null,
+    "openalex_topic": "Respiratory Support and Mechanisms",
+    "openalex_topic_score": 0.934,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10322",
+        "name": "Respiratory Support and Mechanisms",
+        "score": 0.934
+      },
+      {
+        "id": "T11681",
+        "name": "Nosocomial Infections in ICU",
+        "score": 0.018
+      },
+      {
+        "id": "T11260",
+        "name": "Tracheal and airway disorders",
+        "score": 0.018
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:37.528Z",
+    "classified": true,
+    "title_ja": "日本における侵襲的人工呼吸器離脱困難の発生率と危険因子：全国後方視的コホート研究",
+    "abstract_ja": "Diagnosis Procedure Combination(DPC)データベースを用い、侵襲的人工呼吸(IMV)導入患者388,752例における人工呼吸器依存(離脱困難)の発生率と危険因子を検討した。2.0%(7,805例)が人工呼吸器依存となり、その割合は2014年の1.6%から2019年の2.4%へ増加していた。高齢、入院時の意識障害、緊急入院、IMV前の手術が人工呼吸器依存の独立した危険因子であった。"
+  },
+  {
+    "id": "pmid-42691802",
+    "pubmed_id": "42691802",
+    "doi": "10.1016/j.jamda.2026.106473",
+    "title": "Elderly Health Check-Up and Functional Disability or Death in Adults 75 to 84 Years: A Target Trial Emulation.",
+    "abstract": "To estimate the effect of initial Elderly Health Check-up (EHC) attendance on the 5-year risk of functional disability or death in community-dwelling older adults in a setting where preventing entry into long-term care (LTC) is a primary health-policy goal. Sequential target trial emulation using a population-based cohort. Community-dwelling adults aged 75 to 84 years without functional disability and without recent EHC participation, drawn from the Sukagawa Study, a population-based cohort in Sukagawa City, a rural municipality with an aging population in Fukushima Prefecture, Japan, between April 2018 and March 2021. We compared initial EHC attendance within a 3-month grace period with nonattendance. The primary outcome was a composite of incident functional disability (LTC certification at care-need level ≥3) or death over 5 years; secondary outcomes were each component, with death treated as dependent censoring for disability. Five-year risks were estimated by inverse probability-weighted pooled logistic regression with 95% CIs. The cohort included 21,484 person-trials from 3096 unique individuals (1001 EHCs, 20,483 non-EHCs). The 5-year composite risk was 20.6% (EHC) vs 26.7% (non-EHC): risk difference, -6.1 percentage points (pp; 95% CI, -11.6 to 0.9); risk ratio, 0.77 (95% CI, 0.57-1.03). Corresponding risk differences were -3.7 pps (95% CI, -10.4 to 3.9) for all-cause mortality and -5.4 pps (95% CI, -12.9 to 0.1) for functional disability alone. The evidence is uncertain about the effect of initial EHC participation on the 5-year risk of functional disability or death; the point estimate is compatible with a modest benefit, but the 95% CI included the null. These findings neither support expansion nor justify discontinuation of the EHC program for preventing entry into LTC, and call for replication in additional cohorts before policy changes are considered.",
+    "authors": [
+      "Yamamoto R",
+      "Yamazaki H",
+      "Nakagawa H",
+      "Ozaka A",
+      "Sasaki S",
+      "Shimizu S",
+      "Hamaguchi S",
+      "Fukuhara S"
+    ],
+    "journal": "Journal of the American Medical Directors Association",
+    "journal_issn": "1538-9375",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-03",
+    "analysis_methods": [
+      "ターゲットトライアルエミュレーション"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "福島県須賀川市の高齢者健診受診記録と介護保険認定データを連結したコホートデータ"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 1.98,
+    "sjr_quartile": null,
+    "openalex_topic": "Health Promotion and Cardiovascular Prevention",
+    "openalex_topic_score": 0.805,
+    "openalex_subfield": "Public Health, Environmental and Occupational Health",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T14212",
+        "name": "Health Promotion and Cardiovascular Prevention",
+        "score": 0.805
+      },
+      {
+        "id": "T11011",
+        "name": "Frailty in Older Adults",
+        "score": 0.122
+      },
+      {
+        "id": "T10397",
+        "name": "Nutrition and Health in Aging",
+        "score": 0.01
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:38.025Z",
+    "classified": true,
+    "title_ja": "後期高齢者健診受診と機能障害・死亡：ターゲットトライアルエミュレーションによる検討",
+    "abstract_ja": "福島県須賀川市の地域住民コホート(須賀川スタディ)を用い、75〜84歳における高齢者健診(EHC)受診が5年後の機能障害・死亡に与える影響をターゲットトライアルエミュレーションで推定した。EHC受診群は非受診群に比べ複合アウトカムのリスクがやや低い傾向(20.6% vs 26.7%)がみられたが、信頼区間はnullを含んでおり明確な効果は示されなかった。健診プログラムの拡大・縮小のいずれも支持する結果ではなく、追加のコホートでの再現が求められるとした。"
+  },
+  {
+    "id": "pmid-42691804",
+    "pubmed_id": "42691804",
+    "doi": "10.1016/j.jamda.2026.106481",
+    "title": "Treatment Duration of Cholinesterase Inhibitor Formulations in Alzheimer's Disease.",
+    "abstract": "To examine treatment duration of oral and transdermal cholinesterase inhibitor formulations in older adults with severe Alzheimer's disease (AD) in routine clinical practice. Retrospective population-based cohort study. Linked medical and long-term care insurance claims databases from Tochigi Prefecture, Japan, between April 2019 and October 2023. We included patients aged ≥65 years with AD who were certified at care needs level 4 or 5 (indicating complete dependence in activities of daily living) or were institutionalized under the Japanese Long-Term Care Insurance system. Patients were classified according to the initial cholinesterase inhibitor formulation: oral formulations (donepezil or galantamine) or transdermal patches (rivastigmine or donepezil). The primary outcome was duration of treatment with the initial formulation. Continuous treatment was defined using a 30-day grace period. Kaplan-Meier analysis and Cox proportional hazards models were used to compare treatment discontinuation between groups. Hospitalization and mortality were evaluated as exploratory outcomes. Among 8117 eligible patients, 6467 initiated oral formulations and 1650 initiated transdermal patches. Mean treatment duration was longer in the oral group than in the patch group (1.5 vs 0.6 years; log-rank P < .001). In adjusted Cox regression analysis, the patch group showed a higher risk of discontinuation than the oral group (hazard ratio, 11.3; 95% CI, 10.2-12.4). Hospitalization and mortality rates were lower in the oral group than in the patch group (236 vs 272 and 210 vs 272 per 1000 person-years, respectively). In older adults with severe AD, oral cholinesterase inhibitor formulations were continued substantially longer than transdermal patches. Given the limited evidence supporting prolonged cholinesterase inhibitor use in severe AD, these findings raise concerns regarding long-term prescribing practices in advanced dementia care.",
+    "authors": [
+      "Sato S",
+      "Sasabuchi Y",
+      "Yamana H",
+      "Kohro T",
+      "Yasunaga H"
+    ],
+    "journal": "Journal of the American Medical Directors Association",
+    "journal_issn": "1538-9375",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-03",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "栃木県の医療保険レセプトと介護保険レセプトを連結したデータ"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.98,
+    "sjr_quartile": null,
+    "openalex_topic": "Dementia and Cognitive Impairment Research",
+    "openalex_topic_score": 0.68,
+    "openalex_subfield": "Psychiatry and Mental health",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10009",
+        "name": "Dementia and Cognitive Impairment Research",
+        "score": 0.68
+      },
+      {
+        "id": "T10086",
+        "name": "Alzheimer's disease research and treatments",
+        "score": 0.089
+      },
+      {
+        "id": "T12023",
+        "name": "Cholinesterase and Neurodegenerative Diseases",
+        "score": 0.078
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:38.282Z",
+    "classified": true,
+    "title_ja": "アルツハイマー病におけるコリンエステラーゼ阻害薬剤形別の治療継続期間",
+    "abstract_ja": "栃木県の医療・介護保険連結レセプトデータを用い、要介護度4・5または施設入所中の重度アルツハイマー病患者8,117例について、経口薬(ドネペジル・ガランタミン)と貼付薬(リバスチグミン・ドネペジル)の治療継続期間を比較した。経口薬群は貼付薬群より治療継続期間が有意に長く(1.5年 vs 0.6年)、中止リスクも貼付薬群で高かった(ハザード比11.3)。重度アルツハイマー病における長期処方の妥当性について検討が必要と考察された。"
+  },
+  {
+    "id": "pmid-42680982",
+    "pubmed_id": "42680982",
+    "doi": "10.1007/s12928-026-01339-2",
+    "title": "In-hospital mortality after transcatheter aortic valve implantation versus surgical aortic valve replacement in maintenance hemodialysis patients: a Japanese nationwide retrospective cohort study.",
+    "abstract": "Patients with maintenance dialysis are at high risk for adverse outcomes after aortic valve replacement and have been largely excluded from major trials comparing transcatheter aortic valve implantation (TAVI) and surgical aortic valve replacement (SAVR). Comparative evidence in this population remains limited. We aimed to compare in-hospital outcomes between TAVI and SAVR in patients undergoing maintenance hemodialysis using a nationwide Japanese database. We conducted a retrospective cohort study of maintenance hemodialysis patients who underwent TAVI or SAVR between February 2021 and March 2023 using the Japanese Diagnosis Procedure Combination database. The primary outcome was in-hospital mortality. Secondary outcomes included length of hospital stay and in-hospital aortic valve reintervention. Inverse probability of treatment weighting (IPTW) was applied to adjust for baseline differences. Among 1,649 patients, 966 underwent TAVI and 683 underwent SAVR. In-hospital mortality was lower in the TAVI group than in the SAVR group (3.0% vs 5.9%). After IPTW, TAVI was associated with lower in-hospital mortality (odds ratio 0.44, 95% confidence interval 0.24-0.79). Length of hospital stay was shorter in the TAVI group (median 14.0 days) than the SAVR group (29.0 days). In-hospital aortic valve reintervention was rare. In a sensitivity analysis restricted to hospitals performing both procedures, the association favored TAVI but was attenuated (OR 0.75, 95% CI 0.34-1.65). In patients receiving maintenance hemodialysis, TAVI was associated with lower in-hospital mortality and shorter hospital stay compared with SAVR.",
+    "authors": [
+      "Mima MH",
+      "Morishita T",
+      "Takada D",
+      "Itoshima H",
+      "Kunisawa S",
+      "Yoshimura K",
+      "Imanaka Y"
+    ],
+    "journal": "Cardiovascular intervention and therapeutics",
+    "journal_issn": "1868-4297",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-02",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 2.69,
+    "sjr_quartile": null,
+    "openalex_topic": "Cardiac Valve Diseases and Treatments",
+    "openalex_topic_score": 0.991,
+    "openalex_subfield": "Cardiology and Cardiovascular Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10172",
+        "name": "Cardiac Valve Diseases and Treatments",
+        "score": 0.991
+      },
+      {
+        "id": "T10618",
+        "name": "Aortic Disease and Treatment Approaches",
+        "score": 0.002
+      },
+      {
+        "id": "T11551",
+        "name": "Infective Endocarditis Diagnosis and Management",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:35.439Z",
+    "classified": true,
+    "title_ja": "血液透析患者における経カテーテル大動脈弁留置術と外科的大動脈弁置換術の院内死亡率比較：日本全国後方視的コホート研究",
+    "abstract_ja": "Diagnosis Procedure Combination(DPC)データベースを用い、維持血液透析患者1,649例における経カテーテル大動脈弁留置術(TAVI)と外科的大動脈弁置換術(SAVR)の院内転帰を比較した。逆確率重み付け(IPTW)による調整後もTAVI群は院内死亡率が低く(オッズ比0.44)、入院期間も短かった(中央値14日 vs 29日)。血液透析患者においてTAVIがSAVRより良好な院内転帰と関連することが示された。"
+  },
+  {
+    "id": "pmid-42682907",
+    "pubmed_id": "42682907",
+    "doi": "10.1002/joa3.70408",
+    "title": "Nationwide Lifespan Trends in Cardiac Implantable Electronic Device Strategies in Japan: Age-Dependent Changes in Transvenous and Epicardial Systems.",
+    "abstract": "Nationwide epidemiological studies of cardiac implantable electronic devices (CIEDs) encompassing multiple device types and strategies remain limited in Japan, particularly regarding epicardial lead use and pediatric populations. We performed the first nationwide analysis of CIED implantation trends using the National Database of Health Insurance Claims, including transvenous (TV)/epicardial (Epi) systems for pacemakers, implantable cardioverter-defibrillators (ICDs), cardiac resynchronization therapy (CRT), and CRT-defibrillators (CRTDs), as well as leadless pacemakers, subcutaneous ICDs (S-ICDs), and epicardial lead use. Epicardial lead and pediatric characteristics were supplemented using industry data. In fiscal year 2023, implantation rates per 100 000 population were 29.69 for TV-pacemakers, 7.06 for leadless pacemakers, 2.42 for TV-ICDs, 0.889 for S-ICDs, 1.20 for TV-CRT, and 1.69 for TV-CRTDs. Rates for epicardial systems were lower, at 0.173 for Epi-pacemakers, 0-0.007 for Epi-ICDs, 0.024 for Epi-CRT, and 0.027 for Epi-CRTDs, while epicardial lead use was 0.545. S-ICD use increased across age groups, whereas TV-ICD implantation declined (all p < 0.001). Implantation of TV and leadless pacemakers, TV-CRT, and TV-CRTDs increased over time (all p < 0.001). Epicardial lead use showed a bimodal age distribution, peaking in pediatric and elderly populations, and declined in older adults while remaining stable in children and adults aged 20-49 years (p < 0.001). Pediatric CIED volumes were low, with several ICD, CRT, and CRTD procedures annually. CIED strategies in Japan demonstrate age-dependent variation. Epicardial systems remain indispensable in pediatric and congenital heart disease care, whereas alternative technologies are increasingly adopted in older adult populations, reflecting evolving lifespan-related device strategies.",
+    "authors": [
+      "Miyazaki A",
+      "Izumi G",
+      "Fujita S",
+      "Suzuki T",
+      "Suzuki H",
+      "Yoshimoto J",
+      "Toyohara K",
+      "Hayabuchi Y",
+      "Takagi M"
+    ],
+    "journal": "Journal of arrhythmia",
+    "journal_issn": "1880-4276",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-02",
+    "analysis_methods": [],
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.45,
+    "sjr_quartile": null,
+    "openalex_topic": "Cardiac pacing and defibrillation studies",
+    "openalex_topic_score": 0.996,
+    "openalex_subfield": "Cardiology and Cardiovascular Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10598",
+        "name": "Cardiac pacing and defibrillation studies",
+        "score": 0.996
+      },
+      {
+        "id": "T10675",
+        "name": "Mechanical Circulatory Support Devices",
+        "score": 0.001
+      },
+      {
+        "id": "T10217",
+        "name": "Cardiac electrophysiology and arrhythmias",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:35.937Z",
+    "classified": true,
+    "title_ja": "日本における心臓植込み型電気デバイス戦略の全世代における推移：経静脈式・心外膜式システムの年齢依存的変化",
+    "abstract_ja": "全国医療保険レセプトデータベース(NDB)を用い、ペースメーカ・植込み型除細動器(ICD)・心臓再同期療法(CRT)等の植込み件数の推移を解析した。2023年度の人口10万人あたりの実施率は経静脈式ペースメーカ29.69件、リードレスペースメーカ7.06件などで、皮下植込み型除細動器(S-ICD)の使用は年齢層を問わず増加していた。心外膜式システムは小児・先天性心疾患患者において依然として重要な位置を占めていることが示された。"
+  },
+  {
+    "id": "pmid-42686520",
+    "pubmed_id": "42686520",
+    "doi": "10.7888/juoeh.48.151",
+    "title": "Comparison of Perioperative Complications of Early-Stage Endometrial Cancer Between Laparotomy, Laparoscopic, and Robotic-assisted Surgery using DPC Data: A Retrospective Cohort Study in Japan.",
+    "abstract": "Early-stage endometrial cancer can be cured surgically using three techniques: laparotomy, laparoscopic surgery, and robotic-assisted surgery. In this retrospective study, we used 4 years of data from the Japanese Diagnosis Procedure Combination to analyze perioperative sequelae for each surgical procedure. Patients with early-stage endometrial cancer were classified into three groups: laparotomy, laparoscopic surgery, and robotic-assisted surgery. The number of robotic-assisted surgeries is increasing, but hospitals with low surgical volumes performed laparotomy at a rate of 57.6%, while hospitals with higher surgical volume tended to perform fewer laparotomies and more laparoscopic and robotic-assisted surgeries. Compared with the laparotomy group, the in-hospital risk ratios and 95% confidence intervals for postoperative sequelae were 0.28 (0.18-0.44) and 0.39 (0.23-0.69) in the laparoscopic and robotic-assisted surgery groups, respectively (P = 0.001 for all). Regarding blood transfusion treatment, the incidence rate ratios were lower for laparoscopic and robotic-assisted surgery than for laparotomy (P < 0.001 for all), even after multivariable analysis. In conclusion, in early-stage endometrial cancer, laparotomy had the highest incidence of perioperative sequelae compared to laparoscopic surgery and robotic-assisted surgery.",
+    "authors": [
+      "Aoyama Y",
+      "Watanabe F",
+      "Tokutsu K",
+      "Kinjo Y",
+      "Muramatsu K",
+      "Okawara M",
+      "Kurita T",
+      "Yoshino K",
+      "Fushimi K",
+      "Matsuda S"
+    ],
+    "journal": "Journal of UOEH",
+    "journal_issn": "0387-821X",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-02",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 0.82,
+    "sjr_quartile": null,
+    "openalex_topic": "Endometrial and Cervical Cancer Treatments",
+    "openalex_topic_score": 0.828,
+    "openalex_subfield": "Obstetrics and Gynecology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10668",
+        "name": "Endometrial and Cervical Cancer Treatments",
+        "score": 0.828
+      },
+      {
+        "id": "T10916",
+        "name": "Surgical Simulation and Training",
+        "score": 0.059
+      },
+      {
+        "id": "T12053",
+        "name": "Minimally Invasive Surgical Techniques",
+        "score": 0.028
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:36.443Z",
+    "classified": true,
+    "title_ja": "早期子宮内膜癌における開腹・腹腔鏡・ロボット支援手術の周術期合併症比較：DPCデータを用いた後方視的コホート研究",
+    "abstract_ja": "Diagnosis Procedure Combination(DPC)データを用い、早期子宮内膜癌に対する開腹・腹腔鏡・ロボット支援手術の周術期合併症を比較した。手術症例数の少ない施設では開腹手術の割合が高く(57.6%)、腹腔鏡・ロボット支援手術は開腹手術に比べ周術期合併症のリスク比が有意に低かった(それぞれ0.28、0.39)。多変量解析後も腹腔鏡・ロボット支援手術群で輸血率が低いという結果が得られた。"
+  },
+  {
+    "id": "pmid-42678650",
+    "pubmed_id": "42678650",
+    "doi": "10.1007/s10384-026-01416-2",
+    "title": "Nationwide patterns of cataract surgery in Japan: facility-level volume and outpatient versus inpatient procedures using the National Database of Health Insurance Claims (NDB).",
+    "abstract": "Cataract surgery is among the most commonly performed types of surgery in Japan, but the actual surgical volume at the healthcare facility level remains unclear. This is partly because a substantial number of cataract surgical procedures are performed in clinics, making comprehensive investigation of relevant data difficult. This study used the National Database of Health Insurance Claims (NDB) to elucidate the number of surgical procedures, including outpatient procedures, performed at the facility level. Retrospective observational study. Using NDB data, we determined the number of cataract surgical procedures performed at the facility level over a 9-year period (fiscal years 2016-2024). We also analyzed the proportion of procedures performed in outpatient settings. Approximately 4,500 facilities performed cataract surgery each year, with the number of facilities increasing. Although variations were observed across prefectures, no systematic regional patterns emerged. In most regions, facilities typically performed 100-300 procedures per year. Many facilities operate entirely at outpatient settings, while others operate entirely at inpatient settings. Facility-level outpatient practice patterns varied substantially across procedure-volume categories. This descriptive pattern was observed across the 9-year period. These nationwide facility-level data provide an important baseline for understanding cataract surgery practice in Japan. These findings may support future research and health policy discussions on cataract surgery practice across healthcare facilities.",
+    "authors": [
+      "Kunisawa S",
+      "Imanaka Y"
+    ],
+    "journal": "Japanese journal of ophthalmology",
+    "journal_issn": "1613-2246",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-01",
+    "analysis_methods": [],
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.28,
+    "sjr_quartile": null,
+    "openalex_topic": "Ophthalmology and Visual Impairment Studies",
+    "openalex_topic_score": 0.636,
+    "openalex_subfield": "Epidemiology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10381",
+        "name": "Ophthalmology and Visual Impairment Studies",
+        "score": 0.636
+      },
+      {
+        "id": "T11826",
+        "name": "Ocular Infections and Treatments",
+        "score": 0.129
+      },
+      {
+        "id": "T11480",
+        "name": "Connexins and lens biology",
+        "score": 0.103
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:34.933Z",
+    "classified": true,
+    "title_ja": "日本における白内障手術の全国的動向：施設別実施件数と外来・入院比率(NDBデータ)",
+    "abstract_ja": "全国医療保険レセプトデータベース(NDB)を用い、2016〜2024年度の白内障手術について施設単位での実施件数と外来・入院比率を分析した。毎年約4,500施設で白内障手術が行われており施設数は増加傾向にあった。地域差はみられたが系統的な傾向は認められず、施設によって外来のみ・入院のみで運用する傾向が明確に分かれていた。"
+  },
+  {
+    "id": "pmid-42670510",
+    "pubmed_id": "42670510",
+    "doi": "10.35772/ghm.2026.01027",
+    "title": "Laparoscopic liver resection for patients with intrahepatic cholangiocarcinoma using data from the Japanese National Database: A nationwide observational study.",
+    "abstract": "Since 2011, the Ministry of Health, Labour and Welfare (MHLW) has made the data from the National Database of Health Insurance Claims and Specific Health Checkups of Japan (NDB) available for research purposes. Recent trends in treatments and prognosis for intrahepatic cholangiocarcinoma (ICC) were analyzed using data from this comprehensive database. This repeated cross-sectional study employed NDB open data to determine the number of patients with ICC and those treated for ICC from fiscal years (FY) 2016 to 2020. The International Classification of Diseases version 10 (ICD-10) code of C22.1 (ICC) was used to define ICC patients. The number of patients diagnosed with ICC and treated in Japan did not change during the study period (FY2016: 1,119; FY2017: 1,136; FY2018: 1,213; FY2019: 1,185; FY2020: 1,194). The number of patients who underwent open liver resection (OLR) did not change either (FY2016: 748; FY2017: 771; FY2018: 807; FY2019: 760; FY2020: 753). On the other hand, patients who underwent laparoscopic liver resection (LLR) increased during the study period (FY2016: 84; FY2017: 118; FY2018: 143; FY2019: 171; FY2020: 195). This was primarily due to the increase in the number of patients who received laparoscopic liver resection larger than subsegmentectomy (FY2016, 57; FY2017, 81; FY2018, 98; FY2019, 101; FY2020, 133). The median postoperative survival was 5.25 years in the OLR group and was not reached in the LLR group. The national database analysis revealed that while the number of patients diagnosed with and treated for ICC has remained stable, the adoption of minimally invasive surgery has increased, possibly because of advancements in treatment techniques, resulting in good survival outcomes.",
+    "authors": [
+      "Kokudo T",
+      "Yamada Y",
+      "Sugiyama T",
+      "Mihara Y",
+      "Nakamura M",
+      "Goto R",
+      "Kokudo N"
+    ],
+    "journal": "Global health & medicine",
+    "journal_issn": "2434-9194",
+    "entrez_year": 2026,
+    "entrez_date": "2026-08-31",
+    "analysis_methods": [],
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 1.86,
+    "sjr_quartile": null,
+    "openalex_topic": "Cholangiocarcinoma and Gallbladder Cancer Studies",
+    "openalex_topic_score": 0.897,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11364",
+        "name": "Cholangiocarcinoma and Gallbladder Cancer Studies",
+        "score": 0.897
+      },
+      {
+        "id": "T10518",
+        "name": "Gallbladder and Bile Duct Disorders",
+        "score": 0.016
+      },
+      {
+        "id": "T10696",
+        "name": "Gastric Cancer Management and Outcomes",
+        "score": 0.015
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:32.431Z",
+    "classified": true,
+    "title_ja": "肝内胆管癌に対する腹腔鏡下肝切除：日本の全国データベースを用いた全国観察研究",
+    "abstract_ja": "NDBオープンデータを用い、2016〜2020年度の肝内胆管癌(ICC)に対する開腹肝切除(OLR)・腹腔鏡下肝切除(LLR)の実施件数の推移を検討した。ICCと診断・治療された患者数はほぼ横ばいだった一方、LLRの実施件数は年々増加していた(2016年84件→2020年195件)。術後生存期間の中央値はOLR群で5.25年、LLR群では未到達であり、低侵襲手術の普及とともに良好な生存転帰が示唆された。"
+  },
+  {
+    "id": "pmid-42670698",
+    "pubmed_id": "42670698",
+    "doi": "10.5414/CP204966",
+    "title": "Treatment patterns and reoperation rates in periprosthetic joint infection identified 1 - 6 months after arthroplasty in Japan: A descriptive analysis using nationwide claims data.",
+    "abstract": "To describe the treatment patterns and reoperation rates after claims-defined postoperative periprosthetic joint infection (PJI) identified 1 - 6 months after total knee or hip arthroplasty using a Japanese nationwide claims database. Patients who underwent total knee or hip arthroplasty between 2005 and 2017 were identified. Claims-defined postoperative PJI was operationally defined as infection-related claims accompanied by systemic antibacterial treatment in 1 - 6 months after arthroplasty. The agents targeting methicillin-resistant Staphylococcus aureus (MRSA) included vancomycin, daptomycin, linezolid, and teicoplanin. The primary outcome was reoperation after claims-defined postoperative PJI. Among the 2,805 patients, 59 (2.1%) developed postoperative PJI 1 - 6 months after arthroplasty. Of these, 8 underwent immediate surgical intervention, and the remaining 51 patients were initially managed with antibiotic treatment without surgical intervention. Of these, 12 received anti-MRSA agents and 39 received non-MRSA agents. Reoperation was performed in 3 of 12 (25.0%) patients who received anti-MRSA agents and 6 of 39 (15.4%) patients who did not receive anti-MRSA agents. Among the patients treated with anti-MRSA agents, 11 of 12 (91.7%) required second- or third-line therapy. Diabetes mellitus was present in 66.7% and 83.3% of the reoperated patients who received and did not receive anti-MRSA agents, respectively; liver disease was observed in 66.7% and 16.7% of the patients, respectively. This claims-based descriptive analysis indicated that treatment escalation and reoperation were observed after claims-defined postoperative PJI identified 1 - 6 months after arthroplasty. Because pathogen data were unavailable and receipt of anti-MRSA agents was used as a treatment-based classification, these findings should be interpreted as descriptive treatment-pattern data rather than microbiologically confirmed comparisons.",
+    "authors": [
+      "Someya R",
+      "Takata K",
+      "Uchikura T",
+      "Oshita Y",
+      "Momo K"
+    ],
+    "journal": "International journal of clinical pharmacology and therapeutics",
+    "journal_issn": "0946-1965",
+    "entrez_year": 2026,
+    "entrez_date": "2026-08-31",
+    "analysis_methods": [],
+    "databases_used": [],
+    "additional_data_sources": [
+      "全国規模の医療レセプトデータベース（データベース名不明）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "安全性・副作用"
+    ],
+    "impact_factor": 0.81,
+    "sjr_quartile": null,
+    "openalex_topic": "Orthopedic Infections and Treatments",
+    "openalex_topic_score": 0.964,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11293",
+        "name": "Orthopedic Infections and Treatments",
+        "score": 0.964
+      },
+      {
+        "id": "T10512",
+        "name": "Orthopaedic implants and arthroplasty",
+        "score": 0.015
+      },
+      {
+        "id": "T10562",
+        "name": "Total Knee Arthroplasty Outcomes",
+        "score": 0.011
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:32.933Z",
+    "classified": true,
+    "title_ja": "人工関節置換術後1〜6か月に発症した人工関節周囲感染症の治療パターンと再手術率：日本の全国レセプトデータを用いた記述的解析",
+    "abstract_ja": "日本の全国規模レセプトデータを用い、2005〜2017年に人工膝関節・股関節置換術を受けた患者のうち、術後1〜6か月にレセプト上定義された人工関節周囲感染症(PJI)を発症した59例の治療パターンと再手術率を記述した。多くは手術を伴わず抗菌薬治療から開始され、抗MRSA薬使用群では再手術率が高い傾向(25.0% vs 15.4%)がみられた。病原体データがないため、微生物学的な確定診断ではなくレセプトに基づく治療パターンの記述として解釈すべきとしている。"
+  },
+  {
+    "id": "pmid-42671685",
+    "pubmed_id": "42671685",
+    "doi": "10.1007/s10388-026-01248-6",
+    "title": "Real-world trends in radiotherapy modalities for esophageal cancer: analysis of a nationwide claims database in Japan.",
+    "abstract": "Recently, the application of Intensity-Modulated Radiotherapy (IMRT) and changes in fractionation schedules have been increasingly introduced in radiotherapy practice for esophageal cancer. However, the extent of their adoption and prevalence in real-world clinical practice remains unclear. This study aimed to describe nationwide trends in radiotherapy for esophageal cancer using a large-scale health insurance claims database. Using the DeSC database, we identified patients newly diagnosed with esophageal cancer between April 2017 and March 2023. Patients treated with definitive radiotherapy (defined as 25-35 treatment days in patients without distant metastasis) were selected. We analyzed temporal trends in radiotherapy, regional differences, and the incidence of radiation pneumonitis. Among patients with an identified initial treatment, the proportion of radiotherapy declined from 28.6% in 2017 to 19.6% in 2022. A total of 1,324 patients were included in the definitive radiotherapy group. The use of IMRT increased substantially from 10.7% in 2017 to 44.9% in 2022. Regarding fractionation, treatments of 25-28 days increased from 25.0% to 35.9%, while those of 31-35 days decreased. While CDDP/5-FU remained the dominant concurrent chemotherapy, its proportion declined as other platinum-based regimens increased. Urban facilities showed significantly higher implementation of Image-Guided Radiotherapy (IGRT) compared with rural facilities. The cumulative incidence of hospitalization for radiation pneumonitis at 12 months was 1.5%. The cumulative incidence was not significantly altered by IMRT use (sHR: 0.32, p = 0.13), whereas it was lower in patients receiving IGRT (sHR: 0.39, p = 0.04). This nationwide study demonstrated increased use of advanced techniques including IMRT and IGRT, and shorter fractionation schedules in radiotherapy for esophageal cancer in Japanese clinical practice.",
+    "authors": [
+      "Takeda K",
+      "Okuda S",
+      "Umezawa R",
+      "Yamamoto T",
+      "Takahashi N",
+      "Onishi H",
+      "Jingu K"
+    ],
+    "journal": "Esophagus : official journal of the Japan Esophageal Society",
+    "journal_issn": "1612-9067",
+    "entrez_year": 2026,
+    "entrez_date": "2026-08-31",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "DeSC Healthcare"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.32,
+    "sjr_quartile": null,
+    "openalex_topic": "Esophageal Cancer Research and Treatment",
+    "openalex_topic_score": 0.978,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10619",
+        "name": "Esophageal Cancer Research and Treatment",
+        "score": 0.978
+      },
+      {
+        "id": "T13123",
+        "name": "Advances in Oncology and Radiotherapy",
+        "score": 0.007
+      },
+      {
+        "id": "T11359",
+        "name": "Effects of Radiation Exposure",
+        "score": 0.004
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:33.443Z",
+    "classified": true,
+    "title_ja": "食道癌に対する放射線治療法の実態：日本の全国レセプトデータベースを用いた解析",
+    "abstract_ja": "DeSCデータベースを用い、2017〜2023年に食道癌と診断され根治的放射線治療を受けた患者1,324例における治療法の推移を解析した。強度変調放射線治療(IMRT)の実施割合は2017年の10.7%から2022年には44.9%まで増加し、分割回数の短縮も進んでいた。放射線肺臓炎による入院の12か月時点の累積発生率は1.5%で、画像誘導放射線治療(IGRT)の実施群でより低い傾向がみられた。"
+  },
+  {
+    "id": "pmid-42675147",
+    "pubmed_id": "42675147",
+    "doi": "10.1038/s41440-026-02781-8",
+    "title": "Body mass index modifies cardiovascular risk across blood pressure categories, particularly among underweight adults with hypertension: a 6.3 million‑person nationwide Japanese cohort study.",
+    "abstract": "Co-occurring obesity and hypertension is associated with high cardiovascular risk, whereas the prognostic significance of underweight in the presence of hypertension remains uncertain. We examined whether the association between body mass index category and 10-year risk of major adverse cardiovascular events differed across blood pressure categories. Using the Japan Medical Claims Database from 2005 to 2023, we analyzed 6,262,298 adults without prior cardiovascular disease, chronic renal failure, dialysis, or antihypertensive medication use at baseline. Blood pressure was classified as normal (<120 and <80 mmHg), high-normal (120-129 and <80 mmHg), elevated (130-139 and/or 80-89 mmHg), stage 1 hypertension (140-159 and/or 90-99 mmHg), or stage 2/3 hypertension (≥160 and/or ≥100 mmHg). Body mass index was classified as underweight (<18.5 kg/m²), normal weight (18.5-24.9), overweight (25.0-29.9), or obesity (≥30.0). The primary outcome was major adverse cardiovascular events within 10 years. Multivariable Cox proportional hazards models estimated hazard ratios for combined blood pressure and body mass index categories, using normal blood pressure with normal weight as the reference. During a median follow-up of 1,183 days, 34,034 participants experienced major adverse cardiovascular events. Underweight showed a marked blood pressure-dependent increase in risk, with the hazard ratio rising from 1.14 (95% confidence interval, 1.07-1.22) in normal blood pressure to 5.01 (4.23-5.93) in stage 2/3 hypertension. The interaction between blood pressure category and body mass index category was significant. These findings suggest that higher blood pressure may amplify the adverse prognostic significance of underweight.",
+    "authors": [
+      "Kawano T",
+      "Seki T",
+      "Araie H",
+      "Matsunaga A",
+      "Konoshita N",
+      "Yamamura O",
+      "Ikawa M"
+    ],
+    "journal": "Hypertension research : official journal of the Japanese Society of Hypertension",
+    "journal_issn": "1348-4214",
+    "entrez_year": 2026,
+    "entrez_date": "2026-08-31",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の医療レセプトデータベース（約626万人、2005〜2023年、データベース名不明）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 3.74,
+    "sjr_quartile": null,
+    "openalex_topic": "Blood Pressure and Hypertension Studies",
+    "openalex_topic_score": 0.839,
+    "openalex_subfield": "Cardiology and Cardiovascular Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10144",
+        "name": "Blood Pressure and Hypertension Studies",
+        "score": 0.839
+      },
+      {
+        "id": "T10027",
+        "name": "Diabetes, Cardiovascular Risks, and Lipoproteins",
+        "score": 0.059
+      },
+      {
+        "id": "T12075",
+        "name": "Sodium Intake and Health",
+        "score": 0.019
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:33.944Z",
+    "classified": true,
+    "title_ja": "血圧区分別に見たBMIが心血管リスクに与える影響：日本人626万人の全国コホート研究",
+    "abstract_ja": "日本の医療レセプトデータベースを用い、心血管疾患の既往がない成人626万人を対象に、BMI区分と血圧区分の組み合わせによる10年間の主要心血管イベント(MACE)リスクを検討した。低体重(BMI<18.5)は血圧が高くなるほどMACEリスクが顕著に上昇し、正常血圧でのハザード比1.14に対しII度・III度高血圧では5.01まで上昇した。血圧の上昇が低体重による予後不良のリスクを増幅させる可能性が示唆された。"
+  },
+  {
+    "id": "pmid-42675319",
+    "pubmed_id": "42675319",
+    "doi": "10.1007/s00198-026-08216-x",
+    "title": "Claims-based frailty index and risk of hospitalisation for hip fracture among adults aged 60-74 years in Tokyo, Japan.",
+    "abstract": "Among 606,449 adults aged 60-74 years, the claims-based frailty index categories predicted hospitalisation for hip fractures: beneficiaries classified as pre-frail or frail were at higher risk (hazard ratios, 2.17 and 3.50, respectively). The CFI can help identify individuals who can benefit from targeted interventions to prevent hip fractures. Although the claims-based frailty index (CFI) may aid early identification of older adults at high risk of hip fractures, little is known about the association between the CFI and the incidence of hip fractures. The aim of this study was to examine the association between the CFI and hospitalisation for hip fractures among adults aged 60-74 years in Tokyo, Japan. This retrospective cohort study used linked health checkup and medical claims data in Tokyo between April 2015 and March 2023. Beneficiaries of the National Health Insurance aged 60-74 years who underwent an annual health checkup between April 2017 and March 2018 were identified. Beneficiaries were followed up for hospitalisation for hip fractures through March 2023. Cox proportional hazards models, adjusted for Fracture Risk Assessment Tool (FRAX)-related variables, osteoporosis, and self-reported health status and habits, were used to examine the association between the CFI and hospitalisation for hip fractures. Harrell's C-statistics were compared between models with and without the CFI to assess the CFI's discriminative ability. Among 606,449 beneficiaries, 553,747 (91.3%) were classified as robust, 47,348 (7.8%) as pre-frail, and 5,354 (0.9%) as frail. Compared with beneficiaries classified as robust, the risk of hospitalisation for hip fractures was higher in those classified as pre-frail (HR 2.17; 95% CI 1.87-2.51) and frail (HR 3.50; 95% CI 2.62-4.69). The CFI modestly improved discrimination beyond FRAX-related variates. The CFI can help identify individuals who may benefit from targeted interventions to prevent hip fractures.",
+    "authors": [
+      "Mitsutake S",
+      "Hirata T"
+    ],
+    "journal": "Osteoporosis international : a journal established as result of cooperation between the European Foundation for Osteoporosis and the National Osteoporosis Foundation of the USA",
+    "journal_issn": "1433-2965",
+    "entrez_year": 2026,
+    "entrez_date": "2026-08-31",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "東京都の健診データと医療保険レセプトを連結したデータ"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 3.65,
+    "sjr_quartile": null,
+    "openalex_topic": "Frailty in Older Adults",
+    "openalex_topic_score": 0.802,
+    "openalex_subfield": "Geriatrics and Gerontology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11011",
+        "name": "Frailty in Older Adults",
+        "score": 0.802
+      },
+      {
+        "id": "T11509",
+        "name": "Hip and Femur Fractures",
+        "score": 0.112
+      },
+      {
+        "id": "T10397",
+        "name": "Nutrition and Health in Aging",
+        "score": 0.018
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-07T00:06:34.433Z",
+    "classified": true,
+    "title_ja": "東京都における60〜74歳成人のレセプトベース・フレイルティ指数と大腿骨近位部骨折入院リスク",
+    "abstract_ja": "東京都の健診・レセプト連結データを用い、60〜74歳の国民健康保険加入者606,449人を対象にレセプトベース・フレイルティ指数(CFI)と大腿骨近位部骨折による入院リスクの関連を検討した。プレフレイル群・フレイル群は健常群に比べ骨折リスクがそれぞれ2.17倍・3.50倍高かった。CFIはFRAX関連因子に上乗せしてわずかに予測精度を改善し、骨折予防の対象者選定に有用である可能性が示された。"
+  },
+  {
     "id": "pmid-42669179",
     "pubmed_id": "42669179",
     "doi": "10.1080/03007995.2026.2722388",
@@ -28,11 +1118,27 @@
     ],
     "impact_factor": 3.01,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Allergic Rhinitis and Sensitization",
+    "openalex_topic_score": 0.985,
+    "openalex_subfield": "Immunology and Allergy",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10877",
+        "name": "Allergic Rhinitis and Sensitization",
+        "score": 0.985
+      },
+      {
+        "id": "T10837",
+        "name": "Dermatology and Skin Diseases",
+        "score": 0.003
+      },
+      {
+        "id": "T10997",
+        "name": "Ocular Surface and Contact Lens",
+        "score": 0.002
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-08-31T00:07:43.357Z",
     "classified": true,
@@ -193,11 +1299,27 @@
     ],
     "impact_factor": 2.46,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Antibiotics Pharmacokinetics and Efficacy",
+    "openalex_topic_score": 0.583,
+    "openalex_subfield": "Pharmacology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11036",
+        "name": "Antibiotics Pharmacokinetics and Efficacy",
+        "score": 0.583
+      },
+      {
+        "id": "T10147",
+        "name": "Antibiotic Resistance in Bacteria",
+        "score": 0.204
+      },
+      {
+        "id": "T10897",
+        "name": "Antibiotic Use and Resistance",
+        "score": 0.128
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-08-31T00:07:42.815Z",
     "classified": true,
