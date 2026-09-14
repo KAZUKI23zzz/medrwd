@@ -1,5 +1,635 @@
 [
   {
+    "id": "pmid-42728860",
+    "pubmed_id": "42728860",
+    "doi": "10.1002/epd2.70399",
+    "title": "Risk of hostility and aggression with perampanel monotherapy versus combination therapy in pediatric epilepsy: A Japanese post-marketing database study using a nested case-control design.",
+    "abstract": "To compare the incidence of hostility- and aggression-related adverse events in children with focal-onset seizures (FOS), with or without focal to bilateral tonic-clonic seizures (FBTCS), receiving perampanel as monotherapy or in combination with other antiseizure medications (ASMs). This analysis used a real-world Japanese database integrating claims data, electronic medical records, and Diagnosis Procedure Combination data, alongside study-specific physician-reported outcomes. Children aged 4-11 years treated with perampanel for FOS with or without FBTCS were included. Using a nested case-control design, analyses adjusted for baseline covariates were conducted to compare the incidence of hostility- and aggression-related adverse events in children treated with perampanel as monotherapy vs. combination therapy with other ASMs. Among 158 prospectively collected patients included in the primary analysis set, 10 (6.3%) experienced 14 hostility- and aggression-related adverse events, including irritability (n = 5), aggression (n = 5), anger (n = 2), anxiety (n = 1), and hallucinations (n = 1). There were no significant differences in the risk of hostility or aggression between patients receiving perampanel as monotherapy or in combination with other ASMs. Secondary and sensitivity analyses confirmed the robustness of these findings. The safety profile of perampanel in routine pediatric practice was consistent with prior clinical trial data. The potential for hostility- and aggression-related adverse events warrants caution, but rates did not differ between perampanel as monotherapy vs. in combination with other ASMs. This study also demonstrated the feasibility of integrating physician-reported outcomes into post-marketing surveillance using a real-world database, providing detailed insights beyond standard medical information.",
+    "authors": [
+      "Takahashi Y",
+      "Takeuchi M",
+      "Yoshimura A",
+      "Daidoji K",
+      "Matsutani K",
+      "Ishii M"
+    ],
+    "journal": "Epileptic disorders : international epilepsy journal with videotape",
+    "journal_issn": "1950-6945",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-12",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "レセプト・電子カルテ・DPCデータを統合した市販後調査データベースと医師報告アウトカム"
+    ],
+    "study_design": "症例対照研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.06,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-09-14T00:06:35.029Z",
+    "classified": true,
+    "title_ja": "小児てんかんにおけるペランパネル単剤療法と併用療法の敵意・攻撃性リスク：市販後データベースを用いたネステッド症例対照研究",
+    "abstract_ja": "日本のレセプト・電子カルテ・DPCデータを統合した市販後調査データベースを用い、局所発作を有する小児てんかん患者へのペランパネル単剤療法と併用療法における敵意・攻撃性関連有害事象の発現率を比較した。158例中10例（6.3%）に易刺激性・攻撃性などの有害事象がみられたが、単剤療法と併用療法の間にリスクの有意差は認められなかった。市販後調査に医師報告アウトカムを組み込む手法の実行可能性も示された。"
+  },
+  {
+    "id": "pmid-42730259",
+    "pubmed_id": "42730259",
+    "doi": "10.1093/haschl/qxag227",
+    "title": "Primary care physician characteristics and potentially inappropriate medications in older adults.",
+    "abstract": "Potentially inappropriate medications (PIMs) are a growing public health concern. While research in North America suggests physician characteristics were associated with PIM prescription, their generalizability to other countries remains understudied. We conducted a cross-sectional study using a nationwide electronic health record database of primary care clinics in Japan. We analyzed patients aged ≥75 years who visited solo-practice physicians at least quarterly during October 2022 to September 2023. Multivariable logistic regression, adjusted for patient characteristics, was used to examine the association between physician characteristics and PIM prescriptions, defined as at least one medication listed in the Screening Tool for Older Person's Appropriate Prescriptions for Japanese for ≥28 days. Among 184 097 patients treated by 1532 physicians, 70 319 (38.2%) received at least one PIM. Approximately two-thirds of PIM prescriptions were concentrated among 20% of the physicians. Younger physicians (adjusted odds ratio [aOR], 1.27; 95% CI, 1.05-1.55), physicians with lower volumes of older patients (aOR, 1.39; 95% CI, 1.19-1.61), and physicians in eastern or central Japan were more likely to prescribe PIMs. PIM prescriptions were common and concentrated among a subset of physicians, particularly younger and less experienced physicians. Targeted interventions among high prescribers may reduce PIM efficiently.",
+    "authors": [
+      "Tatsuno Y",
+      "Sarkisian CA",
+      "Mafi JN",
+      "Kitajima K",
+      "Sato D",
+      "Tsugawa Y",
+      "Miyawaki A"
+    ],
+    "journal": "Health affairs scholar",
+    "journal_issn": "2976-5390",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-12",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本のプライマリケア診療所の全国電子カルテデータベース"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 2.32,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-09-14T00:06:35.537Z",
+    "classified": true,
+    "title_ja": "高齢者への潜在的に不適切な処方と主治医の特性：日本のプライマリケア電子カルテデータベース研究",
+    "abstract_ja": "日本の全国プライマリケア電子カルテデータベースを用い、75歳以上の患者184,097人・医師1,532人を対象に、医師の特性と潜在的不適切処方(PIM)の関連を多変量ロジスティック回帰で検討した。38.2%の患者が少なくとも1つのPIMを処方されており、若い医師や高齢患者の診療量が少ない医師でPIM処方が多い傾向が見られた。PIM処方は一部の医師に偏っており、標的を絞った介入の必要性が示唆された。"
+  },
+  {
+    "id": "pmid-42722913",
+    "pubmed_id": "42722913",
+    "doi": "10.1007/s00464-026-13351-x",
+    "title": "Robot-assisted colectomy is associated with improved perioperative outcomes and favorable survival in stage I-III colon cancer: a nationwide overlap-weighted analysis.",
+    "abstract": "Robot-assisted colectomy has been increasingly adopted for colon cancer because of its technical advantages; however, evidence regarding its short- and survival oncological outcomes remains limited. The aim of this study was to compare short- and survival outcomes among open, laparoscopic, and robot-assisted colectomy (OC, LC, and RAC) for stage I-III colon cancer using a large real-world database. This multicenter retrospective cohort study analyzed 43,540 patients with clinical stage I-III colon cancer who underwent colectomy between April 2022 and September 2025 using the Japanese Medical Data Vision database. To adjust for baseline differences across surgical approaches, overlap weighting was applied, yielding an effective sample size of 34,236 patients. Primary outcomes included postoperative complications, perioperative mortality, length of hospital stay, and hospitalization costs. Secondary outcomes were overall survival (OS) and recurrence-free survival (RFS). After overlap weighting, 3,694 patients underwent RAC, 25,975 underwent LC, and 4,567 underwent OC. The RAC group demonstrated the lowest rates of postoperative complications, intraoperative blood transfusion, and 30- and 90-day mortality, as well as the shortest hospital stay and lowest hospitalization costs. The 3-year OS rates were 95, 94, and 90% in the RAC, LC, and OC groups, respectively (p < 0.001), with corresponding RFS rates of 94, 92, and 88%. Compared with LC and OC, RAC for stage I-III colon cancer was associated with favorable short-term outcomes and survival profiles. Prospective studies with longer follow-up are warranted to clarify its survival oncological impact.",
+    "authors": [
+      "Yamazaki N",
+      "Hanaoka M",
+      "Yamauchi S",
+      "Kagawa H",
+      "Lin PL",
+      "Shin M",
+      "Kinugasa Y"
+    ],
+    "journal": "Surgical endoscopy",
+    "journal_issn": "1432-2218",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-11",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.16,
+    "sjr_quartile": null,
+    "openalex_topic": "Colorectal Cancer Surgical Treatments",
+    "openalex_topic_score": 0.646,
+    "openalex_subfield": "Oncology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10335",
+        "name": "Colorectal Cancer Surgical Treatments",
+        "score": 0.646
+      },
+      {
+        "id": "T10552",
+        "name": "Colorectal Cancer Screening and Detection",
+        "score": 0.108
+      },
+      {
+        "id": "T12518",
+        "name": "Diverticular Disease and Complications",
+        "score": 0.039
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-14T00:06:32.034Z",
+    "classified": true,
+    "title_ja": "ステージI-III大腸癌に対するロボット支援結腸切除術の周術期成績と生存：全国規模のオーバーラップ重み付け解析",
+    "abstract_ja": "Medical Data Visionデータベースを用い、2022〜2025年にステージI-III大腸癌で結腸切除術を受けた43,540例を対象に、開腹・腹腔鏡・ロボット支援手術を比較した多施設後方視的コホート研究。オーバーラップ重み付け後、ロボット支援群は術後合併症・術後死亡率が最も低く、在院日数・入院費用も最小であった。3年生存率・無再発生存率もロボット支援群で最も良好であった。"
+  },
+  {
+    "id": "pmid-42725709",
+    "pubmed_id": "42725709",
+    "doi": "10.1080/14796694.2026.2727324",
+    "title": "Treatment patterns after first-line abemaciclib therapy in patients with HR+, HER2- metastatic breast cancer in Japan.",
+    "abstract": "To determine treatment patterns following first-line abemaciclib therapy in patients with hormone receptor-positive, human epidermal growth factor receptor 2-negative (HR+, HER2-) metastatic breast cancer in Japan. This retrospective observational study used a Japanese administrative claims database to identify patients with HR+, HER2- metastatic breast cancer who received first-line abemaciclib between November 2018 and March 2024. Patient characteristics and treatment patterns were summarized. Time to treatment discontinuation (TTD) was estimated by Kaplan-Meier analysis. Among 3057 patients who received first-line abemaciclib, 520 received a second-line cyclin-dependent kinase 4/6 inhibitor (CDK4/6i) (244 received abemaciclib and 276 received palbociclib) and 248 received endocrine monotherapy. Patients who received first-line abemaciclib plus a nonsteroidal aromatase inhibitor (NSAI) and second-line CDK4/6i had numerically longer median overall TTD (53.0 months) than those who received other second-line regimens (45.5 months). Patients who received first-line abemaciclib plus NSAI and second-line abemaciclib plus fulvestrant had numerically longer median second-line TTD (7.5 months) than those who received second-line fulvestrant monotherapy (4.0 months). Abemaciclib as both first- and second-line therapy was associated with sustained treatment duration in Japanese patients. Particularly, first-line abemaciclib plus NSAI followed by second-line abemaciclib plus fulvestrant may be a clinically meaningful treatment option.",
+    "authors": [
+      "Naito Y",
+      "Aruga T",
+      "Tanizawa Y",
+      "Terasawa T",
+      "Kawaguchi T",
+      "Takano T"
+    ],
+    "journal": "Future oncology (London, England)",
+    "journal_issn": "1744-8301",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-11",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の医療費請求データベース（具体的名称不明）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.83,
+    "sjr_quartile": null,
+    "openalex_topic": "Advanced Breast Cancer Therapies",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T12829",
+        "name": "Advanced Breast Cancer Therapies",
+        "score": 0.999
+      },
+      {
+        "id": "T10583",
+        "name": "Cancer-related Molecular Pathways",
+        "score": 0
+      },
+      {
+        "id": "T10755",
+        "name": "HER2/EGFR in Cancer Research",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-14T00:06:33.026Z",
+    "classified": true,
+    "title_ja": "日本におけるHR陽性HER2陰性転移性乳癌に対する一次治療アベマシクリブ後の治療パターン",
+    "abstract_ja": "日本の医療費請求データベースを用い、一次治療としてアベマシクリブを投与されたHR陽性HER2陰性転移性乳癌患者3,057例の二次治療パターンを解析した後方視的観察研究。一次治療でアベマシクリブ＋非ステロイド性アロマターゼ阻害薬、二次治療でアベマシクリブ＋フルベストラントを用いた群で治療継続期間が最も長かった。CDK4/6阻害薬による一次・二次治療の連続投与が長期の治療継続と関連することが示された。"
+  },
+  {
+    "id": "pmid-42725820",
+    "pubmed_id": "42725820",
+    "doi": "10.1097/PCC.0000000000004057",
+    "title": "Survival in Extracorporeal Cardiopulmonary Resuscitation for Pediatric In-Hospital Cardiac Arrest: Nationwide Cohort Study in Japan, 2011-2022.",
+    "abstract": "To describe the rate, characteristics, and outcomes of pediatric extracorporeal cardiopulmonary resuscitation (ECPR) for in-hospital cardiac arrest (IHCA) in Japan and evaluate temporal trends. Retrospective cohort using the Japanese Diagnosis Procedure Combination database from April 2011 to March 2022. Nationwide dataset with approximately 50% of all acute care hospitalizations in Japan. Children of less than 18 years who received ECPR for IHCA. None. The primary outcomes were temporal trends in ECPR utilization and survival to hospital discharge. Among the 8209 pediatric patients with IHCA, 312 received ECPR: the median (interquartile range [IQR]) age was 2 years (IQR, 0-13 yr); and 52% were male. Annual need for ECPR was 3.6 (IQR, 2.9-4.8) cases per 100 IHCA events, with a significant upward trend 2011-2022 (p = 0.0001). Annual need for ECPR was 0.038 (IQR, 0.031-0.046) per 1000 pediatric hospital admissions, and we failed to identify an associated upward trend over time (p = 0.056). Survival to hospital discharge increased from 17.6% in 2011 to 37.5% in 2022, with a significant upward trend over time in the unadjusted analysis (p = 0.036); however, the adjusted temporal analysis failed to show an associated upward trend over time. Survival varied by age and illness category. Secondary analyses showed that cardiac diagnoses, as opposed to noncardiac diagnoses, were associated with higher overall survival: 105 of 213 (49.3%) vs. 24 of 89 (27%); percentage difference, 22.3% (95% CI, 11.3-33.4%); p = 0.0002. In our national dataset from Japan 2011-2022, we have found that pediatric ECPR for IHCA was used infrequently. Survival to hospital discharge showed a temporal increase over time. These trends may reflect changes in patient volume, guideline implementation, or more refined patient selection for ECPR, as well as resuscitation processes and better systems of clinical practice.",
+    "authors": [
+      "Ikeyama T",
+      "Shiima Y",
+      "Kurosawa H",
+      "Matsuo Y",
+      "Ohbe H",
+      "Matsui H",
+      "Yasunaga H"
+    ],
+    "journal": "Pediatric critical care medicine : a journal of the Society of Critical Care Medicine and the World Federation of Pediatric Intensive and Critical Care Societies",
+    "journal_issn": "1529-7535",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-11",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 1.99,
+    "sjr_quartile": null,
+    "openalex_topic": "Mechanical Circulatory Support Devices",
+    "openalex_topic_score": 0.998,
+    "openalex_subfield": "Biomedical Engineering",
+    "openalex_field": "Engineering",
+    "openalex_topics": [
+      {
+        "id": "T10675",
+        "name": "Mechanical Circulatory Support Devices",
+        "score": 0.998
+      },
+      {
+        "id": "T11189",
+        "name": "Transplantation: Methods and Outcomes",
+        "score": 0
+      },
+      {
+        "id": "T10645",
+        "name": "Cardiac Arrest and Resuscitation",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-14T00:06:34.040Z",
+    "classified": true,
+    "title_ja": "小児院内心停止に対する体外循環式心肺蘇生（ECPR）の生存率：日本の全国コホート研究（2011-2022年）",
+    "abstract_ja": "DPCデータベースを用い、2011〜2022年の小児院内心停止8,209例のうちECPRを施行された312例を対象に、ECPR施行率と退院時生存率の経時的傾向を分析した全国コホート研究。退院時生存率は2011年の17.6%から2022年の37.5%へ有意に上昇したが、調整後の傾向分析では有意な上昇は確認されなかった。心臓疾患による心停止は非心臓疾患によるものより生存率が高かった。"
+  },
+  {
+    "id": "pmid-42726900",
+    "pubmed_id": "42726900",
+    "doi": "10.1371/journal.pone.0358427",
+    "title": "Levofloxacin-associated tendon disorders: Sex-, age-, and route-specific disproportionality analysis using FAERS and JADER.",
+    "abstract": "This study evaluated the association between individual fluoroquinolones and tendon disorders in Japan using two spontaneous reporting systems: the Food and Drug Administration Adverse Event Reporting System (FAERS) and the Japanese Adverse Drug Event Report (JADER). Five agents-ciprofloxacin, levofloxacin, moxifloxacin, norfloxacin, and ofloxacin-were analyzed for \"Muscle, tendon and ligament injuries\" and \"Tendon disorders.\" All fluoroquinolones showed positive signals in the FAERS, whereas only levofloxacin demonstrated consistent and robust associations in the Japanese subset of the FAERS and the JADER. In the JADER, levofloxacin exhibited strong signals for muscle, tendon, and ligament injuries (reporting odds ratio [ROR] 30.6, information component [IC] 4.5) and tendon disorders (ROR 134.2, IC 5.8). Stratified analysis revealed markedly stronger signals in males, particularly those aged ≥70 years (relative ROR 12.21 and 25.67; IC delta 3.18 and 2.85, respectively). Oral levofloxacin was associated with higher reporting odds than intravenous administration. Time-to-onset analysis indicated that most tendon-related adverse events occurred within 14 days after drug initiation. Levofloxacin exhibited the most consistent and robust association with tendon disorders, especially in males aged ≥70 years in Japan. Therefore, clinicians in Japan should exercise caution when prescribing levofloxacin to older male patients.",
+    "authors": [
+      "Nakashima T",
+      "Noguchi Y",
+      "Masuda R",
+      "Yoshimura T"
+    ],
+    "journal": "PloS one",
+    "journal_issn": "1932-6203",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-11",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）",
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS（米国FDA有害事象報告システム）"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.25,
+    "sjr_quartile": null,
+    "openalex_topic": "Antibiotics Pharmacokinetics and Efficacy",
+    "openalex_topic_score": 0.971,
+    "openalex_subfield": "Pharmacology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11036",
+        "name": "Antibiotics Pharmacokinetics and Efficacy",
+        "score": 0.971
+      },
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.007
+      },
+      {
+        "id": "T10897",
+        "name": "Antibiotic Use and Resistance",
+        "score": 0.002
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-14T00:06:34.532Z",
+    "classified": true,
+    "title_ja": "レボフロキサシン関連腱障害：FAERSとJADERを用いた性・年齢・投与経路別不均衡分析",
+    "abstract_ja": "FAERSと日本の医薬品副作用データベース(JADER)を用い、5種のフルオロキノロン系薬剤と腱障害の関連を不均衡分析で検討した。レボフロキサシンのみがJADERで一貫して強い信号を示し（腱障害のROR 134.2）、70歳以上の男性で特にリスクが高かった。経口投与は静注投与より報告オッズ比が高く、腱関連有害事象の多くは投与開始14日以内に発現していた。"
+  },
+  {
+    "id": "pmid-42717548",
+    "pubmed_id": "42717548",
+    "doi": "10.1111/dom.71335",
+    "title": "Alcohol Reduction and 15-Year Cardiometabolic Changes in Glycemic, Lipid and Blood Pressure Profiles: A Target Trial Emulation Study.",
+    "abstract": "The long-term cardiometabolic effects of alcohol reduction remain unclear. We evaluated the long-term associations of sustained alcohol reduction with glycemic, blood pressure, and lipid profiles. We conducted a pooled sequential target trial emulation using annual health examination data from Japanese employees (2008-2023). Eligible participants were aged ≥ 40 years and consumed ≥ 20 g/day of ethanol at baseline. Participants subsequently reducing alcohol intake to < 20 g/day formed the intervention group; those maintaining ≥ 20 g/day formed the control group. We applied inverse probability weighting to estimate the per-protocol effect of sustained alcohol reduction. We used weighted generalized estimating equations to estimate longitudinal trajectories of fasting plasma glucose (FPG), systolic blood pressure (SBP), diastolic blood pressure (DBP), triglycerides, high-density lipoprotein (HDL) cholesterol, and low-density lipoprotein (LDL) cholesterol. Among 266 699 eligible trial entries, 30 280 and 229 946 trial entries were included in the intervention and control groups, respectively. Alcohol reduction was associated with persistently lower FPG, SBP, DBP, and triglycerides over 15 years. At Year 15, between-group differences were -1.8 mg/dL for FPG, -3.4 mmHg for SBP, -2.2 mmHg for DBP and -20.4 mg/dL for triglycerides (all p ≤ 0.005). Conversely, HDL cholesterol levels were consistently lower and LDL cholesterol levels modestly higher in the intervention group. Blood pressure-lowering effects were consistent across genders, and findings were broadly consistent across sensitivity, subgroup, and dose-transition analyses. Sustained alcohol reduction improved long-term FPG, blood pressure, and triglycerides. These findings support alcohol reduction as a potentially beneficial lifestyle intervention for improving cardiometabolic profiles.",
+    "authors": [
+      "Ichikawa T",
+      "Okada H",
+      "Yamamoto S",
+      "Sano A",
+      "Hashimoto Y",
+      "Kasahara K",
+      "Nakajima H",
+      "Hamaguchi M",
+      "Murata H",
+      "Kurogi K",
+      "Tsuda E",
+      "Yoshida N",
+      "Ito M",
+      "Fukui M"
+    ],
+    "journal": "Diabetes, obesity & metabolism",
+    "journal_issn": "1463-1326",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-10",
+    "analysis_methods": [
+      "ターゲットトライアルエミュレーション",
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の企業従業員の健診データ（2008〜2023年）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 5.09,
+    "sjr_quartile": null,
+    "openalex_topic": "Alcohol Consumption and Health Effects",
+    "openalex_topic_score": 0.85,
+    "openalex_subfield": "Pathology and Forensic Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11207",
+        "name": "Alcohol Consumption and Health Effects",
+        "score": 0.85
+      },
+      {
+        "id": "T12494",
+        "name": "Alcoholism and Thiamine Deficiency",
+        "score": 0.078
+      },
+      {
+        "id": "T10043",
+        "name": "Substance Abuse Treatment and Outcomes",
+        "score": 0.038
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-14T00:06:30.982Z",
+    "classified": true,
+    "title_ja": "アルコール摂取量の減量と15年間の心代謝プロファイルの変化：ターゲットトライアルエミュレーション研究",
+    "abstract_ja": "日本人従業員の健診データ（2008〜2023年）を用い、飲酒量減量が血糖・血圧・脂質プロファイルに与える長期的影響をターゲットトライアルエミュレーションで検討した。逆確率重み付けを適用し、飲酒量を1日20g未満に減らした群は維持群と比べ、空腹時血糖・収縮期/拡張期血圧・中性脂肪が15年間持続的に低値であった。一方でHDLコレステロールは低下し、LDLコレステロールはやや上昇した。"
+  },
+  {
+    "id": "pmid-42721099",
+    "pubmed_id": "42721099",
+    "doi": "10.2196/84974",
+    "title": "Fine-Tuning Large Language Models for Structured Extraction of Infectious Disease-Related Information From Clinical Notes in Japanese Primary Care: Development and Internal Validation Study.",
+    "abstract": "The COVID-19 pandemic highlighted the importance of timely infectious disease surveillance. In Japan, conventional sentinel and claims-based systems incur reporting lags and capture limited clinical detail, whereas free-text clinical notes in electronic health records (EHRs) hold richer, timelier symptom and vaccination information. Natural language processing (NLP) with large language models (LLMs) offers a way to structure such free text at scale. We aimed to develop and internally validate an NLP algorithm to extract structured infectious disease-related symptoms and vaccination history from free-text clinical notes in Japanese primary care, as a feasibility step toward low-latency, EHR-based surveillance. A total of 773 clinical notes, originating from 526 unique patients, were provided by M3 Inc through the Japan Medical Data Survey and used for analysis. Three physicians annotated information related to infectious disease symptoms and vaccination history. The data were divided into 622 (80%) training cases and 151 (20%) evaluation cases with no patient overlap. We compared a physician-designed, rule-based algorithm, few-shot learning (FSL) using commercial and open-source LLMs, and supervised fine-tuning (SFT) of open-source LLMs, using the macroaveraged F1-score (unweighted mean across 9 clinical categories). Sensitivity, specificity, positive predictive value (PPV), and negative predictive value (NPV) were also computed, with 95% CIs from a patient-level cluster bootstrap (2000 replicates). Rule-based extraction achieved a macroaveraged F1-score of 0.685 (95% CI 0.630-0.736). FSL markedly improved the extraction of high-variability items such as vaccination history and onset date. Anthropic Claude 3.5 Sonnet achieved a macroaveraged F1-score of 0.875 (95% CI 0.800-0.913; sensitivity 0.929, specificity 0.918). SFT of Google's open-source Gemma 2 27B model with quantized low-rank adaptation (QLoRA) achieved the highest point estimate (macroaveraged F1-score of 0.906, 95% CI 0.833-0.945; sensitivity 0.921, specificity 0.969, PPV 0.906); the difference from Claude 3.5 Sonnet was small and not statistically distinguishable (ΔF1-score=0.030, 95% CI -0.035 to 0.140). A small, fine-tuned Gemma 2 2B model reached 0.822 (95% CI 0.752-0.874), significantly lower than that of the 27B model (ΔF1-score=0.084, 95% CI 0.040-0.163). A fine-tuned open-source LLM can accurately extract and structure infectious disease-related information from Japanese free-text clinical notes, achieving performance comparable to that of a commercial model while enabling processing within a closed environment. These findings support the feasibility of EHR-based digital surveillance, whose downstream utility remains to be demonstrated.",
+    "authors": [
+      "Yoshihara H",
+      "Maeda H",
+      "Hagiwara Y",
+      "Sato D",
+      "Kitajima K",
+      "Iwata A",
+      "Van de Velde N",
+      "Nakamura Y",
+      "Yamagishi Y",
+      "Igarashi A"
+    ],
+    "journal": "JMIR formative research",
+    "journal_issn": "2561-326X",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-10",
+    "analysis_methods": [
+      "機械学習・AI"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "M3社のJapan Medical Data Surveyによる診療所の電子カルテデータ"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "方法論・バリデーション"
+    ],
+    "impact_factor": 2.79,
+    "sjr_quartile": null,
+    "openalex_topic": "Advanced Text Analysis Techniques",
+    "openalex_topic_score": 0.13,
+    "openalex_subfield": "Artificial Intelligence",
+    "openalex_field": "Computer Science",
+    "openalex_topics": [
+      {
+        "id": "T13083",
+        "name": "Advanced Text Analysis Techniques",
+        "score": 0.13
+      },
+      {
+        "id": "T11710",
+        "name": "Biomedical Text Mining and Ontologies",
+        "score": 0.097
+      },
+      {
+        "id": "T10028",
+        "name": "Topic Modeling",
+        "score": 0.096
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-14T00:06:31.533Z",
+    "classified": true,
+    "title_ja": "日本のプライマリケア臨床記録からの感染症関連情報抽出のための大規模言語モデルのファインチューニング：開発と内部検証",
+    "abstract_ja": "M3社のJapan Medical Data Surveyによる診療所の電子カルテ記録773件を用い、感染症症状・ワクチン接種歴を自由記述テキストから抽出するNLPアルゴリズムを開発・内部検証した研究。オープンソースLLM(Gemma 2 27B)のファインチューニングがマクロ平均F1スコア0.906を達成し、商用LLM(Claude 3.5 Sonnet)のスコア0.875と同程度の性能を示した。電子カルテに基づくデジタル感染症サーベイランスの実現可能性が示唆された。"
+  },
+  {
+    "id": "pmid-42714203",
+    "pubmed_id": "42714203",
+    "doi": "10.1097/MJT.0000000000002144",
+    "title": "Association of Sodium-Glucose Cotransporter-2 Inhibitors With Fournier Gangrene: A Disproportionality Analysis Using the Japanese Adverse Drug Event Report Database.",
+    "abstract": "This study investigated the association between sodium-glucose cotransporter-2 (SGLT2) inhibitors and Fournier gangrene (FG), analyzing additional risk factors using pharmacovigilance data. Data were extracted from the Japanese Adverse Drug Event Reporting (JADER) database (April 2014-August 2024), encompassing 914,713 adverse event reports, including 5770 involving SGLT2 inhibitors. Among 40 identified FG cases (0.69% of SGLT2 reports), empagliflozin showed the strongest association (reporting odds ratio = 78.62) and canagliflozin the weakest. Male patients demonstrated significantly higher FG risk than female patients (P = 0.004), particularly with tofogliflozin. No significant correlation existed between obesity and FG occurrence. Onset timing varied widely (12-1515 days). Limitations include potential data incompleteness inherent to spontaneous reporting systems, limited sample size, and inability to establish definitive causality. All 5 SGLT2 inhibitors were associated with FG, with empagliflozin carrying the highest risk. Male patients exhibited elevated susceptibility. Continuous monitoring throughout treatment is essential. Further clinical trials are warranted to clarify causal relationships.",
+    "authors": [
+      "Sun X",
+      "Wang L",
+      "Li G",
+      "Zhang H",
+      "Li L",
+      "Xiang G",
+      "Wang T",
+      "Dong L",
+      "Chen J",
+      "Wang A"
+    ],
+    "journal": "American journal of therapeutics",
+    "journal_issn": "1536-3686",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-09",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 0.98,
+    "sjr_quartile": null,
+    "openalex_topic": "Diabetes Treatment and Management",
+    "openalex_topic_score": 0.875,
+    "openalex_subfield": "Endocrinology, Diabetes and Metabolism",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10401",
+        "name": "Diabetes Treatment and Management",
+        "score": 0.875
+      },
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.058
+      },
+      {
+        "id": "T10195",
+        "name": "Antimicrobial Resistance in Staphylococcus",
+        "score": 0.011
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-14T00:06:30.472Z",
+    "classified": true,
+    "title_ja": "SGLT2阻害薬とフルニエ壊疽の関連：日本の医薬品副作用データベースを用いた不均衡分析",
+    "abstract_ja": "日本の医薬品副作用データベース(JADER、2014〜2024年、91万件超の報告)を用い、SGLT2阻害薬とフルニエ壊疽(FG)の関連を不均衡分析で検討した。SGLT2阻害薬関連報告5,770件中40件がFGで、エンパグリフロジンが最も強い関連を示した(ROR 78.62)。男性は女性よりFGリスクが有意に高く、発症までの期間は12〜1,515日と幅広かった。"
+  },
+  {
+    "id": "pmid-42708147",
+    "pubmed_id": "42708147",
+    "doi": "10.31547/bct-2026-016",
+    "title": "Real-world survey of hematopoietic stem cell transplantation in Japan using a nationwide administrative claims database.",
+    "abstract": "According to data from the Japanese registry managed by the Transplant Registry Unified Management Program, the number of autologous stem cell transplantations (auto-SCT) in 2018 was approximately 60% of that of allogeneic SCT (allo-SCT). The opposite trend has been reported in the United States. Thus, we hypothesized that auto-SCT is underreported in the registry. We analyzed anonymized aggregated data from the Diagnosis Procedure Combination (DPC) database, a nationwide administrative claims database in Japan. Counts for fiscal years (FY) 2017 and 2018 were obtained for autologous collections, auto-SCT, and allo-SCT by graft source, and summarized by key demographic and clinical characteristics, including disease category and in-hospital outcomes. In FY2018, the DPC data recorded 23 autologous bone marrow transplantations (BMT), 2,590 autologous peripheral blood stem cell transplantations (PBSCT), 1,238 allogeneic BMT, 1,072 allogeneic PBSCT, and 1,353 cord blood transplantations (CBT). Similar findings were observed in FY2017. We identified plasma cell neoplasms (48%) and lymphoma (43%) as the primary indications for autologous PBSCT. Compared with the Japanese transplant registry, allogeneic SCT counts were similar across graft sources, whereas autologous PBSCT counts were approximately 500 higher. However, due to differences in aggregation rules, these findings should be interpreted as approximate rather than precise estimates. Our analysis of nationwide claims-based DPC data indicates potential underreporting of autologous PBSCT in the Japanese registry. Our findings support the complementary use of DPC data with registry data to characterize real-world hematopoietic cell transplantation practice in Japan.",
+    "authors": [
+      "Kuwatsuka Y",
+      "Sato K",
+      "Atsuta Y",
+      "Nishida T",
+      "Ozawa Y",
+      "Hino M",
+      "Miyamura K"
+    ],
+    "journal": "Blood cell therapy",
+    "journal_issn": "2432-7026",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-08",
+    "analysis_methods": [],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 0.8,
+    "sjr_quartile": null,
+    "openalex_topic": "Hematopoietic Stem Cell Transplantation",
+    "openalex_topic_score": 0.908,
+    "openalex_subfield": "Hematology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10345",
+        "name": "Hematopoietic Stem Cell Transplantation",
+        "score": 0.908
+      },
+      {
+        "id": "T10950",
+        "name": "Acute Lymphoblastic Leukemia research",
+        "score": 0.021
+      },
+      {
+        "id": "T10309",
+        "name": "Acute Myeloid Leukemia Research",
+        "score": 0.012
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-14T00:06:29.969Z",
+    "classified": true,
+    "title_ja": "全国医療費請求データベースを用いた日本における造血幹細胞移植の実態調査",
+    "abstract_ja": "DPCデータベースの集計データを用い、2017・2018年度の自家・同種造血幹細胞移植の件数をドナー源別に分析した実態調査。2018年度は自家末梢血幹細胞移植2,590件、同種末梢血幹細胞移植1,072件などが記録され、既存の移植登録(TRUMP)と比較して自家末梢血幹細胞移植は約500件多く記録されていた。移植登録における自家移植の過小報告が示唆され、DPCデータの併用による実態把握の有用性が示された。"
+  },
+  {
+    "id": "pmid-42704884",
+    "pubmed_id": "42704884",
+    "doi": "10.1097/MAT.0000000000002843",
+    "title": "Circuit Change, Peri-Change Anticoagulation and Transfusion, and Survival in Pediatric Postcardiotomy Extracorporeal Membrane Oxygenation.",
+    "abstract": "Circuit and oxygenator changes during pediatric postcardiotomy extracorporeal membrane oxygenation (PC-ECMO) are clinically significant; however, their timing and management are poorly described. Moreover, outcomes beyond discharge remain unclear. We describe circuit changes, temporal trends in anticoagulant use and transfusion, and mid- to long-term survival in pediatric PC-ECMO. This study used a Japanese administrative database spanning 2014-2024. Cardiac surgery cases in patients aged <18 years with congenital heart disease were classified into PC-ECMO and non-ECMO groups. For the PC-ECMO group, we assessed the cumulative incidence of the first circuit change, temporal trends in anticoagulant use and transfusion around each change, and postoperative and post-discharge 1 year survival. Among 4,395 cases, 73 involved PC-ECMO. Of these, 24 (32.9%) required at least one circuit change, with a cumulative incidence of 33.1% (95% confidence interval [CI], 19.4-46.7) within 3 days. Anticoagulants were switched from heparin to nafamostat mesylate alone or no anticoagulation (p = 0.001), and fresh-frozen plasma transfusion increased on the day of change (p = 0.016). Postoperative 1 year survival was 0.566 (95% CI, 0.449-0.713); among those discharged alive, 1 year post-discharge survival was 0.967 (95% CI, 0.901-1.000). Circuit changes were common and occurred early after PC-ECMO initiation. Post-discharge survival was favorable among patients discharged alive.",
+    "authors": [
+      "Nishida K",
+      "Yanai T",
+      "Takeda C",
+      "Takeuchi M",
+      "Kawakami K"
+    ],
+    "journal": "ASAIO journal (American Society for Artificial Internal Organs : 1992)",
+    "journal_issn": "1538-943X",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-07",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の医療費請求データベース（2014〜2024年、具体的名称不明）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.1,
+    "sjr_quartile": null,
+    "openalex_topic": "Mechanical Circulatory Support Devices",
+    "openalex_topic_score": 0.997,
+    "openalex_subfield": "Biomedical Engineering",
+    "openalex_field": "Engineering",
+    "openalex_topics": [
+      {
+        "id": "T10675",
+        "name": "Mechanical Circulatory Support Devices",
+        "score": 0.997
+      },
+      {
+        "id": "T11055",
+        "name": "Cardiac and Coronary Surgery Techniques",
+        "score": 0.002
+      },
+      {
+        "id": "T11189",
+        "name": "Transplantation: Methods and Outcomes",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-14T00:06:29.481Z",
+    "classified": true,
+    "title_ja": "小児心臓術後体外式膜型人工肺(ECMO)における回路交換・抗凝固療法・輸血と生存：日本の医療請求データベース研究",
+    "abstract_ja": "日本の医療費請求データベース(2014〜2024年)を用い、先天性心疾患に対する心臓手術後にECMOを要した小児73例を対象に、回路交換の頻度と生存を分析した後方視的研究。32.9%が少なくとも1回の回路交換を要し、交換時にはヘパリンからナファモスタットへの変更や新鮮凍結血漿輸血の増加がみられた。術後1年生存率は56.6%であったが、退院できた患者の退院後1年生存率は96.7%と良好であった。"
+  },
+  {
     "id": "pmid-42701639",
     "pubmed_id": "42701639",
     "doi": "10.7759/cureus.114044",
@@ -34,11 +664,27 @@
     ],
     "impact_factor": 1.11,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Drug-Induced Adverse Reactions",
+    "openalex_topic_score": 0.988,
+    "openalex_subfield": "Pharmacology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11117",
+        "name": "Drug-Induced Adverse Reactions",
+        "score": 0.988
+      },
+      {
+        "id": "T12438",
+        "name": "Urticaria and Related Conditions",
+        "score": 0.002
+      },
+      {
+        "id": "T11033",
+        "name": "Contact Dermatitis and Allergies",
+        "score": 0.002
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-09-07T00:06:40.941Z",
     "classified": true,
@@ -75,16 +721,90 @@
     ],
     "impact_factor": 4.1,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Prostate Cancer Treatment and Research",
+    "openalex_topic_score": 0.996,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10543",
+        "name": "Prostate Cancer Treatment and Research",
+        "score": 0.996
+      },
+      {
+        "id": "T10124",
+        "name": "Prostate Cancer Diagnosis and Treatment",
+        "score": 0.002
+      },
+      {
+        "id": "T11221",
+        "name": "Bone health and treatments",
+        "score": 0
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-09-07T00:06:41.372Z",
     "classified": true,
     "title_ja": "日本における転移性去勢感受性前立腺癌に対するリアルワールド長期治療転帰",
     "abstract_ja": "Medical Data Visionデータベースを用い、転移性去勢感受性前立腺癌に対するADT単独・ADT+非ステロイド性抗アンドロゲン薬・ADT+アンドロゲン受容体シグナル阻害薬(ARSI)のPSA反応と治療継続期間を比較した。ARSI併用群はADT単独群等に比べPSA低下が速く治療継続期間も長かったが、ARSI同士では大きな差はなかった。治療継続の違いには有害事象や患者背景も影響していると考察された。"
+  },
+  {
+    "id": "pmid-42702557",
+    "pubmed_id": "42702557",
+    "doi": "10.1248/bpb.b26-00050",
+    "title": "Body Mass Index-Related Trends in Adverse Events with Enfortumab Vedotin: Analysis of a Pharmacovigilance Database and Medical Records.",
+    "abstract": "Enfortumab vedotin (EV) is an antibody-drug conjugate used to treat advanced urothelial carcinoma. Although effective, it frequently causes adverse events, particularly skin toxicity. Body mass index (BMI) has been suggested as a risk factor for EV toxicity, but evidence from large-scale studies remains limited. This study investigated the association between BMI and EV toxicity using a national pharmacovigilance database and single-center clinical data. Adverse event reports from the Japanese Adverse Drug Event Report (JADER) database (2004-2025) were stratified by BMI (<22 vs. ≥22 kg/m2). Reporting odds ratios were calculated, and event frequencies were compared using z-tests. Additionally, a retrospective review of medical records was conducted for 17 EV-treated patients at a single institution. Data on dosing and adverse events were collected, and Fisher's exact test was applied. In JADER, a BMI ≥22 kg/m2 was associated with increased reporting of skin disorders, pruritus, and toxic epidermal necrolysis (p < 0.05), whereas a BMI <22 kg/m2 was associated with more reports of pyelonephritis (p = 0.007). In the clinical cohort, patients with skin toxicity had a higher BMI (25.1 vs. 17.7 kg/m2, p = 0.004) and received higher EV doses relative to ideal body weight (IBW) (108.3 vs. 79.9%, p = 0.007) than those without skin toxicity. A high BMI was associated with an increased risk of certain EV-related skin toxicities, potentially exacerbated by dosing based on actual versus IBW, whereas a low BMI may increase susceptibility to infections such as pyelonephritis. Individualizing risk assessment and dosing based on patient physique may improve the safety and efficacy of EV therapy.",
+    "authors": [
+      "Kei M",
+      "Sato S",
+      "Yamaga R",
+      "Karaki S",
+      "Uesawa Y",
+      "Ito T"
+    ],
+    "journal": "Biological & pharmaceutical bulletin",
+    "journal_issn": "1347-5215",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-06",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.82,
+    "sjr_quartile": null,
+    "openalex_topic": "Bladder and Urothelial Cancer Treatments",
+    "openalex_topic_score": 0.851,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10458",
+        "name": "Bladder and Urothelial Cancer Treatments",
+        "score": 0.851
+      },
+      {
+        "id": "T12829",
+        "name": "Advanced Breast Cancer Therapies",
+        "score": 0.012
+      },
+      {
+        "id": "T12064",
+        "name": "Intraperitoneal and Appendiceal Malignancies",
+        "score": 0.008
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-14T00:06:29.003Z",
+    "classified": true,
+    "title_ja": "エンフォルツマブ ベドチンによる有害事象と体格指数(BMI)の関連：医薬品副作用データベースと診療録の解析",
+    "abstract_ja": "日本の医薬品副作用データベース(JADER)と単施設の診療録データを用い、抗体薬物複合体エンフォルツマブ ベドチン(EV)の有害事象とBMIの関連を検討した。BMI 22kg/m²以上は皮膚障害・中毒性表皮壊死症などの報告増加と関連し、BMI 22未満は腎盂腎炎の報告増加と関連していた。単施設コホートでも高BMIかつ体重換算投与量が多い患者で皮膚毒性が多く、体格に応じた個別化投与の重要性が示された。"
   },
   {
     "id": "pmid-42698056",
@@ -170,11 +890,27 @@
     ],
     "impact_factor": 2.61,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Prostate Cancer Treatment and Research",
+    "openalex_topic_score": 0.847,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10543",
+        "name": "Prostate Cancer Treatment and Research",
+        "score": 0.847
+      },
+      {
+        "id": "T10417",
+        "name": "Lung Cancer Treatments and Mutations",
+        "score": 0.013
+      },
+      {
+        "id": "T10124",
+        "name": "Prostate Cancer Diagnosis and Treatment",
+        "score": 0.013
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-09-07T00:06:39.844Z",
     "classified": true,
@@ -209,11 +945,27 @@
     ],
     "impact_factor": 2.33,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Cancer Genomics and Diagnostics",
+    "openalex_topic_score": 0.972,
+    "openalex_subfield": "Cancer Research",
+    "openalex_field": "Biochemistry, Genetics and Molecular Biology",
+    "openalex_topics": [
+      {
+        "id": "T11287",
+        "name": "Cancer Genomics and Diagnostics",
+        "score": 0.972
+      },
+      {
+        "id": "T14078",
+        "name": "Multiple and Secondary Primary Cancers",
+        "score": 0.003
+      },
+      {
+        "id": "T11213",
+        "name": "Genomic variations and chromosomal abnormalities",
+        "score": 0.003
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-09-07T00:06:40.334Z",
     "classified": true,
