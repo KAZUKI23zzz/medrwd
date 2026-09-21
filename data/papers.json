@@ -1,5 +1,1002 @@
 [
   {
+    "id": "pmid-42760626",
+    "pubmed_id": "42760626",
+    "doi": "10.1093/ehjqcco/qcag144",
+    "title": "Care Gaps Following Newly Detected Dipstick Proteinuria in Treated Hypertension: A Japanese Nationwide Database Study.",
+    "abstract": "Clinical guidelines recommend follow-up quantitative testing after dipstick-positive proteinuria and, when proteinuria is confirmed, subsequent initiation of renin-angiotensin system inhibitors (RASi) in patients with hypertension. However, real-world adherence to these recommendations remains unclear. We investigated management patterns following newly detected dipstick proteinuria in patients with treated hypertension. Using the JMDC claims database, we identified treated hypertensive patients with newly detected dipstick proteinuria (≥1+, with prior results <1+) between January 2005 and March 2025. The study outcomes were quantitative urine albumin/protein testing and RASi initiation. Cumulative incidence was estimated using the Kaplan-Meier method, and multivariable Cox models were used to identify factors associated with outcomes. The 365-day cumulative incidence of quantitative testing was 7.5% (95% CI: 7.2-7.7) in the overall population (n = 47,210), and that of RASi initiation was 13.2% (95% CI: 12.6-13.8) among baseline RASi non-users (n = 14,599). Both outcomes became more frequent with increasing dipstick grade but remained infrequent in the higher-grade groups: among patients with 2+ and 3+ proteinuria, quantitative testing was performed in 12.9% and 16.1%, respectively, and RASi initiation occurred in 17.5% and 21.7%, respectively. Temporal trend analysis indicated that RASi initiation rates showed no improvement (aHR per year: 1.01; 95% CI: 0.99-1.03). Follow-up quantitative testing and RASi initiation after newly detected dipstick proteinuria were infrequent, even among patients with higher dipstick grades, and RASi initiation showed no clear improvement over time. These findings highlight opportunities to improve guideline-concordant urinary protein assessment and antihypertensive therapy.",
+    "authors": [
+      "Nagase K",
+      "Imaizumi T",
+      "Asano Y",
+      "Mitsubayashi K",
+      "Nishibori N",
+      "Ozeki T",
+      "Nakamura Y",
+      "Okazaki M",
+      "Kurasawa S",
+      "Watanabe T",
+      "Furuhashi K",
+      "Maruyama S"
+    ],
+    "journal": "European heart journal. Quality of care & clinical outcomes",
+    "journal_issn": "2058-1742",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-19",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "医療の質・アクセスの格差",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 3.44,
+    "sjr_quartile": null,
+    "openalex_topic": "Blood Pressure and Hypertension Studies",
+    "openalex_topic_score": 0.516,
+    "openalex_subfield": "Cardiology and Cardiovascular Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10144",
+        "name": "Blood Pressure and Hypertension Studies",
+        "score": 0.516
+      },
+      {
+        "id": "T12075",
+        "name": "Sodium Intake and Health",
+        "score": 0.102
+      },
+      {
+        "id": "T11001",
+        "name": "Renin-Angiotensin System Studies",
+        "score": 0.049
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-21T00:06:52.840Z",
+    "classified": true,
+    "title_ja": "治療中の高血圧患者における新規尿蛋白陽性後のケアギャップ:日本の全国データベース研究",
+    "abstract_ja": "JMDC健保データベースを用いて、治療中の高血圧患者で新たに尿蛋白（試験紙法）陽性となった約4.7万人を追跡し、定量検査の実施率とRASi（レニン・アンジオテンシン系阻害薬）の開始率を調べた。365日以内の定量検査実施率は7.5%、RASi非使用者でのRASi開始率は13.2%と低く、蛋白尿の程度が強いほど頻度は上がるものの依然低水準で、経年的な改善も見られなかった。"
+  },
+  {
+    "id": "pmid-42761208",
+    "pubmed_id": "42761208",
+    "doi": "10.3389/fphar.2026.1840741",
+    "title": "Drug spectrum and disproportionality signals for diabetes insipidus in FAERS: multi-method analysis, JADER cross-database assessment, and PubMed-based case-level evidence.",
+    "abstract": "The aim of this study is to characterize reporting patterns and non-treatment drug safety signals for diabetes insipidus (DI) in the FDA Adverse Event Reporting System (FAERS), evaluate signal stability using crude, adjusted, and shrinkage-based disproportionality methods, and assess signal reproducibility in the Japanese Adverse Drug Event Report (JADER). We analyzed FAERS (2004Q1-2025Q4) and JADER (2004-2025) reports. DI cases were defined by MedDRA Preferred Terms \"Diabetes insipidus\" and \"Nephrogenic diabetes insipidus\"; central DI-related lower-level terms mapped to \"Diabetes insipidus\" and were not separately retrievable. Drugs used for DI diagnosis/treatment or arginine vasopressin (AVP)-deficiency states were excluded during preprocessing. All eligible non-treatment primary suspect drug-DI pairs were screened, and the main multi-method summary focused on the 50 most frequently reported drugs. Published cases were summarized as case-level evidence, not comparative risk meta-analysis. FAERS contained 3,444 Preferred Term (PT)-defined DI reports; 3,325 entered the main non-treatment analysis. Raw annual counts increased, whereas normalized reporting proportions fluctuated. Complete screening identified 112 crude reporting odds ratio (ROR)-positive drug-DI pairs. Among the frequency-ranked top 50, 47 met crude ROR criteria, 38 remained positive after adjustment, 32 met empirical Bayes geometric mean (EBGM) criteria, and 40 met information component (IC) criteria; in addition, 36 were positive in at least three methods. In JADER, 696 DI reports entered cross-database assessment; eight drugs met crude ROR criteria, eight met adjusted ROR criteria, three met EBGM criteria, and three met IC criteria. Lithium, hydrocortisone, and propofol were positive across all four JADER methods. After treatment-drug exclusion, DI reports clustered mainly among nervous system, antineoplastic/immunomodulating, and systemic hormonal agents. Several non-treatment drugs showed persistent disproportionality, but JADER support was limited. These findings are hypothesis-generating signals, not causal evidence.",
+    "authors": [
+      "Li Y",
+      "Zhou Y",
+      "Tian J",
+      "Wei D",
+      "Bi X",
+      "Liu H",
+      "Yang L"
+    ],
+    "journal": "Frontiers in pharmacology",
+    "journal_issn": "1663-9812",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-19",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS（米国FDA有害事象報告システム）"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 5.05,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-09-21T00:06:53.247Z",
+    "classified": true,
+    "title_ja": "FAERSにおける尿崩症の薬剤スペクトラムと不均衡シグナル：複数手法解析・JADERとの横断的検証・PubMed症例レベルのエビデンス",
+    "abstract_ja": "米国FAERS（2004-2025年）と日本のJADER（2004-2025年）を用いて尿崩症の報告パターンと薬剤シグナルを解析した。頻度上位50薬剤についてROR・EBGM・ICなど複数の不均衡分析手法でシグナルの再現性を評価したところ、FAERSでは多くの陽性シグナルが得られた一方、JADERでの裏付けは限定的で、リチウム・ヒドロコルチゾン・プロポフォールがJADERの4手法すべてで陽性だった。"
+  },
+  {
+    "id": "pmid-42761249",
+    "pubmed_id": "42761249",
+    "doi": "10.3389/fdsfr.2026.1919822",
+    "title": "Global patterns and trends in spontaneous reporting systems: VigiBase, FAERS, VAERS, and JADER.",
+    "abstract": "Spontaneous reporting systems (SRSs) gather millions of reports of adverse events occurring to patients worldwide. For its volume and breadth of data, they are often regarded as the cornerstone of pharmacovigilance. However, their individual and intra-database characteristics remain incompletely described. Four SRSs were considered, namely, the WHO global database VigiBase, the FDA Adverse Event Reporting System (FAERS), the Vaccine Adverse Event Reporting System (VAERS), and the Japanese Adverse Drug Event Report database (JADER). As of 31 December 2025, these databases contain approximately 42.4 million, 26.3 million, 2.7 million and 0.9 million reports, respectively. Following deduplication, approximately 11.1 million reports were uniquely shared between VigiBase and FAERS and close to 1.3 million between VigiBase and VAERS. We described and compared report features such as drug and adverse event reporting patterns, reporter types, geographic distribution, demographics, and medical outcomes. Most reports have been received in recent years across the four databases with up to 70% of the reports accumulated in the last 7-14 years, depending on the SRS. Notable patterns appeared in reporter types (consumer-dominated in FAERS versus physician-dominated in JADER), sex (female predominance in VigiBase, FAERS and VAERS, versus near-parity in JADER), and the influence of COVID-19 vaccination campaigns, which disproportionately affected VigiBase and VAERS. Time-series trends were analysed by comparing reports pre and post 1 January 2015, excluding COVID-19 vaccine reports. Changes in reporting patterns of therapeutic subgroups and adverse events since 2015 were consistent across SRSs with some region-specific variations. By highlighting differences between SRSs, this manuscript serves as a reference for researchers and regulators.",
+    "authors": [
+      "Panajotovikj N",
+      "Mestres J"
+    ],
+    "journal": "Frontiers in drug safety and regulation",
+    "journal_issn": "2674-0869",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-19",
+    "analysis_methods": [],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "VigiBase（WHO国際医薬品モニタリングデータベース）",
+      "FAERS（米国FDA有害事象報告システム）",
+      "VAERS（米国ワクチン有害事象報告システム）"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "方法論・バリデーション"
+    ],
+    "impact_factor": 5.14,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-09-21T00:06:53.912Z",
+    "classified": true,
+    "title_ja": "自発報告データベースの世界的パターンと動向:VigiBase、FAERS、VAERS、JADERの比較",
+    "abstract_ja": "WHOのVigiBase、米国FAERS、VAERS、日本のJADERという4つの医薬品副作用自発報告データベースの規模・報告者属性・性別分布・時系列動向を比較記述した論文。JADERは医師主体の報告構成で女性比率もほぼ同等など、各データベース特有の報告バイアスの違いが示された。"
+  },
+  {
+    "id": "pmid-42762421",
+    "pubmed_id": "42762421",
+    "doi": "10.1007/s10147-026-03198-6",
+    "title": "Real-world perioperative systemic treatment patterns and postoperative mortality in patients with upper tract urothelial carcinoma undergoing radical nephroureterectomy in Japan: WAKKA-UTUC study.",
+    "abstract": "To characterize the longitudinal changes in perioperative systemic treatment patterns and postoperative mortality among Japanese patients with stage II-IV upper tract urothelial carcinoma (UTUC) who underwent radical nephroureterectomy (RNU). This retrospective observational study used a nationwide Japanese database to evaluate neoadjuvant chemotherapy (NAC) and adjuvant therapy (AT) before and after RNU. Treatment patterns, specific regimens, and 30- and 90-day postoperative mortality were analyzed descriptively across three periods: 2013-2017, 2018-2021, and 2022-2024. Among 6,165 patients included in the study, the use of AT without prior NAC increased from 25.7% in 2013-2017 to 30.0% in 2022-2024, and the proportion of patients who received any NAC increased from 9.8% to 17.1%, respectively. By 2022-2024, gemcitabine plus carboplatin emerged as the most widely used regimen for NAC and AT (6.5% and 15.2% of the overall study population during this period [n = 1,482], respectively). Adjuvant nivolumab was administered to 142 patients (9.6% of all patients undergoing RNU in 2022-2024), but most (n = 84) had not received prior NAC. Postoperative mortality remained stable across the study periods (30-day mortality: 0.0%-0.5%; 90-day mortality: 0.3%-2.0%), with no increase in mortality among patients who received NAC. The use of perioperative systemic therapy for UTUC in Japan increased over the study period, with growing adoption of NAC, AT, and adjuvant nivolumab. Postoperative mortality remained stable, showing no notable association with NAC.",
+    "authors": [
+      "Inokuchi J",
+      "Tokumaru J",
+      "Kawai D",
+      "Ide R",
+      "Komazaki H",
+      "Kitagawa H",
+      "Kikuchi E"
+    ],
+    "journal": "International journal of clinical oncology",
+    "journal_issn": "1437-7772",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-19",
+    "analysis_methods": [],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の上部尿路上皮癌の多施設共同データベース（WAKKA-UTUC研究）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 2.77,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-09-21T00:06:54.256Z",
+    "classified": true,
+    "title_ja": "日本における上部尿路上皮癌に対する腎尿管全摘除術の周術期薬物療法実態と術後死亡率：WAKKA-UTUC研究",
+    "abstract_ja": "全国データベースを用い、腎尿管全摘除術を受けたステージII-IVの上部尿路上皮癌患者6,165例について、2013年から2024年にかけての周術期薬物療法（術前・術後化学療法）の実施動向と術後死亡率を検討した。術前化学療法の実施率は9.8%から17.1%へ増加し、術後ニボルマブ投与も導入される一方、術後死亡率は期間を通じて低く安定していた。"
+  },
+  {
+    "id": "pmid-42763379",
+    "pubmed_id": "42763379",
+    "doi": "10.1007/s10388-026-01251-x",
+    "title": "Improved operative mortality after esophagectomy in patients aged ≥ 75 years over a decade: a nationwide Japanese retrospective cohort study.",
+    "abstract": "Esophagectomy is associated with substantial morbidity and mortality, particularly in older patients. Although minimally invasive surgery (MIS) has been widely adopted, its contribution to improve operative outcomes in this population remains unclear. This study aimed to evaluate temporal trends in short-term outcomes after esophagectomy in patients aged ≥ 75 years and determine whether the increasing adoption of MIS contributed to improved operative mortality. Using the Japanese National Clinical Database, we analyzed patients aged ≥ 75 years who underwent radical esophagectomy for esophageal cancer between 2014 and 2024. The primary and secondary endpoints were operative mortality and severe postoperative complications (Clavien-Dindo grade ≥IIIa), respectively. Multivariable logistic regression analyses were performed, including sensitivity analyses additionally adjusted for MIS. Among 7,678 patients, patient complexity increased over time, with higher proportions of octogenarians, patients with American Society of Anesthesiologists Physical Status ≥ 3, and patients receiving preoperative chemotherapy. Open thoracotomy decreased from 53.1% to 6.5%, whereas robot-assisted esophagectomy increased from 0% to 34.8%. Operative mortality decreased from 4.7% to 2.4%, with a risk-adjusted odds ratio (OR) of 0.49 (95% confidence interval [CI] 0.35-0.67; P < 0.001). Risk of severe postoperative complications remained unchanged (adjusted OR = 1.12, 95% CI 0.98-1.29; P = 0.11). Mortality reduction remained significant after adjustment for MIS (OR = 0.58, 95% CI 0.41-0.83; P = 0.003). Despite increasing patient complexity, operative mortality after esophagectomy in older patients improved substantially over the past decade. This improvement was unlikely to be explained by the increasing use of MIS alone and may reflect broader advances in perioperative management and other system-level factors. These findings have important implications for surgical care in aging populations worldwide.",
+    "authors": [
+      "Sano A",
+      "Endo H",
+      "Yamamoto H",
+      "Kawaguchi Y",
+      "Makino T",
+      "Kuriyama K",
+      "Sakai M",
+      "Kimura Y",
+      "Takeuchi H",
+      "Ueno H",
+      "Shirabe K",
+      "Saeki H"
+    ],
+    "journal": "Esophagus : official journal of the Japan Esophageal Society",
+    "journal_issn": "1612-9067",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-19",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 3.24,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-09-21T00:06:54.803Z",
+    "classified": true,
+    "title_ja": "75歳以上における食道切除術後手術死亡率の10年間の改善：日本の全国後ろ向きコホート研究",
+    "abstract_ja": "National Clinical Database（NCD）を用い、2014年から2024年に食道切除術を受けた75歳以上の患者7,678例を解析した。低侵襲手術（ロボット支援）の普及とともに患者の複雑性は増したが、手術死亡率は4.7%から2.4%へ改善し、この改善は低侵襲手術の普及のみでは説明できず周術期管理などシステム全体の進歩を反映している可能性が示された。"
+  },
+  {
+    "id": "pmid-42756090",
+    "pubmed_id": "42756090",
+    "doi": "10.3389/fphar.2026.1878501",
+    "title": "Cross national pharmacovigilance analysis of drug-induced delirium: a comparative study using the US FAERS, Japanese JADER, and canadian CVAR datasets.",
+    "abstract": "Drug-induced delirium is a clinically important and potentially preventable adverse event, especially in older adults, yet large-scale cross-national pharmacovigilance evidence remains limited. We conducted a retrospective analysis using three major spontaneous reporting systems: the FDA Adverse Event Reporting System (FAERS, 2004-Q3 2025), the Japanese Adverse Drug Event Report (JADER, 2004-Q2 2025), and the Canada Vigilance Adverse Reaction database (CVAR, 2004-Q3 2025). Delirium cases were identified using five pre-specified Preferred Terms (PTs) selected from the narrow scope of the Standardised MedDRA Query (SMQ) Noninfectious encephalopathy/delirium. Disproportionality analyses were performed using reporting odds ratio, proportional reporting ratio, and empirical Bayes geometric mean, with signal strength defined by lower confidence bounds. Time-to-onset (TTO) was summarized using medians, IQRs, and early-onset proportions. A total of 263,327 reports were identified (FAERS: 243,572; JADER: 7,512; CVAR: 12,243). Delirium was more frequently reported in females (49%-57%) and individuals aged ≥60 years (55%-70%). Strong and consistent signals were observed for nervous system drugs, particularly psycholeptics, analgesics, and psychoanaleptics. Duloxetine, lamotrigine, pregabalin, quetiapine fumarate, and zolpidem demonstrated consistent signals across databases. Additional signals involved antipsychotics, benzodiazepines, opioids, and selected anti-infective agents. Time-to-onset analysis demonstrated early-onset clustering, suggesting an acute temporal pattern. Cross-database consistency in drug class signals and early-onset temporal patterns highlights the need for medication review and risk mitigation in high-risk populations.",
+    "authors": [
+      "Jiao J",
+      "Liu S",
+      "Fang Y",
+      "Song X",
+      "Zhang X",
+      "Wang J"
+    ],
+    "journal": "Frontiers in pharmacology",
+    "journal_issn": "1663-9812",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-18",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS（米国FDA有害事象報告システム）",
+      "CVAR（カナダ医薬品副作用データベース）"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 5.05,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.89,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.89
+      },
+      {
+        "id": "T10867",
+        "name": "Intensive Care Unit Cognitive Disorders",
+        "score": 0.036
+      },
+      {
+        "id": "T10496",
+        "name": "Pharmaceutical Practices and Patient Outcomes",
+        "score": 0.014
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-21T00:06:50.869Z",
+    "classified": true,
+    "title_ja": "薬剤誘発性せん妄の国際間ファーマコビジランス解析：米国FAERS・日本JADER・カナダCVARの比較研究",
+    "abstract_ja": "FAERS、JADER、カナダのCVARという3つの自発報告データベース（計26万件超）を用いて薬剤誘発性せん妄の報告シグナルを比較した。神経系薬剤（向精神薬・鎮痛薬など）で一貫して強いシグナルが検出され、デュロキセチン・ラモトリギン・プレガバリン・クエチアピン・ゾルピデムが3データベースで共通して陽性だった。"
+  },
+  {
+    "id": "pmid-42759767",
+    "pubmed_id": "42759767",
+    "doi": "10.1016/j.jtcvs.2026.09.006",
+    "title": "Reduced invasiveness of lobe-specific lymph node dissection in lung cancer surgery: Propensity score matching analysis using Japanese real-world data.",
+    "abstract": "In primary lung cancer surgery, whether lobe-specific lymph node dissection (LS-LND) reduces postoperative complications remains unclear, and the complications that may be reduced are uncertain. Thus, in this study, we aimed to evaluate the effect of LS-LND on reducing lymph node dissection (LND)-related complications. Data of 63,232 patients who underwent lobectomy with mediastinal LND for primary lung cancer between 2017 and 2019 were extracted from the Japanese National Clinical Database. We classified patients into two groups according to the mode of mediastinal LND and analyzed the differences in LND-related complication occurrences using propensity score matching (PSM). Overall, the LND-related complication rate was 6.4%, and pneumonia was the most prevalent complication (2.0%). Patients who underwent LS-LND tended to experience fewer LND-related complications than those who underwent systematic LND (S-LND) (5.8% vs. 7.9%). After PSM, LND-related complication rate was significantly lower in the LS-LND group than in the S-LND group (6.4% vs. 7.9%, p < 0.001) among 16,278 matched pairs. Chylothorax, pneumonia, and recurrent nerve paralysis showed marked intergroup differences in occurrence. Conversely, almost no intergroup difference was observed in the occurrence of bronchopleural fistula, empyema, and postoperative bleeding. In contrast, in the matched c-stage I subset, the incidence of cN0-pN2 upstaging was significantly lower in the LS-LND group than in the S-LND groups (5.3% vs. 9.0%). Our findings showed LS-LND is associated with fewer postoperative LND-related complications, and LS-LND may become a standard surgical procedure if randomized controlled trials demonstrate non-inferiority with regard to survival outcomes.",
+    "authors": [
+      "Adachi H",
+      "Yamamoto H",
+      "Yamamoto K",
+      "Ito H",
+      "Saito A",
+      "Shimada Y",
+      "Chen-Yoshikawa TF",
+      "Sato Y",
+      "Okada M",
+      "Yoshino I"
+    ],
+    "journal": "The Journal of thoracic and cardiovascular surgery",
+    "journal_issn": "1097-685X",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-18",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.64,
+    "sjr_quartile": null,
+    "openalex_topic": "Lung Cancer Diagnosis and Treatment",
+    "openalex_topic_score": 0.939,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10202",
+        "name": "Lung Cancer Diagnosis and Treatment",
+        "score": 0.939
+      },
+      {
+        "id": "T12422",
+        "name": "Radiomics and Machine Learning in Medical Imaging",
+        "score": 0.005
+      },
+      {
+        "id": "T10183",
+        "name": "Breast Cancer Treatment Studies",
+        "score": 0.003
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-21T00:06:51.344Z",
+    "classified": true,
+    "title_ja": "肺癌手術における葉別リンパ節郭清の低侵襲性：日本のリアルワールドデータを用いた傾向スコアマッチング解析",
+    "abstract_ja": "National Clinical Database（NCD）を用い、2017-2019年に肺葉切除と縦隔リンパ節郭清を受けた63,232例を対象に、葉別リンパ節郭清（LS-LND）と系統的郭清（S-LND）を傾向スコアマッチングで比較した。マッチング後もLS-LND群でリンパ節郭清関連合併症の発生率が有意に低く（6.4% vs 7.9%）、乳び胸・肺炎・反回神経麻痺で差が顕著だった。"
+  },
+  {
+    "id": "pmid-42759903",
+    "pubmed_id": "42759903",
+    "doi": "10.1016/j.jpainsymman.2026.09.017",
+    "title": "Effects of reinfusion of ascitic fluid in malignant ascites: A nationwide claims-based cohort study.",
+    "abstract": "Malignant ascites causes substantial symptom burden in advanced cancer. Repeated drainage may accelerate protein loss and ascitic fluid re-accumulation. Cell-free and concentrated ascites reinfusion therapy (CART) returns concentrated proteins to patients, but comparative efficacy data remain scarce. To compare CART with paracentesis alone for overall survival and repeat ascites drainage in patients with malignant ascites. This nationwide retrospective cohort study used the Japanese National Database of Health Insurance Claims and Specific Health Checkups. We identified adults with cancer who underwent CART or paracentesis within the last year of life between April 2013 and March 2016. Patients receiving CART as the first drainage procedure were compared with those receiving paracentesis alone. Outcomes were overall survival and repeat drainage, with prespecified subgroup analyses by tumor site and liver metastases. Of 638,626 cancer decedents, 52,625 underwent ascites drainage within the last year of life. Of these, 10,654 received CART initially, and 37,272 received paracentesis alone. Median overall survival was 31 vs. 28 days (adjusted hazard ratio, 0.97; 95%CI, 0.95-0.99), indicating no clinically meaningful survival benefit with CART. CART was associated with a lower repeat drainage rate (adjusted hazard ratio, 0.73; 95%CI, 0.72-0.74), consistent with longer observed intervals between drainage procedures (median, 15 vs. 8.3 days). The reduction appeared greater in patients with hepatocellular carcinoma or liver metastases. CART was associated with lower rate of repeat drainage but no meaningful survival prolongation compared with paracentesis alone. CART may reduce repeat drainage, particularly in patients with liver-dominant diseases.",
+    "authors": [
+      "Yokomichi N",
+      "Okuhara K",
+      "Yamaguchi T",
+      "Morita T",
+      "Sato K"
+    ],
+    "journal": "Journal of pain and symptom management",
+    "journal_issn": "1873-6513",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-18",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 1.01,
+    "sjr_quartile": null,
+    "openalex_topic": "Trauma, Hemostasis, Coagulopathy, Resuscitation",
+    "openalex_topic_score": 0.227,
+    "openalex_subfield": "Critical Care and Intensive Care Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11116",
+        "name": "Trauma, Hemostasis, Coagulopathy, Resuscitation",
+        "score": 0.227
+      },
+      {
+        "id": "T12426",
+        "name": "Lymphatic Disorders and Treatments",
+        "score": 0.131
+      },
+      {
+        "id": "T11356",
+        "name": "Pleural and Pulmonary Diseases",
+        "score": 0.051
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-21T00:06:51.844Z",
+    "classified": true,
+    "title_ja": "悪性腹水に対する腹水濾過濃縮再静注法（CART）の効果：全国レセプトデータを用いたコホート研究",
+    "abstract_ja": "NDB（レセプト情報・特定健診等情報データベース）を用い、終末期の悪性腹水患者52,625例においてCART（腹水濾過濃縮再静注）と腹腔穿刺単独を比較した。生存期間に明確な差はなかったが（中央値31日 vs 28日）、CART群では再穿刺までの間隔が長く再穿刺の頻度が低下しており、特に肝転移・肝細胞癌症例でその効果が大きかった。"
+  },
+  {
+    "id": "pmid-42760444",
+    "pubmed_id": "42760444",
+    "doi": "10.1007/s00431-026-07406-3",
+    "title": "Safety profiles of calcineurin inhibitor-related infections in the pediatric population: a real-world pharmacovigilance analysis.",
+    "abstract": "This study aimed to assess infection-related adverse events (AEs) associated with calcineurin inhibitors (CNIs), including cyclosporine (CsA) and tacrolimus (TAC), in the pediatric population using combined postmarketing surveillance databases. Data from the FDA Adverse Event Reporting System (FAERS) and the Japanese Adverse Drug Event Report (JADER) were analyzed for pediatric patients. Disproportionality analysis was conducted to evaluate AEs. Additionally, subgroup analysis, fatal outcome assessment, and time-to-onset (TTO) analysis were also performed. A total of 426 CsA-related and 1284 TAC-related infection reports were identified in FAERS, with corresponding findings in JADER (CsA, n = 140; TAC, n = 323). Cross-database analysis identified positive overlapping signals for BK virus, cytomegalovirus, and Epstein-Barr virus infections for both drugs. Age- and sex-stratified analysis revealed differences in infection-related reporting patterns, with the percentage of fatal outcomes varying significantly across age groups and being highest in the youngest subgroups: 3-5 years for CsA (29.2%) and 0-2 years for TAC (18.4%) (P < 0.05).  This study provides real-world evidence on infection-related safety signals associated with CNIs in pediatric patients, particularly for viral infections. The distinct signal profiles and age- and sex-specific patterns highlight the importance of individualized infection risk monitoring and immunosuppressive management strategies. • Calcineurin inhibitors (CNIs), including cyclosporine (CsA) and tacrolimus (TAC), are widely used in pediatric transplantation and immune-mediated diseases, but infection remains an important safety concern during CNI-based immunosuppression. • Evidence on the comparative infection-related safety profiles of these two agents in children remains limited. • This is the first dual-database pharmacovigilance analysis to characterize infection-related safety signals associated with CsA and TAC in pediatric patients. • Age- and sex-specific patterns were identified, with fatal outcomes significantly associated with younger age groups for both drugs.",
+    "authors": [
+      "Lu Y",
+      "Zhou Y",
+      "Wu Y",
+      "Liu C",
+      "Zhou L",
+      "Zou Y",
+      "Wei H",
+      "Xie F",
+      "Wang H",
+      "Yan S",
+      "Guo X",
+      "Li Q",
+      "Chen J"
+    ],
+    "journal": "European journal of pediatrics",
+    "journal_issn": "1432-1076",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-18",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS（米国FDA有害事象報告システム）"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.68,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.611,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.611
+      },
+      {
+        "id": "T12547",
+        "name": "Pharmaceutical studies and practices",
+        "score": 0.08
+      },
+      {
+        "id": "T10195",
+        "name": "Antimicrobial Resistance in Staphylococcus",
+        "score": 0.035
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-21T00:06:52.348Z",
+    "classified": true,
+    "title_ja": "小児におけるカルシニューリン阻害薬関連感染症の安全性プロファイル：リアルワールドのファーマコビジランス解析",
+    "abstract_ja": "FAERSとJADERを用い、小児患者におけるシクロスポリンおよびタクロリムス関連の感染症有害事象を不均衡分析で評価した。両薬剤でBKウイルス・サイトメガロウイルス・EBウイルス感染のシグナルが両データベース共通で検出され、致死的転帰の割合は年齢層により異なり最年少群で高かった。"
+  },
+  {
+    "id": "pmid-42750884",
+    "pubmed_id": "42750884",
+    "doi": "10.1016/j.aicoj.2026.100146",
+    "title": "Short-term outcomes across sedation practice patterns in mechanically ventilated patients with bacterial pneumonia: a nationwide cohort study.",
+    "abstract": "Although guidelines recommend light sedation with propofol or dexmedetomidine in mechanically ventilated patients, appropriate management with monotherapy is often challenging. Whether combined sedation reduces dose-dependent adverse effects of each agent or causes additive harm remains unclear. We investigated short-term outcomes associated with early sedation practice patterns in mechanically ventilated patients with bacterial pneumonia. Using the Japanese Diagnosis Procedure Combination database, we identified adult intensive care unit patients with bacterial pneumonia requiring mechanical ventilation between April 2018 and March 2023 and classified them into combined sedation, propofol-based sedation, and dexmedetomidine-based sedation groups. The composite outcome included in-hospital death and functional decline at discharge. Propensity-score matching-weight analyses adjusted for measured confounders. Among 3,302 eligible patients, 1,135 (34.4%) were classified into the combined-sedation group, 1,067 (32.3%) into the propofol-based sedation group, and 1,100 (33.3%) into the dexmedetomidine-based sedation group. Combined sedation was not associated with a lower risk of the composite outcome compared with propofol-based sedation (26.3 % vs. 30.0 %; risk difference [RD] -3.7 %; 95% confidence interval [CI] -8.0 to 0.7) but was associated with a lower risk of the composite outcome compared with dexmedetomidine-based sedation (26.3 % vs. 33.1 %; RD -6.7%; 95% CI -11.2 to -2.3). In-hospital mortality was lower with combined sedation than propofol-based (22.4% vs. 26.7%; RD, -4.2%; 95% CI, -8.5 to -0.03) or dexmedetomidine-based (22.4% vs. 30.1%; RD, -7.7%; 95% CI, -12.1 to -3.3) sedation, although the comparison with propofol-based sedation was not robust in sensitivity analyses and was not supported by 28-day or 90-day in-hospital mortality. The in-hospital mortality difference between combined sedation and dexmedetomidine-based sedation was consistent across sensitivity analyses and 28-day and 90-day in-hospital mortality. Functional decline at discharge did not differ among groups. Tracheostomy was more frequent with combined sedation than with both comparators, whereas 28-day ventilator-free days did not differ. Combined sedation was not associated with a lower risk of the composite outcome of in-hospital death and functional decline at discharge, compared with propofol-based sedation; however, a lower risk was observed compared with dexmedetomidine-based sedation.",
+    "authors": [
+      "Yajima W",
+      "Aso S",
+      "Matsui H",
+      "Fushimi K",
+      "Yasunaga H"
+    ],
+    "journal": "Annals of intensive care",
+    "journal_issn": "2110-5820",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-17",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 7.16,
+    "sjr_quartile": null,
+    "openalex_topic": "Nosocomial Infections in ICU",
+    "openalex_topic_score": 0.77,
+    "openalex_subfield": "Critical Care and Intensive Care Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11681",
+        "name": "Nosocomial Infections in ICU",
+        "score": 0.77
+      },
+      {
+        "id": "T10218",
+        "name": "Sepsis Diagnosis and Treatment",
+        "score": 0.07
+      },
+      {
+        "id": "T10897",
+        "name": "Antibiotic Use and Resistance",
+        "score": 0.052
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-21T00:06:50.335Z",
+    "classified": true,
+    "title_ja": "細菌性肺炎による人工呼吸管理患者における鎮静パターン別短期転帰：全国コホート研究",
+    "abstract_ja": "日本のDPCデータベースを用い、細菌性肺炎で人工呼吸管理を受けたICU患者3,302例を、併用鎮静・プロポフォール単独・デクスメデトミジン単独の3群に分けて短期転帰を傾向スコア解析で比較した。併用鎮静群はデクスメデトミジン単独群より院内死亡・機能低下の複合アウトカムのリスクが低かったが、プロポフォール単独群との比較では感度分析で頑健性を欠いた。"
+  },
+  {
+    "id": "pmid-42749615",
+    "pubmed_id": "42749615",
+    "doi": "10.1265/ehpm.26-00113",
+    "title": "Repeated Specific Health Guidance and improvement of metabolic syndrome in middle-aged working men: a longitudinal observational study using modified Poisson regression.",
+    "abstract": "Metabolic syndrome (MetS) is a growing global health concern, and lifestyle interventions are important for preventing MetS and its progression to chronic diseases. Although short-term lifestyle interventions (typically within 12 months) have shown some improvements, clinically meaningful improvements in MetS and cardiovascular disease are achieved only in a subset of participants, indicating that many participants derive insufficient benefit. This study aimed to examine the effectiveness of repeated interventions for individuals who do not achieve sufficient weight loss with a short-term lifestyle intervention, using real-world data from Japan's health screening system, Specific Health Checkup (SHC) and Specific Health Guidance (SHG), by comparing outcomes between individuals who did not achieve sufficient improvement after the initial intervention and received and did not receive health guidance again in the following year. This longitudinal observational study used 2018-2020 individual-level data of men aged 40-65 years from a Japanese health insurance database. Modified Poisson regression was used to investigate whether repeated SHG interventions for individuals who did not achieve sufficient improvement despite receiving SHG in fiscal year 2018 increased the probability of achieving ≥3% weight loss between 2019 and 2020. The repeated and single intervention groups comprised 952 and 1,373 participants, respectively. No significant difference was observed between the groups in terms of ≥3% weight loss between 2019 and 2020 (16.0% vs. 13.5%; risk ratio [RR] = 1.18; 95% confidence interval [CI], 0.97-1.44, adjusted). Analyses stratified by stage of change showed a significant difference in the contemplation stage between the two groups (≥3% weight loss 2019-2020, 19.7% vs. 13.7%; RR = 1.47; 95% CI, 1.04-2.08). No significant association was observed between repeated interventions and achieving ≥3% weight loss overall. An exploratory subgroup analysis suggested a possible benefit among individuals in the contemplation stage. These findings should be interpreted cautiously and confirmed in future studies.",
+    "authors": [
+      "Yoshida H",
+      "Taguchi A",
+      "Okamura T",
+      "Sugiyama D"
+    ],
+    "journal": "Environmental health and preventive medicine",
+    "journal_issn": "1347-4715",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-16",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "特定健診・特定保健指導(SHC/SHG)の医療保険データベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 2.5,
+    "sjr_quartile": null,
+    "openalex_topic": "Health Promotion and Cardiovascular Prevention",
+    "openalex_topic_score": 0.933,
+    "openalex_subfield": "Public Health, Environmental and Occupational Health",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T14212",
+        "name": "Health Promotion and Cardiovascular Prevention",
+        "score": 0.933
+      },
+      {
+        "id": "T10027",
+        "name": "Diabetes, Cardiovascular Risks, and Lipoproteins",
+        "score": 0.026
+      },
+      {
+        "id": "T10866",
+        "name": "Nutritional Studies and Diet",
+        "score": 0.005
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-21T00:06:49.849Z",
+    "classified": true,
+    "title_ja": "中年男性における特定保健指導の反復実施とメタボリックシンドローム改善：修正ポアソン回帰を用いた縦断観察研究",
+    "abstract_ja": "日本の健保データを用い、特定健診・特定保健指導（SHC/SHG）を受けた40-65歳男性のうち初回介入で十分な改善が得られなかった者を対象に、翌年の保健指導再実施の効果を修正ポアソン回帰で検討した。全体では反復介入群と単回介入群で体重減少達成率に有意差はなかったが、行動変容の「関心期」にある対象者では反復介入群で有意に改善が多かった。"
+  },
+  {
+    "id": "pmid-42741008",
+    "pubmed_id": "42741008",
+    "doi": "10.1002/ags3.70282",
+    "title": "Comparison of Nationwide Volumes for Five Major Gastrointestinal Surgical Procedures in Japan: Implications From Publicly Available NCD and NDB Open Data.",
+    "abstract": "In Japan, the National Clinical Database (NCD), a clinician-reported registry, and the National Database of Health Insurance Claims and Specific Health Checkups of Japan Open Data (NDB Open Data), an administrative claims database, are both widely used as nationwide surgical databases, but their consistency in capturing national surgical volumes has not been systematically evaluated. We compared publicly available data from the NCD annual surgical statistics and the NDB Open Data from 2014 to 2023. Annual case numbers were extracted for five major gastrointestinal procedures: cholecystectomy, inguinal hernia repair, appendectomy, colorectal cancer surgery, and gastric cancer surgery. Consistency was evaluated using three metrics: the median NCD/NDB ratio with interquartile range, Pearson's correlation coefficient for absolute annual volumes, and the proportion of years with concordant year-to-year change. The NCD generally reported higher case volumes than the NDB Open Data, with ratios ranging from close to unity (1.00) for colorectal cancer surgery to 1.10 for appendectomy. Temporal associations between the two databases (Pearson's r) ranged from 0.70 to 0.99 across the five procedures. The proportion of years with concordant year-to-year change ranged from 44% for appendectomy to 100% for colorectal and gastric cancer surgery. Despite relying on clinician-reported data, the NCD demonstrated comparable temporal patterns to the NDB Open Data across the five major gastrointestinal procedures. The stability of procedure-specific NCD/NDB ratios and the concordance of temporal trends support the use of NCD annual statistics for monitoring broad temporal trends in these selected gastrointestinal procedures in Japan.",
+    "authors": [
+      "Kiriyama A",
+      "Fujii M",
+      "Asano T",
+      "Hirano S"
+    ],
+    "journal": "Annals of gastroenterological surgery",
+    "journal_issn": "2475-0328",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-15",
+    "analysis_methods": [],
+    "databases_used": [
+      "NCD",
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "その他",
+    "research_categories": [
+      "方法論・バリデーション"
+    ],
+    "impact_factor": 2.08,
+    "sjr_quartile": null,
+    "openalex_topic": "Appendicitis Diagnosis and Management",
+    "openalex_topic_score": 0.187,
+    "openalex_subfield": "Emergency Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11473",
+        "name": "Appendicitis Diagnosis and Management",
+        "score": 0.187
+      },
+      {
+        "id": "T11930",
+        "name": "Cardiac, Anesthesia and Surgical Outcomes",
+        "score": 0.17
+      },
+      {
+        "id": "T12518",
+        "name": "Diverticular Disease and Complications",
+        "score": 0.097
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-21T00:06:48.079Z",
+    "classified": true,
+    "title_ja": "日本における5大消化器外科手術の全国手術件数比較：NCDとNDBオープンデータの公開データからの検討",
+    "abstract_ja": "臨床医報告型のNCD年次統計と行政レセプトベースのNDBオープンデータを用い、胆嚢摘出・鼠径ヘルニア修復・虫垂切除・大腸癌手術・胃癌手術という5手術の2014-2023年の全国件数を比較した。NCDはNDBよりやや高い件数を示す傾向があったが、両データベース間の経年変化パターンはおおむね一致しており、NCD統計の傾向監視への利用を支持する結果だった。"
+  },
+  {
+    "id": "pmid-42743167",
+    "pubmed_id": "42743167",
+    "doi": "10.1371/journal.pone.0358270",
+    "title": "Real world patterns of dyslipidemia care before and after a national fee revision in Japan: A nationwide study using a 30 million patient claims database.",
+    "abstract": "Dyslipidemia is a key risk factor for cardiovascular disease, and its prevalence continues to rise with population aging in Japan. A 2024 change to the fee categories in Japan's insurance system aimed to encourage a more holistic approach and better patient involvement in developing treatment plans; however, the real-world impact of these changes on patient outcomes remains unclear. Using a nationwide claims database, we sought to: (1) describe the achievement of low-density lipoprotein cholesterol goals and major adverse cardiovascular events among patients with dyslipidemia; (2) compare lipid control and outcomes under the previous disease-specific management fee with those under the new lifestyle disease management fee, and (3) identify patient groups that may benefit from additional lifestyle-based interventions. We conducted a retrospective cohort study among adults aged ≥ 18 years with dyslipidemia (International Classification of Diseases, Tenth Revision code E78) and at least one lipid measurement. In total, 590,000 patients contributed 23,600,010 outpatient visits. Ourpatient visits were the unit of observation for lipid and fee-category analyses; cardiovascular outcomes and patient-years were analyzed at the patient level. The primary outcome was low-density lipoprotein cholesterol goal attainment; secondary outcomes were changes in lipid parameters, major adverse cardiovascular events, and all-cause mortality. Low-density lipoprotein cholesterol goals were attained at 58.3% of outpatient visits under the previous fee and 58.5% under the new fee, and less often in secondary than in primary prevention, despite high statin use and frequent combination therapy with ezetimibe or fibrate. Lipid levels were broadly similar across fee periods. Cardiovascular event rates were also similar, but post-revision patient-years were limited to approximately 6 months (58,500 vs. 1,542,800 patient-years); therefore, this comparison is exploratory and cannot exclude an effect of the new fee structure. Longer follow-up and complementary designs are needed to evaluate the causal impact of the new fee on outcomes.",
+    "authors": [
+      "Yamasaki S",
+      "Tokunou T",
+      "Horiuchi T"
+    ],
+    "journal": "PloS one",
+    "journal_issn": "1932-6203",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-15",
+    "analysis_methods": [],
+    "databases_used": [],
+    "additional_data_sources": [
+      "全国規模のレセプトデータベース（約30百万人規模の医療保険請求データ）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 3.27,
+    "sjr_quartile": null,
+    "openalex_topic": "Lipoproteins and Cardiovascular Health",
+    "openalex_topic_score": 0.836,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10394",
+        "name": "Lipoproteins and Cardiovascular Health",
+        "score": 0.836
+      },
+      {
+        "id": "T14212",
+        "name": "Health Promotion and Cardiovascular Prevention",
+        "score": 0.054
+      },
+      {
+        "id": "T10027",
+        "name": "Diabetes, Cardiovascular Risks, and Lipoproteins",
+        "score": 0.017
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-21T00:06:48.605Z",
+    "classified": true,
+    "title_ja": "日本の診療報酬改定前後における脂質異常症診療の実態：3,000万人規模のレセプトデータベースを用いた全国調査",
+    "abstract_ja": "全国規模のレセプトデータベース（59万人・2,360万件の外来受診）を用い、2024年の診療報酬改定（疾患別管理料から生活習慣病管理料への変更）前後で脂質異常症患者のLDLコレステロール目標達成率や心血管イベント発生率を比較した。目標達成率は改定前後で58.3%から58.5%とほぼ変わらず、改定後の観察期間が約6か月と短いため因果効果の評価は今後の課題とされた。"
+  },
+  {
+    "id": "pmid-42743196",
+    "pubmed_id": "42743196",
+    "doi": "10.1371/journal.pone.0358331",
+    "title": "Safety profile of entrectinib in NSCLC: Multi-source pharmacovigilance analysis using FAERS and JADER.",
+    "abstract": "Entrectinib is effective for ROS1-positive non-small cell lung cancer (NSCLC), but its postmarketing safety profile remains incompletely characterized outside clinical trials. We conducted a dual-database pharmacovigilance study to characterize real-world reporting patterns, identify cross-database replicated adverse event signals, explore age- and sex-related reporting heterogeneity, and evaluate time-to-onset patterns. Reports were retrieved from the U.S. Food and Drug Administration Adverse Event Reporting System (FAERS; 2020Q1-2025Q4; 520 patients; 1,573 preferred-term [PT] events) and the Japanese Adverse Drug Event Report database (JADER; 2020Q1-2025Q3; 254 patients; 393 PT events). Molecular fusion status was not available for verification. Four disproportionality methods were applied, with reporting odds ratio (ROR) as the primary signal criterion. At the system organ class level, shared positive signals involved nervous system disorders (FAERS/JADER ROR: 4.48/4.76), cardiac disorders (3.20/5.43), and renal and urinary disorders (2.04/3.92). At the PT level, 23 signals were detected in both databases, whereas 58 PTs were unique to FAERS and 8 to JADER. Representative shared PT signals included dizziness (12.94/14.33), taste disorder (38.03/13.28), renal impairment (6.89/8.18), blood creatinine increased (8.31/24.99), cardiac failure (7.57/8.90), cognitive disorder (18.04/78.29), ataxia (51.73/351.45), syncope (8.87/89.45), myocarditis (3.47/5.91), electrocardiogram QT prolonged (4.01/5.35), and hyperuricaemia (7.36/59.63). Subgroup analyses suggested exploratory age- and sex-related reporting heterogeneity, including relatively more renal and mobility-related reports in older patients and female predominance for ataxia in FAERS. In the FAERS-based time-to-onset analysis, 203 of 520 reports (39.0%) had valid onset data. The median time to onset was 13 days, 70.94% of evaluable reports had onset dates within 30 days, and Weibull analysis suggested an early-failure pattern. Entrectinib-associated reports in NSCLC showed reproducible neurologic, cardiac, renal, and laboratory-related disproportional reporting signals across FAERS and JADER. These findings may help prioritize early safety monitoring but should be interpreted as hypothesis-generating signals rather than evidence of incidence or causality.",
+    "authors": [
+      "Yang J",
+      "Liu J",
+      "Zhao G",
+      "Li H",
+      "Sun G"
+    ],
+    "journal": "PloS one",
+    "journal_issn": "1932-6203",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-15",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS（米国FDA有害事象報告システム）"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.27,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.498,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.498
+      },
+      {
+        "id": "T10417",
+        "name": "Lung Cancer Treatments and Mutations",
+        "score": 0.147
+      },
+      {
+        "id": "T12829",
+        "name": "Advanced Breast Cancer Therapies",
+        "score": 0.076
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-21T00:06:48.845Z",
+    "classified": true,
+    "title_ja": "非小細胞肺癌におけるエヌトレクチニブの安全性プロファイル：FAERSとJADERを用いた複数データソースファーマコビジランス解析",
+    "abstract_ja": "ROS1陽性非小細胞肺癌治療薬エヌトレクチニブについて、FAERS（520例）とJADER（254例）を用いた市販後安全性シグナルを解析した。神経系障害・心臓障害・腎泌尿器障害で両データベース共通の陽性シグナルが検出され、特にめまい・味覚障害・腎機能障害などで再現性のあるシグナルが確認された。"
+  },
+  {
+    "id": "pmid-42744309",
+    "pubmed_id": "42744309",
+    "doi": "10.1093/eschf/xvag239",
+    "title": "Prognostic Factors Associated with Fatal Outcomes in COVID-19 Vaccine-Related Myocarditis.",
+    "abstract": "Vaccine-related myocarditis (VRM) has gained attention during the global roll-out of COVID-19 vaccines. COVID-19 VRM is usually non-fatal, but factors associated with fatal outcomes remain unclear. We aimed to characterise features associated with reported fatal outcomes using a pharmacovigilance database. We retrospectively analysed COVID-19 VRM reports in the Japanese Adverse Drug Event Report database from 2021 to 2024. Reports were stratified into death and survival groups based on recorded outcome information. Logistic regression analyses identified factors associated with reported fatal outcomes. 31,022 reports listed COVID-19 vaccines as suspected drug; 1,041 reports included myocarditis (reporting odds ratio [ROR] 31.3, 95% CI 29.0-33.8). The median time from vaccination to myocarditis onset was 2 (1-4) days, with most events occurring within 7 days. Among reports with VRM, men accounted for the majority (77.8%) and 68.6% were ≤39 years old. Outcome data were available for 863 reports, and death was recorded in 97 reports (11.2% [95% CI, 9.3%-13.5%]). Reported fatal outcomes were more frequent in women, patients aged ≥70 years, those with delayed onset (≥8 days after COVID-19 vaccination), and those with ≥1 comorbidities. Multivariable logistic regression identified age ≥70 years as independently associated with reported fatal outcomes (OR 8.67, 95% CI 4.41-17.3; P < 0.001). Older age was associated with higher odds of reported fatal outcomes among VRM reports in JADER. Female sex, delayed onset, and comorbidities were more common among reports with fatal outcomes. These exploratory findings require validation in clinically adjudicated studies.",
+    "authors": [
+      "Ueda T",
+      "Amiya E",
+      "Hatano M",
+      "Ishida J",
+      "Akazawa H",
+      "Takeda N"
+    ],
+    "journal": "ESC heart failure",
+    "journal_issn": "2055-5822",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-15",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）",
+      "回帰分析"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 5.15,
+    "sjr_quartile": null,
+    "openalex_topic": "SARS-CoV-2 and COVID-19 Research",
+    "openalex_topic_score": 0.612,
+    "openalex_subfield": "Infectious Diseases",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10118",
+        "name": "SARS-CoV-2 and COVID-19 Research",
+        "score": 0.612
+      },
+      {
+        "id": "T11112",
+        "name": "Viral Infections and Immunology Research",
+        "score": 0.093
+      },
+      {
+        "id": "T10167",
+        "name": "Influenza Virus Research Studies",
+        "score": 0.038
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-21T00:06:49.352Z",
+    "classified": true,
+    "title_ja": "COVID-19ワクチン関連心筋炎における死亡転帰の予後因子",
+    "abstract_ja": "JADERを用い、2021-2024年に報告されたCOVID-19ワクチン関連心筋炎1,041例のうち転帰情報のある863例を解析した。死亡は97例（11.2%）で確認され、多変量ロジスティック回帰の結果、70歳以上であることが死亡転帰と独立して関連していた。"
+  },
+  {
+    "id": "pmid-42734024",
+    "pubmed_id": "42734024",
+    "doi": "10.1111/dom.71319",
+    "title": "Fracture-Centred Skeletal Reporting Profiles of Glucose-Lowering Drug Classes in FAERS and JADER: Cross-Database and Regional Reporting-Context Analyses.",
+    "abstract": "To characterise fracture-centred skeletal adverse-event reporting across nine glucose-lowering drug classes and test whether regional differences persist after separating Japan from non-Japan Asian reporting contexts. We analysed FAERS and JADER reports, with fracture as the primary endpoint and reporting frequency per 10 000 mapped suspect reports. FAERS older age was harmonised to ≥ 60 years, with ≥ 65 and ≥ 70-year sensitivity analyses. Regional analyses separated Western, Japan, and non-Japan Asia; class-specific reporting odds were adjusted for age, sex, calendar year, and reporter type. Disproportionality analyses were supplementary. The study included 15 473 015 FAERS and 1 037 161 JADER reports, including 202 881 and 10 678 fractures. Using final deduplicated FAERS denominators, fracture reporting was highest for insulin (126.08/10000), DPP-4 inhibitors (111.03) and sulfonylureas (103.76), whereas thiazolidinediones (152.54), SGLT2 inhibitors (115.14) and GLP-1 receptor agonists (112.15) were most prominent in JADER. Age was unavailable in 44.9% of unique FAERS suspect reports, but findings were stable across age thresholds. Japan accounted for 83.0%-92.9% of total-Asian fractures for thiazolidinediones, GLP-1 receptor agonists, SGLT2 inhibitors and DPP-4 inhibitors; corresponding non-Japan Asian RFRs were not clearly elevated. Insulin remained higher after excluding Japan (RFR 1.96, 95% CI 1.57-2.45). No class met FDR-positive fracture disproportionality criteria. Skeletal reporting profiles varied by drug class, database, and reporting context. Apparent total-Asian elevations for several classes were predominantly Japan-driven and should not be interpreted as patient-level Asian fracture risk.",
+    "authors": [
+      "Huang B",
+      "Ma P",
+      "Wang W"
+    ],
+    "journal": "Diabetes, obesity & metabolism",
+    "journal_issn": "1463-1326",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-14",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS（米国FDA有害事象報告システム）"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 5.07,
+    "sjr_quartile": null,
+    "openalex_topic": "Bone health and osteoporosis research",
+    "openalex_topic_score": 0.714,
+    "openalex_subfield": "Orthopedics and Sports Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10071",
+        "name": "Bone health and osteoporosis research",
+        "score": 0.714
+      },
+      {
+        "id": "T10206",
+        "name": "Meta-analysis and systematic reviews",
+        "score": 0.044
+      },
+      {
+        "id": "T11509",
+        "name": "Hip and Femur Fractures",
+        "score": 0.033
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-21T00:06:46.565Z",
+    "classified": true,
+    "title_ja": "血糖降下薬クラス別の骨折関連報告プロファイル：FAERSとJADERを用いたクロスデータベース・地域別解析",
+    "abstract_ja": "FAERS（約1,547万件）とJADER（約104万件）を用い、9種の血糖降下薬クラスにおける骨折関連有害事象の報告頻度を地域別（欧米・日本・非日本アジア）に比較した。JADERではチアゾリジン薬・SGLT2阻害薬・GLP-1受容体作動薬の骨折報告が目立ち、アジア全体での骨折報告の大部分は日本由来であることが示された。"
+  },
+  {
+    "id": "pmid-42734840",
+    "pubmed_id": "42734840",
+    "doi": "10.1007/s00484-026-03320-3",
+    "title": "Population age structure explains the ecological association between older-adult solo household rate and infusion therapy utilization in Japan: An ecological study.",
+    "abstract": "Heat-health warning systems rely on meteorological indicators, but heat outcomes may also reflect social vulnerability. We examined whether prefectural elderly solo household rate, a routinely available household-composition indicator, was associated with large-volume infusion therapy utilization, a non-specific healthcare-utilization measure, and whether this association was independent of population age structure, healthcare supply, and heat exposure. We conducted an ecological study of 47 Japanese prefectures using fiscal year 2023 data. Infusion therapy utilization (procedure code G004, ≥ 500 mL) from the National Database (NDB) Open Data was the outcome; elderly solo household rate was derived from the 2020 National Census. Associations were examined using linear regression, sensitivity analyses, and, in an additional analysis, adjustment for prefectural ageing rate, healthcare supply, and official heat-exposure measures. Elderly solo household rate was associated with infusion therapy utilization (β = 723.37; 95% CI, 376.52-1,070.21; p = 0.0001), persisting across sensitivity analyses. In an additional analysis, adjusting for prefectural ageing rate attenuated this estimate by 57.1% (β = 310.2; 95% CI, - 87.0-707.4; p = 0.126), and further adjustment for healthcare supply and heat exposure reduced it toward zero (β = -31.8; 95% CI, - 536.8-473.3; p = 0.902). Elderly solo household rate was associated with infusion therapy utilization in the unadjusted analysis, but this association was not robust to additional adjustment for population age structure, healthcare supply, and heat exposure. These findings indicate that population age structure explains most of this ecological association, underscoring the importance of accounting for demographic composition in heat-health surveillance.",
+    "authors": [
+      "Saito H",
+      "Ohira T"
+    ],
+    "journal": "International journal of biometeorology",
+    "journal_issn": "1432-1254",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-14",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 3.52,
+    "sjr_quartile": null,
+    "openalex_topic": "Climate Change and Health Impacts",
+    "openalex_topic_score": 0.987,
+    "openalex_subfield": "Health, Toxicology and Mutagenesis",
+    "openalex_field": "Environmental Science",
+    "openalex_topics": [
+      {
+        "id": "T11244",
+        "name": "Climate Change and Health Impacts",
+        "score": 0.987
+      },
+      {
+        "id": "T11109",
+        "name": "Thermoregulation and physiological responses",
+        "score": 0.005
+      },
+      {
+        "id": "T11861",
+        "name": "Thermal Regulation in Medicine",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-21T00:06:47.053Z",
+    "classified": true,
+    "title_ja": "高齢者単身世帯率と輸液療法利用の生態学的関連は人口年齢構成で説明される：日本における生態学的研究",
+    "abstract_ja": "NDBオープンデータを用い、47都道府県の高齢者単身世帯率と大量輸液療法（G004、500mL以上）の利用率との関連を線形回帰で検討した。未調整では有意な関連が見られたが、都道府県の高齢化率で調整するとその関連は大幅に減弱し、さらに医療供給・暑熱曝露を調整するとほぼ消失し、見かけの関連は人口年齢構成でほぼ説明されることが示された。"
+  },
+  {
+    "id": "pmid-42736173",
+    "pubmed_id": "42736173",
+    "doi": "10.1002/pds.70478",
+    "title": "Active and Non-Active Comparators Yield Different Estimates of the Association Between Proton Pump Inhibitor Use and Recorded Mortality During Immune Checkpoint Inhibitor Therapy for Advanced Non-Small Cell Lung Cancer.",
+    "abstract": "Proton pump inhibitor (PPI) use has been associated with poorer outcomes in patients receiving immune checkpoint inhibitors (ICIs), but most previous studies have compared PPI users with non-users, which may differ in their underlying need for acid-suppressive therapy. We evaluated the association between PPI use and mortality using histamine-2 receptor antagonist (H2RA) users as an active comparator among patients with advanced non-small cell lung cancer (NSCLC) receiving ICIs. We conducted a retrospective cohort study using a Japanese administrative claims database. Patients with advanced NSCLC who initiated first-line ICI-based therapy and received either a PPI or an H2RA within 30 days before or on the day of ICI initiation were included. The index date was defined as the initiation date of the first-line ICI-based regimen. The primary outcome was all-cause mortality within 3 years. Propensity score overlap weighting was used to balance baseline characteristics, and weighted Cox proportional hazards models were used to estimate hazard ratios (HRs) and 95% confidence intervals (CIs). Among 6360 eligible patients, 5409 received conventional PPIs and 951 received H2RAs. After overlap weighting, mortality did not clearly differ between PPI and H2RA users (HR, 1.06; 95% CI, 0.93-1.20). In contrast, PPI users had higher mortality than patients receiving neither PPIs nor H2RAs (HR, 1.13; 95% CI, 1.05-1.20). PPI use was not clearly associated with higher mortality when H2RA users were used as an active comparator, whereas a higher mortality estimate was observed when PPI users were compared with patients receiving neither PPI nor H2RA therapy. These findings highlight the importance of comparator selection in observational studies evaluating PPI use during ICI therapy.",
+    "authors": [
+      "Ihara Y",
+      "Okada N",
+      "Mizutani M",
+      "Nakamura Y",
+      "Shimomura Y",
+      "Yamamoto S"
+    ],
+    "journal": "Pharmacoepidemiology and drug safety",
+    "journal_issn": "1099-1557",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-14",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の診療報酬請求データベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.21,
+    "sjr_quartile": null,
+    "openalex_topic": "Cancer Immunotherapy and Biomarkers",
+    "openalex_topic_score": 0.849,
+    "openalex_subfield": "Oncology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10158",
+        "name": "Cancer Immunotherapy and Biomarkers",
+        "score": 0.849
+      },
+      {
+        "id": "T10580",
+        "name": "Immunotherapy and Immune Responses",
+        "score": 0.036
+      },
+      {
+        "id": "T10678",
+        "name": "Inflammatory mediators and NSAID effects",
+        "score": 0.03
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-09-21T00:06:47.596Z",
+    "classified": true,
+    "title_ja": "非小細胞肺癌における免疫チェックポイント阻害薬治療中のプロトンポンプ阻害薬使用と死亡：能動的比較群と非能動的比較群で異なる推定値",
+    "abstract_ja": "日本のレセプトデータベースを用い、進行非小細胞肺癌に対する免疫チェックポイント阻害薬初回治療を受けた6,360例で、プロトンポンプ阻害薬（PPI）使用とH2受容体拮抗薬（H2RA）使用を比較した。能動的比較群であるH2RA使用者と比較するとPPI使用による死亡リスクの明確な上昇は見られなかったが、非使用者と比較した場合には死亡リスクの上昇が観察され、比較対照の選び方が推定値に影響することが示された。"
+  },
+  {
     "id": "pmid-42728860",
     "pubmed_id": "42728860",
     "doi": "10.1002/epd2.70399",
@@ -30,11 +1027,27 @@
     ],
     "impact_factor": 1.06,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Epilepsy research and treatment",
+    "openalex_topic_score": 0.945,
+    "openalex_subfield": "Psychiatry and Mental health",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10094",
+        "name": "Epilepsy research and treatment",
+        "score": 0.945
+      },
+      {
+        "id": "T11334",
+        "name": "Psychosomatic Disorders and Their Treatments",
+        "score": 0.012
+      },
+      {
+        "id": "T12229",
+        "name": "Pharmacological Effects and Toxicity Studies",
+        "score": 0.005
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-09-14T00:06:35.029Z",
     "classified": true,
@@ -74,11 +1087,27 @@
     ],
     "impact_factor": 2.32,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Pharmaceutical Practices and Patient Outcomes",
+    "openalex_topic_score": 0.818,
+    "openalex_subfield": "Geriatrics and Gerontology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10496",
+        "name": "Pharmaceutical Practices and Patient Outcomes",
+        "score": 0.818
+      },
+      {
+        "id": "T10897",
+        "name": "Antibiotic Use and Resistance",
+        "score": 0.066
+      },
+      {
+        "id": "T11620",
+        "name": "Medication Adherence and Compliance",
+        "score": 0.019
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-09-14T00:06:35.537Z",
     "classified": true,
@@ -20818,11 +21847,27 @@
     "last_updated": "2026-04-20T17:51:08.381Z",
     "abstract_ja": "",
     "classified": true,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null
+    "openalex_topic": "Esophageal Cancer Research and Treatment",
+    "openalex_topic_score": 0.715,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10619",
+        "name": "Esophageal Cancer Research and Treatment",
+        "score": 0.715
+      },
+      {
+        "id": "T11658",
+        "name": "Esophageal and GI Pathology",
+        "score": 0.015
+      },
+      {
+        "id": "T12020",
+        "name": "Enhanced Recovery After Surgery",
+        "score": 0.011
+      }
+    ]
   },
   {
     "id": "pmid-41945168",
