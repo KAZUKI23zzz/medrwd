@@ -1,5 +1,917 @@
 [
   {
+    "id": "pmid-42828587",
+    "pubmed_id": "42828587",
+    "doi": "10.1007/s00223-026-01613-8",
+    "title": "Romosozumab Prescribing in Relation to Cardiovascular Disease History in Japan: A Nationwide Claims Database Study.",
+    "abstract": "Concerns regarding the cardiovascular safety of romosozumab have led to regulatory restrictions and precautionary guidance worldwide. In Japan, although a history of myocardial infarction or stroke is not a formal contraindication, physicians are cautioned to avoid prescribing romosozumab to patients who have experienced these events within the previous year. How this caution is reflected in real-world clinical practice remains insufficiently described. We conducted a nationwide descriptive study using the National Database of Health Insurance Claims of Japan, which covers nearly the entire Japanese population. Patients who initiated romosozumab between March 2019 and March 2023 were identified. Cardiovascular disease (CVD) history was defined as documented myocardial infarction or stroke within 360 days prior to initiation. For comparison of prescribing patterns, users of other anti-osteoporosis medications (AOMs) were also examined. Temporal trends in the prevalence of CVD history and associations with treatment discontinuation were assessed. A total of 311,585 patients initiated romosozumab during the study period. CVD history was present in 11.7% of men and 7.9% of women at initiation. These proportions were lower than those observed among other AOM users (16.4-17.6% in men, 8.9-11.5% in women) and declined across successive fiscal years. Patients with CVD history had higher probabilities of treatment discontinuation, particularly among women. This nationwide claims-based study provides real-world romosozumab prescribing patterns in relation to CVD history in Japan. Continued efforts to enhance awareness and adherence to cardiovascular risk precautions are warranted until the cardiovascular safety profile of romosozumab is more clearly established.",
+    "authors": [
+      "Fujita Y",
+      "Kouda K",
+      "Fujimori K",
+      "Okimoto N",
+      "Nakatoh S",
+      "Tamaki J",
+      "Ishii S",
+      "Ogawa S",
+      "Iki M"
+    ],
+    "journal": "Calcified tissue international",
+    "journal_issn": "1432-0827",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-03",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.05,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-10-05T00:09:01.776Z",
+    "classified": true,
+    "title_ja": "NDBを用いたロモソズマブ処方とCVD既往の関係",
+    "abstract_ja": "日本のNDBを用い、ロモソズマブ新規開始31万例でCVD既往の割合を検討した。既往ありの割合は男性11.7%、女性7.9%で他の骨粗鬆症薬使用者より低く、年度とともに低下した。CVD既往例は治療中断の確率が高かった。"
+  },
+  {
+    "id": "pmid-42828637",
+    "pubmed_id": "42828637",
+    "doi": "10.1007/s10147-026-03202-z",
+    "title": "Serum albumin is associated with immune-related hypothyroidism and treatment continuity in non-small cell lung cancer.",
+    "abstract": "Immune checkpoint inhibitors (ICIs) are a standard treatment for advanced non-small cell lung cancer (NSCLC), but clinically practical predictors of immune-related adverse events (irAEs) and treatment continuity remain limited. We conducted a retrospective cohort study using two nationwide Japanese administrative claims databases: Medical Data Vision (MDV) and the Japan Medical Data Center (JMDC). Patients with advanced NSCLC treated with ICIs were identified. Those with available thyroid function data were included in analyses of ICI-induced hypothyroidism (MDV, n = 1786; JMDC, n = 1083), and patients receiving first-line ICIs were analyzed for treatment continuity (MDV, n = 1088; JMDC, n = 1007). Machine learning models including Elastic Net were developed and externally validated to predict hypothyroidism. Treatment durability was assessed using time to next treatment or death (TTNT-D). Elastic Net showed the most consistent performance across cohorts (AUC: 0.72 training, 0.73 validation, 0.71 test). Baseline thyroid-stimulating hormone (TSH) was the strongest predictor of hypothyroidism. Serum albumin consistently emerged as an important predictor across all machine learning models. Higher albumin levels were associated with an increased incidence of hypothyroidism and significantly prolonged TTNT-D (MDV: HR 0.75; JMDC: HR 0.79; both p  < 0.05). Patients with albumin ≥ 3.5 g/dL had markedly longer median TTNT-D compared with those < 3.0 g/dL (MDV: 15.3 vs 6.1 months; JMDC: 14.8 vs 5.4 months; both p  < 0.001). Baseline TSH was the strongest predictor of hypothyroidism, while serum albumin was associated with both hypothyroidism and treatment continuity in patients receiving first-line ICI therapy for NSCLC, suggesting its potential as a practical biomarker for clinical risk stratification.",
+    "authors": [
+      "Takada K",
+      "Tanioka M",
+      "Zamami Y",
+      "Toyooka S",
+      "Maeda Y"
+    ],
+    "journal": "International journal of clinical oncology",
+    "journal_issn": "1437-7772",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-03",
+    "analysis_methods": [
+      "回帰分析",
+      "生存時間分析",
+      "機械学習・AI"
+    ],
+    "databases_used": [
+      "MDV",
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 2.85,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-10-05T00:09:02.279Z",
+    "classified": true,
+    "title_ja": "非小細胞肺癌における血清アルブミンと免疫関連甲状腺機能低下症・治療継続性の関連",
+    "abstract_ja": "MDVとJMDCの請求データで、ICI治療を受けた進行NSCLCを解析した。機械学習（Elastic Net）で甲状腺機能低下症を予測し、血清アルブミンが重要な予測因子だった。アルブミン高値ほど甲状腺機能低下が多く、TTNT-Dが有意に延長した。"
+  },
+  {
+    "id": "pmid-42827114",
+    "pubmed_id": "42827114",
+    "doi": "10.1038/s41440-026-02834-y",
+    "title": "Seasonal variation in day-to-day blood pressure variability: large-scale within-individual home blood pressure data.",
+    "abstract": "Day-to-day home blood pressure (BP) variability predicts cardiovascular and cognitive risk, but whether it shows seasonal variation within the same individual remains uncertain. We examined its seasonal patterns using repeated personal health record measurements. We analyzed a Japanese health-insurance database (DeSC database) linked to home BP from a mobile application. Monthly trajectories and winter-summer differences in mean home morning BP, its within-individual standard deviation (SD), and variability independent of the mean (VIM) were estimated using linear mixed-effects models stratified by antihypertensive treatment and sex, with age category as a fixed effect. Winter-summer differences were standardized by the model-based total SD for comparison across indices. Among the 7,908 individuals (mean age, 55 years), 13.6% were untreated females, 10.2% were treated females, 31.1% were untreated males, and 45.1% were treated males. Home systolic BP peaked in December or January and reached its nadir in July-August, regardless of antihypertensive treatment status, sex, or age category, with winter-summer differences of approximately 3-4 mmHg (standardized differences: 0.28-0.41). The SD of home systolic BP followed a similar seasonal pattern (standardized differences: 0.07-0.18). Although winter-summer differences in VIM were also significant in several strata, particularly among males, their magnitudes were small (standardized differences ≤0.09). Home BP levels showed clear seasonal variation, whereas seasonal differences in day-to-day BP variability were minor when indices less dependent on average BP were used. The apparent winter increase in day-to-day BP variability unadjusted for BP level is largely attributable to the seasonal BP elevation.",
+    "authors": [
+      "Satoh M",
+      "Suzuki Y",
+      "Nobayashi H",
+      "Iwabe Y",
+      "Izumi S",
+      "Toyama M",
+      "Murakami T",
+      "Hashimoto H",
+      "Nakayama S",
+      "Metoki H"
+    ],
+    "journal": "Hypertension research : official journal of the Japanese Society of Hypertension",
+    "journal_issn": "1348-4214",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-02",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "DeSC Healthcare"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 3.86,
+    "sjr_quartile": null,
+    "openalex_topic": "Blood Pressure and Hypertension Studies",
+    "openalex_topic_score": 0.523,
+    "openalex_subfield": "Cardiology and Cardiovascular Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10144",
+        "name": "Blood Pressure and Hypertension Studies",
+        "score": 0.523
+      },
+      {
+        "id": "T11244",
+        "name": "Climate Change and Health Impacts",
+        "score": 0.277
+      },
+      {
+        "id": "T12075",
+        "name": "Sodium Intake and Health",
+        "score": 0.015
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-05T00:09:01.279Z",
+    "classified": true,
+    "title_ja": "在宅血圧の日間変動における季節変動：個人内の大規模在宅血圧データ",
+    "abstract_ja": "DeSCデータベースとモバイルアプリの在宅血圧を連結し、季節変動を線形混合効果モデルで解析した。収縮期血圧は12〜1月に最高、7〜8月に最低で冬夏差は約3〜4 mmHgだった。日間変動のSDも同様の季節性を示した。"
+  },
+  {
+    "id": "pmid-42817601",
+    "pubmed_id": "42817601",
+    "doi": "10.1111/ger.70125",
+    "title": "Trends in Denture Insurance Claims and Their Association With Socioeconomic Indicators and Population Aging in Japan.",
+    "abstract": "To describe nationwide temporal trends in insurance-covered denture claims in Japan and examine their associations with prefectural socioeconomic indicators and population aging using the National Database of Health Insurance Claims and Specific Health Checkups (NDB). Japan is experiencing rapid population aging while tooth retention among older adults is improving. How these demographic and oral-health changes are reflected in the provision of insurance-covered complete dentures and removable partial dentures (RPDs) remains unclear. A prefecture-level time-series analysis of NDB dental claims from 2013 to 2018 was conducted. The primary outcome was the annual number of total denture claims per dental clinic. Category-specific claims per clinic were also analysed for resin-base complete dentures and resin-base RPDs replacing 1-4, 5-8, 9-11 or 12-14 missing teeth. Prefectural income per capita, gross domestic product (GDP) per capita, and the proportion of residents aged ≥ 65 years were linked with annual claim data. Temporal trends, Pearson correlations, and category-specific multivariable linear regression models adjusted for calendar year were examined. Total denture claims per clinic declined nationwide during the study period, from an average of 177 to 159 claims per clinic; complete denture claims showed the largest decrease (16%). The proportional share of complete dentures decreased, whereas the share of RPDs replacing 1-4 missing teeth increased. Total denture claims per clinic showed moderate negative correlations with income per capita (r = -0.518) and GDP per capita (r = -0.411), and a weak positive correlation with the proportion of residents aged ≥ 65 years (r = 0.344). In category-specific multivariable models, the proportion of residents aged ≥ 65 years was positively associated with claims in all denture categories, and calendar year was negatively associated with claims. Total insurance-covered denture claims per clinic declined in Japan during 2013-2018, with regional variation and a larger relative contribution of small-span RPD claims. These findings suggest that geriatric denture service planning should account for both population aging and regional socioeconomic context.",
+    "authors": [
+      "Yonezawa Y",
+      "Asano A",
+      "Kuwajima Y",
+      "Sato H",
+      "Yonezawa S",
+      "Nagai S",
+      "Kobayashi T"
+    ],
+    "journal": "Gerodontology",
+    "journal_issn": "1741-2358",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-01",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 1.67,
+    "sjr_quartile": null,
+    "openalex_topic": "Dental Health and Care Utilization",
+    "openalex_topic_score": 0.987,
+    "openalex_subfield": "Periodontics",
+    "openalex_field": "Dentistry",
+    "openalex_topics": [
+      {
+        "id": "T10368",
+        "name": "Dental Health and Care Utilization",
+        "score": 0.987
+      },
+      {
+        "id": "T10992",
+        "name": "Forensic Anthropology and Bioarchaeology Studies",
+        "score": 0.001
+      },
+      {
+        "id": "T11509",
+        "name": "Hip and Femur Fractures",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-05T00:08:59.769Z",
+    "classified": true,
+    "title_ja": "日本における義歯の保険請求の推移と社会経済指標・高齢化との関連",
+    "abstract_ja": "NDBの歯科レセプト（2013〜2018年）を用い、義歯請求の都道府県別時系列を解析した。1診療所当たり総義歯請求は177件から159件に減少し、総義歯の減少が最大（16%）だった。部分床義歯の1〜4歯欠損の割合は増加した。"
+  },
+  {
+    "id": "pmid-42819711",
+    "pubmed_id": "42819711",
+    "doi": "10.1002/jgh3.70473",
+    "title": "Current Status of Pancreatic Exocrine Insufficiency Diagnosis and Pancreatic Enzyme Replacement Therapy Implementation in Patients With Chronic Pancreatitis.",
+    "abstract": "The prevalence of chronic pancreatitis (CP) is increasing in Japan. This study aimed to elucidate the current status of pancreatic exocrine insufficiency (PEI) diagnosis and the prescription of pancreatic enzyme replacement therapy (PERT) in Japanese patients with CP. We conducted a retrospective observational study using a large-scale claims database in Japan with a data collection period between April 2008 and August 2022. Patients with CP were categorized into PERT and no-PERT cohorts based on the presence or absence of PERT prescriptions. We found an increase in the number of CP diagnoses, PERT prescriptions, and PEI diagnoses over the past decade. The median PERT persistence time was 254.0 days (95% confidence interval: 219.0-288.0), and the 5-year persistence rate was 20.4%. Patients in the PERT cohort (n = 3056) were younger (61.9 vs. 65.4 years), had a higher mean Charlson Comorbidity Index (1.7 vs. 1.3), and were more likely to be underweight (body mass index < 18.5 kg/m2, 13.7% vs. 6.0%) than those in the no-PERT cohort (n = 32 861). Patients in the PERT cohort had higher rates of in-hospital deaths (6.3% vs. 4.7%), weight loss (13.3% vs. 9.2%), pancreatic diabetes (1.7% vs. 0.7%), and pancreatic cancer (1.7% vs. 0.7%) than those in the no-PERT cohort. The number of PEI diagnoses and PERT prescriptions for patients with CP has increased in Japan over the past decade. The low PERT persistence rate suggests the need for further research to understand the factors that affect treatment persistence in CP management.",
+    "authors": [
+      "Itoh N",
+      "Hasebe Y",
+      "Yada T",
+      "Nozawa K"
+    ],
+    "journal": "JGH open : an open access journal of gastroenterology and hepatology",
+    "journal_issn": "2397-9070",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-01",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の大規模レセプトデータベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.75,
+    "sjr_quartile": null,
+    "openalex_topic": "Pancreatitis Pathology and Treatment",
+    "openalex_topic_score": 0.998,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10760",
+        "name": "Pancreatitis Pathology and Treatment",
+        "score": 0.998
+      },
+      {
+        "id": "T10231",
+        "name": "Pancreatic and Hepatic Oncology Research",
+        "score": 0.001
+      },
+      {
+        "id": "T10401",
+        "name": "Diabetes Treatment and Management",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-05T00:09:00.282Z",
+    "classified": true,
+    "title_ja": "慢性膵炎における膵外分泌機能不全の診断と膵酵素補充療法の実施状況",
+    "abstract_ja": "日本の大規模請求データベースで慢性膵炎患者を後方視的に解析した。慢性膵炎の診断・PERT処方・PEI診断は過去10年で増加した。PERTの継続期間中央値は254日で、5年継続率は20.4%と低かった。"
+  },
+  {
+    "id": "pmid-42821763",
+    "pubmed_id": "42821763",
+    "doi": "10.1097/CORR.0000000000004146",
+    "title": "Does Early Surgery Reduce Mortality Compared With Delayed Surgery Among Patients With Periprosthetic Hip Fracture? A Target Trial Emulation.",
+    "abstract": "Previous observational studies comparing early versus delayed surgery for periprosthetic hip fractures may yield inaccurate estimates because they did not account for immortal time. Immortal time refers here to the period during which patients had to remain alive to be classified in the delayed surgery group. Patients who died before delayed surgery could not enter that group, potentially making delayed surgery appear safer than it truly was. Although early surgery is recommended for native hip fractures, whether it improves survival after periprosthetic hip fracture remains uncertain because prior null findings may reflect either no true effect or bias arising from immortal time. We therefore used a target trial emulation framework to estimate the effect of early versus delayed surgery strategies on short-term mortality. (1) When immortal time is appropriately addressed, what is the estimated effect of an early surgery strategy (within 2 days after admission) compared with a delayed surgery strategy (3 to 10 days after admission) on 30- and 90-day mortality risks? (2) How do mortality estimates from a conventional analysis based on observed surgical timing, which is susceptible to immortal time, compare with those from the target trial emulation? Using 2014 to 2024 data from a Japanese hospital administrative database, we identified 4626 potentially eligible patients who were hospitalized with periprosthetic hip fractures. The database captured admission dates, procedure dates, and mortality across many hospitals, enabling analysis of surgical timing and short-term mortality for this relatively uncommon fracture. We excluded 1.3% (62 of 4626): 0.3% (14) who were younger than 45 years, 0.2% (11) who had pathologic fractures, and 0.8% (37) who were treated at institutions where data submission was temporarily suspended during the 90-day follow-up window, leaving 4564 eligible patients. We used the clone-censor-weight approach to emulate a randomized trial and estimate the observational analog of the per-protocol effect. On day 0 (admission), each patient was cloned, and one clone was assigned to each strategy. Thus, both strategies included the same patients at baseline (mean age 84 years; 80% female), and all baseline characteristics were identical by design. Clones were artificially censored for nonadherence to the assigned strategy, and inverse probability weighting was used to adjust for selection bias from artificial censoring and loss to follow-up. Of 4564 clones assigned to each strategy, 11% (510) in the early surgery strategy and 34% (1564) in the delayed surgery strategy were not artificially censored for nonadherence. Loss to follow-up before 30 days occurred in 2.9% (132) and 7.5% (341), respectively; before 90 days, it occurred in 4.1% (189) and 11.8% (538), respectively. Weighted pooled logistic regression estimated mortality risks, risk differences, and risk ratios at 30 and 90 days; 95% confidence intervals (CIs) were obtained from 500 bootstrap samples. As a methodologic benchmark, we also estimated mortality using a conventional classification based on observed surgical timing (days 0 to 2 versus days 3 to 10), recognizing that this postbaseline classification was susceptible to immortal time. At 30 days, there was no clear evidence of a difference in mortality risk between the strategies, although the estimates were higher under the early strategy (1.72% versus 0.83%; risk difference 0.89% [95% CI -0.32% to 1.72%]; risk ratio 2.06 [95% CI 0.64 to 3.73]). At 90 days, there was no clear evidence of a difference, and the effect estimates were near the null (2.35% versus 2.31%; risk difference 0.04% [95% CI -1.08% to 1.24%]; risk ratio 1.01 [95% CI 0.59 to 1.68]). Complete-case estimates were similar, and subgroup estimates were imprecise, with no consistent evidence of effect modification by age or sex. Compared with the emulation, the benchmark analysis yielded lower estimated 30-day mortality risks in both surgical timing groups: 1.10% in the early surgery group and 0.48% in the delayed-surgery group (risk difference 0.62% [95% CI -0.20% to 1.80%]; risk ratio 2.27 [95% CI 0.74 to 14.10]); the estimated 90-day mortality risks were 2.08% and 2.05%, respectively (risk difference 0.03% [95% CI -1.55% to 1.83%]; risk ratio 1.01 [95% CI 0.36 to 2.22]). Our findings do not support assuming that the 48-hour standard for native hip fractures applies to periprosthetic hip fractures solely to reduce short-term mortality. Surgeons may consider the time required for medical stabilization and operative planning, although our findings do not justify avoidable delay because other outcomes were not evaluated. The lower 30-day estimates obtained using observed surgical timing highlight potential bias from postbaseline classification, including immortal time and selection based on eventual surgery; the 90-day estimates were similar. Because causal interpretation relies on unverifiable assumptions, and residual bias from unmeasured factors remains possible, future observational studies should emulate target trials and incorporate fracture severity, operative complexity, and surgical resources to evaluate complications, reoperation, and functional recovery. Level Ⅲ, therapeutic study.",
+    "authors": [
+      "Yoshiyama T",
+      "Fukasawa T",
+      "Anno T",
+      "Masuda S",
+      "Matsuda S",
+      "Kawakami K"
+    ],
+    "journal": "Clinical orthopaedics and related research",
+    "journal_issn": "1528-1132",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-01",
+    "analysis_methods": [
+      "生存時間分析",
+      "ターゲットトライアルエミュレーション"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の病院行政データベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 1.77,
+    "sjr_quartile": null,
+    "openalex_topic": "Hip and Femur Fractures",
+    "openalex_topic_score": 0.627,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11509",
+        "name": "Hip and Femur Fractures",
+        "score": 0.627
+      },
+      {
+        "id": "T10512",
+        "name": "Orthopaedic implants and arthroplasty",
+        "score": 0.246
+      },
+      {
+        "id": "T10562",
+        "name": "Total Knee Arthroplasty Outcomes",
+        "score": 0.052
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-05T00:09:00.784Z",
+    "classified": true,
+    "title_ja": "人工関節周囲股関節骨折における早期手術と待機手術の死亡率：ターゲットトライアルエミュレーション",
+    "abstract_ja": "日本の病院行政データベース（2014〜2024年）で、早期手術と待機手術の死亡への影響をターゲットトライアルエミュレーションで推定した。不死時間バイアスを適切に扱うことを狙い、従来解析との比較も行った。"
+  },
+  {
+    "id": "pmid-42812702",
+    "pubmed_id": "42812702",
+    "doi": "10.3389/fneur.2026.1877931",
+    "title": "Treatment patterns, intensive treatment, and hospitalization-related burden of juvenile generalized myasthenia gravis in Japan: a retrospective cohort study using a hospital-based claims database.",
+    "abstract": "Juvenile generalized myasthenia gravis (MG) management aims to control symptoms while minimizing corticosteroid-related toxicity. However, large-scale evidence on real-world pediatric treatment patterns remains limited. We conducted a retrospective cohort study using a large Japanese hospital-based claims database (Medical Data Vision). We identified patients aged 0-17 years with juvenile generalized MG between April 2008 and November 2024. We summarized the use of cholinesterase inhibitors, oral corticosteroids, immunosuppressants, and intensive treatments (plasma exchange, intravenous immunoglobulin [IVIg], or high-dose steroid pulse therapy) during the one-year follow-up period after the first confirmed MG diagnosis recorded in the database. We also compared patient characteristics and treatment patterns by age group (children: 0-9 years vs. adolescents: 10-17 years). We identified 261 patients with juvenile generalized MG, including 125 children and 136 adolescents cases. Cholinesterase inhibitors were the most frequently used medication (69.3% [181/261]). Oral corticosteroids were commonly used (65.9% [172/261]), whereas immunosuppressant use was limited; only 89/261 (34.1%) received tacrolimus. Among the 217 patients with complete one-year follow-up data, 146 received corticosteroid. The mean daily corticosteroid dose, calculated as the annual cumulative corticosteroid dose divided by 365 days, was 8.7 mg/day (SD 7.1) (children: 6.2 mg/day [SD 4.1]; adolescents: 11.4 mg/day [SD 8.6]). Among 261 generalized MG patients, 52 (19.9%) received intensive treatments, with a higher proportion in adolescents than children (25.7% [35/136] vs. 13.6% [17/125]). IVIg was the most common intensive treatment (13.4% [35/261]), followed by steroid pulse therapy (10.3% [27/261]) and plasma exchange (3.8% [10/261]). Adolescent generalized MG had higher intensive care unit hospitalization rates than child generalized MG (8.8% [12/136] vs. 0.8% [1/125]), and all thymectomies occurred in adolescent patients (8.1% [11/136] vs. 0% [0/125]). In Japanese real-world practice, about one in five children with generalized MG required intensive treatments, particularly among adolescents, while steroid-sparing immunosuppression was used in only one-third. These findings support close monitoring of adolescent generalized MG and highlight opportunities to optimize steroid-sparing management in juvenile generalized MG.",
+    "authors": [
+      "Ishigaki K",
+      "Horio H",
+      "Kitamura T",
+      "Saga Y"
+    ],
+    "journal": "Frontiers in neurology",
+    "journal_issn": "1664-2295",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-30",
+    "analysis_methods": [],
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 3.08,
+    "sjr_quartile": null,
+    "openalex_topic": "Myasthenia Gravis and Thymoma",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Neurology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11271",
+        "name": "Myasthenia Gravis and Thymoma",
+        "score": 0.999
+      },
+      {
+        "id": "T12421",
+        "name": "Adrenal Hormones and Disorders",
+        "score": 0
+      },
+      {
+        "id": "T14286",
+        "name": "Parkinson's Disease and Spinal Disorders",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-05T00:08:58.274Z",
+    "classified": true,
+    "title_ja": "日本における若年型全身型重症筋無力症の治療パターンと入院負担：病院ベース請求データベースを用いた後方視的コホート研究",
+    "abstract_ja": "MDVを用いて0〜17歳の若年型全身型MG 261例の治療実態を解析した。コリンエステラーゼ阻害薬が69.3%、経口ステロイドが65.9%で使用され、タクロリムスは34.1%だった。小児と思春期で治療パターンを比較した。"
+  },
+  {
+    "id": "pmid-42814029",
+    "pubmed_id": "42814029",
+    "doi": "10.1111/iju.70652",
+    "title": "Overactive Bladder Pharmacotherapy and Long-Term Care Needs, Dementia, and Frailty in Older Women.",
+    "abstract": "To examine the associations of anticholinergic agents and β3-adrenergic receptor agonists (β3-agonists) prescribed for overactive bladder (OAB) with worsening long-term care needs, incident dementia, and frailty among older women. This retrospective cohort study used the Shizuoka Kokuho Database, a population-based administrative claims database in Japan. Women aged 65-84 years who newly initiated anticholinergic agents or β3-agonists for OAB between 2012 and 2024 and had prescription records consistent with continuous treatment for at least 1 year were included. Follow-up began 12 months after treatment initiation. Stabilized inverse probability of treatment weighting (sIPTW) was used to balance baseline covariates between groups. Primary outcomes were worsening long-term care needs and incident dementia; the secondary outcome was changes in the electronic Frailty Index (eFI). Time-to-event outcomes were analyzed using sIPTW-weighted Cox proportional hazards models. The cohort comprised 1 605 anticholinergic and 2 189 β3-agonist users. After sIPTW, baseline covariates were well-balanced. No significant difference was observed in worsening long-term care needs (hazard ratio [HR], 1.03; 95% confidence interval [CI], 0.87-1.22). Anticholinergic use was associated with a higher risk of claims-defined incident dementia compared with β3-agonist use (HR, 1.49; 95% CI, 1.04-2.13). Median eFI did not differ significantly between the groups during 5 years of follow-up. Among older women with OAB, anticholinergic use was associated with an increased risk of claims-defined incident dementia but not with worsening long-term care needs or frailty compared with β3-agonists. Residual confounding and differential dementia ascertainment cannot be excluded.",
+    "authors": [
+      "Ito K",
+      "Sato Y",
+      "Kuriyama N",
+      "Tanaka Y"
+    ],
+    "journal": "International journal of urology : official journal of the Japanese Urological Association",
+    "journal_issn": "1442-2042",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-30",
+    "analysis_methods": [
+      "生存時間分析",
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "静岡県国民健康保険データベース（Shizuoka Kokuho Database）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.85,
+    "sjr_quartile": null,
+    "openalex_topic": "Urinary Bladder and Prostate Research",
+    "openalex_topic_score": 0.301,
+    "openalex_subfield": "Urology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10279",
+        "name": "Urinary Bladder and Prostate Research",
+        "score": 0.301
+      },
+      {
+        "id": "T11232",
+        "name": "Urinary Tract Infections Management",
+        "score": 0.233
+      },
+      {
+        "id": "T11011",
+        "name": "Frailty in Older Adults",
+        "score": 0.137
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-05T00:08:58.773Z",
+    "classified": true,
+    "title_ja": "高齢女性における過活動膀胱治療薬と要介護度悪化・認知症・フレイルの関連",
+    "abstract_ja": "静岡国保データベースで、抗コリン薬とβ3作動薬の新規使用者をsIPTWで比較した。要介護度悪化に差はなかったが、抗コリン薬は認知症発症リスクが高かった（HR 1.49）。eFIは両群で差がなかった。"
+  },
+  {
+    "id": "pmid-42816336",
+    "pubmed_id": "42816336",
+    "doi": "10.1507/endocrj.EJ26-0185",
+    "title": "Real-world patterns of growth hormone treatment in Japanese children with short stature associated with small for gestational age, Turner syndrome, Noonan syndrome, achondroplasia, and hypochondroplasia: a retrospective database study.",
+    "abstract": "In Japan, GH treatment (GHT) is used for short stature associated with small for gestational age (SGA), Noonan syndrome (NS), Turner syndrome (TS), achondroplasia (ACH), and hypochondroplasia (HCH). However, real-world data on these diagnoses and GHT use for these conditions in Japan remain limited. In this retrospective cohort study, we used the JMDC claims database (2005-2021) to extract data of children with SGA-related short stature or diagnosed with short stature diseases, namely NS, TS, ACH, or HCH, particularly in boys aged <17 years and girls aged <15 years. We reported the prevalence, comorbidities, age at diagnosis, time from diagnosis to treatment initiation, persistence to GHT, and proportion of days covered (PDC). We analyzed data from children with SGA-related short stature (n = 786), NS (n = 79), TS (n = 172), ACH (n = 107), and HCH (n = 30); the mean (standard deviation) age at initial diagnosis was 5.2 (3.5), 4.0 (4.0), 6.5 (4.2), 3.0 (4.1), and 4.5 (3.9) years, respectively. The prevalence (per 100,000) was 59.59, 5.45, 9.52, 8.31, and 2.12 for SGA-related short stature, NS, TS, ACH, and HCH, respectively. Mean PDC for SGA-related short stature, NS, TS, ACH, and HCH was 0.918, 0.984, 0.953, 0.941, and 1.000, respectively, demonstrating high persistence to GHT. This study provides insights into the current diagnosis and GHT use among children with short stature in Japan. The findings suggest that most Japanese children continue and adhere well to GHT. However, continued efforts toward early referral and diagnosis remain crucial.",
+    "authors": [
+      "Mori J",
+      "Nakamura A",
+      "Kawai M",
+      "Tsuboi S",
+      "Sato Y",
+      "Endo T",
+      "Dateki S"
+    ],
+    "journal": "Endocrine journal",
+    "journal_issn": "1348-4540",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-30",
+    "analysis_methods": [],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.4,
+    "sjr_quartile": null,
+    "openalex_topic": "Protein Tyrosine Phosphatases",
+    "openalex_topic_score": 0.433,
+    "openalex_subfield": "Molecular Biology",
+    "openalex_field": "Biochemistry, Genetics and Molecular Biology",
+    "openalex_topics": [
+      {
+        "id": "T12104",
+        "name": "Protein Tyrosine Phosphatases",
+        "score": 0.433
+      },
+      {
+        "id": "T10748",
+        "name": "Growth Hormone and Insulin-like Growth Factors",
+        "score": 0.207
+      },
+      {
+        "id": "T11310",
+        "name": "Connective tissue disorders research",
+        "score": 0.107
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-05T00:08:59.285Z",
+    "classified": true,
+    "title_ja": "日本のSGA性低身長・ターナー症候群・ヌーナン症候群・軟骨無形成症・軟骨低形成症の小児における成長ホルモン治療の実態",
+    "abstract_ja": "JMDCで低身長疾患の小児を解析し、有病率・併存症・診断から治療開始までの期間・治療継続性を示した。PDCは0.92〜1.00と高く、多くの小児がGH治療を継続し良好に遵守していた。"
+  },
+  {
+    "id": "pmid-42806404",
+    "pubmed_id": "42806404",
+    "doi": "10.1186/s40360-026-01223-y",
+    "title": "Multinational pharmacovigilance assessment of drug-associated esophageal ulceration and perforation: evidence from FAERS, JADER, and Canada Vigilance.",
+    "abstract": "Drug-associated esophageal ulceration and perforation are uncommon but clinically serious adverse events. This study characterized post-marketing reporting patterns for these events across three spontaneous reporting systems. Reports from the U.S. Food and Drug Administration Adverse Event Reporting System (FAERS), Japanese Adverse Drug Event Report database (JADER), and Canada Vigilance from 2004 to 2025 were analyzed using predefined Medical Dictionary for Regulatory Activities (MedDRA) preferred terms. Disproportionality was assessed using the reporting odds ratio (ROR), proportional reporting ratio (PRR), Bayesian confidence propagation neural network (BCPNN), and multi-item gamma Poisson shrinker (MGPS). In FAERS, least absolute shrinkage and selection operator (LASSO) regression followed by multivariable logistic regression was used for exploratory signal prioritization. Reported time-to-onset was summarized for drug-report records with valid therapy start and event onset dates. FAERS contained 8,061 reports meeting the prespecified composite case definition. Among the 50 most frequently reported FAERS primary-suspect drugs, the largest disproportionality estimates were observed for doxycycline (ROR 41.15, 95% confidence interval [CI] 36.47-46.43), alendronic acid (ROR 21.45, 95% CI 19.14-24.04), and clindamycin (ROR 18.59, 95% CI 15.40-22.44). JADER and Canada Vigilance showed descriptively overlapping but heterogeneous reporting patterns. Reported time-to-onset was heterogeneous, with both short and long recorded intervals. This multidatabase analysis identified prominent reporting signals for established pill-injury drugs and exploratory reporting patterns involving other drug categories. These findings are hypothesis-generating and should not be interpreted as estimates of incidence, comparative clinical risk, or causal effects.",
+    "authors": [
+      "Zhang L",
+      "Luan X",
+      "Liu C",
+      "Xin X",
+      "Zhang X",
+      "Zhao S",
+      "Qiu W"
+    ],
+    "journal": "BMC pharmacology & toxicology",
+    "journal_issn": "2050-6511",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-29",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）",
+      "回帰分析"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS",
+      "Canada Vigilance"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.27,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.911,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.911
+      },
+      {
+        "id": "T10065",
+        "name": "Atrial Fibrillation Management and Outcomes",
+        "score": 0.023
+      },
+      {
+        "id": "T12876",
+        "name": "Potassium and Related Disorders",
+        "score": 0.021
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-05T00:08:56.767Z",
+    "classified": true,
+    "title_ja": "薬剤関連の食道潰瘍・穿孔の国際ファーマコビジランス評価：FAERS・JADER・Canada Vigilance",
+    "abstract_ja": "3つの自発報告データベースで薬剤関連の食道潰瘍・穿孔を解析した。ROR・PRR等で不均衡分析を行い、FAERSではドキシサイクリン、アレンドロン酸、クリンダマイシンで大きなシグナルを認めた。JADERとCanada Vigilanceでも概ね重なる傾向だった。"
+  },
+  {
+    "id": "pmid-42808323",
+    "pubmed_id": "42808323",
+    "doi": "10.1002/pds.70488",
+    "title": "Validation of Claims-Based Algorithms for Intussusception Identification in Japanese Hospitals: A Multicenter Analysis From the CLEAR Study.",
+    "abstract": "Intussusception is a serious condition and a rare adverse event of rotavirus vaccination. While health insurance claims data are increasingly used for epidemiological research, claims-based algorithms for identifying intussusception have not been validated in Japan. This study aimed to validate multiple claims-based algorithms for intussusception identification against ultrasound findings as the reference standard. This validation study used claims data and ultrasound findings from three Japanese hospitals between 2011 and 2024. The study population comprised all patients who received care during each hospital's data period. We developed 10 algorithms combining an intussusception diagnostic code (ICD-10: K56.1), hospitalization status, ultrasound imaging codes, and surgery codes. Sensitivity, specificity, positive predictive value (PPV), and negative predictive value (NPV) were calculated for each algorithm. Age- and sex-stratified analyses were also performed. Among 701 263 patients (mean age: 41.8 years; 52.0% female), 79 true intussusception cases (mean age: 8.3 years; 41.8% female) were identified (prevalence: 0.0113%). While sensitivity (54.4%-77.2%) and PPV (8.9%-28.1%) varied according to definition stringency, all algorithms achieved near-perfect specificity and NPV (≥ 99.9%). The algorithm that only used the diagnostic code yielded the highest sensitivity, while the algorithm that incorporated all four criteria achieved the highest PPV. Algorithm validity varied by age, with higher sensitivity and PPV for children aged ≤ 5 years. The algorithms demonstrated a trade-off between sensitivity and PPV, and researchers should select algorithms according to their study objectives. Our findings provide a robust foundation to guide algorithm selection for intussusception research using Japanese claims data.",
+    "authors": [
+      "Saito K",
+      "Ishiguro C",
+      "Sato K",
+      "Nakatochi M",
+      "Fukuda H"
+    ],
+    "journal": "Pharmacoepidemiology and drug safety",
+    "journal_issn": "1099-1557",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-29",
+    "analysis_methods": [],
+    "databases_used": [],
+    "additional_data_sources": [
+      "CLEAR研究の3病院の請求データと超音波所見"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "方法論・バリデーション"
+    ],
+    "impact_factor": 2.25,
+    "sjr_quartile": null,
+    "openalex_topic": "Viral gastroenteritis research and epidemiology",
+    "openalex_topic_score": 0.936,
+    "openalex_subfield": "Infectious Diseases",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10976",
+        "name": "Viral gastroenteritis research and epidemiology",
+        "score": 0.936
+      },
+      {
+        "id": "T11855",
+        "name": "Gastrointestinal disorders and treatments",
+        "score": 0.016
+      },
+      {
+        "id": "T11243",
+        "name": "Respiratory viral infections research",
+        "score": 0.011
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-05T00:08:57.273Z",
+    "classified": true,
+    "title_ja": "日本の病院における腸重積症同定のための請求ベースアルゴリズムの妥当性検証：CLEAR研究",
+    "abstract_ja": "3病院の請求データと超音波所見を用い、腸重積症を同定する10種のアルゴリズムを検証した。感度は54.4〜77.2%、PPVは8.9〜28.1%で、特異度とNPVは99.9%以上だった。"
+  },
+  {
+    "id": "pmid-42810489",
+    "pubmed_id": "42810489",
+    "doi": "10.1016/j.amjmed.2026.09.029",
+    "title": "Heat exposure, multimorbidity, and heatstroke risk in working-age adults in Japan: a matched case-control study.",
+    "abstract": "Climate change has increased the burden of heat-related illnesses worldwide; however, current Heat Health Warning Systems primarily rely on meteorological thresholds and do not adequately account for individual vulnerability. Here, we examined whether cumulative lifestyle and comorbidity burden modifies the association between heat exposure and heatstroke. This matched case-control study used a Japanese claims database linked to health examination data. Cases were employees aged 18-74 years with heatstroke and were matched to controls by age and sex (1:3). Exposure was daily maximum wet-bulb globe temperature (WBGT-max). Condition burden was an unweighted count of 11 behavioral, cardiometabolic, and chronic conditions. Medication-adjusted conditional logistic regression was used to assess multiplicative and additive interactions. We included 21,724 cases and 65,172 controls. The WBGT-by-condition burden interaction was significant (odds ratio [OR] per 1°C and one additional condition, 1.009; 95% confidence interval [CI], 1.005-1.013). Using a WBGT of 25°C and no conditions as the common reference, the ORs at 33°C were 2.04 (95% CI, 1.84-2.25) with 0 conditions and 2.66 (95% CI, 2.40-2.94) with four conditions. Positive interaction was also observed on the additive scale (relative excess risk due to interaction, 0.65; 95% CI, 0.45-0.85). Individual-condition associations were modest; after medication adjustment, smoking, liver dysfunction, and obesity remained positively associated, whereas cardiovascular, cerebrovascular, and inverse alcohol associations were attenuated. The association between WBGT and heatstroke was stronger at greater cumulative lifestyle and comorbidity burdens, even after accounting for potentially heat-sensitive medications.",
+    "authors": [
+      "Kitazono M",
+      "Den H",
+      "Miyamoto K",
+      "Dohi K",
+      "Kokaze A"
+    ],
+    "journal": "The American journal of medicine",
+    "journal_issn": "1555-7162",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-29",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "健診データと連結した日本の請求データベース"
+    ],
+    "study_design": "症例対照研究",
+    "research_categories": [
+      "安全性・副作用",
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 1.88,
+    "sjr_quartile": null,
+    "openalex_topic": "Thermoregulation and physiological responses",
+    "openalex_topic_score": 0.863,
+    "openalex_subfield": "Physiology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11109",
+        "name": "Thermoregulation and physiological responses",
+        "score": 0.863
+      },
+      {
+        "id": "T11244",
+        "name": "Climate Change and Health Impacts",
+        "score": 0.128
+      },
+      {
+        "id": "T13108",
+        "name": "Therapeutic Uses of Natural Elements",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-05T00:08:57.775Z",
+    "classified": true,
+    "title_ja": "日本の就労世代における暑熱曝露・多疾患併存と熱中症リスク：マッチド症例対照研究",
+    "abstract_ja": "健診データと連結した請求データベースで、熱中症2.2万例と対照6.5万例を比較した。WBGTと疾患負荷の交互作用が有意で、33℃でのORは0疾患2.04、4疾患2.66だった。加法尺度でも正の交互作用を認めた。"
+  },
+  {
+    "id": "pmid-42802498",
+    "pubmed_id": "42802498",
+    "doi": "10.1111/luts.70099",
+    "title": "Sex Differences in Prescribing Patterns of Anticholinergics and β3-Adrenoceptor Agonists for Overactive Bladder: A Nationwide Study in Japan, FY2017-FY2024.",
+    "abstract": "Drug treatment for overactive bladder (OAB) is changing, with an increasing share of β3-adrenoceptor agonists relative to anticholinergics, but it is not known how far this change has progressed in older people, who are most vulnerable to the risks of anticholinergics. We examined the use of these drugs in Japan by age and sex, and analyzed changes in anticholinergic burden using a large database. We analyzed outpatient prescriptions of two β3-adrenoceptor agonists and six anticholinergics from FY2017 to FY2024, using the sex- and age-stratified tables of the NDB Open Data of Japan. Dispensed tablets were converted into patient-days, and the β3-adrenoceptor agonist share was calculated. Anticholinergic burden was measured as ACB-weighted prescription volume (patient-days multiplied by the anticholinergic cognitive burden score). Because FY2021-FY2022 was a period of nationwide generic supply disruption, FY2018 and FY2024 were used as endpoints when estimating change over time. The β3-adrenoceptor agonist share rose from 36.2% to 64.9%, but anticholinergic use fell only slightly (3.10 × 108 to 2.94 × 108 tablets; -5.0%). In FY2024, the β3-adrenoceptor agonist share was higher in men than in women in every age group, and the difference widened with age (+1.2 percentage points at 50-54 years and +14.2 at ≥ 90 years). ACB-weighted prescription volume was higher in women than in men, and the female-to-male ratio rose with age (1.1 at 65-74 years, 1.6 at 75-84 years, and 2.8 at ≥ 85 years). Between FY2018 and FY2024, prescription volume fell by about 20% at 65-74 and 75-84 years, but the fall was smallest in women aged ≥ 85 years (-11.3%). The β3-adrenoceptor agonist share for OAB has continued to increase in Japan, but this change appears slower in older women, in whom anticholinergic exposure remains high.",
+    "authors": [
+      "Koike T",
+      "Kawahara T",
+      "Hashizume A",
+      "Yamazaki M",
+      "Takamoto D",
+      "Ito H",
+      "Takeshima T",
+      "Uemura H",
+      "Makiyama K",
+      "Teranishi JI"
+    ],
+    "journal": "Lower urinary tract symptoms",
+    "journal_issn": "1757-5672",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-28",
+    "analysis_methods": [],
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "安全性・副作用"
+    ],
+    "impact_factor": 0.9,
+    "sjr_quartile": null,
+    "openalex_topic": "Urinary Bladder and Prostate Research",
+    "openalex_topic_score": 0.943,
+    "openalex_subfield": "Urology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10279",
+        "name": "Urinary Bladder and Prostate Research",
+        "score": 0.943
+      },
+      {
+        "id": "T11232",
+        "name": "Urinary Tract Infections Management",
+        "score": 0.03
+      },
+      {
+        "id": "T10418",
+        "name": "Pelvic floor disorders treatments",
+        "score": 0.014
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-05T00:08:55.267Z",
+    "classified": true,
+    "title_ja": "過活動膀胱に対する抗コリン薬とβ3作動薬の処方パターンの性差：全国調査 FY2017〜FY2024",
+    "abstract_ja": "NDBオープンデータを用い、年齢・性別ごとの処方を解析した。β3作動薬の割合は36.2%から64.9%に上昇したが、抗コリン薬は5.0%減にとどまった。高齢ほどβ3作動薬割合の性差が拡大し、ACB加重処方量は女性で高かった。"
+  },
+  {
+    "id": "pmid-42806088",
+    "pubmed_id": "42806088",
+    "doi": "10.1007/s00464-026-13374-4",
+    "title": "Current status and 10-year trends of reimbursed robot-assisted surgery in Japan: a nationwide claims-based study using the NDB Open Data.",
+    "abstract": "Since reimbursement under Japan's National Health Insurance system, robot-assisted surgery (RAS) has expanded rapidly. However, comprehensive cross-disciplinary analyses describing long-term adoption trends and regional variation remain limited. This study aimed to evaluate nationwide adoption and distribution of reimbursed RAS across surgical specialties in Japan. We performed a population-based study using publicly available claims data from the National Database (NDB) Open Data (2014-2023). All procedures reimbursed as RAS as of fiscal year 2023, along with corresponding endoscopic and open procedures, were included. Ten-year trends in RAS volume were analyzed across surgical fields and procedure categories. For representative procedures in fiscal year 2023, prefecture-level and age- and sex-specific variations in surgical approach were examined. By 2023, 47 reimbursed robotic procedures were classified into 20 categories across four surgical fields. Annual RAS volume increased markedly, reaching 95,845 procedures in 2023. Urology accounted for the largest share (40,673 cases), followed by gastrointestinal surgery and gynecology. Radical prostatectomy was the most common robotic procedure, followed by rectal resection and nephrectomy for malignant tumors. Robotic utilization was highest in urology; within gastrointestinal surgery, esophagectomy and rectal resection showed relatively high adoption. Substantial prefecture-level variation was observed, with patterns differing by procedure and not consistently correlating with minimally invasive surgery rates. RAS adoption was strongly associated with the number of certified robotic surgery proctors in several procedures. For selected procedures, including gastrectomy, robotic and minimally invasive utilization decreased with increasing age. RAS has expanded rapidly in Japan, with marked procedural and regional variation. These population-level findings may inform implementation strategies and health policy for robotic surgery.",
+    "authors": [
+      "Taura K",
+      "Fukuda M",
+      "Tanaka E",
+      "Iguchi K",
+      "Okuchi Y",
+      "Maekawa H",
+      "Kawai T",
+      "Nakano K",
+      "Fujita Y",
+      "Hisano K",
+      "Oshimo Y",
+      "Terajima H"
+    ],
+    "journal": "Surgical endoscopy",
+    "journal_issn": "1432-2218",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-28",
+    "analysis_methods": [],
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 3.27,
+    "sjr_quartile": null,
+    "openalex_topic": "Surgical Simulation and Training",
+    "openalex_topic_score": 0.784,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10916",
+        "name": "Surgical Simulation and Training",
+        "score": 0.784
+      },
+      {
+        "id": "T10868",
+        "name": "Soft Robotics and Applications",
+        "score": 0.037
+      },
+      {
+        "id": "T12053",
+        "name": "Minimally Invasive Surgical Techniques",
+        "score": 0.021
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-05T00:08:55.769Z",
+    "classified": true,
+    "title_ja": "日本における保険収載ロボット支援手術の現状と10年間の動向：NDBオープンデータを用いた全国請求研究",
+    "abstract_ja": "NDBオープンデータ（2014〜2023年）でロボット支援手術の導入動向を解析した。2023年には95,845件に達し、泌尿器科が最多だった。前立腺全摘が最も多く、都道府県間で大きなばらつきを認めた。"
+  },
+  {
+    "id": "pmid-42806185",
+    "pubmed_id": "42806185",
+    "doi": "10.1007/s40261-026-01591-7",
+    "title": "Healthcare Cost Patterns in CDK4/6 Inhibitor-Treated HR+/HER2- Metastatic Breast Cancer.",
+    "abstract": "Cyclin-dependent kinase 4/6 inhibitors (CDK4/6i) are standard first-line treatment for hormone receptor-positive, human epidermal growth factor receptor 2-negative (HR+/HER2-) metastatic breast cancer, yet the cost architecture across the full treatment trajectory remains poorly characterized. This study aimed to characterize phase-specific healthcare costs using a Japanese nationwide claims database. We conducted a retrospective cohort study using the DeSC-IQVIA integrated Claims data (April 2014-May 2025). Patients with HR+/HER2- metastatic breast cancer who initiated first-line CDK4/6i were identified. Healthcare costs were decomposed into drug, non-drug inpatient, and non-drug outpatient components across eight treatment phases. Death-anchored analysis evaluated cost structure over the final 12 months of life among decedents. Among 5435 patients (median age 72.3 years), active treatment phases showed drug-dominated cost structures: first-line per-patient per-month (PPPM) cost was 482,936 Japanese yen (JPY) (drug 85%-90%), second-line 361,615 JPY (81%), and extended chemotherapy 255,922 JPY (66%). A marked inversion occurred in the palliative phase (PPPM 233,824 JPY; drug 11%, inpatient 70%) and terminal phase (PPPM 412,149 JPY; drug 17%, inpatient 69%). Death-anchored analysis of 1111 decedents identified a transition 2 months before death, when inpatient costs first exceeded drug costs. Individual fixed-effects models estimated the CDK4/6i-associated cost increment at 239,815 JPY/month (p  < 0.001), corresponding to a total treatment-associated cost of 2.99 million JPY per patient. The cost architecture of CDK4/6i-treated metastatic breast cancer follows a predictable trajectory from drug-dominated active treatment to hospitalization-dominated end-of-life care, with a structural transition approximately 2 months before death. These findings support phase-specific healthcare resource allocation and economic modeling.",
+    "authors": [
+      "Kashiwa M",
+      "Moriwaki K"
+    ],
+    "journal": "Clinical drug investigation",
+    "journal_issn": "1179-1918",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-28",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "DeSC Healthcare"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 2.72,
+    "sjr_quartile": null,
+    "openalex_topic": "Advanced Breast Cancer Therapies",
+    "openalex_topic_score": 0.995,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T12829",
+        "name": "Advanced Breast Cancer Therapies",
+        "score": 0.995
+      },
+      {
+        "id": "T12708",
+        "name": "Economic and Financial Impacts of Cancer",
+        "score": 0.001
+      },
+      {
+        "id": "T10769",
+        "name": "BRCA gene mutations in cancer",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-05T00:08:56.272Z",
+    "classified": true,
+    "title_ja": "CDK4/6阻害薬治療を受けたHR+/HER2-転移性乳癌の医療費パターン",
+    "abstract_ja": "DeSC-IQVIA統合請求データで、5,435例の治療フェーズ別医療費を解析した。1次治療の月額は482,936円で薬剤が85〜90%を占めたが、緩和・終末期は入院費が約70%に逆転した。死亡前2か月で入院費が薬剤費を上回った。"
+  },
+  {
+    "id": "pmid-42802289",
+    "pubmed_id": "42802289",
+    "doi": "10.1007/s00774-026-01762-8",
+    "title": "Pharmacological management of knee and hip osteoarthritis stratified by oral nonsteroidal anti-inflammatory drugs safety status.",
+    "abstract": "Knee and hip osteoarthritis are treated with oral nonsteroidal anti-inflammatory drugs (NSAIDs); however, pharmacological management by NSAID safety status remains unclear. We characterized pharmacological treatment patterns across safety strata. We used Japanese health insurance claims database (2014-2024). Adults aged ≥40 years with incident knee or hip osteoarthritis were classified as having oral NSAID contraindications, precautions, or neither. Outcomes were receipt of oral NSAIDs within 90 days of osteoarthritis diagnosis. Adjusted risk differences (RDs) were estimated with identity-link binomial models and facility-clustered standard errors. For knee osteoarthritis, oral NSAIDs were prescribed to 49.0%, 44.0%, and 30.2% of patients in the no contraindications or precautions, precaution, and contraindication groups, respectively, and to 53.4%, 48.6%, and 34.5% of patients with hip osteoarthritis. Compared with patients with no contraindications or precautions, the adjusted RDs for receiving oral NSAIDs were -2.0 (95% confidence interval [CI], -2.6 to -1.4) and -12.9 (95% CI -14.1 to -11.7) for knee osteoarthritis, and -1.9 (95% CI -3.3 to -0.5) and -13.0 (95% CI -15.7 to -10.3) for hip osteoarthritis, for the precaution and contraindication groups, respectively. Adjusted RDs for receiving non-NSAID treatments were 0.5 (95% CI -0.1 to 1.1) and -2.0 (95% CI -3.4 to -0.6) for knee osteoarthritis, and 1.1 (95% CI -0.2 to 2.3) and 3.1 (95% CI 0.3 to 5.8) for hip osteoarthritis, respectively. Oral NSAID use was less frequent among patients classified as having oral NSAID precautions or contraindications than among those without such classifications in both cohorts.",
+    "authors": [
+      "Hatano M",
+      "Kimura Y",
+      "Okada A",
+      "Ishikura H",
+      "Tanaka T",
+      "Tanaka S",
+      "Yasunaga H"
+    ],
+    "journal": "Journal of bone and mineral metabolism",
+    "journal_issn": "1435-5604",
+    "entrez_year": 2026,
+    "entrez_date": "2026-09-27",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の健康保険請求データベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.01,
+    "sjr_quartile": null,
+    "openalex_topic": "Inflammatory mediators and NSAID effects",
+    "openalex_topic_score": 0.702,
+    "openalex_subfield": "Pharmacology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10678",
+        "name": "Inflammatory mediators and NSAID effects",
+        "score": 0.702
+      },
+      {
+        "id": "T10105",
+        "name": "Osteoarthritis Treatment and Mechanisms",
+        "score": 0.243
+      },
+      {
+        "id": "T12209",
+        "name": "Bone and Joint Diseases",
+        "score": 0.004
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-05T00:08:54.769Z",
+    "classified": true,
+    "title_ja": "経口NSAIDsの安全性区分で層別した膝・股関節変形性関節症の薬物療法",
+    "abstract_ja": "日本の請求データベース（2014〜2024年）で、新規の膝・股OA患者を経口NSAIDsの禁忌・注意の有無で分類した。禁忌群では経口NSAIDs処方が約13ポイント低く、非NSAID治療は禁忌群で一部増加した。"
+  },
+  {
     "id": "pmid-42792067",
     "pubmed_id": "42792067",
     "doi": "10.3390/antibiotics15090917",
@@ -94,11 +1006,27 @@
     ],
     "impact_factor": 3.5,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.968,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.968
+      },
+      {
+        "id": "T10217",
+        "name": "Cardiac electrophysiology and arrhythmias",
+        "score": 0.005
+      },
+      {
+        "id": "T10065",
+        "name": "Atrial Fibrillation Management and Outcomes",
+        "score": 0.003
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-09-28T00:09:36.099Z",
     "classified": true,
