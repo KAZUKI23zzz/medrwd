@@ -1,5 +1,936 @@
 [
   {
+    "id": "pmid-42859294",
+    "pubmed_id": "42859294",
+    "doi": "10.1007/s40264-026-01730-1",
+    "title": "Disproportionality Analysis of FAERS Data Divergence and a Systematic Review of Comparative Safety Studies: Lessons Learned from the Example of Ranitidine and Cancer Risk.",
+    "abstract": "Ranitidine, a histamine-2 receptor antagonist, was withdrawn globally in 2020 following the detection of N-nitrosodimethylamine (NMDA), a probable human carcinogen. We aimed to assess advanced pharmacovigilance bias-mitigation approaches by evaluating ranitidine-associated cancer signals in the FDA Adverse Event Reporting System (FAERS) and Japanese Adverse Drug Event Report (JADER) databases alongside a systematic review of comparative safety studies. A retrospective disproportionality analysis was conducted using the FAERS and the JADER databases. Signal detection was performed using four complementary algorithms (proportional reporting ratio (PRR), reporting odds ratio, information component, and empirical Bayes geometric mean), with an active comparator (famotidine) and time-restricted (pre- and post-recall) analyses, and a systematic review of comparative safety studies was also conducted. A pronounced surge in cancer reporting was observed for ranitidine, with 140,985 reports recorded in FAERS during 2020-21, accounting for more than two thirds of all reported cancer cases. Most reports were consumer submitted and geographically clustered in regions affected by regulatory actions and litigation. Unrestricted analyses of the full FAERS database identified high-magnitude signals for multiple cancers, particularly gastrointestinal and genitourinary cancers. However, these signals were markedly attenuated or absent in active-comparator and time-restricted analyses, with convergence observed in the reporting profiles of ranitidine and famotidine. In the JADER analysis, a significant ranitidine-cancer signal among suspected drug reports (PRR = 3.54) disappeared completely when all involvement types were analyzed (PRR = 0.92), indicating that the observed association likely reflects protopathic bias, rather than a true carcinogenic effect. The systematic review revealed heterogeneous findings, with most large cohort studies demonstrating no increased risk of overall or site-specific cancers. The observed cancer signals for ranitidine in spontaneous reporting systems were predominantly attributable to the NMDA related regulatory alerts rather than intrinsic carcinogenicity. Active-comparator and time-restricted analyses, together with systematic reviews of comparative safety studies, are essential to avoid misleading inferences in pharmacovigilance assessments.",
+    "authors": [
+      "Rathod M",
+      "Kadari M",
+      "Mohan HR",
+      "Kasana R",
+      "Katravath M",
+      "Iwagami M",
+      "Undela K"
+    ],
+    "journal": "Drug safety",
+    "journal_issn": "1179-1942",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-10",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "その他",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 6.85,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-10-12T00:09:30.381Z",
+    "classified": true,
+    "title_ja": "ラニチジンとがん:FAERSデータの乖離と比較安全性研究の系統的レビュー",
+    "abstract_ja": "ラニチジンのがんリスクシグナルをFAERSとJADERで不均衡分析し、比較安全性研究の系統的レビューを併せて実施した。アクティブコンパレータや回収前後の時間制限解析など、バイアス軽減手法の有用性を検討した。"
+  },
+  {
+    "id": "pmid-42850802",
+    "pubmed_id": "42850802",
+    "doi": "10.1111/jgs.70754",
+    "title": "Hip Fracture Risk of Lemborexant and Suvorexant in Comparison With Z-Drugs: A Target Trial Emulation.",
+    "abstract": "Lemborexant and suvorexant are widely used dual orexin receptor antagonists (DORAs) for the pharmacological treatment of insomnia. Although they are generally considered safer than benzodiazepine receptor agonists (Z-drugs) regarding adverse events including hip fractures, evidence from direct comparisons remains limited. This study aimed to examine whether lemborexant and suvorexant are associated with a lower risk of hip fracture than Z-drugs in older individuals. We conducted a cohort study using databases from Tochigi Prefecture, Japan. We included individuals aged ≥ 65 years who newly initiated either lemborexant or Z-drugs (lemborexant analysis cohort) or either suvorexant or Z-drugs (suvorexant analysis cohort). The primary outcome was hospitalization for hip fracture within 1 year of cohort entry. Per-protocol effects of continuous treatment with the assigned drugs were estimated. Baseline confounding was adjusted using inverse probability of treatment weighting based on propensity scores. Censoring due to discontinuation of the assigned drug or switching to the comparator drug was adjusted for using inverse probability of censoring weights. Adjusted cumulative incidence and hazard ratios (HRs) were estimated using the Kaplan-Meier methods and Cox regression, respectively. The lemborexant analysis cohort included 22,655 individuals (6879 and 15,776 in the lemborexant and Z-drug groups, respectively). After adjustment, lemborexant use was associated with a significantly lower hip fracture incidence (HR, 0.31, 95% confidence interval [CI], 0.16-0.59, p < 0.001). The suvorexant analysis cohort included 22,377 individuals (6699 and 15,678 in the suvorexant and Z-drug groups, respectively). After adjustment, hip fracture incidence was lower in the suvorexant group, but the association was not significant (HR, 0.57, 95% CI, 0.23-1.44, p = 0.234). DORAs, particularly lemborexant, may be safer alternatives to Z-drugs with respect to hip fracture risk.",
+    "authors": [
+      "Matsuo Y",
+      "Yamana H",
+      "Sasabuchi Y",
+      "Matsui H",
+      "Kohro T",
+      "Yasunaga H"
+    ],
+    "journal": "Journal of the American Geriatrics Society",
+    "journal_issn": "1532-5415",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-09",
+    "analysis_methods": [
+      "ターゲットトライアルエミュレーション"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "栃木県の医療レセプト等のデータベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.65,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmaceutical Practices and Patient Outcomes",
+    "openalex_topic_score": 0.434,
+    "openalex_subfield": "Geriatrics and Gerontology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10496",
+        "name": "Pharmaceutical Practices and Patient Outcomes",
+        "score": 0.434
+      },
+      {
+        "id": "T10316",
+        "name": "Sleep and related disorders",
+        "score": 0.392
+      },
+      {
+        "id": "T11509",
+        "name": "Hip and Femur Fractures",
+        "score": 0.034
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-12T00:09:29.882Z",
+    "classified": true,
+    "title_ja": "レンボレキサントおよびスボレキサントとZ薬の大腿骨近位部骨折リスク:ターゲットトライアルエミュレーション",
+    "abstract_ja": "栃木県のデータベースを用い、65歳以上の高齢者でデュアルオレキシン受容体拮抗薬とZ薬の大腿骨近位部骨折リスクを比較した。ターゲットトライアルエミュレーションの枠組みで1年以内の入院骨折を評価した。"
+  },
+  {
+    "id": "pmid-42845099",
+    "pubmed_id": "42845099",
+    "doi": "10.1080/10749357.2026.2745004",
+    "title": "Association between hospital-level factors and early rehabilitation initiation in patients with acute ischemic stroke: a multilevel analysis using a Japanese administrative database from a rural prefecture.",
+    "abstract": "Early rehabilitation after acute ischemic stroke improves functional outcomes and is recommended by clinical guidelines. However, initiation of early rehabilitation varies substantially across hospitals, and the contribution of hospital-level factors remains unclear. To examine the association between hospital-level factors and early rehabilitation initiation, adjusting for patient-level characteristics. We conducted a multicenter cross-sectional study using the Japanese Diagnosis Procedure Combination database from 43 hospitals in Yamagata Prefecture between 2017 and 2022. Patients admitted within 3 days of ischemic stroke onset who received inpatient rehabilitation were included. Early rehabilitation was defined as initiation of physical, occupational, or speech-language-hearing therapy within 2 days of admission. Multilevel Poisson regression models were constructed with patients nested within hospitals. Median rate ratio (MRR) was calculated to quantify hospital-level variation. A total of 17,194 patients from 19 hospitals were analyzed; 9,533 patients (55.4%) received early rehabilitation. At the hospital-level factors, provision of weekend rehabilitation services was significantly associated with early initiation (incidence rate ratio, 1.65; 95% credible interval, 1.21-2.25). Therapist staffing levels, annual stroke volume, and availability of thrombolytic therapy were not associated with early rehabilitation. The hospital-level MRR decreased from 1.47 in the null model to 1.35 after inclusion of weekend rehabilitation services. The provision of weekend rehabilitation was associated with the initiation of early rehabilitation for ischemic stroke patients. Our findings suggest that variations in the initiation of early rehabilitation for acute ischemic stroke are largely driven by organizational systems rather than patient characteristics.",
+    "authors": [
+      "Homma D",
+      "Murakami M",
+      "Ikeda T"
+    ],
+    "journal": "Topics in stroke rehabilitation",
+    "journal_issn": "1945-5119",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-08",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "医療の質・アクセスの格差",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.37,
+    "sjr_quartile": null,
+    "openalex_topic": "Stroke Rehabilitation and Recovery",
+    "openalex_topic_score": 0.857,
+    "openalex_subfield": "Rehabilitation",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10510",
+        "name": "Stroke Rehabilitation and Recovery",
+        "score": 0.857
+      },
+      {
+        "id": "T13986",
+        "name": "Medical Practices and Rehabilitation",
+        "score": 0.077
+      },
+      {
+        "id": "T10227",
+        "name": "Acute Ischemic Stroke Management",
+        "score": 0.061
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-12T00:09:28.391Z",
+    "classified": true,
+    "title_ja": "急性期脳梗塞患者における病院レベル要因と早期リハビリ開始の関連:地方県の行政データベースを用いたマルチレベル解析",
+    "abstract_ja": "山形県43病院のDPCデータを用い、脳梗塞患者の早期リハビリ開始と病院レベル要因の関連を、患者背景を調整したマルチレベルPoisson回帰で検討した。早期リハビリ開始には病院間でばらつきがあった。"
+  },
+  {
+    "id": "pmid-42848403",
+    "pubmed_id": "42848403",
+    "doi": "10.1001/jamanetworkopen.2026.37902",
+    "title": "Maternal Influenza Infection During Pregnancy and Neuropsychiatric Disorders in Offspring.",
+    "abstract": "Evidence on maternal influenza infection during pregnancy and offspring neuropsychiatric risk remains inconsistent and limited by methodologic concerns. To evaluate the association of maternal influenza infection during pregnancy and offspring neuropsychiatric risk. This binational cohort study included mother-child pairs from the National Health Insurance Service birth cohort in South Korea (discovery cohort) and the JMDC (previously Japan Medical Data Center) birth cohort in Japan (replication cohort). Children born between January 1, 2010, and December 31, 2017, were included in the study and followed up until December 31, 2023. A first recorded maternal influenza diagnosis during pregnancy. The primary outcome was first postnatal diagnosis of any neuropsychiatric disorder in offspring, including severe neuropsychiatric disorders, obsessive-compulsive disorder, attention-deficit/hyperactivity disorder, autism spectrum disorder, and intellectual disability. Stabilized inverse probability of treatment weighting was applied to adjust for confounding. Weighted Cox proportional hazards models estimated adjusted hazard ratios (AHRs) and 95% CIs. Subgroup analyses were conducted by trimester and season of infection, and sibling-comparison analyses used exposure-discordant sibling pairs. Data analysis was performed from September 2025 to July 2026. The discovery cohort included 2 564 435 mother-child pairs (mean [SD] maternal age, 31.9 [4.1] years; 1 293 773 [50.5%] male offspring), of whom 35 973 (1.4%) were exposed to maternal influenza during pregnancy. The replication cohort included 181 681 pairs (92 738 [51.0%] male offspring), of whom 11 198 (6.2%) were exposed. In stabilized inverse probability of treatment weighting-based analyses, maternal influenza infection was associated with an increased risk of any neuropsychiatric disorder in the discovery cohort (AHR, 1.09; 95% CI, 1.04-1.14) and replication cohort (AHR, 1.10; 95% CI, 1.02-1.19). Sibling-comparison analyses included 33 191 and 7842 mother-child pairs in the discovery and replication cohorts, respectively; there was not a statistically significant association in the discovery cohort (AHR, 0.98; 95% CI, 0.89-1.09) and replication cohort (AHR, 1.04; 95% CI, 0.88-1.22). In this binational cohort study of mother-child pairs in South Korea and Japan, the modest population-level association between maternal influenza infection during pregnancy and the risk of any neuropsychiatric disorder in offspring was attenuated and not statistically significant in sibling-comparison analyses in either cohort. These findings suggest that familial factors may account for the association observed in the population-level analysis.",
+    "authors": [
+      "Kong J",
+      "Hong S",
+      "Jo H",
+      "Park J",
+      "Kim K",
+      "Yeo D",
+      "Kim H",
+      "Kim TH",
+      "López-Gil JF",
+      "Cho H",
+      "Hwang HS",
+      "Woo S",
+      "Yon DK"
+    ],
+    "journal": "JAMA network open",
+    "journal_issn": "2574-3805",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-08",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [
+      "韓国国民健康保険サービスの出生コホート"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 9.92,
+    "sjr_quartile": null,
+    "openalex_topic": "Influenza Virus Research Studies",
+    "openalex_topic_score": 0.638,
+    "openalex_subfield": "Epidemiology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10167",
+        "name": "Influenza Virus Research Studies",
+        "score": 0.638
+      },
+      {
+        "id": "T10786",
+        "name": "Maternal Mental Health During Pregnancy and Postpartum",
+        "score": 0.242
+      },
+      {
+        "id": "T13201",
+        "name": "Infectious Encephalopathies and Encephalitis",
+        "score": 0.034
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-12T00:09:28.870Z",
+    "classified": true,
+    "title_ja": "妊娠中の母体インフルエンザ感染と児の神経精神疾患",
+    "abstract_ja": "韓国の国民健康保険出生コホートを探索コホート、日本のJMDC出生コホートを再現コホートとして、妊娠中の母体インフルエンザ感染と児の神経精神疾患リスクの関連を評価した。"
+  },
+  {
+    "id": "pmid-42849382",
+    "pubmed_id": "42849382",
+    "doi": "10.1016/j.braindev.2026.104604",
+    "title": "Risk of febrile seizure associated with β-lactam antibiotic use: a case-crossover study with an active comparator.",
+    "abstract": "β-Lactam antibiotics are generally considered safe, but neurotoxicity has been reported. These reports mainly involve adults; however, evidence in children remains limited. Although febrile seizure (FS) is the most common type of seizure in early childhood, multiple factors contribute to FS onset, and a potential association with β-lactam exposure has not been fully examined. We therefore investigated the association between oral β-lactam antibiotics and FS using a case-crossover design with an active comparator. Children younger than 6 years who experienced an incident FS were identified from a Japanese health insurance claims database. Exposure to oral β-lactam antibiotics was assessed on the hazard date (day -1) and the control date (day -22), while oral macrolides served as the active comparator. Conditional logistic regression was used to estimate odds ratios (ORs), and comparator-adjusted ORs were derived by dividing β-lactam ORs by macrolide ORs. The attributable fraction among the exposed (AFe) was calculated from the comparator-adjusted OR. We identified 43,936 children. The comparator-adjusted OR for FS with oral β-lactam exposure was 1.21 (95% confidence interval [CI], 1.03-1.40). These results were generally consistent across sensitivity analyses in which the control date was shifted from day -22 to day -15 or day -29. Oral β-lactam antibiotics were associated with a modestly increased risk of FS. This finding should be interpreted cautiously because residual time-varying confounding by infection severity and fever may remain. Clinically indicated β-lactam antibiotics should not be withheld on the basis of these findings alone.",
+    "authors": [
+      "Matsumoto M",
+      "Yanai T",
+      "Fukasawa T",
+      "Okura T",
+      "Kawakami K"
+    ],
+    "journal": "Brain & development",
+    "journal_issn": "1872-7131",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-08",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の健康保険レセプトデータベース"
+    ],
+    "study_design": "症例対照研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.42,
+    "sjr_quartile": null,
+    "openalex_topic": "Epilepsy research and treatment",
+    "openalex_topic_score": 0.488,
+    "openalex_subfield": "Psychiatry and Mental health",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10094",
+        "name": "Epilepsy research and treatment",
+        "score": 0.488
+      },
+      {
+        "id": "T11117",
+        "name": "Drug-Induced Adverse Reactions",
+        "score": 0.212
+      },
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.161
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-12T00:09:29.377Z",
+    "classified": true,
+    "title_ja": "β-ラクタム系抗菌薬使用と熱性けいれんのリスク:アクティブコンパレータを用いたケースクロスオーバー研究",
+    "abstract_ja": "日本の健康保険請求データで6歳未満の熱性けいれん児を対象に、経口β-ラクタム系抗菌薬とマクロライドを対照としたケースクロスオーバー研究を行い、条件付きロジスティック回帰で関連を評価した。"
+  },
+  {
+    "id": "pmid-42839842",
+    "pubmed_id": "42839842",
+    "doi": "10.5414/CP205006",
+    "title": "Time to onset of amiodarone-induced interstitial lung disease is correlated with the percentage body fat: An analysis of data from the FAERS and JADER databases.",
+    "abstract": "To identify the time-to-onset profiles of amiodarone-induced interstitial lung disease using two spontaneous adverse event reporting databases. Data were obtained from the U.S. Food and Drug Administration Adverse Event Reporting System (FAERS; JAPIC AERS) and the Japanese Adverse Drug Event Report database (JADER). Time-to-onset profiles of amiodarone-induced interstitial lung disease were analyzed using the generalized Wilcoxon test. Additionally, because JADER allows estimation of body fat percentage (eBF%), a one-sided Jonckheere-Terpstra test was conducted to evaluate the relationship between eBF% and time-to-onset of amiodarone-induced interstitial lung disease. In FAERS, sex was not significantly associated with the median time-to-onset of interstitial lung disease (male: 187 days; female: 190 days; p = 0.8457). Conversely, in JADER, female patients demonstrated a significantly longer median time-to-onset than male patients (male: 175 days; female: 273 days; p = 0.0214). Furthermore, in the Jonckheere-Terpstra test, patient stratification into healthy weight, overweight, and obesity categories based on eBF% showed a significant increase in median onset time with increasing obesity level in male patients (healthy weight: 96 days; overweight: 185 days; obesity: 272 days; p = 0.0126) but not in female patients (healthy weight: 253 days; overweight: 273 days; obesity: 428.5 days; p = 0.4123). To prevent fatal outcomes, pulmonary function may need to be monitored according to race, sex, and obesity level.",
+    "authors": [
+      "Uno T",
+      "Hosomi K",
+      "Yokoyama S"
+    ],
+    "journal": "International journal of clinical pharmacology and therapeutics",
+    "journal_issn": "0946-1965",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-07",
+    "analysis_methods": [],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS(米国有害事象報告システム)"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 0.88,
+    "sjr_quartile": null,
+    "openalex_topic": "Interstitial Lung Diseases and Idiopathic Pulmonary Fibrosis",
+    "openalex_topic_score": 0.617,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10870",
+        "name": "Interstitial Lung Diseases and Idiopathic Pulmonary Fibrosis",
+        "score": 0.617
+      },
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.355
+      },
+      {
+        "id": "T13467",
+        "name": "Drug-Induced Ocular Toxicity",
+        "score": 0.002
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-12T00:09:24.870Z",
+    "classified": true,
+    "title_ja": "アミオダロン誘発性間質性肺疾患の発症までの時間と体脂肪率の相関:FAERSおよびJADERデータの解析",
+    "abstract_ja": "FAERSとJADERを用いてアミオダロン誘発性間質性肺疾患の発症までの時間を解析した。JADERでは女性で発症が早く、推定体脂肪率と発症時期の関連も検討した。"
+  },
+  {
+    "id": "pmid-42840299",
+    "pubmed_id": "42840299",
+    "doi": "10.3389/fphar.2026.1932218",
+    "title": "Angiogenesis inhibitors and the risk of peripheral artery aneurysm and dissection: a cross-database study.",
+    "abstract": "Anti-angiogenic inhibitors (AI) have transformed cancer treatment but are associated with vascular toxicities. The specific association with peripheral artery aneurysm and dissection (PAAD) remains uncharacterized. This study aimed to evaluate the association between AI exposure and PAAD risk and to delineate the temporal patterns of these adverse events across different exposure windows. This analysis was conducted using the U.S. FDA Adverse Event Reporting System and the Japanese Adverse Drug Event Report databases. Disproportionality analysis using the Reporting Odds Ratio was applied to identify safety signals. Univariate and multivariate logistic regression models were fitted to detect associated factors and quantify the effects of distinct exposure duration windows. Kaplan-Meier analysis and the Weibull distribution were utilized to characterize time-to-onset patterns. In total, 757,900 FAERS and 136,170 JADER reports were included. Disproportionality analyses identified significantly higher RORs for PAAD (ROR = 3.276 in FAERS; ROR = 8.465 in JADER) and peripheral artery dissection (PAD) (ROR = 6.275 in FAERS; ROR = 9.372 in JADER). The peripheral arterial aneurysm (PAA) signal was marginally non-significant in FAERS but significant in JADER (ROR = 8.113). Subtype-specific analyses showed small-molecule VEGFR-targeted tyrosine kinase inhibitors (SMV-TKIs) were linked to higher reporting of PAAD and PAD, whereas anti-VEGF monoclonal antibodies (anti-VMAs) were associated with elevated reporting across all outcomes. Time-to-onset analyses uncovered temporal heterogeneity: PAAD and PAA occurred early in FAERS (median 29.5 days and 25.0 days, respectively), whereas PAD followed an early- and late-onset pattern. Within JADER, PAA events presented early, while PAD showed delayed onset (median 853.0 days). Multivariable regression supported significant independent associations between AI exposure and both PAAD and PAD, with adjusted Odds Ratios of 4.078 and 7.275 in FAERS and greater effect sizes in JADER. Time-window stratification confirmed dual reporting peaks in the early (0-29-day) and long-term (≥360-day) windows. In conclusion, subclass-specific and time-dependent disproportional reporting signals of AI-associated PAAD were identified. Anti-VMAs were associated with elevated signals for PAAD, PAA, and PAD, whereas SMV-TKIs were mainly linked to PAAD and PAD. PAAD and PAA occurred predominantly early after drug initiation, whereas PAD showed prominent delayed onset.",
+    "authors": [
+      "Zhang K",
+      "Lu Q"
+    ],
+    "journal": "Frontiers in pharmacology",
+    "journal_issn": "1663-9812",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-07",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）",
+      "回帰分析",
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS(米国有害事象報告システム)"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 5.16,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.917,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.917
+      },
+      {
+        "id": "T10422",
+        "name": "Angiogenesis and VEGF in Cancer",
+        "score": 0.023
+      },
+      {
+        "id": "T11554",
+        "name": "Vascular Procedures and Complications",
+        "score": 0.019
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-12T00:09:25.365Z",
+    "classified": true,
+    "title_ja": "血管新生阻害薬と末梢動脈瘤・解離のリスク:データベース横断研究",
+    "abstract_ja": "FAERSとJADERを用いて、血管新生阻害薬と末梢動脈瘤・解離の関連を不均衡分析で評価し、ロジスティック回帰とKaplan-Meier・Weibull分布で曝露期間別の発症時期パターンを解析した。"
+  },
+  {
+    "id": "pmid-42840767",
+    "pubmed_id": "42840767",
+    "doi": "10.31662/jmaj.2026-0132",
+    "title": "Association between Coexisting Dementia and Mortality in Patients Receiving Oral Epidermal Growth Factor Receptor Tyrosine Kinase Inhibitors: A Nationwide Real-world Database Study.",
+    "abstract": "Oral epidermal growth factor receptor tyrosine kinase inhibitors (EGFR-TKIs) are standard first-line treatments for EGFR-mutated non-small cell lung cancer (EGFR-m NSCLC). Because these agents require sustained self-management, cognitive impairment may adversely affect treatment continuity and outcomes. However, the association between coexisting dementia and survival in patients receiving EGFR-TKIs remains unclear. This cohort study used a large Japanese administrative claims database. Patients aged ≥18 years with newly diagnosed NSCLC who initiated first-line EGFR-TKI therapy between 2018 and 2024 were included. Coexisting dementia was identified using diagnosis codes recorded before treatment initiation. The primary outcome was 3-year all-cause mortality. Cox proportional hazards models were used to estimate adjusted hazard ratios (aHRs) and 95% confidence intervals (CIs), adjusting for age, sex, body mass index, smoking status, comorbidity burden, functional status (Barthel Index [BI]), hypertension, dyslipidemia, and calendar year of treatment initiation. Among 13,281 eligible patients, 282 (2.1%) had coexisting dementia. During follow-up, coexisting dementia was associated with higher all-cause mortality (aHR 1.35, 95% CI 1.06-1.73). In subgroup-specific analyses, preserved functional status (BI = 100) was associated with lower mortality among patients with dementia, whereas multiple clinical factors were associated with mortality among those without dementia. Coexisting dementia was associated with poorer survival among patients with EGFR-m NSCLC treated with EGFR-TKIs. Preserved functional status was associated with lower mortality among patients with dementia. These findings suggest that coexisting dementia may identify a clinically vulnerable subgroup in whom functional status warrants careful attention at the initiation of EGFR-TKI treatment.",
+    "authors": [
+      "Sogame M",
+      "Ihara Y",
+      "Yamamoto S",
+      "Shimasaki M",
+      "Kurata T",
+      "Akiyama S"
+    ],
+    "journal": "JMA journal",
+    "journal_issn": "2433-3298",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-07",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の大規模行政レセプトデータベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 1.15,
+    "sjr_quartile": null,
+    "openalex_topic": "Lung Cancer Treatments and Mutations",
+    "openalex_topic_score": 0.688,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10417",
+        "name": "Lung Cancer Treatments and Mutations",
+        "score": 0.688
+      },
+      {
+        "id": "T10755",
+        "name": "HER2/EGFR in Cancer Research",
+        "score": 0.19
+      },
+      {
+        "id": "T11067",
+        "name": "Colorectal Cancer Treatments and Studies",
+        "score": 0.015
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-12T00:09:25.862Z",
+    "classified": true,
+    "title_ja": "EGFRチロシンキナーゼ阻害薬投与患者における認知症合併と死亡の関連:全国規模のリアルワールドデータベース研究",
+    "abstract_ja": "日本の大規模請求データベースで、EGFR-TKIを初回導入した非小細胞肺癌患者について、認知症合併と3年全死亡の関連をCox比例ハザードモデルで評価した。"
+  },
+  {
+    "id": "pmid-42841029",
+    "pubmed_id": "42841029",
+    "doi": "10.1016/j.pmedr.2026.103639",
+    "title": "Sleep duration, sleep-wake schedules, and social jetlag among corporate employees in Japan: Age- and gender-based comparisons of wearable device data (2019-2022).",
+    "abstract": "Insufficient sleep has been linked to cardiovascular events and mortality, yet most prior studies rely on self-reported sleep duration. Large-scale longitudinal studies based on objective sleep measurements remain scarce. This study aimed to describe 3-year sleep-wake patterns, including total sleep time (TST) and social jetlag, using data from a validated wearable device (Fitbit), and to compare these patterns by gender, age, weekday versus weekend, and fiscal year. The study included 20,886 corporate employees insured by Japanese health insurance associations with JMDC Inc. A total of 10,670 participants complete data contributed 5,156,835 sleep observations. Gender differences in weekday and weekend sleep were assessed using t-tests. Pairwise comparisons were conducted to estimate mean differences across age groups by gender. The chi-squared test was used to compare categorical measures of social jetlag. Mean TST was 5.84 ( ± 0.66) hours. Social jetlag of 1-2 and ≥ 2 h were observed in 21.7% and 3.1% of participants, respectively. Across all age groups and sexes, TST was 0.5-1.0 h shorter on weekdays than on weekends. Women exhibited greater social jetlag than men. This study demonstrates that objectively measured TST among Japanese is shorter than self-reported estimates and varies by age and gender.",
+    "authors": [
+      "Meguro K",
+      "Endo F",
+      "Kuchiba A",
+      "Tsuno K"
+    ],
+    "journal": "Preventive medicine reports",
+    "journal_issn": "2211-3355",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-07",
+    "analysis_methods": [],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [
+      "Fitbitウェアラブル端末データ"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.7,
+    "sjr_quartile": null,
+    "openalex_topic": "Sleep and related disorders",
+    "openalex_topic_score": 0.981,
+    "openalex_subfield": "Experimental and Cognitive Psychology",
+    "openalex_field": "Psychology",
+    "openalex_topics": [
+      {
+        "id": "T10316",
+        "name": "Sleep and related disorders",
+        "score": 0.981
+      },
+      {
+        "id": "T11373",
+        "name": "Sleep and Work-Related Fatigue",
+        "score": 0.017
+      },
+      {
+        "id": "T10342",
+        "name": "Circadian rhythm and melatonin",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-12T00:09:26.378Z",
+    "classified": true,
+    "title_ja": "日本の企業従業員における睡眠時間・睡眠覚醒スケジュール・ソーシャルジェットラグ:ウェアラブル端末データの年齢・性別比較(2019-2022)",
+    "abstract_ja": "JMDC加入の企業従業員約2万人のFitbitデータから3年間の睡眠パターンを記述し、性別・年齢・平日と週末・年度で比較した。"
+  },
+  {
+    "id": "pmid-42841680",
+    "pubmed_id": "42841680",
+    "doi": "10.1097/INF.0000000000005436",
+    "title": "Maternal COVID-19 During Pregnancy and Offspring Neurodevelopmental Disorders: A Nationwide Birth Cohort Study.",
+    "abstract": "Maternal coronavirus disease 2019 (COVID-19) during pregnancy was common during the pandemic. However, its potential risks for clinically diagnosed neurodevelopmental disorders in offspring, including attention-deficit/hyperactivity disorder (ADHD), autism spectrum disorder (ASD) and intellectual disability (ID), remain uncertain in Asian populations. We examined the association between maternal COVID-19 during pregnancy and diagnoses of neurodevelopmental disorders in offspring. This nationwide birth cohort study included 108,148 singleton children, contributing 224,965 person-years, using a nationwide administrative claims database from 2020 to 2024. We investigated the association between maternal COVID-19 during pregnancy and offspring neurodevelopmental outcomes, including ADHD, ASD, ID and a composite outcome, using Cox proportional hazards models, with primary analyses based on time-dependent propensity score (PS) matching. The robustness of the primary findings was evaluated through adjusted models, sibling comparison, trimester-specific analyses and sensitivity analyses for outcome misclassification. Among 108,148 children, 7797 (7.2%) were exposed to maternal COVID-19 during pregnancy; PS matching yielded 7679 matched pairs contributing 22,360 person-years with well-balanced covariates. In PS-matched analyses, maternal COVID-19 was not associated with composite neurodevelopmental outcomes (hazard ratio [HR], 0.96; 95% confidence interval [CI], 0.56-1.66), ADHD (HR, 0.75; 95% CI, 0.32-1.78), ASD (HR, 0.79; 95% CI, 0.40-1.55), or ID (HR, 1.06; 95% CI, 0.55-2.01). Adjusted models, sibling comparisons, trimester-specific analyses and sensitivity analyses addressing outcome misclassification yielded similar null findings. We found no evidence of an increased risk of offspring neurodevelopmental disorders following maternal COVID-19 during pregnancy during the available follow-up period.",
+    "authors": [
+      "Okubo Y",
+      "Uda K"
+    ],
+    "journal": "The Pediatric infectious disease journal",
+    "journal_issn": "1532-0987",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-07",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "全国規模の行政レセプトデータベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.92,
+    "sjr_quartile": null,
+    "openalex_topic": "COVID-19 Impact on Reproduction",
+    "openalex_topic_score": 0.923,
+    "openalex_subfield": "Obstetrics and Gynecology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11987",
+        "name": "COVID-19 Impact on Reproduction",
+        "score": 0.923
+      },
+      {
+        "id": "T10786",
+        "name": "Maternal Mental Health During Pregnancy and Postpartum",
+        "score": 0.034
+      },
+      {
+        "id": "T11633",
+        "name": "Prenatal Substance Exposure Effects",
+        "score": 0.011
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-12T00:09:26.870Z",
+    "classified": true,
+    "title_ja": "妊娠中の母体COVID-19と児の神経発達症:全国出生コホート研究",
+    "abstract_ja": "全国の行政請求データベースの単胎児約10.8万人を対象に、妊娠中の母体COVID-19とADHD・ASD・知的障害など児の神経発達症診断の関連をCox比例ハザードモデルで検討した。"
+  },
+  {
+    "id": "pmid-42842541",
+    "pubmed_id": "42842541",
+    "doi": "10.1371/journal.pone.0359960",
+    "title": "Comparative safety of imeglimin versus sitagliptin in Japanese patients with type 2 diabetes: A pharmacy-based retrospective cohort study.",
+    "abstract": "Clinical evidence supports the safety and efficacy of imeglimin, a new oral antidiabetic medication that increases insulin secretion and reduces insulin resistance. However, comparative real-world safety data with dipeptidyl peptidase-4 inhibitors, widely used in Japan, remain limited. This retrospective, pharmacy-based cohort study compared the incidence of adverse events (gastrointestinal events and hypoglycemia) among patients newly prescribed imeglimin or sitagliptin in real-world settings. Using a new-user design, we analyzed the 2022-2024 community pharmacy data across Japan, including 1,140 and 990 new imeglimin and sitagliptin users, respectively. Primary outcome (incidence of treatment-related events classified using Medical Dictionary for Regulatory Activities terminology) was evaluated using Cox proportional hazards models. Unadjusted and multivariable-adjusted hazard ratios (aHRs) for events during a 4-month follow-up were estimated. At least one adverse event was reported among 31% of imeglimin users versus 22% of sitagliptin users. Hypoglycemia risk differed non-significantly between groups (aHR: 0.66; 95% confidence interval [CI]: 0.20-2.22). However, imeglimin was associated with substantially higher risks of gastrointestinal events than sitagliptin (aHR: 5.44; 95% CI: 3.44-8.61), particularly nausea (aHR: 15.34; 95% CI: 3.50-67.23), diarrhea (aHR: 7.90; 95% CI: 2.54-24.62), and abdominal discomfort (aHR: 6.02; 95% CI: 1.47-24.58). Sensitivity analyses in patients receiving monotherapy yielded increased risk (hazard ratio (HR): 5.36; 95% CI: 2.63-10.92). Imeglimin use was associated with a higher incidence of gastrointestinal events than sitagliptin in Japanese clinical practice, closely approaching our prespecified threshold for clinical significance. Conversely, no significant difference was observed in hypoglycemia risk, although this finding should be interpreted with caution owing to the limited number of events. Involving community pharmacists allowed for active monitoring and identification of events that are often underreported in large-scale claims databases. Clinicians should prioritize gastrointestinal monitoring during initial stages of imeglimin therapy, particularly in older patients with complex treatment regimens.",
+    "authors": [
+      "Suzuki N",
+      "Ooba N",
+      "Nakajima R",
+      "Takabatake K",
+      "Saita M",
+      "Kawakami E",
+      "Kawana M",
+      "Watanabe D",
+      "Hashiba H"
+    ],
+    "journal": "PloS one",
+    "journal_issn": "1932-6203",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-07",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "全国の調剤薬局データ"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.4,
+    "sjr_quartile": null,
+    "openalex_topic": "Diabetes Treatment and Management",
+    "openalex_topic_score": 0.998,
+    "openalex_subfield": "Endocrinology, Diabetes and Metabolism",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10401",
+        "name": "Diabetes Treatment and Management",
+        "score": 0.998
+      },
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.001
+      },
+      {
+        "id": "T10560",
+        "name": "Diabetes Management and Research",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-12T00:09:27.364Z",
+    "classified": true,
+    "title_ja": "日本の2型糖尿病患者におけるイメグリミンとシタグリプチンの比較安全性:薬局ベースの後方視的コホート研究",
+    "abstract_ja": "全国の調剤薬局データ(2022-2024年)を用い、イメグリミンまたはシタグリプチンの新規使用者で消化器症状や低血糖などの有害事象発生をCox比例ハザードモデルで比較した。"
+  },
+  {
+    "id": "pmid-42844189",
+    "pubmed_id": "42844189",
+    "doi": "10.2169/internalmedicine.7882-26",
+    "title": "Hospitalized Infection Risk and Organ-specific Infection Patterns Across Advanced Therapies in Ulcerative Colitis: A Japanese Claims Analysis.",
+    "abstract": "Background　Evidence comparing infections across advanced therapies (ADTs) for ulcerative colitis (UC) remains inconsistent, and infection category profiles are poorly characterized, particularly in real-world Japanese settings. We compared the risk of hospitalized infections and descriptively characterized the distribution of infection categories among hospitalized infection events across ADTs.Methods　We conducted a retrospective cohort study using the Medical Data Vision Database. Patients with UC who initiated treatment with a tumor necrosis factor (TNF) antagonist, ustekinumab, tofacitinib, or vedolizumab between April 2008 and May 2022 were followed. Adjusted hazard ratios (aHRs) were estimated using Cox models (TNF antagonists as the reference), and hospitalized infections were classified according to the organ system.Results　We included 9,012 patients receiving ADTs (TNF antagonists, 3,990; ustekinumab, 1,380; tofacitinib, 1,183; and vedolizumab, 2,459). Hospitalized infections occurred in 90, 16, 21, and 52 patients prescribed TNF antagonists, ustekinumab, tofacitinib, and vedolizumab, respectively; the incidence rates per 1,000 person-years were 19.09, 9.64, 14.53, and 17.24, respectively. In the multivariable analysis, ustekinumab was associated with a lower risk of hospitalized infection than TNF antagonists (aHR 0.46, 95% confidence interval [CI] 0.25-0.82), whereas tofacitinib (aHR 0.73, 95% CI 0.43-1.22) and vedolizumab (aHR 0.76, 95% CI 0.53-1.10) were not significantly different. Among the first hospitalized infection events, the distribution of infection categories was comparable across ADTs, with respiratory infections being the most common.Conclusions　Ustekinumab was associated with a lower risk of infection-related hospitalization than TNF antagonists. The distribution of infection categories among the first hospitalized infection events was comparable across the ADTs. These findings provide the first large-scale, real-world, comparative evidence from Japan.",
+    "authors": [
+      "Nishida Y",
+      "Hosomi S",
+      "Nakata R",
+      "Maruyama H",
+      "Ominami M",
+      "Nadatani Y",
+      "Fukunaga S",
+      "Otani K",
+      "Fujiwara Y"
+    ],
+    "journal": "Internal medicine (Tokyo, Japan)",
+    "journal_issn": "1349-7235",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-07",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 0.88,
+    "sjr_quartile": null,
+    "openalex_topic": "Inflammatory Bowel Disease",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Genetics",
+    "openalex_field": "Biochemistry, Genetics and Molecular Biology",
+    "openalex_topics": [
+      {
+        "id": "T10134",
+        "name": "Inflammatory Bowel Disease",
+        "score": 0.999
+      },
+      {
+        "id": "T10200",
+        "name": "Rheumatoid Arthritis Research and Therapies",
+        "score": 0
+      },
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-12T00:09:27.871Z",
+    "classified": true,
+    "title_ja": "潰瘍性大腸炎の先進治療における入院を要する感染症リスクと臓器別感染パターン:日本の請求データ解析",
+    "abstract_ja": "MDVデータベースで潰瘍性大腸炎の先進治療(TNF阻害薬・ウステキヌマブ・トファシチニブ・ベドリズマブ)導入患者を追跡し、入院感染症リスクをCoxモデルで比較し臓器別の分布を記述した。"
+  },
+  {
+    "id": "pmid-42838525",
+    "pubmed_id": "42838525",
+    "doi": "10.5217/ir.2026.00149",
+    "title": "Trends and safety of small bowel endoscopy in Crohn's disease in Japan: a large-scale claims database analysis.",
+    "abstract": "Evidence on the population-level utilization and safety of balloon-assisted endoscopy (BAE) and small bowel capsule endoscopy (SBCE) for Crohn's disease in Japan is limited. We aimed to characterize trends in BAE, SBCE, and patency capsule examination, as well as adverse events (AEs). We analyzed the Medical Data Vision claims database. Annual utilization was assessed per patient-year for the complete calendar years 2009-2021. AEs were defined by claimsbased therapeutic interventions after procedures. The association between patency capsule examination and SBCE-related AEs was assessed using generalized estimating equations (GEE) adjusted for age, sex, and calendar year. Among 19,881 eligible patients with Crohn's disease, 4,657 BAE and 2,679 SBCE procedures were identified. Modality switching was uncommon, with 83.9% of patients with ≥2 examinations (n =1,683) undergoing the same modality at the second examination. Utilization of both modalities increased over time, and patency capsule examination before SBCE increased from 2013 to 2021. SBCE-related AEs were rare in patients with patency capsule examination compared to those without patency capsule examination (0.88% vs. 1.47%). In the main GEE analysis, patency capsule examination was not independently associated with lower odds of SBCE-related AEs (adjusted odds ratio, 0.62; 95% confidence interval, 0.28-1.37; P= 0.235), with a similar result in sensitivity analyses. The use of BAE and SBCE has increased in Japan alongside the spread of patency capsule examination. SBCE-related AEs were uncommon overall and numerically less frequent when preceded by patency assessment.",
+    "authors": [
+      "Hosomi S",
+      "Nishida Y",
+      "Yanagida T",
+      "Fujimoto K",
+      "Nakata R",
+      "Sawada A",
+      "Maruyama H",
+      "Ominami M",
+      "Nadatani Y",
+      "Fukunaga S",
+      "Otani K",
+      "Fujiwara Y"
+    ],
+    "journal": "Intestinal research",
+    "journal_issn": "1598-9100",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-06",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.58,
+    "sjr_quartile": null,
+    "openalex_topic": "Inflammatory Bowel Disease",
+    "openalex_topic_score": 0.967,
+    "openalex_subfield": "Genetics",
+    "openalex_field": "Biochemistry, Genetics and Molecular Biology",
+    "openalex_topics": [
+      {
+        "id": "T10134",
+        "name": "Inflammatory Bowel Disease",
+        "score": 0.967
+      },
+      {
+        "id": "T11378",
+        "name": "Gastrointestinal Bleeding Diagnosis and Treatment",
+        "score": 0.029
+      },
+      {
+        "id": "T10552",
+        "name": "Colorectal Cancer Screening and Detection",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-12T00:09:23.862Z",
+    "classified": true,
+    "title_ja": "日本のクローン病における小腸内視鏡の動向と安全性:大規模請求データベース解析",
+    "abstract_ja": "MDVデータベースでクローン病患者のバルーン小腸内視鏡とカプセル内視鏡の年次推移と有害事象を解析し、パテンシーカプセル検査と有害事象の関連をGEEで評価した。"
+  },
+  {
+    "id": "pmid-42838871",
+    "pubmed_id": "42838871",
+    "doi": "10.1016/j.clinthera.2026.09.008",
+    "title": "Evaluation of Adverse Reactions of Roxadustat and Daprodustat: A Pharmacovigilance Study.",
+    "abstract": "Roxadustat and daprodustat are oral small-molecule drugs widely used in clinical practice for the treatment of renal anemia. This study compared and analyzed the characteristics of adverse events (AEs) related to the 2 drugs after their market release, providing a more comprehensive and accurate basis for clinical judgment when choosing drugs. This study used reporting odds ratio (ROR) analysis to assess the safety profiles of 2 drugs recorded in the Japanese Adverse Drug Event Reporting System between 2019 and 2026, and applied χ2 tests to compare the 2 drugs. There were 135 AEs possibly related to roxadustat and 108 possibly related to daprodustat. Intergroup comparison revealed that roxadustat was associated with a greater risk of central hypothyroidism (n = 457, ROR = 1504.68), hyperkalemia (n = 113, ROR = 8.09), injury (n = 608, ROR = 4.32), and metabolism and nutrition disorders (n = 309, ROR = 1.35), whereas daprodustat was linked to a higher risk of eye disorders (n = 60, ROR = 1.89), nervous system disorders (n = 294, ROR = 1.53), and tumor progression (n = 188, ROR = 2.24). The analysis of the occurrence time of AEs of the 2 drugs found no significant difference, and the incidence rate of both decreased over time. This study is the first to comprehensively compare roxadustat and daprodustat using a database, revealing significant differences between the 2 drugs across multiple systemic organs. In the clinical selection process, the choice should be made based on the patient's underlying diseases and baseline indicator levels, combined with the AE characteristics of the 2 drugs, to ensure the tolerability and rationality of clinical medication and maximize the benefits for the patients.",
+    "authors": [
+      "Chen F",
+      "Chen S",
+      "Cao C",
+      "Zhou L",
+      "Pan K",
+      "Su S"
+    ],
+    "journal": "Clinical therapeutics",
+    "journal_issn": "1879-114X",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-06",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.39,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.867,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.867
+      },
+      {
+        "id": "T11534",
+        "name": "Erythropoietin and Anemia Treatment",
+        "score": 0.076
+      },
+      {
+        "id": "T12255",
+        "name": "Biosimilars and Bioanalytical Methods",
+        "score": 0.014
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-12T00:09:24.367Z",
+    "classified": true,
+    "title_ja": "ロキサデュスタットとダプロデュスタットの有害事象評価:ファーマコビジランス研究",
+    "abstract_ja": "JADER(2019-2026年)で腎性貧血治療薬2剤の有害事象をROR解析し、χ2検定で比較した。ロキサデュスタットでは中枢性甲状腺機能低下症や高カリウム血症などのリスクが高かった。"
+  },
+  {
+    "id": "pmid-42830530",
+    "pubmed_id": "42830530",
+    "doi": "10.1265/ehpm.26-00086",
+    "title": "Health checkup profile before age 65 and long-term care needs: a retrospective analysis of the Fukuoka-City Information Platform for Community-based Integrated Care.",
+    "abstract": "The association between health status before age 65 and the occurrence of long-term care needs has not been extensively studied. We aimed to examine potential associated factors based on profiles from Japan's Specific Health Checkup program that are associated with the occurrence of long-term care needs in later life. A total of 13,379 residents aged 57-64 years without long-term care needs who underwent Japan's Specific Health Checkup in fiscal year 2012 were followed until March 2021. The occurrence of long-term care needs was defined as new certification for long-term care level 1 or higher under Japan's universal long-term care insurance system. Associations between health checkup profiles and the occurrence of long-term care needs were estimated using a Cox proportional hazards model. During the median 8-year follow-up, 406 participants were newly certified as requiring long-term care. Older age, female sex, underweight, hypertension, diabetes, proteinuria, history of chronic disease (cerebrovascular disease, heart disease, and renal failure), current smoking, no regular exercise, self-reported slow walking speed, skipping breakfast, and eating before bedtime were significantly associated with higher risk of the need for long-term care in age- and sex-adjusted analyses. Using a large-scale database of participants aged less than 65 years, this study found the significant associations between several health- and lifestyle-related characteristics and the subsequent need for long-term care. Our findings suggest that information collected through health checkups in midlife may be useful for characterizing individuals who may be more likely to require long-term care later in life. NA.",
+    "authors": [
+      "Honda T",
+      "Furuhashi H",
+      "Oishi E",
+      "Furuta Y",
+      "Kimura Y",
+      "Ninomiya T"
+    ],
+    "journal": "Environmental health and preventive medicine",
+    "journal_issn": "1347-4715",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-05",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "福岡市地域包括ケア情報プラットフォーム(特定健診・介護保険データ)"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.54,
+    "sjr_quartile": null,
+    "openalex_topic": "Aging, Health, and Disability",
+    "openalex_topic_score": 0.417,
+    "openalex_subfield": "Public Health, Environmental and Occupational Health",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T12811",
+        "name": "Aging, Health, and Disability",
+        "score": 0.417
+      },
+      {
+        "id": "T11376",
+        "name": "Geriatric Care and Nursing Homes",
+        "score": 0.231
+      },
+      {
+        "id": "T14212",
+        "name": "Health Promotion and Cardiovascular Prevention",
+        "score": 0.097
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-12T00:09:22.858Z",
+    "classified": true,
+    "title_ja": "65歳前の健診プロファイルと介護ニーズの発生:福岡市地域包括ケア情報プラットフォームの後方視的解析",
+    "abstract_ja": "福岡市の57〜64歳の特定健診受診者約1.3万人を約8年追跡し、健診プロファイルと介護認定の発生との関連をCox比例ハザードモデルで検討した。"
+  },
+  {
+    "id": "pmid-42830730",
+    "pubmed_id": "42830730",
+    "doi": "10.1016/j.parepi.2026.e00546",
+    "title": "Clinical and epidemiological characteristics of patients hospitalized for toxocariasis in Japan: A nationwide analysis using the diagnosis procedure combination database.",
+    "abstract": "Toxocariasis is a zoonotic helminth infection caused by Toxocara canis or Toxocara cati. While it has traditionally been regarded as a pediatric soil-transmitted disease, recent reports from Japan suggest that an increasing number of adult-onset cases are potentially associated with foodborne transmission. Ocular involvement in adults can also result in severe visual impairment. However, nationwide data describing the epidemiological and clinical characteristics of hospitalized patients in Japan are limited. We conducted a nationwide retrospective study using the Japanese Diagnosis Procedure Combination database from the fiscal years 2014 through 2020. Hospitalized patients with toxocariasis were identified using ICD-10 code B83.0. Demographic characteristics, organ involvement, geographic distribution, and treatment patterns were descriptively analyzed. Forty-one patients with toxocariasis were identified. The median age was 53 years (range, 10-89 years), and 63% of the patients were male. None of the patients were younger than 10 years. Ocular involvement was the most frequent presentation (41%), and ophthalmologic surgery, including pars plana vitrectomy, was performed in 24% of the cases. Patients who were hospitalized were predominantly from the Kinki (32%) and Kyushu-Okinawa (29%) regions. Albendazole was administered to 54% of the patients, with a median inpatient treatment duration of 3 days (inpatient administration only). In Japan, toxocariasis requiring hospitalization predominantly affects middle-aged and older adults and is frequently associated with ocular involvement requiring surgical intervention. The adult-dominant patterns and geographic clustering in Western Japan may reflect region-specific exposure characteristics. Although limited to hospitalized patients and administrative data without diagnostic validation, these findings provide the first nationwide overview of severe toxocariasis requiring hospitalization in Japan and contribute to understanding its clinical and epidemiological profile.",
+    "authors": [
+      "Matsunaga T",
+      "Ohkubo N",
+      "Yamasaki K",
+      "Tahara M",
+      "Nakamura K",
+      "Ikegami H",
+      "Sennari K",
+      "Jotatsu T",
+      "Nishida C",
+      "Okawara M",
+      "Fujino Y",
+      "Matsuda S",
+      "Fushimi K",
+      "Mukae H",
+      "Yatera K"
+    ],
+    "journal": "Parasite epidemiology and control",
+    "journal_issn": "2405-6731",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-05",
+    "analysis_methods": [],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.14,
+    "sjr_quartile": null,
+    "openalex_topic": "Parasitic infections in humans and animals",
+    "openalex_topic_score": 0.575,
+    "openalex_subfield": "Pathology and Forensic Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11154",
+        "name": "Parasitic infections in humans and animals",
+        "score": 0.575
+      },
+      {
+        "id": "T11702",
+        "name": "Parasitic Diseases Research and Treatment",
+        "score": 0.153
+      },
+      {
+        "id": "T10695",
+        "name": "Parasites and Host Interactions",
+        "score": 0.123
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-12T00:09:23.367Z",
+    "classified": true,
+    "title_ja": "日本におけるトキソカラ症入院患者の臨床・疫学的特徴:DPCデータベースを用いた全国解析",
+    "abstract_ja": "2014〜2020年度のDPCデータベースでICD-10コードB83.0のトキソカラ症入院患者41例の背景・臓器障害・地域分布・治療パターンを記述的に解析した。"
+  },
+  {
     "id": "pmid-42828587",
     "pubmed_id": "42828587",
     "doi": "10.1007/s00223-026-01613-8",
@@ -34,11 +965,27 @@
     ],
     "impact_factor": 3.05,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Bone health and osteoporosis research",
+    "openalex_topic_score": 0.89,
+    "openalex_subfield": "Orthopedics and Sports Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10071",
+        "name": "Bone health and osteoporosis research",
+        "score": 0.89
+      },
+      {
+        "id": "T11221",
+        "name": "Bone health and treatments",
+        "score": 0.028
+      },
+      {
+        "id": "T10496",
+        "name": "Pharmaceutical Practices and Patient Outcomes",
+        "score": 0.006
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-10-05T00:09:01.776Z",
     "classified": true,
@@ -79,11 +1026,27 @@
     ],
     "impact_factor": 2.85,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Cancer Immunotherapy and Biomarkers",
+    "openalex_topic_score": 0.998,
+    "openalex_subfield": "Oncology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10158",
+        "name": "Cancer Immunotherapy and Biomarkers",
+        "score": 0.998
+      },
+      {
+        "id": "T10417",
+        "name": "Lung Cancer Treatments and Mutations",
+        "score": 0
+      },
+      {
+        "id": "T10202",
+        "name": "Lung Cancer Diagnosis and Treatment",
+        "score": 0
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-10-05T00:09:02.279Z",
     "classified": true,
@@ -21498,11 +22461,27 @@
     "auto_detected": true,
     "collected_at": "2026-04-27T18:00:38.436Z",
     "classified": true,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null
+    "openalex_topic": "Health Promotion and Cardiovascular Prevention",
+    "openalex_topic_score": 0.525,
+    "openalex_subfield": "Public Health, Environmental and Occupational Health",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T14212",
+        "name": "Health Promotion and Cardiovascular Prevention",
+        "score": 0.525
+      },
+      {
+        "id": "T12935",
+        "name": "Healthcare Systems and Public Health",
+        "score": 0.319
+      },
+      {
+        "id": "T13522",
+        "name": "Cardiovascular Health and Risk Factors",
+        "score": 0.132
+      }
+    ]
   },
   {
     "id": "pmid-42036401",
@@ -41771,11 +42750,27 @@
     "title_ja": "日本の高齢者医療費：経カテーテル大動脈弁置換術と外科的大動脈弁置換術のコスト分析",
     "abstract_ja": "75歳以上のTAVR群（333例）と高齢SAVR群（78例）、若年SAVR群（81例）の臨床成績と入院総費用を比較した。TAVR群は手術時間・ICU滞在日数・入院日数が有意に短く、薬剤・血液製剤・手技料は低かったが、手術機器コストと総費用は有意に高かった。5年生存率はTAVR群で有意に低かった。日本の高齢者医療における自己負担は比較的小さい。",
     "classified": true,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null
+    "openalex_topic": "Cardiac Valve Diseases and Treatments",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Cardiology and Cardiovascular Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10172",
+        "name": "Cardiac Valve Diseases and Treatments",
+        "score": 0.999
+      },
+      {
+        "id": "T10618",
+        "name": "Aortic Disease and Treatment Approaches",
+        "score": 0
+      },
+      {
+        "id": "T10804",
+        "name": "Health Systems, Economic Evaluations, Quality of Life",
+        "score": 0
+      }
+    ]
   },
   {
     "id": "pmid-41247462",
@@ -45084,24 +46079,24 @@
     "abstract_ja": "岐阜県一自治体のKDB（2008-2014年）で初回特定健診受診3,786人の特定保健指導効果を分析した。積極的支持・動機付け支持いずれの群でも体重・BMI・腹囲の改善が認められた。積極的支持群では予備群→非該当への移行率が最大80%近くに達し、特定保健指導の有効性が示された。",
     "classified": true,
     "openalex_topic": "Health Promotion and Cardiovascular Prevention",
-    "openalex_topic_score": 0.897,
+    "openalex_topic_score": 0.992,
     "openalex_subfield": "Public Health, Environmental and Occupational Health",
     "openalex_field": "Medicine",
     "openalex_topics": [
       {
         "id": "T14212",
         "name": "Health Promotion and Cardiovascular Prevention",
-        "score": 0.897
+        "score": 0.992
       },
       {
-        "id": "T14416",
-        "name": "Health, Technology, Consumer Behavior",
-        "score": 0.012
+        "id": "T10027",
+        "name": "Diabetes, Cardiovascular Risks, and Lipoproteins",
+        "score": 0.001
       },
       {
-        "id": "T12831",
-        "name": "School Health and Nursing Education",
-        "score": 0.007
+        "id": "T10352",
+        "name": "Physical Activity and Health",
+        "score": 0.001
       }
     ]
   },
@@ -52131,24 +53126,24 @@
     "last_updated": "2026-05-11T18:50:56.857Z",
     "classified": true,
     "openalex_topic": "Healthcare cost, quality, practices",
-    "openalex_topic_score": 0.987,
+    "openalex_topic_score": 0.999,
     "openalex_subfield": "General Health Professions",
     "openalex_field": "Health Professions",
     "openalex_topics": [
       {
         "id": "T13555",
         "name": "Healthcare cost, quality, practices",
-        "score": 0.987
+        "score": 0.999
       },
       {
-        "id": "T10804",
-        "name": "Health Systems, Economic Evaluations, Quality of Life",
+        "id": "T10391",
+        "name": "Healthcare Policy and Management",
         "score": 0.001
       },
       {
-        "id": "T12708",
-        "name": "Economic and Financial Impacts of Cancer",
-        "score": 0.001
+        "id": "T11314",
+        "name": "Clinical Laboratory Practices and Quality Control",
+        "score": 0
       }
     ]
   },
@@ -60528,11 +61523,27 @@
     "title_ja": "高齢者の肺癌手術症例の特徴とNational Clinical Databaseリスク計算機の有用性に関する検討",
     "abstract_ja": "高齢肺癌手術患者における術後合併症リスク評価におけるNCD（National Clinical Database）リスク計算機の有用性を検討した。2012年5月～2021年12月の肺葉切除以上の原発性肺癌手術360例を75歳以上群と75歳未満群に分け後方視的に解析した。75歳以上群ではNCDリスクスコアが有意に高く、「死亡または重篤合併症スコア」と術後合併症の相関においてAUC 0.710を示し、高齢患者の手術リスク評価ツールとしての有用性が示唆された。",
     "classified": true,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null
+    "openalex_topic": "Lung Cancer Diagnosis and Treatment",
+    "openalex_topic_score": 0.961,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10202",
+        "name": "Lung Cancer Diagnosis and Treatment",
+        "score": 0.961
+      },
+      {
+        "id": "T11930",
+        "name": "Cardiac, Anesthesia and Surgical Outcomes",
+        "score": 0.025
+      },
+      {
+        "id": "T11011",
+        "name": "Frailty in Older Adults",
+        "score": 0.008
+      }
+    ]
   },
   {
     "id": "pmid-40586939",
