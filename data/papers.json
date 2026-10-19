@@ -1,5 +1,815 @@
 [
   {
+    "id": "pmid-42888858",
+    "pubmed_id": "42888858",
+    "doi": "10.1002/pds.70508",
+    "title": "Cancer Treatment During Pregnancy and Maternal and Infant Outcomes: A Descriptive Cohort Study Using a Japanese Claims Database.",
+    "abstract": "To characterize cancer treatment during pregnancy and maternal and infant outcomes among women with cancer identified during pregnancy in Japan. In this descriptive cohort study, we used mother-infant linkage data from the JMDC claims database from 2005 to 2024. Live-birth pregnancies were considered eligible when a malignant neoplasm (ICD-10 C00-C97) was recorded between the estimated pregnancy onset and delivery. Exposure was defined as at least one anticancer agent prescribed between the diagnosis and delivery; surgery and radiation therapy were also identified. The outcomes were preterm delivery and major congenital malformation at 6 months of age. Pregnancies without a diagnosis of malignant neoplasms constituted the internal reference group. Of the 500 pregnancies with cancer identified during pregnancy, 16 (3.2%) had an anticancer agent prescribed, 46 (9.2%) underwent surgery for malignant tumors, and none underwent radiation therapy. Cancer was identified in the second trimester in 10 of the 16 pregnancies with exposure (62.5%) and in 128 of the 484 pregnancies without exposure (26.4%). All eight pregnancies with breast cancer received an anthracycline with cyclophosphamide. The frequencies in the reference group (n = 236 002), without exposure, and with exposure were 12.0%, 20.9%, and 37.5% for preterm delivery and 6.1%, 9.1%, and 12.5% for major congenital malformation, respectively. Cancer identified during pregnancy was treated in a minority of women, and anticancer agents were most often prescribed when cancer was identified in the second trimester. Outcomes were recorded more often in pregnancies with cancer but cannot be attributed to anticancer agent exposure.",
+    "authors": [
+      "Tsuchiya M",
+      "Ishikawa T",
+      "Sakai T",
+      "Hori S",
+      "Obara T"
+    ],
+    "journal": "Pharmacoepidemiology and drug safety",
+    "journal_issn": "1099-1557",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-17",
+    "analysis_methods": [],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.31,
+    "sjr_quartile": null,
+    "openalex_topic": "Pregnancy and Medication Impact",
+    "openalex_topic_score": 0.844,
+    "openalex_subfield": "Public Health, Environmental and Occupational Health",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11964",
+        "name": "Pregnancy and Medication Impact",
+        "score": 0.844
+      },
+      {
+        "id": "T13574",
+        "name": "Family Support in Illness",
+        "score": 0.044
+      },
+      {
+        "id": "T12229",
+        "name": "Pharmacological Effects and Toxicity Studies",
+        "score": 0.014
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-19T00:09:34.868Z",
+    "classified": true,
+    "title_ja": "妊娠中のがん治療と母児転帰:JMDC請求データ研究",
+    "abstract_ja": "JMDCの母児連結データで妊娠中にがんが同定された500妊娠を解析した。抗がん剤が処方されたのは3.2%で、多くは妊娠第2期にがんが同定された例だった。早産・重大先天奇形はがん妊娠で多く記録されたが、薬剤曝露に帰因はできない。"
+  },
+  {
+    "id": "pmid-42890849",
+    "pubmed_id": "42890849",
+    "doi": "10.3389/fimmu.2026.1970912",
+    "title": "Treatment context is associated with thrombocytopenia report phenotypes in lung cancer: an active-comparator analysis of FAERS and JADER.",
+    "abstract": "Thrombocytopenia during immune checkpoint inhibitor treatment in lung cancer may be coded as immune, marrow suppression, coagulation, or non-specific. We tested whether coding-defined report phenotypes differed across co-reported treatment contexts. We analyzed FAERS (2015Q1-2026Q2) and JADER through Japanese fiscal 2025Q4 (31 March 2026). Strict primary lung cancer reports were grouped as ICI without chemotherapy (C1), ICI plus chemotherapy (C2), or chemotherapy without ICI (C3). Firth models compared mutually exclusive immune-like and marrow-like anchors. Complementary analyses evaluated the broad cohort, treatment date compatibility, C3 small-cell influence, phenotype variants, onset windows, treatment-variable ablation in elastic-net report phenotype models, and a 120-report random stratified blinded review with independent ratings, third-person adjudication, inverse-selection weighting, and bootstrap uncertainty. FAERS included 1,362 immune-like or marrow-like anchors. Relative to C1, adjusted odds ratios (ORs) for immune-like versus marrow-like phenotype were 0.111 (95% CI, 0.069-0.173) in C2 and 0.014 (0.006-0.029) in C3; C3 was exploratory because only eight reports were immune-like. In 2,835 broad cohort reports, adjusted immune-like composition was 13.0% (95% bootstrap interval, 11.0%-15.1%) in C1 and 4.7% (3.4%-6.2%) in C2. Treatment date and stricter phenotype analyses were directionally consistent. JADER reproduced the C2 versus C1 direction but showed calibration shift; treatment-variable ablation reduced cross-database discrimination. Reviewers agreed on 111/120 reports (92.5%; 95% CI, 87.5%-96.7%; Cohen's κ, 0.897; Gwet's AC1, 0.901). In the locked 927-report frame, design-weighted final categories were 23.4% immune probable, 37.3% immune possible, 13.6% indeterminate, and 25.8% non-immune probable. Among 100 determinate reports, weighted AUROC was 0.892 (0.827-0.948), PR-AUC 0.956 (0.922-0.982), and calibration-in-the-large intercept 2.054 (1.707-2.432), indicating underprediction. Coding-defined thrombocytopenia report composition differed across treatment contexts. Blinded review supported reproducible structured category assignment and score-based report ordering, while calibration shift and treatment-variable ablation defined important limits. Findings support pharmacovigilance case prioritization and hypothesis generation, not clinical diagnosis, incidence estimation, patient-level etiologic attribution, or causal inference.",
+    "authors": [
+      "Yang F",
+      "Jiang Q",
+      "Wei Z",
+      "Hu T"
+    ],
+    "journal": "Frontiers in immunology",
+    "journal_issn": "1664-3224",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-17",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）",
+      "回帰分析",
+      "機械学習・AI"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 5.59,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-10-19T00:09:35.152Z",
+    "classified": true,
+    "title_ja": "肺がんの血小板減少報告の表現型と治療背景:FAERSとJADER",
+    "abstract_ja": "肺がんの免疫チェックポイント阻害薬使用時の血小板減少を、FAERSとJADERで治療背景別に免疫様・骨髄抑制様の表現型に分けて比較した。ICIに化学療法を併用または化学療法単独では骨髄抑制様が優位で、治療背景により表現型が異なった。"
+  },
+  {
+    "id": "pmid-42881760",
+    "pubmed_id": "42881760",
+    "doi": "10.3390/healthcare14193322",
+    "title": "Area-Level Correlates of Inpatient Care Self-Sufficiency in Subnational Health Planning Areas: A Disease-Stratified Ecological Study from Aichi Prefecture, Japan.",
+    "abstract": "Background/Objectives: Japan organizes inpatient care through secondary medical areas (SMAs), but evidence linking area-level care self-sufficiency with population need, healthcare supply, and socioeconomic context is limited. We quantified disease-stratified self-sufficiency across Aichi Prefecture and examined its ecological correlates. Methods: This cross-sectional ecological study analyzed fiscal-year 2024 Diagnosis Procedure Combination discharges from 203 of 276 acute-care hospitals across 11 SMAs. The dataset comprised 396 cells (11 SMAs × 18 Major Diagnostic Categories × surgical/non-surgical strata) linked to census, healthcare-resource, household, and pooled 2020-2024 standardized mortality ratio (SMR) data. Pre-specified single-predictor regressions at the SMA level (n = 11) were supplemented by spatial and cluster-robust sensitivity analyses. Self-sufficiency represented observed resident-to-provider flows within the participating hospital network. Results: Mean self-sufficiency ranged from 34.0% to 88.3% across SMAs (intra-class correlation, 0.54) and was 8.5 percentage points lower for surgical cells (95% CI, 5.9-11.1). Greater shares of residents aged ≥75 years (β = -12.80; 95% CI, -22.84 to -2.75) and households containing an elderly member (β = -13.53; 95% CI, -23.02 to -4.05) were the strongest negative correlates. Supply-density estimates were consistently positive; in the cell-level sensitivity model, physician, general-bed, and psychiatric-bed densities were associated with above-median self-sufficiency (ORs, 2.51-3.16). Exploratory analyses suggested differing patterns across acute and chronic conditions. Conclusions: Self-sufficiency varied substantially across planning areas and was associated with demographic, household, supply, and mortality characteristics. These findings support disease-specific evaluation of regional concentration versus local completion but do not establish causal or individual-level relationships. Multi-prefecture studies with individual-level case-mix adjustment are needed before resource-allocation applications.",
+    "authors": [
+      "Sonta W",
+      "Sato K"
+    ],
+    "journal": "Healthcare (Basel, Switzerland)",
+    "journal_issn": "2227-9032",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-16",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [
+      "国勢調査・標準化死亡比"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 3.59,
+    "sjr_quartile": null,
+    "openalex_topic": "Healthcare Policy and Management",
+    "openalex_topic_score": 0.826,
+    "openalex_subfield": "Economics and Econometrics",
+    "openalex_field": "Economics, Econometrics and Finance",
+    "openalex_topics": [
+      {
+        "id": "T10391",
+        "name": "Healthcare Policy and Management",
+        "score": 0.826
+      },
+      {
+        "id": "T14186",
+        "name": "Healthcare Systems and Practices",
+        "score": 0.072
+      },
+      {
+        "id": "T12871",
+        "name": "Healthcare Quality and Management",
+        "score": 0.034
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-19T00:09:33.859Z",
+    "classified": true,
+    "title_ja": "愛知県の二次医療圏における入院医療自給率の地域相関:疾患別生態学的研究",
+    "abstract_ja": "愛知県11二次医療圏のDPCデータを国勢調査等と連結し、入院医療の自給率と地域要因の関係を調べた。自給率は医療圏で34〜88%と差があり、高齢者割合が高いほど低かった。"
+  },
+  {
+    "id": "pmid-42888078",
+    "pubmed_id": "42888078",
+    "doi": "10.1016/j.clgc.2026.102687",
+    "title": "The 4-cm Rule in Partial Nephrectomy: Analysis of Surgical Selection and Safety Using Japan's National Clinical Database.",
+    "abstract": "Tumor size is a crucial prognostic factor in renal cell carcinoma (RCC). The traditional 4-cm cutoff in the tumor-node-metastasis classification was established for oncological prognosis rather than technical feasibility or perioperative safety. This study examined the relationship between tumor size, surgical selection, and perioperative outcomes to reassess the role of this threshold in contemporary practice. We conducted a retrospective cohort study using Japan's National Clinical Database, including patients undergoing partial nephrectomy (PN) or radical nephrectomy for T1 RCC during 2018 to 2021. Complete-case multivariable logistic regression with generalized estimating equations assessed factors associated with PN selection and 30-day outcomes free from complications or death after PN. Restricted cubic splines were used to examine nonlinear associations with tumor size. Among 36,015 patients in 941 hospitals, including 22,860 undergoing PN, tumor size showed a continuous, near-linear inverse association with the odds of PN selection, without a distinct threshold at 4 cm. Among PN cases, the adjusted odds of remaining free from complications or death decreased with increasing tumor size up to approximately 5 cm, with an apparent plateau thereafter. Tumor size remains important for technical assessment and oncological risk stratification, but the 4-cm cutoff alone is insufficient to guide PN selection. Tumor size was continuously associated with surgical choice, while the apparent safety plateau beyond approximately 5 cm among selected PN cases warrants cautious interpretation. Individualized decision-making should integrate tumor size with anatomical complexity, patient factors, and surgical expertise.",
+    "authors": [
+      "Ito H",
+      "Yamamoto H",
+      "Kamba T",
+      "Kobayashi T",
+      "Mizuno R",
+      "Kikuchi E"
+    ],
+    "journal": "Clinical genitourinary cancer",
+    "journal_issn": "1938-0682",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-16",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.59,
+    "sjr_quartile": null,
+    "openalex_topic": "Renal cell carcinoma treatment",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10449",
+        "name": "Renal cell carcinoma treatment",
+        "score": 0.999
+      },
+      {
+        "id": "T10458",
+        "name": "Bladder and Urothelial Cancer Treatments",
+        "score": 0
+      },
+      {
+        "id": "T11054",
+        "name": "Adrenal and Paraganglionic Tumors",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-19T00:09:34.384Z",
+    "classified": true,
+    "title_ja": "腎部分切除の4cmルール:NCDによる術式選択と安全性の解析",
+    "abstract_ja": "NCDのT1腎細胞癌36,015例で腫瘍径と術式選択・30日転帰を検討した。4cmに明確な閾値はなく、腫瘍径が大きいほど部分切除の選択確率と合併症・死亡なしの確率が連続的に低下した。"
+  },
+  {
+    "id": "pmid-42879361",
+    "pubmed_id": "42879361",
+    "doi": "10.1159/uin/aewag029",
+    "title": "Efficacy of adjuvant nivolumab versus adjuvant gemcitabine plus cisplatin/carboplatin after radical nephroureterectomy for upper tract urothelial carcinoma: a real-world analysis using a Japanese large-scale claims database.",
+    "abstract": "Upper tract urothelial carcinoma (UTUC) is a relatively rare malignancy with a poor prognosis. Although adjuvant platinum-based chemotherapy is a standard treatment after radical nephroureterectomy (RNU), the efficacy of adjuvant nivolumab in UTUC remains unclear, especially in real clinical practice. We examined this using a large Japanese real-world database. Using the Medical Data Vision database, we identified UTUC patients who underwent RNU and received adjuvant therapy. The adjuvant GC/GCarbo group and the adjuvant nivolumab group were defined by distinct treatment eras to reduce treatment selection bias. Event-free survival (EFS) was compared using Kaplan-Meier curves and the log-rank test, with a sensitivity analysis truncating follow-up at 300 days. A total of 1,058 patients were analyzed (240 nivolumab, 818 GC/GCarbo). In the whole cohort, EFS was significantly longer in the nivolumab group (HR = 0.6365, P = 0.0076). This benefit was consistent in patients with neoadjuvant chemotherapy (HR = 0.4053, P = 0.001) and in those without it (HR = 0.6765, P = 0.0462). In Japanese UTUC patients, adjuvant nivolumab may be at least not inferior to GC/GCarbo, suggesting the usefulness of an immunotherapy-after-chemotherapy sequence.",
+    "authors": [
+      "Hashizume A",
+      "Kawahara T",
+      "Yamazaki M",
+      "Ueno D",
+      "Kuroda S",
+      "Takeshima T",
+      "Takamoto D",
+      "Noguchi T",
+      "Yumura Y",
+      "Uemura H",
+      "Makiyama K",
+      "Teranishi JI"
+    ],
+    "journal": "Urologia internationalis",
+    "journal_issn": "1423-0399",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-15",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 1.15,
+    "sjr_quartile": null,
+    "openalex_topic": "Bladder and Urothelial Cancer Treatments",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10458",
+        "name": "Bladder and Urothelial Cancer Treatments",
+        "score": 0.999
+      },
+      {
+        "id": "T12695",
+        "name": "Urinary and Genital Oncology Studies",
+        "score": 0
+      },
+      {
+        "id": "T10158",
+        "name": "Cancer Immunotherapy and Biomarkers",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-19T00:09:33.358Z",
+    "classified": true,
+    "title_ja": "上部尿路上皮癌の術後補助療法:ニボルマブ対GC/GCarbo療法のMDV実臨床解析",
+    "abstract_ja": "MDVの上部尿路上皮癌で腎尿管全摘後の補助療法を受けた1,058例を比較した。無イベント生存期間はニボルマブ群で有意に長く、化学療法後の免疫療法の有用性が示唆された。"
+  },
+  {
+    "id": "pmid-42871337",
+    "pubmed_id": "42871337",
+    "doi": "10.1002/hsr2.73376",
+    "title": "Skin-Related Adverse Events in Patients Treated With Apalutamide Versus Enzalutamide for Prostate Cancer: A Japanese Real-World Database Study (A Retrospective Cohort Study).",
+    "abstract": "Apalutamide (APA) and enzalutamide (ENZ) are androgen receptor pathway inhibitors widely used for prostate cancer. Skin rash is a characteristic adverse event of APA, but how often it occurs in real-world practice, the factors related to it, and possible differences by disease stage are not well understood. Using a Japanese nationwide claims database (Medical Data Vision), we identified patients with prostate cancer treated with APA (240 mg/day) or ENZ (160 mg/day) between April 2008 and August 2021. A skin-related adverse event was defined as a case with both a skin-related diagnosis and treatment for the skin event during therapy. Patients were classified as mCSPC or CRPC. We compared the rate and timing of skin rash between the two drugs and between disease stages, and examined associated clinical factors. A total of 5524 patients were included (1264 APA and 4260 ENZ). The rate of skin rash was higher in the APA group than in the ENZ group (25.3% vs. 9.95%; p < 0.001), confirmed by Kaplan-Meier analysis. Within each drug, the rate did not differ significantly between mCSPC and CRPC. Most events occurred within the first month (median 29 days for APA and 22 days for ENZ). Age, body weight, BMI, and BSA were not associated with skin rash. After adjustment for age, body weight, BMI, and BSA, the risk remained about 2.6-fold higher with APA (adjusted HR: 2.56, 95% CI: 2.18-3.01). Skin-related adverse events requiring treatment were more common with APA than with ENZ, but they did not differ by disease stage for either drug and were not predicted by body size. Careful skin monitoring and early intervention are important for all patients from the start of APA or ENZ treatment, regardless of disease stage.",
+    "authors": [
+      "Hashizume A",
+      "Kawahara T",
+      "Yamazaki M",
+      "Takamoto D",
+      "Takeshima T",
+      "Kuroda S",
+      "Uemura H",
+      "Makiyama K",
+      "Teranishi JI"
+    ],
+    "journal": "Health science reports",
+    "journal_issn": "2398-8835",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-14",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.62,
+    "sjr_quartile": null,
+    "openalex_topic": "Prostate Cancer Treatment and Research",
+    "openalex_topic_score": 0.954,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10543",
+        "name": "Prostate Cancer Treatment and Research",
+        "score": 0.954
+      },
+      {
+        "id": "T12937",
+        "name": "Chemotherapy-related skin toxicity",
+        "score": 0.037
+      },
+      {
+        "id": "T10124",
+        "name": "Prostate Cancer Diagnosis and Treatment",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-19T00:09:32.367Z",
+    "classified": true,
+    "title_ja": "前立腺癌でのアパルタミドとエンザルタミドの皮膚関連有害事象:MDV研究",
+    "abstract_ja": "MDVの前立腺癌患者でアパルタミドとエンザルタミドの皮膚有害事象の発現を比較した。アパルタミドで皮疹が特徴的であり、関連因子や病期による差を検討した。"
+  },
+  {
+    "id": "pmid-42871429",
+    "pubmed_id": "42871429",
+    "doi": "10.3389/fimmu.2026.1934652",
+    "title": "Fluoropyrimidine-associated gastrointestinal toxicity: pharmacovigilance reporting signals and in vitro evidence of epithelial injury, barrier impairment, and inflammatory responses.",
+    "abstract": "Fluoropyrimidines, including 5-fluorouracil (5-FU), capecitabine, tegafur, and trifluridine, are widely used anticancer agents, but their gastrointestinal toxicities remain clinically important. This study characterized fluoropyrimidine-associated adverse-event reporting signals across multiple pharmacovigilance databases and described epithelial-cell responses that may provide experimental context for gastrointestinal toxicity. Adverse-event reports from the US Food and Drug Administration Adverse Event Reporting System (FAERS), Japanese Adverse Drug Event Report database (JADER), and Canada Vigilance Adverse Reaction Database (CVARD) were analyzed using the reporting odds ratio (ROR), proportional reporting ratio (PRR), Bayesian confidence propagation neural network (BCPNN), and empirical Bayes geometric mean (EBGM) approaches. Time to onset (TTO) analysis was limited to FAERS because complete onset information was unavailable in JADER and CVARD. GES-1 gastric epithelial cells and NCM460 colonic epithelial cells were used for acute and 7-day repeated-exposure injury experiments. Additional representative-treatment experiments assessed fluorescein isothiocyanate (FITC)-dextran permeability and relative supernatant interleukin-6 (IL-6) and tumor necrosis factor alpha (TNF-α) levels. Fluoropyrimidines showed gastrointestinal reporting signals with drug-specific reporting patterns. TTO analysis in FAERS showed an overall early-reporting pattern; the distribution of reports between days 181 and 360 was exploratory. In vitro, fluoropyrimidines reduced epithelial viability, increased lactate dehydrogenase (LDH) release and reactive oxygen species (ROS) accumulation and decreased the JC-1 red/green ratio. Epithelial injury was also observed under the 7-day repeated-exposure conditions. Quantitative real-time polymerase chain reaction (qPCR) showed lower TJP1, OCLN, and CDH1 transcript abundance and increased expression of selected epithelial inflammatory-response and extracellular-matrix-remodeling genes. In the functional assays, FITC-dextran permeability and relative supernatant IL-6 and TNF-α levels increased after 5-FU, capecitabine, and trifluridine exposure. This study identifies pharmacovigilance reporting signals and provides experimental evidence that fluoropyrimidine exposure is associated with epithelial injury, impaired barrier function, and epithelial inflammatory responses. The reporting signals do not estimate event frequency in treated populations or establish causality and require confirmation in exposure-adjusted studies.",
+    "authors": [
+      "Luan X",
+      "Li X",
+      "Li X",
+      "Wang X",
+      "Zhang X",
+      "Zhao B",
+      "Xu J",
+      "Yu Z",
+      "Jing G",
+      "Liu N"
+    ],
+    "journal": "Frontiers in immunology",
+    "journal_issn": "1664-3224",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-14",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS",
+      "CVARD",
+      "培養細胞実験"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 5.59,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.989,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.989
+      },
+      {
+        "id": "T12429",
+        "name": "Chemotherapy-induced organ toxicity mitigation",
+        "score": 0.002
+      },
+      {
+        "id": "T10678",
+        "name": "Inflammatory mediators and NSAID effects",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-19T00:09:33.024Z",
+    "classified": true,
+    "title_ja": "フルオロピリミジン関連消化管毒性:薬剤監視シグナルと上皮傷害のin vitro検証",
+    "abstract_ja": "FAERS・JADER・CVARDでフルオロピリミジンの消化管有害事象を不均衡分析し、胃・大腸上皮細胞での傷害実験を併せた。薬剤ごとに異なる消化管報告シグナルと上皮傷害・炎症反応が示された。"
+  },
+  {
+    "id": "pmid-42865306",
+    "pubmed_id": "42865306",
+    "doi": "10.1111/ped.70582",
+    "title": "Risk Interval of Immune Thrombocytopenia in Children After Influenza Infection.",
+    "abstract": "The temporal association between influenza and immune thrombocytopenia (ITP) is poorly characterized. This study examined the risk interval between influenza infection and newly diagnosed ITP in children. We enrolled individuals aged 1-15 years newly diagnosed with ITP between 2005 and 2024, using the Japanese large-scale administrative JMDC Database. We conducted a nested case-control study and self-controlled case series to evaluate the risk of ITP within 28 days (categorized into 7-day intervals) of influenza diagnosis. We estimated the risk interval from influenza diagnosis to ITP onset using conditional logistic and Poisson regressions. We identified 2255 individuals diagnosed with ITP, of whom 1324 met the eligibility criteria. In the nested case-control analysis, the adjusted odds ratio of preceding influenza diagnosis was the highest within 1-7 days before ITP onset (3.13; 95% confidence interval 1.38-7.12) compared with the matched controls. In the self-controlled case series, the incidence rate ratio for ITP was the highest within 1-7 days after influenza diagnosis compared to the baseline period (2.44; 95% confidence interval 1.16-5.14). In the sensitivity and post hoc analyses for different definitions of influenza diagnosis and ITP onset dates, ITP onset peaked within 1-14 days of influenza diagnosis. The risk of ITP appeared to be highest during the first 1-2 weeks after influenza diagnosis, particularly around the first week.",
+    "authors": [
+      "Ibi K",
+      "Miyamoto Y",
+      "Kato M",
+      "Yasunaga H"
+    ],
+    "journal": "Pediatrics international : official journal of the Japan Pediatric Society",
+    "journal_issn": "1442-200X",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-13",
+    "analysis_methods": [
+      "回帰分析",
+      "自己対照ケースシリーズ (SCCS)"
+    ],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "症例対照研究",
+    "research_categories": [
+      "安全性・副作用",
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 0.56,
+    "sjr_quartile": null,
+    "openalex_topic": "Platelet Disorders and Treatments",
+    "openalex_topic_score": 0.991,
+    "openalex_subfield": "Hematology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10746",
+        "name": "Platelet Disorders and Treatments",
+        "score": 0.991
+      },
+      {
+        "id": "T12352",
+        "name": "Heparin-Induced Thrombocytopenia and Thrombosis",
+        "score": 0.001
+      },
+      {
+        "id": "T11616",
+        "name": "Autoimmune and Inflammatory Disorders Research",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-19T00:09:31.404Z",
+    "classified": true,
+    "title_ja": "小児におけるインフルエンザ感染後の免疫性血小板減少症のリスク期間",
+    "abstract_ja": "JMDCの1〜15歳の新規ITP 1,324例で入れ子型症例対照研究とSCCSを行った。ITPリスクはインフルエンザ診断後1〜7日で最も高く、概ね1〜2週間に集中した。"
+  },
+  {
+    "id": "pmid-42868837",
+    "pubmed_id": "42868837",
+    "doi": "10.1016/j.leukres.2026.108338",
+    "title": "Approval-standardized postmarketing safety reporting phenotypes of talquetamab versus BCMA-directed bispecific antibodies in multiple myeloma.",
+    "abstract": "Bispecific antibodies directed against B-cell maturation antigen (BCMA) or G protein-coupled receptor class C group 5 member D have partly distinct toxicity profiles, but unequal time since approval complicates postmarketing comparisons. We used exact 24-month postapproval windows for teclistamab, elranatamab, and talquetamab in the FDA Adverse Event Reporting System (FAERS). Talquetamab was compared with pooled BCMA-directed reports across 12 prespecified toxicity domains using reporting-maturity×region-stratified Mantel-Haenszel (MH) odds ratios (ORs) with Holm correction. Among 3685 primary-suspect reports, talquetamab reporting was enriched for dysgeusia/taste disorder (MH OR 93.37, 95% CI 43.40-200.89), nail toxicity (72.21, 27.68-188.37), weight loss (10.53, 6.46-17.15), and skin toxicity (6.33, 4.83-8.29); infection was enriched among BCMA-directed reports (0.41, 0.33-0.50). All five differences preserved direction across prespecified sensitivity analyses and were recognized in registration-era evidence. The Japanese Adverse Drug Event Report database provided a secondary external-consistency assessment: pooled BCMA infection reporting was enriched (MH reporting odds ratio 3.30, 95% CI 2.65-4.12), predominantly reflecting elranatamab, whereas the teclistamab component was inconclusive. Only one postapproval talquetamab report was available in that database, precluding direct assessment of the four talquetamab-enriched phenotypes. Approval-standardized FAERS reporting identified registration-recognized phenotypes that may inform toxicity surveillance and supportive care. These estimates describe reporting composition, not incidence, comparative risk, or causal effects.",
+    "authors": [
+      "Zhu H",
+      "He W"
+    ],
+    "journal": "Leukemia research",
+    "journal_issn": "1873-5835",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-13",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.11,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.517,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.517
+      },
+      {
+        "id": "T10649",
+        "name": "Multiple Myeloma Research and Treatments",
+        "score": 0.474
+      },
+      {
+        "id": "T11235",
+        "name": "Statistical Methods in Clinical Trials",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-19T00:09:31.877Z",
+    "classified": true,
+    "title_ja": "多発性骨髄腫の二重特異性抗体における承認時点標準化市販後安全性報告表現型",
+    "abstract_ja": "FAERSで承認後24か月に揃え、タルケタマブとBCMA標的二重特異性抗体の有害事象報告を比較した。タルケタマブは味覚障害・爪毒性・皮膚毒性などが多く、JADERは副次的に整合性を確認した。"
+  },
+  {
+    "id": "pmid-42860651",
+    "pubmed_id": "42860651",
+    "doi": "10.1111/cen.70217",
+    "title": "Increased Risk of Thyrotoxicosis After COVID-19 in Adolescents and Young Adults During the Omicron-Predominant Period: A Nationwide Matched Study.",
+    "abstract": "Thyroid dysfunction has been increasingly reported after the coronavirus disease 2019 (COVID-19) pandemic. To date, no population-based study has examined this association using more than 10 million matched pairs. We compared the risk of documented thyroid outcomes after COVID-19 with that after influenza during the Omicron-predominant period. We conducted a nationwide retrospective cohort study using the Japanese National Database of Health Insurance Claims, including patients with COVID-19 between January 2022 and March 2023, and those with influenza between September 2017 and March 2023. Individuals with pre-existing thyroid disease were excluded. After 1:1 propensity score matching, 24,173,646 pairs were analysed. Database-recorded outcomes assessed within 90 days of documented COVID-19 infection included diagnoses of thyrotoxicosis, hypothyroidism and subacute thyroiditis, as well as initiation of antithyroid drugs (ATDs) and thyroid hormone replacement therapy (THRT). Among database-recorded outcomes, COVID-19 was associated with higher risks of thyrotoxicosis diagnosis (risk ratio [RR], 1.08), hypothyroidism diagnosis (RR, 1.12), ATD initiation (RR, 1.06) and THRT initiation (RR, 1.22) than influenza, but not subacute thyroiditis diagnosis. Age-stratified analyses showed markedly higher risks in individuals aged 0-19 years for thyrotoxicosis diagnosis (RR, 1.38) and ATD initiation (RR, 1.77). In this nationwide cohort, COVID-19 was associated with higher risks of database-recorded diagnoses of thyrotoxicosis and hypothyroidism than influenza during the Omicron-predominant period. The strongest association was observed for thyrotoxicosis diagnosis and ATD initiation in younger individuals, underscoring the importance of post-COVID-19 thyroid monitoring in adolescents and young adults.",
+    "authors": [
+      "Miyashita K",
+      "Ohba K",
+      "Hozumi H",
+      "Furuhashi K",
+      "Fujisawa T",
+      "Inui N",
+      "Ojima T",
+      "Suda T"
+    ],
+    "journal": "Clinical endocrinology",
+    "journal_issn": "1365-2265",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-12",
+    "analysis_methods": [
+      "生存時間分析",
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.4,
+    "sjr_quartile": null,
+    "openalex_topic": "Thyroid Disorders and Treatments",
+    "openalex_topic_score": 0.988,
+    "openalex_subfield": "Endocrinology, Diabetes and Metabolism",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10293",
+        "name": "Thyroid Disorders and Treatments",
+        "score": 0.988
+      },
+      {
+        "id": "T10041",
+        "name": "COVID-19 Clinical Research Studies",
+        "score": 0.008
+      },
+      {
+        "id": "T11728",
+        "name": "Thyroid and Parathyroid Surgery",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-19T00:09:29.705Z",
+    "classified": true,
+    "title_ja": "オミクロン期の青年・若年成人におけるCOVID-19後の甲状腺中毒症リスク",
+    "abstract_ja": "NDBの1,000万組超のマッチ集団で、オミクロン期のCOVID-19後とインフルエンザ後の甲状腺アウトカムを比較した。COVID-19後で甲状腺中毒症リスクの上昇が示された。"
+  },
+  {
+    "id": "pmid-42860694",
+    "pubmed_id": "42860694",
+    "doi": "10.1111/hiv.70317",
+    "title": "A cross-sectional analysis of cardiometabolic and lifestyle-related profiles in men living with HIV in Japan using linked nationwide claims and health checkup data.",
+    "abstract": "To compare objectively measured cardiometabolic health between people living with HIV (PLWH) and individuals without HIV using nationwide health checkup data linked to administrative claims, thereby partially mitigating surveillance bias associated with routine HIV care. We conducted a cross-sectional matched analysis using the JMDC database, which links administrative claims with annual health checkup data. Men with HIV receiving antiretroviral therapy (ART) and men without HIV who underwent health checkups between 2017 and 2023 were included. PLWH were exact-matched 1:5 to individuals without HIV by age and calendar year. Cardiometabolic outcomes included hypertension, diabetes mellitus, dyslipidaemia and BMI, defined using treatment information and objectively measured clinical parameters. Conditional logistic regression and matched-set fixed-effects linear regression were used. We included 2596 PLWH and 12 980 matched individuals without HIV (median age 45.0 years [IQR 37.0-51.0]). PLWH were more likely to receive treatment for hypertension, diabetes mellitus and dyslipidaemia, whereas measured systolic blood pressure, HbA1c and LDL-C were comparable to or lower than those in individuals without HIV. HIV infection was not independently associated with hypertension (aOR 0.95, 95% CI 0.82-1.09) or diabetes mellitus (aOR 1.00, 0.82-1.22) but was associated with dyslipidaemia (aOR 1.22, 1.08-1.39) and slightly higher BMI (adjusted mean difference 0.28 kg/m2, 0.02-0.55). Among men receiving contemporary HIV care in Japan, HIV infection was associated with modest differences in BMI and dyslipidaemia but not with hypertension or diabetes mellitus.",
+    "authors": [
+      "Yamashita K",
+      "Ikeuchi K",
+      "Sekiya R",
+      "Arisato Y",
+      "Matsumoto S",
+      "Kishida T",
+      "Kado A",
+      "Okushin K",
+      "Yotsuyanagi H",
+      "Tsutsumi T"
+    ],
+    "journal": "HIV medicine",
+    "journal_issn": "1468-1293",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-12",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [
+      "健診データ"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.09,
+    "sjr_quartile": null,
+    "openalex_topic": "HIV-related health complications and treatments",
+    "openalex_topic_score": 1,
+    "openalex_subfield": "Emergency Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11655",
+        "name": "HIV-related health complications and treatments",
+        "score": 1
+      },
+      {
+        "id": "T10082",
+        "name": "HIV/AIDS Research and Interventions",
+        "score": 0
+      },
+      {
+        "id": "T10027",
+        "name": "Diabetes, Cardiovascular Risks, and Lipoproteins",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-19T00:09:30.367Z",
+    "classified": true,
+    "title_ja": "日本のHIV感染男性における心代謝・生活習慣プロファイル:請求と健診の連結解析",
+    "abstract_ja": "JMDCの請求と健診の連結データで、抗レトロウイルス治療中のHIV男性と非感染者の心代謝指標をマッチ比較した。サーベイランスバイアスを抑えた客観的な健康状態の差を検討した。"
+  },
+  {
+    "id": "pmid-42862467",
+    "pubmed_id": "42862467",
+    "doi": "10.1007/s40801-026-00589-z",
+    "title": "Polypharmacy and Activities of Daily Living in Older Patients Undergoing Cerebrovascular Rehabilitation: An Observational Study Using Japanese Real-World Data.",
+    "abstract": "Polypharmacy is highly prevalent among older patients undergoing cerebrovascular rehabilitation and may adversely affect functional recovery. This study examined the association between polypharmacy and the extent and pace of functional recovery in older patients undergoing convalescent rehabilitation after cerebrovascular events. This retrospective observational study used a Japanese real-world claims database (Japan Medical Data Center claims database, accessed on 25 August 2025), and included patients aged ≥ 65 years admitted to convalescent rehabilitation wards for cerebrovascular diseases. Polypharmacy was defined as the use of six or more medications. Patients were categorized into four groups according to polypharmacy status at admission and discharge: persistent non-polypharmacy, polypharmacy resolved, incident polypharmacy, and persistent polypharmacy. Functional outcomes were assessed using the Functional Independence Measure (FIM). The primary outcome measure was FIM gain, and the secondary outcome measure was FIM efficiency. Multivariable linear regression analyses adjusted for patient characteristics, comorbidities, and hospital bed capacity were performed. Among 44,980 patients, 48.9% had persistent polypharmacy and 14.8% developed incident polypharmacy during hospitalization. Polypharmacy status was not significantly associated with FIM gain. In contrast, FIM efficiency was significantly lower in the polypharmacy-resolved, incident polypharmacy, and persistent polypharmacy groups than in the persistent non-polypharmacy group. The strongest negative association with FIM efficiency was observed in the incident polypharmacy group (B = -0.114, p < 0.001), followed by the persistent polypharmacy group (B = -0.069, p < 0.001). Polypharmacy status was not significantly associated with FIM gain, the primary outcome. Although the three polypharmacy groups had lower FIM efficiency and longer hospital stays than the persistent non-polypharmacy group, the lower FIM efficiency may partly reflect differences in length of hospital stay. These observational findings do not establish a causal relationship between changes in medication burden and functional recovery.",
+    "authors": [
+      "Ogawa Y",
+      "Horii T",
+      "Sakoh M",
+      "Mihara K"
+    ],
+    "journal": "Drugs - real world outcomes",
+    "journal_issn": "2199-1154",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-12",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.47,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmaceutical Practices and Patient Outcomes",
+    "openalex_topic_score": 0.998,
+    "openalex_subfield": "Geriatrics and Gerontology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10496",
+        "name": "Pharmaceutical Practices and Patient Outcomes",
+        "score": 0.998
+      },
+      {
+        "id": "T10510",
+        "name": "Stroke Rehabilitation and Recovery",
+        "score": 0.001
+      },
+      {
+        "id": "T10009",
+        "name": "Dementia and Cognitive Impairment Research",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-19T00:09:30.848Z",
+    "classified": true,
+    "title_ja": "脳血管リハビリテーション高齢患者の多剤併用と日常生活動作",
+    "abstract_ja": "JMDCの65歳以上の回復期リハ患者44,980例で多剤併用とFIM改善の関連を調べた。約半数が多剤併用だった。FIM利得とは有意な関連がなく、FIM効率で差が見られた。"
+  },
+  {
+    "id": "pmid-42860502",
+    "pubmed_id": "42860502",
+    "doi": "10.1007/s11701-026-04039-4",
+    "title": "Diffusion and geographic variation in robot-assisted colon resection after reimbursement in Japan: a nationwide billing-based analysis, 2022-2024.",
+    "abstract": "This study aimed to quantify how rapidly robot-assisted colon resection billing diffused after reimbursement in Japan and whether geographic variation narrowed as uptake expanded. We analyzed National Database (NDB) Open Data for fiscal years (FYs) 2022-2024. The primary outcome was the robot-assisted share of two laparoscopic billing categories for malignant colon tumor resection (robot-assisted and conventional). Variation across treating-institution prefectures was summarized using the interquartile range (IQR) for absolute spread and the coefficient of variation (CV) and Gini coefficient for relative dispersion. Longitudinal analyses included prefectures with unmasked values in all relevant years; FY2024 permitted a complete 47-prefecture cross-section. The national robot-assisted share rose from 3.38% in FY2022 to 11.40% in FY2023 and 19.55% in FY2024. In the common 33-prefecture panel, the IQR widened from 5.73 to 6.61 and 11.79 percentage points, whereas the CV fell from 1.086 to 0.630 and 0.482 and the Gini coefficient from 0.565 to 0.347 and 0.269. Across all 47 prefectures in FY2024, shares ranged from 0.00% to 41.47%; the complete cross-section was more heterogeneous than the restricted longitudinal panel, and the 14 prefectures excluded because of earlier masking had a lower median share (6.83% versus 18.05%). Rapid national growth did not translate into geographically uniform billing-based uptake. Relative dispersion decreased while absolute percentage-point spread widened, so apparent geographic convergence depended on the scale used. Post-reimbursement surveillance should report both dimensions and account for selection introduced by disclosure-related masking.",
+    "authors": [
+      "Omura T",
+      "Kamihara T"
+    ],
+    "journal": "Journal of robotic surgery",
+    "journal_issn": "1863-2491",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-11",
+    "analysis_methods": [],
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 3.29,
+    "sjr_quartile": null,
+    "openalex_topic": "Colorectal Cancer Surgical Treatments",
+    "openalex_topic_score": 0.494,
+    "openalex_subfield": "Oncology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10335",
+        "name": "Colorectal Cancer Surgical Treatments",
+        "score": 0.494
+      },
+      {
+        "id": "T10391",
+        "name": "Healthcare Policy and Management",
+        "score": 0.324
+      },
+      {
+        "id": "T12020",
+        "name": "Enhanced Recovery After Surgery",
+        "score": 0.012
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-19T00:09:29.115Z",
+    "classified": true,
+    "title_ja": "保険償還後の日本における結腸ロボット支援手術の普及と地域差:2022-2024",
+    "abstract_ja": "NDBオープンデータ2022〜2024年度で結腸悪性腫瘍切除のロボット支援手術の割合の推移と施設間変動を分析した。償還後の普及速度と地域差の変化を示した。"
+  },
+  {
+    "id": "pmid-42860510",
+    "pubmed_id": "42860510",
+    "doi": "10.1007/s11701-026-04049-2",
+    "title": "Unveiling the Chasm in Japanese robot-assisted surgery diffusion: the interplay of surgical volume and intra-specialty spillover.",
+    "abstract": "To examine structural factors associated with the diffusion of robot-assisted surgery (RAS) in Japan, this study examined the associations of annual surgical volume, defined as the sum of open, conventional laparoscopic, and RAS cases, and prior intra-specialty experience with adoption speed. Using the 1st to 10th editions of the National Database of Health Insurance Claims and Specific Health Checkups of Japan (NDB) Open Data across fiscal years 2014-2023, diffusion trajectories were visualized for 21 procedures approved for insurance coverage by 2020 through bivariate plots of annual surgical volume versus RAS replacement rates. RAS diffusion exhibited non-linear dynamics associated with annual procedure volume. In niche markets with < 6,000 annual cases (n = 9), six procedures demonstrated high growth in RAS replacement rate. Conversely, among 12 procedures with ≥ 6,000 annual cases, four did not cross the 16.0% chasm threshold through FY2023, and three required 6 years to surpass it. These patterns were thought to reflect challenges in the transition from specialized centers to general hospitals. Furthermore, a trend consistent with \"intra-specialty spillover\" was observed, wherein procedures approved in FY2020 achieved higher initial adoption than those in FY2018; although inseparable from the overall expansion of RAS since 2018, this suggests that accumulated infrastructure and expertise may facilitate the uptake of subsequent techniques. These findings suggest that RAS diffusion is associated with annual procedure volume, organizational readiness, and specialty‑specific infrastructure alongside technical factors. Future implementation strategies may benefit from infrastructure sharing within and across specialties and resource optimization to bridge the observed diffusion chasm.",
+    "authors": [
+      "Natsume Y",
+      "Kano S"
+    ],
+    "journal": "Journal of robotic surgery",
+    "journal_issn": "1863-2491",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-11",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 3.29,
+    "sjr_quartile": null,
+    "openalex_topic": "Innovation Diffusion and Forecasting",
+    "openalex_topic_score": 0.296,
+    "openalex_subfield": "Management Science and Operations Research",
+    "openalex_field": "Decision Sciences",
+    "openalex_topics": [
+      {
+        "id": "T12659",
+        "name": "Innovation Diffusion and Forecasting",
+        "score": 0.296
+      },
+      {
+        "id": "T10391",
+        "name": "Healthcare Policy and Management",
+        "score": 0.234
+      },
+      {
+        "id": "T12053",
+        "name": "Minimally Invasive Surgical Techniques",
+        "score": 0.216
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-19T00:09:29.207Z",
+    "classified": true,
+    "title_ja": "日本のロボット支援手術普及の格差:手術件数と診療科内波及の関係",
+    "abstract_ja": "NDBオープンデータ第1〜10回で、年間手術件数と診療科内の経験がロボット支援手術の導入速度に与える関連を検討した。構造的要因による普及格差を示した。"
+  },
+  {
     "id": "pmid-42859294",
     "pubmed_id": "42859294",
     "doi": "10.1007/s40264-026-01730-1",
@@ -31,11 +841,27 @@
     ],
     "impact_factor": 6.85,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.996,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.996
+      },
+      {
+        "id": "T11649",
+        "name": "Pharmaceutical industry and healthcare",
+        "score": 0.001
+      },
+      {
+        "id": "T11235",
+        "name": "Statistical Methods in Clinical Trials",
+        "score": 0
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-10-12T00:09:30.381Z",
     "classified": true,
