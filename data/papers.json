@@ -1,5 +1,854 @@
 [
   {
+    "id": "pmid-42909608",
+    "pubmed_id": "42909608",
+    "doi": "10.1007/s00535-026-02526-x",
+    "title": "Claims-based frailty and short-term adverse events after esophageal or gastric endoscopic submucosal dissection in older adults.",
+    "abstract": "Risk stratification before esophageal and gastric endoscopic submucosal dissection (ESD) in older adults often relies on age and comorbidity; however, these measures may not capture vulnerability reflected in routinely collected claims data. We aimed to evaluate the claims-based frailty and short-term adverse events association after esophageal and gastric endoscopic submucosal dissection. We used a nationwide Japanese administrative database to identify patients aged ≥ 75 years who underwent first esophageal or gastric ESD. Frailty was defined using the Hospital Frailty Risk Score (HFRS), calculated from diagnoses during a 2 year lookback period. After 1:1 propensity score matching, frail and non-frail patients were compared. The primary outcome was binary composite of short-term adverse events, including in-hospital perforation/peritonitis, delayed bleeding, thromboembolism, aspiration pneumonia, and 30 day all-cause mortality. Component outcomes, survival, length of stay, costs, and readmission were also evaluated. Among 15,184 eligible patients, 4,970 matched pairs were included. Frailty was associated with the composite adverse outcome (adjusted odds ratio 1.35; 95% confidence interval 1.19-1.53), driven mainly by perforation/peritonitis and delayed bleeding. No significant differences were observed for 30 day mortality, thromboembolic events, or aspiration pneumonia. Frailty was also associated with lower overall survival during follow-up, whereas median length of stay was identical between groups. Among older adults undergoing esophageal or gastric ESD, HFRS-defined claims-based frailty was associated with higher rates of short-term adverse events, particularly perforation/peritonitis and delayed bleeding. These findings suggest that routinely collected claims data may help identify vulnerable patients who warrant closer peri-procedural assessment and monitoring.",
+    "authors": [
+      "Hisada H",
+      "Tsuji Y",
+      "Kakushima N",
+      "Kubota D",
+      "Miura Y",
+      "Mizutani H",
+      "Ohki D",
+      "Takeuchi C",
+      "Yakabi S",
+      "Niimi K",
+      "Yamamichi N",
+      "Fujishiro M"
+    ],
+    "journal": "Journal of gastroenterology",
+    "journal_issn": "1435-5922",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-23",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の全国規模の行政（レセプト）データベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 4.12,
+    "sjr_quartile": null,
+    "openalex_topic": "Frailty in Older Adults",
+    "openalex_topic_score": 0.805,
+    "openalex_subfield": "Geriatrics and Gerontology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11011",
+        "name": "Frailty in Older Adults",
+        "score": 0.805
+      },
+      {
+        "id": "T10696",
+        "name": "Gastric Cancer Management and Outcomes",
+        "score": 0.106
+      },
+      {
+        "id": "T10619",
+        "name": "Esophageal Cancer Research and Treatment",
+        "score": 0.051
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-26T00:13:12.232Z",
+    "classified": true,
+    "title_ja": "高齢者の食道・胃ESD後の短期有害事象とレセプトベースのフレイルの関連",
+    "abstract_ja": "75歳以上の食道・胃ESD患者15,184人を対象に、Hospital Frailty Risk Scoreで定義したフレイルと短期有害事象の関連を傾向スコアマッチングで検討した。フレイルは穿孔・腹膜炎や後出血を中心とする複合有害事象の増加(調整OR 1.35)と関連し、長期生存の低下とも関連した。"
+  },
+  {
+    "id": "pmid-42909662",
+    "pubmed_id": "42909662",
+    "doi": "10.1007/s00484-026-03342-x",
+    "title": "Association between nighttime heat exposure and emergency hospitalization for out-of-hospital cardiac arrest: A time-stratified case-crossover study in Japan.",
+    "abstract": "Few studies have explored the adverse health effects of nighttime heat exposure. This study examined the association between nighttime heat exposure and emergency hospitalization for out-of-hospital cardiac arrest (OHCA) in Japan. Hospitalizations were identified from a nationwide administrative database covering the period from May to September between 2011 and 2021. Days with minimum temperatures higher than region-specific 92.5th percentile temperatures were considered as exposed to nighttime heat. Daily maximum temperature was adjusted for as a proxy for daytime heat exposure. First, a time-stratified case-crossover study using conditional quasi-Poisson regression analysis was conducted to estimate location-specific heat-related relative risks (RRs) of emergency hospitalization for OHCA over lag 0-6 days. Second, a random-effects meta-analysis was conducted to estimate pooled RRs. The analysis was further stratified by age, sex, and region. Third, in an attempt to account for the geographical heterogeneity in RRs, the location-specific penetration rate of air conditioners (ACs) was included as a meta-regressor. A total of 135,898 hospitalizations for OHCA were identified. Nighttime heat exposure was associated with increased emergency hospitalizations for OHCA (RR: 1.090 (95% confidence interval (CI): 1.047-1.135). Higher RRs were observed among people aged ≥ 75 years and females living in northern areas (1.295 (95%CI: 1.117-1.500) and 1.352 (95%CI: 1.145-1.596), respectively). In locations with a lower penetration rate of ACs, females and those aged ≥ 75 years were at higher RRs.",
+    "authors": [
+      "Nishimura H",
+      "Nawa N",
+      "Fushimi K",
+      "Fujiwara T"
+    ],
+    "journal": "International journal of biometeorology",
+    "journal_issn": "1432-1254",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-23",
+    "analysis_methods": [
+      "回帰分析",
+      "メタアナリシス"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "全国規模の行政データベース（院外心停止による緊急入院、2011〜2021年）"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 3.67,
+    "sjr_quartile": null,
+    "openalex_topic": "Climate Change and Health Impacts",
+    "openalex_topic_score": 0.994,
+    "openalex_subfield": "Health, Toxicology and Mutagenesis",
+    "openalex_field": "Environmental Science",
+    "openalex_topics": [
+      {
+        "id": "T11244",
+        "name": "Climate Change and Health Impacts",
+        "score": 0.994
+      },
+      {
+        "id": "T10190",
+        "name": "Air Quality and Health Impacts",
+        "score": 0.002
+      },
+      {
+        "id": "T11109",
+        "name": "Thermoregulation and physiological responses",
+        "score": 0.002
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-26T00:13:12.688Z",
+    "classified": true,
+    "title_ja": "夜間の暑熱曝露と院外心停止による緊急入院の関連：日本における時間層別ケースクロスオーバー研究",
+    "abstract_ja": "全国の院外心停止による緊急入院135,898件を用い、夜間の暑熱曝露との関連をケースクロスオーバー研究で解析した。夜間暑熱は入院リスク上昇と関連し(RR 1.090)、75歳以上などで強く、エアコン普及率も地域差に関与していた。"
+  },
+  {
+    "id": "pmid-42913229",
+    "pubmed_id": "42913229",
+    "doi": "10.1016/j.pediatrneurol.2026.09.006",
+    "title": "Pediatric Acute Encephalopathy in Japan: A Nationwide Database Study.",
+    "abstract": "Pediatric acute encephalopathy is a life-threatening neurological condition that can lead to long-term sequelae. Although previous studies have examined the clinical features of pediatric acute encephalopathy, large-scale epidemiologic data remain limited. We conducted a retrospective cohort study using the National Database of Health Insurance Claims, which covers nearly the entire Japanese population. Pediatric patients (<15 years) were identified as having acute encephalopathy based on diagnostic codes, brain imaging, and the hospitalization period. We analyzed the incidence of acute encephalopathy, mortality rate, time from diagnosis to death, age distribution, epilepsy management, and initiation of home medical care during 3 years after diagnosis. Between 2014 and 2018, 6620 pediatric acute encephalopathy cases were identified, with an annual incidence rate of 7.4-9.5 per 100,000 children aged <15 years. The median (interquartile range) age at diagnosis was 2 (1-6) years, and boys accounted for 53.5%. The 3-year mortality rate ranged from 2.3% to 3.4%. The median time from diagnosis to death was 13 days (2-102). Epilepsy management was observed in 19.2% of patients. Home medical care was initiated in 3.3% of patients, primarily for enteral nutrition and respiratory support. The influenza virus was the most frequently associated pathogen. This study is the most extensive nationwide epidemiologic analysis of pediatric acute encephalopathy in Japan. Our findings highlight the acute and long-term burdens of this disease, improving the understanding of its epidemiology.",
+    "authors": [
+      "Aoki H",
+      "Noda T",
+      "Kawaguchi T",
+      "Yamazaki I",
+      "Nishioka Y",
+      "Myojin T",
+      "Nogami K",
+      "Imamura T"
+    ],
+    "journal": "Pediatric neurology",
+    "journal_issn": "1873-5150",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-23",
+    "analysis_methods": [],
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 1.81,
+    "sjr_quartile": null,
+    "openalex_topic": "Infectious Encephalopathies and Encephalitis",
+    "openalex_topic_score": 1,
+    "openalex_subfield": "Infectious Diseases",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T13201",
+        "name": "Infectious Encephalopathies and Encephalitis",
+        "score": 1
+      },
+      {
+        "id": "T10873",
+        "name": "Bacterial Infections and Vaccines",
+        "score": 0
+      },
+      {
+        "id": "T10094",
+        "name": "Epilepsy research and treatment",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-26T00:13:13.344Z",
+    "classified": true,
+    "title_ja": "日本における小児急性脳症：全国データベース研究",
+    "abstract_ja": "NDBを用いて2014〜2018年の15歳未満の急性脳症6,620例を同定し、年間罹患率は10万人あたり7.4〜9.5、3年死亡率は2.3〜3.4%であった。てんかん管理は19.2%、在宅医療導入は3.3%で、最多の関連病原体はインフルエンザウイルスだった。"
+  },
+  {
+    "id": "pmid-42913452",
+    "pubmed_id": "42913452",
+    "doi": "10.1212/CPJ.0000000000200675",
+    "title": "In-Hospital Outcomes of Acyclovir With or Without Corticosteroid for Herpes Simplex Encephalitis: A Nationwide Retrospective Cohort Study.",
+    "abstract": "Acyclovir is the standard therapy for herpes simplex virus (HSV) encephalitis, yet mortality remains high. Secondary inflammatory responses triggered by viral infection potentially contribute to additional brain injury. Given their anti-inflammatory properties, corticosteroids are considered a biologically plausible adjunctive treatment for HSV encephalitis. However, evidence regarding their effects remains inconclusive, highlighting the need for large-scale evidence. We conducted a retrospective cohort study using the Japanese national inpatient Diagnosis Procedure Combination database. We included patients hospitalized with HSV encephalitis who received intravenous acyclovir within 2 days of admission. Patients were divided into the acyclovir plus corticosteroid group or the acyclovir-alone group based on whether they received intravenous corticosteroids at a prednisolone-equivalent dose of ≥30 mg/d within 2 days of admission. The primary outcome was in-hospital mortality. Secondary outcomes included discharge alive with full consciousness, discharge alive with functional independence, length of hospital stay, and hospitalization costs. Outcomes were compared using multivariable regression models adjusted for baseline confounders. A total of 3,933 patients (mean age, 58.9 years; 58.1% male) were included: 1,385 patients in the acyclovir plus corticosteroid group and 2,548 in the acyclovir-alone group. The adjusted outcomes in the acyclovir plus corticosteroid and acyclovir-alone groups were, respectively, in-hospital mortality, 4.2% and 3.2% (difference, 1.0%; 95% CI -0.6% to 2.1%); discharge with full consciousness, 75.3% and 75.0% (difference, 0.3%; 95% CI -2.6% to 2.6%); and discharge with functional independence, 62.7% and 61.9% (difference, 0.8%; 95% CI -1.8% to 3.7%). The adjusted length of hospital stay was longer (35.5 and 29.6 days; difference, 5.9 days; 95% CI 3.8-8.0 days), and hospitalization costs were higher ($14,704 and $12,174; difference, $2,530; 95% CI $1,774-$3,277) in the acyclovir plus corticosteroid group. Early adjunctive corticosteroid therapy was not associated with lower in-hospital mortality or better functional outcomes in patients with HSV encephalitis. Although our findings do not support the routine use of early adjunctive corticosteroids, further studies evaluating the optimal indications, timing, and duration of corticosteroid administration are needed to clarify its potential role in the management of HSV encephalitis.",
+    "authors": [
+      "Shinmoto K",
+      "Matsuo Y",
+      "Sugita Y",
+      "Kutsuna S",
+      "Ohbe H",
+      "Matsui H",
+      "Fushimi K",
+      "Yasunaga H"
+    ],
+    "journal": "Neurology. Clinical practice",
+    "journal_issn": "2163-0933",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-23",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 3.97,
+    "sjr_quartile": null,
+    "openalex_topic": "Herpesvirus Infections and Treatments",
+    "openalex_topic_score": 0.985,
+    "openalex_subfield": "Epidemiology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10625",
+        "name": "Herpesvirus Infections and Treatments",
+        "score": 0.985
+      },
+      {
+        "id": "T13201",
+        "name": "Infectious Encephalopathies and Encephalitis",
+        "score": 0.011
+      },
+      {
+        "id": "T10981",
+        "name": "Cytomegalovirus and herpesvirus research",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-26T00:13:13.717Z",
+    "classified": true,
+    "title_ja": "単純ヘルペス脳炎に対するアシクロビル単独またはコルチコステロイド併用の院内転帰：全国後ろ向きコホート研究",
+    "abstract_ja": "DPCデータベースで単純ヘルペス脳炎3,933例を、アシクロビルにステロイドを併用した群と単独群に分けて院内転帰を比較した。多変量回帰モデルで背景因子を調整して死亡や機能的転帰などを評価した。"
+  },
+  {
+    "id": "pmid-42903240",
+    "pubmed_id": "42903240",
+    "doi": "10.1002/ags3.70299",
+    "title": "Association of Prophylactic Abdominal Drain Placement With Short-Term Postoperative Outcomes After Hepatectomy: A Nationwide Inpatient Database Study in Japan.",
+    "abstract": "Although randomized trials have discouraged routine prophylactic abdominal drainage after uncomplicated hepatectomy, these drains are still widely used in clinical practice. This study evaluated the association between prophylactic abdominal drain placement and short-term outcomes after hepatic resection using a nationwide inpatient database. We identified patients who underwent initial hepatic resection for liver tumors from the Japanese Diagnosis Procedure Combination database. Patients were classified into drain and no-drain groups according to whether a prophylactic abdominal drain was placed intraoperatively. In-hospital outcomes were compared using propensity score overlap weighting. Subgroup analyses were performed for intra-abdominal infection and in-hospital mortality. Among 73 613 eligible patients, 62 934 (85.5%) received prophylactic abdominal drains. After overlap weighting, the incidence of intra-abdominal infection did not differ significantly between the drain and no-drain groups (5.1% vs. 5.5%; risk difference, -0.3%; 95% confidence interval [CI], -0.8 to 0.1). Bile leakage, postoperative transfusion, postoperative drainage, and hospitalization costs were also comparable between groups. In contrast, prophylactic drain placement was associated with lower in-hospital mortality (0.5% vs. 1.0%; risk difference, -0.6%; 95% CI, -0.8 to -0.4). Subgroup analyses showed that this association was more evident in patients with low body mass index and those treated at low- or middle-volume hospitals. Prophylactic abdominal drain placement after hepatic resection was not associated with a lower incidence of intra-abdominal infection.",
+    "authors": [
+      "Kouzu K",
+      "Aso S",
+      "Hirano Y",
+      "Matsui H",
+      "Yoshimura K",
+      "Kitagawa H",
+      "Kato T",
+      "Yamane N",
+      "Hagiwara O",
+      "Miyoshi N",
+      "Matsuda S",
+      "Maruyama H",
+      "Morikane K",
+      "Sasaki J",
+      "Yasunaga H",
+      "Kitagawa Y",
+      "Watanabe M",
+      "Tsujimoto H"
+    ],
+    "journal": "Annals of gastroenterological surgery",
+    "journal_issn": "2475-0328",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-22",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.23,
+    "sjr_quartile": null,
+    "openalex_topic": "Hepatocellular Carcinoma Treatment and Prognosis",
+    "openalex_topic_score": 0.529,
+    "openalex_subfield": "Hepatology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10073",
+        "name": "Hepatocellular Carcinoma Treatment and Prognosis",
+        "score": 0.529
+      },
+      {
+        "id": "T11080",
+        "name": "Surgical site infection prevention",
+        "score": 0.253
+      },
+      {
+        "id": "T12020",
+        "name": "Enhanced Recovery After Surgery",
+        "score": 0.082
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-26T00:13:10.568Z",
+    "classified": true,
+    "title_ja": "肝切除後の予防的腹腔ドレーン留置と短期術後転帰の関連：日本の全国入院データベース研究",
+    "abstract_ja": "DPCデータベースの肝切除73,613例を対象に、予防的ドレーンの有無を傾向スコアオーバーラップ重み付けで比較した。腹腔内感染は同程度(5.1% vs 5.5%)で、院内死亡はドレーン群で低かった(0.5% vs 1.0%)。"
+  },
+  {
+    "id": "pmid-42906070",
+    "pubmed_id": "42906070",
+    "doi": "10.1212/WNL.0000000000218736",
+    "title": "Early Rhythm Control vs Usual Care After Acute Ischemic Stroke in Patients With Atrial Fibrillation.",
+    "abstract": "Early rhythm control reduces cardiovascular events in patients with atrial fibrillation (AF); however, its effectiveness in the setting of acute ischemic stroke remains uncertain. We aimed to examine whether early rhythm control after acute ischemic stroke is associated with a lower risk of recurrent stroke or systemic embolism (SE) in patients with AF. This nationwide cohort study used the DeSC-IQVIA integrated database, an administrative claims database covering approximately 16 million individuals in Japan. Adults hospitalized for acute ischemic stroke with AF present at admission between 2014 and 2025 were included. The exposure was initiation of rhythm control (antiarrhythmic drugs, catheter ablation, or electrical cardioversion) within 8 weeks of admission (early rhythm control) vs no initiation (usual care), assessed at a landmark. The primary outcome was hospitalization for recurrent ischemic stroke or SE. Secondary outcomes included major bleeding, heart failure (HF) hospitalization, and all-cause mortality. Baseline differences were adjusted using propensity score overlap weighting. Cause-specific hazard ratios (HRs), cumulative incidence with death as a competing risk, and risk differences at 5 years were estimated. Among 14,355 patients who survived event-free through the 8-week landmark (median age, 83 years [IQR, 78-88]; 6,935 [48.3%] women), 268 (1.9%) received early rhythm control. During 23,583 person-years, early rhythm control was associated with a lower risk of stroke/SE (HR, 0.56; 95% CI 0.32-0.97; weighted 5-year cumulative incidence, 8.0% vs 13.8%; risk difference, -5.9 percentage points [95% CI -11.0 to 0.8]). Among secondary outcomes, no association was observed with major bleeding (HR, 1.44; 95% CI 0.74-2.82) or HF hospitalization (HR, 0.73; 95% CI 0.39-1.38); early rhythm control was associated with lower all-cause mortality (HR, 0.72; 95% CI 0.53-0.97). Results were consistent across landmark periods of 4-24 weeks. In this nationwide cohort study, early rhythm control after acute ischemic stroke in patients with AF was associated with a reduced risk of recurrent stroke or SE. These findings suggest that early rhythm control may serve as an additional secondary prevention strategy for ischemic stroke, with flexible timing of initiation. These observational findings are hypothesis-generating and warrant confirmation in randomized controlled trials.",
+    "authors": [
+      "Egashira S",
+      "Inoue K",
+      "Koga M",
+      "Toyoda K",
+      "Jensen M",
+      "Thomalla G",
+      "Toda T",
+      "Imanaka Y"
+    ],
+    "journal": "Neurology",
+    "journal_issn": "1526-632X",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-22",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "DeSC Healthcare"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 1.32,
+    "sjr_quartile": null,
+    "openalex_topic": "Atrial Fibrillation Management and Outcomes",
+    "openalex_topic_score": 0.995,
+    "openalex_subfield": "Cardiology and Cardiovascular Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10065",
+        "name": "Atrial Fibrillation Management and Outcomes",
+        "score": 0.995
+      },
+      {
+        "id": "T10227",
+        "name": "Acute Ischemic Stroke Management",
+        "score": 0.004
+      },
+      {
+        "id": "T10598",
+        "name": "Cardiac pacing and defibrillation studies",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-26T00:13:11.048Z",
+    "classified": true,
+    "title_ja": "心房細動を伴う急性虚血性脳卒中後の早期リズムコントロールと通常治療の比較",
+    "abstract_ja": "DeSC-IQVIA統合データベースで、心房細動合併の急性虚血性脳卒中患者14,355人を対象に、入院後8週以内の早期リズムコントロールと通常治療を比較した。傾向スコアオーバーラップ重み付けと競合リスクを考慮して、脳卒中再発・全身塞栓症のリスクを検討した。"
+  },
+  {
+    "id": "pmid-42907407",
+    "pubmed_id": "42907407",
+    "doi": "10.1253/circj.CJ-26-0451",
+    "title": "Current Status and Future Directions of Cardiovascular Intensive Care in Japan: Workforce, Structure, Education, and Regional Disparities　- Report of the Japan Critical Care Cardiology Committee (J4CS).",
+    "abstract": "Rapid population aging has increased the number of patients with severe acute cardiovascular diseases requiring intensive care. Contemporary cardiovascular intensive care has evolved beyond traditional management of acute coronary syndromes to encompass hemodynamic instability, multiple organ dysfunction, and advanced life-support technologies. Accordingly, cardiovascular intensive care units (CICUs) must provide comprehensive, tailored critical care for increasingly complex clinical conditions. In Japan, cardiovascular intensive care remains heterogeneous, with critically ill patients managed in various critical care settings. Structured care systems and specialist training remain underdeveloped. To clarify the current status, we reviewed nationwide survey data from the JROAD-DPC database. Substantial variability in institutional care systems, limited availability of dedicated cardiac care units/CICUs, and marked regional disparities in infrastructure and human resources were identified. Intensive care unit admission was associated with lower in-hospital mortality in cardiovascular emergencies, although these observational findings should be interpreted with caution because of potential residual confounding, differences in patient characteristics, and end-of-life care pathways. These findings support the need for appropriate triage and resource allocation according to patient acuity and institutional capability, rather than the uniform establishment of dedicated CICUs. Addressing these challenges will require optimized resource allocation, strengthened regional coordination, and structured training programs to establish sustainable cardiovascular intensive care systems in Japan.",
+    "authors": [
+      "Nakata J",
+      "Kawakami S",
+      "Kondo T",
+      "Kuwabara M",
+      "Nakashima T",
+      "Saku K",
+      "Yamamoto T",
+      "Kikuchi M",
+      "Takeuchi I",
+      "Asai K",
+      "Sato N"
+    ],
+    "journal": "Circulation journal : official journal of the Japanese Circulation Society",
+    "journal_issn": "1347-4820",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-22",
+    "analysis_methods": [],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [
+      "JROAD-DPC"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "医療の質・アクセスの格差",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 3.4,
+    "sjr_quartile": null,
+    "openalex_topic": "Global Health Workforce Issues",
+    "openalex_topic_score": 0.258,
+    "openalex_subfield": "Emergency Medical Services",
+    "openalex_field": "Health Professions",
+    "openalex_topics": [
+      {
+        "id": "T11990",
+        "name": "Global Health Workforce Issues",
+        "score": 0.258
+      },
+      {
+        "id": "T10843",
+        "name": "Diversity and Career in Medicine",
+        "score": 0.084
+      },
+      {
+        "id": "T12168",
+        "name": "Health and Medical Research Impacts",
+        "score": 0.076
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-26T00:13:11.557Z",
+    "classified": true,
+    "title_ja": "日本の心血管集中治療の現状と今後：人員・体制・教育・地域格差（J4CS報告）",
+    "abstract_ja": "JROAD-DPCの全国調査データを用い、心血管集中治療の体制を検討した委員会報告。施設体制や人員、地域格差が大きく、ICU入院は心血管救急で院内死亡の低下と関連していた。"
+  },
+  {
+    "id": "pmid-42902092",
+    "pubmed_id": "42902092",
+    "doi": "10.1007/s00520-026-11400-8",
+    "title": "Patient characteristics and the safety of stent placement for malignant vena cava syndrome in Japan: a nationwide analysis.",
+    "abstract": "To evaluate the overall safety of stent placement for malignant superior or inferior vena cava (SVC/IVC) syndrome by assessing adverse events in a nationwide multicenter population. We conducted a retrospective cohort study using the Japanese Diagnosis Procedure Combination nationwide inpatient database. Patients who underwent stent placement for malignant superior or inferior vena cava (SVC/IVC) syndrome between April 2019 and March 2023 were included. The primary endpoint was the overall incidence of adverse events, which were identified using International Classification of Diseases, 10th Revision codes. Secondary evaluations included patient characteristics, underlying malignancies, therapeutic interventions, 7-day mortality after stent placement, 30-day in-hospital mortality after admission, and comparisons between the SVC and IVC groups. This nationwide study included 301 patients from 137 hospitals, of whom 187 underwent SVC stenting, and 114 underwent IVC stenting. Overall, 34 adverse events occurred in 32 patients (10.6%). Red blood cell transfusion was required in 10 patients (3.3%), but no invasive treatment, including embolization, was required. Seven-day mortality after stenting was 5.0%, and 30-day in-hospital mortality after admission was 11.6%. In comparisons between the SVC and IVC groups, respiratory failure was more common after SVC stenting, whereas other adverse events and mortality were comparable between groups. Lung tumors predominated in SVC cases and liver tumors in IVC cases; multiple stents were used more frequently in IVC cases. Stent placement for malignant vena cava obstruction demonstrated an overall complication rate of 10.6% with no serious adverse events requiring invasive intervention.",
+    "authors": [
+      "Ozawa M",
+      "Nakama R",
+      "Inoue N",
+      "Miyamoto Y",
+      "Sone M",
+      "Fushimi K"
+    ],
+    "journal": "Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer",
+    "journal_issn": "1433-7339",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-21",
+    "analysis_methods": [],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.04,
+    "sjr_quartile": null,
+    "openalex_topic": "Vascular anomalies and interventions",
+    "openalex_topic_score": 0.646,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T12342",
+        "name": "Vascular anomalies and interventions",
+        "score": 0.646
+      },
+      {
+        "id": "T10641",
+        "name": "Central Venous Catheters and Hemodialysis",
+        "score": 0.237
+      },
+      {
+        "id": "T10285",
+        "name": "Venous Thromboembolism Diagnosis and Management",
+        "score": 0.075
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-26T00:13:10.307Z",
+    "classified": true,
+    "title_ja": "悪性上・下大静脈症候群に対するステント留置の患者背景と安全性：日本の全国解析",
+    "abstract_ja": "DPCデータベースで悪性大静脈症候群に対するステント留置301例(SVC 187例、IVC 114例)を解析した。有害事象は10.6%、輸血3.3%で、侵襲的処置を要した例はなく、30日院内死亡は11.6%であった。"
+  },
+  {
+    "id": "pmid-42897568",
+    "pubmed_id": "42897568",
+    "doi": "10.1186/s13058-026-02345-1",
+    "title": "Herpes zoster risk among female survivors of breast cancer in Japan.",
+    "abstract": "Survivors of breast cancer (BC) have a higher risk of developing herpes zoster (HZ), but it remains unclear how this risk is affected by time since BC diagnosis and treatment regimen. This matched cohort study used a large health-insurance claims database including Japanese employees and their families. Between January 2005 and December 2019, women aged 18-74 years with and without incident BC were matched 1:4 by age and timing of database entry, in the month of BC diagnosis. This study aimed to evaluate the risk of developing HZ in female BC survivors compared with women without BC, to examine temporal variations in risk during survivorship, and to assess the impact of different BC treatments on this risk. We compared the first HZ incidence using stratified Cox regression analyses over the study period, divided by follow-up length. We then estimated HZ risk by treatment regimen using unstratified Cox regression analysis, with follow-up beginning 1 year after matching. Comparing 23,169 BC survivors vs 92,801 matched women without BC (median age: 49.4 years, interquartile range: 44.7-56.0 years), the HZ incidence rate (95% confidence interval) was higher in the survivors (16.5 [15.6-17.5] vs 10.6 [10.3-11.0]/1000 person-years), with an adjusted hazard ratio (aHR) of 1.57 (1.46-1.68) over the whole period. This aHR decreased over time but remained elevated up to 10 years (0-1 year: 1.90 [1.68-2.16]; 1-2 years: 1.64 [1.42-1.89]; 2-3 years: 1.30 [1.08-1.57]; 3-10 years: 1.37 [1.20-1.56]). The aHRs were 1.15 (0.98-1.36), 1.64 (1.16-2.30), 1.23 (0.94-1.62), and 1.60 (1.30-1.97), respectively, for survivors who received no chemotherapy, anthracycline-only, taxane-only, and anthracycline-plus-taxane, compared with women without BC. Female BC survivors in Japan had a higher HZ risk compared with the general age-matched female Japanese population. HZ vaccination should therefore be promoted for BC survivors.",
+    "authors": [
+      "Kawamura C",
+      "Shimada K",
+      "Bhaskaran K",
+      "Konishi T",
+      "Sagara Y",
+      "Bando H",
+      "Shinozaki T",
+      "Nojiri S",
+      "Adomi M",
+      "Wong AYS",
+      "Tamiya N",
+      "Iwagami M"
+    ],
+    "journal": "Breast cancer research : BCR",
+    "journal_issn": "1465-542X",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-20",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "被用者とその家族を含む大規模健康保険レセプトデータベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "安全性・副作用"
+    ],
+    "impact_factor": 5.89,
+    "sjr_quartile": null,
+    "openalex_topic": "Herpesvirus Infections and Treatments",
+    "openalex_topic_score": 0.766,
+    "openalex_subfield": "Epidemiology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10625",
+        "name": "Herpesvirus Infections and Treatments",
+        "score": 0.766
+      },
+      {
+        "id": "T10178",
+        "name": "Cancer survivorship and care",
+        "score": 0.16
+      },
+      {
+        "id": "T12626",
+        "name": "Cancer, Stress, Anesthesia, and Immune Response",
+        "score": 0.01
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-26T00:13:08.809Z",
+    "classified": true,
+    "title_ja": "日本の乳がんサバイバー女性における帯状疱疹リスク",
+    "abstract_ja": "被用者保険のレセプトデータで乳がんサバイバー23,169人と対照92,801人を比較し、帯状疱疹の発生率はサバイバーで高かった(調整HR 1.57)。リスクは経時的に低下するが10年後も上昇しており、治療レジメン別にも検討した。"
+  },
+  {
+    "id": "pmid-42899166",
+    "pubmed_id": "42899166",
+    "doi": "10.1002/ags3.70286",
+    "title": "Association Between Preoperative Steroid Use and Short-Term Outcomes Following Pancreaticoduodenectomy: A Nationwide Analysis Using the National Clinical Database.",
+    "abstract": "Pancreaticoduodenectomy (PD) carries a high risk of postoperative complications. Although steroids are widely prescribed for various chronic diseases, the specific impact after PD remains unclear. This study evaluated the association between preoperative chronic steroid use and short-term outcomes following PD. This retrospective cohort study used Japanese National Clinical Database data from 2019 to 2022. Patients undergoing PD were categorized by preoperative chronic steroid use. To account for varying background factors, three multivariable regression models with different adjustment levels (Models 1-3) were constructed. Of 40 878 patients, 521 (1.3%) had chronic steroid use prior to PD. The steroid group had higher crude rates of adverse outcomes, including postoperative pancreatic fistula (POPF; 30.7% vs. 22.1%) and severe complications (7.7% vs. 4.4%). In the most extensively adjusted multivariable model (Model 3), preoperative steroid use remained a significant factor associated with POPF (odds ratio [OR] 1.80, 95% confidence interval [CI] 1.47-2.20) and severe complications (OR 1.71, 95% CI: 1.22-2.40). The adverse impacts on infectious complications and surgery-related mortality were also consistently significant across all models, whereas preoperative steroid use was not significantly associated with re-operation in any of the models. Preoperative chronic steroid use is significantly associated with poor short-term outcomes after PD, including POPF, severe complications, infectious complications, and mortality. These risks remained consistent regardless of adjustment level, highlighting the need for intensive perioperative management.",
+    "authors": [
+      "Tomimaru Y",
+      "Endo H",
+      "Yamamoto H",
+      "Ishigame T",
+      "Ueno H",
+      "Shirabe K",
+      "Eguchi H"
+    ],
+    "journal": "Annals of gastroenterological surgery",
+    "journal_issn": "2475-0328",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-20",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.23,
+    "sjr_quartile": null,
+    "openalex_topic": "Pancreatic and Hepatic Oncology Research",
+    "openalex_topic_score": 0.98,
+    "openalex_subfield": "Oncology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10231",
+        "name": "Pancreatic and Hepatic Oncology Research",
+        "score": 0.98
+      },
+      {
+        "id": "T12020",
+        "name": "Enhanced Recovery After Surgery",
+        "score": 0.01
+      },
+      {
+        "id": "T12626",
+        "name": "Cancer, Stress, Anesthesia, and Immune Response",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-26T00:13:09.293Z",
+    "classified": true,
+    "title_ja": "膵頭十二指腸切除前の慢性ステロイド使用と短期転帰：NCDを用いた全国解析",
+    "abstract_ja": "NCDの膵頭十二指腸切除40,878例のうち、術前慢性ステロイド使用は521例(1.3%)であった。多変量解析でステロイド使用は膵液瘻(OR 1.80)や重症合併症(OR 1.71)と関連した。"
+  },
+  {
+    "id": "pmid-42902016",
+    "pubmed_id": "42902016",
+    "doi": "10.1038/s41370-026-00985-1",
+    "title": "Association between ambient temperature and acute kidney injury: a nationwide space-time-stratified case-crossover study in Japan.",
+    "abstract": "Acute kidney injury (AKI) is a severe condition characterized by a sudden decline of kidney function with a high mortality rate and healthcare costs. While extreme heat is a recognized risk factor for AKI, the effects of both heat and cold exposure across different demographics remain unclear. To examine the association between ambient temperatures and AKI emergency hospitalizations, with a focus on age and sex differences. Using a nationwide database, we identified 119,027 AKI emergency hospitalizations from 2011 to 2019. A space-time-stratified case-crossover study with conditional quasi-Poisson regression analysis was applied to estimate region-specific relative risk (RR) of AKI emergency hospitalization over lag days 0-13. Pooled RRs were calculated using random-effects meta-analysis. Analyses were stratified by age (younger, 15-49; middle-age, 50-64; and older, 65+ years old) and sex. Both extreme cold (first percentile) and heat (99th percentile) were associated with an increased risk of AKI emergency hospitalizations, with cumulative RRs of 1.24 (95% CI 1.09-1.40) and 2.21 (95% CI 2.00-2.43), respectively. Heat-related susceptibility was highest in younger (RR 4.24, 95% CI 2.93-6.15) and middle-aged men (RR 4.20, 95% CI 3.46-5.10), while in women it occurred in the older group (RR 1.87, 95% CI 1.64-2.14). Cold-related susceptibility was highest among older males (RR 1.28, 95% CI 1.06-1.53) and females (RR 1.29, 95% CI 1.04-1.58). Extreme temperatures elevate AKI risk, with distinct age- and sex-specific vulnerability patterns. These findings highlight the need for targeted prevention strategies during temperature extremes, particularly protecting younger and middle-aged men from heat and older adults from cold exposure. Understanding the biological and social mechanisms underlying these demographic differences is essential for developing effective public health interventions in a changing climate IMPACT STATEMENT: This nationwide study reveals that both extreme heat and cold significantly increase acute kidney injury (AKI) emergency hospitalizations in Japan, with distinct age- and sex-specific vulnerability patterns. Younger and middle-aged men face a fourfold higher risk during heat exposure, while older adults of both sexes are most vulnerable to cold. These findings expand beyond heat-focused research and demonstrate the need for demographically targeted prevention strategies. As climate change intensifies temperature variability, these demographic-specific patterns highlight the need for tailored public health interventions to protect kidney health and reduce preventable AKI hospitalizations.",
+    "authors": [
+      "Asanbek Kyzy A",
+      "Nishimura H",
+      "Nawa N",
+      "Fushimi K",
+      "Fujiwara T"
+    ],
+    "journal": "Journal of exposure science & environmental epidemiology",
+    "journal_issn": "1559-064X",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-20",
+    "analysis_methods": [
+      "回帰分析",
+      "メタアナリシス"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "全国規模のデータベース（急性腎障害による緊急入院、2011〜2019年）"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 6.02,
+    "sjr_quartile": null,
+    "openalex_topic": "Climate Change and Health Impacts",
+    "openalex_topic_score": 0.984,
+    "openalex_subfield": "Health, Toxicology and Mutagenesis",
+    "openalex_field": "Environmental Science",
+    "openalex_topics": [
+      {
+        "id": "T11244",
+        "name": "Climate Change and Health Impacts",
+        "score": 0.984
+      },
+      {
+        "id": "T10684",
+        "name": "Acute Kidney Injury Research",
+        "score": 0.007
+      },
+      {
+        "id": "T10190",
+        "name": "Air Quality and Health Impacts",
+        "score": 0.003
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-26T00:13:09.811Z",
+    "classified": true,
+    "title_ja": "気温と急性腎障害の関連：全国の時空間層別ケースクロスオーバー研究",
+    "abstract_ja": "急性腎障害による緊急入院119,027件を用い、気温との関連をケースクロスオーバー研究で解析した。極端な寒冷と暑熱はいずれもリスク上昇と関連し(累積RR 1.24、2.21)、暑熱は若年・中年男性で強かった。"
+  },
+  {
+    "id": "pmid-42895806",
+    "pubmed_id": "42895806",
+    "doi": "10.1111/dme.70501",
+    "title": "What do administrative diabetes indicators measure? Treatment-side and screening-side evidence from nationwide NDB Open Data in Japan.",
+    "abstract": "Regional administrative diabetes indicators are increasingly used for population surveillance and planning, yet they are generated through the healthcare system rather than measuring disease directly. We examined what two complementary indicator families-treatment-side prescription quantities and screening-side HbA1c-measure across 47 Japanese prefectures. Cross-sectional ecological study using the 10th NDB Open Data release. Indicator A was oral antidiabetic agent dispensing volume per population (drug classification 396), related to ageing, income, education and population density by ordinary least squares with VIF assessment and AIC-based comparison. Indicator B comprised the HbA1c high-value rate, mean HbA1c and the D005 laboratory-testing rate, related to three claim-rate outcomes by ordinary least squares with HC3 errors (five sensitivity specifications). For Indicator A, ageing was the only significant univariable predictor (β = 9961; R2 = 0.324); the lowest-AIC model retained ageing and income (R2 = 0.394; VIF = 2.18; income β = 56.6, p = 0.030). For Indicator B, the HbA1c high-value rate was associated with chronic dialysis management (β = 195.1/%pt., p = 0.006, R2 = 0.271); mean HbA1c showed a comparable association; the primary association was stable across all five specifications. Neither indicator family provided a direct estimate of disease burden. Prescription quantities reflected demographic and income structure, whereas HbA1c indicators showed a selective ecological association with downstream service use. Both are better interpreted as ecological surveillance indicators than direct measures of disease burden or prevalence.",
+    "authors": [
+      "Saito H",
+      "Ohira T"
+    ],
+    "journal": "Diabetic medicine : a journal of the British Diabetic Association",
+    "journal_issn": "1464-5491",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-19",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "方法論・バリデーション",
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.69,
+    "sjr_quartile": null,
+    "openalex_topic": "Diabetes, Cardiovascular Risks, and Lipoproteins",
+    "openalex_topic_score": 0.322,
+    "openalex_subfield": "Endocrinology, Diabetes and Metabolism",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10027",
+        "name": "Diabetes, Cardiovascular Risks, and Lipoproteins",
+        "score": 0.322
+      },
+      {
+        "id": "T10560",
+        "name": "Diabetes Management and Research",
+        "score": 0.219
+      },
+      {
+        "id": "T12246",
+        "name": "Chronic Disease Management Strategies",
+        "score": 0.104
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-26T00:13:08.307Z",
+    "classified": true,
+    "title_ja": "行政上の糖尿病指標は何を測っているか：NDBオープンデータによる治療側・検診側の検討",
+    "abstract_ja": "NDBオープンデータ第10回を用い、47都道府県で経口糖尿病薬の調剤量とHbA1c関連指標が何を反映するかを最小二乗法で検討した。調剤量は高齢化と、HbA1c高値率は慢性透析管理と関連したが、いずれも疾病負荷を直接示すものではなかった。"
+  },
+  {
+    "id": "pmid-42893883",
+    "pubmed_id": "42893883",
+    "doi": "10.2188/jea.JE20260237",
+    "title": "Long-term Age- and Region-Specific Changes in Psychiatric Service Utilization Following Japan's First COVID-19 State of Emergency.",
+    "abstract": "To evaluate nationwide long-term changes in psychiatric service utilization across age groups following Japan's first COVID-19 state of emergency and to compare these changes across regions with different states of emergency intensities. This population-based interrupted time-series study used publicly available aggregated data derived from the National Database of Health Insurance Claims from April 2013 to April 2024, covering nearly all psychiatric patients in Japan. Segmented regression was used to estimate changes after the first state of emergency (April-May 2020). Outcomes were mean daily numbers of psychiatric outpatient visits and inpatient care per 100,000 population. Prefectures were categorized as high-, middle-, and low-intensity regions by the cumulative duration of subsequent declarations. Slope changes in psychiatric outpatient visits varied substantially by age and region. Pre-existing upward trends accelerated after the state of emergency among patients aged 15-39 and 60-69 years, with greater acceleration in high-intensity regions than in middle- or low-intensity regions. The largest change was observed among patients aged 20-24 years in high-intensity regions (0.54 [95% CI, 0.46-0.63]), compared with middle-intensity (0.34 [95% CI, 0.27-0.41]) and low-intensity regions (0.42 [95% CI, 0.34-0.50]). In contrast, psychiatric inpatient care generally declined across most age groups and regions. Following the first state of emergency, psychiatric outpatient visits increased with marked heterogeneity by age group and region, with more pronounced acceleration in high-intensity regions. These findings underscore the value of age- and region-specific monitoring of psychiatric service utilization during future public health crises.",
+    "authors": [
+      "Kachi Y",
+      "Okumura Y",
+      "Usuda K",
+      "Tachimori H",
+      "Takeshima T",
+      "Nishi D",
+      "Kuroda N"
+    ],
+    "journal": "Journal of epidemiology",
+    "journal_issn": "1349-9092",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-18",
+    "analysis_methods": [
+      "中断時系列分析 (ITS)"
+    ],
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "その他",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 2.19,
+    "sjr_quartile": null,
+    "openalex_topic": "COVID-19 and Mental Health",
+    "openalex_topic_score": 0.991,
+    "openalex_subfield": "Clinical Psychology",
+    "openalex_field": "Psychology",
+    "openalex_topics": [
+      {
+        "id": "T10168",
+        "name": "COVID-19 and Mental Health",
+        "score": 0.991
+      },
+      {
+        "id": "T10272",
+        "name": "Mental Health Treatment and Access",
+        "score": 0.006
+      },
+      {
+        "id": "T13944",
+        "name": "Psychiatric care and mental health services",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-26T00:13:07.309Z",
+    "classified": true,
+    "title_ja": "日本の最初のCOVID-19緊急事態宣言後の精神科サービス利用の年齢別・地域別長期変化",
+    "abstract_ja": "NDB由来の公開集計データを用いた中断時系列研究。緊急事態宣言後、15〜39歳と60〜69歳で外来受診の増加傾向が加速し、特に宣言強度の高い地域の20〜24歳で大きかった。入院は概ね減少した。"
+  },
+  {
+    "id": "pmid-42893965",
+    "pubmed_id": "42893965",
+    "doi": "10.1111/nep.70297",
+    "title": "Retinal Disease Risk With Hypoxia-Inducible Factor Prolyl Hydroxylase Inhibitors Versus Long-Acting Erythropoiesis-Stimulating Agents in Patients With Non-Dialysis Chronic Kidney Disease: A Real-World Database Analysis in Japan.",
+    "abstract": "Hypoxia-inducible factor prolyl hydroxylase (HIF-PH) inhibitors constitute novel oral pharmacotherapy for anaemia in chronic kidney disease (CKD). Although a possible HIF-PH inhibitor-induced increase in vascular endothelial growth factor could exacerbate retinal diseases, real-world evidence is limited, particularly among Japanese non-dialysis patients. We conducted a retrospective cohort study using the DeSC administrative claims database (DeSC Healthcare Inc., Tokyo, Japan; December 2019 to June 2023). We identified patients with CKD who newly used HIF-PH inhibitors or long-acting erythropoiesis-stimulating agents (ESAs). The primary outcome was the first treatment-requiring retinal disease. We employed the matching weight method using high-dimensional propensity scores to adjust for confounding and inverse probability of censoring weights (IPCW) to account for informative censoring. The study included 74 530 treatment-naïve patients (mean age: 84.7 years; 49 928 ESA users; 24 602 HIF-PH inhibitor users). The risk of retinal diseases did not differ significantly between the HIF-PH inhibitor and ESA groups. The adjusted hazard ratio (HR) with matching weights was 0.65 [95% confidence interval (CI): 0.37-1.12]. The HR with matching weights and IPCW was 0.55 (95% CI: 0.22-1.38). Sensitivity analyses supported these findings. Negative control analysis using cataracts yielded an adjusted HR of 0.85 (95% CI: 0.67-1.07). Subgroup analyses showed no increased risk across categories. HIF-PH inhibitors were not associated with an increased risk of treatment-requiring retinal disease. These real-world data suggest the retinal safety of HIF-PH inhibitors in non-dialysis patients with CKD. Retinal concerns may not necessarily be a limiting factor while selecting HIF-PH inhibitors for non-dialysis patients with CKD.",
+    "authors": [
+      "Hoshino K",
+      "Sasabuchi Y",
+      "Miyamoto Y",
+      "Hashimoto Y",
+      "Yasunaga H"
+    ],
+    "journal": "Nephrology (Carlton, Vic.)",
+    "journal_issn": "1440-1797",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-18",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "DeSC Healthcare"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.59,
+    "sjr_quartile": null,
+    "openalex_topic": "Erythropoietin and Anemia Treatment",
+    "openalex_topic_score": 0.996,
+    "openalex_subfield": "Hematology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11534",
+        "name": "Erythropoietin and Anemia Treatment",
+        "score": 0.996
+      },
+      {
+        "id": "T10170",
+        "name": "Retinal Diseases and Treatments",
+        "score": 0.002
+      },
+      {
+        "id": "T13467",
+        "name": "Drug-Induced Ocular Toxicity",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-10-26T00:13:07.802Z",
+    "classified": true,
+    "title_ja": "非透析CKD患者におけるHIF-PH阻害薬と長時間作用型ESAの網膜疾患リスク：日本のリアルワールドデータ解析",
+    "abstract_ja": "DeSCデータベースの非透析CKD患者74,530人で、HIF-PH阻害薬と長時間作用型ESAの網膜疾患リスクを比較した。マッチングウェイトでHR 0.65(0.37-1.12)と有意差はなく、感度分析でも一貫していた。"
+  },
+  {
     "id": "pmid-42888858",
     "pubmed_id": "42888858",
     "doi": "10.1002/pds.70508",
@@ -88,11 +937,27 @@
     ],
     "impact_factor": 5.59,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.985,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.985
+      },
+      {
+        "id": "T10158",
+        "name": "Cancer Immunotherapy and Biomarkers",
+        "score": 0.008
+      },
+      {
+        "id": "T12352",
+        "name": "Heparin-Induced Thrombocytopenia and Thrombosis",
+        "score": 0.001
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-10-19T00:09:35.152Z",
     "classified": true,
