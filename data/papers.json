@@ -1,5 +1,1508 @@
 [
   {
+    "id": "pmid-42964562",
+    "pubmed_id": "42964562",
+    "doi": "10.1002/ags3.70305",
+    "title": "Age-Specific Temporal Trends and Climate-Associated Seasonality of Appendectomy in Japan: A Nationwide Population-Based Study Using the National Database.",
+    "abstract": "This study investigated nationwide temporal trends, age-specific changes, and seasonal variations in appendectomies in Japan using the national database of health insurance claims and specific health checkups (NDB). Data on appendectomies (open [OA] and laparoscopic [LA]) were extracted from the 2018-2023 NDB Open Data. Crude and age-adjusted appendectomy rates per 100,000 person-years were calculated. Temporal trends were assessed using Poisson regression, and age-specific annual relative risks were estimated. Seasonality (April 2019 to March 2024) was evaluated, and correlations with meteorological variables were assessed using Pearson correlation coefficients. Time-series Poisson regression was used to evaluate the association between monthly appendectomy volume and ambient temperature. During the study period, 323,980 appendectomies were performed. The age-adjusted appendectomy rate declined slightly overall (relative risk [RR] = 0.991, p < 0.0001), with a significant decrease in men (RR = 0.982, p < 0.0001), whereas no significant change was observed in women (RR = 1.003, p = 0.0676). Age-specific analyses demonstrated declining appendectomy rates among younger populations, whereas the overall rates increased after approximately 40 years of age, with larger increases observed among women than men. OA use decreased (RR = 0.793, p < 0.0001), whereas LA use increased (RR = 1.022, p < 0.0001). The monthly appendectomy volume exhibited significant seasonality and was positively correlated with ambient temperature using meteorological data from five cities. Appendectomy rates decreased in younger populations but increased among older adults, particularly women. A shift toward laparoscopic surgery and temperature-associated seasonality was also observed.",
+    "authors": [
+      "Sumiyoshi S",
+      "Kido M",
+      "Arita T",
+      "Nakamichi N",
+      "Kurashima K",
+      "Nanishi K",
+      "Kiuchi J",
+      "Shimizu H",
+      "Yoshii K",
+      "Shiozaki A"
+    ],
+    "journal": "Annals of gastroenterological surgery",
+    "journal_issn": "2475-0328",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-31",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.27,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:59.686Z",
+    "classified": true,
+    "title_ja": "日本における虫垂切除術の年齢別時間的推移と気候関連の季節性",
+    "abstract_ja": "NDBオープンデータ（2018〜2023年）を用い、虫垂切除術の年齢調整率の推移と季節変動、気温との関連を解析した。全国で約32万件が実施され、季節性と気象要因との関連が示された。"
+  },
+  {
+    "id": "pmid-42966065",
+    "pubmed_id": "42966065",
+    "doi": "10.1016/j.ejogrb.2026.115511",
+    "title": "Association between menstrual-related health problems and mental disorders in male partners: A nested case-control study.",
+    "abstract": "Dysmenorrhea, endometriosis, and premenstrual syndrome/premenstrual dysphoric disorder (PMS/PMDD) are associated with psychological distress in affected women. However, evidence of their potential effects on the mental health of male partners is limited. This study aimed to investigate the association between menstrual-related health problems (MRHPs) and male partners' mental health. This nested case-control study was conducted using a large Japanese claims database from January 2005 to July 2024. Cases were men who were newly diagnosed with mental disorders and had female spouses. For each case, up to four controls without mental disorders were selected using risk-set sampling and matched for age, insurance status, calendar year, and registration month. Exposure was defined as the diagnosis of at least one MRHP (dysmenorrhea, endometriosis, or PMS/PMDD) in the female spouse within 1 year before the index date. Conditional logistic regression analysis and sensitivity and disease-specific analyses were also performed. In total, 85,478 cases and 306,512 controls were identified. The presence of a spouse with an MRHP was associated with increased odds of a mental disorder in the male partner (OR 1.06, 95% CI 1.02-1.09). These findings were consistent across sensitivity analyses. Disease-specific analyses revealed similar associations for endometriosis (OR 1.06, 95% CI 1.02-1.11) and dysmenorrhea (OR 1.04, 95% CI 1.00-1.09). No significant association was observed for PMS/PMDD (OR 1.10, 95% CI 0.96-1.25). MRHPs in women, particularly endometriosis and dysmenorrhea, were modestly associated with newly diagnosed mental disorders in male partners.",
+    "authors": [
+      "Ishida R",
+      "Sasabuchi Y",
+      "Michihata N",
+      "Koga K",
+      "Izumi G",
+      "Matsui H",
+      "Itoi S",
+      "Harada M",
+      "Hirota Y",
+      "Yasunaga H"
+    ],
+    "journal": "European journal of obstetrics, gynecology, and reproductive biology",
+    "journal_issn": "1872-7654",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-31",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の大規模レセプトデータベース"
+    ],
+    "study_design": "症例対照研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 1.74,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:17:00.197Z",
+    "classified": true,
+    "title_ja": "月経関連の健康問題と男性パートナーの精神疾患との関連：コホート内症例対照研究",
+    "abstract_ja": "日本の大規模レセプトDBを用いたコホート内症例対照研究。女性配偶者の月経困難症・子宮内膜症・PMSの診断と男性パートナーの精神疾患発症との関連を検討した。"
+  },
+  {
+    "id": "pmid-42958461",
+    "pubmed_id": "42958461",
+    "doi": "10.1186/s41043-026-01408-5",
+    "title": "Association of medical visit frequency with cardiovascular events and mortality in patients with dyslipidaemia: a cohort study using a Japanese claims database.",
+    "abstract": "Dyslipidaemia is a major risk factor for cardiovascular and cerebrovascular diseases; however, the optimal frequency of medical visits remains unclear. To examine whether medical visit frequency is associated with the incidence of cardiac events, cerebrovascular events, and mortality among patients initiating lipid-lowering therapy. We conducted a retrospective cohort study using data from the Shizuoka Kokuho Database between April 1, 2012, and September 30, 2021. Patients initiating lipid-lowering therapy were classified into high-frequency (≥ 22 visits in 2 years) and low-frequency (8-12 visits in 2 years) groups. After 1:3 propensity score matching and exclusion of patients with events within 2 years, 1,435 patients in the low-frequency group and 4,412 in the high-frequency group were analysed. Over a mean follow-up of 5.3 years, composite outcomes occurred in 5.6% of both groups (hazard ratio [HR] 1.08; 95% confidence interval [CI] 0.84-1.38; p = 0.571). No significant differences were observed for cardiac events (HR 1.13; 95% CI 0.83-1.54), cerebrovascular events (HR 1.13; 95% CI 0.67-1.90), or mortality (HR 0.94; 95% CI 0.60-1.48). Less frequent visits were not associated with increased risks of cardiovascular events or mortality. Extending visit intervals may therefore be a reasonable option for selected stable patients receiving lipid-lowering therapy for primary prevention.",
+    "authors": [
+      "Matsunaga T",
+      "Nakatani E",
+      "Sato Y",
+      "Kaneda H",
+      "Ohno H",
+      "Sugawara A"
+    ],
+    "journal": "Journal of health, population, and nutrition",
+    "journal_issn": "2072-1315",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-30",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "静岡国保データベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 4.25,
+    "sjr_quartile": null,
+    "openalex_topic": "Lipoproteins and Cardiovascular Health",
+    "openalex_topic_score": 0.986,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10394",
+        "name": "Lipoproteins and Cardiovascular Health",
+        "score": 0.986
+      },
+      {
+        "id": "T14212",
+        "name": "Health Promotion and Cardiovascular Prevention",
+        "score": 0.006
+      },
+      {
+        "id": "T11620",
+        "name": "Medication Adherence and Compliance",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:57.931Z",
+    "classified": true,
+    "title_ja": "脂質異常症患者における受診頻度と心血管イベント・死亡との関連",
+    "abstract_ja": "静岡国保データベースで脂質低下療法を開始した患者を傾向スコアマッチングで比較。受診頻度が高い群と低い群で心脳血管イベントの複合転帰の発生率に差はなかった（各5.6%）。"
+  },
+  {
+    "id": "pmid-42958648",
+    "pubmed_id": "42958648",
+    "doi": "10.1177/10966218261502535",
+    "title": "Intensity of End-of-Life Care Among Patients with Cerebral Palsy: A 12-Year Nationwide Study.",
+    "abstract": "For noncancer neurological conditions, uncertain trajectories complicate prognostication and end-of-life (EOL) decision-making. Similar challenges may arise in some patients with cerebral palsy (CP), yet population-level evidence on EOL care remains limited. To characterize EOL care among patients with CP across the lifespan by describing in-hospital deaths, examining care intensity during the last 7 days of life, and identifying associated patient-level and hospital-level factors. Nationwide retrospective cohort study using the Japanese Diagnosis Procedure Combination/Per-Diem Payment System inpatient database, April 2010-March 2022. Patients aged ≥1 year with CP who died in participating hospitals in Japan, categorized as children (1-18 years), young adults (19-39 years), and adults (≥40 years). Intensive EOL care during the last 7 days of life was assessed using seven interventions. High-intensity care was defined as ≥3 interventions. Multivariable analyses focused on children. We analyzed 2482 patients; median age was 49 years. EOL care intensity was highest among children; 47.7% received cardiopulmonary resuscitation (CPR) and 52.3% received high-intensity care. Among children, shorter hospital stays were associated with CPR and high-intensity care, and nonpediatric departments with CPR. Deaths were widely distributed across hospitals; in each age group, more than half of hospitals experienced only one death over 12 years. EOL care intensity was highest among children, with shorter hospital stays and treatment in nonpediatric departments associated with selected intensive interventions. Deaths were widely distributed across hospitals. These findings highlight the importance of continuity of decision-making support and information sharing across departments and institutions.",
+    "authors": [
+      "Kuratani S",
+      "Yotani N",
+      "Shinjo D",
+      "Fushimi K",
+      "Miyakoshi C",
+      "Hamazaki T"
+    ],
+    "journal": "Journal of palliative medicine",
+    "journal_issn": "1557-7740",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-30",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 1.1,
+    "sjr_quartile": null,
+    "openalex_topic": "Palliative Care and End-of-Life Issues",
+    "openalex_topic_score": 0.995,
+    "openalex_subfield": "Public Health, Environmental and Occupational Health",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10177",
+        "name": "Palliative Care and End-of-Life Issues",
+        "score": 0.995
+      },
+      {
+        "id": "T11097",
+        "name": "Cerebral Palsy and Movement Disorders",
+        "score": 0.003
+      },
+      {
+        "id": "T13340",
+        "name": "Palliative and Oncologic Care",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:58.433Z",
+    "classified": true,
+    "title_ja": "脳性麻痺患者の終末期ケアの強度：12年間の全国調査",
+    "abstract_ja": "DPCデータで脳性麻痺患者の院内死亡と死亡前7日間の集中的ケアを記述し、患者・病院要因との関連を検討した。"
+  },
+  {
+    "id": "pmid-42959202",
+    "pubmed_id": "42959202",
+    "doi": "10.35772/ghm.2026.01096",
+    "title": "Association between maternal dysglycaemia and adverse perinatal outcomes: A retrospective cohort study using a Japanese mother-infant-linked claims database.",
+    "abstract": "Claims-based perinatal studies in Japan are limited because normal pregnancies are not covered by health insurance. This study aimed to examine the association between maternal dysglycaemia and perinatal outcomes using a mother-infant-linked claims database. We conducted a retrospective cohort study using the JMDC Claims Database from April 2012 to March 2023. Singleton mother-infant pairs were presumed by family ID and categorised into six mutually exclusive claims-based categories: anti-diabetic prescriptions both before and during pregnancy with (Category 1) or without (Category 2) a pre-pregnancy type 1 diabetes code, prescriptions in prenatal period only (Category 3), prescriptions before pregnancy only (Category 4), a gestational diabetes (GDM) management-fee claim without anti-diabetic prescriptions (Category 5) and no identified claims-based indicator of dysglycaemia (Category 6). Outcomes included caesarean section, macrosomia, preterm birth, neonatal asphyxia, neonatal intensive care unit (NICU) admission and congenital malformations of the circulatory system. Among 115,113 presumed mother-infant pairs, 21.5% of mothers underwent caesarean section, with higher proportions in Categories 1 and 2 (40.6% and 48.3%). Highest point estimates were observed in Category 1 for most outcomes. Category 2 was associated with increased risks of caesarean section (adjusted risk ratio 2.04, 95% confidence interval 1.77-2.35), preterm birth (3.69, 2.57-5.28) and NICU admission (3.88, 3.02-4.99). Category 5 was positively associated with macrosomia (2.43, 1.64-3.62). Claims-based indicators of maternal dysglycaemia were associated with adverse perinatal outcomes. These findings suggest potential utility of mother-infant-linked claims data for Japanese perinatal monitoring, subject to further validation.",
+    "authors": [
+      "Yamamoto K",
+      "Ihana-Sugiyama N",
+      "Sugiyama T",
+      "Tomio K",
+      "Nakanishi M",
+      "Kido T",
+      "Taniguchi Y",
+      "Iwagami M",
+      "Watanabe T",
+      "Ohsugi M",
+      "Oishi H",
+      "Ueki K",
+      "Tamiya N"
+    ],
+    "journal": "Global health & medicine",
+    "journal_issn": "2434-9194",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-30",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.02,
+    "sjr_quartile": null,
+    "openalex_topic": "Gestational Diabetes Research and Management",
+    "openalex_topic_score": 0.998,
+    "openalex_subfield": "Obstetrics and Gynecology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10673",
+        "name": "Gestational Diabetes Research and Management",
+        "score": 0.998
+      },
+      {
+        "id": "T12741",
+        "name": "Maternal and Neonatal Healthcare",
+        "score": 0
+      },
+      {
+        "id": "T11629",
+        "name": "Birth, Development, and Health",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:58.946Z",
+    "classified": true,
+    "title_ja": "母子連結レセプトデータによる母体の血糖異常と周産期アウトカムの関連",
+    "abstract_ja": "JMDCの母子連結データで母体の血糖異常を6区分に分類し、周産期転帰との関連を後方視的に検討した。"
+  },
+  {
+    "id": "pmid-42961921",
+    "pubmed_id": "42961921",
+    "doi": "10.1371/journal.pone.0361575",
+    "title": "Frequencies of thyroid-related diagnoses and dyslipidemia among Japanese women with menstrual-related disorders aged under 40 years: A nationwide cross-sectional study using health insurance claims data.",
+    "abstract": "Women with endometriosis and dysmenorrhea are increasingly recognized as having systemic comorbidities beyond pelvic disease, but large-scale data on endocrine and metabolic comorbidities across a broad menstrual-related disorders population remain limited. Using the Japan Medical Data Center Claims Database, we conducted a nationwide cross-sectional study of women aged under 40 years enrolled in 2023. Women with confirmed diagnoses of endometriosis (ICD-10: N80) and/or dysmenorrhea (N94.4 or N94.6) were classified as the menstrual-related disorders group (n = 257,897); those without such diagnoses were the control group (n = 3,183,032). The primary outcomes were the frequencies of thyroid-related diagnoses (hypothyroidism [E03], non-toxic goiter [E04], hyperthyroidism [E05], thyroiditis [E06], and other thyroid disorders [E07]) and dyslipidemia (E78). Stratified analyses were performed according to prescription for low-dose estrogen-progestin preparations (LEP) or dienogest (DNG). All thyroid-related diagnoses were recorded more frequently among women with menstrual-related disorders than among controls. Hypothyroidism was identified in 2.1% of women with menstrual-related disorders versus 0.8% of controls (prevalence ratio [PR] 2.46; 95% CI 2.39-2.54); the corresponding PR was 3.11 (95% CI 2.99-3.24) in the endometriosis subgroup (n = 96,863). Dyslipidemia was recorded in 5.2% of women with menstrual-related disorders versus 1.4% of controls (PR 3.73; 95% CI 3.66-3.80; prevalence difference +3.78 percentage points). The endometriosis subgroup consistently showed the highest frequencies. These associations remained statistically significant after adjustment for age using the Mantel-Haenszel method (adjusted PR 1.45-3.02 across all comparisons), although adjusted estimates were consistently lower than crude estimates. Among women with menstrual-related disorders, hypothyroidism was more frequent in those without LEP/DNG prescriptions (3.4%) than in those with prescriptions (1.5%), whereas dyslipidemia frequencies were similar (5.2% vs. 5.1%). These findings indicate that young Japanese women with menstrual-related disorders have substantially higher frequencies of thyroid-related diagnoses and dyslipidemia than controls, particularly those with endometriosis. Surveillance bias, age confounding, and confounding by indication cannot be excluded because of the cross-sectional claims-based design.",
+    "authors": [
+      "Yoshihara T",
+      "Ono Y",
+      "Arita H",
+      "Nakagomi A",
+      "Miyashita D",
+      "Tanaka K",
+      "Sasatsu S",
+      "Yoshino O"
+    ],
+    "journal": "PloS one",
+    "journal_issn": "1932-6203",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-30",
+    "analysis_methods": [],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 3.52,
+    "sjr_quartile": null,
+    "openalex_topic": "Thyroid Disorders and Treatments",
+    "openalex_topic_score": 0.905,
+    "openalex_subfield": "Endocrinology, Diabetes and Metabolism",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10293",
+        "name": "Thyroid Disorders and Treatments",
+        "score": 0.905
+      },
+      {
+        "id": "T10935",
+        "name": "Endometriosis Research and Treatment",
+        "score": 0.076
+      },
+      {
+        "id": "T12054",
+        "name": "Menstrual Health and Disorders",
+        "score": 0.012
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:59.185Z",
+    "classified": true,
+    "title_ja": "40歳未満の月経関連疾患女性における甲状腺関連診断と脂質異常症の頻度",
+    "abstract_ja": "JMDCを用いた全国横断研究。月経困難症・子宮内膜症の女性は、対照より甲状腺関連診断や脂質異常症の頻度が高いかを層別解析で検討した。"
+  },
+  {
+    "id": "pmid-42952012",
+    "pubmed_id": "42952012",
+    "doi": "10.1002/prp2.70336",
+    "title": "Antipsychotic Prescriptions for Prenatal and Postpartum Women in Japan: A Large Claims Database Study.",
+    "abstract": "This study aimed to evaluate the prevalence of antipsychotic prescriptions before, during, and after pregnancy in Japan, with a focus on new prescriptions and continuation after pregnancy confirmation. We conducted a claims-based analysis using a Japanese claims database (analytic period: 2010-2022). Antipsychotic prescription prevalence and new prescriptions were assessed from 180 days before pregnancy through 180 days postpartum. To assess continuation after pregnancy confirmation, prescription status was evaluated across gestational weeks 0-4, 5-13, and from 14 weeks to delivery. Among 120 735 women, 1698 (140.6/10 000 deliveries) received at least one antipsychotic prescription, including 809 (67.0/10 000 deliveries) during pregnancy. Prescription prevalence decreased during the first and second trimesters but increased postpartum. New prescriptions were less frequent during pregnancy but increased after delivery. Among 611 women prescribed antipsychotics during 0-4 weeks' gestation, 482 (78.9%) continued and 129 (21.1%) discontinued prescription during weeks 5-13; of those who continued prescription during 5-13 weeks, 334 (54.7%) continued until delivery. Evaluation of major indications showed that continuation until delivery was highest in those with schizophrenia (63.6%), followed by bipolar disorder (51.0%). This study provides the first comprehensive description of perinatal antipsychotic prescription trends in Japan. Substantial prescription discontinuation occurred after pregnancy confirmation. Increases in postpartum prescriptions might reflect new prescriptions or resumption among women who had discontinued treatment during pregnancy. These findings offer foundational epidemiological insights into real-world perinatal antipsychotic use.",
+    "authors": [
+      "Obara R",
+      "Sakai T",
+      "Ishikawa T",
+      "Morishita K",
+      "Adomi M",
+      "Hara A",
+      "Kikuchi S",
+      "Kobayashi N",
+      "Iwama N",
+      "Shinoda G",
+      "Noda A",
+      "Orui M",
+      "Ishikuro M",
+      "Tomita H",
+      "Mano N",
+      "Kuriyama S",
+      "Obara T"
+    ],
+    "journal": "Pharmacology research & perspectives",
+    "journal_issn": "2052-1707",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-29",
+    "analysis_methods": [],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の大規模レセプトデータベース"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 3.67,
+    "sjr_quartile": null,
+    "openalex_topic": "Pregnancy and Medication Impact",
+    "openalex_topic_score": 0.938,
+    "openalex_subfield": "Public Health, Environmental and Occupational Health",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11964",
+        "name": "Pregnancy and Medication Impact",
+        "score": 0.938
+      },
+      {
+        "id": "T10786",
+        "name": "Maternal Mental Health During Pregnancy and Postpartum",
+        "score": 0.052
+      },
+      {
+        "id": "T10023",
+        "name": "Schizophrenia research and treatment",
+        "score": 0.007
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:53.894Z",
+    "classified": true,
+    "title_ja": "日本の妊娠・産後女性における抗精神病薬の処方",
+    "abstract_ja": "2010〜2022年のレセプトDBで、妊娠前から産後までの抗精神病薬の処方率と新規処方、妊娠確認後の継続状況を評価した。妊娠中は67.0/1万分娩だった。"
+  },
+  {
+    "id": "pmid-42952435",
+    "pubmed_id": "42952435",
+    "doi": "10.1002/pds.70513",
+    "title": "Non-Steroidal Anti-Inflammatory Drug Versus Acetaminophen Initiation at Influenza Diagnosis and 14-Day Neuropsychiatric Diagnoses in Adults: A Target Trial Emulation Using Japanese Claims Data.",
+    "abstract": "After case series in which diclofenac and mefenamic acid were associated with worse outcomes in children with established influenza-associated encephalopathy, Japan recommended acetaminophen for influenza fever in 2001. We estimated the 14-day risk of newly recorded neuropsychiatric diagnoses after initiating a non-steroidal anti-inflammatory drug (NSAID) versus acetaminophen at influenza diagnosis in adults, a related but distinct question. Using the JMDC Claims Database (2018-2025), we emulated an active-comparator, new-prescription-user target trial in adults aged 18-64 years. Time zero was an influenza diagnosis with a same-day, same-facility prescription of an oral or rectal NSAID or single-agent acetaminophen; the initial prescription defined the group. The outcome was a broad neuropsychiatric composite newly recorded on Days 1-14 after a 365-day component-specific diagnosis-free period. We estimated the average treatment effect in the propensity-score overlap population using overlap weighting. Among 1 125 391 eligible adults, 140 877 (12.5%) initiated an NSAID (85.9% loxoprofen) and 984 514 initiated acetaminophen. The composite occurred in 112 and 699 episodes; overlap-weighted 14-day risks were 79.6 and 71.2 per 100 000 (risk ratio: 1.12, 95% CI: 0.92-1.36; risk difference 8.4 per 100 000, 95% CI: -7.2 to 24.0). Estimates were similar across outcome definitions and sensitivity analyses. Diclofenac and mefenamic acid were too rarely prescribed to evaluate. In adults, NSAID initiation, predominantly loxoprofen, showed no clear difference in short-term neuropsychiatric diagnoses compared with acetaminophen, although a relative increase of up to 36% and residual confounding by presenting symptoms were not excluded. The findings do not address diclofenac, mefenamic acid, children or established influenza-associated encephalopathy. UMIN000062444.",
+    "authors": [
+      "Kutsuna S",
+      "Yamamoto S",
+      "Kusama Y"
+    ],
+    "journal": "Pharmacoepidemiology and drug safety",
+    "journal_issn": "1099-1557",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-29",
+    "analysis_methods": [
+      "回帰分析",
+      "ターゲットトライアルエミュレーション"
+    ],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.37,
+    "sjr_quartile": null,
+    "openalex_topic": "Influenza Virus Research Studies",
+    "openalex_topic_score": 0.46,
+    "openalex_subfield": "Epidemiology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10167",
+        "name": "Influenza Virus Research Studies",
+        "score": 0.46
+      },
+      {
+        "id": "T13201",
+        "name": "Infectious Encephalopathies and Encephalitis",
+        "score": 0.415
+      },
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.044
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:54.404Z",
+    "classified": true,
+    "title_ja": "インフルエンザ診断時のNSAID対アセトアミノフェン開始と14日以内の神経精神疾患診断：ターゲットトライアルエミュレーション",
+    "abstract_ja": "JMDCで成人インフルエンザ患者を対象に、NSAIDとアセトアミノフェンの開始後14日間の神経精神疾患診断リスクを比較した。"
+  },
+  {
+    "id": "pmid-42952880",
+    "pubmed_id": "42952880",
+    "doi": "10.23922/jarc.2026-010",
+    "title": "Impact of the COVID-19 Pandemic on Inpatient Colorectal Cancer Treatment in Japan: An Interrupted Time Series Analysis Using a National Administrative Database.",
+    "abstract": "The COVID-19 pandemic disrupted elective endoscopy and non-urgent procedures, but its impact on inpatient colorectal cancer (CRC) treatment in Japan remains incompletely quantified. We conducted an interrupted time series analysis using the Diagnosis Procedure Combination (DPC) inpatient database. Eligible admissions were patients hospitalized between April 2018 and December 2021 with colorectal cancer codes from the International Classification of Diseases, 10th Revision (ICD-10; C18, C19, and C20) who underwent endoscopic submucosal dissection (ESD) or colorectal surgery. We excluded planned chemotherapy readmissions, recurrence cases, admissions with multiple non-ESD surgeries, and records with missing tumor-node-metastasis (TNM) information. Three periods were defined: Period 1 (Apr 2018-Apr 2020), Period 2 (May 2020-Apr 2021), and Period 3 (May 2021-Dec 2021). Monthly inpatient case volumes were modeled using segmented regression with Prais-Winsten estimation and seasonal adjustment. Of 276,458 eligible admissions, 260,919 were analyzed. At the start of Period 2, adjusted inpatient cases decreased significantly for ESD (-26%; 887 adjusted vs 1,194 predicted; p<0.001) and colectomy (-6%; 2,746 vs 2,928; p=0.043), whereas rectal resection/abdominoperineal resection showed no significant level change (-5%; p=0.189). In stage-stratified analyses limited to surgical resections, Stage I surgical volume decreased significantly at the start of Period 2 (-13%; p=0.010) with no clear reduction for Stages II-IV. In Japan, the early COVID-19 period was associated with short-term reductions in inpatient ESD and Stage I surgical volume, whereas surgical treatment volumes for more advanced disease showed no clear immediate reduction after the first emergency declaration. Because this was an administrative, inpatient-only analysis, the study does not directly assess diagnostic delays, stage migration, or downstream oncological outcomes.",
+    "authors": [
+      "Nitta K",
+      "Okawara M",
+      "Nagata J",
+      "Sannomiya H",
+      "Koga A",
+      "Akiyama Y",
+      "Yamauchi M",
+      "Fujino Y",
+      "Fushimi K",
+      "Matsuda S",
+      "Hirata K"
+    ],
+    "journal": "Journal of the anus, rectum and colon",
+    "journal_issn": "2432-3853",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-29",
+    "analysis_methods": [
+      "中断時系列分析 (ITS)"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 1.38,
+    "sjr_quartile": null,
+    "openalex_topic": "COVID-19 and healthcare impacts",
+    "openalex_topic_score": 1,
+    "openalex_subfield": "Oncology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11296",
+        "name": "COVID-19 and healthcare impacts",
+        "score": 1
+      },
+      {
+        "id": "T10335",
+        "name": "Colorectal Cancer Surgical Treatments",
+        "score": 0
+      },
+      {
+        "id": "T10552",
+        "name": "Colorectal Cancer Screening and Detection",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:54.906Z",
+    "classified": true,
+    "title_ja": "COVID-19流行が大腸癌入院治療に与えた影響：DPCによる中断時系列分析",
+    "abstract_ja": "DPCデータで2018〜2021年の大腸癌のESDおよび手術件数を3期に分けて中断時系列分析し、パンデミックの影響を定量化した。"
+  },
+  {
+    "id": "pmid-42952882",
+    "pubmed_id": "42952882",
+    "doi": "10.23922/jarc.2026-053",
+    "title": "Medical Economic Impact of Daikenchuto in Colon and Rectal Cancer Surgery: A Nationwide Observational Study.",
+    "abstract": "Daikenchuto is a traditional Japanese herbal medicine (Kampo) that has been widely used because of its low cost and minimal side effects. It is used for early patient recovery after abdominal surgery and to prevent postoperative paralytic ileus in various surgeries, including colon and rectal cancer. Many studies have reported the usefulness of perioperative administration of Daikenchuto; however, few have examined its association with healthcare economics. This observational study used data from the National Database (NDB) Sampling Dataset. This study included patients with colon or rectal cancer who underwent colectomy, anterior resection (AR), low anterior resection (LAR), or abdominoperineal resection (APR) between January 2013 and December 2022. The comparison was based on Daikenchuto administration. Overall, 3,759 patients underwent colectomy (Daikenchuto -: 3,111 vs. Daikenchuto +: 648), 675 underwent AR (567 vs. 108), 1,269 underwent LAR (1,105 vs. 164), and 348 underwent APR (310 vs. 38). Postoperative hospital stay was shorter in patients who received Daikenchuto: for colectomy, 13.8 vs. 13.0 days (P = 0.001); for AR, 15.3 vs. 13.0 days (P = 0.002); for LAR, 17.6 vs. 14.5 days (P < 0.001); and for APR, 22.9 vs. 19.7 days (P = 0.007). Medical costs per patient were lower among patients receiving Daikenchuto by 25,412 yen for colectomy, 68,494 yen for AR, 92,407 yen for LAR, and 94,361 yen for APR. Perioperative Daikenchuto administration was associated with shortened the length of hospital stay and lower postoperative hospitalization costs in colon and rectal cancer surgeries.",
+    "authors": [
+      "Hoshino N",
+      "Sakamoto T",
+      "Yamamoto T",
+      "Yoshida Y",
+      "Kasahara K",
+      "Okamura R",
+      "Maeda M",
+      "Itatani Y",
+      "Hida K",
+      "Obama K"
+    ],
+    "journal": "Journal of the anus, rectum and colon",
+    "journal_issn": "2432-3853",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-29",
+    "analysis_methods": [],
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "医療資源利用・経済評価",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.38,
+    "sjr_quartile": null,
+    "openalex_topic": "Economic and Financial Impacts of Cancer",
+    "openalex_topic_score": 0.764,
+    "openalex_subfield": "Economics and Econometrics",
+    "openalex_field": "Economics, Econometrics and Finance",
+    "openalex_topics": [
+      {
+        "id": "T12708",
+        "name": "Economic and Financial Impacts of Cancer",
+        "score": 0.764
+      },
+      {
+        "id": "T10335",
+        "name": "Colorectal Cancer Surgical Treatments",
+        "score": 0.071
+      },
+      {
+        "id": "T10804",
+        "name": "Health Systems, Economic Evaluations, Quality of Life",
+        "score": 0.059
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:55.144Z",
+    "classified": true,
+    "title_ja": "大腸癌・直腸癌手術における大建中湯の医療経済的影響",
+    "abstract_ja": "NDBサンプリングデータセットを用い、大腸癌・直腸癌手術で大建中湯の投与有無により医療費等を比較した全国観察研究。"
+  },
+  {
+    "id": "pmid-42955428",
+    "pubmed_id": "42955428",
+    "doi": "10.1007/s00520-026-11414-2",
+    "title": "Association of co-administration of neurokinin-1 receptor antagonists and dexamethasone with new-onset diabetes in patients receiving chemotherapy: a retrospective cross-sectional study using health claims database in Japan.",
+    "abstract": "We aimed to optimize antiemetic strategies by evaluating the association of co-administration of neurokinin-1 receptor antagonist (NK1-RA) administration and dexamethasone on new-onset diabetes in patients receiving chemotherapy. This retrospective cross-sectional study was conducted using the DeSC database and included patients aged ≥ 18 years with solid tumors who initiated parenteral anticancer agents and dexamethasone between April 2014 and March 2023. Patients with a history of diabetes or hematologic malignancies were excluded. The primary outcome was new-onset diabetes during the 2 months following the index month, defined by International Classification of Diseases, Tenth Revision codes or prescription data. Multivariable logistic regression assessed the association between co-administration of NK1-RA and dexamethasone and new-onset diabetes. Among 71,539 eligible patients, 51.1% received NK1-RAs. Co-administration of NK1-RA and dexamethasone was significantly associated with an increased risk of new-onset diabetes (adjusted odds ratio: 1.43; 95% confidence interval: 1.31-1.55; p < 0.001). Sensitivity analyses demonstrated consistent results across different evaluation periods and outcome definitions. Co-administration of NK1-RA and dexamethasone was associated with an increased risk of new-onset diabetes. These findings highlight a previously unrecognized safety signal and support the careful management of dexamethasone, as recommended by many clinical guidelines.",
+    "authors": [
+      "Ozawa Y",
+      "Suzuki S",
+      "Koinuma T",
+      "Yokokawa T",
+      "Ichimura T",
+      "Suzuki K",
+      "Hori Y",
+      "Imai S"
+    ],
+    "journal": "Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer",
+    "journal_issn": "1433-7339",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-29",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "DeSC Healthcare"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.04,
+    "sjr_quartile": null,
+    "openalex_topic": "Nausea and vomiting management",
+    "openalex_topic_score": 0.947,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11785",
+        "name": "Nausea and vomiting management",
+        "score": 0.947
+      },
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.004
+      },
+      {
+        "id": "T11752",
+        "name": "Cancer Treatment and Pharmacology",
+        "score": 0.003
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:55.647Z",
+    "classified": true,
+    "title_ja": "化学療法患者におけるNK1受容体拮抗薬とデキサメタゾンの併用と新規糖尿病発症",
+    "abstract_ja": "DeSCデータベースで固形がん化学療法患者を対象に、NK1-RAとデキサメタゾン併用と投与後2か月の新規糖尿病との関連をロジスティック回帰で検討した。"
+  },
+  {
+    "id": "pmid-42955933",
+    "pubmed_id": "42955933",
+    "doi": "10.1371/journal.pone.0354283",
+    "title": "Medication background of Japanese men undergoing prostate needle biopsy: A medication profile based on the number of medications and drug classes.",
+    "abstract": "Prostate cancer is common in older men, and the treatment decision depends strongly on the patient's general condition and comorbidities. However, the medication background of men who reach prostate biopsy has rarely been described. We used a large Japanese administrative claims database (Medical Data Vision) to profile the medications of men who underwent prostate needle biopsy between April 2008 and June 2019. We examined the number of medications and the drug classes in relation to body mass index (BMI) and age. We identified 67,812 men, all aged 60 years or older. The mean number of medications was lowest at BMI 20-25 and increased toward both low and high BMI, showing a U-shaped pattern (minimum 1.44 drugs at BMI 22.0-22.5); the increase was driven mainly by high BMI. This pattern was consistent across age strata, and in a negative binomial regression adjusted for age the quadratic term of BMI remained significant (p < 0.001), with an adjusted minimum at BMI 20.5. The composition of drug classes differed by body size: metabolic drugs (antihypertensive/cardiovascular, dyslipidemia, diabetes, and hyperuricemia drugs) were more common at high BMI, whereas gastrointestinal and analgesic drugs were relatively more common at low BMI, and all classes increased with age. In conclusion, among men undergoing prostate biopsy, the number of medications was lowest at BMI 20-25 and the qualitative medication profile differed by BMI. These findings describe the medication background of this population and may inform the design of future risk-stratified or prospective studies.",
+    "authors": [
+      "Sato K",
+      "Kawahara T",
+      "Hashizume A",
+      "Yamazaki M",
+      "Ito H",
+      "Takeshima T",
+      "Kuroda S",
+      "Uemura H",
+      "Makiyama K",
+      "Teranishi JI"
+    ],
+    "journal": "PloS one",
+    "journal_issn": "1932-6203",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-29",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 3.52,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmaceutical Practices and Patient Outcomes",
+    "openalex_topic_score": 0.932,
+    "openalex_subfield": "Geriatrics and Gerontology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10496",
+        "name": "Pharmaceutical Practices and Patient Outcomes",
+        "score": 0.932
+      },
+      {
+        "id": "T10124",
+        "name": "Prostate Cancer Diagnosis and Treatment",
+        "score": 0.04
+      },
+      {
+        "id": "T10543",
+        "name": "Prostate Cancer Treatment and Research",
+        "score": 0.005
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:56.155Z",
+    "classified": true,
+    "title_ja": "前立腺針生検を受けた日本人男性の服薬背景：薬剤数と薬剤クラスによる分析",
+    "abstract_ja": "MDVを用いて前立腺針生検を受けた6.7万人の薬剤数と薬剤クラスをBMI・年齢別に記述し、薬剤数がBMIに対しU字型を示すことを明らかにした。"
+  },
+  {
+    "id": "pmid-42956453",
+    "pubmed_id": "42956453",
+    "doi": "10.1016/j.jamda.2026.106413",
+    "title": "Care-Need Level Worsening After Hip Fracture Surgery in Kyoto, Japan: Population-Based Cohort Study.",
+    "abstract": "To describe 3-year transitions of care-need level after hip fracture surgery and identify factors associated with subsequent nonfatal worsening among day-180 survivors. Retrospective cohort study using linked administrative medical and long-term care insurance claims. Adults aged ≥75 years in Kyoto City, Japan, who underwent hip fracture surgery between 2013 and 2018. The day-180 landmark cohort included 6556 patients who survived to day 180 and were not certified as care-need level 5 before surgery or at the landmark. Follow-up started at day 180. The primary estimand was subsequent nonfatal care-need level worsening among patients alive and still at risk at the landmark; death after the landmark was treated as a competing event. We estimated cumulative incidence functions and Fine-Gray models with covariate-by-log-time interactions. Supplementary analyses examined a death-inclusive composite end point and alternative landmarks. The cumulative incidence of worsening was 10.6% at 12 months, 28.3% at 24 months, and 37.4% at 36 months after surgery. Longer initial claims-based rehabilitation continuity during the postoperative 6 months was associated with a lower incidence of subsequent nonfatal worsening (adjusted subdistribution hazard ratio per month, 0.961; 95% CI, 0.941-0.982). The supplementary composite end point analysis showed no clear association between rehabilitation continuity and worsening or death (hazard ratio, 0.988; 95% CI, 0.972-1.006). Associations of higher Hospital Frailty Risk Score and preoperative care-need levels with worsening varied over time. Among day-180 survivors after hip fracture surgery, preoperative frailty and care-need levels showed time-varying associations with subsequent nonfatal worsening. Longer initial claims-based rehabilitation continuity was associated with lower incidence of nonfatal worsening but should be interpreted as a claims-based association, not evidence of a causal effect or mortality-inclusive benefit. These findings support ongoing risk assessment and periodic reassessment of care needs beyond the early postoperative period.",
+    "authors": [
+      "Sasaki K",
+      "Takahashi Y",
+      "Nishikawa Y",
+      "Toyama M",
+      "Kohno A",
+      "Sakai M",
+      "Ueshima H",
+      "Shimamoto T",
+      "Tateyama Y",
+      "Kato G",
+      "Iwami T",
+      "Nakayama T"
+    ],
+    "journal": "Journal of the American Medical Directors Association",
+    "journal_issn": "1538-9375",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-29",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "京都市の医療・介護保険レセプト連結データ"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 2.19,
+    "sjr_quartile": null,
+    "openalex_topic": "Hip and Femur Fractures",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11509",
+        "name": "Hip and Femur Fractures",
+        "score": 0.999
+      },
+      {
+        "id": "T11011",
+        "name": "Frailty in Older Adults",
+        "score": 0
+      },
+      {
+        "id": "T11376",
+        "name": "Geriatric Care and Nursing Homes",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:56.687Z",
+    "classified": true,
+    "title_ja": "京都市における大腿骨近位部骨折術後の要介護度悪化",
+    "abstract_ja": "医療・介護レセプトを連結し、75歳以上の骨折術後3年間の要介護度推移と、競合リスクを考慮した悪化の関連因子を検討した。"
+  },
+  {
+    "id": "pmid-42957237",
+    "pubmed_id": "42957237",
+    "doi": "10.21873/invivo.14519",
+    "title": "Characteristics of Hypocalcemia-related Reports in the JADER Database: A Pharmacovigilance Study.",
+    "abstract": "Drug-induced hypocalcemia is a clinically important electrolyte disorder. Several medications are known to induce hypocalcemia; however, a comprehensive evaluation across therapeutic classes remains limited. Therefore, this study aimed to characterize drug-induced hypocalcemia using data from the Japanese Adverse Drug Event Report (JADER) database. This retrospective pharmacovigilance study was conducted using JADER reports from April 2004 to February 2026. Hypocalcemia-related reports were identified using the preferred terms \"hypocalcemia,\" \"hypocalcemic seizure,\" and \"blood calcium decreased.\" Reporting odds ratios (RORs) and 95% confidence intervals (CIs) were calculated for suspected drugs and second-level Anatomical Therapeutic Chemical (ATC) classifications. Concomitant adverse events were also evaluated. In total, 1,448 hypocalcemia-related reports were identified. Denosumab (n=595) and zoledronic acid (n=213) were the most frequently reported suspected drugs and demonstrated strong reporting signals (ROR 185.20 and 46.57, respectively). Among the ATC classifications, Drugs for Treatment of Bone Diseases (M05) showed the strongest signal (ROR=84.23). Concomitant adverse events were present in 50.9% of the reports, with hypomagnesemia being the most common electrolyte abnormality (14.5%). Antineoplastic agents and drugs for acid-related disorders were also frequently recorded in the reports. Hypocalcemia-related reports were identified across multiple therapeutic classes, particularly bone-modifying agents. Concomitant electrolyte abnormalities, particularly hypomagnesemia, were frequently reported. Overall, these findings provide a comprehensive overview of drug-induced hypocalcemia and support the importance of comprehensive electrolyte monitoring in clinical practice.",
+    "authors": [
+      "Ikeda T",
+      "Nihei S",
+      "Saito K",
+      "Kudo K"
+    ],
+    "journal": "In vivo (Athens, Greece)",
+    "journal_issn": "1791-7549",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-29",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.83,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.998,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.998
+      },
+      {
+        "id": "T11221",
+        "name": "Bone health and treatments",
+        "score": 0.001
+      },
+      {
+        "id": "T10516",
+        "name": "Parathyroid Disorders and Treatments",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:57.355Z",
+    "classified": true,
+    "title_ja": "JADERにおける低カルシウム血症関連報告の特徴：薬剤安全性監視研究",
+    "abstract_ja": "JADER（2004〜2026年）で低カルシウム血症関連報告を抽出し、薬剤・ATC分類別の報告オッズ比を算出した。デノスマブ等が上位となった。"
+  },
+  {
+    "id": "pmid-42957252",
+    "pubmed_id": "42957252",
+    "doi": "10.21873/invivo.14510",
+    "title": "Hepatobiliary Adverse Events Associated With Avacopan: Analysis of the JADER Database.",
+    "abstract": "Avacopan, a selective C5a receptor antagonist approved for anti-neutrophil cytoplasmic antibody-associated vasculitis, has been associated with hepatobiliary disorders including vanishing bile duct syndrome (VBDS). These events have been reported more frequently in Japanese patients than in Western populations. To address this population-specific safety concern, we characterized the reporting patterns of avacopan-associated hepatobiliary disorders using the Japanese Adverse Drug Event Report (JADER) database. We analyzed reports submitted to JADER between April 2004 and January 2026 in which avacopan was registered as a suspect drug. Hepatobiliary adverse events were defined as a composite set comprising preferred terms (PTs) under the System Organ Class (SOC) \"Hepatobiliary disorders\" (code 10019805) of Medical Dictionary for Regulatory Activities (MedDRA)/J version 29.0 and two liver-related PTs classified under the SOC \"Investigations\" (code 10022891): Liver function test increased (10077692) and hepatic enzymes increased (10060795). Disproportionality was assessed using the reporting odds ratio with 95% confidence intervals (CIs); a signal was defined as three or more reports with a lower CI limit exceeding 1.0. Time to onset was calculated from treatment start to hepatobiliary adverse events onset, and post-event outcomes were categorized based on available JADER outcome data. Among 685 avacopan-related reports, disproportionality signals were detected for all hepatobiliary adverse events evaluated. The median time to onset of hepatobiliary adverse events ranged from 33 to 56.5 days, with most events occurring within one to two months after avacopan treatment. Of 226 reports with outcome data, 19 (8.4%) recorded death. Notably, 13 of 27 VBDS reports (48.1%) recorded death as the outcome, a markedly higher proportion than that for other hepatobiliary adverse events. These findings support the importance of continued post-marketing surveillance and monitoring of hepatobiliary events during avacopan treatment.",
+    "authors": [
+      "Fujiwara M",
+      "Kotake K",
+      "Uemichi Y",
+      "Shimizu T"
+    ],
+    "journal": "In vivo (Athens, Greece)",
+    "journal_issn": "1791-7549",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-29",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.83,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.997,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.997
+      },
+      {
+        "id": "T11465",
+        "name": "Drug-Induced Hepatotoxicity and Protection",
+        "score": 0.001
+      },
+      {
+        "id": "T12352",
+        "name": "Heparin-Induced Thrombocytopenia and Thrombosis",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:57.431Z",
+    "classified": true,
+    "title_ja": "アバコパンに関連する肝胆道系有害事象：JADER解析",
+    "abstract_ja": "JADERでアバコパンを被疑薬とする報告から肝胆道系有害事象（消失性胆管症候群を含む）の報告パターンを解析した。"
+  },
+  {
+    "id": "pmid-42946950",
+    "pubmed_id": "42946950",
+    "doi": "10.1007/s40801-026-00593-3",
+    "title": "Disproportionality Analysis of Acute Kidney Injury Reports Associated with Sacubitril/Valsartan (ARNI) in the Japanese Adverse Drug Event Report Database.",
+    "abstract": "Prescriptions of angiotensin receptor neprilysin inhibitor (ARNI) have increased in recent years; however, few pharmacovigilance studies have investigated acute kidney injury (AKI) reporting associated with ARNI. This study evaluated the disproportionate AKI reporting associated with ARNI in the Japanese Adverse Drug Event Report (JADER) database, compared AKI reporting between reports involving ARNI and valsartan, and explored the factors associated with AKI reporting among reports involving ARNI. Reports published in JADER between April 2020 and August 2023 were analyzed. AKI was identified using the narrow and broad scope Preferred Terms of the Standardized MedDRA Query (SMQ) \"acute renal failure\" (SMQ:20000003). The reporting odds ratios (RORs) and 95% confidence intervals (CIs) were calculated for ARNI and valsartan. Multivariable logistic regression analyses were performed to estimate adjusted RORs (aRORs) for sex, age, heart failure (HF), diabetes mellitus, chronic kidney disease (CKD), concomitant diuretics, and nonsteroidal anti-inflammatory drugs (NSAIDs). An additional adjusted analysis directly compared AKI reports between ARNI and valsartan. A disproportionality signal for AKI was identified in the reports involving ARNI (ROR 7.11, 95% CI 6.27-8.07). Multivariable logistic regression showed that HF (aROR 1.68, 95% CI 1.22-2.31; p = 0.002) and CKD (aROR 2.17, 95% CI 1.60-2.93; p < 0.001) were independently associated with increased AKI reporting among reports involving ARNI. In the adjusted direct comparison, reports involving ARNI had higher odds of AKI reporting than those involving valsartan (aROR 2.03, 95% CI 1.50-2.74). Disproportionate AKI reporting signals were identified in reports involving ARNI in the JADER database. HF and CKD were independently associated with increased AKI reporting after adjustment. These findings have provided additional pharmacovigilance evidence regarding ARNI-associated AKI in Japan and should be interpreted in light of the inherent limitations of spontaneous reporting data.",
+    "authors": [
+      "Urashima K",
+      "Ueda T",
+      "Urashima Y",
+      "Tamura-Takaori M",
+      "Fujimoto A",
+      "Tanaka S",
+      "Kohda Y",
+      "Kitazawa F",
+      "Kato R"
+    ],
+    "journal": "Drugs - real world outcomes",
+    "journal_issn": "2199-1154",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-28",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）",
+      "回帰分析"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.48,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.977,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.977
+      },
+      {
+        "id": "T10684",
+        "name": "Acute Kidney Injury Research",
+        "score": 0.014
+      },
+      {
+        "id": "T10373",
+        "name": "Renal Transplantation Outcomes and Treatments",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:52.891Z",
+    "classified": true,
+    "title_ja": "JADERにおけるサクビトリルバルサルタン（ARNI）関連の急性腎障害報告の不均衡分析",
+    "abstract_ja": "JADERでARNIとバルサルタンの急性腎障害報告をROR等で比較し、ARNI報告内の関連因子をロジスティック回帰で探索した。"
+  },
+  {
+    "id": "pmid-42951675",
+    "pubmed_id": "42951675",
+    "doi": "10.1253/circj.CJ-26-0355",
+    "title": "Temporal Trends, Underuse, and Multilevel Factors Associated With Maximum-Dose Statin Therapy in Acute and Chronic Coronary Syndromes　- A Nationwide JROAD-DPC Study.",
+    "abstract": "High-intensity or maximally tolerated statin therapy has robust evidence for secondary prevention in patients with acute coronary syndrome (ACS) and chronic coronary syndrome (CCS), and is strongly recommended in international guidelines. However, comprehensive real-world data on its use and associated factors remain limited. Using data from the JROAD-DPC database (2017-2022), we analyzed ACS and CCS patients who underwent revascularization and were discharged alive. We assessed temporal trends in lipid-lowering therapy and examined associated factors, including patient demographics, comorbidities, treatment strategies, and hospital structural characteristics, using multivariable mixed-effects logistic regression models. Among 358,570 patients with ACS and 392,821 with CCS, the use of maximum-dose statins increased from 8.6% in 2017 to 34.1% in 2022 in ACS and from 7.8% to 19.1% in CCS, but remained suboptimal. After multivariable adjustment, older age, underweight status, and coronary artery bypass grafting were associated with lower use of maximum-dose statins in ACS. In CCS, older age, underweight status, and higher comorbidity burden were associated with lower use of maximum-dose statins. Hospital structural factors, including a higher number of cardiologists, were also associated with a greater use of maximum-dose statins. Maximum-dose statin use among ACS and CCS patients remains suboptimal in Japan. Multilevel factors contribute to this evidence-practice gap, underscoring the need for comprehensive interventions at multiple levels to reduce disparities in care delivery.",
+    "authors": [
+      "Hayakawa K",
+      "Nakao K",
+      "Nakao YM",
+      "Sumita Y",
+      "Kanaoka K",
+      "Mitsui K",
+      "Murai K",
+      "Miura H",
+      "Fujino M",
+      "Murata M",
+      "Takagi K",
+      "Yoneda S",
+      "Otsuka F",
+      "Kataoka Y",
+      "Asaumi Y",
+      "Miyamoto Y",
+      "Yasuda S",
+      "Noguchi T"
+    ],
+    "journal": "Circulation journal : official journal of the Japanese Circulation Society",
+    "journal_issn": "1347-4820",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-28",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [
+      "JROAD-DPC"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 3.41,
+    "sjr_quartile": null,
+    "openalex_topic": "Lipoproteins and Cardiovascular Health",
+    "openalex_topic_score": 0.914,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10394",
+        "name": "Lipoproteins and Cardiovascular Health",
+        "score": 0.914
+      },
+      {
+        "id": "T10292",
+        "name": "Acute Myocardial Infarction Research",
+        "score": 0.029
+      },
+      {
+        "id": "T11064",
+        "name": "Antiplatelet Therapy and Cardiovascular Diseases",
+        "score": 0.026
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:53.397Z",
+    "classified": true,
+    "title_ja": "急性・慢性冠症候群における最大用量スタチン療法の経時的推移・過少使用と多層的要因",
+    "abstract_ja": "JROAD-DPC（2017〜2022年）で、血行再建後患者の最大用量スタチン使用が急性冠症候群で8.6%から34.1%に増えた一方、依然過少であることを示した。"
+  },
+  {
+    "id": "pmid-42936297",
+    "pubmed_id": "42936297",
+    "doi": "10.1016/j.parepi.2026.e00555",
+    "title": "Epidemiology of hospitalized strongyloidiasis in Japan: A nationwide administrative database study.",
+    "abstract": "Strongyloidiasis remains endemic in parts of Japan, particularly Okinawa Prefecture, and can progress to disseminated disease with high mortality; however, nationwide data on hospitalized patients, including regional differences and the impact of disseminated disease, are limited. We conducted a retrospective nationwide study using the Diagnosis Procedure Combination database to identify hospitalized patients with strongyloidiasis in Japan between fiscal years 2014 and 2020, using ICD-10 code B78, with disseminated cases defined as B78.7. Demographic characteristics, geographic distribution, and outcomes were analyzed, with a focus on disseminated disease and regional differences between Okinawa and other areas. After excluding duplicate cases, 252 hospitalized patients were included (mean age, 77.6 years; male-to-female ratio, 1.47). Most patients were from the Kyushu and Okinawa regions, with Okinawa accounting for 82.1% of cases. Disseminated strongyloidiasis was identified in 44 patients (17.5%) and was associated with poorer neurological status at admission and higher in-hospital mortality; 11 patients with disseminated disease died during hospitalization (25.0%). Severe complications, including sepsis (54.5%) and meningitis (25.0%), were frequently observed in disseminated cases. Patients hospitalized outside Okinawa were younger than those hospitalized in Okinawa, whereas the proportions of disseminated disease and in-hospital mortality did not differ significantly between regions. In Japan, hospitalized patients diagnosed with strongyloidiasis were predominantly concentrated in Okinawa; however, severe cases also occurred in other regions. These findings highlight the importance of considering strongyloidiasis in patients with relevant epidemiological backgrounds, particularly in the setting of immunosuppression, regardless of their current geographic location.",
+    "authors": [
+      "Torii R",
+      "Ohkubo N",
+      "Yamasaki K",
+      "Tahara M",
+      "Nakamura K",
+      "Akata K",
+      "Ikegami H",
+      "Nishida C",
+      "Okawara M",
+      "Fujino Y",
+      "Matsuda S",
+      "Fushimi K",
+      "Mukae H",
+      "Yatera K"
+    ],
+    "journal": "Parasite epidemiology and control",
+    "journal_issn": "2405-6731",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-27",
+    "analysis_methods": [],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.25,
+    "sjr_quartile": null,
+    "openalex_topic": "Parasites and Host Interactions",
+    "openalex_topic_score": 0.668,
+    "openalex_subfield": "Parasitology",
+    "openalex_field": "Immunology and Microbiology",
+    "openalex_topics": [
+      {
+        "id": "T10695",
+        "name": "Parasites and Host Interactions",
+        "score": 0.668
+      },
+      {
+        "id": "T11702",
+        "name": "Parasitic Diseases Research and Treatment",
+        "score": 0.294
+      },
+      {
+        "id": "T11074",
+        "name": "Helminth infection and control",
+        "score": 0.009
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:51.892Z",
+    "classified": true,
+    "title_ja": "日本における入院糞線虫症の疫学：全国行政データベース研究",
+    "abstract_ja": "DPCデータで2014〜2020年の入院糞線虫症252例を対象に、播種性感染や沖縄と他地域の差を含め人口統計・地域分布・転帰を記述した。"
+  },
+  {
+    "id": "pmid-42940548",
+    "pubmed_id": "42940548",
+    "doi": "10.3390/healthcare14203504",
+    "title": "Development and Validation of a Next-Generation Time-Driven Activity-Based Costing Model for Quantifying Uncertainty: An Empirical Study of Fuzzy-Logic Time-Driven Activity-Based Costing Using Surgical System Data.",
+    "abstract": "Under fixed-fee reimbursement such as Japan's Diagnosis Procedure Combination/Per Diem Payment System (DPC/PDPS), hospitals bear the cost of operations that run longer than planned, yet conventional time-driven activity-based costing (TDABC) reports a single cost per case. This study developed and validated a fuzzy-logic TDABC (FL-TDABC) model that expresses case-level time uncertainty as interpretable intervals. Data from 4674 gastrointestinal surgeries at a Japanese acute-care hospital (fiscal years 2020-2024) were analyzed. Four pre-operative attributes (surgical index rank, technical grade, number of anesthesiologists, and urgency) define 96 possible rules; for each rule, triangular fuzzy numbers for surgical, anesthesia, and room occupancy times were built from the observed minimum, mode, and maximum and defuzzified by the centroid method. Estimates were validated against realized costs in a temporal hold-out (rules from FY2020-2022 applied to FY2023-2024) and 5-fold cross-validation, and 21 alternative specifications were tested. The FL-TDABC centroid exceeded realized cost by ¥36,080 per case (10.2%; Cohen's d = 0.558). The premium arose entirely from the maximum-time vertex, vanished under percentile bounds, and did not improve point accuracy out of sample. The intervals were informative: the observed range of each rule covered the recorded room occupancy time of 97.5% of hold-out cases and the α = 0.5 cut 76%, interval width increased with surgical complexity, and planning room time at the α = 0.5 upper bound reduced overruns from 44% to 10% of cases. The value of FL-TDABC lies in interval information that can inform scheduling buffers, staffing, and risk assessment, not in a higher or more accurate point estimate.",
+    "authors": [
+      "Yoshihara H",
+      "Kim J"
+    ],
+    "journal": "Healthcare (Basel, Switzerland)",
+    "journal_issn": "2227-9032",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-27",
+    "analysis_methods": [],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の急性期病院の手術部門データ"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "方法論・バリデーション",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 3.66,
+    "sjr_quartile": null,
+    "openalex_topic": "Accounting and Organizational Management",
+    "openalex_topic_score": 0.795,
+    "openalex_subfield": "Management Information Systems",
+    "openalex_field": "Business, Management and Accounting",
+    "openalex_topics": [
+      {
+        "id": "T10797",
+        "name": "Accounting and Organizational Management",
+        "score": 0.795
+      },
+      {
+        "id": "T11773",
+        "name": "Healthcare Operations and Scheduling Optimization",
+        "score": 0.083
+      },
+      {
+        "id": "T10391",
+        "name": "Healthcare Policy and Management",
+        "score": 0.025
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:52.395Z",
+    "classified": true,
+    "title_ja": "不確実性を定量化する次世代の時間駆動型活動基準原価計算モデルの開発と検証",
+    "abstract_ja": "1病院の消化器外科手術4,674件のデータでファジー論理を用いた原価計算モデルを開発し、手術時間の不確実性を区間で表現して実コストで検証した。"
+  },
+  {
+    "id": "pmid-42929046",
+    "pubmed_id": "42929046",
+    "doi": "10.5414/CP205051",
+    "title": "Disproportionate reporting of acute renal events and chronic kidney disease with proton pump inhibitors and the potassium-competitive acid blocker vonoprazan: A time-to-onset and signal-detection analysis of the FAERS and JADER databases.",
+    "abstract": "To characterize renal injury reporting, separately for acute kidney injury (AKI) and chronic kidney disease (CKD), for proton pump inhibitors (PPIs) and the potassium-competitive acid blocker (P-CAB) vonoprazan. Reporting was analyzed in the U.S. FDA Adverse Event Reporting System (FAERS) and the Japanese Adverse Drug Event Report (JADER) database. We analyzed FAERS (2014Q1 - 2024Q4) and JADER (April 2004 through the April 2025 release), defining acute renal events (referred to as AKI) and CKD by MedDRA/J v28.0 preferred terms. The reporting odds ratio (ROR) (signal = lower 95% confidence interval limit > 1) was the primary disproportionality measure, with the proportional reporting ratio and information component used as supportive measures; H2-receptor antagonists served as an active comparator class, time-to-onset was modeled with the Weibull distribution, and analyses were stratified by sex, age, and comorbidity. PPIs showed disproportionate reporting of AKI and CKD in both databases (FAERS overall ROR 5.21 and 13.21; JADER 1.25 and 1.76), concordant across measures and after excluding pre-existing renal disease. Signals for vonoprazan were weaker and database-dependent (no FAERS CKD signal, ROR 0.92; weak JADER signal, 1.95). Time-to-onset was short in JADER (median 35 days); FAERS onset estimates were unreliable (median 1,520 days). The PPI signals persisted after excluding vonoprazan or dexlansoprazole. Disproportionate reporting of AKI and CKD was observed for PPIs across two databases. These hypothesis-generating findings support renal monitoring and periodic reassessment of long-term acid suppression. The renal safety profile of vonoprazan remains inconclusive, and exposure-based studies are warranted.",
+    "authors": [
+      "Saraumi M",
+      "Watanabe S",
+      "Nagura K",
+      "Shigenobu T",
+      "Watanabe T",
+      "Sagara H"
+    ],
+    "journal": "International journal of clinical pharmacology and therapeutics",
+    "journal_issn": "0946-1965",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-26",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 0.9,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.927,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.927
+      },
+      {
+        "id": "T10684",
+        "name": "Acute Kidney Injury Research",
+        "score": 0.046
+      },
+      {
+        "id": "T10496",
+        "name": "Pharmaceutical Practices and Patient Outcomes",
+        "score": 0.006
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:49.407Z",
+    "classified": true,
+    "title_ja": "プロトンポンプ阻害薬とボノプラザンの腎障害報告の不均衡：FAERSとJADERの解析",
+    "abstract_ja": "FAERSとJADERで、PPIとP-CABボノプラザンの急性腎障害・慢性腎臓病の報告オッズ比と発症までの時間をWeibull分布で解析した。"
+  },
+  {
+    "id": "pmid-42930153",
+    "pubmed_id": "42930153",
+    "doi": "10.3390/curroncol33100586",
+    "title": "Risk Stratification and Factors Associated with Heart Failure Hospitalization During Osimertinib Therapy.",
+    "abstract": "Osimertinib is the standard of care for epidermal growth factor receptor mutation-positive non-small cell lung cancer, but heart failure hospitalization (HFH) remains a concern, and no practical tool exists to stratify HFH risk during therapy. In this retrospective cohort study using a Japanese claims database, 5802 patients newly initiating osimertinib were followed for HFH during treatment. Baseline predictors assessed before the index date were selected by 10-fold cross-validated least absolute shrinkage and selection operator (LASSO) logistic regression and internally validated by bootstrapping (B = 500), repeating predictor selection in each resample. Cumulative incidence functions and Fine-Gray models treated death as a competing event; cause-specific Cox models served as sensitivity analyses. HFH occurred in 169 patients (2.9%) during a median on-treatment follow-up of 9.3 months, with 268 competing deaths. LASSO retained seven predictors. The apparent concordance index (C-index) was 0.731 (95% confidence interval, 0.691-0.771) and the optimism-corrected C-index 0.718. Observed incidence increased 10.2-fold across predicted-risk deciles (1.03-10.50%). Fine-Gray and Cox estimates closely matched the logistic model. Baseline cardiovascular vulnerability stratifies HFH risk during osimertinib therapy. The nomogram, not externally validated, is best used as a screening aid to identify patients who may benefit from intensified cardiovascular monitoring.",
+    "authors": [
+      "Sugimoto T",
+      "Noguchi Y",
+      "Masuda R",
+      "Tani S",
+      "Harada T",
+      "Toyama Y",
+      "Saguchi M",
+      "Yoshimura T"
+    ],
+    "journal": "Current oncology (Toronto, Ont.)",
+    "journal_issn": "1718-7729",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-26",
+    "analysis_methods": [
+      "生存時間分析",
+      "回帰分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の医療レセプトデータベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.61,
+    "sjr_quartile": null,
+    "openalex_topic": "Lung Cancer Treatments and Mutations",
+    "openalex_topic_score": 0.841,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10417",
+        "name": "Lung Cancer Treatments and Mutations",
+        "score": 0.841
+      },
+      {
+        "id": "T11535",
+        "name": "Chemotherapy-induced cardiotoxicity and mitigation",
+        "score": 0.066
+      },
+      {
+        "id": "T10198",
+        "name": "Heart Failure Treatment and Management",
+        "score": 0.032
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:49.894Z",
+    "classified": true,
+    "title_ja": "オシメルチニブ治療中の心不全入院のリスク層別化と関連因子",
+    "abstract_ja": "レセプトDBでオシメルチニブ新規開始5,802人を対象に、LASSOで予測因子を選び、競合リスクを考慮して心不全入院のリスクを層別化した。"
+  },
+  {
+    "id": "pmid-42931165",
+    "pubmed_id": "42931165",
+    "doi": "10.3390/pathogens15101013",
+    "title": "Association Between Anaerobic Coverage and Clinical Outcomes in Patients with Lung Abscess: A Nationwide Database Study in Japan.",
+    "abstract": "Empirical antimicrobial therapy for lung abscess commonly includes anaerobic coverage, although evidence supporting its clinical benefit remains limited. We investigated the association between the extent of anaerobic coverage in initial therapy and clinical outcomes using the Japanese Diagnosis Procedure Combination database. Adults hospitalized between April 2022 and March 2023 with lung abscess (ICD-10 J85.2) were classified according to whether the initial antimicrobial regimen provided limited or extended anaerobic coverage and was continued for at least 3 consecutive days. Among 2800 patients, 161 received limited coverage, and 2639 received extended coverage. After propensity score matching, 161 patients in each group were compared. There were no significant differences in 30-day in-hospital mortality (6.2% vs. 6.2%), overall in-hospital mortality (12.4% vs. 10.6%), or length of hospital stay. Findings were broadly consistent across inverse probability of treatment weighting analyses and a sensitivity analysis using an alternative exposure definition based on the antimicrobial regimen administered on hospital day 1. We found no statistically significant evidence that extended anaerobic coverage was associated with improved clinical outcomes, although clinically important differences cannot be excluded.",
+    "authors": [
+      "Matsumoto H",
+      "Kanao H",
+      "Shuto H",
+      "Hiramatsu K",
+      "Fushimi K",
+      "Komiya K"
+    ],
+    "journal": "Pathogens (Basel, Switzerland)",
+    "journal_issn": "2076-0817",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-26",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 4.44,
+    "sjr_quartile": null,
+    "openalex_topic": "Pleural and Pulmonary Diseases",
+    "openalex_topic_score": 0.76,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11356",
+        "name": "Pleural and Pulmonary Diseases",
+        "score": 0.76
+      },
+      {
+        "id": "T10897",
+        "name": "Antibiotic Use and Resistance",
+        "score": 0.058
+      },
+      {
+        "id": "T10654",
+        "name": "Pneumonia and Respiratory Infections",
+        "score": 0.051
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:50.403Z",
+    "classified": true,
+    "title_ja": "肺膿瘍患者における嫌気性菌カバーと臨床転帰の関連：全国データベース研究",
+    "abstract_ja": "DPCで肺膿瘍2,800人を対象に傾向スコアマッチングで比較し、限定的と広範な嫌気性菌カバー間で30日院内死亡率に差はなかった。"
+  },
+  {
+    "id": "pmid-42931864",
+    "pubmed_id": "42931864",
+    "doi": "10.1007/s10120-026-01809-9",
+    "title": "Nationwide trends in gastric cancer incidence and endoscopic and surgical treatment in Japan (2014-2023): age-specific expansion of endoscopic resection and proximal gastrectomy.",
+    "abstract": "This nationwide observational study investigated recent trends in gastric cancer (GC) incidence and patterns of endoscopic and surgical treatment in Japan, with emphasis on age-specific changes. GC incidence data (ICD-10: C16; 2016-2021) were obtained from the Cancer Information Database; endoscopic and surgical procedure data (2014-2023) from the National Database of Health Insurance Claims. Crude and age-adjusted rates (per 100,000 person-years) and treatment-to-incidence ratios were calculated. Temporal trends were analyzed using linear and Poisson regression. Over the study period, 737,014 new GC cases and 973,234 treatment procedures-533,298 endoscopic and 439,936 surgical-were analyzed. Age-adjusted GC incidence declined significantly (P = 0.0017), accompanied by a significant reduction in overall surgical volume (P < 0.0001). In contrast, overall endoscopic treatments remained stable (P = 0.0873). Age-stratified analyses revealed increasing endoscopic treatment rates among middle-aged (30-49 years) and super-elderly (≥ 85 years) populations, as well as rising proximal gastrectomy rates among patients aged  ≥ 50 years. Robotic-assisted surgery rates also showed a significant upward trend. A therapeutic crossover was identified at age 60: surgery predominated in patients aged  < 60 years, whereas endoscopic treatment prevailed in those aged  ≥ 60 years. Although the overall treatment-to-incidence ratio remained stable, the relative contribution of surgery decreased while that of endoscopy increased. Despite declining GC incidence and surgical volume, endoscopic management maintained or expanded its role, particularly among middle-aged and elderly populations. These findings highlight age-dependent differences in gastric cancer management and have important implications for healthcare planning in an aging society.",
+    "authors": [
+      "Kido M",
+      "Shoda K",
+      "Inoue K",
+      "Yoshii K",
+      "Onishi I",
+      "Sumiyoshi S",
+      "Tsujikawa T",
+      "Kobayashi R",
+      "Takagi T",
+      "Ichikawa D"
+    ],
+    "journal": "Gastric cancer : official journal of the International Gastric Cancer Association and the Japanese Gastric Cancer Association",
+    "journal_issn": "1436-3305",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-26",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [
+      "全国がん登録（がん情報データベース）"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 6.33,
+    "sjr_quartile": null,
+    "openalex_topic": "Gastric Cancer Management and Outcomes",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10696",
+        "name": "Gastric Cancer Management and Outcomes",
+        "score": 0.999
+      },
+      {
+        "id": "T11378",
+        "name": "Gastrointestinal Bleeding Diagnosis and Treatment",
+        "score": 0
+      },
+      {
+        "id": "T10276",
+        "name": "Helicobacter pylori-related gastroenterology studies",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:50.887Z",
+    "classified": true,
+    "title_ja": "日本における胃癌罹患と内視鏡・外科治療の全国的動向（2014〜2023年）",
+    "abstract_ja": "NDBとがん情報DBを用い、胃癌罹患は有意に減少し、内視鏡治療は年齢別に拡大、外科手術は減少していることを示した。"
+  },
+  {
+    "id": "pmid-42931882",
+    "pubmed_id": "42931882",
+    "doi": "10.1007/s40266-026-01344-3",
+    "title": "Comparative Impact of Anticholinergic Exposure, Potentially Inappropriate Medications, and Polypharmacy on Clinical Outcomes: A Nationwide Claims Database Study in Japan.",
+    "abstract": "In Japan, polypharmacy has become a major clinical issue as the population continues to age. Although anticholinergic drugs and potentially inappropriate medications (PIMs) have been associated with adverse outcomes, the utility of and differences among medication-related indicators, including the Japanese Anticholinergic Risk Scale, remain unclear. This study aimed to compare the associations between different medication-related indicators and major clinical outcomes. Using a large-scale administrative claims database, we conducted a population-based matched case-control study to evaluate the associations between medication-related indicators, including the number of anticholinergic drugs, total anticholinergic burden, number of potentially inappropriate medications, and total number of medications, and specific clinical outcomes, as well as their associations across predefined categories. The number of anticholinergic drugs and total anticholinergic burden were significantly associated with hip fracture and dementia. In contrast, for constipation and urinary retention, the total number of medications showed associations comparable to those of anticholinergic exposure. Overall, the strengths of the associations for the number of anticholinergic drugs and total anticholinergic burden were broadly similar. Comparisons of the number of anticholinergic drugs, total number of potentially inappropriate medications, and total number of medications revealed stronger associations of anticholinergic drugs and PIMs with hip fracture and dementia, whereas all three indexes showed comparable associations with constipation and urinary retention. These findings suggest that comprehensive exposure assessments that account for disease characteristics and temporal factors are crucial for appropriately evaluating medication-related risks.",
+    "authors": [
+      "Uematsu T",
+      "Nojiri S",
+      "Fujikawa H",
+      "Nagao M",
+      "Ishijima M",
+      "Nishizaki Y"
+    ],
+    "journal": "Drugs & aging",
+    "journal_issn": "1179-1969",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-26",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の大規模レセプトデータベース"
+    ],
+    "study_design": "症例対照研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 4.8,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmaceutical Practices and Patient Outcomes",
+    "openalex_topic_score": 1,
+    "openalex_subfield": "Geriatrics and Gerontology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10496",
+        "name": "Pharmaceutical Practices and Patient Outcomes",
+        "score": 1
+      },
+      {
+        "id": "T12246",
+        "name": "Chronic Disease Management Strategies",
+        "score": 0
+      },
+      {
+        "id": "T13970",
+        "name": "Pharmacy and Medical Practices",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:51.397Z",
+    "classified": true,
+    "title_ja": "抗コリン薬曝露・潜在的不適切処方・ポリファーマシーと臨床転帰の比較：全国レセプト研究",
+    "abstract_ja": "大規模レセプトDBの症例対照研究で、抗コリン薬数・負荷、PIM数、総薬剤数と主要な臨床転帰との関連を比較した。"
+  },
+  {
+    "id": "pmid-42928040",
+    "pubmed_id": "42928040",
+    "doi": "10.1111/dom.71477",
+    "title": "Preventive Effect of Smoking Cessation on Diabetes Onset: A Target Trial Emulation Approach.",
+    "abstract": "Smoking cessation may transiently increase diabetes risk through weight gain, but its temporal trajectory remains unclear. We evaluated the long-term effect of smoking cessation on incident diabetes. We conducted a target trial emulation using a sequential-cohort design with repeated annual enrollment. Using annual health checkup data of Japanese employees from 2008 to 2022, we newly enrolled, at each annual assessment, and started follow-up individuals aged 40 years or older who were currently smoking and free of diabetes. Inverse probability weighting was used to adjust for baseline confounding in every sequential cohort. We estimated cumulative risks for quit-smoking and persistent-smoking groups, and their differences and ratios. From 52 880 unique participants, a total of 331 701 participants were followed-up in the sequential cohorts, with a mean (standard deviation) age of 49.1 (5.7) years, and 25 749 developed diabetes. The risk ratio (95% confidence interval) for diabetes in the quit-smoking group relative to the persistent-smoking group was 1.15 (1.07-1.24) at 3 years and 0.95 (0.85-1.06) at 15 years. Per-protocol analyses showed a similar pattern. Smoking cessation was associated with a short-term increase in diabetes risk, but this excess risk diminished over time, and no long-term increase in risk was observed. These findings support sustained smoking cessation as metabolically beneficial in the long term.",
+    "authors": [
+      "Yamamoto S",
+      "Okada H",
+      "Shinozaki T",
+      "Kasahara K",
+      "Kuramoto N",
+      "Ichikawa T",
+      "Nakajima H",
+      "Hashimoto Y",
+      "Sano A",
+      "Ushigome E",
+      "Nakanishi N",
+      "Hamaguchi M",
+      "Murata H",
+      "Kurogi K",
+      "Tsuda E",
+      "Yoshida N",
+      "Ito M",
+      "Fukui M"
+    ],
+    "journal": "Diabetes, obesity & metabolism",
+    "journal_issn": "1463-1326",
+    "entrez_year": 2026,
+    "entrez_date": "2026-10-25",
+    "analysis_methods": [
+      "ターゲットトライアルエミュレーション"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の会社員の健診データ"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 5.56,
+    "sjr_quartile": null,
+    "openalex_topic": "Smoking Behavior and Cessation",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Physiology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10060",
+        "name": "Smoking Behavior and Cessation",
+        "score": 0.999
+      },
+      {
+        "id": "T10027",
+        "name": "Diabetes, Cardiovascular Risks, and Lipoproteins",
+        "score": 0
+      },
+      {
+        "id": "T10560",
+        "name": "Diabetes Management and Research",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-02T00:16:48.895Z",
+    "classified": true,
+    "title_ja": "禁煙による糖尿病発症予防効果：ターゲットトライアルエミュレーション",
+    "abstract_ja": "2008〜2022年の会社員の健診データで逐次コホート型のTTEを行い、IPWで調整して禁煙と持続喫煙の糖尿病累積リスクを比較した。"
+  },
+  {
     "id": "pmid-42909608",
     "pubmed_id": "42909608",
     "doi": "10.1007/s00535-026-02526-x",
