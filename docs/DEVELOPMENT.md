@@ -92,6 +92,27 @@ visibilityState と rAF が動くかを確かめる。スクリーンショッ�
 
 ## 変更履歴
 
+### shadcn を依存から外す（2026-11-03）
+
+**きっかけ**: セキュリティ調査で、npm audit の指摘45件のうち15件が shadcn 経由だと分かった。
+
+shadcn は部品を追加するための CLI で、サイトの動作には使っていない。それでも
+`app/globals.css` が `@import "shadcn/tailwind.css"` で中の CSS（95行）を読んでいたため、
+dependencies から外せなかった。devDependencies へ移すだけでは何も減らない
+（npm ci は開発用も入れる。Routine も Vercel も同じ）。
+
+- CSS を `app/shadcn-tailwind.css` にそのまま写し、shadcn を package.json から外した。
+  **lockfile は726→472件（−254）、install script は msw の1本が減った。
+  npm audit の指摘は45→30件（critical 2→1。残る1件は next）。**
+- 部品を足すときは `npx shadcn@latest add`。CLI が設定を書き戻したら元に戻し、
+  新しい部品が要る CSS は写し直す（注意点は `app/shadcn-tailwind.css` の冒頭）。
+
+**検証方法**: 変更前後で `npm run build` し、`out/` の全ファイル（10,197本）を比べる。
+ビルドID以外は1バイトも違わなかった。HTML 先頭のコメントではビルドIDの `-` が `_` に
+置き換わるので、両方の形を同じものとして比べること。
+依存を消したときは、worktree の外で `npm ci` から試すこと。worktree はリポジトリ本体の
+中にあるので、消したパッケージが本体の node_modules から解決されてビルドが通ってしまう。
+
 ### デプロイ容量とページ転送量の削減（2026-09-06）
 
 **きっかけ**: Vercel から Deployment Storage（無料枠10GB）100%の警告。

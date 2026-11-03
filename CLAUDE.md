@@ -37,6 +37,7 @@ Next.js 16 (Static Export) / TypeScript / Tailwind CSS v4 + shadcn/ui v4 / JSON�
 | `lib/papers-search.ts` | キーワード検索（スペース区切り＝AND、表記ゆれ正規化、英数字は語境界一致） |
 | `lib/favorites.ts` | お気に入り（localStorage のみ。サーバ・アカウント不要） |
 | `lib/nav-items.ts` | ヘッダーのナビ項目（デスクトップ・モバイルで共有） |
+| `app/shadcn-tailwind.css` | shadcn/ui の部品が使う CSS（shadcn@4.0.6 から写したもの）。**shadcn パッケージは依存に入れない**（部品を足す CLI のためだけに254パッケージ入っていた）。部品は `npx shadcn@latest add` で足し、CLI が設定を書き戻したら戻す。注意点はファイル冒頭 |
 
 ## よく使うコマンド
 
