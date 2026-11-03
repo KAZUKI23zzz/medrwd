@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import "shadcn/tailwind.css";
+/* shadcn パッケージは依存に入れない。理由と部品を足すときの注意は shadcn-tailwind.css の冒頭 */
+@import "./shadcn-tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
 
