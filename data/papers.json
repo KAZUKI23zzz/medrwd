@@ -1,5 +1,883 @@
 [
   {
+    "id": "pmid-42998024",
+    "pubmed_id": "42998024",
+    "doi": "10.1093/mr/roag097",
+    "title": "Treatment Patterns of Oral Glucocorticoids in Patients with IgG4-Related Disease: A Real-World Analysis based on a Japanese Claims Database.",
+    "abstract": "To describe the prescribing patterns of oral glucocorticoid and evaluate flares and glucocorticoid-related complications in patients with immunoglobulin G4-related disease. This retrospective observational study used a Japanese hospital claims database. Patients with a prescription for oral glucocorticoids, a diagnosis of immunoglobulin G4-related disease, and having at least two immunoglobulin G4 measurement tests were included. The index date was defined as the first oral glucocorticoid prescription recorded in the database (Day 0). Patients were followed for up to Day 1460 (4 years). The study included 3,167 patients. The mean dose of oral glucocorticoid was 28.76, 10.71, and 4.12 mg/day on Day 0, 90, and 1095, respectively. At Day 1460, 66.56% of the patients were still receiving oral glucocorticoid therapy and the dose exceeded 5 mg/day in 17.80% of patients. During the follow-up period, 453 patients (14.30%) experienced at least one flare. The incidence rates of hospitalized infections, osteoporotic fractures, and cardiovascular diseases, defined as serious glucocorticoid complications, were 7.46, 0.61, and 1.61 per 100 person-years, respectively. Over half of the patients continued glucocorticoid therapy at 4 years. Glucocorticoid withdrawal strategies could be associated with reducing the long-term glucocorticoid-related toxicity in patients with immunoglobulin G4-related disease.",
+    "authors": [
+      "Kawano M",
+      "Sato H",
+      "Yamamoto M",
+      "Takashima N",
+      "Ikawa Y",
+      "Hongo Y",
+      "Okazaki K"
+    ],
+    "journal": "Modern rheumatology",
+    "journal_issn": "1439-7609",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-07",
+    "analysis_methods": [],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の病院レセプトデータベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.25,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-11-09T00:12:38.166Z",
+    "classified": true,
+    "title_ja": "IgG4関連疾患患者における経口グルココルチコイドの処方パターン：日本のレセプトデータ分析",
+    "abstract_ja": "IgG4関連疾患3,167例の病院レセプトデータで経口ステロイドの処方実態を4年間追跡した。投与量は時間とともに減少したが、4年後も約67%が継続していた。再燃やステロイド関連合併症も評価した。"
+  },
+  {
+    "id": "pmid-42993238",
+    "pubmed_id": "42993238",
+    "doi": "10.1007/s10147-026-03237-2",
+    "title": "Self-reported eating speed and the risk of breast cancer among Japanese women: a retrospective cohort study from the LIFE Study.",
+    "abstract": "Eating speed has been linked to higher body mass index and unfavorable metabolic profiles, but its association with incident breast cancer has not been well characterized. We conducted a retrospective cohort study using linked health check-up records and medical claims from 19 municipalities in the Longevity Improvement and Fair Evidence Study. Women aged ≥ 40 years who attended government-subsidized health check-ups (April 2016-March 2021) and answered an eating speed question were included. Eating speed was self-reported as faster, normal, or slower. Incident invasive breast cancer was identified using a validated claims-based algorithm. Cause-specific hazard ratios (HRs) and 95% confidence intervals (CIs) were estimated using Cox proportional hazards models comparing faster and slower versus normal eating speed with stepwise adjustment for age, lifestyle factors, and comorbidities. Among 243,737 women included in the analyses, 3213 (1.3%) developed breast cancer during follow-up. In the fully adjusted model, slower eating was associated with a lower risk of breast cancer compared with normal eating (HR 0.84, 95% CI 0.73-0.96), whereas faster eating showed no association (HR 1.02, 95% CI 0.93-1.10). The results were generally consistent across competing-risk and sensitivity analyses. In this large cohort, slower self-reported eating speed was associated with a modestly lower risk of incident breast cancer. By providing one of the first large-scale longitudinal evaluations of the association between self-reported eating speed and breast cancer risk, this study addresses a gap in epidemiological evidence but does not establish that slower eating prevents breast cancer.",
+    "authors": [
+      "Kawaguchi K",
+      "Maeda M",
+      "Oda F",
+      "Nakashima Y",
+      "Fukuda H"
+    ],
+    "journal": "International journal of clinical oncology",
+    "journal_issn": "1437-7772",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-06",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "LIFE Studyの健診記録と医療レセプトの連結データ"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 3.24,
+    "sjr_quartile": null,
+    "openalex_topic": "Cancer Risks and Factors",
+    "openalex_topic_score": 0.976,
+    "openalex_subfield": "Oncology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T12103",
+        "name": "Cancer Risks and Factors",
+        "score": 0.976
+      },
+      {
+        "id": "T10866",
+        "name": "Nutritional Studies and Diet",
+        "score": 0.011
+      },
+      {
+        "id": "T12873",
+        "name": "Nutrition, Health and Food Behavior",
+        "score": 0.004
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-09T00:12:37.614Z",
+    "classified": true,
+    "title_ja": "日本人女性における自己申告の食べる速さと乳がんリスク：LIFE Studyの後方視的コホート研究",
+    "abstract_ja": "19自治体の健診記録とレセプトを連結し、食べる速さと乳がん発症の関連をCoxモデルで解析した。速食いと遅食いを普通と比較して評価した。"
+  },
+  {
+    "id": "pmid-42984907",
+    "pubmed_id": "42984907",
+    "doi": "10.3389/fphar.2026.1977191",
+    "title": "Glucocorticoid-centered drug spectrum of non-jaw osteonecrosis, a FAERS pharmacovigilance study with independent validation in Canada Vigilance and JADER.",
+    "abstract": "To distinguish jaw misclassification and litigation-related reporting from non-jaw osteonecrosis signals and define their reproducible spectrum. We analyzed 20,690,895 deduplicated Food and Drug Administration Adverse Event Reporting System (FAERS) reports (2004Q1-2026Q2), using report-level adjudication and four disproportionality criteria. A descriptive jaw-propensity index (JPI) measured the share of each drug's osteonecrosis reports coded as \"jaw.\" Reporter restrictions and comparisons with Canada Vigilance and the Japanese Adverse Drug Event Report (JADER) database examined reporting bias. These external databases recorded less solicitation. Additional analyses included glucocorticoid stratification, empirical null calibration with unmasking, indication restriction of every surviving non-glucocorticoid drug, time-to-onset modeling, and machine learning. Estimates are reported with 95% confidence intervals. Of 47 signals, 27 passed jaw exclusion (JPI < 0.50) and reporter restriction; the final core was unchanged across thresholds of 0.30-0.70. Tenofovir disoproxil's reporting odds ratio (ROR) fell from 157.9 (153.4-162.6) to 6.33 (5.38-7.45) among health professionals; 84.5% of cases were lawyer-sourced. Canada Vigilance (6.24, 2.00-19.4) and JADER (10.5, 6.60-16.8) were consistent with a litigation-inflated FAERS estimate. Glucocorticoids were replicated in both databases (class RORs 10.3, 54.4). Drug JPI rankings were concordant (r = 0.985, 0.960). All 34 negative controls had ROR < 1 (median 0.16); unmasking rescaled other estimates approximately 2.35-fold. Within-indication analyses detected no residual excess for mycophenolate (0.89) or voxelotor (0.97). Asparaginase combined a within-leukemia residual signal (7.14, 5.10-10.0) with mechanistic evidence and JADER replication (75.7). The reproducible spectrum is glucocorticoid-centered, with the asparaginase class the best-supported residual and three drugs unresolved. Jaw misclassification, reporting context, and indication explain much of the apparent spectrum. Spontaneous reports cannot establish causation; these adjudications require cohort confirmation. The JPI and cross-jurisdiction comparisons may inform analyses of other misclassification-prone endpoints.",
+    "authors": [
+      "Qi L",
+      "Qiu Y",
+      "Wang X",
+      "Zhang T",
+      "Jiang H"
+    ],
+    "journal": "Frontiers in pharmacology",
+    "journal_issn": "1663-9812",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-05",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）",
+      "機械学習・AI"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS",
+      "Canada Vigilance"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 5.83,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.988,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.988
+      },
+      {
+        "id": "T11221",
+        "name": "Bone health and treatments",
+        "score": 0.008
+      },
+      {
+        "id": "T11649",
+        "name": "Pharmaceutical industry and healthcare",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-09T00:12:35.596Z",
+    "classified": true,
+    "title_ja": "非顎骨壊死のグルココルチコイド中心の薬剤スペクトル：FAERS薬剤監視研究とCanada Vigilance・JADERでの独立検証",
+    "abstract_ja": "FAERSの約2,000万件の報告から、顎骨以外の骨壊死に関連する薬剤を不均衡分析で検出した。グルココルチコイドが中心で、CanadaおよびJADERで検証した。"
+  },
+  {
+    "id": "pmid-42985525",
+    "pubmed_id": "42985525",
+    "doi": "10.1016/j.ekir.2026.107118",
+    "title": "Creation of a Pre-biopsy Clinical Risk Score for Major Bleeding After Kidney Biopsy.",
+    "abstract": "Risk-based tools to guide care after percutaneous kidney biopsy (PKB) remain limited. We developed a simple preadmission risk score to predict post-PKB bleeding and support same-day discharge decisions, leveraging Japan's routine inpatient observation practice. This retrospective study included 78,817 adults undergoing native PKB, using a nationwide Japanese inpatient database (2016-2021). Risk factors for early hemostatic intervention, defined as blood transfusion or surgical or interventional hemostasis within 6 days after PKB, were evaluated using logistic and L2-penalized multinomial logistic regressions. The fitted coefficients for day 0 were discretized to develop the Kidney biopsy Bleeding Index for Triage (K-BIT), using readily obtainable prebiopsy clinical variables. The scoring was internally validated using a held-out test cohort from the same dataset. The overall bleeding rate was 1.46%. Compared with chronic glomerulonephritis, bleeding risk was higher in acute kidney injury (odds ratio [OR], 10.9; 95% confidence interval [CI], 8.55-13.9) and rapidly progressive glomerulonephritis (OR, 6.67; 95% CI 5.48-8.12). Increasing age and lower body mass index (BMI) were independently associated with higher bleeding risk. Age, prebiopsy diagnostic risk tier, BMI, and Charlson Comorbidity Index (CCI) were selected for score construction (score range, 0-9). In the validation cohort, patients with scores ≤ 2 (55.4%) had a bleeding risk of 0.37%. Simulation analysis suggested that restricting early discharge to this low-risk group could reduce hospitalization by an estimated 332 hospital days per 100 patients while maintaining low postdischarge bleeding risk. Prebiopsy diagnosis, age, BMI, and comorbidities were key predictors of postbiopsy bleeding. K-BIT may support risk stratification and outpatient kidney biopsy pathways.",
+    "authors": [
+      "Suzukawa R",
+      "Takahashi D",
+      "Hasegawa T",
+      "Inaba S",
+      "Ikenouchi K",
+      "Nakano Y",
+      "Yataka Y",
+      "Watada M",
+      "Hoshino M",
+      "Shoda W",
+      "Kuyama T",
+      "Sohara E",
+      "Fushimi K",
+      "Uchida S",
+      "Mandai S"
+    ],
+    "journal": "Kidney international reports",
+    "journal_issn": "2468-0249",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-05",
+    "analysis_methods": [
+      "回帰分析",
+      "機械学習・AI"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 0.95,
+    "sjr_quartile": null,
+    "openalex_topic": "Renal Diseases and Glomerulopathies",
+    "openalex_topic_score": 0.319,
+    "openalex_subfield": "Nephrology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11029",
+        "name": "Renal Diseases and Glomerulopathies",
+        "score": 0.319
+      },
+      {
+        "id": "T11378",
+        "name": "Gastrointestinal Bleeding Diagnosis and Treatment",
+        "score": 0.102
+      },
+      {
+        "id": "T10373",
+        "name": "Renal Transplantation Outcomes and Treatments",
+        "score": 0.058
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-09T00:12:36.143Z",
+    "classified": true,
+    "title_ja": "腎生検後の大出血に対する生検前臨床リスクスコアの作成",
+    "abstract_ja": "全国の入院データベースの腎生検78,817例で、止血介入に至る出血のリスク因子をロジスティック回帰で評価し、スコアK-BITを作成した。内部検証も実施した。"
+  },
+  {
+    "id": "pmid-42987452",
+    "pubmed_id": "42987452",
+    "doi": "10.1016/j.jamda.2026.106538",
+    "title": "Postoperative Day 0 Restraint and Prolonged Use in Older Colectomy Patients Receiving Dementia Care.",
+    "abstract": "In Japan, physical restraints are commonly used in surgical care, despite growing concerns regarding their adverse effects. We aimed to examine the association between physical restraint on the day of surgery and subsequent restraint use, as well as length of stay among older adults undergoing colectomy for colon cancer who were eligible for dementia care. A retrospective cohort study. Patients aged ≥65 years who had undergone colectomy for colon cancer and were eligible for dementia care in Japan were included in the study. Data collected in the Japanese Diagnosis Procedure Combination database between April 2020 and March 2021 were retrospectively reviewed. The associations between physical restraint on the day of surgery (postoperative day 0 [POD 0]) and restraint use on POD 7 and postoperative length of stay were examined using multivariable regression analyses. For the analysis of postoperative length of stay, a modified study population was used in which complete restraint data through POD 7 were not required, provided that restraint status on POD 0 was ascertainable. Among the 760 patients included in the primary analysis, 28.3% were physically restrained on POD 0. Restraint on POD 0 was associated with higher odds of restraint on POD 7 (odds ratio, 7.27; 95% CI, 4.56-11.60). In the secondary analysis (n = 962), restraint on POD 0 was not associated with postoperative length of stay (adjusted coefficient, 0.05 days; 95% CI, -1.32 to 1.42). Physical restraint on the day of surgery was associated with restraint use on POD 7, suggesting the need for careful evaluation at the time of initiation. Patients restrained early after surgery may warrant careful reassessment of the continued need for restraint during the postoperative period.",
+    "authors": [
+      "Ohno S",
+      "Shimizu S",
+      "Goto T",
+      "Fushimi K",
+      "Igarashi A"
+    ],
+    "journal": "Journal of the American Medical Directors Association",
+    "journal_issn": "1538-9375",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-05",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 2.52,
+    "sjr_quartile": null,
+    "openalex_topic": "Healthcare Decision-Making and Restraints",
+    "openalex_topic_score": 0.833,
+    "openalex_subfield": "Clinical Psychology",
+    "openalex_field": "Psychology",
+    "openalex_topics": [
+      {
+        "id": "T11678",
+        "name": "Healthcare Decision-Making and Restraints",
+        "score": 0.833
+      },
+      {
+        "id": "T10867",
+        "name": "Intensive Care Unit Cognitive Disorders",
+        "score": 0.123
+      },
+      {
+        "id": "T11011",
+        "name": "Frailty in Older Adults",
+        "score": 0.005
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-09T00:12:36.613Z",
+    "classified": true,
+    "title_ja": "認知症ケア対象の高齢結腸切除患者における術後0日目の身体拘束と長期使用",
+    "abstract_ja": "DPCデータで、認知症ケア対象の65歳以上の結腸がん切除患者を解析した。手術当日の身体拘束が術後7日目の拘束使用や在院日数と関連するかを検討した。"
+  },
+  {
+    "id": "pmid-42989032",
+    "pubmed_id": "42989032",
+    "doi": "10.1186/s13244-026-02458-3",
+    "title": "Long-term trends and projections of CT and MRI utilization across selected OECD countries: a framework for sustainable imaging service planning.",
+    "abstract": "CT and MRI utilization is increasing across high-income countries, partly because of population ageing. This study integrated cross-country trends in examination rates, demographic change, and scanner productivity across OECD countries to project utilization to 2050 and inform sustainable service planning. CT and MRI examination rates were obtained from the OECD Data Explorer and Japan's National Database of Health Insurance Claims Open Data. Population data were derived from the United Nations World Population Prospects 2024. Linear regression projected examination rates to 2050. Pearson coefficients assessed associations between imaging rates and population shares aged 0-14, 15-64, and ≥ 65 years. Scanner productivity was calculated as annual examinations per device. CT utilization was strongly associated with the population aged ≥ 65 years in all countries (r = 0.95-1.00). MRI showed similarly strong associations in most countries (r = 0.95-0.99), with Italy as the main exception. Linear extrapolation projected CT rates of approximately 722 examinations per 1000 population in Korea and 520 in the United States by 2050, while MRI rates reached approximately 327 in France and 308 in Germany. Population-level utilization did not consistently correspond to device-level productivity; CT examinations per scanner ranged from 2153.3 in Japan to 11,526.5 in Canada. Population ageing was associated with increasing CT and MRI utilization. Future demand may also depend on health system organization and scanner productivity. Sustainable planning should integrate demographic forecasting, appropriateness stewardship, operational optimization, workforce development, and technological innovation rather than rely solely on proportional capacity expansion. Question Ageing drives CT/MRI demand (r = 0.95-1.00 for CT); projected to continue to 2050, offering a valuable planning window. Findings High utilization ≠ high scanner productivity; operational organization shapes imaging output independently of demand volume. Critical relevance statement Sustainable planning requires demographic forecasting, appropriateness management, and technological innovation, not just capacity expansion.",
+    "authors": [
+      "Aguzzi G",
+      "Iaccarino K",
+      "Di Palma L",
+      "Castiglioni I",
+      "Compagni A",
+      "Alì M"
+    ],
+    "journal": "Insights into imaging",
+    "journal_issn": "1869-4101",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-05",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [
+      "OECD Data Explorer"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 7.24,
+    "sjr_quartile": null,
+    "openalex_topic": "Radiology practices and education",
+    "openalex_topic_score": 0.743,
+    "openalex_subfield": "Radiology, Nuclear Medicine and Imaging",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11894",
+        "name": "Radiology practices and education",
+        "score": 0.743
+      },
+      {
+        "id": "T13555",
+        "name": "Healthcare cost, quality, practices",
+        "score": 0.053
+      },
+      {
+        "id": "T12781",
+        "name": "Global Health Care Issues",
+        "score": 0.039
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-09T00:12:37.106Z",
+    "classified": true,
+    "title_ja": "OECD諸国におけるCT・MRI利用の長期推移と将来予測",
+    "abstract_ja": "OECD各国とNDBオープンデータのCT・MRI検査率を用い、人口高齢化との関連を解析して2050年までの利用を予測した。CTは高齢人口割合と強く相関した。"
+  },
+  {
+    "id": "pmid-42978566",
+    "pubmed_id": "42978566",
+    "doi": "10.3389/fcdhc.2026.1984666",
+    "title": "Real-world safety profile of finerenone in patients with type 2 diabetes and chronic kidney disease: a multi-database pharmacovigilance analysis of the FAERS and JADER systems.",
+    "abstract": "Finerenone, a novel nonsteroidal mineralocorticoid receptor antagonist, has been shown to lower the risk of renal and cardiovascular events in patients with type 2 diabetes mellitus (T2DM) and chronic kidney disease (CKD). However, real-world safety data beyond clinical trials remain limited, particularly regarding the spectrum and timing of adverse events (AEs) in routine clinical practice. Disproportionality analyses (Reporting Odds Ratio and Proportional Reporting Ratio) were performed on finerenone-associated AE reports from the U.S. Food and Drug Administration (FDA) Adverse Event Reporting System (FAERS, Q3 2021-Q1 2025) and the Japanese Adverse Drug Event Report (JADER) database, following data deduplication and the Medical Dictionary for Regulatory Activities (MedDRA, version 27.1) standardization. The time-to-onset (TTO) of AEs was also analyzed. A total of 1,545 (FAERS) and 210 (JADER) reports with finerenone as the primary suspect were identified. Consistent with its known profile, hyperkalemia, increased blood creatinine, decreased glomerular filtration rate (GFR), and renal impairment generated significant signals in both databases. Notably, the analysis revealed several potential new signals that have not been emphasized in the drug label, including increased urine albumin/creatinine ratio (UACR), abnormal hepatic function, penile gangrene, and dizziness. The median TTO for AEs was 36 days (FAERS) and 51 days (JADER), with a substantial proportion (45.16% in FAERS, 60.18% in JADER) occurring within the first two months of treatment. This bilateral pharmacovigilance analysis confirms known risks of finerenone and identifies several potential new AE signals in patients with T2DM-CKD. The TTO analysis underscores the need for enhanced monitoring during the initial two months of therapy. This study generates actionable evidence to optimize risk management strategies and inform safer clinical use of finerenone in this high-risk population.",
+    "authors": [
+      "Zhang D",
+      "Zhao Y",
+      "Chen H",
+      "Miao Y"
+    ],
+    "journal": "Frontiers in clinical diabetes and healthcare",
+    "journal_issn": "2673-6616",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-04",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.45,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.998,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.998
+      },
+      {
+        "id": "T12876",
+        "name": "Potassium and Related Disorders",
+        "score": 0
+      },
+      {
+        "id": "T10496",
+        "name": "Pharmaceutical Practices and Patient Outcomes",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-09T00:12:33.903Z",
+    "classified": true,
+    "title_ja": "2型糖尿病・慢性腎臓病患者におけるフィネレノンの実臨床安全性：FAERSとJADERの多データベース薬剤監視解析",
+    "abstract_ja": "FAERSとJADERの有害事象報告に対しROR・PRRによる不均衡分析を行い、フィネレノンの安全性シグナルと発現時期を評価した。"
+  },
+  {
+    "id": "pmid-42982668",
+    "pubmed_id": "42982668",
+    "doi": "10.1016/j.jos.2026.10.012",
+    "title": "Risk of deep vein thrombosis and pulmonary embolism after simultaneous bilateral knee arthroplasty: A Japanese nationwide medical claims database study.",
+    "abstract": "Simultaneous bilateral knee arthroplasty may offer clinical and economic advantages but raises concerns regarding thromboembolic complications. We compared postoperative outcomes between simultaneous bilateral and unilateral knee arthroplasty. Using Japan's nationwide Diagnosis Procedure Combination database, we conducted a retrospective cohort study of hospitalizations for knee arthroplasty between April 2016 and March 2023. Hospitalizations involving simultaneous bilateral knee arthroplasty were compared with those involving unilateral procedures. Propensity score matching was performed based on age, sex, body mass index, surgical procedure (total or unicompartmental knee arthroplasty), comorbidities, and the Charlson Comorbidity Index. Postoperative complications and perioperative outcomes were evaluated. Among 259,319 eligible hospitalizations, 16,601 matched pairs were identified. In the propensity score-matched cohort, simultaneous bilateral knee arthroplasty was associated with higher odds of deep vein thrombosis (odds ratio [OR], 1.52; 95% confidence interval [CI], 1.42-1.63) and pulmonary embolism (OR, 2.49; 95% CI, 1.75-3.56) compared with unilateral surgery. In absolute terms, the risk difference was 4.0% (95% CI, 3.3-4.6) for deep vein thrombosis and 0.38% (95% CI, 0.24-0.53) for pulmonary embolism. Simultaneous bilateral procedures were also associated with a modestly longer length of hospital stay and higher perioperative blood transfusion requirements. In contrast, no statistically significant differences were observed for pneumonia, cerebrovascular events, postoperative cognitive dysfunction, surgical site infection, periprosthetic fracture, or in-hospital mortality. Simultaneous bilateral knee arthroplasty is associated with an increased risk of postoperative deep vein thrombosis and pulmonary embolism, despite routine postoperative antithrombotic medications. Careful perioperative management is therefore essential when considering simultaneous bilateral procedures, particularly with regard to thromboembolic risk.",
+    "authors": [
+      "Mori Y",
+      "Tarasawa K",
+      "Tanaka H",
+      "Kamimura M",
+      "Harada K",
+      "Mori N",
+      "Fushimi K",
+      "Aizawa T",
+      "Fujimori K"
+    ],
+    "journal": "Journal of orthopaedic science : official journal of the Japanese Orthopaedic Association",
+    "journal_issn": "1436-2023",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-04",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 1.29,
+    "sjr_quartile": null,
+    "openalex_topic": "Total Knee Arthroplasty Outcomes",
+    "openalex_topic_score": 0.791,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10562",
+        "name": "Total Knee Arthroplasty Outcomes",
+        "score": 0.791
+      },
+      {
+        "id": "T10285",
+        "name": "Venous Thromboembolism Diagnosis and Management",
+        "score": 0.204
+      },
+      {
+        "id": "T11930",
+        "name": "Cardiac, Anesthesia and Surgical Outcomes",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-09T00:12:34.612Z",
+    "classified": true,
+    "title_ja": "同時両側膝関節置換術後の深部静脈血栓症・肺塞栓症リスク：日本の全国レセプトDB研究",
+    "abstract_ja": "DPCデータの膝関節置換術259,319件で、同時両側手術と片側手術を傾向スコアマッチングで比較した。術後の血栓塞栓症などの合併症を評価した。"
+  },
+  {
+    "id": "pmid-42983470",
+    "pubmed_id": "42983470",
+    "doi": "10.1186/s12905-026-04769-5",
+    "title": "Treatment status of iron medications for anemia in patients visiting gynecological or obstetric facilities: analyses using Japanese claims data.",
+    "abstract": "Anemia is highly prevalent among women of reproductive age and can have negative health effects. Thus, appropriate and effective treatment is essential to mitigate these effects. This study assessed the current treatment status of iron-deficiency anemia in this population. Data from women aged 20-49 years who visited gynecological or obstetric facilities were analyzed using a Japanese health insurance claims database (June 2018-August 2022) provided by DeSC Healthcare, Inc.; the database included health checkup data. Patients were identified based on diagnoses of gynecological or obstetric disorders, diagnoses of obstetric supervision, or family identification based on a newborn baby. The duration of oral iron administration, the amount of iron replenished by intravenous (IV) iron infusions (saccharated ferric oxide [SFO] or ferric carboxymaltose [FCM]), and the status of oral iron medication prescriptions following IV iron infusions were analyzed. The median treatment durations with oral iron were 4.1 weeks for all patients, 4.4 weeks for those with Hb levels of 8-10 g/dL, and 8.7 weeks for those with Hb levels < 8 g/dL. The doses of IV iron preparations, particularly SFO, were often lower than the required doses calculated based on Hb levels and body weight. The required dose was achieved in 0.7% of the total administration episodes for SFO and in 46.4% of those for FCM. Oral iron medications were prescribed within 4 weeks after IV infusion for 37.5% of the SFO administration episodes and 20.8% of the FCM administration episodes. The iron dose administered per episode via oral medications exceeded that administered via IV infusions with SFO. Treatment duration of approximately 1 month with oral iron appears insufficient to fully replenish iron reserves. IV iron therapy doses were often lower than required. Despite recommendations against following IV iron therapy with oral iron treatment, frequent use of oral iron medications was observed shortly after IV infusion. Considering the potential negative effects of anemia, women of reproductive age should receive appropriate and effective treatment for iron-deficiency anemia, regardless of the presence of subjective symptoms.",
+    "authors": [
+      "Takeda J",
+      "Takeshima T",
+      "Iwasaki K",
+      "Sonoyama Y",
+      "Honda N",
+      "Niida H",
+      "Koga K"
+    ],
+    "journal": "BMC women's health",
+    "journal_issn": "1472-6874",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-04",
+    "analysis_methods": [],
+    "databases_used": [
+      "DeSC Healthcare"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 4.8,
+    "sjr_quartile": null,
+    "openalex_topic": "Iron Metabolism and Disorders",
+    "openalex_topic_score": 0.997,
+    "openalex_subfield": "Hematology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10452",
+        "name": "Iron Metabolism and Disorders",
+        "score": 0.997
+      },
+      {
+        "id": "T11534",
+        "name": "Erythropoietin and Anemia Treatment",
+        "score": 0.001
+      },
+      {
+        "id": "T10554",
+        "name": "Hemoglobinopathies and Related Disorders",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-09T00:12:35.107Z",
+    "classified": true,
+    "title_ja": "婦人科・産科受診者における貧血に対する鉄剤の治療状況：日本のレセプトデータ分析",
+    "abstract_ja": "DeSCのレセプトデータで、婦人科・産科を受診した20〜49歳女性の鉄欠乏性貧血への治療を解析した。経口鉄剤の投与期間や静注鉄剤の使用状況を記述した。"
+  },
+  {
+    "id": "pmid-42972879",
+    "pubmed_id": "42972879",
+    "doi": "10.1111/iju.70695",
+    "title": "Five-Year Clinical Outcomes Following Nephrectomy for Renal Cell Carcinoma: Evidence From a Nationwide Japanese Surgical Registry.",
+    "abstract": "To characterize mid-term oncological outcomes after nephrectomy for renal cell carcinoma (RCC) in Japan using the National Clinical Database (NCD). We retrospectively analyzed patients with RCC who underwent nephrectomy between April and December 2018 and had at least 5 years of follow-up recorded in the NCD. Age, sex, nephrectomy type, operative approach, and pathological T category were evaluated. Disease-free survival (DFS) and overall survival (OS) were estimated using the Kaplan-Meier method and compared with the log-rank test. Of 16 786 patients registered at 759 institutions, 9065 with available 5-year follow-up were analyzed. Patients aged ≥ 75 years comprised 24.7% of the cohort. Radical and partial nephrectomy were performed in 55.0% and 45.0% of patients, respectively. Median DFS and OS were not reached. Older age and male sex were associated with shorter DFS and OS. Radical nephrectomy and open surgery were also associated with shorter survival. Both DFS and OS decreased significantly with advancing pathological stage, with earlier recurrence in pT3-4 disease. This nationwide NCD-based study provides descriptive mid-term survival data for patients with RCC undergoing nephrectomy in Japan. Age, sex, nephrectomy type, operative approach, and pathological stage were associated with survival differences. These findings provide real-world outcome data for patients with available long-term follow-up and a basis for future risk-adjusted analyses.",
+    "authors": [
+      "Mizuno R",
+      "Yamamoto K",
+      "Yamamoto H",
+      "Hatakeyama S",
+      "Sakamoto S",
+      "Yasui T",
+      "Kobayashi T",
+      "Kamoto T",
+      "Kikuchi E",
+      "Ito A",
+      "Kume H"
+    ],
+    "journal": "International journal of urology : official journal of the Japanese Urological Association",
+    "journal_issn": "1442-2042",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-03",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "NCD"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 1.98,
+    "sjr_quartile": null,
+    "openalex_topic": "Renal cell carcinoma treatment",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Oncology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10449",
+        "name": "Renal cell carcinoma treatment",
+        "score": 0.999
+      },
+      {
+        "id": "T10458",
+        "name": "Bladder and Urothelial Cancer Treatments",
+        "score": 0
+      },
+      {
+        "id": "T11054",
+        "name": "Adrenal and Paraganglionic Tumors",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-09T00:12:32.033Z",
+    "classified": true,
+    "title_ja": "腎細胞癌に対する腎摘除術後5年の臨床転帰：全国外科レジストリからの知見",
+    "abstract_ja": "NCDの腎摘除術9,065例でKaplan-Meier法により無病生存と全生存を推定した。高齢と男性で予後が不良で、術式による差も検討した。"
+  },
+  {
+    "id": "pmid-42973239",
+    "pubmed_id": "42973239",
+    "doi": "10.1002/npr2.70177",
+    "title": "Real-World Status of Augmentation Therapy With Atypical Antipsychotics in Major Depressive Disorder: A Claims Database Study.",
+    "abstract": "This study investigated pharmacotherapy treatment patterns, focusing on atypical antipsychotics (AAP) augmentation therapy, in patients with major depressive disorder (MDD) who initiated antidepressant monotherapy in Japan. This retrospective cohort study was conducted using a large Japanese claims database. Patients with MDD aged ≥ 18 years who were subsequently prescribed antidepressants between June 2013 and June 2020 were enrolled. We identified patients who initiated antidepressant monotherapy as the first line of treatment (LOT1). Treatment patterns, including the number, duration, and sequence of LOTs, were examined before and after AAP augmentation therapy. In total, 50 355 patients received antidepressant monotherapy in LOT1; the most common therapy was selective serotonin reuptake inhibitors (SSRIs). The use of AAP augmentation therapy increased with progression of LOTs. Overall, 3811 patients (7.6%) received AAP augmentation therapy after a mean of 1.4 LOTs and 270 days from treatment initiation. Although 37.9% of these patients changed to other treatments in the next LOT within 180 days, 46.4% continued AAP augmentation therapy for ≥ 180 days. Among patients receiving antidepressant monotherapy in LOT1, 14.6% underwent ≥ 3 LOTs and the most common treatment pattern was SSRI-SSRI-SSRI. The proportion of patients receiving AAP augmentation therapy was low. Although few LOTs were required before AAP augmentation therapy, the claims-defined interval before AAP augmentation therapy was relatively long. Approximately half of the patients demonstrated prescription persistence with AAP augmentation therapy for ≥ 180 days. These findings may help clinicians refine treatment strategies regarding the timing of AAP augmentation, providing a basis for future research on how such adjustments might influence therapeutic outcomes in MDD.",
+    "authors": [
+      "Hori H",
+      "Shibasaki Y",
+      "Shiomi Y",
+      "Niidome K",
+      "Maekawa T",
+      "Maeda K",
+      "Sekine D",
+      "Nakamichi N",
+      "Inada K"
+    ],
+    "journal": "Neuropsychopharmacology reports",
+    "journal_issn": "2574-173X",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-03",
+    "analysis_methods": [],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本の大規模レセプトデータベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.7,
+    "sjr_quartile": null,
+    "openalex_topic": "Treatment of Major Depression",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Pharmacology (medical)",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11071",
+        "name": "Treatment of Major Depression",
+        "score": 0.999
+      },
+      {
+        "id": "T10272",
+        "name": "Mental Health Treatment and Access",
+        "score": 0
+      },
+      {
+        "id": "T10214",
+        "name": "Psychotherapy Techniques and Applications",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-09T00:12:32.451Z",
+    "classified": true,
+    "title_ja": "うつ病における非定型抗精神病薬増強療法の実態：レセプトデータ研究",
+    "abstract_ja": "抗うつ薬単剤で開始したうつ病50,355例で治療ラインの推移を解析した。非定型抗精神病薬による増強療法は治療ラインが進むほど増えた。"
+  },
+  {
+    "id": "pmid-42973950",
+    "pubmed_id": "42973950",
+    "doi": "10.3892/mco.2026.2981",
+    "title": "Nationwide real-world data on tumor-agnostic genomic companion diagnostics and comprehensive genomic profiling tests.",
+    "abstract": "The present study aimed to assess the utilization of biomarker testing, including companion diagnostics and comprehensive genomic profiling (CGP), in Japan and to highlight the value of large-scale real-world database analysis in precision oncology. Claims data from the Medical Data Vision Co., Ltd. database, covering ~40 million patients across 26% of advanced treatment hospitals in Japan, were retrospectively analyzed. Biomarker tests for five genomic biomarkers (BRAF, BRCA1/2, KRAS/NRAS, homologous recombination deficiency and microsatellite instability (MSI)) were evaluated in patients with a confirmed diagnosis of one of 11 common cancer types, a cancer of unknown primary origin (CUP) or a rare cancer, who underwent at least one biomarker test between December 2018 and March 2022. A total of 41,191 biomarker tests were recorded in 28,382 patients, with test volumes increasing markedly between 2018 and 2021. MSI testing was the most common (70.1% of patients), followed by RASKET-B for KRAS/NRAS (25.5%) and BRAF (23.9%). Patients with colorectal cancer frequently underwent multiple tests (42.8%) and distinct testing sequences were observed in gynecological cancer. CGP was more commonly performed on tissue-based samples than through liquid biopsy, particularly in rare cancer (38.5%) and CUP (11.4%). Notably, ~40% of patients received a new treatment after CGP, whereas only 1.7% initiated indicated therapy after MSI testing. The mean time to subsequent treatment initiation from the index date was 70.4 days. In conclusion, the present nationwide real-world study provides an early comprehensive overview of the prevalence and trends of biomarker testing in Japan, and reveals a gap between testing and treatment implementation. Although testing is increasing, its effective clinical use remains limited. Large-scale database analyses may help identify barriers and support strategies to improve the integration of biomarker testing into treatment decision-making, ultimately advancing precision oncology.",
+    "authors": [
+      "Yatabe Y",
+      "Oda K",
+      "Taniguchi H",
+      "Sunami K",
+      "Miller R",
+      "Yasuoka S",
+      "Watanabe R"
+    ],
+    "journal": "Molecular and clinical oncology",
+    "journal_issn": "2049-9469",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-03",
+    "analysis_methods": [],
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 3.07,
+    "sjr_quartile": null,
+    "openalex_topic": "Cancer Genomics and Diagnostics",
+    "openalex_topic_score": 0.964,
+    "openalex_subfield": "Cancer Research",
+    "openalex_field": "Biochemistry, Genetics and Molecular Biology",
+    "openalex_topics": [
+      {
+        "id": "T11287",
+        "name": "Cancer Genomics and Diagnostics",
+        "score": 0.964
+      },
+      {
+        "id": "T10769",
+        "name": "BRCA gene mutations in cancer",
+        "score": 0.017
+      },
+      {
+        "id": "T10417",
+        "name": "Lung Cancer Treatments and Mutations",
+        "score": 0.003
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-09T00:12:32.903Z",
+    "classified": true,
+    "title_ja": "腫瘍横断的ゲノムコンパニオン診断・包括的ゲノムプロファイリング検査の全国実臨床データ",
+    "abstract_ja": "MDVデータで28,382例のバイオマーカー検査41,191件を解析し、コンパニオン診断とCGP検査の利用の伸びを示した。"
+  },
+  {
+    "id": "pmid-42969062",
+    "pubmed_id": "42969062",
+    "doi": "10.1097/JCP.0000000000002278",
+    "title": "Antipsychotic Doses in Patients With Tardive Dyskinesia Who Received Valbenazine: A Retrospective Study Using Japanese Claims Data.",
+    "abstract": "Valbenazine is indicated for tardive dyskinesia, a movement disorder associated with long-term antipsychotic treatment. This study aimed to clarify changes in real-world antipsychotic prescribing patterns before and after valbenazine initiation. This retrospective observational study used real-world claims data of patients with a valbenazine prescription extracted from the Medical Data Vision (MDV) and JMDC databases. The pre-valbenazine period was 183 days before the initiation date, defined as the first valbenazine prescription. The main outcome was antipsychotic drug use by dose, type, and drug class within the pre-valbenazine period and after the valbenazine initiation date. Data in the pre-valbenazine period were compared between the latest date (latest date of antipsychotic prescription before the initiation date) and the earliest date (date of the first antipsychotic prescription within the pre-valbenazine period). The primary analysis included 225 and 141 patients from MDV and JMDC, respectively. During the pre-valbenazine period, the mean difference in chlorpromazine-equivalent doses of antipsychotic medication was +12.4 mg/day and +1.2 mg/day for patients in MDV and JMDC, respectively; there were no clear differences in the mean dose or number and types of antipsychotic drugs between dates. From the latest date to 90 days after the initiation date, the mean difference in antipsychotic dose was -38.3 mg/day and -57.6 mg/day in MDV and JMDC, respectively (∼10% decrease). Real-world data clarified antipsychotic dosing around valbenazine initiation. Within the 6-month period before valbenazine initiation, antipsychotic doses were stable. Subsequently, minimal changes in antipsychotic dosing were observed after starting valbenazine treatment.",
+    "authors": [
+      "Gouda M",
+      "Kakinoki B",
+      "Asai H",
+      "Ashizawa K",
+      "Takeuchi H"
+    ],
+    "journal": "Journal of clinical psychopharmacology",
+    "journal_issn": "1533-712X",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-02",
+    "analysis_methods": [],
+    "databases_used": [
+      "MDV",
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.99,
+    "sjr_quartile": null,
+    "openalex_topic": "Schizophrenia research and treatment",
+    "openalex_topic_score": 0.979,
+    "openalex_subfield": "Psychiatry and Mental health",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10023",
+        "name": "Schizophrenia research and treatment",
+        "score": 0.979
+      },
+      {
+        "id": "T10919",
+        "name": "Deep Brain Stimulation and Movement Disorders",
+        "score": 0.003
+      },
+      {
+        "id": "T11071",
+        "name": "Treatment of Major Depression",
+        "score": 0.003
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-09T00:12:30.662Z",
+    "classified": true,
+    "title_ja": "バルベナジン投与を受けた遅発性ジスキネジア患者の抗精神病薬用量：日本のレセプトデータ研究",
+    "abstract_ja": "MDVとJMDCのデータで、バルベナジン開始前後の抗精神病薬の処方量・種類・薬効群の変化を比較した。"
+  },
+  {
+    "id": "pmid-42971008",
+    "pubmed_id": "42971008",
+    "doi": "10.1016/j.burns.2026.108261",
+    "title": "Effect of stress ulcer prophylaxis on gastrointestinal bleeding after severe burns: A nationwide retrospective cohort study.",
+    "abstract": "To evaluate the effectiveness and safety of stress ulcer prophylaxis (SUP) with proton-pump inhibitors (PPIs) or histamine-2 receptor antagonists (H2RAs) in preventing gastrointestinal bleeding (GIB) in patients with severe burns, using a Japanese nationwide inpatient database. Retrospective cohort study. Acute-care hospitals participating in the Diagnosis Procedure Combination inpatient database between 2010 and 2022. A total of 5623 patients with a burn index ≥ 15 who were hospitalized between July 2010 and March 2022. Pharmacological SUP with vs. without PPIs/H2RAs. Among the 5623 eligible patients with burns, 2031 (36.1%) received PPIs or H2RAs for at least 7 consecutive days, whereas 3592 (63.9%) either did not receive PPIs or H2RAs or received them for fewer than 7 consecutive days. After propensity score overlap-weighting adjustment, there were no statistically significant differences between the two groups in the risk of GIB [risk difference (RD) 0.06%, 95% confidence interval (CI) -0.73-0.85], Clostridioides difficile infection (CDI) (RD 0.86%, 95% CI -0.55-2.27), or hospital-acquired pneumonia (HAP) (RD 0.36%, 95% CI -1.26-1.98). In patients with severe burns, PPIs/H2RAs were not associated with a reduction in GIB, or an increase in CDI or HAP. Therefore, routine SUP may not be essential for such patients.",
+    "authors": [
+      "Shigeno A",
+      "Aso S",
+      "Osuka A",
+      "Matsui H",
+      "Fushimi K",
+      "Yasunaga H"
+    ],
+    "journal": "Burns : journal of the International Society for Burn Injuries",
+    "journal_issn": "1879-1409",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-02",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.37,
+    "sjr_quartile": null,
+    "openalex_topic": "Gastrointestinal Bleeding Diagnosis and Treatment",
+    "openalex_topic_score": 0.603,
+    "openalex_subfield": "Gastroenterology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11378",
+        "name": "Gastrointestinal Bleeding Diagnosis and Treatment",
+        "score": 0.603
+      },
+      {
+        "id": "T11422",
+        "name": "Burn Injury Management and Outcomes",
+        "score": 0.104
+      },
+      {
+        "id": "T11681",
+        "name": "Nosocomial Infections in ICU",
+        "score": 0.081
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-09T00:12:31.402Z",
+    "classified": true,
+    "title_ja": "重症熱傷後の消化管出血に対するストレス潰瘍予防の効果：全国後方視的コホート研究",
+    "abstract_ja": "DPCの重症熱傷5,623例で、PPI/H2RAによる予防投与の消化管出血抑制効果を傾向スコア重み付けで評価した。有意差は認められなかった。"
+  },
+  {
+    "id": "pmid-42968251",
+    "pubmed_id": "42968251",
+    "doi": "10.1253/circj.CJ-26-0476",
+    "title": "Antibiotic Prophylaxis During Invasive Dental Procedures in Patients With Prosthetic Heart Valves　- Cross-Sectional Analysis of Japanese Claims Data.",
+    "abstract": "Patients with prosthetic heart valves (PHVs) are at high risk of infective endocarditis (IE). Although antibiotic prophylaxis (AP) is recommended for invasive dental procedures (IDPs), data on routine procedures and prescribing quality remain limited. This study investigated real-world AP practices across a broad range of IDPs and evaluated prescribing quality in patients with PHVs. We conducted a cross-sectional study using a regional claims database in Kyoto, Japan (2017-2024). Among 52,247 IDPs in 3,664 patients with PHVs, the overall AP prescription rate was 9.2%, with higher rates for tooth extraction (47.3%) and oral and periodontal surgery (32.0%) but markedly lower rates for routine procedures. Penicillins were the most frequently prescribed (45.9%), whereas World Health Organization's AWaRe (Access, Watch, Reserve) \"Watch\" antibiotics, which should be used selectively because of their higher potential to promote antimicrobial resistance, accounted for 38.1% of oral prescriptions. Dental clinics showed a higher proportion of \"Watch\" antibiotic use than hospitals (odds ratio 9.0; 95% confidence interval 6.9-12.0; P<0.01). Adherence to guideline-recommended preprocedure timing and single-day duration was low (31.7% and 11.2%, respectively). The IE incidence was 0.44% per person-year. A substantial evidence-practice gap exists in AP use during IDPs in patients with PHVs. Regional efforts promoting antimicrobial stewardship, strengthened medical-dental collaboration, and patient education are needed.",
+    "authors": [
+      "Yamamoto C",
+      "Ishida M",
+      "Ikai H",
+      "Oseko F",
+      "Nakagawa Y",
+      "Yamano T",
+      "Inaba T",
+      "Matsui D",
+      "Takashima N",
+      "Nukui Y"
+    ],
+    "journal": "Circulation journal : official journal of the Japanese Circulation Society",
+    "journal_issn": "1347-4820",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-01",
+    "analysis_methods": [],
+    "databases_used": [],
+    "additional_data_sources": [
+      "京都府の地域レセプトデータベース"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 3.85,
+    "sjr_quartile": null,
+    "openalex_topic": "Infective Endocarditis Diagnosis and Management",
+    "openalex_topic_score": 0.996,
+    "openalex_subfield": "Cardiology and Cardiovascular Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11551",
+        "name": "Infective Endocarditis Diagnosis and Management",
+        "score": 0.996
+      },
+      {
+        "id": "T10897",
+        "name": "Antibiotic Use and Resistance",
+        "score": 0.002
+      },
+      {
+        "id": "T11080",
+        "name": "Surgical site infection prevention",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-09T00:12:30.099Z",
+    "classified": true,
+    "title_ja": "人工弁患者の侵襲的歯科処置における抗菌薬予防投与：レセプトの横断解析",
+    "abstract_ja": "京都の地域レセプトで人工弁患者3,664例の歯科処置52,247件を解析した。予防投与率は9.2%で、抜歯で高く日常処置で低かった。"
+  },
+  {
     "id": "pmid-42964562",
     "pubmed_id": "42964562",
     "doi": "10.1002/ags3.70305",
@@ -35,11 +913,27 @@
     ],
     "impact_factor": 2.27,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Appendicitis Diagnosis and Management",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Emergency Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11473",
+        "name": "Appendicitis Diagnosis and Management",
+        "score": 0.999
+      },
+      {
+        "id": "T11244",
+        "name": "Climate Change and Health Impacts",
+        "score": 0
+      },
+      {
+        "id": "T12064",
+        "name": "Intraperitoneal and Appendiceal Malignancies",
+        "score": 0
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-11-02T00:16:59.686Z",
     "classified": true,
@@ -81,11 +975,27 @@
     ],
     "impact_factor": 1.74,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Menstrual Health and Disorders",
+    "openalex_topic_score": 0.968,
+    "openalex_subfield": "Public Health, Environmental and Occupational Health",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T12054",
+        "name": "Menstrual Health and Disorders",
+        "score": 0.968
+      },
+      {
+        "id": "T10935",
+        "name": "Endometriosis Research and Treatment",
+        "score": 0.02
+      },
+      {
+        "id": "T10786",
+        "name": "Maternal Mental Health During Pregnancy and Postpartum",
+        "score": 0.001
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-11-02T00:17:00.197Z",
     "classified": true,

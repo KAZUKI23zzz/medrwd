@@ -1,9 +1,9 @@
 {
-  "last_run": "2026-11-02T00:30:00.000Z",
+  "last_run": "2026-11-09T00:13:40.000Z",
   "status": "success",
-  "new_papers": 25,
-  "filtered_out": 0,
-  "total_papers": 1254,
+  "new_papers": 15,
+  "filtered_out": 1,
+  "total_papers": 1269,
   "error": null,
   "consecutive_failures": 0
 }
