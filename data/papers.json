@@ -1,5 +1,855 @@
 [
   {
+    "id": "pmid-43032486",
+    "pubmed_id": "43032486",
+    "doi": "10.1016/j.jacig.2026.100792",
+    "title": "Impact of the 2018 Japan floods on asthma prescriptions: A longitudinal analysis.",
+    "abstract": "The impact of flood disasters on adult asthma is poorly understood. This study aimed to investigate the impact of the 2018 Japan floods on new prescriptions for asthma controller medications and treatments for asthma exacerbations in adults. This retrospective longitudinal analysis used data from the National Database of Health Insurance Claims and Specific Health Checkups for residents of regions severely affected by the 2018 Japan floods, covering 1 year before and 1 year after the disaster. New asthma controller prescriptions were compared between officially certified disaster victims and nonvictims with no controller use in the preceding year. Among prior controller users, prescriptions for short-acting β 2 -agonists and oral corticosteroids were compared between victims and nonvictims. Among 5,000,129 participants, 31,235 were disaster victims. Victims had a higher incidence of new asthma controller prescriptions than nonvictims (adjusted hazard ratio, 1.47; 95% CI, 1.38-1.57). This increase was observed across all age groups and was greater in younger and middle-aged adults. A difference-in-differences analysis showed increased short-acting β 2 -agonist prescriptions at 3, 5, 7, and 11 months after the disaster and increased oral corticosteroid prescriptions at 5 months among victims. Victims of the 2018 Japan floods had increased prescriptions for new-onset and exacerbated asthma, suggesting an association between flood disasters and increased adult asthma-related health care needs.",
+    "authors": [
+      "Konishi H",
+      "Yoshida S",
+      "Iwamoto H",
+      "Horimasu Y",
+      "Utsumi S",
+      "Ohshimo S",
+      "Hattori N",
+      "Matsumoto M"
+    ],
+    "journal": "The journal of allergy and clinical immunology. Global",
+    "journal_issn": "2772-8293",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-14",
+    "analysis_methods": [
+      "生存時間分析",
+      "差分の差分法 (DID)"
+    ],
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.68,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-11-16T00:11:59.595Z",
+    "classified": true,
+    "title_ja": "2018年西日本豪雨が成人の喘息処方に与えた影響：縦断的解析",
+    "abstract_ja": "NDBを用いて、2018年西日本豪雨の被災地住民約500万人を災害前後1年間追跡し、公的に認定された被災者と非被災者で喘息治療薬の処方を比較した。被災者では喘息コントローラーの新規処方が多く（調整HR 1.47）、特に若年・中年層で顕著だった。差分の差分法では被災後に短時間作用型β2刺激薬と経口ステロイドの処方増加が示され、水害が成人喘息の医療需要増加と関連することが示唆された。"
+  },
+  {
+    "id": "pmid-43033271",
+    "pubmed_id": "43033271",
+    "doi": "10.1007/s00520-026-11457-5",
+    "title": "Dual-database pharmacovigilance analysis based on FAERS and JADER combined with network pharmacology to explore fulvestrant-associated respiratory toxicity.",
+    "abstract": "Fulvestrant serves as cornerstone endocrine therapy for hormone receptor-positive (HR-positive) advanced breast cancer. Recent reports indicate safety concerns regarding respiratory toxicity. This study systematically characterized fulvestrant-related respiratory adverse events (adverse events, AEs) using two independent spontaneous reporting databases (FAERS and JADER) for cross-verification and investigated underlying mechanisms. Disproportionality analysis utilized two post-marketing surveillance databases, the United States Food and Drug Administration Adverse Event Reporting System (FAERS) and Japanese Adverse Drug Event Report (JADER), applying reporting odds ratio (ROR) and Bayesian confidence propagation neural network (BCPNN) methods for respiratory adverse event signal detection. Fulvestrant targets were predicted using SwissTargetPrediction, TargetNet, and Therapeutic Target Database (TTD). Lung disease-related genes were identified from GeneCards and Online Mendelian Inheritance in Man (OMIM). Overlapping targets underwent Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analysis. A protein-protein interaction (PPI) network was constructed with STRING and Cytoscape, core genes identified by maximum clique centrality (MCC) algorithm. CB-Dock2 platform performed molecular docking between fulvestrant and key targets. A total of 6988 fulvestrant-related reports were included from FAERS with 896 respiratory toxicity cases, while 1582 fulvestrant-associated adverse event reports were retrieved from JADER, covering 154 respiratory toxicity cases. Twenty-two respiratory adverse event signals were detected in FAERS, among which nine consistent positive signals were replicated in JADER, including pleural effusion (ROR = 5.38), interstitial lung disease (ROR = 3.94), and dyspnea (ROR = 1.50). Median time to onset was 70 days (interquartile range 21-227 days). Network pharmacology analysis identified 78 overlapping targets between fulvestrant and lung diseases. Enrichment analysis indicated involvement of inflammatory response, immune regulation, oxidative stress pathways, tumor necrosis factor (TNF) signaling pathway, and interleukin 17 (IL-17) signaling pathway. Molecular docking suggested favorable predicted binding conformations between fulvestrant and several core proteins, including mitogen-activated protein kinase 14 (MAPK14), hypoxia inducible factor 1 subunit alpha (HIF1A), and mitogen-activated protein kinase 1 (MAPK1), although these findings remain computational and require further validation. This hypothesis-generating integrated dual-database pharmacovigilance and network pharmacology analysis revealed significant association between fulvestrant and multiple respiratory toxicities, often occurring early during treatment. Potential mechanisms may involve inflammatory response, immune dysregulation, and oxidative stress-related pathways. The molecular docking findings provide exploratory computational support only and do not constitute direct evidence of in vivo interactions or causal mechanisms. Cross-database validation greatly improved the robustness of our analytical results, yet definite causality still cannot be established due to inherent limitations of spontaneous reporting systems. These findings require external validation and experimental verification and provide theoretical basis for clinical risk management and further mechanistic research.",
+    "authors": [
+      "Pan W",
+      "Xu Y",
+      "Shao Z",
+      "Ren X",
+      "Xu W"
+    ],
+    "journal": "Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer",
+    "journal_issn": "1433-7339",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-14",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.15,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-11-16T00:12:00.200Z",
+    "classified": true,
+    "title_ja": "FAERSとJADERの二重データベースによるファーマコビジランス解析とネットワーク薬理学を組み合わせたフルベストラント関連呼吸器毒性の探索",
+    "abstract_ja": "FAERSとJADERを用いた不均衡分析（ROR・BCPNN）により、フルベストラントに関連する呼吸器有害事象のシグナルを検出した。FAERSで検出された22シグナルのうち、胸水・間質性肺疾患・呼吸困難など9シグナルがJADERでも再現され、発現までの中央値は70日と治療早期に多かった。ネットワーク薬理学と分子ドッキングでは炎症応答や免疫調節、酸化ストレス経路の関与が示唆されたが、仮説生成的な結果にとどまる。"
+  },
+  {
+    "id": "pmid-43034191",
+    "pubmed_id": "43034191",
+    "doi": "10.1007/s00198-026-08308-8",
+    "title": "Impact of the new reimbursement for secondary fracture prevention on inter-hospital variation in osteoporosis treatment for hip fracture patients: A nationwide analysis using DPC data.",
+    "abstract": "This study evaluated how the Secondary Fracture Prevention Continuity Management Fee (hereinafter, \"the management fee\"), established in Japan in April 2022, affected inter-hospital variation in osteoporosis medication prescription after hip fracture, and which hospital factors influenced its effectiveness. This study evaluated how the Secondary Fracture Prevention Continuity Management Fee (hereinafter, \"the management fee\"), established in Japan in April 2022, affected inter-hospital variation in osteoporosis medication prescription after hip fracture, and which hospital factors influenced its effectiveness. Using Diagnosis Procedure Combination data (April 2020-March 2024) from hospitals participating in the Quality Indicator/Improvement Project, we categorized hospitals as introduced or non-introduced. Inter-hospital variation was quantified using median odds ratios from a logistic mixed-effects model, and generalized estimating equations were used to examine hospital-level factors influencing the management fee's effectiveness. Among 168 hospitals (143 introduced, 25 non-introduced) and 76,111 patients, the prescription proportion in introduced hospitals increased from 30.9% to 71.8%, whereas it remained at approximately 20% in non-introduced hospitals. The median odds ratio in introduced hospitals increased significantly, from 2.66 (95% confidence interval 2.39-3.03) to 3.39 (2.96-4.00), indicating increased inter-hospital variation. The management fee's effectiveness was significantly lower in rural and private hospitals and those with low surgical volumes. The management fee functioned as an incentive for secondary fracture prevention, but its impact was uneven and increased inter-hospital disparities. Achieving equitable secondary fracture prevention may require a comprehensive approach that provides not only uniform financial incentives but also targeted support for hospitals with limited resources.",
+    "authors": [
+      "Gondo G",
+      "Kunisawa S",
+      "Imanaka Y"
+    ],
+    "journal": "Osteoporosis international : a journal established as result of cooperation between the European Foundation for Osteoporosis and the National Osteoporosis Foundation of the USA",
+    "journal_issn": "1433-2965",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-14",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [
+      "QIプロジェクト参加病院のDPCデータ"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "医療の質・アクセスの格差",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 4.7,
+    "sjr_quartile": null,
+    "openalex_topic": null,
+    "openalex_topic_score": null,
+    "openalex_subfield": null,
+    "openalex_field": null,
+    "openalex_topics": null,
+    "auto_detected": true,
+    "collected_at": "2026-11-16T00:12:00.550Z",
+    "classified": true,
+    "title_ja": "二次性骨折予防継続管理料の新設が大腿骨近位部骨折患者における骨粗鬆症治療の病院間ばらつきに与えた影響：DPCデータを用いた全国解析",
+    "abstract_ja": "QIプロジェクト参加168病院のDPCデータ（2020–2024年度、76,111例）を用いて、2022年に新設された二次性骨折予防継続管理料が大腿骨近位部骨折後の骨粗鬆症治療薬処方に与えた影響を評価した。算定病院では処方割合が30.9%から71.8%に増加した一方、病院間ばらつき（median odds ratio）は2.66から3.39に拡大した。地方・民間・手術件数の少ない病院では効果が小さく、一律の経済的インセンティブに加え資源の乏しい病院への支援が必要と考えられた。"
+  },
+  {
+    "id": "pmid-43024290",
+    "pubmed_id": "43024290",
+    "doi": "10.1097/MD.0000000000051500",
+    "title": "Association between antiseizure medications and thrombocytopenia: A retrospective pharmacovigilance study using the US FAERS, Japanese JADER, and Canadian CVARD databases.",
+    "abstract": "Thrombocytopenia is a clinically important hematological adverse event associated with several antiseizure medications (ASMs), but comparative real-world evidence across individual drugs and pharmacovigilance databases remains limited. We conducted a retrospective pharmacovigilance study using the US Food and Drug Administration Adverse Event Reporting System (FAERS) from Q1 2004 to Q2 2025, with supportive cross-database comparisons using the Japanese adverse drug event report database and the Canada vigilance adverse reaction database from January 2004 to June 2025. Thrombocytopenia events were identified using the narrow Standardized Medical Dictionary for Regulatory Activities Query \"hematopoietic thrombocytopenia.\" Disproportionality was assessed using the reporting odds ratio and Bayesian confidence propagation neural network, and subgroup, time-to-onset, and univariable logistic regression analyses of reported fatal outcomes were also performed. In FAERS, 4835 reports with ASMs designated as primary suspect drugs were identified, corresponding to 4900 thrombocytopenia events. Positive disproportionality signals were detected for valproic acid, levetiracetam, and carbamazepine. Adults aged ≥65 years had the shortest median time to onset (14 days), and reports with serious outcomes had an earlier onset than reports without a recorded serious outcome (13 vs 29 days). Based on the reporting odds ratio criterion, valproic acid showed positive reporting signals in all 3 databases, whereas levetiracetam showed signals in FAERS and Canada Vigilance Adverse Reaction Database and carbamazepine in FAERS and Japanese adverse drug event report. Overall, this study identified drug-specific thrombocytopenia reporting signals and earlier onset patterns among older adults and reports with serious outcomes. These hypothesis-generating findings warrant further epidemiological evaluation and may inform studies of risk-adapted monitoring; they do not establish incidence, comparative safety, or causality.",
+    "authors": [
+      "Huang J",
+      "Jin BF",
+      "Mai ZK",
+      "Zhao PJ",
+      "Zhang RM",
+      "Yu LY"
+    ],
+    "journal": "Medicine",
+    "journal_issn": "1536-5964",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-13",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）",
+      "回帰分析"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS",
+      "Canada Vigilance Adverse Reaction Database（CVARD）"
+    ],
+    "study_design": "その他",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.63,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.997,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.997
+      },
+      {
+        "id": "T11117",
+        "name": "Drug-Induced Adverse Reactions",
+        "score": 0.001
+      },
+      {
+        "id": "T10094",
+        "name": "Epilepsy research and treatment",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-16T00:11:56.456Z",
+    "classified": true,
+    "title_ja": "抗てんかん薬と血小板減少症の関連：米国FAERS・日本JADER・カナダCVARDを用いた後方視的ファーマコビジランス研究",
+    "abstract_ja": "FAERS（2004–2025年）を主解析とし、JADERとカナダCVARDで補完的に比較して、抗てんかん薬と血小板減少症の報告シグナルを不均衡分析で評価した。バルプロ酸、レベチラセタム、カルバマゼピンで陽性シグナルが検出され、バルプロ酸は3つのデータベース全てでシグナルを示した。65歳以上や重篤転帰の報告では発現までの期間が短く、仮説生成的な知見として今後の疫学的検証が求められる。"
+  },
+  {
+    "id": "pmid-43024999",
+    "pubmed_id": "43024999",
+    "doi": "10.1016/j.resinv.2026.101537",
+    "title": "Changes in age-specific patterns of household transmission of SARS-CoV-2 over six epidemic waves in 2020-2022: a population-based study in Japan.",
+    "abstract": "Household transmission is a major driver of SARS-CoV-2 spread; however, longitudinal data comparing household transmission patterns across variant-specific waves remain limited. We aimed to compare household secondary attack rates (SARs) across epidemic waves and identify factors associated with household transmission. This retrospective cohort study used the JMDC Claims Database, a nationwide health insurance claims database in Japan. Six epidemic waves from January 2020 to May 2022 were defined based on temporal trends in reported COVID-19 cases and grouped into four analytical periods according to predominant variants. Index cases were defined as the first diagnosed household member per period. Household SAR was the proportion of household contacts diagnosed within 1-10 days of the index case. Period differences were estimated using linear regression models. Factors associated with household transmission were examined using multivariable mixed-effects logistic regression models. Analyzing 124,136 index cases and 287,886 contacts, household SAR during the Omicron period among pediatric index cases increased compared with the pre-Alpha period, with adjusted increases of 27.6 and 21.3 percentage points in children aged 0-4 and 5-11 years, respectively. In the pre-Alpha and Alpha periods, child index cases had lower odds of secondary transmission than index cases aged 19-64 years, whereas odds were higher in the Omicron period. Age-specific susceptibility among contacts also varied across analytical periods. Household transmission patterns changed across waves, marked by increased SARs among pediatric index cases during the Omicron period. These findings inform age-adapted public health strategies for future respiratory-viral pandemics.",
+    "authors": [
+      "Shirata M",
+      "Ito I",
+      "Aso S",
+      "Jo T",
+      "Hidaka Y",
+      "Ibi Y",
+      "Nishioka K",
+      "Jikuya N",
+      "Yasunaga H",
+      "Hirai T"
+    ],
+    "journal": "Respiratory investigation",
+    "journal_issn": "2212-5353",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-13",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.75,
+    "sjr_quartile": null,
+    "openalex_topic": "COVID-19 epidemiological studies",
+    "openalex_topic_score": 0.769,
+    "openalex_subfield": "Modeling and Simulation",
+    "openalex_field": "Mathematics",
+    "openalex_topics": [
+      {
+        "id": "T10410",
+        "name": "COVID-19 epidemiological studies",
+        "score": 0.769
+      },
+      {
+        "id": "T10118",
+        "name": "SARS-CoV-2 and COVID-19 Research",
+        "score": 0.223
+      },
+      {
+        "id": "T10990",
+        "name": "Infection Control and Ventilation",
+        "score": 0.002
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-16T00:11:57.407Z",
+    "classified": true,
+    "title_ja": "2020–2022年の6つの流行波におけるSARS-CoV-2家庭内感染の年齢別パターンの変化：日本の集団ベース研究",
+    "abstract_ja": "JMDCレセプトデータベースを用いて、2020年1月から2022年5月の流行波を変異株ごとの4期間に分け、家庭内二次感染率を比較した。指標症例124,136例・接触者287,886人の解析で、オミクロン期には小児の指標症例からの二次感染率が流行初期より大きく上昇した（0–4歳で+27.6ポイント）。初期には小児指標症例の感染伝播オッズが成人より低かったが、オミクロン期には逆転しており、年齢に応じた公衆衛生対策の必要性が示された。"
+  },
+  {
+    "id": "pmid-43025462",
+    "pubmed_id": "43025462",
+    "doi": "10.1111/ppe.70215",
+    "title": "Prenatal Opioid Exposure and Autoimmune-Related Diseases in Children: A Cohort Study in South Korea and Japan.",
+    "abstract": "Prenatal opioid exposure has been associated with acute neonatal complications and longer-term immune-related outcomes, but its association with autoimmune diseases in children remains unclear. To investigate the association between prenatal opioid exposure and the risk of autoimmune diseases in children. We used the South Korean National Health Insurance Service (NHIS) birth cohort (discovery cohort; 2,930,720 children, 2,188,898 mothers) and the Japan Medical Data Center (JMDC) cohort (replication cohort; 176,528 children, 147,423 mothers). Children born between January 2010 and December 2017 were followed through December 2023. Prenatal opioid exposure was defined as at least two maternal opioid prescriptions during pregnancy. The primary outcome was any autoimmune-related disease, with 22 prespecified subcategories. Adjusted hazard ratios (HRs) with 95% confidence intervals (CIs) were estimated using propensity score overlap-weighted Cox models. Sibling-comparison analyses were conducted in both cohorts. In the South Korean cohort, 118,726 children (4.1%) were prenatally exposed to opioids. Exposure was associated with modestly increased risk of autoimmune-related diseases in overlap-weighted analyses in both South Korea (HR 1.05, 95% CI 1.02, 1.08) and Japan (HR 1.14, 95% CI 1.09, 1.20), with a pooled HR of 1.10 (95% CI 1.00, 1.20). Risks increased with greater numbers and longer durations of opioid prescriptions. Associations were observed for autoimmune thyroid disease (HR 1.06, 95% CI 1.01, 1.12), autoimmune adrenal and polyglandular diseases (HR 1.07, 95% CI 1.02, 1.12) and reactive arthritis (HR 1.10, 95% CI 1.00, 1.21). However, sibling-comparison analyses showed no association in South Korea or Japan. The absence of associations in sibling-comparison analyses suggests that shared familial, genetic or environmental factors may explain the observed population-level associations rather than a clinically meaningful independent effect of prenatal opioid exposure on autoimmune disease risk in offspring.",
+    "authors": [
+      "Yeo D",
+      "Kim H",
+      "Kim J",
+      "Kim S",
+      "Hwang HS",
+      "Kang J",
+      "Park J",
+      "Kim HJ",
+      "Yon DK"
+    ],
+    "journal": "Paediatric and perinatal epidemiology",
+    "journal_issn": "1365-3016",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-13",
+    "analysis_methods": [
+      "傾向スコア (PSM/IPTW)",
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [
+      "韓国国民健康保険公団（NHIS）出生コホート"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.18,
+    "sjr_quartile": null,
+    "openalex_topic": "Prenatal Substance Exposure Effects",
+    "openalex_topic_score": 0.992,
+    "openalex_subfield": "Pediatrics, Perinatology and Child Health",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11633",
+        "name": "Prenatal Substance Exposure Effects",
+        "score": 0.992
+      },
+      {
+        "id": "T10576",
+        "name": "Opioid Use Disorder Treatment",
+        "score": 0.003
+      },
+      {
+        "id": "T11964",
+        "name": "Pregnancy and Medication Impact",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-16T00:11:58.039Z",
+    "classified": true,
+    "title_ja": "胎児期オピオイド曝露と小児の自己免疫関連疾患：韓国と日本のコホート研究",
+    "abstract_ja": "韓国NHIS出生コホート（発見コホート）とJMDC（再現コホート）を用いて、妊娠中のオピオイド処方曝露と小児の自己免疫関連疾患リスクの関連を、傾向スコアのオーバーラップ重み付けCoxモデルで評価した。曝露は両国でわずかなリスク上昇と関連した（日本HR 1.14、統合HR 1.10）が、同胞比較解析ではいずれの国でも関連は消失した。観察された関連は家族内で共有される遺伝・環境要因によるものと考えられる。"
+  },
+  {
+    "id": "pmid-43018839",
+    "pubmed_id": "43018839",
+    "doi": "10.1007/s11657-026-01812-8",
+    "title": "Real-world treatment patterns following denosumab discontinuation: a descriptive epidemiological study.",
+    "abstract": "This descriptive epidemiological study suggests that sequential osteoporosis therapy after denosumab discontinuation is underutilized in real-world practice. Within 1 year after discontinuation, approximately 30% of patients restarted denosumab, approximately half had no subsequent osteoporosis treatment, and only 16% initiated sequential osteoporosis therapy. To describe real-world treatment patterns following denosumab discontinuation, including delayed reinitiation, no subsequent osteoporosis treatment, and sequential osteoporosis therapy. This descriptive epidemiological study used a Japanese claims database (April 2014-March 2024). We included adults aged ≥40 years who newly initiated denosumab and discontinued it after ≥2 doses. Discontinuation was defined as the last administration before a gap of >240 days or final observed administration followed by ≥240 days without another administration. The primary outcomes within 1 year after discontinuation were delayed denosumab reinitiation, no subsequent osteoporosis treatment, and sequential osteoporosis therapy. We also described the type and timing of sequential therapy and estimated the 1-year cumulative incidence of fragility fractures. Among 37,526 eligible patients, the 1-year cumulative incidence of delayed denosumab reinitiation was 29.6%, the probability of no subsequent osteoporosis treatment was 50.9%, and the cumulative incidence of sequential osteoporosis therapy was 16.3%. Oral bisphosphonates were the most frequently used sequential therapy (26.7%), followed by romosozumab (22.2%), selective estrogen receptor modulators (21.3%), intravenous bisphosphonates (15.1%), teriparatide (14.6%), and abaloparatide (0.1%). Sequential therapy was most often initiated 180-209 days after discontinuation, particularly for romosozumab (45.7%), whereas selective estrogen receptor modulators were frequently initiated 0-29 days after discontinuation (39.8%). The 1-year cumulative incidence of fragility fractures was 5.4%. Within 1 year after discontinuation, approximately 30% of patients restarted denosumab, half received no subsequent osteoporosis treatment, and one in six initiated sequential therapy. These findings suggest a substantial gap in the continuity of osteoporosis care.",
+    "authors": [
+      "Yoshiyama T",
+      "Fukasawa T",
+      "Masuda S",
+      "Matsuda S",
+      "Kawakami K"
+    ],
+    "journal": "Archives of osteoporosis",
+    "journal_issn": "1862-3514",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-12",
+    "analysis_methods": [],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本のレセプトデータベース（具体名不明）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 3.55,
+    "sjr_quartile": null,
+    "openalex_topic": "Bone health and osteoporosis research",
+    "openalex_topic_score": 0.995,
+    "openalex_subfield": "Orthopedics and Sports Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10071",
+        "name": "Bone health and osteoporosis research",
+        "score": 0.995
+      },
+      {
+        "id": "T11221",
+        "name": "Bone health and treatments",
+        "score": 0.003
+      },
+      {
+        "id": "T10694",
+        "name": "Menopause: Health Impacts and Treatments",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-16T00:11:55.279Z",
+    "classified": true,
+    "title_ja": "デノスマブ中止後の実臨床における治療パターン：記述疫学研究",
+    "abstract_ja": "日本のレセプトデータベース（2014–2024年）を用いて、デノスマブを2回以上投与後に中止した40歳以上の37,526例の、中止後1年間の治療パターンを記述した。デノスマブ再開は29.6%、後続治療なしは50.9%で、逐次療法への移行は16.3%にとどまった（経口ビスホスホネート、ロモソズマブ、SERMの順に多い）。中止後1年の脆弱性骨折累積発生率は5.4%で、骨粗鬆症治療の継続性に大きなギャップがあることが示された。"
+  },
+  {
+    "id": "pmid-43010985",
+    "pubmed_id": "43010985",
+    "doi": "10.1253/circrep.CR-26-0064",
+    "title": "Postoperative Mortality and Risk Factors in Adults With Congenital Heart Disease Undergoing Cardiovascular Surgery: Insights From the Japanese Registry Data.",
+    "abstract": "Patients with adult congenital heart disease (ACHD) are prone to complications and usually require surgical intervention, but the surgical risk factors remain poorly defined. We analyzed data from April 2013 to March 2023 in the nationwide Japanese Registry of All Cardiac and Vascular Disease-Diagnostic Procedure Combination (JROAD-DPC) to assess postoperative cardiac death and its predictors. This study included ACHD patients aged ≥18 years who underwent cardiovascular surgery, and the primary outcome was in-hospital death. A total of 10,535 patients (median age 53 [interquartile range 36-68] years; 50.4% female) were classified into mild (n=6,831), moderate (n=2,388), and severe (n=1,316) complexity groups. Among the 146 in-hospital deaths (1.4%), the highest mortality rate was observed in patients with severe complexity (2.4%). Multivariable analysis showed that age (hazard ratio [HR] 1.15), severe complexity (HR 1.77), renal disease (HR 1.74), pulmonary hypertension requiring medications (HR 2.01), chromosome abnormality (HR 6.22), and high-risk surgery (Fontan surgery or coronary artery bypass grafting) (HR 1.67) were significantly associated with increased in-hospital deaths. Subgroup analyses showed that age, renal disease, and high-risk surgery were prognostic factors in the mild group. Age was not significant in the moderate or severe groups. The in-hospital mortality rate after cardiovascular surgery in ACHD was low overall but increased with disease complexity, supporting the need for disease complexity-based, individualized risk assessments in surgical planning.",
+    "authors": [
+      "Osawa T",
+      "Machino-Ohtsuka T",
+      "Kume K",
+      "Yano T",
+      "Saji M",
+      "Kanaoka K",
+      "Sumita Y",
+      "Yano Y",
+      "Numata R",
+      "Kawamatsu N",
+      "Kuraoka A",
+      "Kato H",
+      "Hiramatsu Y",
+      "Ishizu T"
+    ],
+    "journal": "Circulation reports",
+    "journal_issn": "2434-0790",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-11",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [
+      "JROAD-DPC"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 1.87,
+    "sjr_quartile": null,
+    "openalex_topic": "Congenital Heart Disease Studies",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Cardiology and Cardiovascular Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10300",
+        "name": "Congenital Heart Disease Studies",
+        "score": 0.999
+      },
+      {
+        "id": "T11055",
+        "name": "Cardiac and Coronary Surgery Techniques",
+        "score": 0
+      },
+      {
+        "id": "T11579",
+        "name": "Cardiovascular and Diving-Related Complications",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-16T00:11:51.033Z",
+    "classified": true,
+    "title_ja": "心血管手術を受けた成人先天性心疾患患者の術後死亡とリスク因子：日本のレジストリデータからの知見",
+    "abstract_ja": "JROAD-DPC（2013–2023年度）を用いて、心血管手術を受けた18歳以上の成人先天性心疾患患者10,535例の院内死亡とその予測因子を解析した。院内死亡は1.4%で、重症複雑度群で最も高かった（2.4%）。年齢、重症複雑度、腎疾患、薬物治療を要する肺高血圧、染色体異常、高リスク手術（Fontan手術・冠動脈バイパス術）が院内死亡と有意に関連し、疾患複雑度に基づく個別のリスク評価の必要性が示された。"
+  },
+  {
+    "id": "pmid-43011108",
+    "pubmed_id": "43011108",
+    "doi": "10.1253/circrep.CR-26-0142",
+    "title": "Trends in the Prescribed Doses of Loop Diuretics in Patients With Heart Failure Prescribed Dapagliflozin or Empagliflozin in Japan: An Interrupted Time Series Analysis.",
+    "abstract": "Sodium-glucose co-transporter 2 (SGLT2) inhibitors and loop diuretics have beneficial diuretic effects in patients with heart failure but may increase the risk of excessive water loss. Therefore, clinical guidelines recommend adjustment of loop diuretic doses when these agents are used concomitantly. However, real-world evidence regarding changes in loop diuretic dosing is limited. This study evaluated changes in prescribed doses of oral loop diuretics in patients with heart failure receiving dapagliflozin or empagliflozin before and after publication of the JCS/JHFS 2021 Guideline Focused Update on Diagnosis and Treatment of Acute and Chronic Heart Failure. Changes in prescribed dose trends were evaluated using monthly aggregated prescription data obtained from the Medical Data Vision database (Medical Data Vision, Inc., Tokyo, Japan). After publication of the guideline, statistically significant decreases were observed in the empagliflozin-prescribed group for azosemide (-0.1756 mg/month; P=0.0360), furosemide (-0.2180 mg/month; P=0.0485), and torsemide (-0.0387 mg/month; P=0.0378), and in the dapagliflozin-prescribed group for azosemide (-0.8221 mg/month; P=0.0260). The study period for dapagliflozin was too short to provide adequate statistical power. The publication of the JCS/JHFS 2021 guideline was associated with decreases in prescribed doses of oral loop diuretics. Dose reduction of oral loop diuretics may be considered in patients receiving concomitant SGLT2 inhibitors in clinical practice.",
+    "authors": [
+      "Miura R",
+      "Okada K"
+    ],
+    "journal": "Circulation reports",
+    "journal_issn": "2434-0790",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-11",
+    "analysis_methods": [
+      "中断時系列分析 (ITS)"
+    ],
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 1.87,
+    "sjr_quartile": null,
+    "openalex_topic": "Heart Failure Treatment and Management",
+    "openalex_topic_score": 0.962,
+    "openalex_subfield": "Cardiology and Cardiovascular Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10198",
+        "name": "Heart Failure Treatment and Management",
+        "score": 0.962
+      },
+      {
+        "id": "T10401",
+        "name": "Diabetes Treatment and Management",
+        "score": 0.032
+      },
+      {
+        "id": "T10144",
+        "name": "Blood Pressure and Hypertension Studies",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-16T00:11:51.276Z",
+    "classified": true,
+    "title_ja": "日本におけるダパグリフロジンまたはエンパグリフロジン処方中の心不全患者へのループ利尿薬処方量の推移：中断時系列分析",
+    "abstract_ja": "MDVデータベースの月次集計処方データを用いて、JCS/JHFS 2021年心不全診療ガイドライン・フォーカスアップデート公表前後のループ利尿薬処方量の変化を中断時系列分析で評価した。公表後、エンパグリフロジン併用群ではアゾセミド・フロセミド・トラセミドの処方量が、ダパグリフロジン併用群ではアゾセミドの処方量が有意に減少した。ガイドラインの公表はSGLT2阻害薬併用時のループ利尿薬減量と関連していた。"
+  },
+  {
+    "id": "pmid-43013188",
+    "pubmed_id": "43013188",
+    "doi": "10.1007/s12282-026-01940-6",
+    "title": "Claims-defined adrenal insufficiency, hypothyroidism, and type 1 diabetes after immune checkpoint inhibitor initiation in patients with triple-negative breast cancer in Japan.",
+    "abstract": "The incidence of treated adrenal insufficiency, hypothyroidism, and type 1 diabetes after immune checkpoint inhibitor (ICI) treatment for triple-negative breast cancer (TNBC) has not been fully characterized in real-world clinical practice in Japan. We conducted a retrospective cohort study using the JMDC claims database, which includes employees of Japanese companies and their dependents. Patients aged 18-74 years with TNBC who received atezolizumab or pembrolizumab between January 2005 and June 2025 were included. Early-stage and advanced TNBC were identified based on the treatment regimen at ICI initiation. We examined the incidence rates and time to onset of claims-defined adrenal insufficiency, hypothyroidism, and type 1 diabetes separately in the two cohorts. The study included 569 patients with early-stage TNBC (median age, 50.8 years) and 254 with advanced TNBC (median age, 52.8 years). In early-stage TNBC, the incidence rates (95% CIs) of adrenal insufficiency and hypothyroidism were 5.6 (4.0-7.8) and 12.7 (10.0-16.0) cases/100 person-years (PY), respectively. The median times to onset (IQRs) were 124 (86-215) and 117 (89-196) days, respectively. In advanced TNBC, the incidence rates (95% CIs) of adrenal insufficiency and hypothyroidism were 1.4 (0.53-3.8) and 9.2 (6.1-13.8) cases/100 PY, respectively. The median time to onset of hypothyroidism was 84 (63-105) days. Type 1 diabetes was rare. This study provides real-world estimates of claims-defined endocrine outcomes after ICI initiation separately in patients with early-stage and advanced TNBC in Japan.",
+    "authors": [
+      "Kawamura C",
+      "Iwagami M",
+      "Bando H"
+    ],
+    "journal": "Breast cancer (Tokyo, Japan)",
+    "journal_issn": "1880-4233",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-11",
+    "analysis_methods": [],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 4.15,
+    "sjr_quartile": null,
+    "openalex_topic": "Cancer Immunotherapy and Biomarkers",
+    "openalex_topic_score": 0.97,
+    "openalex_subfield": "Oncology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10158",
+        "name": "Cancer Immunotherapy and Biomarkers",
+        "score": 0.97
+      },
+      {
+        "id": "T12421",
+        "name": "Adrenal Hormones and Disorders",
+        "score": 0.023
+      },
+      {
+        "id": "T10183",
+        "name": "Breast Cancer Treatment Studies",
+        "score": 0.002
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-16T00:11:51.857Z",
+    "classified": true,
+    "title_ja": "日本のトリプルネガティブ乳癌患者における免疫チェックポイント阻害薬開始後のレセプト定義による副腎不全・甲状腺機能低下症・1型糖尿病",
+    "abstract_ja": "JMDCレセプトデータベースを用いて、アテゾリズマブまたはペムブロリズマブを投与されたトリプルネガティブ乳癌患者（早期569例、進行254例）における内分泌系免疫関連有害事象の発生率と発現時期を評価した。早期例では副腎不全5.6件/100人年、甲状腺機能低下症12.7件/100人年で、発現の中央値はそれぞれ124日・117日だった。進行例では副腎不全1.4件、甲状腺機能低下症9.2件/100人年で、1型糖尿病はまれだった。"
+  },
+  {
+    "id": "pmid-43014769",
+    "pubmed_id": "43014769",
+    "doi": "10.2152/jmi.73.390",
+    "title": "Cross-Sectional Investigation of Associated Factors with Electrocardiogram Abnormalities : Tokushima National Health Insurance Database Study.",
+    "abstract": "The number of patients with cardiovascular disease (CVD) in Japan continues to increase with population aging. Since 2020, the Tokushima Prefecture has implemented universal 12-lead electrocardiography (ECG) screening during specific health checkups to facilitate the early detection of CVD. This study aimed to identify factors associated with ECG abnormalities. Individuals who underwent the 2020 Tokushima Specific Health Checkup were included in this study. Participant characteristics were compared according to the presence of atrial fibrillation (AF) and pathological Q waves (PQW). Logistic regression analyses were conducted to identify associated factors. Among the 54,368 participants (median age, 71 years ; 43.2% men), 538 (1.0%) had AF and 700 (1.3%) had PQW. AF was positively associated with male sex, older age, being overweight and obese, hypertension, prediabetes, and chronic kidney disease (CKD), and negatively associated with hypertriglyceridemia and hyper-low-density lipoprotein cholesterolemia. PQW was positively associated with male sex, older age, being underweight, higher BMI, hypertension, diabetes, dyslipidemia treatment, and CKD, and negatively associated with being overweight. Older age, hypertension, and class ≥ II obesity were positively associated with both AF and PQW. Prediabetes was positively associated with AF, whereas diabetes mellitus was positively associated with PQW. J. Med. Invest. 73 : 390-397, August, 2026.",
+    "authors": [
+      "Ishizu M",
+      "Matsuhisa M"
+    ],
+    "journal": "The journal of medical investigation : JMI",
+    "journal_issn": "1349-6867",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-11",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "徳島県国民健康保険データベース（特定健診データ）"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 1.06,
+    "sjr_quartile": null,
+    "openalex_topic": "Health Promotion and Cardiovascular Prevention",
+    "openalex_topic_score": 0.765,
+    "openalex_subfield": "Public Health, Environmental and Occupational Health",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T14212",
+        "name": "Health Promotion and Cardiovascular Prevention",
+        "score": 0.765
+      },
+      {
+        "id": "T11021",
+        "name": "ECG Monitoring and Analysis",
+        "score": 0.075
+      },
+      {
+        "id": "T10217",
+        "name": "Cardiac electrophysiology and arrhythmias",
+        "score": 0.048
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-16T00:11:53.341Z",
+    "classified": true,
+    "title_ja": "心電図異常の関連因子に関する横断的研究：徳島県国民健康保険データベース研究",
+    "abstract_ja": "徳島県が特定健診で全員に実施している12誘導心電図のデータ（2020年、54,368人）を用いて、心房細動と異常Q波に関連する因子をロジスティック回帰分析で検討した。心房細動は1.0%、異常Q波は1.3%に認められ、高齢、男性、高血圧、慢性腎臓病などが関連した。高齢・高血圧・II度以上の肥満は両者に共通する関連因子で、前糖尿病は心房細動と、糖尿病は異常Q波と関連していた。"
+  },
+  {
+    "id": "pmid-43015217",
+    "pubmed_id": "43015217",
+    "doi": "10.1016/j.jos.2026.10.015",
+    "title": "The proportion, trend, regional difference and mortality of cemented hemiarthroplasties for femoral neck fractures in Japan: Observational study using the diagnosis procedure combination database in Japan.",
+    "abstract": "Hip fractures in older adults pose a substantial global health and socioeconomic burden, and their incidence is projected to double by 2050. Cemented hemiarthroplasty for femoral neck fractures offers benefits such as improved implant stability and reduced risk of periprosthetic fractures, although concerns remain regarding operative time and bone cement implantation syndrome. Despite international guidelines favoring cemented stems, their adoption in Japan remains unclear. This study aimed to clarify national trends, regional variations, and hospital-level differences in the use of cemented hemiarthroplasty for femoral neck fractures in Japan, as well as its association with in-hospital mortality. This retrospective observational study was conducted using data from Japan's Diagnosis Procedure Combination database from 2011 to 2022. Patients undergoing hemiarthroplasty for femoral neck fractures (procedure code K081) and those treated with bone cement were identified. Temporal trends, geographic differences, institutional preferences, and in-hospital mortality were analyzed. Among the cemented group, the Cox proportional hazards model was used to assess the relationship between institutional cement use and mortality. Among 296,841 hemiarthroplasties, 11.4% (n = 33,785) were cemented. The national usage rate remained stable (13.5% in 2011 vs. 13.4% in 2022). Substantial regional variations persisted, with higher usage in Hokkaido-Tohoku, Chubu, and Kansai. Hospital-level analysis revealed a bimodal distribution, with institutions predominantly using either cemented or uncemented stems. In-hospital mortality was slightly higher in the cemented cases (1.5% vs. 1.1%; p < 0.001). However, higher institutional cement use was independently associated with lower mortality (hazard ratio 0.970, 95% confidence interval, 0.945-0.995; p = 0.018). Despite global trends and supportive evidence, cemented hemiarthroplasty remains underutilized in Japan. Persistent regional and institutional disparities highlight the need for targeted educational initiatives and health policy reforms to align practices with international standards and improve patient outcomes.",
+    "authors": [
+      "Ogawa T",
+      "Saka N",
+      "Watanabe Y",
+      "Kawano H",
+      "Mitchell R",
+      "Fushimi K",
+      "Yoshii T"
+    ],
+    "journal": "Journal of orthopaedic science : official journal of the Japanese Orthopaedic Association",
+    "journal_issn": "1436-2023",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-11",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 1.41,
+    "sjr_quartile": null,
+    "openalex_topic": "Hip and Femur Fractures",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11509",
+        "name": "Hip and Femur Fractures",
+        "score": 0.999
+      },
+      {
+        "id": "T10512",
+        "name": "Orthopaedic implants and arthroplasty",
+        "score": 0.001
+      },
+      {
+        "id": "T10658",
+        "name": "Bone fractures and treatments",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-16T00:11:53.724Z",
+    "classified": true,
+    "title_ja": "日本の大腿骨頸部骨折に対するセメント人工骨頭置換術の割合・推移・地域差・死亡率：DPCデータベースを用いた観察研究",
+    "abstract_ja": "DPCデータベース（2011–2022年）を用いて、大腿骨頸部骨折に対する人工骨頭置換術296,841例のセメント使用の動向、地域差、施設差と院内死亡との関連を解析した。セメント使用率は11.4%で、期間を通じて約13%と横ばいであり、地域差が持続し、施設ごとにセメント・非セメントのどちらかに偏る二峰性の分布を示した。院内死亡はセメント例でやや高かったが、施設のセメント使用率が高いほど死亡率は低く（HR 0.970）、国際的な推奨との乖離が示された。"
+  },
+  {
+    "id": "pmid-43007636",
+    "pubmed_id": "43007636",
+    "doi": "10.1007/s40801-026-00588-0",
+    "title": "Health and Economic Burden of Severe Respiratory Syncytial Virus Infections Among Older Adults in Japan: A Retrospective Administrative Database Study.",
+    "abstract": "Respiratory syncytial virus (RSV) is a leading cause of acute respiratory illness and severe outcomes in older adults. This retrospective cohort study investigated the health and economic burden of medically attended RSV infections among adults ≥ 60 years in Japan. Data were collected between 1 September 2008 and 31 August 2021 from the Medical Data Vision (MDV) hospital-based claims database and the insurance-based JMDC database. We investigated RSV-related complications during the first episode. Healthcare resource utilization (HCRU) and medical costs were compared between baseline (pre-event: 30-day average costs during the 365 days before RSV diagnosis) and post-event (30 days after RSV diagnosis); differences were explored using paired sample t-tests (p < 0.05). A total of 178 cases identified between 2009 and 2019 were included in the study, 144 were from the MDV database (mean age 74 years) and 34 from the JMDC database (mean age 64 years). RSV-related complications were recorded in 61.1% and 55.9% of the MDV and JMDC cohorts, respectively. HCRU in the MDV cohort increased significantly from pre- to post-event (average number of outpatient visits per case: 1.21 to 2.07; average number of hospitalizations per case: 0.07 to 0.37), resulting in significant additional medical costs of ¥196,231 (p < 0.001). Medically attended RSV infections were associated with substantial short-term increases in HCRU and total medical costs among older adults in Japan. These findings may help inform prevention strategies for severe RSV disease.",
+    "authors": [
+      "Akiyama S",
+      "Ho YF",
+      "Preckler V",
+      "Matsuki T",
+      "Harrington L",
+      "Mizukami A"
+    ],
+    "journal": "Drugs - real world outcomes",
+    "journal_issn": "2199-1154",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-10",
+    "analysis_methods": [],
+    "databases_used": [
+      "MDV",
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "医療資源利用・経済評価",
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 2.98,
+    "sjr_quartile": null,
+    "openalex_topic": "Respiratory viral infections research",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Epidemiology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11243",
+        "name": "Respiratory viral infections research",
+        "score": 0.999
+      },
+      {
+        "id": "T10654",
+        "name": "Pneumonia and Respiratory Infections",
+        "score": 0
+      },
+      {
+        "id": "T10804",
+        "name": "Health Systems, Economic Evaluations, Quality of Life",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-16T00:11:50.515Z",
+    "classified": true,
+    "title_ja": "日本の高齢者における重症RSウイルス感染症の健康・経済的負担：後方視的管理データベース研究",
+    "abstract_ja": "MDVとJMDCのデータベース（2008–2021年）を用いて、60歳以上の医療機関受診を伴うRSウイルス感染症178例の合併症、医療資源利用、医療費を評価した。RSV関連合併症はMDVで61.1%、JMDCで55.9%に認められた。MDVコホートでは診断後30日間に外来受診・入院が有意に増加し、1例あたり約19.6万円の追加医療費が生じており、予防戦略の検討に資する知見が得られた。"
+  },
+  {
+    "id": "pmid-43003428",
+    "pubmed_id": "43003428",
+    "doi": "10.1111/dom.71532",
+    "title": "Diabetes Type and Perinatal Adverse Outcomes Among Women in Pregnancy and Neonates in Japan: A Cohort Study Using a Large-Scale Database.",
+    "abstract": "To compare maternal and neonatal outcomes across gestational diabetes, preexisting diabetes, overt diabetes in pregnancy and normoglycaemia in Japan. Using the JMDC claims database, we conducted a retrospective cohort study of mother-neonate pairs from 2015 to 2024. Maternal glycaemic status was classified as normoglycaemia, gestational diabetes, preexisting diabetes or overt diabetes in pregnancy using diagnoses, prescriptions, procedures and timing. Multivariable logistic regression estimated adjusted odds ratios (aORs) and 95% confidence intervals (CIs) for maternal pre-eclampsia/eclampsia and severe neonatal complications (neonatal death, foetal distress or neonatal intensive care unit admission). Among 244 402 neonates from 205 594 mothers, gestational diabetes, preexisting diabetes and overt diabetes were identified in 20 116 (8.2%), 3287 (1.3%) and 901 (0.4%), respectively. Compared with normoglycaemia, gestational diabetes, preexisting diabetes and overt diabetes were associated with higher risks of maternal pre-eclampsia/eclampsia, with aORs of 1.34 (95% CI: 1.21-1.48), 1.96 (1.64-2.33) and 1.89 (1.35-2.64), respectively. Corresponding aORs for severe neonatal complications were 1.45 (1.38-1.52), 1.95 (1.77-2.15) and 2.55 (2.14-3.03), respectively. Compared directly with preexisting diabetes, overt diabetes was associated with higher odds of severe neonatal complications (aOR: 1.31; 95% CI: 1.07-1.59), with no statistically significant difference detected in maternal pre-eclampsia/eclampsia (aOR: 0.96; 95% CI: 0.67-1.40). Maternal and neonatal risks varied by hyperglycaemic status. Overt diabetes was associated with a higher risk of severe neonatal complications than preexisting diabetes, with no statistically significant difference detected in maternal pre-eclampsia/eclampsia. Further validation using longitudinal data around pregnancy is warranted.",
+    "authors": [
+      "Okada A",
+      "Kawaguchi T",
+      "Inoue R",
+      "Aoyama T",
+      "Hashimoto Y",
+      "Ono S",
+      "Yamaguchi S",
+      "Sugiyama T",
+      "Kadowaki T",
+      "Yamauchi T"
+    ],
+    "journal": "Diabetes, obesity & metabolism",
+    "journal_issn": "1463-1326",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-09",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 6.46,
+    "sjr_quartile": null,
+    "openalex_topic": "Gestational Diabetes Research and Management",
+    "openalex_topic_score": 1,
+    "openalex_subfield": "Obstetrics and Gynecology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10673",
+        "name": "Gestational Diabetes Research and Management",
+        "score": 1
+      },
+      {
+        "id": "T12741",
+        "name": "Maternal and Neonatal Healthcare",
+        "score": 0
+      },
+      {
+        "id": "T10290",
+        "name": "Pregnancy and preeclampsia studies",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-16T00:11:48.457Z",
+    "classified": true,
+    "title_ja": "日本における糖尿病の病型と妊婦・新生児の周産期有害転帰：大規模データベースを用いたコホート研究",
+    "abstract_ja": "JMDCレセプトデータベース（2015–2024年）の母子ペア（新生児244,402人）を用いて、妊娠糖尿病・既往糖尿病・妊娠中の明らかな糖尿病・正常血糖で母体と新生児の転帰を比較した。正常血糖と比べ、いずれの病型も妊娠高血圧腎症・子癇および重症新生児合併症のリスク上昇と関連し、新生児合併症の調整ORは明らかな糖尿病で最も高かった（2.55）。明らかな糖尿病は既往糖尿病よりも重症新生児合併症のリスクが高かった。"
+  },
+  {
+    "id": "pmid-43000132",
+    "pubmed_id": "43000132",
+    "doi": "10.1253/circj.CJ-26-0832",
+    "title": "Current Status and Outcomes of Infective Endocarditis in Adults With Congenital Heart Disease in Japan　- A Nationwide JROAD-DPC Analysis.",
+    "abstract": "Nationwide data on infective endocarditis (IE) in adults with congenital heart disease (ACHD) in Japan are limited. Using a nationwide Japanese administrative database (2013-2023), we identified 822 ACHD patients (median age 41 years; 32.0% female) hospitalized for IE. In-hospital mortality rate was 4.0%, and cardiac surgery was performed in 38.6%. Older age, severe CHD complexity, and pulmonary hypertension were independently associated with in-hospital death. This study clarified the clinical characteristics and outcomes of IE in ACHD in Japan.",
+    "authors": [
+      "Machino-Ohtsuka T",
+      "Osawa T",
+      "Yano Y",
+      "Kume K",
+      "Yano T",
+      "Nakai M",
+      "Kanaoka K",
+      "Sumita Y",
+      "Kawamatsu N",
+      "Ishizu T"
+    ],
+    "journal": "Circulation journal : official journal of the Japanese Circulation Society",
+    "journal_issn": "1347-4820",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-08",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [
+      "JROAD-DPC"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 4.38,
+    "sjr_quartile": null,
+    "openalex_topic": "Infective Endocarditis Diagnosis and Management",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Cardiology and Cardiovascular Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11551",
+        "name": "Infective Endocarditis Diagnosis and Management",
+        "score": 0.999
+      },
+      {
+        "id": "T10300",
+        "name": "Congenital Heart Disease Studies",
+        "score": 0
+      },
+      {
+        "id": "T11579",
+        "name": "Cardiovascular and Diving-Related Complications",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-16T00:11:43.026Z",
+    "classified": true,
+    "title_ja": "日本の成人先天性心疾患患者における感染性心内膜炎の現状と転帰：全国JROAD-DPC解析",
+    "abstract_ja": "JROAD-DPC（2013–2023年）を用いて、感染性心内膜炎で入院した成人先天性心疾患患者822例の臨床的特徴と転帰を解析した。院内死亡率は4.0%で、38.6%に心臓手術が施行された。高齢、重症の先天性心疾患複雑度、肺高血圧が院内死亡の独立した関連因子だった。"
+  },
+  {
     "id": "pmid-42998024",
     "pubmed_id": "42998024",
     "doi": "10.1093/mr/roag097",
@@ -30,11 +880,27 @@
     ],
     "impact_factor": 2.25,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "IgG4-Related and Inflammatory Diseases",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Rheumatology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11576",
+        "name": "IgG4-Related and Inflammatory Diseases",
+        "score": 0.999
+      },
+      {
+        "id": "T11725",
+        "name": "Immunodeficiency and Autoimmune Disorders",
+        "score": 0
+      },
+      {
+        "id": "T11892",
+        "name": "Kawasaki Disease and Coronary Complications",
+        "score": 0
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-11-09T00:12:38.166Z",
     "classified": true,
@@ -97,6 +963,62 @@
     "classified": true,
     "title_ja": "日本人女性における自己申告の食べる速さと乳がんリスク：LIFE Studyの後方視的コホート研究",
     "abstract_ja": "19自治体の健診記録とレセプトを連結し、食べる速さと乳がん発症の関連をCoxモデルで解析した。速食いと遅食いを普通と比較して評価した。"
+  },
+  {
+    "id": "pmid-42994918",
+    "pubmed_id": "42994918",
+    "doi": "10.1136/bmjopen-2026-127395",
+    "title": "Growth of catheter ablation in Japan: a nationwide observational study of hospital activity, fiscal years 2014-2024.",
+    "abstract": "Catheter ablation volume has grown rapidly in Japan, but whether this growth was driven by existing facilities or by new entrants, and whether it was accompanied by concentration into high-volume centres, remains unknown. Retrospective observational study using an 11-year facility-level panel constructed from Diagnosis Procedure Combination (DPC) open data. Facilities were linked across years by record linkage based on continuity of registry numbers, locations and case volumes. All Japanese DPC hospitals disclosed in the DPC open data (≥10 catheter ablation cases/year), fiscal years 2014–2024. 867 unique facilities contributing 6886 facility-years. Growth accounting decomposing the net volume increase into the intensive margin (volume increase at existing facilities), entry and exit; concentration indices (Gini coefficient and five-facility concentration ratio (CR5)); and the association between baseline volume and subsequent growth. Total volume increased 2.58-fold, from 51 619 to 133 229 cases and the number of facilities increased from 469 to 764. Of the cumulative net increase of 81 610 cases, 84.7% arose from volume increases at existing facilities, whereas net entry and exit contributed 15.3%. Both concentration indices declined (Gini coefficient, 0.524 to 0.485; CR5, 7.5 to 4.3%), indicating no concentration into high-volume facilities. Among continuing facilities, those with smaller baseline volumes grew at higher rates (median growth ratio, 4.37 for <50 baseline cases vs 1.34 for ≥300). Volume increased 2.3-fold to 2.8-fold across all nine regions. The expansion of catheter ablation in Japan was driven predominantly by existing facilities rather than new entrants and was not accompanied by concentration into high-volume centres or into specific regions; smaller facilities showed larger relative increases. Ablation has thus expanded as a dispersed hospital network, and planning and quality assurance should take this structure as their starting point.",
+    "authors": [
+      "Yoshizawa T",
+      "Fushimi K",
+      "Sumida Y"
+    ],
+    "journal": "BMJ open",
+    "journal_issn": "2044-6055",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-06",
+    "analysis_methods": [],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [
+      "DPCオープンデータ（施設別公開データ）"
+    ],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 3.51,
+    "sjr_quartile": null,
+    "openalex_topic": "Healthcare Policy and Management",
+    "openalex_topic_score": 0.6,
+    "openalex_subfield": "Economics and Econometrics",
+    "openalex_field": "Economics, Econometrics and Finance",
+    "openalex_topics": [
+      {
+        "id": "T10391",
+        "name": "Healthcare Policy and Management",
+        "score": 0.6
+      },
+      {
+        "id": "T11217",
+        "name": "Cardiac Arrhythmias and Treatments",
+        "score": 0.159
+      },
+      {
+        "id": "T12871",
+        "name": "Healthcare Quality and Management",
+        "score": 0.042
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-16T00:11:37.014Z",
+    "classified": true,
+    "title_ja": "日本におけるカテーテルアブレーションの拡大：病院の診療実績に関する全国観察研究（2014–2024年度）",
+    "abstract_ja": "DPCオープンデータから11年分の施設別パネルを構築し、カテーテルアブレーション件数の増加要因と集中度を分析した。総件数は51,619件から133,229件へ2.58倍に増え、増加分の84.7%は既存施設の件数増加によるもので、新規参入の寄与は15.3%だった。ジニ係数やCR5は低下して高件数施設への集中は見られず、ベースライン件数の少ない施設ほど伸び率が高かった。"
   },
   {
     "id": "pmid-42984907",
@@ -57230,14 +58152,14 @@
     "last_updated": "2026-05-11T18:50:56.857Z",
     "classified": true,
     "openalex_topic": "Healthcare cost, quality, practices",
-    "openalex_topic_score": 0.999,
+    "openalex_topic_score": 0.998,
     "openalex_subfield": "General Health Professions",
     "openalex_field": "Health Professions",
     "openalex_topics": [
       {
         "id": "T13555",
         "name": "Healthcare cost, quality, practices",
-        "score": 0.999
+        "score": 0.998
       },
       {
         "id": "T10391",
@@ -57245,8 +58167,8 @@
         "score": 0.001
       },
       {
-        "id": "T11314",
-        "name": "Clinical Laboratory Practices and Quality Control",
+        "id": "T12781",
+        "name": "Global Health Care Issues",
         "score": 0
       }
     ]
