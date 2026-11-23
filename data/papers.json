@@ -29583,7 +29583,7 @@
     "pubmed_id": "41995980",
     "doi": "10.1007/s10029-026-03674-y",
     "title": "Long-term trends and surgical patterns in recurrent groin hernia repair in Japan: insights from the National Clinical Database (2022-2024).",
-    "abstract": "",
+    "abstract": "PURPOSE: Long-term follow-up after groin hernia repair is inherently challenging, and procedure-based registries do not directly capture true recurrence rates. Using the hernia-specific data collection of the National Clinical Database (NCD), which records detailed information at the time of surgery for recurrence, this study aimed to clarify the timing and hernia types of surgically treated recurrent groin hernias, including very long-term reoperations following childhood repair. METHODS: Recurrence-related analyses were conducted using the hernia-specific data collection of the NCD. The analyses focused on annual surgical volumes of primary and recurrent groin hernia repair, the timing of reoperation and hernia type at reoperation among recurrent cases, and a predefined subanalysis of very long-term reoperations following childhood hernia repair. RESULTS: Recurrent surgeries accounted for 3.6–3.8% of all registered lesions each year (47,753 in 2022; 53,389 in 2023; and 56,140 in 2024). In men, medial inguinal hernias predominated among recurrent lesions, whereas femoral hernias were disproportionately frequent in women. Reoperations most commonly observed within two years but were also observed long after primary repair, including after mesh placement. Among patients with childhood repair, most reoperations occurred after age 60, predominantly for medial inguinal hernias, suggesting adult-type hernia development rather than true postoperative recurrence. CONCLUSION: This large-scale, registry-based analysis delineates characteristic mid- to long-term patterns of surgically treated groin hernia recurrence and provides the first detailed evaluation of timing and hernia type following pediatric repair.",
     "authors": [
       "Sato M",
       "Yamamoto H",
@@ -29609,14 +29609,15 @@
     "additional_data_sources": [],
     "study_design": "後方視的コホート研究",
     "research_categories": [
-      "医療資源利用・経済評価"
+      "治療実態・処方パターン",
+      "治療効果・有効性"
     ],
     "impact_factor": 2.11,
     "sjr_quartile": null,
     "auto_detected": true,
     "collected_at": "2026-04-20T17:51:28.280Z",
     "last_updated": "2026-04-27T18:00:16.410Z",
-    "abstract_ja": "",
+    "abstract_ja": "NCDのヘルニア専用データ（2022〜2024年）を用いて、手術を要した再発鼠径ヘルニアの時期とヘルニア型を分析した。再発手術は毎年の全登録病変の3.6〜3.8%を占め、男性では内鼠径ヘルニア、女性では大腿ヘルニアが再発病変に多かった。再手術は初回修復後2年以内が最も多いが、メッシュ使用後も含め長期経過後にも生じており、小児期修復例の再手術は大半が60歳以降の内鼠径ヘルニアで、真の再発より成人型ヘルニアの新規発症と考えられた。",
     "classified": true,
     "openalex_topic": "Hernia repair and management",
     "openalex_topic_score": 0.996,
@@ -29763,7 +29764,7 @@
     "pubmed_id": "41987099",
     "doi": "10.1186/s12889-026-27206-6",
     "title": "Impact of HIV diagnosis on job separation in Japanese employed men: a retrospective matched cohort study using an administrative claims database.",
-    "abstract": "",
+    "abstract": "BACKGROUND: People living with HIV (PLWH) have been reported to have higher unemployment rates than the general population. However, most previous studies were cross-sectional and lacked appropriate controls. To assess the impact of HIV diagnosis on job separation, we conducted a retrospective matched cohort study using a Japanese claims database of employed men. METHODS: We conducted a retrospective matched cohort study of newly diagnosed male PLWH and non-PLWH controls using a Japanese administrative claims database mainly covering employees of larger enterprises. PLWH were matched 1:5 with controls based on age, dependent family status, psychiatric history, cancer history, and insurance enrollment month/year. The primary outcome was job separation within three years from diagnosis. For subgroup analyses, PLWH were stratified by prescriptions for Pneumocystis jirovecii pneumonia (PJP) prophylaxis or treatment as a proxy for CD4 count < 200 cells/µL. RESULTS: A total of 1,031 newly diagnosed male PLWH and 5,155 matched controls were included. Overall, the PLWH group had a higher risk of job separation than the control group (three-year incidence: 36.8% vs. 31.4%; HR 1.17, 95% CI: 1.05–1.31, p = 0.005). However, the higher CD4 count group (n = 776) showed no significant difference from their controls (37.7% vs. 34.3%; HR 1.07, 95% CI: 0.94–1.21, p = 0.30). In contrast, the lower CD4 count group (n = 255) had a significantly higher risk (33.6% vs. 22.5%; HR 1.69, 95% CI: 1.34–2.14, p < 0.001). CONCLUSIONS: An HIV diagnosis was associated with increased job separation risk overall. However, using background-matched controls, the higher CD4 count group showed no increased risk. This suggests that HIV diagnosis itself may not increase the risk of job separation among individuals diagnosed at an early stage.",
     "authors": [
       "Arisato Y",
       "Ikeuchi K",
@@ -29779,10 +29780,14 @@
     "journal_issn": "1471-2458",
     "entrez_year": 2026,
     "entrez_date": "2026-04-16",
-    "analysis_methods": [],
+    "analysis_methods": [
+      "生存時間分析"
+    ],
     "title_ja": "日本の男性就業者におけるHIV診断が離職に与える影響：行政レセプトデータベースを用いた後方視的マッチドコホート研究",
     "databases_used": [],
-    "additional_data_sources": [],
+    "additional_data_sources": [
+      "大企業の被用者を主な対象とする日本のレセプトデータベース（DB名非記載）"
+    ],
     "study_design": "後方視的コホート研究",
     "research_categories": [
       "疾病負荷・自然歴"
@@ -29792,7 +29797,7 @@
     "auto_detected": true,
     "collected_at": "2026-04-20T17:51:36.498Z",
     "last_updated": "2026-04-27T18:00:16.410Z",
-    "abstract_ja": "",
+    "abstract_ja": "大企業の被用者を主な対象とする日本のレセプトデータベースを用いて、新規にHIVと診断された男性1,031人と背景をマッチさせた対照5,155人を比較した後方視的マッチドコホート研究。診断後3年以内の離職リスクはHIV群で高かった（36.8% vs 31.4%、HR 1.17）。ただしニューモシスチス肺炎の予防・治療薬の処方をCD4低値の代替指標とすると、リスク上昇はCD4低値群に限られ（HR 1.69）、CD4高値群では対照と差がなかった（HR 1.07）ことから、早期に診断された場合はHIV診断そのものが離職を増やすわけではない可能性が示された。",
     "classified": true,
     "openalex_topic": "HIV-related health complications and treatments",
     "openalex_topic_score": 0.661,
@@ -30539,7 +30544,7 @@
     "pubmed_id": "41965482",
     "doi": "10.1007/s12928-026-01283-1",
     "title": "Early impact of Japan's 2024 physician work hour reform on cardiovascular revascularization: a multi-center interrupted time series analysis using a National-Level DPC database.",
-    "abstract": "",
+    "abstract": "Japan introduced nationwide physician work-hour limits in April 2024. Because cardiovascular emergencies require continuous in-hospital availability, concerns existed that restricting duty hours could reduce access to revascularization or worsen clinical outcomes. We performed a nationwide retrospective interrupted time series analysis using weekly data from 163 acute-care hospitals participating in the Quality Indicator/Improvement Project database. Adult patients undergoing percutaneous coronary intervention (PCI) or coronary artery bypass grafting (CABG) for ischemic cardiovascular disease between 2014 and 2024 were included. Weekly procedure counts were modeled using segmented Poisson regression with adjustment for secular and seasonal trends. In-hospital mortality was evaluated as a secondary outcome. Subgroup analyses assessed weekend/holiday presentations, primary PCI achieving door-to-balloon time < 90 min, and institutional work-hour designation. A total of 329,659 revascularization procedures were analyzed. After April 2024, no significant immediate change and no significant change in slope were observed for weekly emergent PCI (level Risk Ratio (RR) = 0.97, 95% confidence interval (CI) 0.92–1.02), emergent CABG (RR = 0.83, 95% CI 0.58–1.17), elective PCI, or total PCI/CABG. Subgroup analyses showed consistent results, with stable weekly counts among weekend/holiday emergent PCI and primary PCI with door-to-balloon time < 90 min, and in hospitals under both Level A and Level B work-hour standards. In-hospital mortality for emergent PCI (RR = 1.11, 95% CI 0.91–1.36), elective PCI, and emergent CABG also showed no significant change. Early implementation of Japan’s physician work-hour reform was not associated with reductions in revascularization activity or increases in short-term mortality.",
     "authors": [
       "Morishita T",
       "Takada D",
@@ -30559,17 +30564,20 @@
     "databases_used": [
       "DPC"
     ],
-    "additional_data_sources": [],
+    "additional_data_sources": [
+      "QIプロジェクト参加病院のDPCデータ"
+    ],
     "study_design": "後方視的コホート研究",
     "research_categories": [
-      "医療資源利用・経済評価"
+      "医療資源利用・経済評価",
+      "医療の質・アクセスの格差"
     ],
     "impact_factor": 2.34,
     "sjr_quartile": null,
     "auto_detected": true,
     "collected_at": "2026-04-13T17:53:02.692Z",
     "last_updated": "2026-04-20T17:51:08.381Z",
-    "abstract_ja": "",
+    "abstract_ja": "2024年4月に導入された医師の時間外労働上限規制の影響を、QIプロジェクトに参加する急性期163病院のDPCデータ（2014〜2024年、血行再建術329,659件）を用いた中断時系列分析で検証した。規制導入後、緊急・待機的PCIおよび緊急CABGの週次件数に有意な水準・傾きの変化はなく（緊急PCI RR 0.97）、休日の緊急PCI、Door-to-balloon 90分未満のprimary PCI、A水準・B水準の病院別でも結果は一貫していた。院内死亡率にも有意な変化はなく、改革の早期段階で血行再建の実施減少や短期死亡の悪化は認められなかった。",
     "classified": true,
     "openalex_topic": "Hospital Admissions and Outcomes",
     "openalex_topic_score": 0.914,
@@ -30768,89 +30776,6 @@
         "id": "T10845",
         "name": "Advanced Causal Inference Techniques",
         "score": 0.048
-      }
-    ]
-  },
-  {
-    "id": "pmid-41946904",
-    "pubmed_id": "41946904",
-    "doi": "10.1007/s00595-026-03266-4",
-    "title": "2024 National Clinical Database annual report by the Japan surgical society.",
-    "abstract": "",
-    "authors": [
-      "Yamamoto T",
-      "Takahashi A",
-      "Yoshizumi T",
-      "Ishihara S",
-      "Inomata M",
-      "Imoto S",
-      "Eguchi H",
-      "Ebata T",
-      "Otsuka M",
-      "Okuyama H",
-      "Kakeji Y",
-      "Kato T",
-      "Kamei T",
-      "Saiki Y",
-      "Saito A",
-      "Shimizu H",
-      "Soga Y",
-      "Tajiri T",
-      "Nogi H",
-      "Hatano E",
-      "Hara H",
-      "Bitoh Y",
-      "Mizushima T",
-      "Minatoya K",
-      "Miyagawa S",
-      "Yamauchi H",
-      "Yoshino I",
-      "Baba H",
-      "Matsubara H",
-      "Ohki T",
-      "Hasegawa K",
-      "Taketomi A"
-    ],
-    "journal": "Surgery today",
-    "journal_issn": "1436-2813",
-    "entrez_year": 2026,
-    "entrez_date": "2026-04-07",
-    "analysis_methods": [],
-    "title_ja": "日本外科学会による2024年National Clinical Database年次報告",
-    "databases_used": [
-      "NCD"
-    ],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "医療資源利用・経済評価"
-    ],
-    "impact_factor": 1.82,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-04-13T17:53:13.833Z",
-    "last_updated": "2026-04-20T17:51:08.381Z",
-    "abstract_ja": "",
-    "classified": true,
-    "openalex_topic": "Esophageal Cancer Research and Treatment",
-    "openalex_topic_score": 0.715,
-    "openalex_subfield": "Surgery",
-    "openalex_field": "Medicine",
-    "openalex_topics": [
-      {
-        "id": "T10619",
-        "name": "Esophageal Cancer Research and Treatment",
-        "score": 0.715
-      },
-      {
-        "id": "T11658",
-        "name": "Esophageal and GI Pathology",
-        "score": 0.015
-      },
-      {
-        "id": "T12020",
-        "name": "Enhanced Recovery After Surgery",
-        "score": 0.011
       }
     ]
   },
@@ -33117,60 +33042,6 @@
     ]
   },
   {
-    "id": "pmid-41838142",
-    "pubmed_id": "41838142",
-    "doi": "10.1007/s00405-026-10150-x",
-    "title": "Association between modifiable lifestyle factors and the incidences of sudden sensorineural hearing loss and Meniere's disease: A population-based nested case-control study.",
-    "abstract": "",
-    "authors": [
-      "Fujita M",
-      "Nagashima K",
-      "Onouchi Y",
-      "Fujisawa T",
-      "Hata A"
-    ],
-    "journal": "European archives of oto-rhino-laryngology : official journal of the European Federation of Oto-Rhino-Laryngological Societies (EUFOS) : affiliated with the German Society for Oto-Rhino-Laryngology - Head and Neck Surgery",
-    "journal_issn": "1434-4726",
-    "entrez_year": 2026,
-    "entrez_date": "2026-03-16",
-    "title_ja": "修正可能な生活習慣因子と突発性感音難聴およびメニエール病の発生率の関連：人口ベースのネステッド症例対照研究",
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "後方視的コホート研究",
-    "research_categories": [
-      "疾病負荷・自然歴"
-    ],
-    "impact_factor": 1.89,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-23T17:44:18.060Z",
-    "last_updated": "2026-04-27T18:00:16.410Z",
-    "analysis_methods": [],
-    "abstract_ja": "",
-    "classified": true,
-    "openalex_topic": "Vestibular and auditory disorders",
-    "openalex_topic_score": 0.996,
-    "openalex_subfield": "Neurology",
-    "openalex_field": "Neuroscience",
-    "openalex_topics": [
-      {
-        "id": "T10542",
-        "name": "Vestibular and auditory disorders",
-        "score": 0.996
-      },
-      {
-        "id": "T10334",
-        "name": "Hearing, Cochlea, Tinnitus, Genetics",
-        "score": 0.003
-      },
-      {
-        "id": "T10283",
-        "name": "Hearing Loss and Rehabilitation",
-        "score": 0
-      }
-    ]
-  },
-  {
     "id": "pmid-41834628",
     "pubmed_id": "41834628",
     "doi": "10.31616/asj.2025.0496",
@@ -33757,68 +33628,6 @@
         "id": "T10235",
         "name": "Health disparities and outcomes",
         "score": 0.061
-      }
-    ]
-  },
-  {
-    "id": "pmid-41806210",
-    "pubmed_id": "41806210",
-    "doi": "10.1007/s00595-026-03275-3",
-    "title": "Trends in groin hernia repair in Japan: analysis of the 2023 annual report from the National Clinical Database.",
-    "abstract": "",
-    "authors": [
-      "Sato M",
-      "Yamamoto H",
-      "Poudel S",
-      "Nagae I",
-      "Matsubara T",
-      "Tazaki T",
-      "Takagi T",
-      "Shirabe K",
-      "Ueno H",
-      "Hachisuka T",
-      "Miyazaki K"
-    ],
-    "journal": "Surgery today",
-    "journal_issn": "1436-2813",
-    "entrez_year": 2026,
-    "entrez_date": "2026-03-10",
-    "databases_used": [
-      "NCD"
-    ],
-    "additional_data_sources": [],
-    "study_design": "後方視的コホート研究",
-    "research_categories": [
-      "医療資源利用・経済評価"
-    ],
-    "impact_factor": 1.77,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:00:19.059Z",
-    "analysis_methods": [],
-    "title_ja": "日本における鼠径ヘルニア修復の動向：NCD 2023年次報告からの分析",
-    "last_updated": "2026-05-11T18:50:56.857Z",
-    "abstract_ja": "",
-    "classified": true,
-    "openalex_topic": "Hernia repair and management",
-    "openalex_topic_score": 0.994,
-    "openalex_subfield": "Surgery",
-    "openalex_field": "Medicine",
-    "openalex_topics": [
-      {
-        "id": "T10961",
-        "name": "Hernia repair and management",
-        "score": 0.994
-      },
-      {
-        "id": "T11246",
-        "name": "Sports injuries and prevention",
-        "score": 0.001
-      },
-      {
-        "id": "T12089",
-        "name": "Intestinal and Peritoneal Adhesions",
-        "score": 0
       }
     ]
   },
@@ -40099,67 +39908,6 @@
     ]
   },
   {
-    "id": "pmid-41591527",
-    "pubmed_id": "41591527",
-    "doi": "10.1007/s00595-026-03231-1",
-    "title": "Epidemiological study of colovesical fistula as a complication of colonic diverticulitis in Japan: an analysis of claims data.",
-    "abstract": "",
-    "authors": [
-      "Omotaka S",
-      "Den H",
-      "Yamauchi T",
-      "Tokunaga R",
-      "Ogihara S",
-      "Isozaki M",
-      "Hobo T",
-      "Yokoyama N",
-      "Inoue H",
-      "Kokaze A"
-    ],
-    "journal": "Surgery today",
-    "journal_issn": "1436-2813",
-    "entrez_year": 2026,
-    "entrez_date": "2026-01-27",
-    "databases_used": [],
-    "additional_data_sources": [
-      "レセプトデータ（DB名不明）"
-    ],
-    "study_design": "後方視的コホート研究",
-    "research_categories": [
-      "疾病負荷・自然歴"
-    ],
-    "impact_factor": 1.77,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:00:44.532Z",
-    "analysis_methods": [],
-    "title_ja": "日本における大腸憩室炎の合併症としての結腸膀胱瘻の疫学研究：レセプトデータ分析",
-    "last_updated": "2026-05-11T18:50:56.857Z",
-    "abstract_ja": "レセプトデータを用いた結腸憩室炎合併結腸膀胱瘻の疫学研究。アブストラクトなし。",
-    "classified": true,
-    "openalex_topic": "Diverticular Disease and Complications",
-    "openalex_topic_score": 0.998,
-    "openalex_subfield": "Surgery",
-    "openalex_field": "Medicine",
-    "openalex_topics": [
-      {
-        "id": "T12518",
-        "name": "Diverticular Disease and Complications",
-        "score": 0.998
-      },
-      {
-        "id": "T11473",
-        "name": "Appendicitis Diagnosis and Management",
-        "score": 0
-      },
-      {
-        "id": "T13697",
-        "name": "Biliary and Gastrointestinal Fistulas",
-        "score": 0
-      }
-    ]
-  },
-  {
     "id": "pmid-41585889",
     "pubmed_id": "41585889",
     "doi": "10.3389/fphar.2025.1700587",
@@ -45397,57 +45145,6 @@
         "id": "T11373",
         "name": "Sleep and Work-Related Fatigue",
         "score": 0.002
-      }
-    ]
-  },
-  {
-    "id": "pmid-41393249",
-    "pubmed_id": "41393249",
-    "doi": "10.1002/joa3.70251",
-    "title": "Systemic Hurdles, Not Cardiologist Awareness: The Barriers to CPET Availability in Japan.",
-    "abstract": "",
-    "authors": [
-      "Kamihara T",
-      "Omura T",
-      "Shimizu A"
-    ],
-    "journal": "Journal of arrhythmia",
-    "journal_issn": "1880-4276",
-    "entrez_year": 2025,
-    "entrez_date": "2025-12-15",
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "その他"
-    ],
-    "impact_factor": 1.29,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:00:57.527Z",
-    "analysis_methods": [],
-    "title_ja": "心臓専門医の認識ではなくシステムの障壁：日本におけるCPET利用可能性の障壁",
-    "abstract_ja": "",
-    "classified": true,
-    "openalex_topic": "Cardiovascular and exercise physiology",
-    "openalex_topic_score": 0.426,
-    "openalex_subfield": "Complementary and alternative medicine",
-    "openalex_field": "Medicine",
-    "openalex_topics": [
-      {
-        "id": "T11209",
-        "name": "Cardiovascular and exercise physiology",
-        "score": 0.426
-      },
-      {
-        "id": "T10598",
-        "name": "Cardiac pacing and defibrillation studies",
-        "score": 0.358
-      },
-      {
-        "id": "T10172",
-        "name": "Cardiac Valve Diseases and Treatments",
-        "score": 0.023
       }
     ]
   },
@@ -56105,46 +55802,6 @@
         "id": "T10206",
         "name": "Meta-analysis and systematic reviews",
         "score": 0.001
-      }
-    ]
-  },
-  {
-    "id": "pmid-41005448",
-    "pubmed_id": "41005448",
-    "doi": "10.1016/j.bone.2025.117661",
-    "title": "Structural challenges in using Japanese claims databases for real-world evidence in osteoporosis research.",
-    "abstract": "",
-    "authors": [
-      "Kawaguchi H"
-    ],
-    "journal": "Bone",
-    "journal_issn": "1873-2763",
-    "entrez_year": 2025,
-    "entrez_date": "2025-09-26",
-    "databases_used": [],
-    "additional_data_sources": [],
-    "study_design": "その他",
-    "research_categories": [
-      "方法論・バリデーション"
-    ],
-    "impact_factor": 2.93,
-    "sjr_quartile": null,
-    "auto_detected": true,
-    "collected_at": "2026-03-25T11:01:39.318Z",
-    "analysis_methods": [],
-    "title_ja": "骨粗鬆症研究におけるリアルワールドエビデンスのための日本のレセプトデータベース利用における構造的課題",
-    "last_updated": "2026-05-11T18:50:56.857Z",
-    "abstract_ja": "",
-    "classified": true,
-    "openalex_topic": "Biomedical Text Mining and Ontologies",
-    "openalex_topic_score": 0.941,
-    "openalex_subfield": "Molecular Biology",
-    "openalex_field": "Biochemistry, Genetics and Molecular Biology",
-    "openalex_topics": [
-      {
-        "id": "T11710",
-        "name": "Biomedical Text Mining and Ontologies",
-        "score": 0.941
       }
     ]
   },
