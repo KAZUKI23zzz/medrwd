@@ -1,5 +1,1055 @@
 [
   {
+    "id": "pmid-43061204",
+    "pubmed_id": "43061204",
+    "doi": "10.3389/fphar.2026.1928236",
+    "title": "Neurological adverse events associated with immune checkpoint inhibitors: a pharmacovigilance study based on the FAERS and JADER databases.",
+    "abstract": "Neurological adverse events (NAEs) have been reported during immune checkpoint inhibitor (ICI) therapy, but their reporting spectrum and onset patterns across drugs and pharmacovigilance databases remain incompletely characterized. We conducted a pharmacovigilance study of seven ICIs using the FDA Adverse Event Reporting System (FAERS) and the Japanese Adverse Drug Event Report (JADER) database. Primary drug-preferred term (PT) signals were evaluated using whole-database disproportionality analyses. An exploratory FAERS analysis compared PD-L1 with PD-1 inhibitors within study-defined tumor-indicator strata. Factors associated with NAE reporting were assessed in FAERS by univariate and multivariable logistic regression, and time-to-onset (TTO) was summarized using descriptive statistics and Weibull analyses. JADER cemiplimab data were summarized descriptively only because of sparse reporting. The analysis included 3,915 NAE reports from FAERS and 2,929 from JADER. The heatmaps displayed 111 positive drug-PT pairs across 31 PTs in FAERS and 49 across 16 PTs in JADER. Myasthenia gravis showed a disproportionality signal for all seven ICIs in non-Japanese FAERS reports and for all six ICIs included in the JADER signal analysis; encephalitis-related terms and immune-mediated myositis also recurred, although drug-specific patterns varied. In FAERS, complete-case regression included 111,879 ICI-related reports with 2,887 NAEs. Age ≥65 years and ICI combination therapy were associated with higher adjusted odds of NAE reporting, whereas PD-L1 and CTLA-4 monotherapy were associated with lower adjusted reporting odds relative to PD-1 monotherapy. The stratified comparison showed lower myasthenia gravis reporting odds for PD-L1 than PD-1 in both strata; encephalitis confidence intervals included 1. Drug-level median TTOs ranged from 16 to 43 days in FAERS and from 16 to 32 days in JADER, with heterogeneous Weibull patterns across drugs and databases. ICI-associated neurological reports showed recurring neuromuscular and central nervous system signals, partial qualitative concordance between non-Japanese FAERS reports and JADER, and heterogeneous onset patterns across drugs. The observed reporting associations do not establish comparative clinical safety. Overall, these findings are descriptive and hypothesis-generating and warrant confirmation in studies with exposure denominators, clinically adjudicated diagnoses, and longitudinal follow-up.",
+    "authors": [
+      "Luo H",
+      "Xie X",
+      "Qin S",
+      "Pan L",
+      "Ye L"
+    ],
+    "journal": "Frontiers in pharmacology",
+    "journal_issn": "1663-9812",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-20",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）",
+      "回帰分析"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 6.28,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.8,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.8
+      },
+      {
+        "id": "T10158",
+        "name": "Cancer Immunotherapy and Biomarkers",
+        "score": 0.196
+      },
+      {
+        "id": "T11235",
+        "name": "Statistical Methods in Clinical Trials",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:12:04.824Z",
+    "classified": true,
+    "title_ja": "免疫チェックポイント阻害薬に関連する神経系有害事象：FAERSおよびJADERに基づくファーマコビジランス研究",
+    "abstract_ja": "FAERSとJADERを用いて7種の免疫チェックポイント阻害薬（ICI）の神経系有害事象を不均衡分析で評価した。重症筋無力症は両データベースのほぼ全てのICIでシグナルを示し、脳炎関連事象や免疫介在性筋炎も繰り返し検出された。FAERSでは65歳以上とICI併用療法が報告オッズの上昇と関連し、発現時期の中央値は16〜43日であった。"
+  },
+  {
+    "id": "pmid-43061361",
+    "pubmed_id": "43061361",
+    "doi": "10.2147/JAA.S633465",
+    "title": "Nationwide Patterns of Surgical Procedures for Allergic Rhinitis and Selected Allergic Conjunctival Diseases in Japan: A Population-Based Cross-Sectional Claims Analysis.",
+    "abstract": "To characterize 1-year nationwide utilization patterns for selected procedure categories recorded with allergic rhinitis or selected allergic conjunctival disease codes in Japan. We performed a population-based cross-sectional analysis of records from the National Database of Health Insurance Claims and Specific Health Checkups of Japan from April 2017 through March 2018. Repeated records for the same patient were de-duplicated within each combination of procedure category, treating-facility prefecture, facility type, and fiscal year. Patients could contribute to multiple strata; totals therefore represented aggregate patient counts rather than unique individuals or procedure episodes. We assessed the association between prefectural utilization rates and 2018 otorhinolaryngologist density using Spearman rank correlation across all 47 prefectures. Pearson correlation, sex-standardized rates, a published 2018 population-based specialist rate, and 2023 society-registry specialist density were examined in sensitivity analyses. The approved aggregate outputs included 103,944 patient counts for selected procedure categories recorded with allergic rhinitis codes. Directly age-standardized utilization rates were 98.7 per 100,000 males and 69.8 per 100,000 females. Among the 103,316 counts with known facility type, 83.1% were recorded in clinics; 628 counts had unknown facility type. Utilization rates were highest in Tokyo, Ehime, and Gifu. Utilization showed a weak positive ecological association with 2018 specialist density calculated using 2017 population (Spearman ρ = 0.289, P = 0.049; bootstrap 95% confidence interval, -0.003 to 0.538). The positive direction persisted across sensitivity analyses, although the association was not conventionally significant using the published 2018 population-based specialist rate (ρ = 0.275, P = 0.061). The outputs also included 56 aggregate patient counts for selected conjunctival procedure categories. Utilization patterns for the selected procedure categories varied by sex, facility type, and treating-facility prefecture. These claims data cannot establish appropriateness, outcomes, unmet need, or causal effects of specialist availability.",
+    "authors": [
+      "Akasaki Y",
+      "Noda T",
+      "Sakashita M",
+      "Adachi T",
+      "Morita H",
+      "Fukuda K",
+      "Kainuma K",
+      "Koyama K",
+      "Tamari M",
+      "Midorikawa-Inomata A",
+      "Eguchi A",
+      "Nagino K",
+      "Sung J",
+      "Kobayashi H",
+      "Nakao S",
+      "Nishioka Y",
+      "Myojin T",
+      "Imamura T",
+      "Inomata T"
+    ],
+    "journal": "Journal of asthma and allergy",
+    "journal_issn": "1178-6965",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-20",
+    "analysis_methods": [],
+    "databases_used": [
+      "NDB"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 4.04,
+    "sjr_quartile": null,
+    "openalex_topic": "Allergic Rhinitis and Sensitization",
+    "openalex_topic_score": 0.993,
+    "openalex_subfield": "Immunology and Allergy",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10877",
+        "name": "Allergic Rhinitis and Sensitization",
+        "score": 0.993
+      },
+      {
+        "id": "T10051",
+        "name": "Asthma and respiratory diseases",
+        "score": 0.001
+      },
+      {
+        "id": "T10634",
+        "name": "Food Allergy and Anaphylaxis Research",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:12:05.251Z",
+    "classified": true,
+    "title_ja": "日本におけるアレルギー性鼻炎および一部のアレルギー性結膜疾患に対する外科的処置の全国的実態：人口ベースのレセプト横断研究",
+    "abstract_ja": "NDBの2017年度データを用いて、アレルギー性鼻炎・アレルギー性結膜疾患に関連する処置の全国的な実施状況を記述した。鼻炎関連処置は103,944件で、年齢調整実施率は男性10万人あたり98.7、女性69.8であり、83.1%が診療所で行われていた。都道府県別の実施率は耳鼻咽喉科医の密度と弱い正の相関を示した。"
+  },
+  {
+    "id": "pmid-43062625",
+    "pubmed_id": "43062625",
+    "doi": "10.1007/s12149-026-02318-6",
+    "title": "Concurrent bone-modifying agent use and fracture risk in patients treated with radium-223 for metastatic castration-resistant prostate cancer: A Japanese claims database study.",
+    "abstract": "Radium-223 dichloride (Ra-223) prolongs overall survival in castration-resistant prostate cancer (CRPC) with symptomatic bone metastases, but the ERA-223 trial reported an increased fracture rate when Ra-223 was combined with an androgen receptor signaling inhibitor (ARSI), and concurrent use of a bone-modifying agent (BMA) attenuated this risk. Few studies have quantitatively characterized real-world concurrent BMA use during Ra-223 treatment in Asia, or examined its association with fracture risk with competing risks taken into account. This study aimed to describe the real-world rate of concurrent BMA use during Ra-223 treatment in Japan and to quantify its association with fracture risk. In this retrospective observational study using the DeSC Database, a Japanese administrative claims database, 1,132 patients with a claim for Ra-223 were identified, and the date of the first claim was defined as day 0. After excluding patients with less than one year of prior observation, patients with another primary cancer, and patients who had a fracture diagnosis or the competing event of death, or whose observation ended, during the 8 weeks after day 0, the analysis set comprised 538 patients. Concurrent BMA use was defined by a claim for denosumab or zoledronic acid during the 8 weeks after day 0. The primary outcome was any fracture, identified from fracture diagnosis codes recorded after the landmark. Cumulative incidence was estimated with death as a competing event, and multivariable Fine-Gray regression and inverse probability of treatment weighting (IPTW) were applied. Concurrent BMA use was present in 250 patients (46.5%). Any fracture occurred in 91 patients, with a cumulative incidence of 14.1% at 12 months and 19.0% at 24 months after the landmark. Concurrent BMA use was associated with a lower fracture risk (subdistribution hazard ratio [sHR] 0.26, 95% confidence interval [CI] 0.16-0.42), whereas concurrent ARSI use (sHR 2.18, 95% CI 1.40-3.40) and a history of fracture diagnosis (sHR 2.55, 95% CI 1.32-4.92) were associated with increased risk. The IPTW analysis was concordant (sHR 0.29, 95% CI 0.18-0.47). Concurrent BMA use during Ra-223 treatment remained below half in Japanese real-world practice, yet was associated with a substantially lower fracture risk under competing risks.",
+    "authors": [
+      "Takeda K",
+      "Umezawa R",
+      "Yamamoto T",
+      "Takahashi N",
+      "Jingu K"
+    ],
+    "journal": "Annals of nuclear medicine",
+    "journal_issn": "1864-6433",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-20",
+    "analysis_methods": [
+      "生存時間分析",
+      "傾向スコア (PSM/IPTW)"
+    ],
+    "databases_used": [
+      "DeSC Healthcare"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.75,
+    "sjr_quartile": null,
+    "openalex_topic": "Bone health and treatments",
+    "openalex_topic_score": 0.86,
+    "openalex_subfield": "Oncology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11221",
+        "name": "Bone health and treatments",
+        "score": 0.86
+      },
+      {
+        "id": "T10543",
+        "name": "Prostate Cancer Treatment and Research",
+        "score": 0.124
+      },
+      {
+        "id": "T10124",
+        "name": "Prostate Cancer Diagnosis and Treatment",
+        "score": 0.003
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:12:05.755Z",
+    "classified": true,
+    "title_ja": "去勢抵抗性前立腺癌に対するラジウム223治療中の骨修飾薬併用と骨折リスク：日本のレセプトデータベース研究",
+    "abstract_ja": "DeSCデータベースでラジウム223を投与された去勢抵抗性前立腺癌患者538例を解析した。骨修飾薬（デノスマブ・ゾレドロン酸）の併用は46.5%にとどまったが、死亡を競合リスクとしたFine-Gray回帰で骨折リスクの低下と関連した（sHR 0.26）。一方、ARSI併用と骨折既往は骨折リスクの上昇と関連し、IPTW解析でも結果は一致した。"
+  },
+  {
+    "id": "pmid-43054202",
+    "pubmed_id": "43054202",
+    "doi": "10.3389/fimmu.2026.1860159",
+    "title": "Identification and monitoring of immune-related adverse reactions of PD-1/PD-L1 inhibitors based on symptom network analysis.",
+    "abstract": "PD-1/PD-L1 inhibitors have become first-line cancer therapies by disrupting immune checkpoint downregulation, thereby potentiating antitumor immunity. However, this enhanced immune activation may also target normal tissues, triggering multisystemic immune-related adverse events (irAE) that complicate clinical management. Conventional pharmacovigilance analyses typically assess individual adverse events in isolation, limiting the ability to capture inter-symptom relationships. Symptom network analysis, an emerging computational approach, constructs co-occurrence networks to identify core symptoms, key associations, and bridge nodes across organ systems, thus enabling a systematic understanding of complex suspected irAE profiles. Adverse event records for six PD-1/PD-L1 inhibitors were extracted from two spontaneous reporting databases: FAERS (Q1 2005-Q3 2024) and JADER (Q1 2004-Q1 2025). Potential signals were screened using reporting odds ratio(ROR), proportional reporting ratio(PRR), and multivariate gamma-Poisson shrinkage (MGPS) methods. Symptom co-occurrence networks were subsequently constructed using EBIC-GLASSO based on Tetrachoric correlation matrices, which are specifically designed for binary adverse event data and correct for attenuation due to dichotomization. Four centrality metrics-Strength, Closeness, Betweenness, and Expected Influence-were calculated via the qgraph package. The bootnet package performed 1,000 bootstrap iterations to evaluate 95% confidence intervals for edge weights and centrality stability coefficients. In FAERS, nivolumab (48,330) and pembrolizumab (37,224) generated the highest report volumes. PD-1 inhibitor networks consistently centered on a systemic-gastrointestinal symptom cluster comprising decreased appetite, fatigue, diarrhea, and nausea, whereas PD-L1 inhibitor networks additionally featured prominent hematologic abnormalities. In JADER, interstitial lung disease and adrenal insufficiency emerged as central nodes, reflecting cross-database differences in reporting patterns and physician-initiated reporting practices. Strength and Expected Influence centrality metrics showed good to excellent stability (CS ≥ 0.672 in most networks), supporting the robustness of the core symptom clusters. Symptom network analysis effectively delineates core suspected irAE symptoms and inter-system associations for PD-1/PD-L1 inhibitors. FAERS-derived networks emphasize systemic-gastrointestinal syndromes, while JADER reveals pulmonary-endocrine predominance in Japanese populations. These findings demonstrate the utility of symptom network analysis as a complementary approach to traditional pharmacovigilance for characterizing complex suspected irAE patterns across different data sources and populations.",
+    "authors": [
+      "Gao Y",
+      "Wang Y",
+      "Yu L"
+    ],
+    "journal": "Frontiers in immunology",
+    "journal_issn": "1664-3224",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-19",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 7.87,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.797,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.797
+      },
+      {
+        "id": "T10158",
+        "name": "Cancer Immunotherapy and Biomarkers",
+        "score": 0.194
+      },
+      {
+        "id": "T11235",
+        "name": "Statistical Methods in Clinical Trials",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:12:02.826Z",
+    "classified": true,
+    "title_ja": "症状ネットワーク解析に基づくPD-1/PD-L1阻害薬の免疫関連有害事象の同定とモニタリング",
+    "abstract_ja": "FAERSとJADERから6種のPD-1/PD-L1阻害薬の有害事象報告を抽出し、ROR・PRR・MGPSでシグナルを検出したうえで症状共起ネットワークを構築した。FAERSでは食欲低下・倦怠感・下痢・悪心からなる全身・消化器症状群が中心であった。JADERでは間質性肺疾患と副腎機能不全が中心ノードとなり、データベース間で報告パターンが異なった。"
+  },
+  {
+    "id": "pmid-43055871",
+    "pubmed_id": "43055871",
+    "doi": "10.1007/s11255-026-05488-4",
+    "title": "Short-acting induction, long-acting maintenance: real-world trajectories of GnRH antagonist and agonist therapy for prostate cancer in Japan.",
+    "abstract": "The relative cardiovascular safety of gonadotropin-releasing hormone (GnRH) antagonists and agonists remains unresolved, and little is known about how the two classes are sequenced in routine Japanese practice. We described initiation and 12-month trajectories of GnRH therapy and explored factors associated with antagonist selection. Retrospective descriptive study of a Japanese hospital-based administrative database (Medical Data Vision). Men with newly recorded prostate cancer (July 2023-December 2024) initiating degarelix, originator or generic leuprorelin, or goserelin were included. Treatment status at 12 months was classified as continuation, switch, discontinuation or not evaluable. Proportions are reported with Wilson 95% confidence intervals (CIs); subgroups were compared with chi-square tests on aggregate counts. Among 6808 men (median age 76 years), 1997 (29.3%) initiated degarelix. Within 12 months, 1086 degarelix initiators (54.4%; 95% CI 52.2-56.6) switched to an agonist, mainly originator leuprorelin (66.2% of switches), whereas only 6 of 4811 agonist initiators (0.1%) switched to degarelix. Long-acting (3- or 6-month) agonist depots rose from 37.3% at initiation to 62.9% at 12 months. Among patients with available prostate-specific antigen (PSA) values, degarelix was initiated in 75.9% of those with PSA  ≥  100 ng/mL versus 35.3% of those with PSA 20-99 ng/mL (p  <  0.001). Degarelix initiation did not differ by history of myocardial infarction (29.6% vs 29.3%) or angina (29.2% vs 29.3%; both p  =  1.00). In Japan, degarelix was often used as a short-term induction agent, particularly when PSA was high, before transition to long-acting agonists, irrespective of coronary history.",
+    "authors": [
+      "Pinton P"
+    ],
+    "journal": "International urology and nephrology",
+    "journal_issn": "1573-2584",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-19",
+    "analysis_methods": [],
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 2.57,
+    "sjr_quartile": null,
+    "openalex_topic": "Prostate Cancer Treatment and Research",
+    "openalex_topic_score": 0.989,
+    "openalex_subfield": "Cancer Research",
+    "openalex_field": "Biochemistry, Genetics and Molecular Biology",
+    "openalex_topics": [
+      {
+        "id": "T10543",
+        "name": "Prostate Cancer Treatment and Research",
+        "score": 0.989
+      },
+      {
+        "id": "T10124",
+        "name": "Prostate Cancer Diagnosis and Treatment",
+        "score": 0.003
+      },
+      {
+        "id": "T11146",
+        "name": "Hormonal and reproductive studies",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:12:03.317Z",
+    "classified": true,
+    "title_ja": "短時間作用型で導入、長時間作用型で維持：日本の前立腺癌におけるGnRHアンタゴニスト・アゴニスト療法の実臨床での推移",
+    "abstract_ja": "MDVデータベースで新規に前立腺癌と記録されGnRH療法を開始した男性6,808例の12か月間の治療推移を記述した。デガレリクス開始例の54.4%が12か月以内にアゴニストへ切り替えた一方、アゴニストからデガレリクスへの切り替えは0.1%にすぎなかった。デガレリクスはPSA高値例で多く選択され、冠動脈疾患の既往とは無関係に短期の導入薬として使われていた。"
+  },
+  {
+    "id": "pmid-43058338",
+    "pubmed_id": "43058338",
+    "doi": "10.1007/s00210-026-06119-6",
+    "title": "Dexmedetomidine-associated bradycardia in perioperative and critical care settings: a cross-database pharmacovigilance study using FAERS and JADER.",
+    "abstract": "Dexmedetomidine (DEX) is a highly selective α2-adrenoceptor agonist widely used for sedation in perioperative and critical care settings. Although bradycardia is a recognised adverse effect, its temporal reporting patterns and associated clinical characteristics remain incompletely characterised. This study investigated DEX-associated bradycardia using two independent spontaneous reporting systems. We conducted a retrospective pharmacovigilance study using the FDA Adverse Event Reporting System (FAERS) and the Japanese Adverse Drug Event Report (JADER) database from 2004Q1 to 2025Q3. Reports suggestive of perioperative or critical care use were identified using predefined proxy indicators. Disproportionality analyses were performed to detect cardiovascular safety signals. Time to onset (TTO) patterns were evaluated using Weibull modelling, and factors associated with bradycardia reporting were examined using multivariable case-non-case logistic regression. Sensitivity analyses assessed the consistency of the findings. Among 2505 DEX reports, 717 involved bradycardia-associated events (FAERS, n = 327; JADER, n = 390). Bradycardia showed prominent disproportionality signals in both databases. Among 198 reports with valid TTO data, the median onset time was 0 days in both databases, with similar Weibull shape parameters (FAERS, β = 0.849; JADER, β = 0.847), suggesting early clustering of reported events. Pre-existing cardiovascular disease showed the strongest adjusted association with bradycardia reporting (OR 4.88, 95% CI 3.92-6.09), followed by concomitant opioid use (OR 1.74, 95% CI 1.37-2.22) and β-adrenoceptor blocker exposure (OR 1.85, 95% CI 1.08-3.13). These associations were generally consistent across sensitivity analyses. DEX-associated bradycardia showed consistent reporting signals across FAERS and JADER, with reported onset times frequently concentrated near treatment initiation. Cardiovascular disease and concomitant opioid or β-adrenoceptor blocker exposure were associated with higher odds of bradycardia reporting. Although spontaneous reporting data cannot establish causality or quantify incidence, these findings provide complementary post-marketing evidence supporting careful cardiovascular assessment and haemodynamic monitoring during DEX administration.",
+    "authors": [
+      "Ye C",
+      "Zhang S",
+      "Zhu J",
+      "Wang M",
+      "Sun J",
+      "Xu Y"
+    ],
+    "journal": "Naunyn-Schmiedeberg's archives of pharmacology",
+    "journal_issn": "1432-1912",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-19",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）",
+      "回帰分析"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 4.88,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.994,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.994
+      },
+      {
+        "id": "T10436",
+        "name": "Anesthesia and Sedative Agents",
+        "score": 0.004
+      },
+      {
+        "id": "T10217",
+        "name": "Cardiac electrophysiology and arrhythmias",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:12:03.577Z",
+    "classified": true,
+    "title_ja": "周術期・集中治療領域におけるデクスメデトミジン関連徐脈：FAERSとJADERを用いたデータベース横断的ファーマコビジランス研究",
+    "abstract_ja": "FAERSとJADERを用いてデクスメデトミジン関連の徐脈を解析し、両データベースで明確な不均衡シグナルを認めた。発現時期の中央値は両データベースとも0日で、投与開始直後に集中していた。心血管疾患の既往（OR 4.88）、オピオイド併用、β遮断薬併用が徐脈報告の増加と関連した。"
+  },
+  {
+    "id": "pmid-43058394",
+    "pubmed_id": "43058394",
+    "doi": "10.1007/s40487-026-00473-4",
+    "title": "Real-World Risk of Venous Thromboembolism with Bevacizumab Biosimilar versus Reference Biologic in Japanese Patients with Cancer: A Retrospective Cohort Study.",
+    "abstract": "Large-scale safety data for newly introduced bevacizumab biosimilars in routine oncology practice remain limited. As part of post-marketing safety evaluations under the Risk Management Plan in Japan, we evaluated the risk of venous thromboembolism (VTE) associated with a bevacizumab biosimilar (CTNK) and compared the findings with those for a reference biologic (Avastin®) in Japanese patients with cancer. In this retrospective cohort study using a large-scale hospital-based claims database (Medical Data Vision) in Japan, we identified new users of bevacizumab diagnosed with colorectal, breast, or ovarian cancer or glioblastoma between November 2020 and February 2025. Patients were classified into the biosimilar group or the reference biologic group. The primary outcome was the incidence of VTE, evaluated using a multivariable Cox proportional hazards model. Exploratory safety outcomes, including bleeding/hemorrhage and infections, were also assessed. A total of 8599 eligible patients (1967 in the biosimilar group and 6632 in the reference biologic group; male versus female patients, 45.60% and 41.74% versus 54.40% and 58.26%, respectively; median age, 69.0 years in both groups) were included in the primary analysis. The overall incidence of VTE was 2.36%. The adjusted hazard ratio for VTE in the biosimilar group compared with that in the reference biologic group was 0.82 (95% confidence interval, 0.57-1.19; P = 0.30), indicating no significant difference. This finding was consistent across subgroups stratified by target cancer type or by VTE history. Furthermore, the incidence of exploratory safety events was comparable between the two treatment groups. This retrospective cohort study showed no evidence of increased VTE risk with the bevacizumab biosimilar or major safety differences between the bevacizumab biosimilar and the reference biologic in Japanese patients with cancer, providing reassuring real-world evidence supporting the safe use of the bevacizumab biosimilar in routine clinical practice. Graphical abstract available for this article. Japan Registry of Clinical Trials identifier, jRCT2031250738, retrospectively registered on February 13, 2026.",
+    "authors": [
+      "Ooba N",
+      "Sakai R",
+      "Sekine K",
+      "Kanno Y",
+      "Ishizuka O",
+      "Hirai T",
+      "Taniguchi H"
+    ],
+    "journal": "Oncology and therapy",
+    "journal_issn": "2366-1089",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-19",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "MDV"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 3.37,
+    "sjr_quartile": null,
+    "openalex_topic": "Biosimilars and Bioanalytical Methods",
+    "openalex_topic_score": 0.949,
+    "openalex_subfield": "Immunology",
+    "openalex_field": "Immunology and Microbiology",
+    "openalex_topics": [
+      {
+        "id": "T12255",
+        "name": "Biosimilars and Bioanalytical Methods",
+        "score": 0.949
+      },
+      {
+        "id": "T10285",
+        "name": "Venous Thromboembolism Diagnosis and Management",
+        "score": 0.043
+      },
+      {
+        "id": "T10422",
+        "name": "Angiogenesis and VEGF in Cancer",
+        "score": 0.002
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:12:04.079Z",
+    "classified": true,
+    "title_ja": "日本のがん患者におけるベバシズマブ・バイオシミラーと先行バイオ医薬品の静脈血栓塞栓症リスク：後方視的コホート研究",
+    "abstract_ja": "MDVデータベースでベバシズマブを新規使用したがん患者8,599例を対象に、バイオシミラーと先行品（アバスチン）の静脈血栓塞栓症（VTE）リスクを比較した。VTE発生率は全体で2.36%で、Cox回帰による調整ハザード比は0.82と有意差はなかった。出血や感染症などの探索的安全性アウトカムも両群で同程度であった。"
+  },
+  {
+    "id": "pmid-43046577",
+    "pubmed_id": "43046577",
+    "doi": "10.1080/1120009X.2026.2763196",
+    "title": "Sex-related differences in time-to-onset of immune checkpoint inhibitor-related interstitial lung disease: a JADER pharmacovigilance study.",
+    "abstract": "Immune checkpoint inhibitors (ICIs) are widely used to treat malignancies, but may cause clinically important immune-related adverse events, including interstitial lung disease (ILD). The present study clarified the reporting patterns and reported time-to-onset of suspected ICI-related ILD using the Japanese Adverse Drug Event Report database. Reports from April 2004 to March 2026 were analyzed. Disproportionality signals based on both reporting odds ratio and information component were detected for all evaluated ICIs, except cemiplimab. The median reported time-to-onset was within approximately 2-3 months for the main analyzable ICIs, and Weibull shape parameters indicated early failure patterns for most ICIs. After adjustments for age category, pre-existing ILD, and indication category, male sex was associated with a shorter reported time-to-onset for nivolumab, but not for the other ICIs analyzed. These results suggest that sex-related differences in reported time-to-onset may be present in suspected nivolumab-related ILD reports.",
+    "authors": [
+      "Ide N",
+      "Yamashita M",
+      "Yamashita M",
+      "Watanabe R",
+      "Moriya C",
+      "Yagome R",
+      "Sako KI",
+      "Maeda T"
+    ],
+    "journal": "Journal of chemotherapy (Florence, Italy)",
+    "journal_issn": "1973-9478",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-18",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 2.48,
+    "sjr_quartile": null,
+    "openalex_topic": "Cancer Immunotherapy and Biomarkers",
+    "openalex_topic_score": 0.911,
+    "openalex_subfield": "Oncology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10158",
+        "name": "Cancer Immunotherapy and Biomarkers",
+        "score": 0.911
+      },
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.085
+      },
+      {
+        "id": "T10870",
+        "name": "Interstitial Lung Diseases and Idiopathic Pulmonary Fibrosis",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:12:00.323Z",
+    "classified": true,
+    "title_ja": "免疫チェックポイント阻害薬関連間質性肺疾患の発現時期における性差：JADERファーマコビジランス研究",
+    "abstract_ja": "JADERの2004〜2026年の報告を用いて、免疫チェックポイント阻害薬（ICI）関連の間質性肺疾患の報告パターンと発現時期を解析した。セミプリマブを除く全てのICIで不均衡シグナルを検出し、発現時期の中央値は概ね2〜3か月であった。年齢・既存ILD・適応で調整後、ニボルマブでのみ男性で発現時期が短かった。"
+  },
+  {
+    "id": "pmid-43049869",
+    "pubmed_id": "43049869",
+    "doi": "10.1007/s00270-026-04686-y",
+    "title": "Short-term Outcomes After Transcatheter Arterial Embolization Using N-butyl Cyanoacrylate or Coils for Lower Gastrointestinal Bleeding: A Nationwide Study.",
+    "abstract": "To evaluate short-term clinical outcomes after transcatheter arterial embolization (TAE) using n-butyl cyanoacrylate (NBCA) or coils for acute lower gastrointestinal bleeding (LGIB) in a nationwide Japanese administrative database. Adults with LGIB who underwent TAE using NBCA or coils within 1 day of hospitalization between April 2018 and March 2023 were included. The primary outcome was in-hospital mortality. Secondary outcomes included surgical intervention within 7 days of admission and length of hospital stay (LOS). Multivariable regression was performed with the embolic agent included a priori and additional covariates selected via univariable screening (p < 0.20). Prespecified subgroup analyses were conducted in patients with severe LGIB. Overall, 1197 patients (mean age, 74 13 years; 831 men) were included, of whom 207 (17.3%) were treated with NBCA and 990 (82.7%) were treated with coils. The in-hospital mortality rate was 4.6% (NBCA, 3.4%; coils, 4.8%). Surgical intervention was required in 3.7% of patients, and median LOS was 11 days. A higher Charlson comorbidity index, greater red blood cell transfusion units, fresh frozen plasma transfusion, and vasopressor use were independently associated with increased in-hospital mortality. Embolic agent selection was not associated with in-hospital mortality (adjusted odds ratio = 0.54; 95% confidence interval = 0.21-1.19; p = 0.155), surgical intervention (p = 0.637), and LOS (p = 0.243). Consistent findings were obtained in patients with severe LGIB. Short-term outcomes did not differ between NBCA and coils. Clinical factors were independently associated with individual short-term outcomes.",
+    "authors": [
+      "Matsumoto T",
+      "Hyohdoh Y",
+      "Miyatake K",
+      "Yamanishi T",
+      "Yamagami T"
+    ],
+    "journal": "Cardiovascular and interventional radiology",
+    "journal_issn": "1432-086X",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-18",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性"
+    ],
+    "impact_factor": 2.32,
+    "sjr_quartile": null,
+    "openalex_topic": "Gastrointestinal Bleeding Diagnosis and Treatment",
+    "openalex_topic_score": 0.996,
+    "openalex_subfield": "Gastroenterology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11378",
+        "name": "Gastrointestinal Bleeding Diagnosis and Treatment",
+        "score": 0.996
+      },
+      {
+        "id": "T11625",
+        "name": "Abdominal vascular conditions and treatments",
+        "score": 0.004
+      },
+      {
+        "id": "T12199",
+        "name": "Vascular Anomalies and Treatments",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:12:00.806Z",
+    "classified": true,
+    "title_ja": "下部消化管出血に対するNBCAまたはコイルを用いた経カテーテル動脈塞栓術後の短期転帰：全国研究",
+    "abstract_ja": "DPCデータベースで下部消化管出血に対し入院1日以内に経カテーテル動脈塞栓術を受けた成人1,197例を解析した。院内死亡率は4.6%で、塞栓物質（NBCAかコイルか）は院内死亡、7日以内の外科的介入、在院日数のいずれとも関連しなかった。Charlson併存疾患指数、輸血量、昇圧薬使用が院内死亡の独立した関連因子であった。"
+  },
+  {
+    "id": "pmid-43050460",
+    "pubmed_id": "43050460",
+    "doi": "10.1371/journal.pone.0363137",
+    "title": "Cluster analysis of high-cost patients in Japan: A longitudinal study using health insurance data.",
+    "abstract": "This study aimed to identify distinct patterns of medical expenditure trajectories among high-cost patients in Japan and characterise the identified groups using diagnostic and health check-up data, including laboratory test results. This retrospective study analysed data from 190,190 high-cost patients (top 5% of annual medical expenditure in fiscal year 2021) in the Japanese JMDC Claims Database. Five-year healthcare expenditure trajectories were classified using K-means clustering. The resulting clusters were characterised according to demographic characteristics, disease patterns, hospitalisation rates, and health check-up data. Eighteen clusters were identified and further grouped into four descriptive types of expenditure trajectory. The 'over-30-million-yen (200,000 USD)' type included two clusters with rare, high-cost diseases such as haematological disorders, chronic viral hepatitis, and sphingolipid metabolism disorders. The 'flat' type (four clusters) showed relatively smooth expenditure patterns over time, associated with chronic conditions like dialysis and secondary cancers. In contrast, the 'gradual peak' type exhibited costs that increased over time, largely due to malignant neoplasms. Meanwhile, the 'sharp peak' type was characterised by sudden cost surges driven primarily by inpatient care, with a high prevalence of angina and atrial fibrillation. By analysing five-year expenditure trajectories at the individual level, this study identified distinct longitudinal patterns and provided a descriptive framework for understanding heterogeneity among high-cost patients.",
+    "authors": [
+      "Matsuo Y",
+      "Yamauchi K"
+    ],
+    "journal": "PloS one",
+    "journal_issn": "1932-6203",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-18",
+    "analysis_methods": [
+      "機械学習・AI"
+    ],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 4.33,
+    "sjr_quartile": null,
+    "openalex_topic": "Healthcare Policy and Management",
+    "openalex_topic_score": 0.683,
+    "openalex_subfield": "Economics and Econometrics",
+    "openalex_field": "Economics, Econometrics and Finance",
+    "openalex_topics": [
+      {
+        "id": "T10391",
+        "name": "Healthcare Policy and Management",
+        "score": 0.683
+      },
+      {
+        "id": "T11531",
+        "name": "Healthcare Systems and Reforms",
+        "score": 0.109
+      },
+      {
+        "id": "T12781",
+        "name": "Global Health Care Issues",
+        "score": 0.057
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:12:01.321Z",
+    "classified": true,
+    "title_ja": "日本の高額医療費患者のクラスター分析：健康保険データを用いた縦断研究",
+    "abstract_ja": "JMDCデータベースで2021年度の医療費上位5%の患者190,190人について、5年間の医療費推移をK-meansクラスタリングで分類した。18クラスターが同定され、3,000万円超型・平坦型・漸増ピーク型・急峻ピーク型の4類型にまとめられた。平坦型は透析など慢性疾患、漸増型は悪性新生物、急峻型は狭心症や心房細動による入院が特徴であった。"
+  },
+  {
+    "id": "pmid-43052391",
+    "pubmed_id": "43052391",
+    "doi": "10.1007/s00210-026-06097-9",
+    "title": "Real-world pharmacovigilance of thromboembolic adverse events associated with osimertinib using the Japanese adverse drug event report database.",
+    "abstract": "The purpose of this study is to evaluate the disproportionality, times to onset, and outcomes of thromboembolic adverse events (AEs) associated with osimertinib using data from the Japanese Adverse Drug Event Report database (JADER), with a specific focus on real-world evidence from Japan, an East Asian country with high EGFR mutation prevalence. We analyzed JADER data from April 2004 to December 2024. Disproportionality was assessed by calculating reporting odds ratios (RORs). Time-to-onset was evaluated, and Weibull distribution parameters were calculated for major AEs with detected signals, while rare AEs were summarized descriptively. Among 3,221,393 reports, 7134 AEs were associated with osimertinib, including 153 thromboembolic AEs. Significant disproportionality signals were detected for six thromboembolic AEs: deep vein thrombosis (ROR = 2.89), pulmonary embolism (ROR = 2.78), embolism venous (ROR = 6.64), peripheral vein thrombosis (ROR = 3.16), pulmonary artery thrombosis (ROR = 2.93), and thrombophlebitis migrans (ROR = 7.49). Median onset times ranged from 28 to 85 days after osimertinib initiation. Weibull analysis of major thromboembolic AEs suggested no clear time-dependent increase in reporting frequency over time (random failure type). Fatal outcomes were observed for several thromboembolic AEs, particularly pulmonary embolism and pulmonary artery thrombosis. Several thromboembolic AEs associated with osimertinib were identified, including potentially fatal events. These findings suggest that thromboembolic events may be reported relatively early after the initiation of osimertinib treatment and highlight the importance of clinical awareness and appropriate monitoring during treatment. However, these findings do not establish a causal relationship between osimertinib and thromboembolic events.",
+    "authors": [
+      "Kanbayashi Y",
+      "Hosohata K"
+    ],
+    "journal": "Naunyn-Schmiedeberg's archives of pharmacology",
+    "journal_issn": "1432-1912",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-18",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 4.88,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.988,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.988
+      },
+      {
+        "id": "T10417",
+        "name": "Lung Cancer Treatments and Mutations",
+        "score": 0.007
+      },
+      {
+        "id": "T10285",
+        "name": "Venous Thromboembolism Diagnosis and Management",
+        "score": 0.002
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:12:01.851Z",
+    "classified": true,
+    "title_ja": "JADERを用いたオシメルチニブ関連血栓塞栓性有害事象の実臨床ファーマコビジランス",
+    "abstract_ja": "JADERの2004〜2024年の報告を用いて、オシメルチニブに関連する血栓塞栓性有害事象を解析した。深部静脈血栓症、肺塞栓症、遊走性血栓性静脈炎など6事象で有意な不均衡シグナルを検出し、発現時期の中央値は投与開始後28〜85日であった。肺塞栓症や肺動脈血栓症では死亡例もみられた。"
+  },
+  {
+    "id": "pmid-43052617",
+    "pubmed_id": "43052617",
+    "doi": "10.1007/s40263-026-01350-4",
+    "title": "Incidence and Factors Associated with Newly Recorded Database-Defined Central Nervous System-Related Diagnoses During and Shortly After Metronidazole Therapy: A Large-Scale Japanese Hospital-Based Administrative Claims Database Study.",
+    "abstract": "Metronidazole (MNZ) is widely used to treat anaerobic and protozoal infections. However, evidence regarding the factors associated with newly recorded, database-defined central nervous system (CNS)-related diagnoses during or shortly after MNZ therapy remains limited. This study evaluated the incidence of newly recorded, database-defined CNS-related diagnoses during and shortly after MNZ therapy and identified the associated factors using a Japanese hospital-based administrative claims database. This retrospective cohort study used the JMDC hospital-based administrative claims database from April 2014 to August 2022. Adults prescribed oral or injectable MNZ were included. The primary outcome was a newly recorded, database-defined CNS-related diagnosis during the risk period after MNZ initiation. Prespecified factors were evaluated using conventional and Firth-penalized Cox proportional hazards regression. Among 58,195 patients, 59 (0.1%) had a newly recorded, database-defined CNS-related diagnosis, including 52 coded as R26.8 (unsteadiness on the feet). Age ≥ 60 years (adjusted hazard ratio [HR] 4.18; 95% confidence interval [CI] 1.70-10.30), female sex (adjusted HR 1.96; 95% CI 1.16-3.31), and renal failure (adjusted HR 1.93; 95% CI 1.08-3.47) were significantly associated with the outcome. In contrast, liver disease and initial daily MNZ dose > 1500 mg/day showed no significant associations. This study estimated the incidence of newly recorded, database-defined CNS-related diagnoses during and shortly after MNZ therapy and identified age ≥ 60 years, female sex, and renal failure as associated factors in the primary Cox regression analysis. Age ≥ 60 years showed the most consistent association across the sensitivity analyses, whereas the associations with female sex and renal failure were less precise in some analyses. However, these findings do not establish causality or a dose threshold.",
+    "authors": [
+      "Takada K",
+      "Imai S",
+      "Enoki Y",
+      "Igarashi Y",
+      "Samura M",
+      "Tanikawa K",
+      "Hori S",
+      "Matsumoto K"
+    ],
+    "journal": "CNS drugs",
+    "journal_issn": "1179-1934",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-18",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 8.67,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.972,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.972
+      },
+      {
+        "id": "T11036",
+        "name": "Antibiotics Pharmacokinetics and Efficacy",
+        "score": 0.012
+      },
+      {
+        "id": "T10496",
+        "name": "Pharmaceutical Practices and Patient Outcomes",
+        "score": 0.006
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:12:02.331Z",
+    "classified": true,
+    "title_ja": "メトロニダゾール療法中および直後の新規中枢神経系関連診断の発生率と関連因子：日本の大規模病院レセプトデータベース研究",
+    "abstract_ja": "JMDCの病院データベースでメトロニダゾールを処方された成人58,195例を解析し、新規の中枢神経系関連診断は59例（0.1%）であった。Cox回帰では60歳以上（HR 4.18）、女性、腎不全が関連因子であった。肝疾患や1日1,500mg超の初期用量とは有意な関連を認めなかった。"
+  },
+  {
+    "id": "pmid-43037158",
+    "pubmed_id": "43037158",
+    "doi": "10.1080/03007995.2026.2761162",
+    "title": "Surgery rates in Japan around market-entry milestones of advanced therapies for Crohn's disease and ulcerative colitis: an interrupted time-series study using a large-scale Japanese claims database.",
+    "abstract": "Whether the market entry of newer advanced therapies is associated with changes in surgery rates for inflammatory bowel disease in routine clinical practice remains unclear. We aimed to describe surgery rates for Crohn's disease and ulcerative colitis in Japan around the market-entry milestones of advanced therapies. This interrupted time-series study used a large-scale, outpatient-inclusive health insurance claims database from Japan (2012-2020). Prespecified intervention points were the market-entry months of ustekinumab for Crohn's disease (May 2017) and vedolizumab for ulcerative colitis (November 2018). The primary outcome was monthly surgery rates, modeled using segmented Poisson regression with an offset for patients at risk. The cohorts included 5,411 patients with Crohn's disease and 37,052 with ulcerative colitis. Surgery rates declined during the pre-intervention period (incidence rate ratios [95% confidence intervals]: Crohn's disease, 0.993 [0.988-0.999]; ulcerative colitis, 0.994 [0.988-1.001]). No evidence of a level or post-intervention trend change was observed at the intervention points (Crohn's disease: level change, 0.924 [0.708-1.202]; trend change, 1.000 [0.984-1.015]; ulcerative colitis: level change, 0.883 [0.588-1.309]; trend change, 1.008 [0.984-1.032]). Surgery rates showed a gradual pre-existing decline with no detectable level or trend change around these market-entry milestones. These findings suggest that changes in surgical rates may occur gradually rather than as an abrupt shift around a single market-entry milestone.",
+    "authors": [
+      "Mori M",
+      "Nakao YM",
+      "Kozu T",
+      "Kawakami K"
+    ],
+    "journal": "Current medical research and opinion",
+    "journal_issn": "1473-4877",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-16",
+    "analysis_methods": [
+      "中断時系列分析 (ITS)"
+    ],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "治療効果・有効性"
+    ],
+    "impact_factor": 3.57,
+    "sjr_quartile": null,
+    "openalex_topic": "Inflammatory Bowel Disease",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Gastroenterology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10134",
+        "name": "Inflammatory Bowel Disease",
+        "score": 0.999
+      },
+      {
+        "id": "T10335",
+        "name": "Colorectal Cancer Surgical Treatments",
+        "score": 0
+      },
+      {
+        "id": "T11964",
+        "name": "Pregnancy and Medication Impact",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:11:57.794Z",
+    "classified": true,
+    "title_ja": "クローン病・潰瘍性大腸炎の新規先進治療薬の上市前後における日本の手術率：大規模レセプトデータベースを用いた中断時系列研究",
+    "abstract_ja": "日本の大規模レセプトデータベースを用いて、ウステキヌマブ（クローン病）とベドリズマブ（潰瘍性大腸炎）の上市時点を介入点とした中断時系列分析を行った。両疾患とも手術率は介入前から緩やかに低下していた。上市時点での水準変化や傾きの変化は認められず、手術率の変化は段階的に生じている可能性が示唆された。"
+  },
+  {
+    "id": "pmid-43039029",
+    "pubmed_id": "43039029",
+    "doi": "10.1016/j.joms.2026.10.008",
+    "title": "Is the Duration of Antibiotic Prophylaxis Associated With Severe Surgical Site Infection, Length of Hospital Stay, and Hospitalization Charges After Cleft Lip and/or Palate Surgery?",
+    "abstract": "Despite widespread antibiotic prophylaxis in cleft lip and/or palate surgery, the frequency of severe surgical site infection (SSI) requiring debridement or reoperation and the optimal duration of prophylaxis remain uncertain. Large-scale, real-world evidence is needed to better inform antibiotic prophylaxis strategies in this population. To estimate the frequency of severe SSI and measure the association between antibiotic prophylaxis duration and postoperative outcomes across cleft lip and/or palate procedures. This nationwide, multicenter, retrospective cohort study used the Japanese Diagnosis Procedure Combination inpatient database (April 2012 to March 2022). Patients undergoing cleft lip and/or palate surgery were screened, and those with immunocompromised status, preoperative antibiotic use, or no antibiotic prophylaxis were excluded. Duration of postoperative antibiotic prophylaxis (short term: ≤ 2 days vs prolonged: ≥ 3 days). The primary outcome was the frequency of severe SSI, defined as SSI requiring debridement or reoperation during the same hospitalization. The secondary outcomes were length of hospital stay and hospitalization charges. Age, sex, body mass index, anesthesia duration, procedure category, comorbidities at admission, and teaching hospital status. Multivariable regression models were used to evaluate associations between prophylaxis duration and outcomes. Subgroup analyses were performed for the 4 surgical procedure groups. The frequency of severe SSI was summarized descriptively. A P value < .05 was considered statistically significant. Of 17,005 patients screened, 13,333 subjects were analyzed: 6,172 (46.3%) received short-term prophylaxis, and 7,161 (53.7%) received prolonged prophylaxis. The mean (SD) age was 6.5 (9.0) years, and 7,199 (54.0%) were male. Severe SSI occurred in one subject in the prolonged group (overall frequency, 0.008%). Short-term prophylaxis was associated with a 0.5-day shorter hospital stay (95% CI: -0.8 to -0.2; P = .001) but not with hospitalization charges (adjusted mean difference, -53 US dollars [95% CI: -168 to 62]; P = .4). These findings were consistent across the 4 procedure groups. Severe SSI requiring debridement or reoperation was extremely rare in both groups. Short-term antibiotic prophylaxis was associated with shorter hospital stays but not with hospitalization charges.",
+    "authors": [
+      "Nishida T",
+      "Ono S",
+      "Oshima S",
+      "Tsuda Y",
+      "Watanabe H",
+      "Matsui H",
+      "Fushimi K",
+      "Yasunaga H",
+      "Hoshi K"
+    ],
+    "journal": "Journal of oral and maxillofacial surgery : official journal of the American Association of Oral and Maxillofacial Surgeons",
+    "journal_issn": "1531-5053",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-16",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "DPC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療効果・有効性",
+      "医療資源利用・経済評価"
+    ],
+    "impact_factor": 1.03,
+    "sjr_quartile": null,
+    "openalex_topic": "Surgical site infection prevention",
+    "openalex_topic_score": 0.957,
+    "openalex_subfield": "Surgery",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T11080",
+        "name": "Surgical site infection prevention",
+        "score": 0.957
+      },
+      {
+        "id": "T11374",
+        "name": "Cleft Lip and Palate Research",
+        "score": 0.035
+      },
+      {
+        "id": "T12297",
+        "name": "Otolaryngology and Infectious Diseases",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:11:58.975Z",
+    "classified": true,
+    "title_ja": "口唇口蓋裂手術後の予防的抗菌薬投与期間は重症手術部位感染、在院日数、入院費用と関連するか",
+    "abstract_ja": "DPCデータベースで口唇口蓋裂手術を受けた13,333例を対象に、術後予防的抗菌薬の短期投与（2日以内）と延長投与（3日以上）を比較した。デブリドマンや再手術を要する重症手術部位感染は延長群の1例のみ（0.008%）と極めてまれであった。短期投与は在院日数の0.5日短縮と関連したが、入院費用とは関連しなかった。"
+  },
+  {
+    "id": "pmid-43040213",
+    "pubmed_id": "43040213",
+    "doi": "10.1111/nep.70326",
+    "title": "Body Mass Index Associated With the Lowest Renal Risk Across Levels of Kidney Function in Chronic Kidney Disease: A Nationwide Cohort Study.",
+    "abstract": "Both high and low body mass index (BMI) have been reported to be associated with a higher risk of chronic kidney disease (CKD) progression. However, whether this association varies across CKD stages remains unclear. We hypothesized that the association between BMI and renal outcomes varies according to kidney function in individuals with CKD. This retrospective cohort study included individuals with an estimated glomerular filtration rate (eGFR) < 60 mL/min/1.73 m2 at health checkups between April 2014 and January 2025, identified from a nationwide Japanese claims database. Cox proportional hazards models were used to examine the association between baseline BMI and a composite outcome of kidney replacement therapy initiation, a > 40% decline in eGFR from baseline or eGFR < 15 mL/min/1.73 m2. Restricted cubic splines were used to assess nonlinearity, and nadir BMI was defined as the BMI corresponding to the lowest risk. This study included 630 045 individuals. Higher hazard ratios were observed at both high and low BMI levels, although these associations were attenuated after further adjustment for eGFR and urinary protein, in addition to age, sex and comorbidities. The association between BMI and renal outcomes differed across CKD stages, and the nadir BMI was higher at lower baseline eGFR levels. The association between BMI and renal outcomes differed across CKD stages, with a higher nadir BMI observed at lower baseline eGFR levels. These findings suggest that kidney function should be considered when interpreting BMI in individuals with CKD.",
+    "authors": [
+      "Inoue R",
+      "Yamaguchi S",
+      "Okada A",
+      "Yamauchi T",
+      "Kadowaki T",
+      "Nangaku M"
+    ],
+    "journal": "Nephrology (Carlton, Vic.)",
+    "journal_issn": "1440-1797",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-16",
+    "analysis_methods": [
+      "生存時間分析"
+    ],
+    "databases_used": [],
+    "additional_data_sources": [
+      "健診データを含む全国規模の日本のレセプトデータベース"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "疾病負荷・自然歴"
+    ],
+    "impact_factor": 1.64,
+    "sjr_quartile": null,
+    "openalex_topic": "Chronic Kidney Disease and Diabetes",
+    "openalex_topic_score": 0.994,
+    "openalex_subfield": "Nephrology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10408",
+        "name": "Chronic Kidney Disease and Diabetes",
+        "score": 0.994
+      },
+      {
+        "id": "T10291",
+        "name": "Dialysis and Renal Disease Management",
+        "score": 0.002
+      },
+      {
+        "id": "T12103",
+        "name": "Cancer Risks and Factors",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:11:59.304Z",
+    "classified": true,
+    "title_ja": "慢性腎臓病における腎機能レベル別の腎リスクが最も低いBMI：全国コホート研究",
+    "abstract_ja": "健診データを含む全国規模のレセプトデータベースから、eGFR 60未満の630,045人を対象にBMIと腎アウトカム（腎代替療法開始、eGFR 40%超低下など）の関連をCox回帰で検討した。BMIが高い場合も低い場合もリスクが高かったが、eGFRと尿蛋白で調整すると関連は弱まった。リスクが最も低いBMIはベースラインのeGFRが低いほど高かった。"
+  },
+  {
+    "id": "pmid-43040426",
+    "pubmed_id": "43040426",
+    "doi": "10.1186/s13023-026-04550-9",
+    "title": "Treatment patterns of patients with neuromyelitis optica spectrum disorder switched to inebilizumab in Japan: a claims-based retrospective study.",
+    "abstract": "In Japan, several biological agents with distinct mechanisms of action are available for the prevention of relapse in neuromyelitis optica spectrum disorder (NMOSD), including the B cell-depleting agent inebilizumab. Understanding the management of transitions between these agents is crucial for exploring safe switching strategies. This study examined real-world treatment patterns among patients who transitioned from non-inebilizumab biological agents to inebilizumab utilizing a claims database in Japan. Among the overall population of patients with NMOSD prescribed inebilizumab (n = 134), 19.4% (n = 26) transitioned from non-inebilizumab biological agents. Among these 26 patients, the median duration from the last prescription of the previous biological agent to the first inebilizumab prescription, designated as the index date, was 16 days for eculizumab (five patients), 48 days for satralizumab (16 patients), 56 days for ravulizumab (three patients), and 168 and 177 days for two patients treated with rituximab. Regarding oral glucocorticoid (GC) prescriptions in the switching population, the distribution of doses among patients shifted toward higher categories around the index date. The proportion of patients receiving 0 mg/day was 20%-40% during the period between month -12 and month -2, decreasing to 19.2% at month -1, and subsequently to 15.4% at the index date. Post-index date, the distribution of oral GC doses tended to revert to lower categories. During follow-up, five patients (19.2%) experienced at least one relapse. Notably, all post-switch relapses occurred exclusively in patients with a history of attacks in the year preceding the index date. This study described the treatment patterns associated with switching from non-inebilizumab biological agents to inebilizumab, indicating that such transitions are not uncommon in Japan. The switching intervals suggest that clinicians may initiate inebilizumab treatment according to the dosing interval of the previous biological agent, while also considering the mechanism and duration of action of each agent. Our observations suggest that caution should be considered at the time of switching in patients who experienced an attack in the year preceding the switch.",
+    "authors": [
+      "Sakurai K",
+      "Gouda M",
+      "Mizuno T",
+      "Yamamoto K",
+      "Iwasaki K",
+      "Hongo Y"
+    ],
+    "journal": "Orphanet journal of rare diseases",
+    "journal_issn": "1750-1172",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-16",
+    "analysis_methods": [],
+    "databases_used": [],
+    "additional_data_sources": [
+      "日本のレセプトデータベース（名称不明）"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 4.61,
+    "sjr_quartile": null,
+    "openalex_topic": "Multiple Sclerosis Research Studies",
+    "openalex_topic_score": 0.999,
+    "openalex_subfield": "Clinical Neurology",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10137",
+        "name": "Multiple Sclerosis Research Studies",
+        "score": 0.999
+      },
+      {
+        "id": "T11735",
+        "name": "Peripheral Neuropathies and Disorders",
+        "score": 0
+      },
+      {
+        "id": "T13467",
+        "name": "Drug-Induced Ocular Toxicity",
+        "score": 0
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:11:59.807Z",
+    "classified": true,
+    "title_ja": "日本でイネビリズマブへ切り替えた視神経脊髄炎スペクトラム障害患者の治療パターン：レセプトに基づく後方視的研究",
+    "abstract_ja": "日本のレセプトデータベースで、イネビリズマブを処方された視神経脊髄炎スペクトラム障害（NMOSD）患者134例のうち、他の生物学的製剤から切り替えた26例（19.4%）の治療パターンを記述した。前治療薬の最終処方からの間隔はエクリズマブ16日、サトラリズマブ48日などで、前治療薬の投与間隔に沿った切り替えが示唆された。切り替え前後で経口ステロイド用量が一時的に増え、切り替え後の再発5例はいずれも前年に発作歴があった。"
+  },
+  {
+    "id": "pmid-43035346",
+    "pubmed_id": "43035346",
+    "doi": "10.1002/jfa2.70247",
+    "title": "Nationwide Trends, Regional Variation and Seasonality of Surgically Treated Achilles Tendon Rupture in Japan: An Analysis of Descriptive Epidemiological Study.",
+    "abstract": "Achilles tendon rupture (ATR) is a common foot and ankle injury among physically active adults. Nationwide evidence on long-term trends, regional variation, seasonality and COVID-19-related changes in Japan is limited. We characterised the surgical burden of ATR using a national administrative database. We conducted a nationwide descriptive epidemiological study using aggregated data from the National Database of Health Insurance Claims and Specific Health Checkups (NDB) Open Data for fiscal years (FY) 2014-2022. Temporal trends, prefectural variation, seasonal patterns and pandemic-associated changes were examined using counts, population-based rates and quasi-Poisson regression. During FY2014-2019, approximately 11,200 surgeries were performed annually (8.8 per 100,000 person). In FY2020, incidence declined to 5.9 per 100,000 (incidence rate ratio [IRR] 0.67), with greater reductions among adults aged 30-59 (61%-64% of baseline) and, after age adjustment, among women (IRR 0.61 vs. 0.71 in men; interaction p = 0.039). Incidence partially recovered in FY2021-2022 (7.6 per 100,000; IRR 0.86). Incidence varied across the 47 prefectures (pre-COVID range: 5.0-16.7 per 100,000), and all declined in FY2020 (mean ratio 0.69). Monthly counts peaked in spring-early summer and were higher in spring than in winter (p = 0.018). The incidence of surgically treated ATR in Japan was stable before the COVID-19 pandemic, declined markedly in FY2020 and partially recovered thereafter, with the largest reductions among working-age adults and women. Regional variation and seasonality were preserved. These findings can inform surgical and rehabilitation service planning.",
+    "authors": [
+      "Kabata Y"
+    ],
+    "journal": "Journal of foot and ankle research",
+    "journal_issn": "1757-1146",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-15",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "NDBオープンデータ"
+    ],
+    "additional_data_sources": [],
+    "study_design": "横断的研究",
+    "research_categories": [
+      "疾病負荷・自然歴",
+      "治療実態・処方パターン"
+    ],
+    "impact_factor": 3.38,
+    "sjr_quartile": null,
+    "openalex_topic": "Foot and Ankle Surgery",
+    "openalex_topic_score": 0.554,
+    "openalex_subfield": "Orthopedics and Sports Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10455",
+        "name": "Foot and Ankle Surgery",
+        "score": 0.554
+      },
+      {
+        "id": "T11068",
+        "name": "Tendon Structure and Treatment",
+        "score": 0.359
+      },
+      {
+        "id": "T11246",
+        "name": "Sports injuries and prevention",
+        "score": 0.041
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:11:56.799Z",
+    "classified": true,
+    "title_ja": "日本における手術治療されたアキレス腱断裂の全国的推移・地域差・季節性：記述疫学研究",
+    "abstract_ja": "NDBオープンデータの2014〜2022年度データを用いて、手術治療されたアキレス腱断裂の動向を解析した。COVID-19前は年間約11,200件（人口10万人あたり8.8）で安定していたが、2020年度に5.9へ減少し、特に働き盛りの成人と女性で減少が大きかった。都道府県間で5.0〜16.7と地域差があり、春から初夏に多い季節性がみられた。"
+  },
+  {
+    "id": "pmid-43035654",
+    "pubmed_id": "43035654",
+    "doi": "10.1186/s12885-026-16637-4",
+    "title": "Cross-database thromboembolic reporting signals for ovarian cancer therapies: a focus on bevacizumab.",
+    "abstract": "Thromboembolic events (TEs) can disrupt ovarian cancer treatment and adversely affect outcomes. Post-marketing reporting patterns across systemic therapies and regulatory databases remain poorly characterized. We analyzed the FDA Adverse Event Reporting System (FAERS; 2004Q1-2025Q1), Canada Vigilance (2002-2025), and Japanese Adverse Drug Event Report database (JADER; 2004-2025). Reports involved ovarian, fallopian tube, or primary peritoneal cancer and prespecified systemic therapies. MedDRA preferred term-validated definitions identified venous thromboembolism (VTE), arterial thromboembolism (ATE), and their union (any_TE). We assessed ROR, PRR, chi-square, information component, and IC025 within each database; cross-database replication was the primary criterion. Pooled and covariate-adjusted analyses were supportive. Bevacizumab subgroup, co-medication, time-to-onset (TTO), fatal-outcome, network, and drug-target Mendelian randomization (MR) analyses provided descriptive or exploratory context. After excluding male-coded records, 55,271 reports met inclusion, including 1,296 TE cases. Seven of 39 drug-event combinations replicated in at least two databases. Bevacizumab alone replicated for any_TE, VTE, and ATE in all three systems. In FAERS, RORs were 2.28 (95% CI 1.96-2.65; IC025 0.81) for any_TE and 2.38 (1.94-2.93; IC025 0.81) for VTE. The ATE ROR was 2.34 (1.91-2.87; IC025 0.79). Paclitaxel replicated for any_TE and ATE, whereas doxorubicin replicated for any_TE and VTE. Rucaparib appeared in one database and was not assessable for replication. Only 1,757/45,025 (3.9%) FAERS reports had usable dates. Median recorded TTO was 90 days for bevacizumab and 13 days for carboplatin and paclitaxel; these selected intervals were interpreted descriptively. Genetically proxied VEGFA inhibition was associated with stroke (OR 1.17, 95% CI 1.09-1.26; P = 1.33e-05), but not with VTE or pulmonary embolism. Bevacizumab showed the most reproducible reporting signals across all three databases for composite, venous, and arterial thromboembolism. Together with greater MR concordance for arterial outcomes, this phenotype-resolved pattern motivates separate biological hypotheses for VTE and ATE. Clinically, it reinforces vigilance for both phenotypes during bevacizumab-containing ovarian cancer treatment and supports phenotype-specific prospective validation.",
+    "authors": [
+      "Fu Y",
+      "Ao H",
+      "Qian Z",
+      "Sheng C",
+      "Cong S"
+    ],
+    "journal": "BMC cancer",
+    "journal_issn": "1471-2407",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-15",
+    "analysis_methods": [
+      "不均衡分析（ROR/PRR等）"
+    ],
+    "databases_used": [
+      "JADER"
+    ],
+    "additional_data_sources": [
+      "FAERS",
+      "Canada Vigilance",
+      "メンデルランダム化解析用のGWASデータ"
+    ],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "安全性・副作用"
+    ],
+    "impact_factor": 4.95,
+    "sjr_quartile": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.991,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.991
+      },
+      {
+        "id": "T10285",
+        "name": "Venous Thromboembolism Diagnosis and Management",
+        "score": 0.004
+      },
+      {
+        "id": "T10550",
+        "name": "Ovarian cancer diagnosis and treatment",
+        "score": 0.001
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:11:57.309Z",
+    "classified": true,
+    "title_ja": "卵巣癌治療薬の血栓塞栓症報告シグナルのデータベース横断解析：ベバシズマブに着目して",
+    "abstract_ja": "FAERS、Canada Vigilance、JADERを用いて卵巣癌に対する全身療法と血栓塞栓症の報告シグナルを解析した。39の薬剤・事象の組み合わせのうち7つが複数データベースで再現され、ベバシズマブのみが3つのデータベース全てで静脈・動脈血栓塞栓症のシグナルを示した。薬剤標的メンデルランダム化解析ではVEGFA阻害が脳卒中と関連した。"
+  },
+  {
     "id": "pmid-43032486",
     "pubmed_id": "43032486",
     "doi": "10.1016/j.jacig.2026.100792",
@@ -34,11 +1084,27 @@
     ],
     "impact_factor": 2.68,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Asthma and respiratory diseases",
+    "openalex_topic_score": 0.916,
+    "openalex_subfield": "Pulmonary and Respiratory Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10051",
+        "name": "Asthma and respiratory diseases",
+        "score": 0.916
+      },
+      {
+        "id": "T11430",
+        "name": "Disaster Response and Management",
+        "score": 0.055
+      },
+      {
+        "id": "T12208",
+        "name": "Occupational exposure and asthma",
+        "score": 0.008
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-11-16T00:11:59.595Z",
     "classified": true,
@@ -77,11 +1143,27 @@
     ],
     "impact_factor": 3.15,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Pharmacovigilance and Adverse Drug Reactions",
+    "openalex_topic_score": 0.998,
+    "openalex_subfield": "Toxicology",
+    "openalex_field": "Pharmacology, Toxicology and Pharmaceutics",
+    "openalex_topics": [
+      {
+        "id": "T11943",
+        "name": "Pharmacovigilance and Adverse Drug Reactions",
+        "score": 0.998
+      },
+      {
+        "id": "T10211",
+        "name": "Computational Drug Discovery Methods",
+        "score": 0.001
+      },
+      {
+        "id": "T12829",
+        "name": "Advanced Breast Cancer Therapies",
+        "score": 0
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-11-16T00:12:00.200Z",
     "classified": true,
@@ -119,11 +1201,27 @@
     ],
     "impact_factor": 4.7,
     "sjr_quartile": null,
-    "openalex_topic": null,
-    "openalex_topic_score": null,
-    "openalex_subfield": null,
-    "openalex_field": null,
-    "openalex_topics": null,
+    "openalex_topic": "Bone health and osteoporosis research",
+    "openalex_topic_score": 0.63,
+    "openalex_subfield": "Orthopedics and Sports Medicine",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10071",
+        "name": "Bone health and osteoporosis research",
+        "score": 0.63
+      },
+      {
+        "id": "T11509",
+        "name": "Hip and Femur Fractures",
+        "score": 0.268
+      },
+      {
+        "id": "T10391",
+        "name": "Healthcare Policy and Management",
+        "score": 0.031
+      }
+    ],
     "auto_detected": true,
     "collected_at": "2026-11-16T00:12:00.550Z",
     "classified": true,
@@ -372,6 +1470,68 @@
     "classified": true,
     "title_ja": "デノスマブ中止後の実臨床における治療パターン：記述疫学研究",
     "abstract_ja": "日本のレセプトデータベース（2014–2024年）を用いて、デノスマブを2回以上投与後に中止した40歳以上の37,526例の、中止後1年間の治療パターンを記述した。デノスマブ再開は29.6%、後続治療なしは50.9%で、逐次療法への移行は16.3%にとどまった（経口ビスホスホネート、ロモソズマブ、SERMの順に多い）。中止後1年の脆弱性骨折累積発生率は5.4%で、骨粗鬆症治療の継続性に大きなギャップがあることが示された。"
+  },
+  {
+    "id": "pmid-43020500",
+    "pubmed_id": "43020500",
+    "doi": "10.1136/bmjopen-2026-123247",
+    "title": "Prescribing patterns of topical corticosteroids and ophthalmic management for allergic conjunctivitis in Japan: a retrospective cohort study using the JMDC claims database.",
+    "abstract": "To evaluate real-world topical corticosteroid prescribing patterns and associated ophthalmic management for allergic conjunctivitis in Japan using a large nationwide claims database. Prescription-level retrospective cohort study. The JMDC claims database, a nationwide administrative database in Japan. Continuously enrolled individuals with a diagnostic code for allergic conjunctivitis or a related allergic condition recorded before January 2018. Eligible prescription episodes from January 2018 to May 2021 required same-month dispensing of a topical corticosteroid and an antiallergic eye drop. The primary outcome was claims-based ophthalmic management (slit-lamp examination in the same or preceding month) and the secondary outcome was intraocular pressure measurement. Population-averaged logistic generalised estimating equation (GEE) models accounted for repeated prescriptions and adjusted for age group, sex, corticosteroid product, calendar month and calendar year. Among 1 090 972 eligible individuals, 203 272 patients contributed 489 566 eligible topical corticosteroid prescriptions; 371 155 (75.8%; patient-clustered 95% CI 75.6% to 76.0%) were accompanied by ophthalmic management. Paediatric prescriptions had a higher observed management rate than adult prescriptions (79.7% vs 73.7%) and higher adjusted odds of management (AOR 1.78, 95% CI 1.74 to 1.81). Prescriptions for female patients also had higher adjusted odds of management than those for male patients (AOR 1.20, 95% CI 1.18 to 1.23). In formulation-specific GEE models, higher concentration categories were associated with higher odds of management for dexamethasone metasulfobenzoate sodium, fluorometholone and betamethasone sodium phosphate (all p<0.001). Intraocular pressure measurement was identified in 54.9% of all prescriptions, and in 72.1% of prescriptions were accompanied by ophthalmic management; among the latter, paediatric prescriptions had lower adjusted odds of measurement than adult prescriptions (AOR 0.30, 95% CI 0.29 to 0.31). In Japan, approximately one-quarter of eligible topical corticosteroid prescriptions lacked claims-based evidence of ophthalmic management. Management varied by patient and prescription characteristics, and intraocular pressure measurement was substantially less frequent for paediatric than adult prescriptions, highlighting the need to consider feasible, risk-based ophthalmic monitoring pathways.",
+    "authors": [
+      "Akasaki Y",
+      "Adachi T",
+      "Sakashita M",
+      "Morita H",
+      "Iwagami M",
+      "Midorikawa-Inomata A",
+      "Kobayashi H",
+      "Nakao S",
+      "Inomata T"
+    ],
+    "journal": "BMJ open",
+    "journal_issn": "2044-6055",
+    "entrez_year": 2026,
+    "entrez_date": "2026-11-12",
+    "analysis_methods": [
+      "回帰分析"
+    ],
+    "databases_used": [
+      "JMDC"
+    ],
+    "additional_data_sources": [],
+    "study_design": "後方視的コホート研究",
+    "research_categories": [
+      "治療実態・処方パターン",
+      "医療の質・アクセスの格差"
+    ],
+    "impact_factor": 3.65,
+    "sjr_quartile": null,
+    "openalex_topic": "Allergic Rhinitis and Sensitization",
+    "openalex_topic_score": 0.614,
+    "openalex_subfield": "Immunology and Allergy",
+    "openalex_field": "Medicine",
+    "openalex_topics": [
+      {
+        "id": "T10877",
+        "name": "Allergic Rhinitis and Sensitization",
+        "score": 0.614
+      },
+      {
+        "id": "T10997",
+        "name": "Ocular Surface and Contact Lens",
+        "score": 0.112
+      },
+      {
+        "id": "T11826",
+        "name": "Ocular Infections and Treatments",
+        "score": 0.052
+      }
+    ],
+    "auto_detected": true,
+    "collected_at": "2026-11-23T00:11:56.297Z",
+    "classified": true,
+    "title_ja": "日本のアレルギー性結膜炎におけるステロイド点眼薬の処方パターンと眼科的管理：JMDCデータベースを用いた後方視的コホート研究",
+    "abstract_ja": "JMDCデータベースで203,272人のステロイド点眼薬処方489,566件を解析し、75.8%に細隙灯顕微鏡検査による眼科的管理が伴っていた。小児の処方は成人より管理を受ける割合が高かった一方、眼圧測定は小児で大幅に少なかった（AOR 0.30）。約4分の1の処方では眼科的管理のレセプト上の記録がなかった。"
   },
   {
     "id": "pmid-43010985",
@@ -58167,8 +59327,8 @@
         "score": 0.001
       },
       {
-        "id": "T12781",
-        "name": "Global Health Care Issues",
+        "id": "T11314",
+        "name": "Clinical Laboratory Practices and Quality Control",
         "score": 0
       }
     ]
